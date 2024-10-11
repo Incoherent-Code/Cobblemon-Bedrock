@@ -1,5 +1,6 @@
 /dist
 /poserCache
-node_modules
+/node_modules
 /scripts/main.js
 /scripts/main.js.map
+/extractedResources
