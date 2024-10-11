@@ -1,6 +1,8 @@
 # Cobblemon Bedrock
 Minecraft Bedrock Addon that aims to port Cobblemon to Minecraft Bedrock Edition
 
+The original project can be found [here](https://gitlab.com/cable-mc/cobblemon).
+
 # Build Steps
 1. Ensure NodeJS is installed on your system.
 2. Run `npm install` in the root folder of the project.
