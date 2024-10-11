@@ -10,12 +10,11 @@
   "usePowershell": false,
   "minify": false,
   "temporairlyExtract": false,
-  "cachePosers": true,
-  "multithreaded": false,
   "gulpArgs": "",
+  "cachePosers": true,
   "tasks": [
     "clean",
-    "translatePosers",
+    "posers",
     "build",
     "deploy"
   ]
