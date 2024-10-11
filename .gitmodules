@@ -1,0 +1,3 @@
+[submodule "scripts/showdown"]
+	path = scripts/showdown
+	url = https://gitlab.com/Incoherent-Code/cobblemon-showdown-bedrock.git
