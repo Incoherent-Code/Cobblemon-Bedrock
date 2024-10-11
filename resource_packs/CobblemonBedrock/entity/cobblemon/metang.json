@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:metang",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0375_metang/metang",
+        "shiny": "textures/pokemon/0375_metang/metang_shiny"
+      },
+      "geometry": {
+        "base": "geometry.metang.geo",
+        "shiny": "geometry.metang.geo"
+      },
+      "animations": {
+        "metang.sleep": "animation.metang.sleep",
+        "metang.ground_idle": "animation.metang.ground_idle",
+        "metang.air_idle": "animation.metang.air_idle",
+        "metang.air_fly": "animation.metang.air_fly",
+        "metang.ground_walk": "animation.metang.ground_walk",
+        "metang.battle_idle": "animation.metang.battle_idle",
+        "metang.blink": "animation.metang.blink",
+        "controller.animation.metang.blink": "controller.animation.metang.blink",
+        "controller.animation.cobblemon.metang": "controller.animation.cobblemon.metang"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.metang"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.metang.blink",
+          {
+            "controller.animation.cobblemon.metang": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_metang = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

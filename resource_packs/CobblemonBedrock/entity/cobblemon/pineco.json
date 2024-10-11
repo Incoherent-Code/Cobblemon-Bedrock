@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:pineco",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0204_pineco/pineco",
+        "shiny": "textures/pokemon/0204_pineco/pineco_shiny"
+      },
+      "geometry": {
+        "base": "geometry.pineco.geo",
+        "shiny": "geometry.pineco.geo"
+      },
+      "animations": {
+        "pineco.ground_idle": "animation.pineco.ground_idle",
+        "pineco.ground_walk": "animation.pineco.ground_walk",
+        "pineco.sleep": "animation.pineco.sleep",
+        "pineco.blink": "animation.pineco.blink",
+        "controller.animation.pineco.blink": "controller.animation.pineco.blink",
+        "controller.animation.cobblemon.pineco": "controller.animation.cobblemon.pineco"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.pineco"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.pineco.blink",
+          {
+            "controller.animation.cobblemon.pineco": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_pineco = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

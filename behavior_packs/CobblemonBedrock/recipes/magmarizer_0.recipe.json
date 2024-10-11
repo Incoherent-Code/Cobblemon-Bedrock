@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "PIP",
+      "IBI",
+      "MIM"
+    ],
+    "key": {
+      "M": {
+        "item": "minecraft:magma"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "B": {
+        "item": "minecraft:iron_bars"
+      },
+      "P": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:magma"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "minecraft:iron_bars"
+      },
+      {
+        "item": "minecraft:blaze_powder"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:magmarizer"
+    },
+    "description": {
+      "identifier": "cobblemon:magmarizer_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:lotad",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0270_lotad/lotad",
+        "shiny": "textures/pokemon/0270_lotad/lotad_shiny"
+      },
+      "geometry": {
+        "base": "geometry.lotad.geo",
+        "shiny": "geometry.lotad.geo"
+      },
+      "animations": {
+        "lotad.ground_idle": "animation.lotad.ground_idle",
+        "lotad.water_idle": "animation.lotad.water_idle",
+        "lotad.waterstanding.transform": "animation.lotad.waterstanding.transform",
+        "lotad.ground_walk": "animation.lotad.ground_walk",
+        "lotad.water_swim": "animation.lotad.water_swim",
+        "lotad.waterwalk.transform": "animation.lotad.waterwalk.transform",
+        "lotad.floating.transform": "animation.lotad.floating.transform",
+        "lotad.swim.transform": "animation.lotad.swim.transform",
+        "lotad.sleep": "animation.lotad.sleep",
+        "charmander.blink": "animation.charmander.blink",
+        "controller.animation.lotad.blink": "controller.animation.lotad.blink",
+        "controller.animation.cobblemon.lotad": "controller.animation.cobblemon.lotad"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.lotad"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.lotad.blink",
+          {
+            "controller.animation.cobblemon.lotad": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_lotad = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

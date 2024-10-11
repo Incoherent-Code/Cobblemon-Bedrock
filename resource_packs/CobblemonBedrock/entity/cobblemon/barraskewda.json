@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:barraskewda",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0847_barraskewda/barraskewda",
+        "shiny": "textures/pokemon/0847_barraskewda/barraskewda_shiny"
+      },
+      "geometry": {
+        "base": "geometry.barraskewda.geo",
+        "shiny": "geometry.barraskewda.geo"
+      },
+      "animations": {
+        "barraskewda.sleep": "animation.barraskewda.sleep",
+        "barraskewda.water_sleep": "animation.barraskewda.water_sleep",
+        "barraskewda.ground_idle": "animation.barraskewda.ground_idle",
+        "barraskewda.ground_walk": "animation.barraskewda.ground_walk",
+        "barraskewda.water_idle": "animation.barraskewda.water_idle",
+        "barraskewda.water_swim": "animation.barraskewda.water_swim",
+        "barraskewda.battle_idle": "animation.barraskewda.battle_idle",
+        "barraskewda.water_battle_idle": "animation.barraskewda.water_battle_idle",
+        "barraskewda.blink": "animation.barraskewda.blink",
+        "controller.animation.barraskewda.blink": "controller.animation.barraskewda.blink",
+        "controller.animation.cobblemon.barraskewda": "controller.animation.cobblemon.barraskewda"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.barraskewda"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.barraskewda.blink",
+          {
+            "controller.animation.cobblemon.barraskewda": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_barraskewda = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:quilladin",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0651_quilladin/quilladin",
+        "shiny": "textures/pokemon/0651_quilladin/quilladin_shiny"
+      },
+      "geometry": {
+        "base": "geometry.quilladin.geo",
+        "shiny": "geometry.quilladin.geo"
+      },
+      "animations": {
+        "quilladin.sleep": "animation.quilladin.sleep",
+        "quilladinmodel.singlebonelook": "animation.quilladinmodel.singlebonelook",
+        "quilladin.ground_idle": "animation.quilladin.ground_idle",
+        "quilladin.ground_walk": "animation.quilladin.ground_walk",
+        "quilladin.blink": "animation.quilladin.blink",
+        "controller.animation.quilladin.blink": "controller.animation.quilladin.blink",
+        "controller.animation.cobblemon.quilladin": "controller.animation.cobblemon.quilladin"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.quilladin"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.quilladin.blink",
+          {
+            "controller.animation.cobblemon.quilladin": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_quilladin = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

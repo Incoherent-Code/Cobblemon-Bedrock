@@ -1,0 +1,218 @@
+{
+  "minLevel": 1,
+  "maxLevel": 26,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "night",
+      "minLevel": 1,
+      "maxLevel": 26
+    },
+    "1": {
+      "timeRange": "night",
+      "minLevel": 1,
+      "maxLevel": 26
+    },
+    "2": {
+      "minLevel": 1,
+      "maxLevel": 26
+    },
+    "3": {
+      "minLevel": 1,
+      "maxLevel": 26
+    }
+  },
+  "name": "Venipede",
+  "nationalPokedexNumber": 543,
+  "baseStats": {
+    "hp": 30,
+    "attack": 45,
+    "defence": 59,
+    "special_attack": 30,
+    "special_defence": 39,
+    "speed": 57
+  },
+  "maleRatio": 0.5,
+  "catchRate": 255,
+  "baseScale": 0.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 1.0,
+    "height": 0.9,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "poison",
+  "abilities": [
+    "poisonpoint",
+    "swarm",
+    "h:speedboost"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:defensecurl",
+    "1:poisonsting",
+    "4:rollout",
+    "8:protect",
+    "12:poisontail",
+    "12:pursuit",
+    "16:screech",
+    "20:bugbite",
+    "24:venoshock",
+    "28:takedown",
+    "32:agility",
+    "33:steamroller",
+    "36:toxic",
+    "40:rockclimb",
+    "40:venomdrench",
+    "44:doubleedge",
+    "egg:bite",
+    "egg:furycutter",
+    "egg:pinmissile",
+    "egg:rockclimb",
+    "egg:spikes",
+    "egg:takedown",
+    "egg:toxicspikes",
+    "egg:twineedle",
+    "tm:agility",
+    "tm:attract",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:frustration",
+    "tm:gyroball",
+    "tm:hex",
+    "tm:hiddenpower",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:payback",
+    "tm:pinmissile",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:screech",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:spikes",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:venomdrench",
+    "tm:venoshock",
+    "tutor:bugbite",
+    "tutor:endeavor",
+    "tutor:irondefense",
+    "tutor:signalbeam",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:steelroller"
+  ],
+  "evolutions": [
+    {
+      "id": "venipede_whirlipede",
+      "variant": "level_up",
+      "result": "whirlipede",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "irondefense"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 22
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "11-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.venipede.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 4.0,
+  "weight": 53.0
+}

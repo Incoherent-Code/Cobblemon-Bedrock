@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:grafaiai",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0945_grafaiai/grafaiai",
+        "shiny": "textures/pokemon/0945_grafaiai/grafaiai_shiny"
+      },
+      "geometry": {
+        "base": "geometry.grafaiai.geo",
+        "shiny": "geometry.grafaiai.geo"
+      },
+      "animations": {
+        "grafaiaimodel.singlebonelook": "animation.grafaiaimodel.singlebonelook",
+        "grafaiai.ground_idle": "animation.grafaiai.ground_idle",
+        "grafaiai.ground_walk": "animation.grafaiai.ground_walk",
+        "grafaiai.sleep": "animation.grafaiai.sleep",
+        "grafaiai.blink": "animation.grafaiai.blink",
+        "controller.animation.grafaiai.blink": "controller.animation.grafaiai.blink",
+        "controller.animation.cobblemon.grafaiai": "controller.animation.cobblemon.grafaiai"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.grafaiai"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.grafaiai.blink",
+          {
+            "controller.animation.cobblemon.grafaiai": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_grafaiai = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

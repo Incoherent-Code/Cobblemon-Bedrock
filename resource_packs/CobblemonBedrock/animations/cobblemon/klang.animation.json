@@ -1,0 +1,112 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.klang.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "35.6484+math.cos((query.anim_time-0.6) * 90 * 1) * 2",
+            10.21235,
+            "7.2468+math.cos((query.anim_time-1.5) * 90 * 0.5) * -6"
+          ],
+          "position": [
+            0.0,
+            "2+math.cos((query.anim_time-0.2) * 90 * 0.5) * 1",
+            1.0
+          ]
+        },
+        "main_gear": {
+          "rotation": [
+            0.0,
+            0.0,
+            "math.cos((query.anim_time) * 90 * 0.5) * 20"
+          ]
+        },
+        "gear2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "math.cos((query.anim_time) * 90 * 0.5) * -20"
+          ]
+        }
+      }
+    },
+    "animation.klang.ground_idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            -5.0,
+            0.0,
+            "16*math.sin(q.anim_time*90*1.5+180+50)"
+          ],
+          "position": [
+            0.0,
+            "0.5+0.9*math.sin(q.anim_time*90*1+180)",
+            0.0
+          ]
+        },
+        "main_gear": {
+          "rotation": [
+            0.0,
+            0.0,
+            "22.5+q.anim_time*-90*2"
+          ]
+        },
+        "gear2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-22.5+q.anim_time*90*2"
+          ],
+          "position": [
+            -0.7,
+            0.2,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.klang.ground_walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            10.0,
+            0.0,
+            "8*math.sin(q.anim_time*90*1.5+180+50)"
+          ],
+          "position": [
+            0.0,
+            "0.5+0.9*math.sin(q.anim_time*90*3+180)",
+            -0.5
+          ]
+        },
+        "main_gear": {
+          "rotation": [
+            0.0,
+            0.0,
+            "22.5+q.anim_time*-90*2.2"
+          ]
+        },
+        "gear2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-22.5+q.anim_time*90*2.2"
+          ],
+          "position": [
+            -0.7,
+            0.2,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

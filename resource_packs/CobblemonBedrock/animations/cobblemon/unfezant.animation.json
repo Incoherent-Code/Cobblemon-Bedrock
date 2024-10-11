@@ -1,0 +1,501 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.unfezantmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head_ai": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.unfezant.ground_idle": {
+      "loop": true,
+      "bones": {
+        "hairstrand": {
+          "rotation": [
+            7.5,
+            0.0,
+            12.5
+          ]
+        },
+        "hairstrand2": {
+          "rotation": [
+            -17.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            52.5,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head_ai": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hair": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            -189.24606,
+            -74.79781,
+            -80.42476
+          ],
+          "position": [
+            0.0,
+            -5.0,
+            -2.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            -189.24606,
+            74.79781,
+            80.42476
+          ],
+          "position": [
+            0.0,
+            -5.0,
+            -2.0
+          ]
+        },
+        "open_left": {
+          "scale": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "open_right": {
+          "scale": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left2": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left3": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left4": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left5": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left6": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left7": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left8": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left9": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right2": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right3": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right4": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right5": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right6": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right7": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right8": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right9": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.unfezant.stand.transform": {
+      "bones": {
+        "open_left": {
+          "scale": 0.001
+        },
+        "open_right": {
+          "scale": 0.001
+        },
+        "closed_left": {},
+        "closed_right": {}
+      }
+    },
+    "animation.unfezantmodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662 + 180) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662) *  1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.unfezant.walk.transform": {
+      "bones": {
+        "open_left": {
+          "scale": 0.001
+        },
+        "open_right": {
+          "scale": 0.001
+        },
+        "closed_left": {},
+        "closed_right": {}
+      }
+    },
+    "animation.unfezant.air_idle": {
+      "loop": true,
+      "bones": {
+        "closed_left": {
+          "scale": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "closed_right": {
+          "scale": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left2": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left3": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left4": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left5": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left6": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left7": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left8": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_left9": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right2": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right3": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right4": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right5": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right6": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right7": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right8": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ribbon_right9": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.unfezant.hover.transform": {
+      "bones": {
+        "open_left": {},
+        "open_right": {},
+        "closed_left": {
+          "scale": 0.001
+        },
+        "closed_right": {
+          "scale": 0.001
+        }
+      }
+    },
+    "animation.unfezant.fly.transform": {
+      "bones": {
+        "open_left": {},
+        "open_right": {},
+        "closed_left": {
+          "scale": 0.001
+        },
+        "closed_right": {
+          "scale": 0.001
+        }
+      }
+    },
+    "animation.unfezant.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.blissey.ground_idle": {
+      "loop": true,
+      "bones": {
+        "left_arm": {
+          "rotation": [
+            55.0,
+            10.0,
+            57.5
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_arm_frills": {
+          "rotation": [
+            -30.0,
+            -50.0,
+            -40.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            55.0,
+            -10.0,
+            -57.5
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_arm_frills": {
+          "rotation": [
+            -30.0,
+            50.0,
+            40.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "egg_torso": {
+          "rotation": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.blisseymodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "right_foot": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662 + 180) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "left_foot": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662) *  1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.blisseymodel.bimanualswinganimation": {
+      "loop": true,
+      "bones": {
+        "right_arm": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662) * 1 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662) *  1 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:probopass",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0476_probopass/probopass",
+        "shiny": "textures/pokemon/0476_probopass/probopass_shiny"
+      },
+      "geometry": {
+        "base": "geometry.probopass.geo",
+        "shiny": "geometry.probopass.geo"
+      },
+      "animations": {
+        "probopass.ground_sleep": "animation.probopass.ground_sleep",
+        "probopass.ground_idle": "animation.probopass.ground_idle",
+        "probopass.ground_walk": "animation.probopass.ground_walk",
+        "probopass.blink": "animation.probopass.blink",
+        "controller.animation.probopass.blink": "controller.animation.probopass.blink",
+        "controller.animation.cobblemon.probopass": "controller.animation.cobblemon.probopass"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.probopass"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.probopass.blink",
+          {
+            "controller.animation.cobblemon.probopass": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_probopass = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

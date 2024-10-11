@@ -1,0 +1,182 @@
+{
+  "minLevel": 3,
+  "maxLevel": 28,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 3,
+      "maxLevel": 28
+    }
+  },
+  "name": "Arrokuda",
+  "nationalPokedexNumber": 846,
+  "baseStats": {
+    "hp": 41,
+    "attack": 63,
+    "defence": 40,
+    "special_attack": 40,
+    "special_defence": 30,
+    "speed": 66
+  },
+  "maleRatio": 0.5,
+  "catchRate": 255,
+  "baseScale": 0.65,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "slow",
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.5,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "abilities": [
+    "swiftswim",
+    "h:propellertail"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:aquajet",
+    "1:peck",
+    "6:furyattack",
+    "12:bite",
+    "18:agility",
+    "24:dive",
+    "30:focusenergy",
+    "30:laserfocus",
+    "36:crunch",
+    "42:liquidation",
+    "48:doubleedge",
+    "egg:acupressure",
+    "egg:nightslash",
+    "egg:slash",
+    "egg:thrash",
+    "tm:agility",
+    "tm:assurance",
+    "tm:attract",
+    "tm:bounce",
+    "tm:brickbreak",
+    "tm:chillingwater",
+    "tm:closecombat",
+    "tm:crunch",
+    "tm:dive",
+    "tm:drillrun",
+    "tm:endure",
+    "tm:facade",
+    "tm:focusenergy",
+    "tm:hydropump",
+    "tm:icefang",
+    "tm:liquidation",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:psychicfangs",
+    "tm:raindance",
+    "tm:rest",
+    "tm:round",
+    "tm:scald",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:throatchop",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:scaleshot"
+  ],
+  "evolutions": [
+    {
+      "id": "arrokuda_barraskewda",
+      "variant": "level_up",
+      "result": "barraskewda",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 26
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": true,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.5,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.arrokuda.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:salmon"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "water_2"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 5.0,
+  "weight": 10.0
+}

@@ -1,0 +1,47 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:parasect",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0047_parasect/parasect",
+        "shiny": "textures/pokemon/0047_parasect/parasect_shiny"
+      },
+      "geometry": {
+        "base": "geometry.parasect.geo",
+        "shiny": "geometry.parasect.geo"
+      },
+      "animations": {
+        "parasect.ground_idle": "animation.parasect.ground_idle",
+        "parasectmodel.singlebonelook": "animation.parasectmodel.singlebonelook",
+        "parasect.sleep": "animation.parasect.sleep",
+        "parasect.ground_walk": "animation.parasect.ground_walk",
+        "controller.animation.cobblemon.parasect": "controller.animation.cobblemon.parasect"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.parasect"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.parasect": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_parasect = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

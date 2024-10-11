@@ -1,0 +1,270 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.ursalunamodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.ursaluna.ground_idle": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "shoulder_left": {
+          "rotation": [
+            0.0,
+            -22.5,
+            52.5
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            10.0,
+            0.0,
+            20.0
+          ]
+        },
+        "spikes_torso_main": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            3.20462,
+            33.83204,
+            15.47261
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            -0.33692,
+            -17.49026,
+            0.17248
+          ]
+        },
+        "leg_left_rotate": {
+          "rotation": [
+            0.0,
+            -5.0,
+            0.0
+          ]
+        },
+        "thigh_left": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "thumb_left": {
+          "rotation": [
+            -67.5,
+            0.0,
+            0.0
+          ]
+        },
+        "shoulder_right": {
+          "rotation": [
+            0.0,
+            22.5,
+            -55.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            10.0,
+            0.0,
+            -20.0
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            3.2046,
+            -33.832,
+            -15.4726
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            -0.3369,
+            17.4903,
+            -0.1725
+          ]
+        },
+        "thumb_right": {
+          "rotation": [
+            -67.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "thigh_right": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right_rotate": {
+          "rotation": [
+            0.0,
+            5.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "spike_bottom_main": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "eye_left": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.ursalunamodel.quadrupedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "thigh_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.75) * 1 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "thigh_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.75 + 180) *  1 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "shoulder_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.75 + 180) * 1 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "shoulder_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.75) * 1 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.ursaluna.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.1
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.1
+            ]
+          }
+        }
+      }
+    }
+  }
+}

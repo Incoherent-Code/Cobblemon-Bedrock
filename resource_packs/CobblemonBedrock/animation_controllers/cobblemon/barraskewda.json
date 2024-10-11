@@ -1,0 +1,254 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.barraskewda.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_barraskewda_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_barraskewda_blink = q.life_time + 1; return (q.life_time > v.next_quirk_barraskewda_blink) && (v.state_of_barraskewda == 2 || v.state_of_barraskewda == 3 || v.state_of_barraskewda == 6 || v.state_of_barraskewda == 7);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "barraskewda.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_barraskewda_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_barraskewda_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.barraskewda": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "barraskewda.sleep"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_barraskewda = 0; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "watersleep": {
+          "animations": [
+            "barraskewda.water_sleep"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_barraskewda = 1; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "barraskewda.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_barraskewda = 2; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "barraskewda.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_barraskewda = 3; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "floating": {
+          "animations": [
+            "barraskewda.water_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_barraskewda = 4; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swimming": {
+          "animations": [
+            "barraskewda.water_swim"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_barraskewda = 5; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "barraskewda.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_barraskewda = 6; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "waterbattleidle": {
+          "animations": [
+            "barraskewda.water_battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_barraskewda = 7; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.bunnelby.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_bunnelby_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_bunnelby_blink = q.life_time + 1; return (q.life_time > v.next_quirk_bunnelby_blink) && (v.state_of_bunnelby == 0 || v.state_of_bunnelby == 1 || v.state_of_bunnelby == 2 || v.state_of_bunnelby == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "bunnelby.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_bunnelby_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_bunnelby_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.bunnelby.sleep1": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_bunnelby_sleep1 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_bunnelby_sleep1 = q.life_time + 1; return (q.life_time > v.next_quirk_bunnelby_sleep1) && (v.state_of_bunnelby == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "bunnelby.quirk_sleep"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_bunnelby_sleep1 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_bunnelby_sleep1 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.bunnelby.sleep2": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_bunnelby_sleep2 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_bunnelby_sleep2 = q.life_time + 1; return (q.life_time > v.next_quirk_bunnelby_sleep2) && (v.state_of_bunnelby == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "bunnelby.quirk_sleep2"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_bunnelby_sleep2 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_bunnelby_sleep2 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.bunnelby": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "bunnelby.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_bunnelby = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "bunnelbymodel.singlebonelook",
+            "bunnelby.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_bunnelby = 1; return q.is_sleeping;"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "bunnelbymodel.singlebonelook",
+            "bunnelby.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_bunnelby = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "bunnelbymodel.singlebonelook",
+            "bunnelby.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_bunnelby = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walking": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

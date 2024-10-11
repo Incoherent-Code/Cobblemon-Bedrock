@@ -1,0 +1,94 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.joltik.blink1": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_joltik_blink1 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_joltik_blink1 = q.life_time + 1; return (q.life_time > v.next_quirk_joltik_blink1) && (v.state_of_joltik == 0 || v.state_of_joltik == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "joltik.blink1"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_joltik_blink1 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_joltik_blink1 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.joltik.blink2": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_joltik_blink2 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_joltik_blink2 = q.life_time + 1; return (q.life_time > v.next_quirk_joltik_blink2) && (v.state_of_joltik == 0 || v.state_of_joltik == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "joltik.blink2"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_joltik_blink2 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_joltik_blink2 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.joltik": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "joltik.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_joltik = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "joltik.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_joltik = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

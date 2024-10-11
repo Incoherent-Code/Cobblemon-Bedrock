@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:aegislash",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0681_aegislash/aegislash",
+        "shiny": "textures/pokemon/0681_aegislash/aegislash_shiny"
+      },
+      "geometry": {
+        "base": "geometry.aegislash.geo",
+        "shiny": "geometry.aegislash.geo"
+      },
+      "animations": {
+        "aegislash.ground_idle": "animation.aegislash.ground_idle",
+        "aegislash.ground_walk": "animation.aegislash.ground_walk",
+        "aegislash.blink": "animation.aegislash.blink",
+        "controller.animation.aegislash.blink": "controller.animation.aegislash.blink",
+        "controller.animation.cobblemon.aegislash": "controller.animation.cobblemon.aegislash"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.aegislash"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.aegislash.blink",
+          {
+            "controller.animation.cobblemon.aegislash": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_aegislash = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

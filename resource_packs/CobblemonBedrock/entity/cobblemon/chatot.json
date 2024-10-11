@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:chatot",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0441_chatot/chatot",
+        "shiny": "textures/pokemon/0441_chatot/chatot_shiny"
+      },
+      "geometry": {
+        "base": "geometry.chatot.geo",
+        "shiny": "geometry.chatot.geo"
+      },
+      "animations": {
+        "chatotmodel.singlebonelook": "animation.chatotmodel.singlebonelook",
+        "chatot.ground_idle": "animation.chatot.ground_idle",
+        "chatot.air_idle": "animation.chatot.air_idle",
+        "chatot.blink": "animation.chatot.blink",
+        "controller.animation.chatot.blink": "controller.animation.chatot.blink",
+        "controller.animation.cobblemon.chatot": "controller.animation.cobblemon.chatot"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.chatot"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.chatot.blink",
+          {
+            "controller.animation.cobblemon.chatot": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_chatot = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

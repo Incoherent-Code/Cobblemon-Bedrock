@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " t ",
+      "lcr",
+      " b "
+    ],
+    "key": {
+      "t": {
+        "item": "cobblemon:white_apricorn"
+      },
+      "l": {
+        "item": "cobblemon:blue_apricorn"
+      },
+      "c": {
+        "item": "minecraft:iron_ingot"
+      },
+      "r": {
+        "item": "cobblemon:blue_apricorn"
+      },
+      "b": {
+        "item": "cobblemon:blue_apricorn"
+      }
+    },
+    "unlock": [
+      {
+        "item": "cobblemon:white_apricorn"
+      },
+      {
+        "item": "cobblemon:blue_apricorn"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "cobblemon:blue_apricorn"
+      },
+      {
+        "item": "cobblemon:blue_apricorn"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:dive_ball",
+      "count": 4
+    },
+    "description": {
+      "identifier": "cobblemon:dive_ball_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

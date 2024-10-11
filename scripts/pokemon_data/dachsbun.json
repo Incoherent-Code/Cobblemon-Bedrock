@@ -1,0 +1,172 @@
+{
+  "minLevel": 26,
+  "maxLevel": 48,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 26,
+      "maxLevel": 48
+    },
+    "1": {
+      "minLevel": 26,
+      "maxLevel": 48
+    }
+  },
+  "name": "Dachsbun",
+  "nationalPokedexNumber": 927,
+  "baseStats": {
+    "hp": 57,
+    "attack": 80,
+    "defence": 115,
+    "special_attack": 50,
+    "special_defence": 80,
+    "speed": 95
+  },
+  "maleRatio": 0.5,
+  "catchRate": 90,
+  "baseScale": 0.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 1.3,
+    "height": 1.1,
+    "fixed": false
+  },
+  "primaryType": "fairy",
+  "abilities": [
+    "wellbakedbody",
+    "h:aromaveil"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:growl",
+    "1:tackle",
+    "3:lick",
+    "6:tailwhip",
+    "8:covet",
+    "11:bite",
+    "15:babydolleyes",
+    "18:playrough",
+    "22:workup",
+    "29:batonpass",
+    "33:roar",
+    "38:doubleedge",
+    "42:charm",
+    "47:crunch",
+    "53:lastresort",
+    "tm:agility",
+    "tm:batonpass",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:charm",
+    "tm:crunch",
+    "tm:dazzlinggleam",
+    "tm:dig",
+    "tm:drainingkiss",
+    "tm:endure",
+    "tm:facade",
+    "tm:firefang",
+    "tm:gigaimpact",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:icefang",
+    "tm:mistyterrain",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:playrough",
+    "tm:protect",
+    "tm:psychicfangs",
+    "tm:raindance",
+    "tm:rest",
+    "tm:scaryface",
+    "tm:sleeptalk",
+    "tm:snarl",
+    "tm:stompingtantrum",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunderfang",
+    "tm:trailblaze"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.3
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.dachsbun.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:bread",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:nanab_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "field",
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 5.0,
+  "weight": 149.0
+}

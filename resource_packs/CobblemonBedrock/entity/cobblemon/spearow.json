@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:spearow",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0021_spearow/spearow",
+        "shiny": "textures/pokemon/0021_spearow/spearow_shiny"
+      },
+      "geometry": {
+        "base": "geometry.spearow.geo",
+        "shiny": "geometry.spearow.geo"
+      },
+      "animations": {
+        "spearowmodel.singlebonelook": "animation.spearowmodel.singlebonelook",
+        "spearow.ground_idle": "animation.spearow.ground_idle",
+        "spearow.blink": "animation.spearow.blink",
+        "controller.animation.spearow.blink": "controller.animation.spearow.blink",
+        "controller.animation.cobblemon.spearow": "controller.animation.cobblemon.spearow"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.spearow"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.spearow.blink",
+          {
+            "controller.animation.cobblemon.spearow": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_spearow = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

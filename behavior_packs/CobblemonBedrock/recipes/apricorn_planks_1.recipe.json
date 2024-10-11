@@ -1,0 +1,29 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "cobblemon:apricorn_wood"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "cobblemon:apricorn_wood"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:apricorn_planks",
+      "count": 4
+    },
+    "description": {
+      "identifier": "cobblemon:apricorn_planks_1"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:poliwrath",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0062_poliwrath/poliwrath",
+        "shiny": "textures/pokemon/0062_poliwrath/poliwrath_shiny"
+      },
+      "geometry": {
+        "base": "geometry.poliwrath.geo",
+        "shiny": "geometry.poliwrath.geo"
+      },
+      "animations": {
+        "poliwrath.ground_idle": "animation.poliwrath.ground_idle",
+        "poliwrath.sleep": "animation.poliwrath.sleep",
+        "poliwrath.water_idle": "animation.poliwrath.water_idle",
+        "poliwrath.water_swim": "animation.poliwrath.water_swim",
+        "poliwrath.blink": "animation.poliwrath.blink",
+        "controller.animation.poliwrath.blink": "controller.animation.poliwrath.blink",
+        "controller.animation.cobblemon.poliwrath": "controller.animation.cobblemon.poliwrath"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.poliwrath"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.poliwrath.blink",
+          {
+            "controller.animation.cobblemon.poliwrath": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_poliwrath = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

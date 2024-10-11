@@ -1,0 +1,161 @@
+{
+  "minLevel": 24,
+  "maxLevel": 49,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 24,
+      "maxLevel": 49
+    }
+  },
+  "name": "Dubwool",
+  "nationalPokedexNumber": 832,
+  "baseStats": {
+    "hp": 72,
+    "attack": 80,
+    "defence": 100,
+    "special_attack": 60,
+    "special_defence": 90,
+    "speed": 88
+  },
+  "maleRatio": 0.5,
+  "catchRate": 127,
+  "baseScale": 1.1,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.3,
+    "fixed": false
+  },
+  "primaryType": "normal",
+  "abilities": [
+    "fluffy",
+    "steadfast",
+    "h:bulletproof"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:copycat",
+    "1:defensecurl",
+    "1:growl",
+    "1:tackle",
+    "12:guardsplit",
+    "16:doublekick",
+    "21:headbutt",
+    "27:takedown",
+    "32:guardswap",
+    "38:reversal",
+    "44:cottonguard",
+    "50:doubleedge",
+    "56:lastresort",
+    "tm:agility",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:bounce",
+    "tm:electroball",
+    "tm:endure",
+    "tm:facade",
+    "tm:gigaimpact",
+    "tm:guardswap",
+    "tm:hyperbeam",
+    "tm:megakick",
+    "tm:payback",
+    "tm:protect",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:reversal",
+    "tm:round",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:substitute",
+    "tm:swordsdance",
+    "tm:thunderwave",
+    "tm:wildcharge",
+    "tm:zenheadbutt",
+    "tutor:grassyglide"
+  ],
+  "evolutions": [],
+  "features": [
+    "sheared"
+  ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.dubwool.desc"
+  ],
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:mutton",
+        "quantityRange": "1-3"
+      },
+      {
+        "item": "minecraft:white_wool",
+        "quantityRange": "1-2"
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "field"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 13.0,
+  "weight": 430.0
+}

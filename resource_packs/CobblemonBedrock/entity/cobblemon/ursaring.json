@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:ursaring",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0217_ursaring/ursaring",
+        "shiny": "textures/pokemon/0217_ursaring/ursaring_shiny"
+      },
+      "geometry": {
+        "base": "geometry.ursaring.geo",
+        "shiny": "geometry.ursaring.geo"
+      },
+      "animations": {
+        "ursaringmodel.singlebonelook": "animation.ursaringmodel.singlebonelook",
+        "ursaring.ground_idle": "animation.ursaring.ground_idle",
+        "ursaringmodel.bipedwalkanimation": "animation.ursaringmodel.bipedwalkanimation",
+        "ursaringmodel.bimanualswinganimation": "animation.ursaringmodel.bimanualswinganimation",
+        "ursaring.blink": "animation.ursaring.blink",
+        "controller.animation.ursaring.blink": "controller.animation.ursaring.blink",
+        "controller.animation.cobblemon.ursaring": "controller.animation.cobblemon.ursaring"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.ursaring"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.ursaring.blink",
+          {
+            "controller.animation.cobblemon.ursaring": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_ursaring = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

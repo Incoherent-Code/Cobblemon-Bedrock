@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:pidove",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0519_pidove/pidove",
+        "shiny": "textures/pokemon/0519_pidove/pidove_shiny"
+      },
+      "geometry": {
+        "base": "geometry.pidove.geo",
+        "shiny": "geometry.pidove.geo"
+      },
+      "animations": {
+        "pidovemodel.singlebonelook": "animation.pidovemodel.singlebonelook",
+        "pidove.ground_idle": "animation.pidove.ground_idle",
+        "pidove.blink": "animation.pidove.blink",
+        "controller.animation.pidove.blink": "controller.animation.pidove.blink",
+        "controller.animation.cobblemon.pidove": "controller.animation.cobblemon.pidove"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.pidove"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.pidove.blink",
+          {
+            "controller.animation.cobblemon.pidove": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_pidove = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

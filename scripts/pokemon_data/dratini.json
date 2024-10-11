@@ -1,0 +1,299 @@
+{
+  "minLevel": 5,
+  "maxLevel": 30,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 5,
+      "maxLevel": 30
+    },
+    "1": {
+      "minLevel": 5,
+      "maxLevel": 30
+    },
+    "2": {
+      "minLevel": 5,
+      "maxLevel": 30
+    }
+  },
+  "name": "Dratini",
+  "nationalPokedexNumber": 147,
+  "baseStats": {
+    "hp": 41,
+    "attack": 64,
+    "defence": 45,
+    "special_attack": 50,
+    "special_defence": 50,
+    "speed": 50
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 0.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 35,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "slow",
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.5,
+    "fixed": false
+  },
+  "primaryType": "dragon",
+  "abilities": [
+    "shedskin",
+    "h:marvelscale"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:leer",
+    "1:wrap",
+    "5:twister",
+    "10:thunderwave",
+    "15:dragonrage",
+    "15:dragontail",
+    "20:agility",
+    "25:slam",
+    "31:aquatail",
+    "35:dragonrush",
+    "40:safeguard",
+    "45:raindance",
+    "50:dragondance",
+    "55:outrage",
+    "60:hyperbeam",
+    "egg:aquajet",
+    "egg:dragonbreath",
+    "egg:dragondance",
+    "egg:dragonpulse",
+    "egg:dragonrush",
+    "egg:extremespeed",
+    "egg:haze",
+    "egg:irontail",
+    "egg:lightscreen",
+    "egg:mist",
+    "egg:supersonic",
+    "egg:waterpulse",
+    "tm:agility",
+    "tm:attract",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:breakingswipe",
+    "tm:brutalswing",
+    "tm:captivate",
+    "tm:chillingwater",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:dracometeor",
+    "tm:dragondance",
+    "tm:dragonpulse",
+    "tm:dragontail",
+    "tm:endure",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:firespin",
+    "tm:flamethrower",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:incinerate",
+    "tm:ironhead",
+    "tm:irontail",
+    "tm:lightscreen",
+    "tm:naturalgift",
+    "tm:outrage",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:surf",
+    "tm:swagger",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:agility",
+    "tutor:aquatail",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:bind",
+    "tutor:blizzard",
+    "tutor:bodyslam",
+    "tutor:bubblebeam",
+    "tutor:curse",
+    "tutor:detect",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:dracometeor",
+    "tutor:dragonbreath",
+    "tutor:dragonpulse",
+    "tutor:dragonrage",
+    "tutor:dragontail",
+    "tutor:endure",
+    "tutor:extremespeed",
+    "tutor:facade",
+    "tutor:fireblast",
+    "tutor:flamethrower",
+    "tutor:frustration",
+    "tutor:haze",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:irontail",
+    "tutor:leer",
+    "tutor:lightscreen",
+    "tutor:mimic",
+    "tutor:mist",
+    "tutor:outrage",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:raindance",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:safeguard",
+    "tutor:scaleshot",
+    "tutor:shockwave",
+    "tutor:skullbash",
+    "tutor:slam",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:substitute",
+    "tutor:supersonic",
+    "tutor:surf",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:takedown",
+    "tutor:thunder",
+    "tutor:thunderbolt",
+    "tutor:thunderwave",
+    "tutor:toxic",
+    "tutor:twister",
+    "tutor:waterfall",
+    "tutor:watergun",
+    "tutor:waterpulse",
+    "tutor:wrap",
+    "tutor:zapcannon"
+  ],
+  "evolutions": [
+    {
+      "id": "dratini_dragonair",
+      "variant": "level_up",
+      "result": "dragonair",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 30
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.dratini.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:dragon_breath",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:dragon_fang",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:dragon_scale",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:yache_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 40,
+  "eggGroups": [
+    "water_1",
+    "dragon"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 18.0,
+  "weight": 33.0
+}

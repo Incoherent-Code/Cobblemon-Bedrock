@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:moltres",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0146_moltres/moltres",
+        "shiny": "textures/pokemon/0146_moltres/moltres_shiny",
+        "base_emissive": "textures/pokemon/0146_moltres/moltres_emissive",
+        "shiny_emissive": "textures/pokemon/0146_moltres/moltres_emissive"
+      },
+      "geometry": {
+        "base": "geometry.moltres.geo",
+        "shiny": "geometry.moltres.geo"
+      },
+      "animations": {
+        "moltresmodel.singlebonelook": "animation.moltresmodel.singlebonelook",
+        "moltres.ground_idle": "animation.moltres.ground_idle",
+        "moltresmodel.bipedwalkanimation": "animation.moltresmodel.bipedwalkanimation",
+        "moltres.air_idle": "animation.moltres.air_idle",
+        "moltres.air_fly": "animation.moltres.air_fly",
+        "controller.animation.cobblemon.moltres": "controller.animation.cobblemon.moltres"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.moltres_emissive",
+        "controller.render.cobblemon.moltres"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.moltres": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_moltres = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

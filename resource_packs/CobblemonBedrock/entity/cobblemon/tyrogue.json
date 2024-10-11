@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:tyrogue",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0236_tyrogue/tyrogue",
+        "shiny": "textures/pokemon/0236_tyrogue/tyrogue_shiny"
+      },
+      "geometry": {
+        "base": "geometry.tyrogue.geo",
+        "shiny": "geometry.tyrogue.geo"
+      },
+      "animations": {
+        "tyrogue.sleep": "animation.tyrogue.sleep",
+        "tyroguemodel.singlebonelook": "animation.tyroguemodel.singlebonelook",
+        "tyrogue.ground_idle": "animation.tyrogue.ground_idle",
+        "tyrogue.ground_walk": "animation.tyrogue.ground_walk",
+        "tyrogue.battle_idle": "animation.tyrogue.battle_idle",
+        "tyrogue.shoulder_left": "animation.tyrogue.shoulder_left",
+        "tyrogue.shoulderleft.transform": "animation.tyrogue.shoulderleft.transform",
+        "tyrogue.shoulder_right": "animation.tyrogue.shoulder_right",
+        "tyrogue.shoulderright.transform": "animation.tyrogue.shoulderright.transform",
+        "tyrogue.blink": "animation.tyrogue.blink",
+        "controller.animation.tyrogue.blink": "controller.animation.tyrogue.blink",
+        "controller.animation.cobblemon.tyrogue": "controller.animation.cobblemon.tyrogue"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.tyrogue"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.tyrogue.blink",
+          {
+            "controller.animation.cobblemon.tyrogue": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_tyrogue = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

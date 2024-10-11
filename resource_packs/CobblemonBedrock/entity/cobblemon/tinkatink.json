@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:tinkatink",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0957_tinkatink/tinkatink",
+        "shiny": "textures/pokemon/0957_tinkatink/tinkatink_shiny"
+      },
+      "geometry": {
+        "base": "geometry.tinkatink.geo",
+        "shiny": "geometry.tinkatink.geo"
+      },
+      "animations": {
+        "tinkatink.sleep": "animation.tinkatink.sleep",
+        "tinkatinkmodel.singlebonelook": "animation.tinkatinkmodel.singlebonelook",
+        "tinkatink.ground_idle": "animation.tinkatink.ground_idle",
+        "tinkatink.ground_walk": "animation.tinkatink.ground_walk",
+        "tinkatink.battle_idle": "animation.tinkatink.battle_idle",
+        "tinkatink.shoulder_left": "animation.tinkatink.shoulder_left",
+        "tinkatink.shoulderleft.transform": "animation.tinkatink.shoulderleft.transform",
+        "tinkatink.shoulder_right": "animation.tinkatink.shoulder_right",
+        "tinkatink.shoulderright.transform": "animation.tinkatink.shoulderright.transform",
+        "tinkatink.blink": "animation.tinkatink.blink",
+        "controller.animation.tinkatink.blink": "controller.animation.tinkatink.blink",
+        "controller.animation.cobblemon.tinkatink": "controller.animation.cobblemon.tinkatink"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.tinkatink"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.tinkatink.blink",
+          {
+            "controller.animation.cobblemon.tinkatink": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_tinkatink = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

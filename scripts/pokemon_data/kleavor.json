@@ -1,0 +1,174 @@
+{
+  "minLevel": 45,
+  "maxLevel": 50,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "day",
+      "minLevel": 45,
+      "maxLevel": 50
+    }
+  },
+  "name": "Kleavor",
+  "nationalPokedexNumber": 900,
+  "baseStats": {
+    "hp": 70,
+    "attack": 130,
+    "defence": 95,
+    "special_attack": 45,
+    "special_defence": 75,
+    "speed": 85
+  },
+  "maleRatio": 0.5,
+  "catchRate": 115,
+  "baseScale": 0.8,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 0,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 1.2,
+    "height": 2.0,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "rock",
+  "abilities": [
+    "swarm",
+    "sheerforce",
+    "h:sharpness"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:leer",
+    "1:quickattack",
+    "4:furycutter",
+    "8:falseswipe",
+    "12:smackdown",
+    "16:doubleteam",
+    "20:doublehit",
+    "24:slash",
+    "28:focusenergy",
+    "32:agility",
+    "36:rockslide",
+    "40:xscissor",
+    "44:swordsdance",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:batonpass",
+    "tm:brickbreak",
+    "tm:bugbuzz",
+    "tm:closecombat",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:gigaimpact",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:lightscreen",
+    "tm:pounce",
+    "tm:protect",
+    "tm:rest",
+    "tm:reversal",
+    "tm:rockblast",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:sandstorm",
+    "tm:scaryface",
+    "tm:sleeptalk",
+    "tm:stealthrock",
+    "tm:stoneedge",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:tailwind",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:trailblaze",
+    "tm:uturn",
+    "tm:xscissor"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.kleavor.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:stone_axe",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:wepear_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 0,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 18.0,
+  "weight": 890.0
+}

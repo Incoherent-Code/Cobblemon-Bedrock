@@ -1,0 +1,282 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.xatu.sleep": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "-1+0.05*(math.sin(q.anim_time*30*4+45)*1+1)",
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            12.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "-0.3+0.02*(math.sin(q.anim_time*30*4+45)*1+1)",
+            "-0.4+0.02*(math.sin(q.anim_time*30*4+45)*1+1)"
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            135.0,
+            -20.0,
+            -97.2
+          ]
+        },
+        "wing_right2": {
+          "rotation": [
+            -5.0,
+            -5.0,
+            30.0
+          ]
+        },
+        "wing_right3": {
+          "rotation": [
+            0.0,
+            -2.5,
+            42.7
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            135.0,
+            20.0,
+            97.2
+          ]
+        },
+        "wing_left2": {
+          "rotation": [
+            -5.0,
+            5.0,
+            -30.0
+          ]
+        },
+        "wing_left3": {
+          "rotation": [
+            1E-05,
+            2.5,
+            -42.7
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            0.0,
+            20.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            0.0,
+            -20.0,
+            0.0
+          ]
+        },
+        "feather_left": {
+          "rotation": [
+            "-80-0.5*(math.sin(q.anim_time*30*4+45)*1+1)",
+            20.0,
+            0.0
+          ]
+        },
+        "feather_right": {
+          "rotation": [
+            "-80-0.5*(math.sin(q.anim_time*30*4+45)*1+1)",
+            -20.0,
+            0.0
+          ]
+        },
+        "feather_right2": {
+          "rotation": [
+            "-10-0.5*(math.sin(q.anim_time*30*4+45)*1+1)",
+            0.0,
+            0.0
+          ]
+        },
+        "feather_left2": {
+          "rotation": [
+            "-10-0.5*(math.sin(q.anim_time*30*4+45)*1+1)",
+            0.0,
+            0.0
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            -0.1,
+            0.0,
+            -0.1
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.1,
+            0.0,
+            -0.1
+          ]
+        }
+      }
+    },
+    "animation.xatu.ground_idle": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "position": [
+            0.0,
+            "0.05*(math.sin(q.anim_time*30*4+45)*1+1)",
+            0.0
+          ]
+        },
+        "head": {
+          "position": [
+            0.0,
+            "0.02*(math.sin(q.anim_time*30*4+45)*1+1)",
+            "0.02*(math.sin(q.anim_time*30*4+45)*1+1)"
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            135.0,
+            -20.0,
+            -97.2
+          ]
+        },
+        "wing_right2": {
+          "rotation": [
+            -5.0,
+            -5.0,
+            30.0
+          ]
+        },
+        "wing_right3": {
+          "rotation": [
+            0.0,
+            -2.5,
+            42.7
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            135.0,
+            20.0,
+            97.2
+          ]
+        },
+        "wing_left2": {
+          "rotation": [
+            -5.0,
+            5.0,
+            -30.0
+          ]
+        },
+        "wing_left3": {
+          "rotation": [
+            1E-05,
+            2.5,
+            -42.7
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            0.0,
+            20.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            0.0,
+            -20.0,
+            0.0
+          ]
+        },
+        "feather_left": {
+          "rotation": [
+            "-65-0.5*(math.sin(q.anim_time*30*4+45)*1+1)",
+            20.0,
+            0.0
+          ]
+        },
+        "feather_right": {
+          "rotation": [
+            "-65-0.5*(math.sin(q.anim_time*30*4+45)*1+1)",
+            -20.0,
+            0.0
+          ]
+        },
+        "feather_right2": {
+          "rotation": [
+            "-10-0.5*(math.sin(q.anim_time*30*4+45)*1+1)",
+            0.0,
+            0.0
+          ]
+        },
+        "feather_left2": {
+          "rotation": [
+            "-10-0.5*(math.sin(q.anim_time*30*4+45)*1+1)",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.xatu.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

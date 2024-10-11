@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "minecraft:bone_meal"
+      },
+      {
+        "item": "minecraft:rotten_flesh"
+      },
+      {
+        "item": "minecraft:dirt"
+      },
+      {
+        "item": "minecraft:paper"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:bone_meal"
+      },
+      {
+        "item": "minecraft:rotten_flesh"
+      },
+      {
+        "item": "minecraft:dirt"
+      },
+      {
+        "item": "minecraft:paper"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:mulch_base"
+    },
+    "description": {
+      "identifier": "cobblemon:mulch_base_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

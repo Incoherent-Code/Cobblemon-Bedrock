@@ -1,0 +1,87 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.grovyle.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_grovyle_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_grovyle_blink = q.life_time + 1; return (q.life_time > v.next_quirk_grovyle_blink) && (v.state_of_grovyle == 1 || v.state_of_grovyle == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "grovyle.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_grovyle_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_grovyle_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.grovyle": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "grovyle.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_grovyle = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "grovylemodel.singlebonelook",
+            "grovyle.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_grovyle = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "grovylemodel.singlebonelook",
+            "grovyle.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_grovyle = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

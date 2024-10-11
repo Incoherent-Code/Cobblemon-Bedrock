@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "minecraft:mud"
+      },
+      {
+        "item": "minecraft:dirt"
+      },
+      {
+        "item": "minecraft:moss_block"
+      },
+      {
+        "item": "minecraft:clay"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:mud"
+      },
+      {
+        "item": "minecraft:dirt"
+      },
+      {
+        "item": "minecraft:moss_block"
+      },
+      {
+        "item": "minecraft:clay"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:peat_block"
+    },
+    "description": {
+      "identifier": "cobblemon:peat_block_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.0",
+  "render_controllers": {
+    "controller.render.cobblemon.alcremie": {
+      "arrays": {
+        "textures": {
+          "array.cobblemon_texture": [
+            "texture.base",
+            "texture.decoration_berry",
+            "texture.decoration_strawberry",
+            "texture.decoration_clover",
+            "texture.decoration_flower",
+            "texture.decoration_love",
+            "texture.decoration_ribbon",
+            "texture.decoration_star",
+            "texture.cream_vanilla",
+            "texture.cream_caramel_swirl",
+            "texture.cream_ruby",
+            "texture.cream_matcha",
+            "texture.cream_mint",
+            "texture.cream_lemon",
+            "texture.cream_salted",
+            "texture.cream_ruby_swirl",
+            "texture.cream_rainbow_swirl",
+            "texture.shiny"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.decoration_berry",
+            "geometry.decoration_strawberry",
+            "geometry.decoration_clover",
+            "geometry.decoration_flower",
+            "geometry.decoration_love",
+            "geometry.decoration_ribbon",
+            "geometry.decoration_star",
+            "geometry.cream_vanilla",
+            "geometry.cream_caramel_swirl",
+            "geometry.cream_ruby",
+            "geometry.cream_matcha",
+            "geometry.cream_mint",
+            "geometry.cream_lemon",
+            "geometry.cream_salted",
+            "geometry.cream_ruby_swirl",
+            "geometry.cream_rainbow_swirl",
+            "geometry.shiny"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.cobblemon_texture[query.variant]"
+      ]
+    },
+    "controller.render.cobblemon.alcremie_decoration": {
+      "arrays": {
+        "textures": {
+          "array.variation_decoration": [
+            "texture.blank",
+            "texture.decoration_berry_decoration",
+            "texture.decoration_strawberry_decoration",
+            "texture.decoration_clover_decoration",
+            "texture.decoration_flower_decoration",
+            "texture.decoration_love_decoration",
+            "texture.decoration_ribbon_decoration",
+            "texture.decoration_star_decoration"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.decoration_berry",
+            "geometry.decoration_strawberry",
+            "geometry.decoration_clover",
+            "geometry.decoration_flower",
+            "geometry.decoration_love",
+            "geometry.decoration_ribbon",
+            "geometry.decoration_star",
+            "geometry.cream_vanilla",
+            "geometry.cream_caramel_swirl",
+            "geometry.cream_ruby",
+            "geometry.cream_matcha",
+            "geometry.cream_mint",
+            "geometry.cream_lemon",
+            "geometry.cream_salted",
+            "geometry.cream_ruby_swirl",
+            "geometry.cream_rainbow_swirl",
+            "geometry.shiny"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.variation_decoration[query.variant]"
+      ]
+    }
+  }
+}

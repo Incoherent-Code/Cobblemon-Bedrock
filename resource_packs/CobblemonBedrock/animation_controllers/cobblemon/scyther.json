@@ -1,0 +1,96 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.scyther.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_scyther_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_scyther_blink = q.life_time + 1; return (q.life_time > v.next_quirk_scyther_blink) && (v.state_of_scyther == 0 || v.state_of_scyther == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "scyther.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_scyther_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_scyther_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.scyther": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "scythermodel.singlebonelook",
+            "scyther.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_scyther = 0; return (q.is_moving && !q.is_swimming)|| q.is_swimming;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "scythermodel.singlebonelook",
+            "scythermodel.bipedwalkanimation",
+            "scyther.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_scyther = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "scyther.air_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_scyther = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "scyther.air_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_scyther = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.0",
+  "render_controllers": {
+    "controller.render.cobblemon.ceruledge": {
+      "arrays": {
+        "textures": {
+          "array.cobblemon_texture": [
+            "texture.base",
+            "texture.shiny"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "blade_right": "!(v.state_of_ceruledge == 0) && !(v.state_of_ceruledge == 1) && !(v.state_of_ceruledge == 2)"
+        },
+        {
+          "blade_left": "!(v.state_of_ceruledge == 0) && !(v.state_of_ceruledge == 1) && !(v.state_of_ceruledge == 2)"
+        },
+        {
+          "passive_blade_right": "!(v.state_of_ceruledge == 3)"
+        },
+        {
+          "passive_blade_left": "!(v.state_of_ceruledge == 3)"
+        }
+      ],
+      "textures": [
+        "array.cobblemon_texture[query.variant]"
+      ]
+    },
+    "controller.render.cobblemon.ceruledge_glow": {
+      "arrays": {
+        "textures": {
+          "array.variation_glow": [
+            "texture.base_glow",
+            "texture.shiny_glow"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.emissive"
+        }
+      ],
+      "part_visibility": [
+        {
+          "blade_right": "!(v.state_of_ceruledge == 0) && !(v.state_of_ceruledge == 1) && !(v.state_of_ceruledge == 2)"
+        },
+        {
+          "blade_left": "!(v.state_of_ceruledge == 0) && !(v.state_of_ceruledge == 1) && !(v.state_of_ceruledge == 2)"
+        },
+        {
+          "passive_blade_right": "!(v.state_of_ceruledge == 3)"
+        },
+        {
+          "passive_blade_left": "!(v.state_of_ceruledge == 3)"
+        }
+      ],
+      "textures": [
+        "array.variation_glow[query.variant]"
+      ]
+    }
+  }
+}

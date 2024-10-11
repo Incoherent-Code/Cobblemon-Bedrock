@@ -1,0 +1,199 @@
+{
+  "minLevel": 16,
+  "maxLevel": 42,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 16,
+      "maxLevel": 42
+    }
+  },
+  "name": "Raboot",
+  "nationalPokedexNumber": 814,
+  "baseStats": {
+    "hp": 65,
+    "attack": 86,
+    "defence": 60,
+    "special_attack": 55,
+    "special_defence": 60,
+    "speed": 94
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 0.7,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.75,
+    "height": 1.4,
+    "fixed": false
+  },
+  "primaryType": "fire",
+  "abilities": [
+    "blaze",
+    "h:libero"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:ember",
+    "1:growl",
+    "1:quickattack",
+    "1:tackle",
+    "12:doublekick",
+    "19:flamecharge",
+    "24:agility",
+    "30:headbutt",
+    "36:counter",
+    "42:bounce",
+    "48:doubleedge",
+    "tm:acrobatics",
+    "tm:agility",
+    "tm:allyswitch",
+    "tm:assurance",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:blazekick",
+    "tm:bounce",
+    "tm:bulkup",
+    "tm:electroball",
+    "tm:endure",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:firefang",
+    "tm:firepledge",
+    "tm:firespin",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flareblitz",
+    "tm:focusenergy",
+    "tm:gunkshot",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:megakick",
+    "tm:mudshot",
+    "tm:overheat",
+    "tm:protect",
+    "tm:rest",
+    "tm:reversal",
+    "tm:round",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:trailblaze",
+    "tm:uturn",
+    "tm:workup",
+    "tutor:firepledge"
+  ],
+  "evolutions": [
+    {
+      "id": "raboot_cinderace",
+      "variant": "level_up",
+      "result": "cinderace",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "pyroball"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 35
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.raboot.desc"
+  ],
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:rabbit_hide",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:rabbit"
+      },
+      {
+        "item": "minecraft:rabbit_foot",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:charcoal_stick",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "field",
+    "human_like"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 6.0,
+  "weight": 90.0
+}

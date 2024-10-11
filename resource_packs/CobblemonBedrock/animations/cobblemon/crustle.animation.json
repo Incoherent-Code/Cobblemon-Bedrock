@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.crustlemodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.crustle.ground_idle": {
+      "loop": true,
+      "bones": {
+        "leftarm": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand2": {
+          "rotation": [
+            55.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand": {
+          "rotation": [
+            55.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

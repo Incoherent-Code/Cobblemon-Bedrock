@@ -1,0 +1,64 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:squawkabilly",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0931_squawkabilly/squawkabilly_gray",
+        "squawkabilly_color_blue": "textures/pokemon/0931_squawkabilly/squawkabilly_blue",
+        "squawkabilly_color_gray": "textures/pokemon/0931_squawkabilly/squawkabilly_gray",
+        "squawkabilly_color_green": "textures/pokemon/0931_squawkabilly/squawkabilly_green",
+        "squawkabilly_color_yellow": "textures/pokemon/0931_squawkabilly/squawkabilly_yellow",
+        "squawkabilly_color_blue_shiny": "textures/pokemon/0931_squawkabilly/squawkabilly_blue_shiny",
+        "squawkabilly_color_gray_shiny": "textures/pokemon/0931_squawkabilly/squawkabilly_gray_shiny",
+        "squawkabilly_color_green_shiny": "textures/pokemon/0931_squawkabilly/squawkabilly_green_shiny",
+        "squawkabilly_color_yellow_shiny": "textures/pokemon/0931_squawkabilly/squawkabilly_yellow_shiny"
+      },
+      "geometry": {
+        "base": "geometry.squawkabilly.geo",
+        "squawkabilly_color_blue": "geometry.squawkabilly.geo",
+        "squawkabilly_color_gray": "geometry.squawkabilly.geo",
+        "squawkabilly_color_green": "geometry.squawkabilly.geo",
+        "squawkabilly_color_yellow": "geometry.squawkabilly.geo",
+        "squawkabilly_color_blue_shiny": "geometry.squawkabilly.geo",
+        "squawkabilly_color_gray_shiny": "geometry.squawkabilly.geo",
+        "squawkabilly_color_green_shiny": "geometry.squawkabilly.geo",
+        "squawkabilly_color_yellow_shiny": "geometry.squawkabilly.geo"
+      },
+      "animations": {
+        "squawkabillymodel.singlebonelook": "animation.squawkabillymodel.singlebonelook",
+        "squawkabilly.ground_idle": "animation.squawkabilly.ground_idle",
+        "squawkabilly.shoulderleft.transform": "animation.squawkabilly.shoulderleft.transform",
+        "squawkabilly.shoulderright.transform": "animation.squawkabilly.shoulderright.transform",
+        "squawkabilly.blink": "animation.squawkabilly.blink",
+        "controller.animation.squawkabilly.blink": "controller.animation.squawkabilly.blink",
+        "controller.animation.cobblemon.squawkabilly": "controller.animation.cobblemon.squawkabilly"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.squawkabilly"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.squawkabilly.blink",
+          {
+            "controller.animation.cobblemon.squawkabilly": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5 || q.variant == 6 || q.variant == 7 || q.variant == 8"
+          }
+        ],
+        "initialize": [
+          "v.state_of_squawkabilly = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

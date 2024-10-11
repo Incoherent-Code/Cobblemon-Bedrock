@@ -1,0 +1,39 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " RR",
+      "SSR",
+      "SS "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:sand"
+      },
+      "R": {
+        "item": "minecraft:rabbit_hide"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:sand"
+      },
+      {
+        "item": "minecraft:rabbit_hide"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:soft_sand"
+    },
+    "description": {
+      "identifier": "cobblemon:soft_sand_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

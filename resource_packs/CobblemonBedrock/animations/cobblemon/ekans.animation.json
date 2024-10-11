@@ -1,0 +1,141 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.ekans.sleep": {
+      "loop": true,
+      "bones": {
+        "ekans": {
+          "position": [
+            0.0,
+            3.0,
+            7.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            42.91333,
+            68.7346,
+            43.12956
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            -10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            -0.1,
+            0.0,
+            0.0
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.1,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -7.5,
+            55.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            -3.9416,
+            -55.3577,
+            -4.33386
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            20.41084,
+            -54.0129,
+            -21.47388
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            0.0,
+            -62.5,
+            0.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            0.0,
+            -55.0,
+            0.0
+          ]
+        },
+        "tail6": {
+          "rotation": [
+            0.0,
+            -57.5,
+            0.0
+          ]
+        },
+        "rattle": {
+          "rotation": [
+            -7.5,
+            -62.5,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.ekans.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

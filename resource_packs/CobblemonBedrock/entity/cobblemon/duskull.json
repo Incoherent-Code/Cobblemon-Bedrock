@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:duskull",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0355_duskull/duskull",
+        "shiny": "textures/pokemon/0355_duskull/duskull_shiny",
+        "base_emissive": "textures/pokemon/0355_duskull/duskull_emissive",
+        "shiny_emissive": "textures/pokemon/0355_duskull/duskull_emissive"
+      },
+      "geometry": {
+        "base": "geometry.duskull.geo",
+        "shiny": "geometry.duskull.geo"
+      },
+      "animations": {
+        "duskull.sleep": "animation.duskull.sleep",
+        "duskull.ground_idle": "animation.duskull.ground_idle",
+        "duskull.ground_walk": "animation.duskull.ground_walk",
+        "duskull.air_idle": "animation.duskull.air_idle",
+        "duskull.air_fly": "animation.duskull.air_fly",
+        "duskull.battle_idle": "animation.duskull.battle_idle",
+        "controller.animation.cobblemon.duskull": "controller.animation.cobblemon.duskull"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.duskull_emissive",
+        "controller.render.cobblemon.duskull"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.duskull": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_duskull = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

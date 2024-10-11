@@ -1,0 +1,60 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:ampharos",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0181_ampharos/ampharos",
+        "shiny": "textures/pokemon/0181_ampharos/ampharos_shiny",
+        "base_emissive": "textures/pokemon/0181_ampharos/ampharos_emissive",
+        "shiny_emissive": "textures/pokemon/0181_ampharos/ampharos_emissive"
+      },
+      "geometry": {
+        "base": "geometry.ampharos.geo",
+        "shiny": "geometry.ampharos.geo"
+      },
+      "animations": {
+        "ampharos.sleep": "animation.ampharos.sleep",
+        "ampharosmodel.singlebonelook": "animation.ampharosmodel.singlebonelook",
+        "ampharos.ground_idle": "animation.ampharos.ground_idle",
+        "ampharos.ground_walk": "animation.ampharos.ground_walk",
+        "ampharos.battle_idle": "animation.ampharos.battle_idle",
+        "ampharos.blink": "animation.ampharos.blink",
+        "controller.animation.ampharos.blink": "controller.animation.ampharos.blink",
+        "ampharos.quirk_glow": "animation.ampharos.quirk_glow",
+        "controller.animation.ampharos.glow": "controller.animation.ampharos.glow",
+        "ampharos.quirk_toes": "animation.ampharos.quirk_toes",
+        "controller.animation.ampharos.quirk": "controller.animation.ampharos.quirk",
+        "controller.animation.cobblemon.ampharos": "controller.animation.cobblemon.ampharos"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.ampharos_emissive",
+        "controller.render.cobblemon.ampharos"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.ampharos.blink",
+          "controller.animation.ampharos.glow",
+          "controller.animation.ampharos.quirk",
+          {
+            "controller.animation.cobblemon.ampharos": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_ampharos = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

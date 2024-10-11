@@ -1,0 +1,32 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:egg",
+          "weight": 33
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:oval_stone",
+          "weight": 25
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:lucky_egg",
+          "weight": 25
+        },
+        {
+          "type": "empty",
+          "weight": 17
+        }
+      ]
+    }
+  ]
+}

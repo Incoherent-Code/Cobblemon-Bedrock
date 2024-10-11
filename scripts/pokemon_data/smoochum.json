@@ -1,0 +1,283 @@
+{
+  "minLevel": 6,
+  "maxLevel": 31,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 6,
+      "maxLevel": 31
+    },
+    "1": {
+      "minLevel": 6,
+      "maxLevel": 31
+    }
+  },
+  "name": "Smoochum",
+  "nationalPokedexNumber": 238,
+  "baseStats": {
+    "hp": 45,
+    "attack": 30,
+    "defence": 15,
+    "special_attack": 85,
+    "special_defence": 65,
+    "speed": 65
+  },
+  "maleRatio": 0.0,
+  "catchRate": 45,
+  "baseScale": 0.5,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.9,
+    "fixed": false
+  },
+  "primaryType": "ice",
+  "secondaryType": "psychic",
+  "abilities": [
+    "oblivious",
+    "forewarn",
+    "h:hydration"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:lick",
+    "1:pound",
+    "4:powdersnow",
+    "8:copycat",
+    "12:confusion",
+    "16:covet",
+    "20:sing",
+    "21:heartstamp",
+    "24:faketears",
+    "28:icepunch",
+    "31:luckychant",
+    "32:psychic",
+    "35:avalanche",
+    "36:sweetkiss",
+    "40:meanlook",
+    "44:perishsong",
+    "48:blizzard",
+    "egg:captivate",
+    "egg:fakeout",
+    "egg:icepunch",
+    "egg:meditate",
+    "egg:miracleeye",
+    "egg:nastyplot",
+    "egg:psychup",
+    "egg:roleplay",
+    "egg:wakeupslap",
+    "egg:wish",
+    "tm:attract",
+    "tm:auroraveil",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:calmmind",
+    "tm:captivate",
+    "tm:charm",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:drainingkiss",
+    "tm:dreameater",
+    "tm:echoedvoice",
+    "tm:encore",
+    "tm:endure",
+    "tm:facade",
+    "tm:faketears",
+    "tm:flash",
+    "tm:fling",
+    "tm:frostbreath",
+    "tm:frustration",
+    "tm:grassknot",
+    "tm:hail",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:icebeam",
+    "tm:icepunch",
+    "tm:icywind",
+    "tm:lightscreen",
+    "tm:magicroom",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:metronome",
+    "tm:nastyplot",
+    "tm:naturalgift",
+    "tm:payback",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychup",
+    "tm:psyshock",
+    "tm:raindance",
+    "tm:recycle",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:secretpower",
+    "tm:shadowball",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:storedpower",
+    "tm:substitute",
+    "tm:swagger",
+    "tm:thief",
+    "tm:toxic",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:uproar",
+    "tm:waterpulse",
+    "tm:wonderroom",
+    "tm:zenheadbutt",
+    "tutor:attract",
+    "tutor:blizzard",
+    "tutor:bodyslam",
+    "tutor:captivate",
+    "tutor:confusion",
+    "tutor:counter",
+    "tutor:covet",
+    "tutor:curse",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:dreameater",
+    "tutor:dynamicpunch",
+    "tutor:endure",
+    "tutor:frustration",
+    "tutor:healbell",
+    "tutor:helpinghand",
+    "tutor:hiddenpower",
+    "tutor:icepunch",
+    "tutor:icywind",
+    "tutor:lick",
+    "tutor:magiccoat",
+    "tutor:magicroom",
+    "tutor:meanlook",
+    "tutor:meditate",
+    "tutor:megakick",
+    "tutor:megapunch",
+    "tutor:metronome",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:nightmare",
+    "tutor:perishsong",
+    "tutor:pound",
+    "tutor:powdersnow",
+    "tutor:protect",
+    "tutor:psychic",
+    "tutor:psychup",
+    "tutor:raindance",
+    "tutor:recycle",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:roleplay",
+    "tutor:seismictoss",
+    "tutor:shadowball",
+    "tutor:signalbeam",
+    "tutor:sing",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:substitute",
+    "tutor:swagger",
+    "tutor:sweetkiss",
+    "tutor:sweetscent",
+    "tutor:thief",
+    "tutor:toxic",
+    "tutor:trick",
+    "tutor:uproar",
+    "tutor:waterpulse",
+    "tutor:wonderroom",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "smoochum_jynx",
+      "variant": "level_up",
+      "result": "jynx",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 30
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.smoochum.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:aspear_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 25,
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 4.0,
+  "weight": 60.0
+}

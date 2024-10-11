@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:feraligatr",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0160_feraligatr/feraligatr",
+        "shiny": "textures/pokemon/0160_feraligatr/feraligatr_shiny"
+      },
+      "geometry": {
+        "base": "geometry.feraligatr.geo",
+        "shiny": "geometry.feraligatr.geo"
+      },
+      "animations": {
+        "feraligatr.sleep": "animation.feraligatr.sleep",
+        "feraligatr.water_sleep": "animation.feraligatr.water_sleep",
+        "feraligatrmodel.singlebonelook": "animation.feraligatrmodel.singlebonelook",
+        "feraligatr.ground_idle": "animation.feraligatr.ground_idle",
+        "feraligatr.ground_walk": "animation.feraligatr.ground_walk",
+        "feraligatr.water_idle": "animation.feraligatr.water_idle",
+        "feraligatr.water_swim": "animation.feraligatr.water_swim",
+        "feraligatr.battle_idle": "animation.feraligatr.battle_idle",
+        "feraligatr.watersurface_idle": "animation.feraligatr.watersurface_idle",
+        "feraligatr.water_surface_idle.transform": "animation.feraligatr.water_surface_idle.transform",
+        "feraligatr.watersurface_swim": "animation.feraligatr.watersurface_swim",
+        "feraligatr.water_surface_swim.transform": "animation.feraligatr.water_surface_swim.transform",
+        "feraligatr.blink": "animation.feraligatr.blink",
+        "controller.animation.feraligatr.blink": "controller.animation.feraligatr.blink",
+        "controller.animation.cobblemon.feraligatr": "controller.animation.cobblemon.feraligatr"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.feraligatr"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.feraligatr.blink",
+          {
+            "controller.animation.cobblemon.feraligatr": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_feraligatr = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

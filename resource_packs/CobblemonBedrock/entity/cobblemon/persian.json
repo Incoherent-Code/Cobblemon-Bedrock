@@ -1,0 +1,66 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:persian",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0053_persian/persian",
+        "shiny": "textures/pokemon/0053_persian/persian_shiny",
+        "alolan": "textures/pokemon/0053_persian/persian_alolan",
+        "alolan_shiny": "textures/pokemon/0053_persian/persian_alolan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.persian.geo",
+        "shiny": "geometry.persian.geo",
+        "alolan": "geometry.persian_alolan.geo",
+        "alolan_shiny": "geometry.persian_alolan.geo"
+      },
+      "animations": {
+        "persianmodel.singlebonelook": "animation.persianmodel.singlebonelook",
+        "persian.ground_idle": "animation.persian.ground_idle",
+        "persian.sleep": "animation.persian.sleep",
+        "persianmodel.quadrupedwalkanimation": "animation.persianmodel.quadrupedwalkanimation",
+        "persian.blink": "animation.persian.blink",
+        "controller.animation.persian.blink": "controller.animation.persian.blink",
+        "controller.animation.cobblemon.persian": "controller.animation.cobblemon.persian",
+        "persianalolanmodel.singlebonelook": "animation.persianalolanmodel.singlebonelook",
+        "persian_alolan.ground_idle": "animation.persian_alolan.ground_idle",
+        "persian_alolan.sleep": "animation.persian_alolan.sleep",
+        "persianalolanmodel.quadrupedwalkanimation": "animation.persianalolanmodel.quadrupedwalkanimation",
+        "persian_alolan.blink": "animation.persian_alolan.blink",
+        "controller.animation.persian_alolan.blink": "controller.animation.persian_alolan.blink",
+        "controller.animation.cobblemon.persian_alolan": "controller.animation.cobblemon.persian_alolan"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.persian"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.persian.blink",
+          {
+            "controller.animation.cobblemon.persian": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.persian_alolan.blink",
+          {
+            "controller.animation.cobblemon.persian_alolan": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_persian = -1.0;",
+          "v.state_of_persian_alolan = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

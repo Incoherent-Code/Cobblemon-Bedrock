@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:primeape",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0057_primeape/primeape",
+        "shiny": "textures/pokemon/0057_primeape/primeape_shiny"
+      },
+      "geometry": {
+        "base": "geometry.primeape.geo",
+        "shiny": "geometry.primeape.geo"
+      },
+      "animations": {
+        "primeape.ground_idle": "animation.primeape.ground_idle",
+        "primeape.sleep": "animation.primeape.sleep",
+        "primeape.ground_walk": "animation.primeape.ground_walk",
+        "primeape.blink": "animation.primeape.blink",
+        "controller.animation.primeape.blink": "controller.animation.primeape.blink",
+        "controller.animation.cobblemon.primeape": "controller.animation.cobblemon.primeape"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.primeape"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.primeape.blink",
+          {
+            "controller.animation.cobblemon.primeape": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_primeape = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

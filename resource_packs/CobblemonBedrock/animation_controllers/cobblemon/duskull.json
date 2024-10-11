@@ -1,0 +1,152 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.duskull": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "duskull.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_duskull = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "hover": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "fly": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(q.is_moving|| !q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "duskull.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_duskull = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "hover": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "fly": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(q.is_moving|| !q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "duskull.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_duskull = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "hover": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "fly": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(q.is_moving|| !q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "duskull.air_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_duskull = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "fly": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(q.is_moving|| !q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "duskull.air_fly"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_duskull = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "hover": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "battleidle": "(q.is_moving|| !q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "duskull.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_duskull = 5; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "hover": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "fly": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

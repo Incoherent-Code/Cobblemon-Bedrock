@@ -1,0 +1,310 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.maushold.blink1": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_maushold_blink1 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_maushold_blink1 = q.life_time + 1; return (q.life_time > v.next_quirk_maushold_blink1) && (v.state_of_maushold == 0 || v.state_of_maushold == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "maushold_four.blink1"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_maushold_blink1 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_maushold_blink1 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.maushold.blink2": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_maushold_blink2 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_maushold_blink2 = q.life_time + 1; return (q.life_time > v.next_quirk_maushold_blink2) && (v.state_of_maushold == 0 || v.state_of_maushold == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "maushold_four.blink2"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_maushold_blink2 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_maushold_blink2 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.maushold.blink3": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_maushold_blink3 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_maushold_blink3 = q.life_time + 1; return (q.life_time > v.next_quirk_maushold_blink3) && (v.state_of_maushold == 0 || v.state_of_maushold == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "maushold_four.blink3"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_maushold_blink3 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_maushold_blink3 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.maushold": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "mausholdmodel.singlebonelook",
+            "maushold_four.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_maushold = 0; return q.is_moving;"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "mausholdmodel.singlebonelook",
+            "maushold_four.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_maushold = 1; return !q.is_moving;"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "sleep": {
+          "animations": [
+            "maushold_four.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_maushold = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.mausholdfour.blink1": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mausholdfour_blink1 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_mausholdfour_blink1 = q.life_time + 1; return (q.life_time > v.next_quirk_mausholdfour_blink1) && (v.state_of_mausholdfour == 0 || v.state_of_mausholdfour == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "maushold_four.blink1"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mausholdfour_blink1 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_mausholdfour_blink1 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mausholdfour.blink2": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mausholdfour_blink2 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_mausholdfour_blink2 = q.life_time + 1; return (q.life_time > v.next_quirk_mausholdfour_blink2) && (v.state_of_mausholdfour == 0 || v.state_of_mausholdfour == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "maushold_four.blink2"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mausholdfour_blink2 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_mausholdfour_blink2 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mausholdfour.blink3": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mausholdfour_blink3 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_mausholdfour_blink3 = q.life_time + 1; return (q.life_time > v.next_quirk_mausholdfour_blink3) && (v.state_of_mausholdfour == 0 || v.state_of_mausholdfour == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "maushold_four.blink3"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mausholdfour_blink3 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_mausholdfour_blink3 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mausholdfour.blink4": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mausholdfour_blink4 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_mausholdfour_blink4 = q.life_time + 1; return (q.life_time > v.next_quirk_mausholdfour_blink4) && (v.state_of_mausholdfour == 0 || v.state_of_mausholdfour == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "maushold_four.blink4"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mausholdfour_blink4 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_mausholdfour_blink4 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.mausholdfour": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "mausholdfourmodel.singlebonelook",
+            "maushold_four.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_mausholdfour = 0; return q.is_moving;"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "mausholdfourmodel.singlebonelook",
+            "maushold_four.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_mausholdfour = 1; return !q.is_moving;"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "sleep": {
+          "animations": [
+            "maushold_four.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_mausholdfour = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

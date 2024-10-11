@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:deerling",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0585_deerling/deerling_spring",
+        "shiny": "textures/pokemon/0585_deerling/deerling_spring_shiny",
+        "autumn": "textures/pokemon/0585_deerling/deerling_autumn",
+        "summer": "textures/pokemon/0585_deerling/deerling_summer",
+        "winter": "textures/pokemon/0585_deerling/deerling_winter",
+        "autumn_shiny": "textures/pokemon/0585_deerling/deerling_autumn_shiny",
+        "summer_shiny": "textures/pokemon/0585_deerling/deerling_summer_shiny",
+        "winter_shiny": "textures/pokemon/0585_deerling/deerling_winter_shiny"
+      },
+      "geometry": {
+        "base": "geometry.deerling.geo",
+        "shiny": "geometry.deerling.geo",
+        "autumn": "geometry.deerling.geo",
+        "summer": "geometry.deerling.geo",
+        "winter": "geometry.deerling.geo",
+        "autumn_shiny": "geometry.deerling.geo",
+        "summer_shiny": "geometry.deerling.geo",
+        "winter_shiny": "geometry.deerling.geo"
+      },
+      "animations": {
+        "deerlingmodel.singlebonelook": "animation.deerlingmodel.singlebonelook",
+        "deerlingmodel.quadrupedwalkanimation": "animation.deerlingmodel.quadrupedwalkanimation",
+        "controller.animation.cobblemon.deerling": "controller.animation.cobblemon.deerling"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.deerling"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.deerling": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5 || q.variant == 6 || q.variant == 7"
+          }
+        ],
+        "initialize": [
+          "v.state_of_deerling = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

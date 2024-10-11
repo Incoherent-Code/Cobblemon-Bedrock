@@ -1,0 +1,23 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:ore_feature": {
+    "count": 4,
+    "description": {
+      "identifier": "cobblemon:moon_stone_rare_feature"
+    },
+    "replace_rules": [
+      {
+        "places_block": "cobblemon:moon_stone_ore",
+        "may_replace": ["minecraft:stone"]
+      },
+      {
+        "places_block": "cobblemon:deepslate_moon_stone_ore",
+        "may_replace": ["minecraft:deepslate"]
+      },
+      {
+        "places_block": "cobblemon:dripstone_moon_stone_ore",
+        "may_replace": ["minecraft:dripstone_block"]
+      }
+    ]
+  }
+}

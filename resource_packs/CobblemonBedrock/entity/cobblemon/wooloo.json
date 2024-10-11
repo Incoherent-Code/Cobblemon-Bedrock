@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:wooloo",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0831_wooloo/wooloo",
+        "shiny": "textures/pokemon/0831_wooloo/wooloo_shiny"
+      },
+      "geometry": {
+        "base": "geometry.wooloo.geo",
+        "shiny": "geometry.wooloo.geo"
+      },
+      "animations": {
+        "wooloomodel.singlebonelook": "animation.wooloomodel.singlebonelook",
+        "wooloo.ground_idle": "animation.wooloo.ground_idle",
+        "wooloo.standing.transform": "animation.wooloo.standing.transform",
+        "wooloo.ground_walk": "animation.wooloo.ground_walk",
+        "wooloo.walk.transform": "animation.wooloo.walk.transform",
+        "wooloo.shearedstanding.transform": "animation.wooloo.shearedstanding.transform",
+        "wooloo.shearedwalk.transform": "animation.wooloo.shearedwalk.transform",
+        "wooloo.blink": "animation.wooloo.blink",
+        "controller.animation.wooloo.blink": "controller.animation.wooloo.blink",
+        "controller.animation.cobblemon.wooloo": "controller.animation.cobblemon.wooloo"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.wooloo"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.wooloo.blink",
+          {
+            "controller.animation.cobblemon.wooloo": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_wooloo = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

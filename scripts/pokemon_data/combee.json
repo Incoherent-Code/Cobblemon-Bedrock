@@ -1,0 +1,179 @@
+{
+  "minLevel": 1,
+  "maxLevel": 24,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ],
+    "2": [
+      "female"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 1,
+      "maxLevel": 24
+    },
+    "1": {
+      "minLevel": 1,
+      "maxLevel": 24
+    }
+  },
+  "name": "Combee",
+  "nationalPokedexNumber": 415,
+  "baseStats": {
+    "hp": 30,
+    "attack": 30,
+    "defence": 42,
+    "special_attack": 30,
+    "special_defence": 42,
+    "speed": 70
+  },
+  "maleRatio": 0.875,
+  "catchRate": 120,
+  "baseScale": 0.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "flying",
+  "abilities": [
+    "honeygather",
+    "h:hustle"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:bugbite",
+    "1:gust",
+    "1:strugglebug",
+    "1:sweetscent",
+    "13:bugbite",
+    "29:bugbuzz",
+    "tm:bugbuzz",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:strugglebug",
+    "tm:terablast",
+    "tutor:aircutter",
+    "tutor:bugbite",
+    "tutor:dualwingbeat",
+    "tutor:endeavor",
+    "tutor:gust",
+    "tutor:mudslap",
+    "tutor:ominouswind",
+    "tutor:snore",
+    "tutor:stringshot",
+    "tutor:swift",
+    "tutor:tailwind"
+  ],
+  "evolutions": [
+    {
+      "id": "combee_vespiquen",
+      "variant": "level_up",
+      "result": "vespiquen",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "slash"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 21
+        },
+        {
+          "variant": "properties",
+          "target": "gender=female"
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.6
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.combee.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:honey_bottle",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:honeycomb",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:charti_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 3.0,
+  "weight": 55.0
+}

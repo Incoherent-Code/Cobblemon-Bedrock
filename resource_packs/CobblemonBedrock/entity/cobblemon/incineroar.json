@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:incineroar",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0727_incineroar/incineroar",
+        "shiny": "textures/pokemon/0727_incineroar/incineroar_shiny"
+      },
+      "geometry": {
+        "base": "geometry.incineroar.geo",
+        "shiny": "geometry.incineroar.geo"
+      },
+      "animations": {
+        "incineroarmodel.singlebonelook": "animation.incineroarmodel.singlebonelook",
+        "incineroar.ground_idle": "animation.incineroar.ground_idle",
+        "incineroarmodel.bipedwalkanimation": "animation.incineroarmodel.bipedwalkanimation",
+        "incineroarmodel.bimanualswinganimation": "animation.incineroarmodel.bimanualswinganimation",
+        "incineroar.blink": "animation.incineroar.blink",
+        "controller.animation.incineroar.blink": "controller.animation.incineroar.blink",
+        "controller.animation.cobblemon.incineroar": "controller.animation.cobblemon.incineroar"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.incineroar"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.incineroar.blink",
+          {
+            "controller.animation.cobblemon.incineroar": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_incineroar = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

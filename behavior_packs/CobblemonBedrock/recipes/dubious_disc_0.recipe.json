@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "TLT",
+      "SAS"
+    ],
+    "key": {
+      "T": {
+        "item": "minecraft:tinted_glass"
+      },
+      "A": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "S": {
+        "item": "minecraft:sculk"
+      },
+      "L": {
+        "item": "minecraft:sea_lantern"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:tinted_glass"
+      },
+      {
+        "item": "minecraft:amethyst_shard"
+      },
+      {
+        "item": "minecraft:sculk"
+      },
+      {
+        "item": "minecraft:sea_lantern"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:dubious_disc"
+    },
+    "description": {
+      "identifier": "cobblemon:dubious_disc_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

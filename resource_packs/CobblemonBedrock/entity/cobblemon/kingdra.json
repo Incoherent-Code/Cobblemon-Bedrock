@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:kingdra",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0230_kingdra/kingdra",
+        "shiny": "textures/pokemon/0230_kingdra/kingdra_shiny"
+      },
+      "geometry": {
+        "base": "geometry.kingdra.geo",
+        "shiny": "geometry.kingdra.geo"
+      },
+      "animations": {
+        "kingdramodel.singlebonelook": "animation.kingdramodel.singlebonelook",
+        "kingdra.ground_idle": "animation.kingdra.ground_idle",
+        "kingdra.standing.transform": "animation.kingdra.standing.transform",
+        "kingdra.ground_walk": "animation.kingdra.ground_walk",
+        "kingdra.walk.transform": "animation.kingdra.walk.transform",
+        "kingdra.water_idle": "animation.kingdra.water_idle",
+        "kingdra.float.transform": "animation.kingdra.float.transform",
+        "kingdra.water_swim": "animation.kingdra.water_swim",
+        "kingdra.swim.transform": "animation.kingdra.swim.transform",
+        "kingdra.blink": "animation.kingdra.blink",
+        "controller.animation.kingdra.blink": "controller.animation.kingdra.blink",
+        "controller.animation.cobblemon.kingdra": "controller.animation.cobblemon.kingdra"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.kingdra"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.kingdra.blink",
+          {
+            "controller.animation.cobblemon.kingdra": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_kingdra = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

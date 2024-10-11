@@ -1,0 +1,22 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:raw_iron",
+          "weight": 1
+        },
+        {
+          "type": "empty",
+          "weight": 99
+        }
+      ]
+    }
+  ]
+}

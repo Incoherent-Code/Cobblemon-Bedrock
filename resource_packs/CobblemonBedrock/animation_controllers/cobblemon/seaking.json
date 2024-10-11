@@ -1,0 +1,73 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.seaking": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "seaking.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_seaking = 0; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "seaking.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_seaking = 1; return !q.is_moving;"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "float": {
+          "animations": [
+            "seaking.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_seaking = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swim": {
+          "animations": [
+            "seaking.water_swim"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_seaking = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

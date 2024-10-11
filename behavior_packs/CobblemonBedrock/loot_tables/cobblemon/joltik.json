@@ -1,0 +1,37 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:spider_eye",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:nanab_berry",
+          "weight": 2
+        },
+        {
+          "type": "empty",
+          "weight": 86
+        }
+      ]
+    }
+  ]
+}

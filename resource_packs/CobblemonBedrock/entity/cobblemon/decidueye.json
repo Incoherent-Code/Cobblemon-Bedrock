@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:decidueye",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0724_decidueye/decidueye",
+        "shiny": "textures/pokemon/0724_decidueye/decidueye_shiny"
+      },
+      "geometry": {
+        "base": "geometry.decidueye.geo",
+        "shiny": "geometry.decidueye.geo"
+      },
+      "animations": {
+        "decidueyemodel.singlebonelook": "animation.decidueyemodel.singlebonelook",
+        "decidueye.ground_idle": "animation.decidueye.ground_idle",
+        "decidueye.standing.transform": "animation.decidueye.standing.transform",
+        "decidueyemodel.bipedwalkanimation": "animation.decidueyemodel.bipedwalkanimation",
+        "decidueye.walk.transform": "animation.decidueye.walk.transform",
+        "decidueye.air_idle": "animation.decidueye.air_idle",
+        "decidueye.hover.transform": "animation.decidueye.hover.transform",
+        "decidueye.air_fly": "animation.decidueye.air_fly",
+        "decidueye.fly.transform": "animation.decidueye.fly.transform",
+        "decidueye.blink": "animation.decidueye.blink",
+        "controller.animation.decidueye.blink": "controller.animation.decidueye.blink",
+        "controller.animation.cobblemon.decidueye": "controller.animation.cobblemon.decidueye"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.decidueye"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.decidueye.blink",
+          {
+            "controller.animation.cobblemon.decidueye": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_decidueye = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

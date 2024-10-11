@@ -1,0 +1,235 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.poochyenamodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.poochyena.ground_idle": {
+      "loop": true,
+      "bones": {
+        "tail": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "shoulder_left": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpaw_left": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "shoulder_right": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpaw_right": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "knee_left": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ankle_left": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "knee_right": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ankle_right": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "position": [
+            0.0,
+            -0.35,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.poochyenamodel.quadrupedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.8) * 0.8 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.8 + 180) *  0.8 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "shoulder_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.8 + 180) * 0.8 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "shoulder_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.8) * 0.8 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.poochyena.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eye_right": {
+          "position": {
+            "0.0": [
+              0.25,
+              0.0,
+              0.25
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -1.0,
+              0.0,
+              -1.0
+            ],
+            "0.125": [
+              -1.0,
+              0.0,
+              -1.0
+            ],
+            "0.1667": [
+              -0.75,
+              0.0,
+              -0.75
+            ]
+          }
+        },
+        "eye_left": {
+          "position": {
+            "0.0": [
+              -0.25,
+              0.0,
+              0.25
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              1.0,
+              0.0,
+              -1.0
+            ],
+            "0.125": [
+              1.0,
+              0.0,
+              -1.0
+            ],
+            "0.1667": [
+              0.75,
+              0.0,
+              -0.75
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,274 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.meowth.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowth_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_meowth_blink = q.life_time + 1; return (q.life_time > v.next_quirk_meowth_blink) && (v.state_of_meowth == 0 || v.state_of_meowth == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "meowth.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowth_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_meowth_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.meowth": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "meowthmodel.singlebonelook",
+            "meowth.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_meowth = 0; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "sleep": {
+          "animations": [
+            "meowth.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_meowth = 1; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "meowthmodel.singlebonelook",
+            "meowthmodel.bipedwalkanimation",
+            "meowthmodel.bimanualswinganimation",
+            "meowth.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_meowth = 2; return !q.is_moving;"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.meowth_galarian.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowth_galarian_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_meowth_galarian_blink = q.life_time + 1; return (q.life_time > v.next_quirk_meowth_galarian_blink) && (v.state_of_meowth_galarian == 1 || v.state_of_meowth_galarian == 2 || v.state_of_meowth_galarian == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "meowth_galarian.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowth_galarian_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_meowth_galarian_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.meowth_galarian": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "meowth_galarian.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_meowth_galarian = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "meowthgalarianmodel.singlebonelook",
+            "meowth_galarian.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_meowth_galarian = 1; return q.is_sleeping;"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "meowthgalarianmodel.singlebonelook",
+            "meowth_galarian.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_meowth_galarian = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "meowthgalarianmodel.singlebonelook",
+            "meowth_galarian.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_meowth_galarian = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walking": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.meowth_alolan.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowth_alolan_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_meowth_alolan_blink = q.life_time + 1; return (q.life_time > v.next_quirk_meowth_alolan_blink) && (v.state_of_meowth_alolan == 0 || v.state_of_meowth_alolan == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "meowth_alolan.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowth_alolan_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_meowth_alolan_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.meowth_alolan": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "meowthalolanmodel.singlebonelook",
+            "meowth_alolan.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_meowth_alolan = 0; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "sleep": {
+          "animations": [
+            "meowth_alolan.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_meowth_alolan = 1; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "meowthalolanmodel.singlebonelook",
+            "meowthalolanmodel.bipedwalkanimation",
+            "meowthalolanmodel.bimanualswinganimation",
+            "meowth_alolan.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_meowth_alolan = 2; return !q.is_moving;"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

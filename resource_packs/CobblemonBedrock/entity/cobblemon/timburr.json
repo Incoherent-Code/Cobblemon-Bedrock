@@ -1,0 +1,80 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:timburr",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0532_timburr/timburr",
+        "shiny": "textures/pokemon/0532_timburr/timburr_shiny",
+        "tree_oak": "textures/pokemon/0532_timburr/timburr",
+        "tree_spruce": "textures/pokemon/0532_timburr/timburr",
+        "tree_acacia": "textures/pokemon/0532_timburr/timburr",
+        "tree_birch": "textures/pokemon/0532_timburr/timburr",
+        "tree_darkoak": "textures/pokemon/0532_timburr/timburr",
+        "tree_jungle": "textures/pokemon/0532_timburr/timburr",
+        "tree_mangrove": "textures/pokemon/0532_timburr/timburr",
+        "tree_cherry": "textures/pokemon/0532_timburr/timburr",
+        "tree_crimson": "textures/pokemon/0532_timburr/timburr",
+        "tree_warped": "textures/pokemon/0532_timburr/timburr",
+        "tree_oak_": "textures/pokemon/0532_timburr/timburr_oak",
+        "tree_spruce_": "textures/pokemon/0532_timburr/timburr_spruce",
+        "tree_acacia_": "textures/pokemon/0532_timburr/timburr_acacia",
+        "tree_birch_": "textures/pokemon/0532_timburr/timburr_birch",
+        "tree_darkoak_": "textures/pokemon/0532_timburr/timburr_dark_oak",
+        "tree_jungle_": "textures/pokemon/0532_timburr/timburr_jungle",
+        "tree_mangrove_": "textures/pokemon/0532_timburr/timburr_mangrove",
+        "tree_cherry_": "textures/pokemon/0532_timburr/timburr_cherry",
+        "tree_crimson_": "textures/pokemon/0532_timburr/timburr_crimson",
+        "tree_warped_": "textures/pokemon/0532_timburr/timburr_warped"
+      },
+      "geometry": {
+        "base": "geometry.timburr.geo",
+        "shiny": "geometry.timburr.geo",
+        "tree_oak": "geometry.timburr.geo",
+        "tree_spruce": "geometry.timburr.geo",
+        "tree_acacia": "geometry.timburr.geo",
+        "tree_birch": "geometry.timburr.geo",
+        "tree_darkoak": "geometry.timburr.geo",
+        "tree_jungle": "geometry.timburr.geo",
+        "tree_mangrove": "geometry.timburr.geo",
+        "tree_cherry": "geometry.timburr.geo",
+        "tree_crimson": "geometry.timburr.geo",
+        "tree_warped": "geometry.timburr.geo"
+      },
+      "animations": {
+        "timburrmodel.singlebonelook": "animation.timburrmodel.singlebonelook",
+        "timburr.ground_idle": "animation.timburr.ground_idle",
+        "timburrmodel.bipedwalkanimation": "animation.timburrmodel.bipedwalkanimation",
+        "timburr.blink": "animation.timburr.blink",
+        "controller.animation.timburr.blink": "controller.animation.timburr.blink",
+        "controller.animation.cobblemon.timburr": "controller.animation.cobblemon.timburr"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.timburr_",
+        "controller.render.cobblemon.timburr"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.timburr.blink",
+          {
+            "controller.animation.cobblemon.timburr": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5 || q.variant == 6 || q.variant == 7 || q.variant == 8 || q.variant == 9 || q.variant == 10 || q.variant == 11"
+          }
+        ],
+        "initialize": [
+          "v.state_of_timburr = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,9 @@
+{
+  "cobblemon.ui.interact": "Interact",
+  "cobblemon.ui.interact.challenge": "Challenge",
+  "cobblemon.ui.interact.exp_candy": "Level Up",
+  "cobblemon.battle.in_battle": "%1s is already in a battle!",
+  "cobblemon.battle.pokemon_already_fainted": "%1s is too weak to battle! Please choose a healthy pokemon.",
+  "cobblemon.battle.already_out": "%1s is already in battle!",
+  "cobblemon.ui.info.unsaved_changes": "You must click the submit button to save changes."
+}

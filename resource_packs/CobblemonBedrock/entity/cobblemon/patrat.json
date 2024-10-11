@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:patrat",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0504_patrat/patrat",
+        "shiny": "textures/pokemon/0504_patrat/patrat_shiny",
+        "base_emissive": "textures/pokemon/0504_patrat/patrat_emissive",
+        "shiny_emissive": "textures/pokemon/0504_patrat/patrat_emissive"
+      },
+      "geometry": {
+        "base": "geometry.patrat.geo",
+        "shiny": "geometry.patrat.geo"
+      },
+      "animations": {
+        "patratmodel.singlebonelook": "animation.patratmodel.singlebonelook",
+        "patrat.ground_idle": "animation.patrat.ground_idle",
+        "patrat.ground_walk": "animation.patrat.ground_walk",
+        "patrat.sleep": "animation.patrat.sleep",
+        "patrat.blink": "animation.patrat.blink",
+        "controller.animation.patrat.blink": "controller.animation.patrat.blink",
+        "controller.animation.cobblemon.patrat": "controller.animation.cobblemon.patrat"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.patrat_emissive",
+        "controller.render.cobblemon.patrat"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.patrat.blink",
+          {
+            "controller.animation.cobblemon.patrat": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_patrat = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

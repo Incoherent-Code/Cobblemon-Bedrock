@@ -1,0 +1,131 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.vespiquen.blink1": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_vespiquen_blink1 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_vespiquen_blink1 = q.life_time + 1; return (q.life_time > v.next_quirk_vespiquen_blink1) && (v.state_of_vespiquen == 1 || v.state_of_vespiquen == 2 || v.state_of_vespiquen == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "vespiquen.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_vespiquen_blink1 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_vespiquen_blink1 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.vespiquen.wingsleep": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_vespiquen_wingsleep = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_vespiquen_wingsleep = q.life_time + 1; return (q.life_time > v.next_quirk_vespiquen_wingsleep) && (v.state_of_vespiquen == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "vespiquen.sleep_flap"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_vespiquen_wingsleep = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_vespiquen_wingsleep ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.vespiquen": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "vespiquen.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_vespiquen = 0; return !q.is_moving;"
+            },
+            {
+              "fly": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "vespiquen.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_vespiquen = 1; return q.is_sleeping;"
+            },
+            {
+              "fly": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "vespiquen.air_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_vespiquen = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "fly": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "vespiquen.air_fly"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_vespiquen = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

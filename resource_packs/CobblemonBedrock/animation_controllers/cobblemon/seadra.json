@@ -1,0 +1,106 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.seadra.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_seadra_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_seadra_blink = q.life_time + 1; return (q.life_time > v.next_quirk_seadra_blink) && (v.state_of_seadra == 0 || v.state_of_seadra == 1 || v.state_of_seadra == 2 || v.state_of_seadra == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "seadra.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_seadra_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_seadra_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.seadra": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "seadramodel.singlebonelook",
+            "seadra.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_seadra = 0; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "seadramodel.singlebonelook",
+            "seadra.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_seadra = 1; return !q.is_moving;"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "float": {
+          "animations": [
+            "seadramodel.singlebonelook",
+            "seadra.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_seadra = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swim": {
+          "animations": [
+            "seadramodel.singlebonelook",
+            "seadra.water_swim"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_seadra = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,340 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:entity": {
+    "component_groups": {
+      "cobblemon:instant_kill": {
+        "minecraft:instant_despawn": {}
+      },
+      "cobblemon:variant_0": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "cobblemon:variant_1": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "cobblemon:tamed": {
+        "minecraft:is_tamed": {},
+        "minecraft:behavior.follow_owner": {
+          "max_distance": 14.0,
+          "speed_multiplier": 1.4,
+          "start_distance": 11.0,
+          "stop_distance": 3.0,
+          "priority": 0
+        }
+      }
+    },
+    "events": {
+      "cobblemon:instant_kill": {
+        "add": {
+          "component_groups": [
+            "cobblemon:instant_kill"
+          ]
+        }
+      },
+      "cobblemon:set_variant_0": {
+        "add": {
+          "component_groups": [
+            "cobblemon:variant_0"
+          ]
+        }
+      },
+      "cobblemon:spawn_as_variant_0": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "cobblemon:variant_0"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "bool_property",
+              "operator": "equals",
+              "subject": "self",
+              "value": false,
+              "domain": "cobblemon:initialized"
+            },
+            "trigger": "cobblemon:callInitFromServer"
+          }
+        ]
+      },
+      "cobblemon:set_variant_1": {
+        "add": {
+          "component_groups": [
+            "cobblemon:variant_1"
+          ]
+        }
+      },
+      "cobblemon:spawn_as_variant_1": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "cobblemon:variant_1"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "bool_property",
+              "operator": "equals",
+              "subject": "self",
+              "value": false,
+              "domain": "cobblemon:initialized"
+            },
+            "trigger": "cobblemon:callInitFromServer"
+          }
+        ]
+      },
+      "cobblemon:callInitFromServer": {
+        "queue_command": {
+          "command": "scriptevent cobblemon:setup",
+          "target": "self"
+        }
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "bool_property",
+              "operator": "equals",
+              "subject": "self",
+              "value": false,
+              "domain": "cobblemon:initialized"
+            },
+            "randomize": [
+              {
+                "weight": 4096.0,
+                "add": {
+                  "component_groups": [
+                    "cobblemon:variant_0"
+                  ]
+                }
+              },
+              {
+                "weight": 1.0,
+                "add": {
+                  "component_groups": [
+                    "cobblemon:variant_1"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "test": "bool_property",
+              "operator": "equals",
+              "subject": "self",
+              "value": false,
+              "domain": "cobblemon:initialized"
+            },
+            "trigger": "cobblemon:callInitFromServer"
+          }
+        ]
+      },
+      "cobblemon:interacted": {
+        "sequence": [
+          {
+            "queue_command": {
+              "command": "tag @s add interacter",
+              "target": "other"
+            }
+          },
+          {
+            "queue_command": {
+              "command": "scriptevent cobblemon:interacted",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "minecraft:on_tame": {
+        "add": {
+          "component_groups": [
+            "cobblemon:tamed"
+          ]
+        }
+      },
+      "cobblemon:use_experience_candy": {
+        "queue_command": {
+          "command": "scriptevent cobblemon:gain_level",
+          "target": "self"
+        }
+      }
+    },
+    "description": {
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "identifier": "cobblemon:naganadel",
+      "properties": {
+        "cobblemon:in_battle": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        },
+        "cobblemon:initialized": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        },
+        "cobblemon:spawn_condition_used": {
+          "type": "int",
+          "range": [
+            -1,
+            0
+          ],
+          "default": -1,
+          "client_sync": false
+        },
+        "cobblemon:wild": {
+          "type": "bool",
+          "default": true,
+          "client_sync": true
+        },
+        "cobblemon:busy": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_lava": false,
+        "breathes_water": false,
+        "generates_bubbles": true,
+        "inhale_time": 2.0,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 1.2,
+        "height": 4.0
+      },
+      "minecraft:despawn": {
+        "despawn_from_chance": false,
+        "despawn_from_inactivity": true,
+        "min_range_inactivity_timer": 400,
+        "despawn_from_simulation_edge": true,
+        "despawn_from_distance": {
+          "max_distance": 256,
+          "min_distance": 128
+        }
+      },
+      "minecraft:type_family": {
+        "family": [
+          "cobblemon",
+          "pokemon"
+        ]
+      },
+      "minecraft:follow_range": {
+        "value": 4,
+        "max": 10
+      },
+      "minecraft:jump.static": {},
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "interact_text": "cobblemon.ui.interact.exp_candy",
+            "use_item": true,
+            "on_interact": {
+              "event": "cobblemon:use_experience_candy",
+              "target": "self",
+              "filters": {
+                "test": "has_equipment",
+                "subject": "other",
+                "value": "cobblemon:rare_candy",
+                "domain": "hand"
+              }
+            }
+          },
+          {
+            "interact_text": "Interact",
+            "on_interact": {
+              "event": "cobblemon:interacted",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "minecraft:inventory": {
+        "container_type": "inventory",
+        "inventory_size": 1,
+        "restrict_to_owner": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/cobblemon/naganadel.json"
+      },
+      "minecraft:leashable": {},
+      "minecraft:movement": {
+        "value": 0.21000001
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {},
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:tameable": {
+        "probability": 1.0,
+        "tame_event": {
+          "event": "minecraft:on_tame",
+          "target": "self"
+        }
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.18
+      },
+      "minecraft:navigation.generic": {
+        "can_path_over_water": true,
+        "can_path_over_lava": false,
+        "avoid_water": false,
+        "avoid_damage_blocks": true,
+        "can_walk": true,
+        "can_swim": true,
+        "can_jump": true,
+        "can_walk_in_lava": true,
+        "can_path_from_air": true,
+        "can_pass_doors": true
+      },
+      "minecraft:behavior.float": {
+        "priority": 9
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "subject": "other",
+                  "domain": "targetedBy:cobblemon:naganadel"
+                }
+              ]
+            }
+          }
+        ],
+        "priority": 1
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 4
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 3
+      },
+      "minecraft:movement.generic": {}
+    }
+  },
+  "format_version": "1.20.40"
+}

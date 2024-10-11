@@ -1,0 +1,68 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.naganadelmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.naganadel.ground_idle": {
+      "loop": true,
+      "bones": {
+        "neck": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck2": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            10.0,
+            -15.0,
+            20.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            10.0,
+            15.0,
+            -20.0
+          ]
+        },
+        "torso_bottom": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "position": [
+            0.0,
+            0.0,
+            5.0
+          ]
+        }
+      }
+    }
+  }
+}

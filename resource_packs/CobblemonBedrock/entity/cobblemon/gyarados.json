@@ -1,0 +1,33 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:gyarados",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0130_gyarados/gyarados",
+        "shiny": "textures/pokemon/0130_gyarados/gyarados_shiny",
+        "female": "textures/pokemon/0130_gyarados/gyarados"
+      },
+      "geometry": {
+        "base": "geometry.gyarados_male.geo",
+        "shiny": "geometry.gyarados_male.geo",
+        "female": "geometry.gyarados_female.geo"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.gyarados"
+      ],
+      "scripts": {}
+    }
+  },
+  "format_version": "1.20.40"
+}

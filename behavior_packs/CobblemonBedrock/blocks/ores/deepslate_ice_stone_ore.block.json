@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cobblemon:deepslate_ice_stone_ore",
+      "menu_category": {
+        "category": "nature",
+        "group": "itemGroup.name.ore"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "block.cobblemon.deepslate.ice_stone_ore",
+      "minecraft:custom_components": [
+        "cobblemon:give_xp_reward_component"
+      ],
+      "minecraft:loot": "loot_tables/blocks/ore/ice_stone_ore.json",
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "deepslate_ice_stone_ore"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.2
+      }
+    }
+  }
+}

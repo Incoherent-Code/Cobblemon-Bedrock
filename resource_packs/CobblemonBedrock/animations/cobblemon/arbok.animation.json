@@ -1,0 +1,320 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.arbok.sleep": {
+      "loop": true,
+      "bones": {
+        "body_upper": {
+          "rotation": [
+            46.00798,
+            4.21261,
+            8.68723
+          ]
+        },
+        "hood": {
+          "rotation": [
+            -17.79674,
+            5.06499,
+            5.86553
+          ]
+        },
+        "neck": {
+          "rotation": [
+            -7.5,
+            7.5,
+            12.5
+          ]
+        },
+        "head_angle": {
+          "rotation": [
+            14.60967,
+            -3.73171,
+            11.93845
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            -0.1,
+            0.0,
+            0.0
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.1,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            0.0,
+            22.5,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            0.0,
+            -37.5,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            0.0,
+            -45.0,
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            0.0,
+            -55.0,
+            0.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            0.0,
+            -47.5,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.arbokmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head_ai": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.arbok.ground_idle": {
+      "loop": true,
+      "bones": {
+        "body_upper": {
+          "rotation": [
+            "-10+math.sin(q.anim_time*90*4+90)*1+1",
+            0.0,
+            "math.sin(q.anim_time*90*2+90)*6"
+          ]
+        },
+        "hood": {
+          "rotation": [
+            "-math.sin(q.anim_time*90*4+90)*1",
+            "math.sin(q.anim_time*90*2+90)*6",
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            "math.sin(q.anim_time*90*4)*0.75",
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(q.anim_time*90*4+90)*0.5",
+            0.0,
+            "-math.sin(q.anim_time*90*2+90)*2"
+          ]
+        },
+        "head_correction": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.arbok.ground_walk": {
+      "loop": true,
+      "bones": {
+        "body_upper": {
+          "rotation": [
+            "math.sin(q.anim_time*90*4+90)*2",
+            0.0,
+            0.0
+          ]
+        },
+        "hood": {
+          "rotation": [
+            "-math.sin(q.anim_time*90*4)*2",
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            "-math.sin(q.anim_time*90*4+90)*2",
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "-math.sin(q.anim_time*90*4+90)*2",
+            0.0,
+            0.0
+          ]
+        },
+        "head_correction": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.arbok.summary_idle": {
+      "loop": true,
+      "bones": {
+        "body_upper": {
+          "rotation": [
+            "-math.sin(q.anim_time*90*2+90)*0.25",
+            20.0,
+            "math.sin(q.anim_time*90*2+90)*4"
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hood": {
+          "rotation": [
+            "-10-math.sin(q.anim_time*90*4+90)*1",
+            "-15+math.sin(q.anim_time*90*2+90)*6",
+            -17.5
+          ]
+        },
+        "neck": {
+          "rotation": [
+            "math.sin(q.anim_time*90*4)*0.75",
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            0.0,
+            "40-math.sin(q.anim_time*90*2+90)*0.5",
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            0.0,
+            "-55-math.sin(q.anim_time*90*2-90)*0.5",
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            0.0,
+            "-55-math.sin(q.anim_time*90*2)*0.5",
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            0.0,
+            "55-math.sin(q.anim_time*90*2+90)*0.5",
+            0.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            0.0,
+            "60-math.sin(q.anim_time*90*2)*0.5",
+            0.0
+          ]
+        },
+        "body": {
+          "position": [
+            "math.sin(q.anim_time*90*2+30*2)*0.06",
+            0.0,
+            "-math.sin(q.anim_time*90*2+30*3)*0.04"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(q.anim_time*90*4+90)*0.5",
+            0.0,
+            "-math.sin(q.anim_time*90*2+90)*2"
+          ]
+        },
+        "head_correction": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.arbok.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

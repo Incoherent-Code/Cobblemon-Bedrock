@@ -1,0 +1,39 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "W  ",
+      "KKK",
+      "  W"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:black_wool"
+      },
+      "K": {
+        "item": "minecraft:dried_kelp"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:black_wool"
+      },
+      {
+        "item": "minecraft:dried_kelp"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:black_belt"
+    },
+    "description": {
+      "identifier": "cobblemon:black_belt_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

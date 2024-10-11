@@ -1,0 +1,375 @@
+{
+  "minLevel": 12,
+  "maxLevel": 41,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ],
+    "2": [
+      "vivillon-wings-archipelago"
+    ],
+    "3": [
+      "vivillon-wings-continental"
+    ],
+    "4": [
+      "vivillon-wings-elegant"
+    ],
+    "5": [
+      "vivillon-wings-fancy"
+    ],
+    "6": [
+      "vivillon-wings-garden"
+    ],
+    "7": [
+      "vivillon-wings-high-plains"
+    ],
+    "8": [
+      "vivillon-wings-icy-snow"
+    ],
+    "9": [
+      "vivillon-wings-jungle"
+    ],
+    "10": [
+      "vivillon-wings-marine"
+    ],
+    "11": [
+      "vivillon-wings-meadow"
+    ],
+    "12": [
+      "vivillon-wings-modern"
+    ],
+    "13": [
+      "vivillon-wings-monsoon"
+    ],
+    "14": [
+      "vivillon-wings-ocean"
+    ],
+    "15": [
+      "vivillon-wings-poke-ball"
+    ],
+    "16": [
+      "vivillon-wings-polar"
+    ],
+    "17": [
+      "vivillon-wings-river"
+    ],
+    "18": [
+      "vivillon-wings-sandstorm"
+    ],
+    "19": [
+      "vivillon-wings-savanna"
+    ],
+    "20": [
+      "vivillon-wings-sun"
+    ],
+    "21": [
+      "vivillon-wings-tundra"
+    ],
+    "22": [
+      "vivillon-wings-inferno"
+    ],
+    "23": [
+      "vivillon-wings-void"
+    ],
+    "24": [
+      "vivillon-wings-forsaken"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "1": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "2": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "3": {
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "4": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "5": {
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "6": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "7": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "8": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "9": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "10": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "11": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "12": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "13": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "14": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "15": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "16": {
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "17": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "18": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    },
+    "19": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 12,
+      "maxLevel": 41
+    }
+  },
+  "name": "Vivillon",
+  "nationalPokedexNumber": 666,
+  "baseStats": {
+    "hp": 80,
+    "attack": 52,
+    "defence": 50,
+    "special_attack": 90,
+    "special_defence": 50,
+    "speed": 89
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 0.7,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.4,
+    "height": 1.2,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "flying",
+  "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "h:friendguard"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:gust",
+    "1:poisonpowder",
+    "1:powder",
+    "1:sleeppowder",
+    "1:strugglebug",
+    "1:stunspore",
+    "12:lightscreen",
+    "17:psybeam",
+    "21:supersonic",
+    "25:drainingkiss",
+    "31:aromatherapy",
+    "31:safeguard",
+    "35:bugbuzz",
+    "45:quiverdance",
+    "50:hurricane",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:attract",
+    "tm:bugbuzz",
+    "tm:calmmind",
+    "tm:confide",
+    "tm:confuseray",
+    "tm:doubleteam",
+    "tm:drainingkiss",
+    "tm:dreameater",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:hiddenpower",
+    "tm:hurricane",
+    "tm:hyperbeam",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:lightscreen",
+    "tm:pollenpuff",
+    "tm:pounce",
+    "tm:protect",
+    "tm:psybeam",
+    "tm:psychic",
+    "tm:psychup",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:roost",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swift",
+    "tm:tailwind",
+    "tm:terablast",
+    "tm:thief",
+    "tm:toxic",
+    "tm:uturn",
+    "tutor:bugbite",
+    "tutor:defog",
+    "tutor:electroweb",
+    "tutor:endeavor",
+    "tutor:gigadrain",
+    "tutor:laserfocus",
+    "tutor:signalbeam",
+    "tutor:snore",
+    "tutor:tailwind"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.4
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": true,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.vivillon.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:bright_powder",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 12.0,
+  "weight": 170.0,
+  "forms": []
+}

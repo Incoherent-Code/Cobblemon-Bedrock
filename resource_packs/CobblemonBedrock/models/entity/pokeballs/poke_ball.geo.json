@@ -1,0 +1,142 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.pokeball",
+        "texture_width": 64,
+        "texture_height": 32,
+        "visible_bounds_width": 2.0,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0.0,
+          0.75,
+          0.0
+        ]
+      },
+      "bones": [
+        {
+          "name": "poke_ball",
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "ball",
+          "parent": "poke_ball",
+          "pivot": [
+            0.0,
+            4.0,
+            0.0
+          ]
+        },
+        {
+          "name": "bottom",
+          "parent": "ball",
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.0,
+                0.0,
+                -4.0
+              ],
+              "size": [
+                8.0,
+                4.0,
+                8.0
+              ],
+              "uv": [
+                32.0,
+                20.0
+              ],
+              "inflate": 0.25
+            },
+            {
+              "origin": [
+                -4.0,
+                0.0,
+                -4.0
+              ],
+              "size": [
+                8.0,
+                4.0,
+                8.0
+              ],
+              "uv": [
+                32.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lid",
+          "parent": "bottom",
+          "pivot": [
+            0.0,
+            4.0,
+            4.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.0,
+                4.0,
+                -4.0
+              ],
+              "size": [
+                8.0,
+                4.0,
+                8.0
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "origin": [
+                -1.0,
+                3.0,
+                -4.255
+              ],
+              "size": [
+                2.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "origin": [
+                -4.0,
+                4.0,
+                -4.0
+              ],
+              "size": [
+                8.0,
+                4.0,
+                8.0
+              ],
+              "uv": [
+                0.0,
+                20.0
+              ],
+              "inflate": 0.26
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

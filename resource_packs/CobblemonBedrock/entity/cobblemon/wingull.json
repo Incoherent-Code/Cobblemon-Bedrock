@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:wingull",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0278_wingull/wingull",
+        "shiny": "textures/pokemon/0278_wingull/wingull_shiny"
+      },
+      "geometry": {
+        "base": "geometry.wingull.geo",
+        "shiny": "geometry.wingull.geo"
+      },
+      "animations": {
+        "wingull.sleep": "animation.wingull.sleep",
+        "wingull.surfacewater_sleep": "animation.wingull.surfacewater_sleep",
+        "wingull.water_surface_sleep.transform": "animation.wingull.water_surface_sleep.transform",
+        "wingull.ground_idle": "animation.wingull.ground_idle",
+        "pelipper.air_idle": "animation.pelipper.air_idle",
+        "pelipper.air_fly": "animation.pelipper.air_fly",
+        "wingull.ground_walk": "animation.wingull.ground_walk",
+        "wingull.surfacewater_idle": "animation.wingull.surfacewater_idle",
+        "wingull.water_surface_idle.transform": "animation.wingull.water_surface_idle.transform",
+        "wingull.surfacewater_swim": "animation.wingull.surfacewater_swim",
+        "wingull.water_surface_swim.transform": "animation.wingull.water_surface_swim.transform",
+        "wingull.blink": "animation.wingull.blink",
+        "controller.animation.wingull.blink": "controller.animation.wingull.blink",
+        "controller.animation.cobblemon.wingull": "controller.animation.cobblemon.wingull"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.wingull"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.wingull.blink",
+          {
+            "controller.animation.cobblemon.wingull": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_wingull = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

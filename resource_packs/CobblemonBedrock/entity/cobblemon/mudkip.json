@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:mudkip",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0258_mudkip/mudkip",
+        "shiny": "textures/pokemon/0258_mudkip/mudkip_shiny"
+      },
+      "geometry": {
+        "base": "geometry.mudkip.geo",
+        "shiny": "geometry.mudkip.geo"
+      },
+      "animations": {
+        "mudkipmodel.singlebonelook": "animation.mudkipmodel.singlebonelook",
+        "mudkipmodel.quadrupedwalkanimation": "animation.mudkipmodel.quadrupedwalkanimation",
+        "mudkip.water_swim": "animation.mudkip.water_swim",
+        "mudkip.blink": "animation.mudkip.blink",
+        "controller.animation.mudkip.blink": "controller.animation.mudkip.blink",
+        "controller.animation.cobblemon.mudkip": "controller.animation.cobblemon.mudkip"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.mudkip"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.mudkip.blink",
+          {
+            "controller.animation.cobblemon.mudkip": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_mudkip = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

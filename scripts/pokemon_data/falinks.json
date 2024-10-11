@@ -1,0 +1,181 @@
+{
+  "minLevel": 22,
+  "maxLevel": 47,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 22,
+      "maxLevel": 47
+    },
+    "1": {
+      "minLevel": 22,
+      "maxLevel": 47
+    }
+  },
+  "name": "Falinks",
+  "nationalPokedexNumber": 870,
+  "baseStats": {
+    "hp": 65,
+    "attack": 100,
+    "defence": 100,
+    "special_attack": 70,
+    "special_defence": 60,
+    "speed": 75
+  },
+  "maleRatio": -1.0,
+  "catchRate": 45,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 2.0,
+    "height": 0.8,
+    "fixed": false
+  },
+  "primaryType": "fighting",
+  "abilities": [
+    "battlearmor",
+    "h:defiant"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:protect",
+    "1:tackle",
+    "5:rocksmash",
+    "10:focusenergy",
+    "15:headbutt",
+    "20:bulkup",
+    "25:endure",
+    "30:reversal",
+    "35:firstimpression",
+    "40:noretreat",
+    "45:irondefense",
+    "50:closecombat",
+    "55:megahorn",
+    "60:counter",
+    "tm:agility",
+    "tm:assurance",
+    "tm:beatup",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:bulkup",
+    "tm:closecombat",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:focusblast",
+    "tm:focusenergy",
+    "tm:gigaimpact",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:megahorn",
+    "tm:payback",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:revenge",
+    "tm:reversal",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:screech",
+    "tm:sleeptalk",
+    "tm:smartstrike",
+    "tm:snore",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:superpower",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:throatchop",
+    "tm:trailblaze",
+    "tm:zenheadbutt",
+    "tutor:coaching"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.25
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": false,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.falinks.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:golden_helmet",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:nanab_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 25,
+  "eggGroups": [
+    "fairy",
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 30.0,
+  "weight": 620.0
+}

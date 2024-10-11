@@ -1,0 +1,152 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.ninjask.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_ninjask_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_ninjask_blink = q.life_time + 1; return (q.life_time > v.next_quirk_ninjask_blink) && (v.state_of_ninjask == 1 || v.state_of_ninjask == 2 || v.state_of_ninjask == 3 || v.state_of_ninjask == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "ninjask.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_ninjask_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_ninjask_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.ninjask.barrelRoll": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_ninjask_barrelRoll = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_ninjask_barrelRoll = q.life_time + 1; return (q.life_time > v.next_quirk_ninjask_barrelRoll) && (v.state_of_ninjask == 2 || v.state_of_ninjask == 3 || v.state_of_ninjask == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "ninjask.run_quirk"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_ninjask_barrelRoll = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_ninjask_barrelRoll ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.ninjask": {
+      "initial_state": "sleep",
+      "states": {
+        "sleep": {
+          "animations": [
+            "ninjask.sleep"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_ninjask = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "stand": {
+          "animations": [
+            "ninjaskmodel.singlebonelook",
+            "ninjask.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_ninjask = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "ninjaskmodel.singlebonelook",
+            "ninjask.air_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_ninjask = 2; return q.is_sleeping;"
+            },
+            {
+              "stand": "!q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "ninjaskmodel.singlebonelook",
+            "ninjask.air_fly"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_ninjask = 3; return q.is_sleeping;"
+            },
+            {
+              "stand": "!q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "ninjaskmodel.singlebonelook",
+            "ninjask.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_ninjask = 4; return q.is_sleeping;"
+            },
+            {
+              "stand": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

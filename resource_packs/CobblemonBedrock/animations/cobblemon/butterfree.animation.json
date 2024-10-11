@@ -1,0 +1,108 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.butterfree.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "80+math.sin(q.anim_time*90*2)*0.2",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            -7.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -26.23136,
+            18.93112,
+            -5.7872
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -0.75
+          ]
+        },
+        "antenna_right": {
+          "rotation": [
+            "-15+math.sin(q.anim_time*90*2)*1.5",
+            0.0,
+            0.0
+          ]
+        },
+        "antenna_right2": {
+          "rotation": [
+            "50+math.sin(q.anim_time*90*2-60)*2.5",
+            0.0,
+            0.0
+          ]
+        },
+        "antenna_left": {
+          "rotation": [
+            "-20+math.sin(q.anim_time*90*2)*1",
+            0.0,
+            0.0
+          ]
+        },
+        "antenna_left2": {
+          "rotation": [
+            "25+math.sin(q.anim_time*90*2-60)*2",
+            0.0,
+            0.0
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            -31.80139,
+            80.34418,
+            40.89356
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            -31.8014,
+            -80.3442,
+            -40.8936
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            0.0,
+            -20.0,
+            -25.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            6.42848,
+            26.79524,
+            14.03271
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            -50.75,
+            "69.05-8*(math.sin(q.anim_time*90*2/4)*0.25)+4*(math.sin(q.anim_time*90*2/3)*0.25)",
+            -52.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            -61.0,
+            "-70.5+8*(math.sin(q.anim_time*90*2/4)*0.25)-4*(math.sin(q.anim_time*90*2/3)*0.25)",
+            59.5
+          ]
+        }
+      }
+    }
+  }
+}

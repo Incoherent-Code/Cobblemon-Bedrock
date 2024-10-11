@@ -1,0 +1,122 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.0",
+  "render_controllers": {
+    "controller.render.cobblemon.ironleaves": {
+      "arrays": {
+        "textures": {
+          "array.cobblemon_texture": [
+            "texture.base",
+            "texture.sleep",
+            "texture.shiny"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.sleep",
+            "geometry.shiny"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "neck_sword_left": "!(v.state_of_ironleaves == 0) && !(v.state_of_ironleaves == 1) && !(v.state_of_ironleaves == 2)"
+        },
+        {
+          "neck_sword_right": "!(v.state_of_ironleaves == 0) && !(v.state_of_ironleaves == 1) && !(v.state_of_ironleaves == 2)"
+        },
+        {
+          "sword_head": "!(v.state_of_ironleaves == 0) && !(v.state_of_ironleaves == 1) && !(v.state_of_ironleaves == 2)"
+        }
+      ],
+      "textures": [
+        "array.cobblemon_texture[query.variant]"
+      ]
+    },
+    "controller.render.cobblemon.ironleaves_emissive": {
+      "arrays": {
+        "textures": {
+          "array.variation_emissive": [
+            "texture.base_emissive",
+            "texture.sleep_emissive",
+            "texture.shiny_emissive"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.sleep",
+            "geometry.shiny"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.emissive"
+        }
+      ],
+      "part_visibility": [
+        {
+          "neck_sword_left": "!(v.state_of_ironleaves == 0) && !(v.state_of_ironleaves == 1) && !(v.state_of_ironleaves == 2)"
+        },
+        {
+          "neck_sword_right": "!(v.state_of_ironleaves == 0) && !(v.state_of_ironleaves == 1) && !(v.state_of_ironleaves == 2)"
+        },
+        {
+          "sword_head": "!(v.state_of_ironleaves == 0) && !(v.state_of_ironleaves == 1) && !(v.state_of_ironleaves == 2)"
+        }
+      ],
+      "textures": [
+        "array.variation_emissive[query.variant]"
+      ]
+    },
+    "controller.render.cobblemon.ironleaves_sleep": {
+      "arrays": {
+        "textures": {
+          "array.variation_sleep": [
+            "texture.blank",
+            "texture.sleep_sleep"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.sleep",
+            "geometry.shiny"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "neck_sword_left": "!(v.state_of_ironleaves == 0) && !(v.state_of_ironleaves == 1) && !(v.state_of_ironleaves == 2)"
+        },
+        {
+          "neck_sword_right": "!(v.state_of_ironleaves == 0) && !(v.state_of_ironleaves == 1) && !(v.state_of_ironleaves == 2)"
+        },
+        {
+          "sword_head": "!(v.state_of_ironleaves == 0) && !(v.state_of_ironleaves == 1) && !(v.state_of_ironleaves == 2)"
+        }
+      ],
+      "textures": [
+        "array.variation_sleep[query.variant]"
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:flittle",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0955_flittle/flittle",
+        "shiny": "textures/pokemon/0955_flittle/flittle_shiny"
+      },
+      "geometry": {
+        "base": "geometry.flittle.geo",
+        "shiny": "geometry.flittle.geo"
+      },
+      "animations": {
+        "flittle.sleep": "animation.flittle.sleep",
+        "flittlemodel.singlebonelook": "animation.flittlemodel.singlebonelook",
+        "flittle.ground_idle": "animation.flittle.ground_idle",
+        "flittle.ground_walk": "animation.flittle.ground_walk",
+        "flittle.air_idle": "animation.flittle.air_idle",
+        "flittle.air_fly": "animation.flittle.air_fly",
+        "flittle.shoulderleft.transform": "animation.flittle.shoulderleft.transform",
+        "flittle.shoulderright.transform": "animation.flittle.shoulderright.transform",
+        "flittle.blink": "animation.flittle.blink",
+        "controller.animation.flittle.blink": "controller.animation.flittle.blink",
+        "controller.animation.cobblemon.flittle": "controller.animation.cobblemon.flittle"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.flittle"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.flittle.blink",
+          {
+            "controller.animation.cobblemon.flittle": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_flittle = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

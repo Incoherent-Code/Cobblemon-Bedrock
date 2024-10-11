@@ -1,0 +1,44 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:tangela",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0114_tangela/tangela",
+        "shiny": "textures/pokemon/0114_tangela/tangela_shiny"
+      },
+      "geometry": {
+        "base": "geometry.tangela.geo",
+        "shiny": "geometry.tangela.geo"
+      },
+      "animations": {
+        "tangelamodel.bipedwalkanimation": "animation.tangelamodel.bipedwalkanimation",
+        "controller.animation.cobblemon.tangela": "controller.animation.cobblemon.tangela"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.tangela"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.tangela": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_tangela = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

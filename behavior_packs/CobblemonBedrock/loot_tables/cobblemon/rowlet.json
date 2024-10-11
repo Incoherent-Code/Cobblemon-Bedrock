@@ -1,0 +1,31 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chicken"
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:miracle_seed",
+          "weight": 5
+        },
+        {
+          "type": "empty",
+          "weight": 92
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:conkeldurr",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "shiny": "textures/pokemon/0534_conkeldurr/conkeldurr_shiny",
+        "color_white": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_orange": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_magenta": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_light_blue": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_yellow": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_lime": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_pink": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_gray": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_purple": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_blue": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_brown": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_green": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_red": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_black": "textures/pokemon/0534_conkeldurr/conkeldurr",
+        "color_white_": "textures/pokemon/0534_conkeldurr/conkeldurr_white",
+        "color_orange_": "textures/pokemon/0534_conkeldurr/conkeldurr_orange",
+        "color_magenta_": "textures/pokemon/0534_conkeldurr/conkeldurr_magenta",
+        "color_light_blue_": "textures/pokemon/0534_conkeldurr/conkeldurr_light_blue",
+        "color_yellow_": "textures/pokemon/0534_conkeldurr/conkeldurr_yellow",
+        "color_lime_": "textures/pokemon/0534_conkeldurr/conkeldurr_lime",
+        "color_pink_": "textures/pokemon/0534_conkeldurr/conkeldurr_pink",
+        "color_gray_": "textures/pokemon/0534_conkeldurr/conkeldurr_gray",
+        "color_purple_": "textures/pokemon/0534_conkeldurr/conkeldurr_purple",
+        "color_blue_": "textures/pokemon/0534_conkeldurr/conkeldurr_blue",
+        "color_brown_": "textures/pokemon/0534_conkeldurr/conkeldurr_brown",
+        "color_green_": "textures/pokemon/0534_conkeldurr/conkeldurr_green",
+        "color_red_": "textures/pokemon/0534_conkeldurr/conkeldurr_red",
+        "color_black_": "textures/pokemon/0534_conkeldurr/conkeldurr_black"
+      },
+      "geometry": {
+        "base": "geometry.conkeldurr.geo",
+        "shiny": "geometry.conkeldurr.geo",
+        "color_white": "geometry.conkeldurr.geo",
+        "color_orange": "geometry.conkeldurr.geo",
+        "color_magenta": "geometry.conkeldurr.geo",
+        "color_light_blue": "geometry.conkeldurr.geo",
+        "color_yellow": "geometry.conkeldurr.geo",
+        "color_lime": "geometry.conkeldurr.geo",
+        "color_pink": "geometry.conkeldurr.geo",
+        "color_gray": "geometry.conkeldurr.geo",
+        "color_purple": "geometry.conkeldurr.geo",
+        "color_blue": "geometry.conkeldurr.geo",
+        "color_brown": "geometry.conkeldurr.geo",
+        "color_green": "geometry.conkeldurr.geo",
+        "color_red": "geometry.conkeldurr.geo",
+        "color_black": "geometry.conkeldurr.geo"
+      },
+      "animations": {
+        "conkeldurrmodel.singlebonelook": "animation.conkeldurrmodel.singlebonelook",
+        "conkeldurr.ground_idle": "animation.conkeldurr.ground_idle",
+        "conkeldurrmodel.bipedwalkanimation": "animation.conkeldurrmodel.bipedwalkanimation",
+        "conkeldurr.blink": "animation.conkeldurr.blink",
+        "controller.animation.conkeldurr.blink": "controller.animation.conkeldurr.blink",
+        "controller.animation.cobblemon.conkeldurr": "controller.animation.cobblemon.conkeldurr"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.conkeldurr_",
+        "controller.render.cobblemon.conkeldurr"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.conkeldurr.blink",
+          {
+            "controller.animation.cobblemon.conkeldurr": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5 || q.variant == 6 || q.variant == 7 || q.variant == 8 || q.variant == 9 || q.variant == 10 || q.variant == 11 || q.variant == 12 || q.variant == 13 || q.variant == 14 || q.variant == 15"
+          }
+        ],
+        "initialize": [
+          "v.state_of_conkeldurr = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

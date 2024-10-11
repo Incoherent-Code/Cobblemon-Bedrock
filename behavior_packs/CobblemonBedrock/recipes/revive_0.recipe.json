@@ -1,0 +1,34 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "cobblemon:heal_powder"
+      },
+      {
+        "item": "minecraft:honey_bottle"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "cobblemon:heal_powder"
+      },
+      {
+        "item": "minecraft:honey_bottle"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:revive"
+    },
+    "description": {
+      "identifier": "cobblemon:revive_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

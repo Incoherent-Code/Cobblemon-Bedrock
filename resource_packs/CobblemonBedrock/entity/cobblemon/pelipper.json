@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:pelipper",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0279_pelipper/pelipper",
+        "shiny": "textures/pokemon/0279_pelipper/pelipper_shiny"
+      },
+      "geometry": {
+        "base": "geometry.pelipper.geo",
+        "shiny": "geometry.pelipper.geo"
+      },
+      "animations": {
+        "pelipper.sleep": "animation.pelipper.sleep",
+        "pelipper.surfacewater_sleep": "animation.pelipper.surfacewater_sleep",
+        "pelipper.water_surface_sleep.transform": "animation.pelipper.water_surface_sleep.transform",
+        "pelipper.ground_idle": "animation.pelipper.ground_idle",
+        "pelipper.air_idle": "animation.pelipper.air_idle",
+        "pelipper.air_fly": "animation.pelipper.air_fly",
+        "pelipper.ground_walk": "animation.pelipper.ground_walk",
+        "pelipper.surfacewater_idle": "animation.pelipper.surfacewater_idle",
+        "pelipper.water_surface_idle.transform": "animation.pelipper.water_surface_idle.transform",
+        "pelipper.surfacewater_swim": "animation.pelipper.surfacewater_swim",
+        "pelipper.water_surface_swim.transform": "animation.pelipper.water_surface_swim.transform",
+        "pelipper.blink": "animation.pelipper.blink",
+        "controller.animation.pelipper.blink": "controller.animation.pelipper.blink",
+        "controller.animation.cobblemon.pelipper": "controller.animation.cobblemon.pelipper"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.pelipper"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.pelipper.blink",
+          {
+            "controller.animation.cobblemon.pelipper": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_pelipper = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

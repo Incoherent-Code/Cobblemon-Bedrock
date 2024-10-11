@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:dratini",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0147_dratini/dratini",
+        "shiny": "textures/pokemon/0147_dratini/dratini_shiny"
+      },
+      "geometry": {
+        "base": "geometry.dratini.geo",
+        "shiny": "geometry.dratini.geo"
+      },
+      "animations": {
+        "dratinimodel.singlebonelook": "animation.dratinimodel.singlebonelook",
+        "dratini.ground_idle": "animation.dratini.ground_idle",
+        "dratini.blink": "animation.dratini.blink",
+        "controller.animation.dratini.blink": "controller.animation.dratini.blink",
+        "controller.animation.cobblemon.dratini": "controller.animation.cobblemon.dratini"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.dratini"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.dratini.blink",
+          {
+            "controller.animation.cobblemon.dratini": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_dratini = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

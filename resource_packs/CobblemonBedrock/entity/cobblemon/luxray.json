@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:luxray",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0405_luxray/luxray",
+        "shiny": "textures/pokemon/0405_luxray/luxray_shiny",
+        "female": "textures/pokemon/0405_luxray/luxray",
+        "base_emissive": "textures/pokemon/0405_luxray/luxray_emissive",
+        "shiny_emissive": "textures/pokemon/0405_luxray/luxray_emissive"
+      },
+      "geometry": {
+        "base": "geometry.luxray_male.geo",
+        "shiny": "geometry.luxray_male.geo",
+        "female": "geometry.luxray_female.geo"
+      },
+      "animations": {
+        "luxraymodel.singlebonelook": "animation.luxraymodel.singlebonelook",
+        "luxray.ground_idle": "animation.luxray.ground_idle",
+        "luxraymodel.quadrupedwalkanimation": "animation.luxraymodel.quadrupedwalkanimation",
+        "controller.animation.cobblemon.luxray": "controller.animation.cobblemon.luxray"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.luxray_emissive",
+        "controller.render.cobblemon.luxray"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.luxray": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_luxray = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

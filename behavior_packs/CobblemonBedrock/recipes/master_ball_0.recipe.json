@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " t ",
+      "lcr",
+      " b "
+    ],
+    "key": {
+      "t": {
+        "item": "minecraft:shulker_shell"
+      },
+      "l": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "c": {
+        "item": "minecraft:nether_star"
+      },
+      "r": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "b": {
+        "item": "minecraft:shulker_shell"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:shulker_shell"
+      },
+      {
+        "item": "minecraft:netherite_ingot"
+      },
+      {
+        "item": "minecraft:nether_star"
+      },
+      {
+        "item": "minecraft:netherite_ingot"
+      },
+      {
+        "item": "minecraft:shulker_shell"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:master_ball"
+    },
+    "description": {
+      "identifier": "cobblemon:master_ball_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

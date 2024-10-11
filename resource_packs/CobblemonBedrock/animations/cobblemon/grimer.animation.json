@@ -1,0 +1,125 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.grimermodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.grimer.ground_idle": {
+      "loop": true,
+      "bones": {
+        "arm_right": {
+          "rotation": [
+            9.00717,
+            -20.70481,
+            -24.14867
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            -22.5,
+            -55.0,
+            22.5
+          ]
+        },
+        "finger_right_index": {
+          "rotation": [
+            0.0,
+            -22.5,
+            -22.5
+          ]
+        },
+        "finger_right_ring": {
+          "rotation": [
+            0.0,
+            22.5,
+            -22.5
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            9.00717,
+            20.70481,
+            24.14867
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            -22.5,
+            55.0,
+            -22.5
+          ]
+        },
+        "finger_left_index": {
+          "rotation": [
+            0.0,
+            22.5,
+            22.5
+          ]
+        },
+        "finger_left_ring": {
+          "rotation": [
+            0.0,
+            -22.5,
+            22.5
+          ]
+        }
+      }
+    },
+    "animation.grimer.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

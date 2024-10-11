@@ -1,0 +1,151 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.quaquaval.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_quaquaval_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_quaquaval_blink = q.life_time + 1; return (q.life_time > v.next_quirk_quaquaval_blink) && (v.state_of_quaquaval == 1 || v.state_of_quaquaval == 2 || v.state_of_quaquaval == 3 || v.state_of_quaquaval == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "quaquaval.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_quaquaval_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_quaquaval_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.quaquaval": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "quaquaval.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_quaquaval = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water_or_rain);"
+            },
+            {
+              "standing2": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && q.is_in_water_or_rain)"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "quaquavalmodel.singlebonelook",
+            "quaquaval.ground_idle",
+            "quaquaval.standing.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_quaquaval = 1; return q.is_sleeping;"
+            },
+            {
+              "standing2": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && q.is_in_water_or_rain)"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing2": {
+          "animations": [
+            "quaquavalmodel.singlebonelook",
+            "quaquaval.ground_idle",
+            "quaquaval.standing2.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_quaquaval = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water_or_rain)"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "quaquavalmodel.singlebonelook",
+            "quaquaval.ground_walk",
+            "quaquaval.walking.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_quaquaval = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water_or_rain)"
+            },
+            {
+              "standing2": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && q.is_in_water_or_rain)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "quaquavalmodel.singlebonelook",
+            "quaquaval.battle_idle",
+            "quaquaval.battleidle.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_quaquaval = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water_or_rain)"
+            },
+            {
+              "standing2": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && q.is_in_water_or_rain)"
+            },
+            {
+              "walking": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

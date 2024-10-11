@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:hitmontop",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0237_hitmontop/hitmontop",
+        "shiny": "textures/pokemon/0237_hitmontop/hitmontop_shiny"
+      },
+      "geometry": {
+        "base": "geometry.hitmontop.geo",
+        "shiny": "geometry.hitmontop.geo"
+      },
+      "animations": {
+        "hitmontop.sleep": "animation.hitmontop.sleep",
+        "hitmontopmodel.singlebonelook": "animation.hitmontopmodel.singlebonelook",
+        "hitmontop.ground_idle": "animation.hitmontop.ground_idle",
+        "hitmontop.ground_walk": "animation.hitmontop.ground_walk",
+        "hitmontop.battle_idle": "animation.hitmontop.battle_idle",
+        "hitmontop.blink": "animation.hitmontop.blink",
+        "controller.animation.hitmontop.blink": "controller.animation.hitmontop.blink",
+        "controller.animation.cobblemon.hitmontop": "controller.animation.cobblemon.hitmontop"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.hitmontop"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.hitmontop.blink",
+          {
+            "controller.animation.cobblemon.hitmontop": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_hitmontop = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

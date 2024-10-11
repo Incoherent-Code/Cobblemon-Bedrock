@@ -1,0 +1,94 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:alcremie",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0869_alcremie/alcremie_vanilla",
+        "decoration_berry": "textures/pokemon/0869_alcremie/alcremie_vanilla",
+        "decoration_strawberry": "textures/pokemon/0869_alcremie/alcremie_vanilla",
+        "decoration_clover": "textures/pokemon/0869_alcremie/alcremie_vanilla",
+        "decoration_flower": "textures/pokemon/0869_alcremie/alcremie_vanilla",
+        "decoration_love": "textures/pokemon/0869_alcremie/alcremie_vanilla",
+        "decoration_ribbon": "textures/pokemon/0869_alcremie/alcremie_vanilla",
+        "decoration_star": "textures/pokemon/0869_alcremie/alcremie_vanilla",
+        "cream_vanilla": "textures/pokemon/0869_alcremie/alcremie_vanilla",
+        "cream_caramel_swirl": "textures/pokemon/0869_alcremie/alcremie_caramel",
+        "cream_ruby": "textures/pokemon/0869_alcremie/alcremie_ruby",
+        "cream_matcha": "textures/pokemon/0869_alcremie/alcremie_matcha",
+        "cream_mint": "textures/pokemon/0869_alcremie/alcremie_mint",
+        "cream_lemon": "textures/pokemon/0869_alcremie/alcremie_lemon",
+        "cream_salted": "textures/pokemon/0869_alcremie/alcremie_salted",
+        "cream_ruby_swirl": "textures/pokemon/0869_alcremie/alcremie_rubyswirl",
+        "cream_rainbow_swirl": "textures/pokemon/0869_alcremie/alcremie_rainbowswirl",
+        "shiny": "textures/pokemon/0869_alcremie/alcremie_shiny",
+        "decoration_berry_decoration": "textures/pokemon/0869_alcremie/alcremie_berry_decoration",
+        "decoration_strawberry_decoration": "textures/pokemon/0869_alcremie/alcremie_strawberry_decoration",
+        "decoration_clover_decoration": "textures/pokemon/0869_alcremie/alcremie_clover_decoration",
+        "decoration_flower_decoration": "textures/pokemon/0869_alcremie/alcremie_flower_decoration",
+        "decoration_love_decoration": "textures/pokemon/0869_alcremie/alcremie_heart_decoration",
+        "decoration_ribbon_decoration": "textures/pokemon/0869_alcremie/alcremie_ribbon_decoration",
+        "decoration_star_decoration": "textures/pokemon/0869_alcremie/alcremie_star_decoration"
+      },
+      "geometry": {
+        "base": "geometry.alcremie.geo",
+        "decoration_berry": "geometry.alcremie.geo",
+        "decoration_strawberry": "geometry.alcremie.geo",
+        "decoration_clover": "geometry.alcremie.geo",
+        "decoration_flower": "geometry.alcremie.geo",
+        "decoration_love": "geometry.alcremie.geo",
+        "decoration_ribbon": "geometry.alcremie.geo",
+        "decoration_star": "geometry.alcremie.geo",
+        "cream_vanilla": "geometry.alcremie.geo",
+        "cream_caramel_swirl": "geometry.alcremie.geo",
+        "cream_ruby": "geometry.alcremie.geo",
+        "cream_matcha": "geometry.alcremie.geo",
+        "cream_mint": "geometry.alcremie.geo",
+        "cream_lemon": "geometry.alcremie.geo",
+        "cream_salted": "geometry.alcremie.geo",
+        "cream_ruby_swirl": "geometry.alcremie.geo",
+        "cream_rainbow_swirl": "geometry.alcremie.geo",
+        "shiny": "geometry.alcremie.geo"
+      },
+      "animations": {
+        "alcremie.sleep": "animation.alcremie.sleep",
+        "alcremiemodel.singlebonelook": "animation.alcremiemodel.singlebonelook",
+        "alcremie.ground_idle": "animation.alcremie.ground_idle",
+        "alcremie.ground_walk": "animation.alcremie.ground_walk",
+        "alcremie.shoulder_left": "animation.alcremie.shoulder_left",
+        "alcremie.shoulderleft.transform": "animation.alcremie.shoulderleft.transform",
+        "alcremie.shoulder_right": "animation.alcremie.shoulder_right",
+        "alcremie.shoulderright.transform": "animation.alcremie.shoulderright.transform",
+        "alcremie.blink": "animation.alcremie.blink",
+        "controller.animation.alcremie.blink": "controller.animation.alcremie.blink",
+        "controller.animation.cobblemon.alcremie": "controller.animation.cobblemon.alcremie"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.alcremie_decoration",
+        "controller.render.cobblemon.alcremie"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.alcremie.blink",
+          {
+            "controller.animation.cobblemon.alcremie": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5 || q.variant == 6 || q.variant == 7 || q.variant == 8 || q.variant == 9 || q.variant == 10 || q.variant == 11 || q.variant == 12 || q.variant == 13 || q.variant == 14 || q.variant == 15 || q.variant == 16 || q.variant == 17"
+          }
+        ],
+        "initialize": [
+          "v.state_of_alcremie = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,89 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.baltoy.ground_idle": {
+      "loop": true,
+      "bones": {
+        "arm_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            6.0
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "10 + math.cos((query.anim_time + 0) * 90 * 2) * 3"
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -6.0
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-10 + math.cos((query.anim_time + 0) * 90 * -2) * 3"
+          ]
+        },
+        "body": {
+          "rotation": [
+            "math.cos((query.anim_time + 1.5) * 90 * 2) * 2.5",
+            "math.cos((query.anim_time + 0) * 45) * 4",
+            "math.cos((query.anim_time + 0) * 90 * 2) * 3"
+          ]
+        }
+      }
+    },
+    "animation.baltoy.ground_walk": {
+      "loop": true,
+      "bones": {
+        "arm_left": {
+          "rotation": [
+            4.73109,
+            44.7383,
+            5.4642
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            14.26042,
+            43.07872,
+            13.16954
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            -7.16859,
+            44.48073,
+            -11.41829
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            -16.47474,
+            42.42028,
+            -18.9149
+          ]
+        },
+        "body": {
+          "rotation": [
+            "math.cos((query.anim_time + 0) * 90 * 6) * 3.0",
+            "math.abs((query.anim_time + 0) * 90 * 12) * -0.5",
+            "math.sin((query.anim_time + 0) * 90 * 6) * 3.6"
+          ]
+        }
+      }
+    }
+  }
+}

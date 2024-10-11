@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:ditto",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0132_ditto/ditto",
+        "shiny": "textures/pokemon/0132_ditto/ditto_shiny"
+      },
+      "geometry": {
+        "base": "geometry.ditto.geo",
+        "shiny": "geometry.ditto.geo"
+      },
+      "animations": {
+        "ditto.ground_idle": "animation.ditto.ground_idle",
+        "ditto.ground_walk": "animation.ditto.ground_walk",
+        "ditto.sleep": "animation.ditto.sleep",
+        "ditto.blink": "animation.ditto.blink",
+        "controller.animation.ditto.blink": "controller.animation.ditto.blink",
+        "controller.animation.cobblemon.ditto": "controller.animation.cobblemon.ditto"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.ditto"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.ditto.blink",
+          {
+            "controller.animation.cobblemon.ditto": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_ditto = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

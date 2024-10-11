@@ -1,0 +1,41 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 6,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:rabbit"
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rabbit_hide",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rabbit_foot",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:chople_berry",
+          "weight": 5
+        },
+        {
+          "type": "empty",
+          "weight": 82
+        }
+      ]
+    }
+  ]
+}

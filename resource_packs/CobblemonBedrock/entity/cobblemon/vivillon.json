@@ -1,0 +1,122 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:vivillon",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0666_vivillon/vivillon",
+        "shiny": "textures/pokemon/0666_vivillon/vivillon_shiny",
+        "vivillon_wings_archipelago": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_continental": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_elegant": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_fancy": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_garden": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_high_plains": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_icy_snow": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_jungle": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_marine": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_meadow": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_modern": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_monsoon": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_ocean": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_poke_ball": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_polar": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_river": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_sandstorm": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_savanna": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_sun": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_tundra": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_inferno": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_void": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_forsaken": "textures/pokemon/0666_vivillon/vivillon",
+        "vivillon_wings_archipelago_wings": "textures/pokemon/0666_vivillon/vivillon_wings_archipelago",
+        "vivillon_wings_continental_wings": "textures/pokemon/0666_vivillon/vivillon_wings_continental",
+        "vivillon_wings_elegant_wings": "textures/pokemon/0666_vivillon/vivillon_wings_elegant",
+        "vivillon_wings_fancy_wings": "textures/pokemon/0666_vivillon/vivillon_wings_fancy",
+        "vivillon_wings_garden_wings": "textures/pokemon/0666_vivillon/vivillon_wings_garden",
+        "vivillon_wings_high_plains_wings": "textures/pokemon/0666_vivillon/vivillon_wings_high_plains",
+        "vivillon_wings_icy_snow_wings": "textures/pokemon/0666_vivillon/vivillon_wings_icy_snow",
+        "vivillon_wings_jungle_wings": "textures/pokemon/0666_vivillon/vivillon_wings_jungle",
+        "vivillon_wings_marine_wings": "textures/pokemon/0666_vivillon/vivillon_wings_marine",
+        "vivillon_wings_meadow_wings": "textures/pokemon/0666_vivillon/vivillon_wings_meadow",
+        "vivillon_wings_modern_wings": "textures/pokemon/0666_vivillon/vivillon_wings_modern",
+        "vivillon_wings_monsoon_wings": "textures/pokemon/0666_vivillon/vivillon_wings_monsoon",
+        "vivillon_wings_ocean_wings": "textures/pokemon/0666_vivillon/vivillon_wings_ocean",
+        "vivillon_wings_poke_ball_wings": "textures/pokemon/0666_vivillon/vivillon_wings_pokeball",
+        "vivillon_wings_polar_wings": "textures/pokemon/0666_vivillon/vivillon_wings_polar",
+        "vivillon_wings_river_wings": "textures/pokemon/0666_vivillon/vivillon_wings_river",
+        "vivillon_wings_sandstorm_wings": "textures/pokemon/0666_vivillon/vivillon_wings_sandstorm",
+        "vivillon_wings_savanna_wings": "textures/pokemon/0666_vivillon/vivillon_wings_savanna",
+        "vivillon_wings_sun_wings": "textures/pokemon/0666_vivillon/vivillon_wings_sun",
+        "vivillon_wings_tundra_wings": "textures/pokemon/0666_vivillon/vivillon_wings_tundra",
+        "vivillon_wings_inferno_wings": "textures/pokemon/0666_vivillon/vivillon_wings_inferno",
+        "vivillon_wings_void_wings": "textures/pokemon/0666_vivillon/vivillon_wings_void",
+        "vivillon_wings_forsaken_wings": "textures/pokemon/0666_vivillon/vivillon_wings_forsaken"
+      },
+      "geometry": {
+        "base": "geometry.vivillon.geo",
+        "shiny": "geometry.vivillon.geo",
+        "vivillon_wings_archipelago": "geometry.vivillon.geo",
+        "vivillon_wings_continental": "geometry.vivillon.geo",
+        "vivillon_wings_elegant": "geometry.vivillon.geo",
+        "vivillon_wings_fancy": "geometry.vivillon.geo",
+        "vivillon_wings_garden": "geometry.vivillon.geo",
+        "vivillon_wings_high_plains": "geometry.vivillon.geo",
+        "vivillon_wings_icy_snow": "geometry.vivillon.geo",
+        "vivillon_wings_jungle": "geometry.vivillon.geo",
+        "vivillon_wings_marine": "geometry.vivillon.geo",
+        "vivillon_wings_meadow": "geometry.vivillon.geo",
+        "vivillon_wings_modern": "geometry.vivillon.geo",
+        "vivillon_wings_monsoon": "geometry.vivillon.geo",
+        "vivillon_wings_ocean": "geometry.vivillon.geo",
+        "vivillon_wings_poke_ball": "geometry.vivillon.geo",
+        "vivillon_wings_polar": "geometry.vivillon.geo",
+        "vivillon_wings_river": "geometry.vivillon.geo",
+        "vivillon_wings_sandstorm": "geometry.vivillon.geo",
+        "vivillon_wings_savanna": "geometry.vivillon.geo",
+        "vivillon_wings_sun": "geometry.vivillon.geo",
+        "vivillon_wings_tundra": "geometry.vivillon.geo",
+        "vivillon_wings_inferno": "geometry.vivillon.geo",
+        "vivillon_wings_void": "geometry.vivillon.geo",
+        "vivillon_wings_forsaken": "geometry.vivillon.geo"
+      },
+      "animations": {
+        "vivillon.sleep": "animation.vivillon.sleep",
+        "vivillonmodel.singlebonelook": "animation.vivillonmodel.singlebonelook",
+        "vivillon.air_idle": "animation.vivillon.air_idle",
+        "vivillon.standing.transform": "animation.vivillon.standing.transform",
+        "vivillon.air_fly": "animation.vivillon.air_fly",
+        "vivillon.walk.transform": "animation.vivillon.walk.transform",
+        "vivillon.blink": "animation.vivillon.blink",
+        "controller.animation.vivillon.blink": "controller.animation.vivillon.blink",
+        "controller.animation.cobblemon.vivillon": "controller.animation.cobblemon.vivillon"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.vivillon_wings",
+        "controller.render.cobblemon.vivillon"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.vivillon.blink",
+          {
+            "controller.animation.cobblemon.vivillon": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5 || q.variant == 6 || q.variant == 7 || q.variant == 8 || q.variant == 9 || q.variant == 10 || q.variant == 11 || q.variant == 12 || q.variant == 13 || q.variant == 14 || q.variant == 15 || q.variant == 16 || q.variant == 17 || q.variant == 18 || q.variant == 19 || q.variant == 20 || q.variant == 21 || q.variant == 22 || q.variant == 23 || q.variant == 24"
+          }
+        ],
+        "initialize": [
+          "v.state_of_vivillon = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

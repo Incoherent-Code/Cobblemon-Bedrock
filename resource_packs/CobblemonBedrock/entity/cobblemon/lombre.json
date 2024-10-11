@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:lombre",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0271_lombre/lombre",
+        "shiny": "textures/pokemon/0271_lombre/lombre_shiny"
+      },
+      "geometry": {
+        "base": "geometry.lombre.geo",
+        "shiny": "geometry.lombre.geo"
+      },
+      "animations": {
+        "lombremodel.singlebonelook": "animation.lombremodel.singlebonelook",
+        "lombre.ground_idle": "animation.lombre.ground_idle",
+        "lombre.water_idle": "animation.lombre.water_idle",
+        "lombre.waterstanding.transform": "animation.lombre.waterstanding.transform",
+        "lombre.ground_walk": "animation.lombre.ground_walk",
+        "lombre.water_swim": "animation.lombre.water_swim",
+        "lombre.waterwalk.transform": "animation.lombre.waterwalk.transform",
+        "lombre.sleep": "animation.lombre.sleep",
+        "lombre.blink": "animation.lombre.blink",
+        "controller.animation.lombre.blink": "controller.animation.lombre.blink",
+        "controller.animation.cobblemon.lombre": "controller.animation.cobblemon.lombre"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.lombre"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.lombre.blink",
+          {
+            "controller.animation.cobblemon.lombre": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_lombre = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

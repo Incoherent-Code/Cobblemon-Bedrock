@@ -1,0 +1,243 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.masquerainmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.masquerain.ground_idle": {
+      "loop": true,
+      "bones": {
+        "antenna_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-45 - math.sin(q.anim_time*90*2-90)"
+          ]
+        },
+        "antenna_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "45 + math.sin(q.anim_time*90*2-90)"
+          ]
+        },
+        "wing_left_front": {
+          "rotation": [
+            30.0,
+            "10+ math.clamp(math.sin(q.anim_time*90*2*30)*12.5,-7.5,7.5)",
+            10.0
+          ]
+        },
+        "wing_left_back": {
+          "rotation": [
+            30.0,
+            "-10 - math.clamp(math.sin(q.anim_time*90*2*30)*12.5,-7.5,7.5)",
+            10.0
+          ]
+        },
+        "wing_left_front2": {
+          "rotation": [
+            30.0,
+            "-10 - math.clamp(math.sin(q.anim_time*90*2*30)*12.5,-7.5,7.5)",
+            -10.0
+          ]
+        },
+        "wing_left_back2": {
+          "rotation": [
+            30.0,
+            "10 + math.clamp(math.sin(q.anim_time*90*2*30)*12.5,-7.5,7.5)",
+            -10.0
+          ]
+        },
+        "abdomen": {
+          "rotation": [
+            "-15 + math.sin(q.anim_time*90*2-90)*5",
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "position": [
+            0.0,
+            "3+math.sin(q.anim_time*90*2)*0.8",
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(q.anim_time*90*2-45)*2.5",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.masquerain.ground_walk": {
+      "loop": true,
+      "bones": {
+        "antenna_left": {
+          "rotation": [
+            0.0,
+            -12.5,
+            "-45 - math.sin(q.anim_time*90*4-90)"
+          ]
+        },
+        "antenna_right": {
+          "rotation": [
+            0.0,
+            12.5,
+            "45 + math.sin(q.anim_time*90*4-90)"
+          ]
+        },
+        "wing_left_front": {
+          "rotation": [
+            30.0,
+            "10+ math.clamp(math.sin(q.anim_time*90*2*30)*12.5,-7.5,7.5)",
+            10.0
+          ]
+        },
+        "wing_left_back": {
+          "rotation": [
+            30.0,
+            "-10 - math.clamp(math.sin(q.anim_time*90*2*30)*12.5,-7.5,7.5)",
+            10.0
+          ]
+        },
+        "wing_left_front2": {
+          "rotation": [
+            30.0,
+            "-10 - math.clamp(math.sin(q.anim_time*90*2*30)*12.5,-7.5,7.5)",
+            -10.0
+          ]
+        },
+        "wing_left_back2": {
+          "rotation": [
+            30.0,
+            "10 + math.clamp(math.sin(q.anim_time*90*2*30)*12.5,-7.5,7.5)",
+            -10.0
+          ]
+        },
+        "abdomen": {
+          "rotation": [
+            "-5 + math.sin(q.anim_time*90*4-90-45)*7.5",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "body": {
+          "position": [
+            "math.sin(q.anim_time*90*4+90)*0.6",
+            "3+math.sin(q.anim_time*90*4)*2.4",
+            "-4 + math.sin(q.anim_time*90*4+90)*0.5"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(q.anim_time*90*4-90)*5",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.masquerain.blink": {
+      "animation_length": 0.20833,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.2083": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelash_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.2083": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.2083": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelash_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.2083": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

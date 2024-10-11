@@ -1,0 +1,226 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.clodsiremodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.clodsire.ground_idle": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "spike_back_left": {
+          "position": [
+            0.0,
+            -9.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "upper_jaw": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "upper_jaw2": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "lower_jaw": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            -0.43688,
+            -4.98093,
+            5.019
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            -0.43688,
+            4.98093,
+            -5.019
+          ]
+        },
+        "spike_front_left": {
+          "position": [
+            0.0,
+            -12.0,
+            0.0
+          ]
+        },
+        "spike_middle_left": {
+          "position": [
+            0.0,
+            -12.0,
+            0.0
+          ]
+        },
+        "spike_front_right": {
+          "position": [
+            0.0,
+            -12.0,
+            0.0
+          ]
+        },
+        "spike_middle_right": {
+          "position": [
+            0.0,
+            -12.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "spike_back_right": {
+          "position": [
+            0.0,
+            -9.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            -1.81693,
+            -19.92066,
+            5.3191
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            -1.81693,
+            19.92066,
+            -5.3191
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.clodsiremodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6 + 180) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.clodsiremodel.bimanualswinganimation": {
+      "loop": true,
+      "bones": {
+        "arm_right": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.clodsire.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

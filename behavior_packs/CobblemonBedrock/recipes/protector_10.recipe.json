@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " G ",
+      "TCT",
+      "G G"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:polished_granite"
+      },
+      "T": {
+        "item": "minecraft:cyan_terracotta"
+      },
+      "C": {
+        "item": "minecraft:copper_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:polished_granite"
+      },
+      {
+        "item": "minecraft:cyan_terracotta"
+      },
+      {
+        "item": "minecraft:copper_block"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:protector"
+    },
+    "description": {
+      "identifier": "cobblemon:protector_10"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

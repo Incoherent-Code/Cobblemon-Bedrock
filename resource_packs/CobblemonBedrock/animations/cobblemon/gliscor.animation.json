@@ -1,0 +1,380 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.gliscor.ground_idle": {
+      "loop": true,
+      "bones": {
+        "gliscor": {
+          "position": [
+            0.0,
+            0.25,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "lower_spine": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "lower_spine2": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "upper_torso": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tongue": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tongue_tip": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_upper_arm": {
+          "rotation": [
+            15.16955,
+            1.29256,
+            39.94548
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_lower_arm": {
+          "rotation": [
+            1.41267,
+            49.75604,
+            -5.16875
+          ]
+        },
+        "left_arm_nub": {
+          "rotation": [
+            20.0,
+            7.5,
+            -7.5
+          ]
+        },
+        "left_claw": {
+          "rotation": [
+            -44.62034,
+            8.18198,
+            -0.76232
+          ]
+        },
+        "left_claw_top": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_claw_bottom": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_upper_arm": {
+          "rotation": [
+            15.16955,
+            -1.29256,
+            -39.94548
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_lower_arm": {
+          "rotation": [
+            1.41267,
+            -49.75604,
+            5.16875
+          ]
+        },
+        "right_arm_nub": {
+          "rotation": [
+            20.0,
+            -7.5,
+            7.5
+          ]
+        },
+        "right_claw": {
+          "rotation": [
+            -44.62034,
+            -8.18198,
+            0.76232
+          ]
+        },
+        "right_claw_top": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_claw_bottom": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flying_membrane": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "top_left_membrane": {
+          "rotation": [
+            0.0,
+            0.0,
+            59.0
+          ]
+        },
+        "top_right_membrane": {
+          "rotation": [
+            0.0,
+            0.0,
+            -59.0
+          ]
+        },
+        "middle_left_membrane": {
+          "rotation": [
+            0.0,
+            0.0,
+            34.0
+          ]
+        },
+        "middle_right_membrane": {
+          "rotation": [
+            0.0,
+            0.0,
+            -34.0
+          ]
+        },
+        "bottom_left_membrane": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.5
+          ]
+        },
+        "bottom_right_membrane": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.5
+          ]
+        },
+        "tail_segment_1": {
+          "rotation": [
+            67.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_segment_2": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_segment_3": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_segment_4": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_segment_end": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_left_stinger": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_right_stinger": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "left_thigh": {
+          "rotation": [
+            15.95979,
+            -22.61139,
+            -1.29665
+          ]
+        },
+        "left_calf": {
+          "rotation": [
+            -5.0335,
+            -1.26059,
+            2.18098
+          ]
+        },
+        "left_foot": {
+          "rotation": [
+            -4.78987,
+            -12.0197,
+            3.07934
+          ]
+        },
+        "left_inner_toe": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_outer_toe": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_thigh": {
+          "rotation": [
+            15.95979,
+            22.61139,
+            1.29665
+          ]
+        },
+        "right_calf": {
+          "rotation": [
+            -5.0335,
+            1.26059,
+            -2.18098
+          ]
+        },
+        "right_foot": {
+          "rotation": [
+            -4.78987,
+            12.0197,
+            -3.07934
+          ]
+        },
+        "right_inner_toe": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_outer_toe": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.gliscormodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "right_thigh": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1 + 180) * 0.6 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "left_thigh": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1) *  0.6 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.gliscor.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "closed": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

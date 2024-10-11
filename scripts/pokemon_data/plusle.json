@@ -1,0 +1,219 @@
+{
+  "minLevel": 16,
+  "maxLevel": 41,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 16,
+      "maxLevel": 41
+    },
+    "1": {
+      "minLevel": 16,
+      "maxLevel": 41
+    }
+  },
+  "name": "Plusle",
+  "nationalPokedexNumber": 311,
+  "baseStats": {
+    "hp": 60,
+    "attack": 50,
+    "defence": 40,
+    "special_attack": 85,
+    "special_defence": 75,
+    "speed": 95
+  },
+  "maleRatio": 0.5,
+  "catchRate": 200,
+  "baseScale": 0.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.9,
+    "fixed": false
+  },
+  "primaryType": "electric",
+  "abilities": [
+    "plus",
+    "h:lightningrod"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:growl",
+    "1:nuzzle",
+    "1:playnice",
+    "1:quickattack",
+    "1:thunderwave",
+    "4:helpinghand",
+    "7:spark",
+    "10:encore",
+    "13:bestow",
+    "16:swift",
+    "19:electroball",
+    "22:copycat",
+    "25:charm",
+    "28:charge",
+    "31:discharge",
+    "34:batonpass",
+    "35:faketears",
+    "37:agility",
+    "40:lastresort",
+    "43:thunder",
+    "46:nastyplot",
+    "49:entrainment",
+    "egg:charm",
+    "egg:discharge",
+    "egg:faketears",
+    "egg:luckychant",
+    "egg:sing",
+    "egg:substitute",
+    "egg:sweetkiss",
+    "egg:tearfullook",
+    "egg:wish",
+    "tm:attract",
+    "tm:captivate",
+    "tm:chargebeam",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:fling",
+    "tm:frustration",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:irontail",
+    "tm:lightscreen",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:secretpower",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:swagger",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:voltswitch",
+    "tm:wildcharge",
+    "tutor:bodyslam",
+    "tutor:counter",
+    "tutor:covet",
+    "tutor:defensecurl",
+    "tutor:discharge",
+    "tutor:doubleedge",
+    "tutor:dynamicpunch",
+    "tutor:electroweb",
+    "tutor:endure",
+    "tutor:growl",
+    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:irontail",
+    "tutor:lastresort",
+    "tutor:magnetrise",
+    "tutor:megakick",
+    "tutor:megapunch",
+    "tutor:metronome",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:quickattack",
+    "tutor:rollout",
+    "tutor:seismictoss",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:substitute",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:thunderpunch",
+    "tutor:thunderwave",
+    "tutor:uproar",
+    "tutor:watersport"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.plusle.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:magnet",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "fairy"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 4.0,
+  "weight": 42.0
+}

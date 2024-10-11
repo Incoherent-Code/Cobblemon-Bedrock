@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "cobblemon:vivichoke"
+      },
+      {
+        "item": "minecraft:milk_bucket"
+      },
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "minecraft:bread"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "cobblemon:vivichoke"
+      },
+      {
+        "item": "minecraft:milk_bucket"
+      },
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "minecraft:bread"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:vivichoke_dip"
+    },
+    "description": {
+      "identifier": "cobblemon:vivichoke_dip_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

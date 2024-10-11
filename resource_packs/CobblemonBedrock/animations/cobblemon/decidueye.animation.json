@@ -1,0 +1,571 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.decidueyemodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.decidueye.ground_idle": {
+      "loop": true,
+      "bones": {
+        "right_upper_coat": {
+          "rotation": [
+            0.0,
+            0.0,
+            -60.0
+          ]
+        },
+        "left_upper_coat": {
+          "rotation": [
+            0.0,
+            0.0,
+            60.0
+          ]
+        }
+      }
+    },
+    "animation.decidueye.standing.transform": {
+      "bones": {
+        "folded_wings": {},
+        "wing_left1": {
+          "scale": 0.001
+        },
+        "wing_right1": {
+          "scale": 0.001
+        },
+        "arrow": {
+          "scale": 0.001
+        }
+      }
+    },
+    "animation.decidueyemodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_right1": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662 + 180) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left1": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662) *  1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.decidueye.walk.transform": {
+      "bones": {
+        "folded_wings": {},
+        "wing_left1": {
+          "scale": 0.001
+        },
+        "wing_right1": {
+          "scale": 0.001
+        },
+        "arrow": {
+          "scale": 0.001
+        }
+      }
+    },
+    "animation.decidueye.air_idle": {
+      "loop": true,
+      "bones": {
+        "wing_left": {
+          "rotation": [
+            0.0,
+            -5.0,
+            -15.0
+          ]
+        },
+        "wing_left3": {
+          "rotation": [
+            0.0,
+            -25.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            40.0,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_left2": {
+          "rotation": [
+            0.0,
+            10.0,
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right2": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right": {
+          "rotation": [
+            13.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_back_right": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_inner_right": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_outer_right": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_outer_right": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left2": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left": {
+          "rotation": [
+            13.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_back_left": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_inner_left": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_outer_left": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            40.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            2.0,
+            8.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            0.0,
+            5.0,
+            15.0
+          ]
+        },
+        "wing_right3": {
+          "rotation": [
+            0.0,
+            25.0,
+            0.0
+          ]
+        },
+        "toe_back_right": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_inner_right": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_back_left": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_inner_left": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_outer_left": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_right2": {
+          "rotation": [
+            0.0,
+            -10.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.decidueye.hover.transform": {
+      "bones": {
+        "folded_wings": {
+          "scale": 0.001
+        },
+        "wing_left1": {},
+        "wing_right1": {},
+        "arrow": {
+          "scale": 0.001
+        }
+      }
+    },
+    "animation.decidueye.air_fly": {
+      "loop": true,
+      "bones": {
+        "wing_left": {
+          "rotation": [
+            0.5,
+            0.0,
+            -5.0
+          ]
+        },
+        "wing_left3": {
+          "rotation": [
+            0.0,
+            -15.0,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right2": {
+          "rotation": [
+            -70.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_back_right": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_inner_right": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_outer_right": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_outer_right": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left2": {
+          "rotation": [
+            -70.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_back_left": {
+          "rotation": [
+            -60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_inner_left": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_outer_left": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            65.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            5.0,
+            10.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -50.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_back_right": {
+          "rotation": [
+            -60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_inner_right": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_back_left": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_inner_left": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "claw_outer_left": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            0.5,
+            0.0,
+            5.0
+          ]
+        },
+        "wing_right3": {
+          "rotation": [
+            0.0,
+            15.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            63.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.decidueye.fly.transform": {
+      "bones": {
+        "folded_wings": {
+          "scale": 0.001
+        },
+        "wing_left1": {},
+        "wing_right1": {},
+        "arrow": {
+          "scale": 0.001
+        }
+      }
+    },
+    "animation.decidueye.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

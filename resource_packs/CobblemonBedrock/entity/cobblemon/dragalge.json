@@ -1,0 +1,47 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:dragalge",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0691_dragalge/dragalge",
+        "shiny": "textures/pokemon/0691_dragalge/dragalge_shiny"
+      },
+      "geometry": {
+        "base": "geometry.dragalge.geo",
+        "shiny": "geometry.dragalge.geo"
+      },
+      "animations": {
+        "dragalge.water_idle": "animation.dragalge.water_idle",
+        "dragalge.blink": "animation.dragalge.blink",
+        "controller.animation.dragalge.blink": "controller.animation.dragalge.blink",
+        "controller.animation.cobblemon.dragalge": "controller.animation.cobblemon.dragalge"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.dragalge"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.dragalge.blink",
+          {
+            "controller.animation.cobblemon.dragalge": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_dragalge = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

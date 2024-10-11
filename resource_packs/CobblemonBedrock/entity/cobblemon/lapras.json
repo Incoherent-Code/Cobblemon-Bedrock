@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:lapras",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0131_lapras/lapras",
+        "shiny": "textures/pokemon/0131_lapras/lapras_shiny"
+      },
+      "geometry": {
+        "base": "geometry.lapras.geo",
+        "shiny": "geometry.lapras.geo"
+      },
+      "animations": {
+        "laprasmodel.singlebonelook": "animation.laprasmodel.singlebonelook",
+        "lapras.ground_idle": "animation.lapras.ground_idle",
+        "lapras.ground_walk": "animation.lapras.ground_walk",
+        "lapras.water_idle": "animation.lapras.water_idle",
+        "lapras.water_swim": "animation.lapras.water_swim",
+        "lapras.underwater_idle": "animation.lapras.underwater_idle",
+        "lapras.underwater_swim": "animation.lapras.underwater_swim",
+        "lapras.blink": "animation.lapras.blink",
+        "controller.animation.lapras.blink": "controller.animation.lapras.blink",
+        "controller.animation.cobblemon.lapras": "controller.animation.cobblemon.lapras"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.lapras"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.lapras.blink",
+          {
+            "controller.animation.cobblemon.lapras": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_lapras = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

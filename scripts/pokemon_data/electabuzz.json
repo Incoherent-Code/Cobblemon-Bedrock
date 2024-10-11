@@ -1,0 +1,279 @@
+{
+  "minLevel": 30,
+  "maxLevel": 50,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 30,
+      "maxLevel": 50
+    }
+  },
+  "name": "Electabuzz",
+  "nationalPokedexNumber": 125,
+  "baseStats": {
+    "hp": 65,
+    "attack": 83,
+    "defence": 57,
+    "special_attack": 95,
+    "special_defence": 85,
+    "speed": 105
+  },
+  "maleRatio": 0.75,
+  "catchRate": 45,
+  "baseScale": 0.8,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.5,
+    "fixed": false
+  },
+  "primaryType": "electric",
+  "abilities": [
+    "static",
+    "h:vitalspirit"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:charge",
+    "1:leer",
+    "1:quickattack",
+    "1:thundershock",
+    "12:swift",
+    "16:shockwave",
+    "20:thunderwave",
+    "22:electroball",
+    "24:screech",
+    "28:thunderpunch",
+    "34:discharge",
+    "40:lowkick",
+    "46:thunderbolt",
+    "52:lightscreen",
+    "58:thunder",
+    "64:gigaimpact",
+    "tm:attract",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:captivate",
+    "tm:chargebeam",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:electroball",
+    "tm:electroweb",
+    "tm:endure",
+    "tm:facade",
+    "tm:firepunch",
+    "tm:flash",
+    "tm:fling",
+    "tm:focusblast",
+    "tm:focuspunch",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:icepunch",
+    "tm:irontail",
+    "tm:lightscreen",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:naturalgift",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:psychic",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:rockclimb",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:screech",
+    "tm:secretpower",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:strength",
+    "tm:substitute",
+    "tm:swagger",
+    "tm:swift",
+    "tm:thief",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderpunch",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:uproar",
+    "tm:voltswitch",
+    "tm:wildcharge",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:bodyslam",
+    "tutor:brickbreak",
+    "tutor:counter",
+    "tutor:covet",
+    "tutor:crosschop",
+    "tutor:curse",
+    "tutor:detect",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:dualchop",
+    "tutor:dynamicpunch",
+    "tutor:electroweb",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:firepunch",
+    "tutor:flash",
+    "tutor:focuspunch",
+    "tutor:followme",
+    "tutor:frustration",
+    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:hiddenpower",
+    "tutor:hyperbeam",
+    "tutor:icepunch",
+    "tutor:irontail",
+    "tutor:leer",
+    "tutor:lightscreen",
+    "tutor:lowkick",
+    "tutor:magnetrise",
+    "tutor:megakick",
+    "tutor:megapunch",
+    "tutor:metronome",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:protect",
+    "tutor:psychic",
+    "tutor:psywave",
+    "tutor:quickattack",
+    "tutor:rage",
+    "tutor:raindance",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:risingvoltage",
+    "tutor:rocksmash",
+    "tutor:screech",
+    "tutor:seismictoss",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:skullbash",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:strength",
+    "tutor:submission",
+    "tutor:substitute",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:takedown",
+    "tutor:taunt",
+    "tutor:teleport",
+    "tutor:thief",
+    "tutor:thunder",
+    "tutor:thunderbolt",
+    "tutor:thunderpunch",
+    "tutor:thundershock",
+    "tutor:thunderwave",
+    "tutor:toxic",
+    "tutor:zapcannon"
+  ],
+  "evolutions": [
+    {
+      "id": "electabuzz_electivire",
+      "variant": "trade",
+      "result": "electivire",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "held_item",
+          "itemCondition": "cobblemon:electirizer"
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.electabuzz.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:redstone",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:electirizer",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 25,
+  "eggGroups": [
+    "human_like"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 11.0,
+  "weight": 300.0
+}

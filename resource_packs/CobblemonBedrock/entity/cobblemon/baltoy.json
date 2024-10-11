@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:baltoy",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0343_baltoy/baltoy",
+        "shiny": "textures/pokemon/0343_baltoy/baltoy_shiny"
+      },
+      "geometry": {
+        "base": "geometry.baltoy.geo",
+        "shiny": "geometry.baltoy.geo"
+      },
+      "animations": {
+        "baltoy.ground_idle": "animation.baltoy.ground_idle",
+        "baltoy.ground_walk": "animation.baltoy.ground_walk",
+        "controller.animation.cobblemon.baltoy": "controller.animation.cobblemon.baltoy"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.baltoy"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.baltoy": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_baltoy = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

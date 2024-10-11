@@ -1,0 +1,234 @@
+{
+  "minLevel": 5,
+  "maxLevel": 30,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 5,
+      "maxLevel": 30
+    },
+    "1": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 5,
+      "maxLevel": 30
+    },
+    "2": {
+      "minLevel": 5,
+      "maxLevel": 30
+    }
+  },
+  "name": "Cutiefly",
+  "nationalPokedexNumber": 742,
+  "baseStats": {
+    "hp": 40,
+    "attack": 45,
+    "defence": 40,
+    "special_attack": 55,
+    "special_defence": 40,
+    "speed": 84
+  },
+  "maleRatio": 0.5,
+  "catchRate": 190,
+  "baseScale": 0.3,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.9,
+    "height": 2.0,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "fairy",
+  "abilities": [
+    "honeygather",
+    "shielddust",
+    "h:sweetveil"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:absorb",
+    "1:fairywind",
+    "6:stunspore",
+    "12:sweetscent",
+    "13:silverwind",
+    "18:drainingkiss",
+    "24:strugglebug",
+    "30:aromatherapy",
+    "36:switcheroo",
+    "42:dazzlinggleam",
+    "48:bugbuzz",
+    "54:quiverdance",
+    "egg:aromaticmist",
+    "egg:batonpass",
+    "egg:bestow",
+    "egg:moonblast",
+    "egg:powder",
+    "egg:skillswap",
+    "egg:speedswap",
+    "egg:stickyweb",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:allyswitch",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:bugbuzz",
+    "tm:calmmind",
+    "tm:charm",
+    "tm:confide",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:drainingkiss",
+    "tm:dreameater",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:faketears",
+    "tm:frustration",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:imprison",
+    "tm:infestation",
+    "tm:leechlife",
+    "tm:lightscreen",
+    "tm:magicroom",
+    "tm:playrough",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychup",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:roost",
+    "tm:round",
+    "tm:safeguard",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:speedswap",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swift",
+    "tm:thief",
+    "tm:toxic",
+    "tm:trick",
+    "tm:uturn",
+    "tm:wonderroom",
+    "tutor:afteryou",
+    "tutor:allyswitch",
+    "tutor:bugbite",
+    "tutor:covet",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:helpinghand",
+    "tutor:lastresort",
+    "tutor:magicroom",
+    "tutor:signalbeam",
+    "tutor:skillswap",
+    "tutor:snore",
+    "tutor:tailwind",
+    "tutor:telekinesis",
+    "tutor:trick",
+    "tutor:wonderroom"
+  ],
+  "evolutions": [
+    {
+      "id": "cutiefly_ribombee",
+      "variant": "level_up",
+      "result": "ribombee",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "pollenpuff"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 25
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": true,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.cutiefly.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:honey_bottle",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "bug",
+    "fairy"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 1.0,
+  "weight": 2.0
+}

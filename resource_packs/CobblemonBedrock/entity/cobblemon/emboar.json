@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:emboar",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0500_emboar/emboar",
+        "shiny": "textures/pokemon/0500_emboar/emboar_shiny",
+        "base_flame_uv": "textures/pokemon/0500_emboar/base_flame_uv",
+        "shiny_flame_uv": "textures/pokemon/0500_emboar/shiny_flame_uv"
+      },
+      "geometry": {
+        "base": "geometry.emboar.geo",
+        "shiny": "geometry.emboar.geo"
+      },
+      "animations": {
+        "emboar.sleep": "animation.emboar.sleep",
+        "emboarmodel.singlebonelook": "animation.emboarmodel.singlebonelook",
+        "emboar.ground_idle": "animation.emboar.ground_idle",
+        "emboar.ground_walk": "animation.emboar.ground_walk",
+        "emboar.blink": "animation.emboar.blink",
+        "controller.animation.emboar.blink": "controller.animation.emboar.blink",
+        "controller.animation.cobblemon.emboar": "controller.animation.cobblemon.emboar"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.emboar_flame",
+        "controller.render.cobblemon.emboar"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.emboar.blink",
+          {
+            "controller.animation.cobblemon.emboar": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_emboar = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

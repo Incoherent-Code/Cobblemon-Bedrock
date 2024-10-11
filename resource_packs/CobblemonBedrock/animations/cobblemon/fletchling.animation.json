@@ -1,0 +1,156 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.fletchlingmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head_ai": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.fletchling.ground_idle": {
+      "loop": true,
+      "bones": {
+        "toe_inner_left": {
+          "rotation": [
+            0.0,
+            5.0,
+            0.0
+          ]
+        },
+        "toe_outer_left": {
+          "rotation": [
+            0.0,
+            -5.0,
+            0.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            153.39128,
+            -84.41125,
+            -63.50045
+          ],
+          "position": [
+            0.1,
+            -1.0,
+            -0.5
+          ]
+        },
+        "wing_left2": {
+          "rotation": [
+            0.0,
+            47.5,
+            0.0
+          ]
+        },
+        "wing_left3": {
+          "rotation": [
+            0.0,
+            -45.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            55.0,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            153.39128,
+            84.41125,
+            63.50045
+          ],
+          "position": [
+            -0.1,
+            -1.0,
+            -0.5
+          ]
+        },
+        "wing_right2": {
+          "rotation": [
+            0.0,
+            -47.5,
+            0.0
+          ]
+        },
+        "wing_right3": {
+          "rotation": [
+            0.0,
+            45.0,
+            0.0
+          ]
+        },
+        "toe_inner_right": {
+          "rotation": [
+            0.0,
+            -5.0,
+            0.0
+          ]
+        },
+        "toe_outer_right": {
+          "rotation": [
+            0.0,
+            5.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.fletchling.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

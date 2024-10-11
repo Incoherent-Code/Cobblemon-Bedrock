@@ -1,0 +1,217 @@
+{
+  "minLevel": 23,
+  "maxLevel": 48,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "tree-oak"
+    ],
+    "2": [
+      "tree-spruce"
+    ],
+    "3": [
+      "tree-acacia"
+    ],
+    "4": [
+      "tree-birch"
+    ],
+    "5": [
+      "tree-darkoak"
+    ],
+    "6": [
+      "tree-jungle"
+    ],
+    "7": [
+      "tree-mangrove"
+    ],
+    "8": [
+      "tree-cherry"
+    ],
+    "9": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 23,
+      "maxLevel": 48
+    }
+  },
+  "name": "Komala",
+  "nationalPokedexNumber": 775,
+  "baseStats": {
+    "hp": 65,
+    "attack": 115,
+    "defence": 65,
+    "special_attack": 75,
+    "special_defence": 95,
+    "speed": 65
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 0.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "slow",
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "normal",
+  "abilities": [
+    "comatose"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:defensecurl",
+    "1:rollout",
+    "6:spitup",
+    "6:stockpile",
+    "6:swallow",
+    "11:rapidspin",
+    "16:yawn",
+    "21:slam",
+    "26:flail",
+    "31:suckerpunch",
+    "36:psychup",
+    "41:woodhammer",
+    "46:thrash",
+    "egg:charm",
+    "egg:playrough",
+    "egg:sing",
+    "egg:superpower",
+    "egg:wish",
+    "tm:acrobatics",
+    "tm:attract",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:bulkup",
+    "tm:bulldoze",
+    "tm:calmmind",
+    "tm:charm",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:fling",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:gunkshot",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:icespinner",
+    "tm:ironhead",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:metalclaw",
+    "tm:payback",
+    "tm:playrough",
+    "tm:protect",
+    "tm:psychup",
+    "tm:quash",
+    "tm:raindance",
+    "tm:return",
+    "tm:reversal",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:seedbomb",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:stompingtantrum",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:toxic",
+    "tm:trailblaze",
+    "tm:uturn",
+    "tm:workup",
+    "tm:zenheadbutt",
+    "tutor:endeavor",
+    "tutor:ironhead",
+    "tutor:knockoff",
+    "tutor:lastresort",
+    "tutor:snore",
+    "tutor:stompingtantrum",
+    "tutor:superpower",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": false,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": false,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": false,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.komala.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:acacia_log"
+      },
+      {
+        "item": "cobblemon:chesto_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "field"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 4.0,
+  "weight": 199.0
+}

@@ -1,0 +1,125 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:entity": {
+    "component_groups": {
+      "cobblemon:instant_kill": {
+        "minecraft:instant_despawn": {}
+      },
+      "cobblemon:enabled": {
+        "minecraft:physics": {},
+        "minecraft:pushable": {}
+      },
+      "cobblemon:disabled": {
+        "minecraft:custom_hit_test": {
+          "hitboxes": [
+            {
+              "pivot": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "width": 0.0,
+              "height": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "events": {
+      "cobblemon:thrown": {
+        "queue_command": {
+          "command": "scriptevent cobblemon:pokeball_thrown",
+          "target": "self"
+        }
+      },
+      "minecraft:entity_spawned": {
+        "trigger": "cobblemon:thrown"
+      },
+      "cobblemon:instant_kill": {
+        "add": {
+          "component_groups": [
+            "cobblemon:instant_kill"
+          ]
+        }
+      },
+      "cobblemon:disable": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "cobblemon:enabled"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "cobblemon:disabled"
+              ]
+            }
+          },
+          {
+            "set_property": {
+              "cobblemon:disabled": true
+            }
+          }
+        ]
+      }
+    },
+    "description": {
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "identifier": "cobblemon:level_ball",
+      "properties": {
+        "cobblemon:can_catch_pokemon": {
+          "type": "bool",
+          "default": true,
+          "client_sync": true
+        },
+        "cobblemon:disabled": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:type_family": {
+        "family": [
+          "cobblemon",
+          "pokeball"
+        ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:physics": {},
+      "minecraft:projectile": {
+        "anchor": 1,
+        "gravity": 0.1,
+        "liquid_inertia": 0.6,
+        "power": 1.5,
+        "stop_on_hurt": true
+      },
+      "minecraft:pushable": {}
+    }
+  },
+  "format_version": "1.20.40"
+}

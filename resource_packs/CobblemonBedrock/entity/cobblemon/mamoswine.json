@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:mamoswine",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0473_mamoswine/mamoswine",
+        "shiny": "textures/pokemon/0473_mamoswine/mamoswine_shiny",
+        "female": "textures/pokemon/0473_mamoswine/mamoswine"
+      },
+      "geometry": {
+        "base": "geometry.mamoswine_male.geo",
+        "shiny": "geometry.mamoswine_male.geo",
+        "female": "geometry.mamoswine_female.geo"
+      },
+      "animations": {
+        "mamoswine.sleep": "animation.mamoswine.sleep",
+        "mamoswine.ground_idle": "animation.mamoswine.ground_idle",
+        "mamoswine.ground_walk": "animation.mamoswine.ground_walk",
+        "mamoswine.blink": "animation.mamoswine.blink",
+        "controller.animation.mamoswine.blink": "controller.animation.mamoswine.blink",
+        "controller.animation.cobblemon.mamoswine": "controller.animation.cobblemon.mamoswine"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.mamoswine"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.mamoswine.blink",
+          {
+            "controller.animation.cobblemon.mamoswine": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_mamoswine = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

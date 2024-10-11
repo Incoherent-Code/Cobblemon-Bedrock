@@ -1,0 +1,198 @@
+{
+  "minLevel": 38,
+  "maxLevel": 44,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 38,
+      "maxLevel": 44
+    },
+    "1": {
+      "minLevel": 38,
+      "maxLevel": 44
+    }
+  },
+  "name": "Klang",
+  "nationalPokedexNumber": 600,
+  "baseStats": {
+    "hp": 60,
+    "attack": 80,
+    "defence": 95,
+    "special_attack": 70,
+    "special_defence": 85,
+    "speed": 50
+  },
+  "maleRatio": -1.0,
+  "catchRate": 60,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 1.5,
+    "height": 1.5,
+    "fixed": false
+  },
+  "primaryType": "steel",
+  "abilities": [
+    "plus",
+    "minus",
+    "h:clearbody"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:bind",
+    "1:charge",
+    "1:thundershock",
+    "1:visegrip",
+    "12:chargebeam",
+    "16:metalsound",
+    "20:autotomize",
+    "24:discharge",
+    "28:screech",
+    "32:geargrind",
+    "36:lockon",
+    "36:mirrorshot",
+    "42:shiftgear",
+    "48:zapcannon",
+    "54:hyperbeam",
+    "tm:allyswitch",
+    "tm:assurance",
+    "tm:chargebeam",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:frustration",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:irondefense",
+    "tm:powergem",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:rockpolish",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:sandstorm",
+    "tm:screech",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:substitute",
+    "tm:swagger",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:uproar",
+    "tm:voltswitch",
+    "tm:wildcharge",
+    "tutor:allyswitch",
+    "tutor:bind",
+    "tutor:chargebeam",
+    "tutor:gravity",
+    "tutor:irondefense",
+    "tutor:magiccoat",
+    "tutor:magnetrise",
+    "tutor:recycle",
+    "tutor:risingvoltage",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:steelbeam",
+    "tutor:steelroller",
+    "tutor:telekinesis",
+    "tutor:uproar"
+  ],
+  "evolutions": [
+    {
+      "id": "klang_klinklang",
+      "variant": "level_up",
+      "result": "klinklang",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 49
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.klang.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:raw_iron",
+        "quantityRange": "0-2"
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 6.0,
+  "weight": 510.0
+}

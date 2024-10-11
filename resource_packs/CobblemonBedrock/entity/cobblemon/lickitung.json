@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:lickitung",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0108_lickitung/lickitung",
+        "shiny": "textures/pokemon/0108_lickitung/lickitung_shiny"
+      },
+      "geometry": {
+        "base": "geometry.lickitung.geo",
+        "shiny": "geometry.lickitung.geo"
+      },
+      "animations": {
+        "lickitungmodel.singlebonelook": "animation.lickitungmodel.singlebonelook",
+        "lickitung.ground_idle": "animation.lickitung.ground_idle",
+        "lickitung.ground_walk": "animation.lickitung.ground_walk",
+        "lickitung.battle_idle": "animation.lickitung.battle_idle",
+        "lickitung.blink": "animation.lickitung.blink",
+        "controller.animation.lickitung.blink": "controller.animation.lickitung.blink",
+        "controller.animation.cobblemon.lickitung": "controller.animation.cobblemon.lickitung"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.lickitung"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.lickitung.blink",
+          {
+            "controller.animation.cobblemon.lickitung": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_lickitung = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

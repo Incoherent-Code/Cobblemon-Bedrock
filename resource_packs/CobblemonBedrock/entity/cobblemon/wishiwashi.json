@@ -1,0 +1,68 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:wishiwashi",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0746_wishiwashi/wishiwashi_solo",
+        "shiny": "textures/pokemon/0746_wishiwashi/wishiwashi_solo_shiny",
+        "schooling": "textures/pokemon/0746_wishiwashi/wishiwashi_school",
+        "shiny_schooling": "textures/pokemon/0746_wishiwashi/wishiwashi_school_shiny",
+        "schooling_emissive": "textures/pokemon/0746_wishiwashi/wishiwashi_school_emissive",
+        "shiny_schooling_emissive": "textures/pokemon/0746_wishiwashi/wishiwashi_school_emissive"
+      },
+      "geometry": {
+        "base": "geometry.wishiwashi_solo.geo",
+        "shiny": "geometry.wishiwashi_solo.geo",
+        "schooling": "geometry.wishiwashi_school.geo",
+        "shiny_schooling": "geometry.wishiwashi_school.geo"
+      },
+      "animations": {
+        "wishiwashi_solo.water_sleep": "animation.wishiwashi_solo.water_sleep",
+        "wishiwashi_solo.ground_idle": "animation.wishiwashi_solo.ground_idle",
+        "wishiwashi_solo.ground_walk": "animation.wishiwashi_solo.ground_walk",
+        "wishiwashi_solo.water_idle": "animation.wishiwashi_solo.water_idle",
+        "wishiwashi_solo.water_swim": "animation.wishiwashi_solo.water_swim",
+        "wishiwashi_solo.blink": "animation.wishiwashi_solo.blink",
+        "controller.animation.wishiwashi_solo.blink": "controller.animation.wishiwashi_solo.blink",
+        "controller.animation.cobblemon.wishiwashi_solo": "controller.animation.cobblemon.wishiwashi_solo",
+        "wishiwashi_school.water_sleep": "animation.wishiwashi_school.water_sleep",
+        "wishiwashi_school.water_idle": "animation.wishiwashi_school.water_idle",
+        "wishiwashi_schooling.standing.transform": "animation.wishiwashi_schooling.standing.transform",
+        "wishiwashi_school.water_swim": "animation.wishiwashi_school.water_swim",
+        "wishiwashi_schooling.walk.transform": "animation.wishiwashi_schooling.walk.transform",
+        "controller.animation.cobblemon.wishiwashi_schooling": "controller.animation.cobblemon.wishiwashi_schooling"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.wishiwashi_emissive",
+        "controller.render.cobblemon.wishiwashi"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.wishiwashi_solo.blink",
+          {
+            "controller.animation.cobblemon.wishiwashi_solo": "q.variant == 0 || q.variant == 1"
+          },
+          {
+            "controller.animation.cobblemon.wishiwashi_schooling": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_wishiwashi_solo = -1.0;",
+          "v.state_of_wishiwashi_schooling = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

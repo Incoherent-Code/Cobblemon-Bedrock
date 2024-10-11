@@ -1,0 +1,315 @@
+{
+  "minLevel": 37,
+  "maxLevel": 51,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 37,
+      "maxLevel": 51
+    },
+    "1": {
+      "minLevel": 37,
+      "maxLevel": 51
+    },
+    "2": {
+      "minLevel": 37,
+      "maxLevel": 51
+    }
+  },
+  "name": "Avalugg",
+  "nationalPokedexNumber": 713,
+  "baseStats": {
+    "hp": 95,
+    "attack": 117,
+    "defence": 184,
+    "special_attack": 44,
+    "special_defence": 46,
+    "speed": 28
+  },
+  "maleRatio": 0.5,
+  "catchRate": 55,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 4.0,
+    "height": 3.0,
+    "fixed": false
+  },
+  "primaryType": "ice",
+  "abilities": [
+    "owntempo",
+    "icebody",
+    "h:sturdy"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:bodyslam",
+    "1:harden",
+    "1:powdersnow",
+    "1:rapidspin",
+    "1:tackle",
+    "1:wideguard",
+    "9:curse",
+    "12:icywind",
+    "15:protect",
+    "18:avalanche",
+    "20:sharpen",
+    "21:bite",
+    "24:icefang",
+    "27:irondefense",
+    "30:iceball",
+    "30:recover",
+    "33:crunch",
+    "36:takedown",
+    "41:blizzard",
+    "46:doubleedge",
+    "51:iciclecrash",
+    "51:skullbash",
+    "tm:attract",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:chillingwater",
+    "tm:confide",
+    "tm:crunch",
+    "tm:doubleteam",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:flashcannon",
+    "tm:frostbreath",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:gyroball",
+    "tm:hail",
+    "tm:heavyslam",
+    "tm:hiddenpower",
+    "tm:highhorsepower",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icefang",
+    "tm:icespinner",
+    "tm:iciclespear",
+    "tm:icywind",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:roar",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:safeguard",
+    "tm:scaryface",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:snowscape",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:strength",
+    "tm:substitute",
+    "tm:superpower",
+    "tm:surf",
+    "tm:swagger",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:toxic",
+    "tutor:afteryou",
+    "tutor:block",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:snore",
+    "tutor:stompingtantrum",
+    "tutor:superpower",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [],
+  "features": [
+    "hisuian"
+  ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.2
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.1,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": true,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.avalugg.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:never_melt_ice",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:aspear_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "monster",
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 20.0,
+  "weight": 5050.0,
+  "forms": [
+    {
+      "name": "Hisui",
+      "baseStats": {
+        "hp": 95,
+        "attack": 127,
+        "defence": 184,
+        "special_attack": 34,
+        "special_defence": 36,
+        "speed": 38
+      },
+      "maleRatio": 0.5,
+      "catchRate": 55,
+      "experienceGroup": "medium_fast",
+      "baseExperienceYield": 180,
+      "baseFriendship": 50,
+      "primaryType": "ice",
+      "secondaryType": "rock",
+      "moves": [
+        "1:harden",
+        "1:powdersnow",
+        "1:rapidspin",
+        "1:tackle",
+        "1:wideguard",
+        "9:curse",
+        "12:icywind",
+        "15:protect",
+        "18:avalanche",
+        "21:bite",
+        "24:icefang",
+        "27:irondefense",
+        "30:recover",
+        "33:crunch",
+        "36:takedown",
+        "41:blizzard",
+        "46:doubleedge",
+        "51:stoneedge",
+        "61:mountaingale",
+        "tm:avalanche",
+        "tm:blizzard",
+        "tm:bodypress",
+        "tm:bodyslam",
+        "tm:bulldoze",
+        "tm:chillingwater",
+        "tm:crunch",
+        "tm:dig",
+        "tm:earthquake",
+        "tm:endure",
+        "tm:facade",
+        "tm:gigaimpact",
+        "tm:heavyslam",
+        "tm:hyperbeam",
+        "tm:icebeam",
+        "tm:icefang",
+        "tm:icespinner",
+        "tm:icywind",
+        "tm:irondefense",
+        "tm:ironhead",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:rockblast",
+        "tm:rockslide",
+        "tm:rocktomb",
+        "tm:sandstorm",
+        "tm:scaryface",
+        "tm:sleeptalk",
+        "tm:snowscape",
+        "tm:stealthrock",
+        "tm:stompingtantrum",
+        "tm:stoneedge",
+        "tm:substitute",
+        "tm:takedown",
+        "tm:terablast"
+      ],
+      "evolutions": [],
+      "abilities": [
+        "strongjaw",
+        "icebody",
+        "h:sturdy"
+      ],
+      "preEvolution": "bergmite",
+      "labels": [
+        "gen8",
+        "hisui_regional"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "monster",
+        "mineral"
+      ],
+      "height": 14.0,
+      "weight": 2624.0,
+      "battleOnly": false
+    }
+  ]
+}

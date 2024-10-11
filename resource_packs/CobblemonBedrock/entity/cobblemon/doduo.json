@@ -1,0 +1,61 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:doduo",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0084_doduo/doduo",
+        "shiny": "textures/pokemon/0084_doduo/doduo_shiny",
+        "female": "textures/pokemon/0084_doduo/doduo"
+      },
+      "geometry": {
+        "base": "geometry.doduo_male.geo",
+        "shiny": "geometry.doduo_male.geo",
+        "female": "geometry.doduo_female.geo"
+      },
+      "animations": {
+        "doduo.sleep": "animation.doduo.sleep",
+        "doduo.ground_idle": "animation.doduo.ground_idle",
+        "doduo.ground_walk": "animation.doduo.ground_walk",
+        "doduo.battle_idle": "animation.doduo.battle_idle",
+        "doduo.blink1": "animation.doduo.blink1",
+        "controller.animation.doduo.blink": "controller.animation.doduo.blink",
+        "doduo.blink2": "animation.doduo.blink2",
+        "controller.animation.doduo.blink2": "controller.animation.doduo.blink2",
+        "doduo.bite_quirk1": "animation.doduo.bite_quirk1",
+        "controller.animation.doduo.bite": "controller.animation.doduo.bite",
+        "doduo.bite_quirk2": "animation.doduo.bite_quirk2",
+        "controller.animation.doduo.bite2": "controller.animation.doduo.bite2",
+        "controller.animation.cobblemon.doduo": "controller.animation.cobblemon.doduo"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.doduo"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.doduo.blink",
+          "controller.animation.doduo.blink2",
+          "controller.animation.doduo.bite",
+          "controller.animation.doduo.bite2",
+          {
+            "controller.animation.cobblemon.doduo": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_doduo = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

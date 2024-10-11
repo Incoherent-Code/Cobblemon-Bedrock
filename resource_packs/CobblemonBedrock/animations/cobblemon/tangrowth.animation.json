@@ -1,0 +1,141 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.tangrowth.ground_idle": {
+      "loop": true,
+      "bones": {
+        "leftarm": {
+          "rotation": [
+            15.0,
+            -15.0,
+            45.0
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            0.0,
+            45.0,
+            -20.0
+          ]
+        },
+        "lefthand": {
+          "rotation": [
+            0.0,
+            45.0,
+            -20.0
+          ]
+        },
+        "finger4": {
+          "rotation": [
+            0.0,
+            15.0,
+            -5.0
+          ]
+        },
+        "finger5": {
+          "rotation": [
+            0.0,
+            10.0,
+            -7.5
+          ]
+        },
+        "finger6": {
+          "rotation": [
+            0.0,
+            20.0,
+            -2.5
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            15.0,
+            15.0,
+            -45.0
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            0.0,
+            -45.0,
+            20.0
+          ]
+        },
+        "righthand": {
+          "rotation": [
+            0.0,
+            -45.0,
+            20.0
+          ]
+        },
+        "finger": {
+          "rotation": [
+            0.0,
+            -15.0,
+            5.0
+          ]
+        },
+        "finger2": {
+          "rotation": [
+            0.0,
+            -10.0,
+            7.5
+          ]
+        },
+        "finger3": {
+          "rotation": [
+            0.0,
+            -20.0,
+            2.5
+          ]
+        }
+      }
+    },
+    "animation.tangrowth.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

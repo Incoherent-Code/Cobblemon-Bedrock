@@ -1,0 +1,102 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.dhelmise": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "dhelmise.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_dhelmise = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "dhelmise.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dhelmise = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "dhelmise.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dhelmise = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "float": {
+          "animations": [
+            "dhelmise.water_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dhelmise = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swim": {
+          "animations": [
+            "dhelmise.water_swim"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dhelmise = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

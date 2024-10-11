@@ -1,0 +1,193 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "cobblemon:surskit",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "river"
+              },
+              {
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "frozen"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "river"
+                  }
+                ]
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mangrove_swamp"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "swamp"
+              }
+            ]
+          },
+          {
+            "none_of": [
+              {
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "frozen"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "river"
+                  }
+                ]
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jagged_peaks"
+              },
+              {
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "cold"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "beach"
+                  }
+                ]
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ice_plains"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "snowy_slopes"
+              },
+              {
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "deep"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "frozen"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "ocean"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "frozen"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "ocean"
+                  }
+                ]
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "frozen_peaks"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ice_plains"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "grove"
+              },
+              {
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "cold"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "taiga"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "minecraft:weight": {
+          "default": 18
+        },
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 4
+        },
+        "minecraft:permute_type": [
+          {
+            "weight": 100,
+            "entity_type": "cobblemon:surskit<cobblemon:spawn_condition_0>"
+          }
+        ],
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {}
+      },
+      {
+        "minecraft:weight": {
+          "default": 0
+        },
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 4
+        },
+        "minecraft:permute_type": [
+          {
+            "weight": 100,
+            "entity_type": "cobblemon:surskit<cobblemon:spawn_condition_1>"
+          }
+        ],
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {}
+      }
+    ]
+  },
+  "format_version": "1.18.0"
+}

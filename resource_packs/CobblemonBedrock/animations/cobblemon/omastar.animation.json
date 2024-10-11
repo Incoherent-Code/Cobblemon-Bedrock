@@ -1,0 +1,136 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.omastar.ground_idle": {
+      "loop": true,
+      "bones": {
+        "leftarmtop": {
+          "rotation": [
+            0.0,
+            30.0,
+            0.0
+          ]
+        },
+        "rightarmtop": {
+          "rotation": [
+            0.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "leftlegfront": {
+          "rotation": [
+            0.0,
+            0.0,
+            -25.0
+          ]
+        },
+        "rightlegfront": {
+          "rotation": [
+            0.0,
+            0.0,
+            25.0
+          ]
+        }
+      }
+    },
+    "animation.omastar.water_idle": {
+      "loop": true,
+      "bones": {
+        "leftarmtop": {
+          "rotation": [
+            0.0,
+            -15.0,
+            30.0
+          ]
+        },
+        "rightarmtop": {
+          "rotation": [
+            0.0,
+            15.0,
+            -30.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftlegs": {
+          "rotation": [
+            -15.0,
+            0.0,
+            15.0
+          ]
+        },
+        "rightlegs": {
+          "rotation": [
+            -15.0,
+            0.0,
+            -15.0
+          ]
+        }
+      }
+    },
+    "animation.omastar.water_swim": {
+      "loop": true,
+      "bones": {
+        "leftarmtop": {
+          "rotation": [
+            0.0,
+            -30.0,
+            30.0
+          ]
+        },
+        "rightarmtop": {
+          "rotation": [
+            0.0,
+            30.0,
+            -30.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftlegs": {
+          "rotation": [
+            -30.0,
+            -15.0,
+            30.0
+          ]
+        },
+        "rightlegs": {
+          "rotation": [
+            -30.0,
+            15.0,
+            -30.0
+          ]
+        },
+        "leftlegfront": {
+          "rotation": [
+            0.0,
+            -15.0,
+            0.0
+          ]
+        },
+        "rightlegfront": {
+          "rotation": [
+            0.0,
+            15.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

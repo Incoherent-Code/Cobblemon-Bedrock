@@ -1,0 +1,35 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "cobblemon:fire_stone_lower",
+      "places_feature": "cobblemon:fire_stone_common_feature"
+    },
+    "conditions": {
+      "placement_pass": "underground_pass",
+      "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "desert"
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 10,
+      "coordinate_eval_order": "zyx",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 16]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 16]
+      },
+      "y": {
+        "distribution": "triangle",
+        "extent": [-64, 192]
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.phanpymodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.phanpy.ground_idle": {
+      "loop": true,
+      "bones": {
+        "tail": {
+          "rotation": [
+            17.5,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "trunk": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "trunk2": {
+          "rotation": [
+            -17.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ear_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            32.5
+          ]
+        },
+        "ear_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        },
+        "ear_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -32.5
+          ]
+        },
+        "ear_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -20.0
+          ]
+        }
+      }
+    },
+    "animation.phanpymodel.quadrupedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_back_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_back_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1 + 180) *  1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_front_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1 + 180) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_front_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.phanpy.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

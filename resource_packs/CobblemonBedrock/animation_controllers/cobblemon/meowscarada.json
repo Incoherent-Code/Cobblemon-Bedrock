@@ -1,0 +1,230 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.meowscarada.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowscarada_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_meowscarada_blink = q.life_time + 1; return (q.life_time > v.next_quirk_meowscarada_blink) && (v.state_of_meowscarada == 0 || v.state_of_meowscarada == 1 || v.state_of_meowscarada == 2 || v.state_of_meowscarada == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "meowscarada.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowscarada_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_meowscarada_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.meowscarada.sleep1": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowscarada_sleep1 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_meowscarada_sleep1 = q.life_time + 1; return (q.life_time > v.next_quirk_meowscarada_sleep1) && (v.state_of_meowscarada == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "meowscarada.sleep_quirk"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowscarada_sleep1 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_meowscarada_sleep1 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.meowscarada.sleep2": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowscarada_sleep2 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_meowscarada_sleep2 = q.life_time + 1; return (q.life_time > v.next_quirk_meowscarada_sleep2) && (v.state_of_meowscarada == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "meowscarada.sleep_quirk2"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowscarada_sleep2 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_meowscarada_sleep2 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.meowscarada.sleep3": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowscarada_sleep3 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_meowscarada_sleep3 = q.life_time + 1; return (q.life_time > v.next_quirk_meowscarada_sleep3) && (v.state_of_meowscarada == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "meowscarada.sleep_quirk3"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowscarada_sleep3 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_meowscarada_sleep3 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.meowscarada.sleep4": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowscarada_sleep4 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_meowscarada_sleep4 = q.life_time + 1; return (q.life_time > v.next_quirk_meowscarada_sleep4) && (v.state_of_meowscarada == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "meowscarada.sleep_quirk4"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_meowscarada_sleep4 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_meowscarada_sleep4 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.meowscarada": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "meowscarada.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_meowscarada = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "meowscaradamodel.singlebonelook",
+            "meowscarada.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_meowscarada = 1; return q.is_sleeping;"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "meowscaradamodel.singlebonelook",
+            "meowscarada.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_meowscarada = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "meowscaradamodel.singlebonelook",
+            "meowscarada.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_meowscarada = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walking": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

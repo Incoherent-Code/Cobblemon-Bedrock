@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.dewgong": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "dewgongmodel.singlebonelook",
+            "dewgong.ground_idle"
+          ],
+          "transitions": [
+            {
+              "swim": "v.state_of_dewgong = 0; return q.is_swimming;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "float": {
+          "animations": [
+            "dewgongmodel.singlebonelook",
+            "dewgong.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_dewgong = 1; return (q.is_moving && !q.is_swimming)|| !q.is_moving;"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swim": {
+          "animations": [
+            "dewgongmodel.singlebonelook",
+            "dewgong.water_swim"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_dewgong = 2; return (q.is_moving && !q.is_swimming)|| !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

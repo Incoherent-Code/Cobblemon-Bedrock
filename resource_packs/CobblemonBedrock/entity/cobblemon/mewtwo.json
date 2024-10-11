@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:mewtwo",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0150_mewtwo/mewtwo",
+        "shiny": "textures/pokemon/0150_mewtwo/mewtwo_shiny"
+      },
+      "geometry": {
+        "base": "geometry.mewtwo.geo",
+        "shiny": "geometry.mewtwo.geo"
+      },
+      "animations": {
+        "mewtwomodel.singlebonelook": "animation.mewtwomodel.singlebonelook",
+        "mewtwo.ground_idle": "animation.mewtwo.ground_idle",
+        "mewtwomodel.bipedwalkanimation": "animation.mewtwomodel.bipedwalkanimation",
+        "mewtwomodel.bimanualswinganimation": "animation.mewtwomodel.bimanualswinganimation",
+        "mewtwo.air_idle": "animation.mewtwo.air_idle",
+        "mewtwo.air_fly": "animation.mewtwo.air_fly",
+        "mewtwo.blink": "animation.mewtwo.blink",
+        "controller.animation.mewtwo.blink": "controller.animation.mewtwo.blink",
+        "controller.animation.cobblemon.mewtwo": "controller.animation.cobblemon.mewtwo"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.mewtwo"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.mewtwo.blink",
+          {
+            "controller.animation.cobblemon.mewtwo": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_mewtwo = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

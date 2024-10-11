@@ -1,0 +1,38 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "##",
+      "#W"
+    ],
+    "key": {
+      "#": {
+        "item": "cobblemon:green_mint_leaf"
+      },
+      "W": {
+        "item": "cobblemon:blue_mint_leaf"
+      }
+    },
+    "unlock": [
+      {
+        "item": "cobblemon:green_mint_leaf"
+      },
+      {
+        "item": "cobblemon:blue_mint_leaf"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:hasty_mint"
+    },
+    "description": {
+      "identifier": "cobblemon:hasty_mint_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:gastly",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0092_gastly/gastly",
+        "shiny": "textures/pokemon/0092_gastly/gastly_shiny"
+      },
+      "geometry": {
+        "base": "geometry.gastly.geo",
+        "shiny": "geometry.gastly.geo"
+      },
+      "animations": {
+        "gastly.sleep": "animation.gastly.sleep",
+        "gastly.ground_idle": "animation.gastly.ground_idle",
+        "gastly.ground_walk": "animation.gastly.ground_walk",
+        "gastly.blink": "animation.gastly.blink",
+        "controller.animation.gastly.blink": "controller.animation.gastly.blink",
+        "controller.animation.cobblemon.gastly": "controller.animation.cobblemon.gastly",
+        "gastly_shiny.sleep": "animation.gastly_shiny.sleep",
+        "gastly_shiny.ground_idle": "animation.gastly_shiny.ground_idle",
+        "gastly_shiny.ground_walk": "animation.gastly_shiny.ground_walk",
+        "gastly_shiny.blink": "animation.gastly_shiny.blink",
+        "controller.animation.gastly_shiny.blink": "controller.animation.gastly_shiny.blink",
+        "controller.animation.cobblemon.gastly_shiny": "controller.animation.cobblemon.gastly_shiny"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.gastly"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.gastly.blink",
+          {
+            "controller.animation.cobblemon.gastly": "q.variant == 0"
+          },
+          "controller.animation.gastly_shiny.blink",
+          {
+            "controller.animation.cobblemon.gastly_shiny": "q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_gastly = -1.0;",
+          "v.state_of_gastly_shiny = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

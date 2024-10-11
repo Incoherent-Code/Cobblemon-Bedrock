@@ -1,0 +1,172 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cobblemon:healing_machine",
+      "states": {
+        "cobblemon:charge": {
+          "values": {
+            "min": 0,
+            "max": 15
+          }
+        },
+        "cobblemon:active": [
+          false,
+          true
+        ],
+        "cobblemon:busy": [
+          false,
+          true
+        ]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:display_name": "block.cobblemon.healing_machine",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:geometry": "geometry.cobblemon.healing_machine_0",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "healing_machine"
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          14,
+          16
+        ]
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          12,
+          16
+        ]
+      },
+      "minecraft:custom_components": [
+        "cobblemon:healing_machine_component"
+      ]
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('cobblemon:charge') <= 1;",
+        "components": {
+          "minecraft:geometry": "geometry.cobblemon.healing_machine_0"
+        }
+      },
+      {
+        "condition": "q.block_state('cobblemon:charge') <= 4 && q.block_state('cobblemon:charge') > 1",
+        "components": {
+          "minecraft:geometry": "geometry.cobblemon.healing_machine_1"
+        }
+      },
+      {
+        "condition": "q.block_state('cobblemon:charge') <= 7 && q.block_state('cobblemon:charge') > 4",
+        "components": {
+          "minecraft:geometry": "geometry.cobblemon.healing_machine_2"
+        }
+      },
+      {
+        "condition": "q.block_state('cobblemon:charge') <= 10 && q.block_state('cobblemon:charge') > 7",
+        "components": {
+          "minecraft:geometry": "geometry.cobblemon.healing_machine_3"
+        }
+      },
+      {
+        "condition": "q.block_state('cobblemon:charge') <= 13 && q.block_state('cobblemon:charge') > 10",
+        "components": {
+          "minecraft:geometry": "geometry.cobblemon.healing_machine_4"
+        }
+      },
+      {
+        "condition": "q.block_state('cobblemon:charge') <= 15 && q.block_state('cobblemon:charge') > 13",
+        "components": {
+          "minecraft:geometry": "geometry.cobblemon.healing_machine_5",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "healing_machine_static"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('cobblemon:active') == true",
+        "components": {
+          "minecraft:geometry": "geometry.cobblemon.healing_machine_active",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "active_healing_machine"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:meowscarada",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0908_meowscarada/meowscarada",
+        "shiny": "textures/pokemon/0908_meowscarada/meowscarada_shiny"
+      },
+      "geometry": {
+        "base": "geometry.meowscarada.geo",
+        "shiny": "geometry.meowscarada.geo"
+      },
+      "animations": {
+        "meowscarada.sleep": "animation.meowscarada.sleep",
+        "meowscaradamodel.singlebonelook": "animation.meowscaradamodel.singlebonelook",
+        "meowscarada.ground_idle": "animation.meowscarada.ground_idle",
+        "meowscarada.ground_walk": "animation.meowscarada.ground_walk",
+        "meowscarada.battle_idle": "animation.meowscarada.battle_idle",
+        "meowscarada.blink": "animation.meowscarada.blink",
+        "controller.animation.meowscarada.blink": "controller.animation.meowscarada.blink",
+        "meowscarada.sleep_quirk": "animation.meowscarada.sleep_quirk",
+        "controller.animation.meowscarada.sleep1": "controller.animation.meowscarada.sleep1",
+        "meowscarada.sleep_quirk2": "animation.meowscarada.sleep_quirk2",
+        "controller.animation.meowscarada.sleep2": "controller.animation.meowscarada.sleep2",
+        "meowscarada.sleep_quirk3": "animation.meowscarada.sleep_quirk3",
+        "controller.animation.meowscarada.sleep3": "controller.animation.meowscarada.sleep3",
+        "meowscarada.sleep_quirk4": "animation.meowscarada.sleep_quirk4",
+        "controller.animation.meowscarada.sleep4": "controller.animation.meowscarada.sleep4",
+        "controller.animation.cobblemon.meowscarada": "controller.animation.cobblemon.meowscarada"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.meowscarada"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.meowscarada.blink",
+          "controller.animation.meowscarada.sleep1",
+          "controller.animation.meowscarada.sleep2",
+          "controller.animation.meowscarada.sleep3",
+          "controller.animation.meowscarada.sleep4",
+          {
+            "controller.animation.cobblemon.meowscarada": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_meowscarada = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

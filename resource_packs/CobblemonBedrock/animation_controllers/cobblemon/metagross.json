@@ -1,0 +1,166 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.metagross.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_metagross_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_metagross_blink = q.life_time + 1; return (q.life_time > v.next_quirk_metagross_blink) && (v.state_of_metagross == 1 || v.state_of_metagross == 2 || v.state_of_metagross == 3 || v.state_of_metagross == 4 || v.state_of_metagross == 5);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "metagross.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_metagross_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_metagross_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.metagross": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "metagross.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_metagross = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "fly": "q.is_swimming"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "metagross.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_metagross = 1; return q.is_sleeping;"
+            },
+            {
+              "fly": "q.is_swimming"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "metagross.air_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_metagross = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "fly": "q.is_swimming"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "metagross.air_fly"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_metagross = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "metagross.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_metagross = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "fly": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "metagross.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_metagross = 5; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "fly": "q.is_swimming"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "minLevel": 10,
+  "maxLevel": 35,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 10,
+      "maxLevel": 35
+    },
+    "1": {
+      "minLevel": 10,
+      "maxLevel": 35
+    }
+  },
+  "name": "Growlithe",
+  "nationalPokedexNumber": 58,
+  "baseStats": {
+    "hp": 55,
+    "attack": 70,
+    "defence": 45,
+    "special_attack": 70,
+    "special_defence": 50,
+    "speed": 60
+  },
+  "maleRatio": 0.75,
+  "catchRate": 190,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "slow",
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.9,
+    "fixed": false
+  },
+  "primaryType": "fire",
+  "abilities": [
+    "intimidate",
+    "flashfire",
+    "h:justified"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:ember",
+    "1:leer",
+    "4:howl",
+    "8:bite",
+    "10:odorsleuth",
+    "12:flamewheel",
+    "16:helpinghand",
+    "20:agility",
+    "24:firefang",
+    "28:flameburst",
+    "28:retaliate",
+    "32:crunch",
+    "36:takedown",
+    "40:flamethrower",
+    "41:heatwave",
+    "43:outrage",
+    "44:roar",
+    "48:playrough",
+    "52:reversal",
+    "56:flareblitz",
+    "egg:bodyslam",
+    "egg:burnup",
+    "egg:closecombat",
+    "egg:covet",
+    "egg:crunch",
+    "egg:doubleedge",
+    "egg:doublekick",
+    "egg:firespin",
+    "egg:flareblitz",
+    "egg:heatwave",
+    "egg:howl",
+    "egg:irontail",
+    "egg:morningsun",
+    "egg:ragingfury",
+    "egg:safeguard",
+    "egg:thrash",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:attract",
+    "tm:bodyslam",
+    "tm:captivate",
+    "tm:charm",
+    "tm:closecombat",
+    "tm:confide",
+    "tm:crunch",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:firefang",
+    "tm:firespin",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flareblitz",
+    "tm:frustration",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:incinerate",
+    "tm:irontail",
+    "tm:naturalgift",
+    "tm:outrage",
+    "tm:overheat",
+    "tm:playrough",
+    "tm:protect",
+    "tm:psychicfangs",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:return",
+    "tm:reversal",
+    "tm:roar",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:safeguard",
+    "tm:scaryface",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:snarl",
+    "tm:snore",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:thunderfang",
+    "tm:toxic",
+    "tm:wildcharge",
+    "tm:willowisp",
+    "tutor:agility",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:bite",
+    "tutor:bodyslam",
+    "tutor:charm",
+    "tutor:covet",
+    "tutor:crunch",
+    "tutor:curse",
+    "tutor:dig",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:dragonbreath",
+    "tutor:dragonrage",
+    "tutor:ember",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:fireblast",
+    "tutor:firespin",
+    "tutor:flamethrower",
+    "tutor:flamewheel",
+    "tutor:flareblitz",
+    "tutor:frustration",
+    "tutor:headbutt",
+    "tutor:heatwave",
+    "tutor:helpinghand",
+    "tutor:hiddenpower",
+    "tutor:irontail",
+    "tutor:leer",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:odorsleuth",
+    "tutor:outrage",
+    "tutor:playrough",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:roar",
+    "tutor:rocksmash",
+    "tutor:safeguard",
+    "tutor:skullbash",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:takedown",
+    "tutor:thrash",
+    "tutor:toxic",
+    "tutor:willowisp"
+  ],
+  "evolutions": [
+    {
+      "id": "growlithe_arcanine",
+      "variant": "item_interact",
+      "result": "arcanine",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "extremespeed"
+      ],
+      "requiredContext": "cobblemon:fire_stone",
+      "requirements": []
+    }
+  ],
+  "features": [
+    "hisuian"
+  ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.growlithe.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:bone",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:rawst_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "field"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 7.0,
+  "weight": 190.0,
+  "forms": [
+    {
+      "name": "Hisui",
+      "baseStats": {
+        "hp": 60,
+        "attack": 75,
+        "defence": 45,
+        "special_attack": 65,
+        "special_defence": 50,
+        "speed": 55
+      },
+      "maleRatio": 0.75,
+      "catchRate": 190,
+      "experienceGroup": "slow",
+      "baseExperienceYield": 70,
+      "baseFriendship": 50,
+      "primaryType": "fire",
+      "secondaryType": "rock",
+      "moves": [
+        "1:ember",
+        "1:leer",
+        "4:howl",
+        "8:bite",
+        "12:flamewheel",
+        "16:helpinghand",
+        "24:firefang",
+        "28:retaliate",
+        "32:crunch",
+        "36:takedown",
+        "40:flamethrower",
+        "44:roar",
+        "48:rockslide",
+        "52:reversal",
+        "56:flareblitz",
+        "egg:covet",
+        "egg:doubleedge",
+        "egg:doublekick",
+        "egg:headsmash",
+        "egg:morningsun",
+        "egg:thrash",
+        "tm:agility",
+        "tm:bodyslam",
+        "tm:closecombat",
+        "tm:crunch",
+        "tm:dig",
+        "tm:endure",
+        "tm:facade",
+        "tm:fireblast",
+        "tm:firefang",
+        "tm:firespin",
+        "tm:flamecharge",
+        "tm:flamethrower",
+        "tm:flareblitz",
+        "tm:heatwave",
+        "tm:helpinghand",
+        "tm:outrage",
+        "tm:overheat",
+        "tm:powergem",
+        "tm:protect",
+        "tm:psychicfangs",
+        "tm:rest",
+        "tm:reversal",
+        "tm:rockblast",
+        "tm:rockslide",
+        "tm:rocktomb",
+        "tm:sandstorm",
+        "tm:scaryface",
+        "tm:sleeptalk",
+        "tm:smartstrike",
+        "tm:stealthrock",
+        "tm:stoneedge",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:thunderfang",
+        "tm:willowisp"
+      ],
+      "evolutions": [
+        {
+          "id": "growlithe_arcanine",
+          "variant": "item_interact",
+          "result": "arcanine form=hisui",
+          "optional": true,
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "extremespeed"
+          ],
+          "requiredContext": "cobblemon:fire_stone",
+          "requirements": []
+        }
+      ],
+      "abilities": [
+        "intimidate",
+        "flashfire",
+        "h:rockhead"
+      ],
+      "labels": [
+        "gen8",
+        "hisui_regional"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "field"
+      ],
+      "height": 8.0,
+      "weight": 227.0,
+      "battleOnly": false
+    }
+  ]
+}

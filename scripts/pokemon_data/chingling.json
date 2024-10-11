@@ -1,0 +1,228 @@
+{
+  "minLevel": 4,
+  "maxLevel": 29,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "night",
+      "minLevel": 4,
+      "maxLevel": 29
+    },
+    "1": {
+      "timeRange": "night",
+      "minLevel": 4,
+      "maxLevel": 29
+    }
+  },
+  "name": "Chingling",
+  "nationalPokedexNumber": 433,
+  "baseStats": {
+    "hp": 45,
+    "attack": 30,
+    "defence": 50,
+    "special_attack": 65,
+    "special_defence": 50,
+    "speed": 45
+  },
+  "maleRatio": 0.5,
+  "catchRate": 120,
+  "baseScale": 0.7,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "fast",
+  "hitbox": {
+    "width": 0.45,
+    "height": 0.5,
+    "fixed": false
+  },
+  "primaryType": "psychic",
+  "abilities": [
+    "levitate"
+  ],
+  "shoulderMountable": true,
+  "moves": [
+    "1:wrap",
+    "4:growl",
+    "6:growl",
+    "7:astonish",
+    "9:astonish",
+    "10:confusion",
+    "13:yawn",
+    "14:confusion",
+    "16:lastresort",
+    "17:uproar",
+    "19:entrainment",
+    "22:lastresort",
+    "25:entrainment",
+    "32:uproar",
+    "egg:cosmicpower",
+    "egg:curse",
+    "egg:disable",
+    "egg:dreameater",
+    "egg:futuresight",
+    "egg:hypnosis",
+    "egg:recover",
+    "egg:skillswap",
+    "egg:storedpower",
+    "egg:wish",
+    "tm:attract",
+    "tm:calmmind",
+    "tm:captivate",
+    "tm:chargebeam",
+    "tm:confide",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:dreameater",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:lightscreen",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychup",
+    "tm:psyshock",
+    "tm:raindance",
+    "tm:recycle",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:shadowball",
+    "tm:shockwave",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:snatch",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:taunt",
+    "tm:telekinesis",
+    "tm:thunderwave",
+    "tm:torment",
+    "tm:toxic",
+    "tm:trickroom",
+    "tutor:allyswitch",
+    "tutor:bind",
+    "tutor:gravity",
+    "tutor:healbell",
+    "tutor:helpinghand",
+    "tutor:hypervoice",
+    "tutor:icywind",
+    "tutor:knockoff",
+    "tutor:lastresort",
+    "tutor:magiccoat",
+    "tutor:recycle",
+    "tutor:rollout",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:snatch",
+    "tutor:snore",
+    "tutor:swift",
+    "tutor:telekinesis",
+    "tutor:trick",
+    "tutor:uproar",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "chingling_chimecho",
+      "variant": "level_up",
+      "result": "chimecho",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "friendship",
+          "amount": 160
+        },
+        {
+          "variant": "time_range",
+          "range": "night"
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.2
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.chingling.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:colbur_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 25,
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 2.0,
+  "weight": 6.0
+}

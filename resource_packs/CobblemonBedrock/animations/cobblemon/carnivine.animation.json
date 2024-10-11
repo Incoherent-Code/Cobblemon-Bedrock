@@ -1,0 +1,258 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.carnivinemodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.carnivine.pose": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            45.0
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -20.0
+          ]
+        },
+        "arm_left3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -35.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -60.0
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            42.5
+          ]
+        },
+        "arm_right3": {
+          "rotation": [
+            0.0,
+            0.0,
+            30.0
+          ]
+        },
+        "tentacle_front2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_front3": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_front4": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_front_left2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_front_left3": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_front_left4": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_back_left2": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_back_left3": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_back_left4": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_front_right2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_front_right3": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_front_right4": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_back_right2": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_back_right3": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_back_right4": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_back2": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_back3": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tentacle_back4": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.carnivine.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.1,
+              0.0
+            ],
+            "0.125": [
+              0.0,
+              0.1,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.1,
+              0.0
+            ],
+            "0.125": [
+              0.0,
+              0.1,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

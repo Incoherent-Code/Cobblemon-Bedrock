@@ -1,0 +1,69 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:exeggcute",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0102_exeggcute/exeggcute",
+        "shiny": "textures/pokemon/0102_exeggcute/exeggcute_shiny",
+        "alolan": "textures/pokemon/0102_exeggcute/exeggcute_alolan",
+        "shiny_alolan": "textures/pokemon/0102_exeggcute/exeggcute_alolan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.exeggcute.geo",
+        "shiny": "geometry.exeggcute.geo",
+        "alolan": "geometry.exeggcute_alolan.geo",
+        "shiny_alolan": "geometry.exeggcute_alolan.geo"
+      },
+      "animations": {
+        "exeggcute.portrait": "animation.exeggcute.portrait",
+        "exeggcute.sleep": "animation.exeggcute.sleep",
+        "exeggcute.ground_idle": "animation.exeggcute.ground_idle",
+        "exeggcute.ground_walk": "animation.exeggcute.ground_walk",
+        "exeggcute.blink": "animation.exeggcute.blink",
+        "controller.animation.exeggcute.blink1": "controller.animation.exeggcute.blink1",
+        "exeggcute.blink2": "animation.exeggcute.blink2",
+        "controller.animation.exeggcute.blink2": "controller.animation.exeggcute.blink2",
+        "exeggcute.blink3": "animation.exeggcute.blink3",
+        "controller.animation.exeggcute.blink3": "controller.animation.exeggcute.blink3",
+        "exeggcute.blink4": "animation.exeggcute.blink4",
+        "controller.animation.exeggcute.blink4": "controller.animation.exeggcute.blink4",
+        "exeggcute.blink5": "animation.exeggcute.blink5",
+        "controller.animation.exeggcute.blink5": "controller.animation.exeggcute.blink5",
+        "exeggcute.blink6": "animation.exeggcute.blink6",
+        "controller.animation.exeggcute.blink6": "controller.animation.exeggcute.blink6",
+        "controller.animation.cobblemon.exeggcute": "controller.animation.cobblemon.exeggcute"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.exeggcute"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.exeggcute.blink1",
+          "controller.animation.exeggcute.blink2",
+          "controller.animation.exeggcute.blink3",
+          "controller.animation.exeggcute.blink4",
+          "controller.animation.exeggcute.blink5",
+          "controller.animation.exeggcute.blink6",
+          {
+            "controller.animation.cobblemon.exeggcute": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_exeggcute = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

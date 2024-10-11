@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:snivy",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0495_snivy/snivy",
+        "shiny": "textures/pokemon/0495_snivy/snivy_shiny"
+      },
+      "geometry": {
+        "base": "geometry.snivy.geo",
+        "shiny": "geometry.snivy.geo"
+      },
+      "animations": {
+        "snivy.sleep": "animation.snivy.sleep",
+        "snivymodel.singlebonelook": "animation.snivymodel.singlebonelook",
+        "snivy.ground_idle": "animation.snivy.ground_idle",
+        "snivy.ground_walk": "animation.snivy.ground_walk",
+        "snivy.blink": "animation.snivy.blink",
+        "controller.animation.snivy.blink": "controller.animation.snivy.blink",
+        "controller.animation.cobblemon.snivy": "controller.animation.cobblemon.snivy"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.snivy"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.snivy.blink",
+          {
+            "controller.animation.cobblemon.snivy": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_snivy = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

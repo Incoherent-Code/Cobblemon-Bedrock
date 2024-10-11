@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:swampert",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0260_swampert/swampert",
+        "shiny": "textures/pokemon/0260_swampert/swampert_shiny"
+      },
+      "geometry": {
+        "base": "geometry.swampert.geo",
+        "shiny": "geometry.swampert.geo"
+      },
+      "animations": {
+        "swampertmodel.singlebonelook": "animation.swampertmodel.singlebonelook",
+        "swampert.ground_idle": "animation.swampert.ground_idle",
+        "swampertmodel.bipedwalkanimation": "animation.swampertmodel.bipedwalkanimation",
+        "swampert.blink": "animation.swampert.blink",
+        "controller.animation.swampert.blink": "controller.animation.swampert.blink",
+        "controller.animation.cobblemon.swampert": "controller.animation.cobblemon.swampert"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.swampert"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.swampert.blink",
+          {
+            "controller.animation.cobblemon.swampert": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_swampert = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:chansey",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0113_chansey/chansey",
+        "shiny": "textures/pokemon/0113_chansey/chansey_shiny"
+      },
+      "geometry": {
+        "base": "geometry.chansey.geo",
+        "shiny": "geometry.chansey.geo"
+      },
+      "animations": {
+        "chansey.ground_idle": "animation.chansey.ground_idle",
+        "chanseymodel.bipedwalkanimation": "animation.chanseymodel.bipedwalkanimation",
+        "chansey.blink": "animation.chansey.blink",
+        "controller.animation.chansey.blink": "controller.animation.chansey.blink",
+        "controller.animation.cobblemon.chansey": "controller.animation.cobblemon.chansey"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.chansey"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.chansey.blink",
+          {
+            "controller.animation.cobblemon.chansey": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_chansey = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

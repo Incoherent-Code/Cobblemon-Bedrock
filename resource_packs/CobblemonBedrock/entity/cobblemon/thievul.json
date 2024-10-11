@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:thievul",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0828_thievul/thievul",
+        "shiny": "textures/pokemon/0828_thievul/thievul_shiny"
+      },
+      "geometry": {
+        "base": "geometry.thievul.geo",
+        "shiny": "geometry.thievul.geo"
+      },
+      "animations": {
+        "thievul.sleep": "animation.thievul.sleep",
+        "thievulmodel.singlebonelook": "animation.thievulmodel.singlebonelook",
+        "thievul.ground_idle": "animation.thievul.ground_idle",
+        "thievul.ground_walk": "animation.thievul.ground_walk",
+        "thievul.battle_idle": "animation.thievul.battle_idle",
+        "thievul.blink": "animation.thievul.blink",
+        "controller.animation.thievul.blink": "controller.animation.thievul.blink",
+        "thievul.quirk_sleep": "animation.thievul.quirk_sleep",
+        "controller.animation.thievul.sleepquirk": "controller.animation.thievul.sleepquirk",
+        "controller.animation.cobblemon.thievul": "controller.animation.cobblemon.thievul"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.thievul"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.thievul.blink",
+          "controller.animation.thievul.sleepquirk",
+          {
+            "controller.animation.cobblemon.thievul": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_thievul = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

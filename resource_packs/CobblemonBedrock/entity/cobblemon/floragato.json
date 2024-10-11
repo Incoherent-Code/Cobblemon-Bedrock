@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:floragato",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0907_floragato/floragato",
+        "shiny": "textures/pokemon/0907_floragato/floragato_shiny"
+      },
+      "geometry": {
+        "base": "geometry.floragato.geo",
+        "shiny": "geometry.floragato.geo"
+      },
+      "animations": {
+        "floragato.sleep": "animation.floragato.sleep",
+        "floragatomodel.singlebonelook": "animation.floragatomodel.singlebonelook",
+        "floragato.ground_idle": "animation.floragato.ground_idle",
+        "floragato.ground_walk": "animation.floragato.ground_walk",
+        "floragato.battle_idle": "animation.floragato.battle_idle",
+        "floragato.blink": "animation.floragato.blink",
+        "controller.animation.floragato.blink": "controller.animation.floragato.blink",
+        "controller.animation.cobblemon.floragato": "controller.animation.cobblemon.floragato"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.floragato"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.floragato.blink",
+          {
+            "controller.animation.cobblemon.floragato": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_floragato = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

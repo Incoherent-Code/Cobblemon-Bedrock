@@ -1,0 +1,99 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.0",
+  "render_controllers": {
+    "controller.render.cobblemon.timburr": {
+      "arrays": {
+        "textures": {
+          "array.cobblemon_texture": [
+            "texture.base",
+            "texture.shiny",
+            "texture.tree_oak",
+            "texture.tree_spruce",
+            "texture.tree_acacia",
+            "texture.tree_birch",
+            "texture.tree_darkoak",
+            "texture.tree_jungle",
+            "texture.tree_mangrove",
+            "texture.tree_cherry",
+            "texture.tree_crimson",
+            "texture.tree_warped"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.tree_oak",
+            "geometry.tree_spruce",
+            "geometry.tree_acacia",
+            "geometry.tree_birch",
+            "geometry.tree_darkoak",
+            "geometry.tree_jungle",
+            "geometry.tree_mangrove",
+            "geometry.tree_cherry",
+            "geometry.tree_crimson",
+            "geometry.tree_warped"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.cobblemon_texture[query.variant]"
+      ]
+    },
+    "controller.render.cobblemon.timburr_": {
+      "arrays": {
+        "textures": {
+          "array.variation_": [
+            "texture.blank",
+            "texture.blank",
+            "texture.tree_oak_",
+            "texture.tree_spruce_",
+            "texture.tree_acacia_",
+            "texture.tree_birch_",
+            "texture.tree_darkoak_",
+            "texture.tree_jungle_",
+            "texture.tree_mangrove_",
+            "texture.tree_cherry_",
+            "texture.tree_crimson_",
+            "texture.tree_warped_"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.tree_oak",
+            "geometry.tree_spruce",
+            "geometry.tree_acacia",
+            "geometry.tree_birch",
+            "geometry.tree_darkoak",
+            "geometry.tree_jungle",
+            "geometry.tree_mangrove",
+            "geometry.tree_cherry",
+            "geometry.tree_crimson",
+            "geometry.tree_warped"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.variation_[query.variant]"
+      ]
+    }
+  }
+}

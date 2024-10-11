@@ -1,0 +1,235 @@
+{
+  "minLevel": 17,
+  "maxLevel": 42,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "isRaining": false,
+      "minLevel": 17,
+      "maxLevel": 42
+    }
+  },
+  "name": "Dartrix",
+  "nationalPokedexNumber": 723,
+  "baseStats": {
+    "hp": 78,
+    "attack": 75,
+    "defence": 75,
+    "special_attack": 70,
+    "special_defence": 70,
+    "speed": 52
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 0.7,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "secondaryType": "flying",
+  "abilities": [
+    "overgrow",
+    "h:longreach"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:astonish",
+    "1:growl",
+    "1:leafage",
+    "1:tackle",
+    "9:peck",
+    "12:shadowsneak",
+    "15:razorleaf",
+    "16:ominouswind",
+    "19:foresight",
+    "20:synthesis",
+    "25:pluck",
+    "30:nastyplot",
+    "33:furyattack",
+    "35:suckerpunch",
+    "40:leafblade",
+    "45:featherdance",
+    "50:bravebird",
+    "tm:aerialace",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:bravebird",
+    "tm:bulletseed",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grasspledge",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:leafblade",
+    "tm:leafstorm",
+    "tm:lightscreen",
+    "tm:magicalleaf",
+    "tm:nastyplot",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:roost",
+    "tm:round",
+    "tm:safeguard",
+    "tm:seedbomb",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:tailwind",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:toxic",
+    "tm:trailblaze",
+    "tm:workup",
+    "tutor:covet",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:grassyglide",
+    "tutor:seedbomb",
+    "tutor:skyattack",
+    "tutor:snore",
+    "tutor:synthesis",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "dartrix_decidueye",
+      "variant": "level_up",
+      "result": "decidueye",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "spiritshackle"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 34
+        }
+      ]
+    },
+    {
+      "id": "dartrix_decidueye",
+      "variant": "level_up",
+      "result": "decidueye form=hisui",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "triplearrows"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 36
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.dartrix.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "flying"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 7.0,
+  "weight": 160.0
+}

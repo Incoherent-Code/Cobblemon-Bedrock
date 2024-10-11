@@ -1,0 +1,340 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.croconaw.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_croconaw_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_croconaw_blink = q.life_time + 1; return (q.life_time > v.next_quirk_croconaw_blink) && (v.state_of_croconaw == 2 || v.state_of_croconaw == 3 || v.state_of_croconaw == 4 || v.state_of_croconaw == 5 || v.state_of_croconaw == 6 || v.state_of_croconaw == 7 || v.state_of_croconaw == 8);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "croconaw.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_croconaw_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_croconaw_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.croconaw": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "croconaw.sleep"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_croconaw = 0; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "swimming": "(q.is_swimming) && (q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "watersleep": {
+          "animations": [
+            "croconaw.water_sleep"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_croconaw = 1; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "swimming": "(q.is_swimming) && (q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "croconawmodel.singlebonelook",
+            "croconaw.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_croconaw = 2; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "swimming": "(q.is_swimming) && (q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "croconawmodel.singlebonelook",
+            "croconaw.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_croconaw = 3; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "swimming": "(q.is_swimming) && (q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "floating": {
+          "animations": [
+            "croconawmodel.singlebonelook",
+            "croconaw.water_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_croconaw = 4; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "swimming": "(q.is_swimming) && (q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swimming": {
+          "animations": [
+            "croconawmodel.singlebonelook",
+            "croconaw.water_swim"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_croconaw = 5; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "croconawmodel.singlebonelook",
+            "croconaw.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_croconaw = 6; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "swimming": "(q.is_swimming) && (q.is_swimming)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "water_surface_idle": {
+          "animations": [
+            "croconawmodel.singlebonelook",
+            "croconaw.surfacewater_idle",
+            "croconaw.water_surface_idle.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_croconaw = 7; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "swimming": "(q.is_swimming) && (q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "water_surface_swim": {
+          "animations": [
+            "croconawmodel.singlebonelook",
+            "croconaw.surfacewater_swim",
+            "croconaw.water_surface_swim.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_croconaw = 8; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water && !q.is_swimming)"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "swimming": "(q.is_swimming) && (q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (!q.is_swimming && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:diggersby",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0660_diggersby/diggersby",
+        "shiny": "textures/pokemon/0660_diggersby/diggersby_shiny"
+      },
+      "geometry": {
+        "base": "geometry.diggersby.geo",
+        "shiny": "geometry.diggersby.geo"
+      },
+      "animations": {
+        "diggersby.sleep": "animation.diggersby.sleep",
+        "diggersby.portrait": "animation.diggersby.portrait",
+        "diggersbymodel.singlebonelook": "animation.diggersbymodel.singlebonelook",
+        "diggersby.ground_idle": "animation.diggersby.ground_idle",
+        "diggersby.ground_walk": "animation.diggersby.ground_walk",
+        "diggersby.battle_idle": "animation.diggersby.battle_idle",
+        "diggersby.quirk_sleep": "animation.diggersby.quirk_sleep",
+        "controller.animation.diggersby.sleep1": "controller.animation.diggersby.sleep1",
+        "controller.animation.cobblemon.diggersby": "controller.animation.cobblemon.diggersby"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.diggersby"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.diggersby.sleep1",
+          {
+            "controller.animation.cobblemon.diggersby": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_diggersby = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

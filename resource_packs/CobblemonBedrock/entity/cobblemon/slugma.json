@@ -1,0 +1,71 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:slugma",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0218_slugma/slugma",
+        "shiny": "textures/pokemon/0218_slugma/slugma_shiny",
+        "base_flame_uv": "textures/pokemon/0218_slugma/base_flame_uv",
+        "base_flame_emissive_uv": "textures/pokemon/0218_slugma/base_flame_emissive_uv",
+        "base_emissive": "textures/pokemon/0218_slugma/slugma_emissive",
+        "shiny_flame_uv": "textures/pokemon/0218_slugma/shiny_flame_uv",
+        "shiny_flame_emissive_uv": "textures/pokemon/0218_slugma/shiny_flame_emissive_uv",
+        "shiny_emissive": "textures/pokemon/0218_slugma/slugma_shiny_emissive"
+      },
+      "geometry": {
+        "base": "geometry.slugma.geo",
+        "shiny": "geometry.slugma_shiny.geo"
+      },
+      "animations": {
+        "slugma.ground_sleep": "animation.slugma.ground_sleep",
+        "slugmamodel.singlebonelook": "animation.slugmamodel.singlebonelook",
+        "slugma.ground_idle": "animation.slugma.ground_idle",
+        "slugma.ground_walk": "animation.slugma.ground_walk",
+        "slugma.blink": "animation.slugma.blink",
+        "controller.animation.slugma.blink": "controller.animation.slugma.blink",
+        "controller.animation.cobblemon.slugma": "controller.animation.cobblemon.slugma",
+        "slugma_shiny.ground_sleep": "animation.slugma_shiny.ground_sleep",
+        "slugmashinymodel.singlebonelook": "animation.slugmashinymodel.singlebonelook",
+        "slugma_shiny.ground_idle": "animation.slugma_shiny.ground_idle",
+        "slugma_shiny.ground_walk": "animation.slugma_shiny.ground_walk",
+        "slugma_shiny.blink": "animation.slugma_shiny.blink",
+        "controller.animation.slugma_shiny.blink": "controller.animation.slugma_shiny.blink",
+        "controller.animation.cobblemon.slugma_shiny": "controller.animation.cobblemon.slugma_shiny"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.slugma_flame",
+        "controller.render.cobblemon.slugma_flame_emissive",
+        "controller.render.cobblemon.slugma_emissive",
+        "controller.render.cobblemon.slugma"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.slugma.blink",
+          {
+            "controller.animation.cobblemon.slugma": "q.variant == 0"
+          },
+          "controller.animation.slugma_shiny.blink",
+          {
+            "controller.animation.cobblemon.slugma_shiny": "q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_slugma = -1.0;",
+          "v.state_of_slugma_shiny = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

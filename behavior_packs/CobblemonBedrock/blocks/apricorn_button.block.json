@@ -1,0 +1,173 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cobblemon:apricorn_button",
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:block_face"
+          ]
+        }
+      },
+      "states": {
+        "cobblemon:pressed": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.button"
+      },
+      "minecraft:display_name": "block.cobblemon.apricorn_button",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "apricorn_planks"
+        }
+      },
+      "minecraft:custom_components": [
+        "cobblemon:button_component"
+      ]
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('cobblemon:pressed')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.button_pressed"
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              0,
+              -2
+            ],
+            "size": [
+              6,
+              1,
+              4
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -3,
+              0,
+              -2
+            ],
+            "size": [
+              6,
+              1,
+              4
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('cobblemon:pressed')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.button"
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -3,
+              0,
+              -2
+            ],
+            "size": [
+              6,
+              2,
+              4
+            ]
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -3,
+              0,
+              -2
+            ],
+            "size": [
+              6,
+              2,
+              4
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'down'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              180,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'up'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              90,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              90,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              90,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [
+              90,
+              270,
+              0
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

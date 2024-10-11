@@ -1,0 +1,32 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:bright_powder",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:cheri_berry",
+          "weight": 2
+        },
+        {
+          "type": "empty",
+          "weight": 93
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "minLevel": 5,
+  "maxLevel": 30,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 5,
+      "maxLevel": 30
+    },
+    "1": {
+      "minLevel": 5,
+      "maxLevel": 30
+    },
+    "2": {
+      "minLevel": 5,
+      "maxLevel": 30
+    }
+  },
+  "name": "Bergmite",
+  "nationalPokedexNumber": 712,
+  "baseStats": {
+    "hp": 55,
+    "attack": 69,
+    "defence": 85,
+    "special_attack": 32,
+    "special_defence": 35,
+    "speed": 28
+  },
+  "maleRatio": 0.5,
+  "catchRate": 190,
+  "baseScale": 0.95,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.95,
+    "height": 0.8,
+    "fixed": false
+  },
+  "primaryType": "ice",
+  "abilities": [
+    "owntempo",
+    "icebody",
+    "h:sturdy"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:harden",
+    "1:rapidspin",
+    "3:tackle",
+    "6:powdersnow",
+    "9:curse",
+    "12:icywind",
+    "15:protect",
+    "18:avalanche",
+    "20:sharpen",
+    "21:bite",
+    "24:icefang",
+    "27:irondefense",
+    "30:iceball",
+    "30:recover",
+    "33:crunch",
+    "36:takedown",
+    "39:blizzard",
+    "42:doubleedge",
+    "egg:auroraveil",
+    "egg:barrier",
+    "egg:mirrorcoat",
+    "egg:mist",
+    "egg:recover",
+    "tm:attract",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:chillingwater",
+    "tm:confide",
+    "tm:crunch",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:flashcannon",
+    "tm:frostbreath",
+    "tm:frustration",
+    "tm:gyroball",
+    "tm:hail",
+    "tm:hiddenpower",
+    "tm:icebeam",
+    "tm:icefang",
+    "tm:icespinner",
+    "tm:iciclespear",
+    "tm:icywind",
+    "tm:irondefense",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:snowscape",
+    "tm:stoneedge",
+    "tm:strength",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swagger",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:toxic",
+    "tutor:afteryou",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:snore",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [
+    {
+      "id": "bergmite_avalugg",
+      "variant": "level_up",
+      "result": "avalugg",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "bodyslam"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 37
+        }
+      ]
+    },
+    {
+      "id": "bergmite_avalugg",
+      "variant": "level_up",
+      "result": "avalugg form=hisui",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "rockslide"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 37
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.15
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.1,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": true,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.bergmite.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:never_melt_ice",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:aspear_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "monster",
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 10.0,
+  "weight": 995.0
+}

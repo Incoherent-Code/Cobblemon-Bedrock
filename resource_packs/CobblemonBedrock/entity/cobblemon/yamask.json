@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:yamask",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0562_yamask/yamask",
+        "shiny": "textures/pokemon/0562_yamask/yamask_shiny",
+        "base_emissive": "textures/pokemon/0562_yamask/yamask_emissive",
+        "shiny_emissive": "textures/pokemon/0562_yamask/yamask_emissive"
+      },
+      "geometry": {
+        "base": "geometry.yamask.geo",
+        "shiny": "geometry.yamask.geo"
+      },
+      "animations": {
+        "yamask.sleep": "animation.yamask.sleep",
+        "yamask.ground_idle": "animation.yamask.ground_idle",
+        "yamask.ground_walk": "animation.yamask.ground_walk",
+        "yamask.blink": "animation.yamask.blink",
+        "controller.animation.yamask.blink": "controller.animation.yamask.blink",
+        "controller.animation.cobblemon.yamask": "controller.animation.cobblemon.yamask"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.yamask_emissive",
+        "controller.render.cobblemon.yamask"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.yamask.blink",
+          {
+            "controller.animation.cobblemon.yamask": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_yamask = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,205 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cobblemon:apricorn_door_bottom_left",
+      "menu_category": {
+        "category": "none",
+        "is_hidden_in_commands": true
+      },
+      "states": {
+        "cobblemon:opened": [
+          false,
+          true
+        ],
+        "cobblemon:activated_by_redstone": [
+          false,
+          true
+        ]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": [
+            "minecraft:cardinal_direction"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "render_method": "blend",
+          "texture": "apricorn_door_bottom"
+        }
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          10,
+          10
+        ],
+        "looping": true
+      },
+      "minecraft:custom_components": [
+        "cobblemon:door_component",
+        "cobblemon:cannot_float_component",
+        "cobblemon:apricorn_door_enforce_top_component"
+      ],
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          5,
+          0,
+          -8
+        ],
+        "size": [
+          3,
+          16,
+          16
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          5,
+          0,
+          -8
+        ],
+        "size": [
+          3,
+          16,
+          16
+        ]
+      },
+      "minecraft:loot": "loot_tables/blocks/apricorn_door.json"
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('cobblemon:opened')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.door_bottom_left_open"
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && !q.block_state('cobblemon:opened')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.door_bottom_left"
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('cobblemon:opened')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.door_bottom_left_open"
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && !q.block_state('cobblemon:opened')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.door_bottom_left"
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              270,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('cobblemon:opened')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.door_bottom_left_open"
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              -90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && !q.block_state('cobblemon:opened')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.door_bottom_left"
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('cobblemon:opened')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.door_bottom_left_open"
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && !q.block_state('cobblemon:opened')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.door_bottom_left"
+          },
+          "minecraft:transformation": {
+            "rotation": [
+              0,
+              180,
+              0
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

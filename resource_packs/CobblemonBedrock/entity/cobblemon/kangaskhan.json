@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:kangaskhan",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0115_kangaskhan/kangaskhan",
+        "shiny": "textures/pokemon/0115_kangaskhan/kangaskhan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.kangaskhan.geo",
+        "shiny": "geometry.kangaskhan.geo"
+      },
+      "animations": {
+        "kangaskhanmodel.singlebonelook": "animation.kangaskhanmodel.singlebonelook",
+        "kangaskhan.ground_idle": "animation.kangaskhan.ground_idle",
+        "kangaskhan.blink": "animation.kangaskhan.blink",
+        "controller.animation.kangaskhan.blink": "controller.animation.kangaskhan.blink",
+        "kangaskhan.blink2": "animation.kangaskhan.blink2",
+        "controller.animation.kangaskhan.blink2": "controller.animation.kangaskhan.blink2",
+        "controller.animation.cobblemon.kangaskhan": "controller.animation.cobblemon.kangaskhan"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.kangaskhan"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.kangaskhan.blink",
+          "controller.animation.kangaskhan.blink2",
+          {
+            "controller.animation.cobblemon.kangaskhan": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_kangaskhan = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

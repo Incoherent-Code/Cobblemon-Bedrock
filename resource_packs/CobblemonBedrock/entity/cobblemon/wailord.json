@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:wailord",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0321_wailord/wailord",
+        "shiny": "textures/pokemon/0321_wailord/wailord_shiny"
+      },
+      "geometry": {
+        "base": "geometry.wailord.geo",
+        "shiny": "geometry.wailord.geo"
+      },
+      "animations": {
+        "wailord.sleep": "animation.wailord.sleep",
+        "wailord.ground_idle": "animation.wailord.ground_idle",
+        "wailord.standing.transform": "animation.wailord.standing.transform",
+        "wailord.ground_walk": "animation.wailord.ground_walk",
+        "wailord.walk.transform": "animation.wailord.walk.transform",
+        "wailord.water_idle": "animation.wailord.water_idle",
+        "wailord.water_swim": "animation.wailord.water_swim",
+        "wailord.battle_idle": "animation.wailord.battle_idle",
+        "wailord.battleidle.transform": "animation.wailord.battleidle.transform",
+        "wailord.blink": "animation.wailord.blink",
+        "controller.animation.wailord.blink": "controller.animation.wailord.blink",
+        "controller.animation.cobblemon.wailord": "controller.animation.cobblemon.wailord"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.wailord"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.wailord.blink",
+          {
+            "controller.animation.cobblemon.wailord": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_wailord = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

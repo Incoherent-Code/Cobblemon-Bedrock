@@ -1,0 +1,160 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.zubat.twitch": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_zubat_twitch = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_zubat_twitch = q.life_time + 1; return (q.life_time > v.next_quirk_zubat_twitch) && (v.state_of_zubat == 0 || v.state_of_zubat == 1 || v.state_of_zubat == 2 || v.state_of_zubat == 3 || v.state_of_zubat == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "zubat.eartwitch"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_zubat_twitch = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_zubat_twitch ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.zubat": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "zubat.sleep",
+            "zubat.sleep.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_zubat = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "zubat.ground_idle",
+            "zubat.standing.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zubat = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "zubat.ground_walk",
+            "zubat.walk.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zubat = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "zubat.air_idle",
+            "zubat.hover.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zubat = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "zubat.air_fly",
+            "zubat.fly.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zubat = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderLeft": {
+          "animations": [
+            "zubat.shoulder_left",
+            "zubat.shoulderleft.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zubat = 5; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderRight": {
+          "animations": [
+            "zubat.shoulder_right",
+            "zubat.shoulderright.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zubat = 6; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:elgyem",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0605_elgyem/elgyem",
+        "shiny": "textures/pokemon/0605_elgyem/elgyem_shiny",
+        "base_color_uv": "textures/pokemon/0605_elgyem/base_color_uv",
+        "shiny_color_uv": "textures/pokemon/0605_elgyem/shiny_color_uv"
+      },
+      "geometry": {
+        "base": "geometry.elgyem.geo",
+        "shiny": "geometry.elgyem.geo"
+      },
+      "animations": {
+        "elgyem.sleep": "animation.elgyem.sleep",
+        "elgyemmodel.singlebonelook": "animation.elgyemmodel.singlebonelook",
+        "elgyem.ground_idle": "animation.elgyem.ground_idle",
+        "elgyem.ground_walk": "animation.elgyem.ground_walk",
+        "elgyem.battle_idle": "animation.elgyem.battle_idle",
+        "controller.animation.cobblemon.elgyem": "controller.animation.cobblemon.elgyem"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.elgyem_color",
+        "controller.render.cobblemon.elgyem"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.elgyem": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_elgyem = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

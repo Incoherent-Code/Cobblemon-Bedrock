@@ -1,0 +1,21 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.butterfree": {
+      "initial_state": "sleep",
+      "states": {
+        "sleep": {
+          "animations": [
+            "butterfree.sleep"
+          ],
+          "transitions": [],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

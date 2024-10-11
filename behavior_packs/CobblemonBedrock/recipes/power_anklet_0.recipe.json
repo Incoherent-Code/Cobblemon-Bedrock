@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "MCD",
+      "C C",
+      "DCM"
+    ],
+    "key": {
+      "M": {
+        "item": "cobblemon:green_mint_leaf"
+      },
+      "C": {
+        "item": "minecraft:light_blue_concrete"
+      },
+      "D": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "unlock": [
+      {
+        "item": "cobblemon:green_mint_leaf"
+      },
+      {
+        "item": "minecraft:light_blue_concrete"
+      },
+      {
+        "item": "minecraft:diamond"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:power_anklet"
+    },
+    "description": {
+      "identifier": "cobblemon:power_anklet_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

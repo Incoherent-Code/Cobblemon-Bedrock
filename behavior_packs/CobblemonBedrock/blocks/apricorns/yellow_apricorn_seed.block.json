@@ -1,0 +1,64 @@
+{
+  "format_version": "1.20.41",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cobblemon:yellow_apricorn_sapling_block",
+      "menu_category": {
+        "category": "none",
+        "is_hidden_in_commands": true
+      },
+      "states": {
+        "cobblemon:growth_state": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "item.cobblemon.yellow_apricorn_seed",
+      "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -6,
+          0,
+          -6
+        ],
+        "size": [
+          12,
+          13,
+          12
+        ]
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:geometry": "geometry.custom_sapling",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "yellow_apricorn_sapling",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        }
+      },
+      "minecraft:loot": "loot_tables/blocks/apricorns/yellow_apricorn_sapling.json",
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ],
+            "block_filter": [
+              "minecraft:dirt",
+              "minecraft:grass_block",
+              "minecraft:podzol"
+            ]
+          }
+        ]
+      },
+      "minecraft:custom_components": [
+        "cobblemon:yellow_apricorn_seed_component"
+      ]
+    }
+  }
+}

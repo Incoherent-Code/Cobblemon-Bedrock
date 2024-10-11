@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:eiscue",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0875_eiscue/eiscue",
+        "shiny": "textures/pokemon/0875_eiscue/eiscue_shiny",
+        "no_ice": "textures/pokemon/0875_eiscue/eiscue",
+        "shiny_no_ice": "textures/pokemon/0875_eiscue/eiscue_no_ice_shiny"
+      },
+      "geometry": {
+        "base": "geometry.eiscue_ice.geo",
+        "shiny": "geometry.eiscue_ice.geo",
+        "no_ice": "geometry.eiscue_no_ice.geo",
+        "shiny_no_ice": "geometry.eiscue_no_ice.geo"
+      },
+      "animations": {
+        "eiscue_ice.sleep": "animation.eiscue_ice.sleep",
+        "eiscuemodel.singlebonelook": "animation.eiscuemodel.singlebonelook",
+        "eiscue_ice.ground_idle": "animation.eiscue_ice.ground_idle",
+        "eiscue_ice.ground_walk": "animation.eiscue_ice.ground_walk",
+        "eiscue_ice.blink": "animation.eiscue_ice.blink",
+        "controller.animation.eiscue.blink": "controller.animation.eiscue.blink",
+        "controller.animation.cobblemon.eiscue": "controller.animation.cobblemon.eiscue"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.eiscue"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.eiscue.blink",
+          {
+            "controller.animation.cobblemon.eiscue": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_eiscue = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,255 @@
+{
+  "minLevel": 16,
+  "maxLevel": 37,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 16,
+      "maxLevel": 37
+    }
+  },
+  "name": "Nidorina",
+  "nationalPokedexNumber": 30,
+  "baseStats": {
+    "hp": 70,
+    "attack": 62,
+    "defence": 67,
+    "special_attack": 55,
+    "special_defence": 55,
+    "speed": 56
+  },
+  "maleRatio": 0.0,
+  "catchRate": 120,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 1.0,
+    "height": 0.8,
+    "fixed": false
+  },
+  "primaryType": "poison",
+  "abilities": [
+    "poisonpoint",
+    "rivalry",
+    "h:hustle"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:growl",
+    "1:poisonsting",
+    "1:scratch",
+    "1:tailwhip",
+    "15:furyswipes",
+    "22:toxicspikes",
+    "29:doublekick",
+    "36:bite",
+    "43:helpinghand",
+    "50:captivate",
+    "50:toxic",
+    "57:flatter",
+    "58:poisonfang",
+    "64:crunch",
+    "71:earthpower",
+    "tm:aerialace",
+    "tm:attract",
+    "tm:beatup",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:captivate",
+    "tm:charm",
+    "tm:confide",
+    "tm:crunch",
+    "tm:cut",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:earthpower",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:focusenergy",
+    "tm:frustration",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:honeclaws",
+    "tm:icebeam",
+    "tm:irontail",
+    "tm:naturalgift",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:secretpower",
+    "tm:shadowclaw",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:snore",
+    "tm:stompingtantrum",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:thief",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:venomdrench",
+    "tm:venoshock",
+    "tm:waterpulse",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:bite",
+    "tutor:blizzard",
+    "tutor:bodyslam",
+    "tutor:bubblebeam",
+    "tutor:counter",
+    "tutor:crunch",
+    "tutor:curse",
+    "tutor:defensecurl",
+    "tutor:detect",
+    "tutor:dig",
+    "tutor:doubleedge",
+    "tutor:doublekick",
+    "tutor:doubleteam",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:frustration",
+    "tutor:furyswipes",
+    "tutor:growl",
+    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:hiddenpower",
+    "tutor:horndrill",
+    "tutor:icebeam",
+    "tutor:irontail",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:poisonjab",
+    "tutor:poisonsting",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:raindance",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:rocksmash",
+    "tutor:scratch",
+    "tutor:shockwave",
+    "tutor:skullbash",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:snore",
+    "tutor:stompingtantrum",
+    "tutor:strength",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:superfang",
+    "tutor:swagger",
+    "tutor:tackle",
+    "tutor:tailwhip",
+    "tutor:takedown",
+    "tutor:thief",
+    "tutor:thunder",
+    "tutor:thunderbolt",
+    "tutor:toxic",
+    "tutor:watergun",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [
+    {
+      "id": "nidorina_nidoqueen",
+      "variant": "item_interact",
+      "result": "nidoqueen",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "superpower"
+      ],
+      "requiredContext": "cobblemon:moon_stone",
+      "requirements": []
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.nidorina.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 8.0,
+  "weight": 200.0
+}

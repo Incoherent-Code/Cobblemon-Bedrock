@@ -1,0 +1,155 @@
+{
+  "minLevel": 1,
+  "maxLevel": 20,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 1,
+      "maxLevel": 20
+    },
+    "1": {
+      "minLevel": 1,
+      "maxLevel": 20
+    }
+  },
+  "name": "Scatterbug",
+  "nationalPokedexNumber": 664,
+  "baseStats": {
+    "hp": 38,
+    "attack": 35,
+    "defence": 40,
+    "special_attack": 27,
+    "special_defence": 25,
+    "speed": 35
+  },
+  "maleRatio": 0.5,
+  "catchRate": 255,
+  "baseScale": 0.5,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.6,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "abilities": [
+    "shielddust",
+    "compoundeyes",
+    "h:friendguard"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:stringshot",
+    "1:tackle",
+    "6:stunspore",
+    "15:bugbite",
+    "egg:poisonpowder",
+    "egg:ragepowder",
+    "egg:stunspore",
+    "tm:pounce",
+    "tm:strugglebug",
+    "tm:terablast",
+    "tutor:bugbite"
+  ],
+  "evolutions": [
+    {
+      "id": "scatterbug_spewpa",
+      "variant": "level_up",
+      "result": "spewpa",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "protect"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 9
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.26
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.scatterbug.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:bright_powder",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 3.0,
+  "weight": 25.0
+}

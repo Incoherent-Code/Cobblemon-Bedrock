@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "WIW",
+      "D I",
+      "WDW"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:red_wool"
+      },
+      "D": {
+        "item": "minecraft:blaze_powder"
+      },
+      "I": {
+        "item": "minecraft:copper_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:red_wool"
+      },
+      {
+        "item": "minecraft:blaze_powder"
+      },
+      {
+        "item": "minecraft:copper_ingot"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:focus_band"
+    },
+    "description": {
+      "identifier": "cobblemon:focus_band_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:quaquaval",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0914_quaquaval/quaquaval",
+        "shiny": "textures/pokemon/0914_quaquaval/quaquaval_shiny"
+      },
+      "geometry": {
+        "base": "geometry.quaquaval.geo",
+        "shiny": "geometry.quaquaval.geo"
+      },
+      "animations": {
+        "quaquaval.sleep": "animation.quaquaval.sleep",
+        "quaquavalmodel.singlebonelook": "animation.quaquavalmodel.singlebonelook",
+        "quaquaval.ground_idle": "animation.quaquaval.ground_idle",
+        "quaquaval.standing.transform": "animation.quaquaval.standing.transform",
+        "quaquaval.standing2.transform": "animation.quaquaval.standing2.transform",
+        "quaquaval.ground_walk": "animation.quaquaval.ground_walk",
+        "quaquaval.walking.transform": "animation.quaquaval.walking.transform",
+        "quaquaval.battle_idle": "animation.quaquaval.battle_idle",
+        "quaquaval.battleidle.transform": "animation.quaquaval.battleidle.transform",
+        "quaquaval.blink": "animation.quaquaval.blink",
+        "controller.animation.quaquaval.blink": "controller.animation.quaquaval.blink",
+        "controller.animation.cobblemon.quaquaval": "controller.animation.cobblemon.quaquaval"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.quaquaval"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.quaquaval.blink",
+          {
+            "controller.animation.cobblemon.quaquaval": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_quaquaval = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

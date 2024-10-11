@@ -1,0 +1,239 @@
+{
+  "minLevel": 7,
+  "maxLevel": 32,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "night",
+      "minLevel": 7,
+      "maxLevel": 32
+    },
+    "1": {
+      "minLevel": 7,
+      "maxLevel": 32
+    },
+    "2": {
+      "minLevel": 7,
+      "maxLevel": 32
+    }
+  },
+  "name": "Joltik",
+  "nationalPokedexNumber": 595,
+  "baseStats": {
+    "hp": 50,
+    "attack": 47,
+    "defence": 50,
+    "special_attack": 57,
+    "special_defence": 50,
+    "speed": 65
+  },
+  "maleRatio": 0.5,
+  "catchRate": 190,
+  "baseScale": 0.4,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.6,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "electric",
+  "abilities": [
+    "compoundeyes",
+    "unnerve",
+    "h:swarm"
+  ],
+  "shoulderMountable": true,
+  "moves": [
+    "1:absorb",
+    "1:furycutter",
+    "1:leechlife",
+    "1:spiderweb",
+    "4:electroweb",
+    "8:bugbite",
+    "12:stringshot",
+    "16:thunderwave",
+    "20:electroball",
+    "24:agility",
+    "28:suckerpunch",
+    "32:slash",
+    "34:signalbeam",
+    "37:discharge",
+    "40:screech",
+    "44:gastroacid",
+    "48:bugbuzz",
+    "egg:camouflage",
+    "egg:crosspoison",
+    "egg:disable",
+    "egg:doubleteam",
+    "egg:feintattack",
+    "egg:infestation",
+    "egg:lunge",
+    "egg:pinmissile",
+    "egg:poisonsting",
+    "egg:pursuit",
+    "egg:rockclimb",
+    "egg:strugglebug",
+    "tm:agility",
+    "tm:attract",
+    "tm:bounce",
+    "tm:bugbuzz",
+    "tm:chargebeam",
+    "tm:confide",
+    "tm:crosspoison",
+    "tm:cut",
+    "tm:doubleteam",
+    "tm:electroball",
+    "tm:electroweb",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:hiddenpower",
+    "tm:infestation",
+    "tm:leechlife",
+    "tm:lightscreen",
+    "tm:pinmissile",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:screech",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:speedswap",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:swagger",
+    "tm:swift",
+    "tm:thief",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:voltswitch",
+    "tm:wildcharge",
+    "tm:xscissor",
+    "tutor:bounce",
+    "tutor:bugbite",
+    "tutor:electroweb",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:magnetrise",
+    "tutor:risingvoltage",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:snore"
+  ],
+  "evolutions": [
+    {
+      "id": "joltik_galvantula",
+      "variant": "level_up",
+      "result": "galvantula",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "stickyweb"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 36
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.joltik.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:spider_eye",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:rotten_flesh",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:nanab_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 1.0,
+  "weight": 6.0
+}

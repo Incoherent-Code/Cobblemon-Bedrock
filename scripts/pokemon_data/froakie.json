@@ -1,0 +1,232 @@
+{
+  "minLevel": 5,
+  "maxLevel": 31,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 5,
+      "maxLevel": 31
+    },
+    "1": {
+      "minLevel": 5,
+      "maxLevel": 31
+    }
+  },
+  "name": "Froakie",
+  "nationalPokedexNumber": 656,
+  "baseStats": {
+    "hp": 41,
+    "attack": 56,
+    "defence": 40,
+    "special_attack": 62,
+    "special_defence": 44,
+    "speed": 71
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 0.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.8,
+    "height": 0.8,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "abilities": [
+    "torrent",
+    "h:protean"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:growl",
+    "1:pound",
+    "5:bubble",
+    "5:watergun",
+    "8:quickattack",
+    "10:lick",
+    "14:waterpulse",
+    "18:smokescreen",
+    "21:round",
+    "25:fling",
+    "29:smackdown",
+    "35:substitute",
+    "39:bounce",
+    "43:doubleteam",
+    "48:hydropump",
+    "egg:bestow",
+    "egg:camouflage",
+    "egg:counter",
+    "egg:mindreader",
+    "egg:mudsport",
+    "egg:poweruppunch",
+    "egg:retaliate",
+    "egg:spikes",
+    "egg:switcheroo",
+    "egg:toxicspikes",
+    "egg:watersport",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:attract",
+    "tm:blizzard",
+    "tm:chillingwater",
+    "tm:confide",
+    "tm:cut",
+    "tm:dig",
+    "tm:dive",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:fling",
+    "tm:frustration",
+    "tm:grassknot",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:hydropump",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:liquidation",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:scald",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:snowscape",
+    "tm:spikes",
+    "tm:strength",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swagger",
+    "tm:swift",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:trailblaze",
+    "tm:uturn",
+    "tm:waterfall",
+    "tm:waterpledge",
+    "tm:waterpulse",
+    "tm:workup",
+    "tutor:bounce",
+    "tutor:bubble",
+    "tutor:growl",
+    "tutor:icywind",
+    "tutor:pound",
+    "tutor:return",
+    "tutor:roleplay",
+    "tutor:snatch",
+    "tutor:snore",
+    "tutor:spite",
+    "tutor:waterpledge",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [
+    {
+      "id": "froakie_frogadier",
+      "variant": "level_up",
+      "result": "frogadier",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 16
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.froakie.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:pearlescent_froglight",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:mystic_water",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "water_1"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 3.0,
+  "weight": 70.0
+}

@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:phanpy",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0231_phanpy/phanpy",
+        "shiny": "textures/pokemon/0231_phanpy/phanpy_shiny"
+      },
+      "geometry": {
+        "base": "geometry.phanpy.geo",
+        "shiny": "geometry.phanpy.geo"
+      },
+      "animations": {
+        "phanpymodel.singlebonelook": "animation.phanpymodel.singlebonelook",
+        "phanpy.ground_idle": "animation.phanpy.ground_idle",
+        "phanpymodel.quadrupedwalkanimation": "animation.phanpymodel.quadrupedwalkanimation",
+        "phanpy.blink": "animation.phanpy.blink",
+        "controller.animation.phanpy.blink": "controller.animation.phanpy.blink",
+        "controller.animation.cobblemon.phanpy": "controller.animation.cobblemon.phanpy"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.phanpy"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.phanpy.blink",
+          {
+            "controller.animation.cobblemon.phanpy": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_phanpy = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

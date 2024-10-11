@@ -1,0 +1,27 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:scute",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:mystic_water",
+          "weight": 25
+        },
+        {
+          "type": "empty",
+          "weight": 74
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "ui_defs": [
+    "ui/pc.json",
+    "ui/battle.json"
+  ]
+}

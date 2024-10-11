@@ -1,0 +1,237 @@
+{
+  "minLevel": 27,
+  "maxLevel": 46,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 27,
+      "maxLevel": 46
+    }
+  },
+  "name": "Lanturn",
+  "nationalPokedexNumber": 171,
+  "baseStats": {
+    "hp": 125,
+    "attack": 58,
+    "defence": 58,
+    "special_attack": 76,
+    "special_defence": 76,
+    "speed": 67
+  },
+  "maleRatio": 0.5,
+  "catchRate": 75,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "slow",
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "secondaryType": "electric",
+  "abilities": [
+    "voltabsorb",
+    "illuminate",
+    "h:waterabsorb"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:bubble",
+    "1:eerieimpulse",
+    "1:electroball",
+    "1:spitup",
+    "1:spotlight",
+    "1:stockpile",
+    "1:supersonic",
+    "1:swallow",
+    "1:thunderwave",
+    "1:watergun",
+    "12:bubblebeam",
+    "16:confuseray",
+    "20:spark",
+    "24:charge",
+    "29:signalbeam",
+    "30:discharge",
+    "36:aquaring",
+    "42:flail",
+    "48:takedown",
+    "54:hydropump",
+    "54:iondeluge",
+    "tm:agility",
+    "tm:amnesia",
+    "tm:attract",
+    "tm:blizzard",
+    "tm:bounce",
+    "tm:brine",
+    "tm:captivate",
+    "tm:chargebeam",
+    "tm:confide",
+    "tm:dazzlinggleam",
+    "tm:dive",
+    "tm:doubleteam",
+    "tm:eerieimpulse",
+    "tm:electroball",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:hiddenpower",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:scald",
+    "tm:screech",
+    "tm:secretpower",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swagger",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:voltswitch",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tm:wildcharge",
+    "tutor:aquatail",
+    "tutor:attract",
+    "tutor:bounce",
+    "tutor:bubble",
+    "tutor:confuseray",
+    "tutor:curse",
+    "tutor:dive",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:endure",
+    "tutor:flail",
+    "tutor:flash",
+    "tutor:frustration",
+    "tutor:healbell",
+    "tutor:hiddenpower",
+    "tutor:hydropump",
+    "tutor:hyperbeam",
+    "tutor:icywind",
+    "tutor:mimic",
+    "tutor:protect",
+    "tutor:raindance",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:risingvoltage",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:spark",
+    "tutor:substitute",
+    "tutor:suckerpunch",
+    "tutor:supersonic",
+    "tutor:surf",
+    "tutor:swagger",
+    "tutor:takedown",
+    "tutor:thunder",
+    "tutor:thunderwave",
+    "tutor:toxic",
+    "tutor:waterfall",
+    "tutor:watergun",
+    "tutor:waterpulse",
+    "tutor:whirlpool",
+    "tutor:zapcannon"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": true,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.lanturn.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:prismarine_crystals",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:deep_sea_scale",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:persim_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "water_2"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 12.0,
+  "weight": 225.0
+}

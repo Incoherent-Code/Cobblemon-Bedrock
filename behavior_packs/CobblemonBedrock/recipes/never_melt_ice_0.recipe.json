@@ -1,0 +1,38 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " P ",
+      "PBP"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:packed_ice"
+      },
+      "B": {
+        "item": "minecraft:blue_ice"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:packed_ice"
+      },
+      {
+        "item": "minecraft:blue_ice"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:never_melt_ice"
+    },
+    "description": {
+      "identifier": "cobblemon:never_melt_ice_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

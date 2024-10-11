@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:cetitan",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0975_cetitan/cetitan",
+        "shiny": "textures/pokemon/0975_cetitan/cetitan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.cetitan.geo",
+        "shiny": "geometry.cetitan.geo"
+      },
+      "animations": {
+        "cetitan.sleep": "animation.cetitan.sleep",
+        "cetitan.ground_idle": "animation.cetitan.ground_idle",
+        "cetitan.ground_walk": "animation.cetitan.ground_walk",
+        "cetitan.battle_idle": "animation.cetitan.battle_idle",
+        "cetitan.blink": "animation.cetitan.blink",
+        "controller.animation.cetitan.blink": "controller.animation.cetitan.blink",
+        "controller.animation.cobblemon.cetitan": "controller.animation.cobblemon.cetitan"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.cetitan"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.cetitan.blink",
+          {
+            "controller.animation.cobblemon.cetitan": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_cetitan = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

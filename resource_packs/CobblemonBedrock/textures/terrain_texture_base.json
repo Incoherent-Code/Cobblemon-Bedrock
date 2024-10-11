@@ -1,0 +1,14 @@
+{
+  "num_mip_levels": 4,
+  "padding": 8,
+  "resource_pack_name": "CobblemonBedrock",
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "healing_machine_static": {
+      "textures": "textures/block/healing_machine"
+    },
+    "active_healing_machine": {
+      "textures": "textures/block/healing_machine"
+    }
+  }
+}

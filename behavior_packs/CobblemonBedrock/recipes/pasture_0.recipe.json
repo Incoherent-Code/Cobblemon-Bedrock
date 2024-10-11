@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "PPP",
+      "PCP",
+      "WHW"
+    ],
+    "key": {
+      "P": {
+        "tag": "minecraft:planks"
+      },
+      "C": {
+        "item": "cobblemon:pc"
+      },
+      "W": {
+        "item": "minecraft:wheat"
+      },
+      "H": {
+        "item": "minecraft:hopper"
+      }
+    },
+    "unlock": [
+      {
+        "tag": "minecraft:planks"
+      },
+      {
+        "item": "cobblemon:pc"
+      },
+      {
+        "item": "minecraft:wheat"
+      },
+      {
+        "item": "minecraft:hopper"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:pasture"
+    },
+    "description": {
+      "identifier": "cobblemon:pasture_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

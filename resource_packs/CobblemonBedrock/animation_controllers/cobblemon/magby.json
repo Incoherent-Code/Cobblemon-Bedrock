@@ -1,0 +1,38 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.magby": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "magbymodel.singlebonelook",
+            "magby.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_magby = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "magbymodel.singlebonelook",
+            "magby.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_magby = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

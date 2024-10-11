@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:grotle",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0388_grotle/grotle",
+        "shiny": "textures/pokemon/0388_grotle/grotle_shiny"
+      },
+      "geometry": {
+        "base": "geometry.grotle.geo",
+        "shiny": "geometry.grotle.geo"
+      },
+      "animations": {
+        "grotle.sleep": "animation.grotle.sleep",
+        "grotlemodel.singlebonelook": "animation.grotlemodel.singlebonelook",
+        "grotle.ground_idle": "animation.grotle.ground_idle",
+        "grotle.ground_walk": "animation.grotle.ground_walk",
+        "grotle.battle_idle": "animation.grotle.battle_idle",
+        "grotle.blink": "animation.grotle.blink",
+        "controller.animation.grotle.blink": "controller.animation.grotle.blink",
+        "grotle.quirk": "animation.grotle.quirk",
+        "controller.animation.grotle.shake": "controller.animation.grotle.shake",
+        "controller.animation.cobblemon.grotle": "controller.animation.cobblemon.grotle"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.grotle"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.grotle.blink",
+          "controller.animation.grotle.shake",
+          {
+            "controller.animation.cobblemon.grotle": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_grotle = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

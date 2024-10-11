@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:aipom",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0190_aipom/aipom",
+        "shiny": "textures/pokemon/0190_aipom/aipom_shiny",
+        "female": "textures/pokemon/0190_aipom/aipom"
+      },
+      "geometry": {
+        "base": "geometry.aipom_male.geo",
+        "shiny": "geometry.aipom_male.geo",
+        "female": "geometry.aipom_female.geo"
+      },
+      "animations": {
+        "aipom.sleep": "animation.aipom.sleep",
+        "aipommodel.singlebonelook": "animation.aipommodel.singlebonelook",
+        "aipom.ground_idle": "animation.aipom.ground_idle",
+        "aipom.ground_walk": "animation.aipom.ground_walk",
+        "aipom.blink": "animation.aipom.blink",
+        "controller.animation.aipom.blink": "controller.animation.aipom.blink",
+        "controller.animation.cobblemon.aipom": "controller.animation.cobblemon.aipom"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.aipom"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.aipom.blink",
+          {
+            "controller.animation.cobblemon.aipom": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_aipom = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

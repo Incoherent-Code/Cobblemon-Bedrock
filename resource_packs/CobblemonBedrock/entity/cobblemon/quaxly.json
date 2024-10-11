@@ -1,0 +1,59 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:quaxly",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0912_quaxly/quaxly",
+        "shiny": "textures/pokemon/0912_quaxly/quaxly_shiny"
+      },
+      "geometry": {
+        "base": "geometry.quaxly.geo",
+        "shiny": "geometry.quaxly.geo"
+      },
+      "animations": {
+        "quaxly.sleep": "animation.quaxly.sleep",
+        "quaxly.water_sleep": "animation.quaxly.water_sleep",
+        "quaxlymodel.singlebonelook": "animation.quaxlymodel.singlebonelook",
+        "quaxly.ground_idle": "animation.quaxly.ground_idle",
+        "quaxly.ground_walk": "animation.quaxly.ground_walk",
+        "quaxly.water_idle": "animation.quaxly.water_idle",
+        "quaxly.water_swim": "animation.quaxly.water_swim",
+        "quaxly.battle_idle": "animation.quaxly.battle_idle",
+        "quaxly.surfacewater_battle_idle": "animation.quaxly.surfacewater_battle_idle",
+        "quaxly.surfacewater_idle": "animation.quaxly.surfacewater_idle",
+        "quaxly.water_surface_idle.transform": "animation.quaxly.water_surface_idle.transform",
+        "quaxly.surfacewater_swim": "animation.quaxly.surfacewater_swim",
+        "quaxly.water_surface_swim.transform": "animation.quaxly.water_surface_swim.transform",
+        "quaxly.blink": "animation.quaxly.blink",
+        "controller.animation.quaxly.blink": "controller.animation.quaxly.blink",
+        "controller.animation.cobblemon.quaxly": "controller.animation.cobblemon.quaxly"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.quaxly"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.quaxly.blink",
+          {
+            "controller.animation.cobblemon.quaxly": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_quaxly = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

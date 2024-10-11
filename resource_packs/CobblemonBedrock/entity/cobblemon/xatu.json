@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:xatu",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0178_xatu/xatu",
+        "female": "textures/pokemon/0178_xatu/xatu",
+        "shiny": "textures/pokemon/0178_xatu/xatu_shiny"
+      },
+      "geometry": {
+        "base": "geometry.xatu_male.geo",
+        "female": "geometry.xatu_female.geo",
+        "shiny": "geometry.xatu_male.geo"
+      },
+      "animations": {
+        "xatu.sleep": "animation.xatu.sleep",
+        "xatu.ground_idle": "animation.xatu.ground_idle",
+        "xatu.blink": "animation.xatu.blink",
+        "controller.animation.xatu.blink": "controller.animation.xatu.blink",
+        "controller.animation.cobblemon.xatu": "controller.animation.cobblemon.xatu"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.xatu"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.xatu.blink",
+          {
+            "controller.animation.cobblemon.xatu": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_xatu = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:jolteon",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0135_jolteon/jolteon",
+        "shiny": "textures/pokemon/0135_jolteon/jolteon_shiny"
+      },
+      "geometry": {
+        "base": "geometry.jolteon.geo",
+        "shiny": "geometry.jolteon.geo"
+      },
+      "animations": {
+        "jolteonmodel.singlebonelook": "animation.jolteonmodel.singlebonelook",
+        "jolteon.ground_idle": "animation.jolteon.ground_idle",
+        "jolteon.ground_run": "animation.jolteon.ground_run",
+        "controller.animation.cobblemon.jolteon": "controller.animation.cobblemon.jolteon"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.jolteon"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.jolteon": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_jolteon = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

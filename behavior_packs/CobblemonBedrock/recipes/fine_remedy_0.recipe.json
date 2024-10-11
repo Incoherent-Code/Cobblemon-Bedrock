@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "cobblemon:remedy"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "cobblemon:pep_up_flower"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "cobblemon:remedy"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "cobblemon:pep_up_flower"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:fine_remedy"
+    },
+    "description": {
+      "identifier": "cobblemon:fine_remedy_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

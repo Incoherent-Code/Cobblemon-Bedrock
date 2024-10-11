@@ -1,0 +1,71 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:rapidash",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0078_rapidash/rapidash",
+        "shiny": "textures/pokemon/0078_rapidash/rapidash_shiny",
+        "galarian": "textures/pokemon/0078_rapidash/rapidash_galar",
+        "shiny_galarian": "textures/pokemon/0078_rapidash/rapidash_galar_shiny",
+        "base_emissive_uv": "textures/pokemon/0078_rapidash/base_emissive_uv",
+        "shiny_emissive_uv": "textures/pokemon/0078_rapidash/shiny_emissive_uv",
+        "galarian_emissive": "textures/pokemon/0078_rapidash/rapidash_galar_emissive",
+        "shiny_galarian_emissive": "textures/pokemon/0078_rapidash/rapidash_galar_emissive"
+      },
+      "geometry": {
+        "base": "geometry.rapidash.geo",
+        "shiny": "geometry.rapidash.geo",
+        "galarian": "geometry.rapidash_galar.geo",
+        "shiny_galarian": "geometry.rapidash_galar.geo"
+      },
+      "animations": {
+        "rapidash.sleep": "animation.rapidash.sleep",
+        "rapidashmodel.singlebonelook": "animation.rapidashmodel.singlebonelook",
+        "rapidash.ground_idle": "animation.rapidash.ground_idle",
+        "rapidash.ground_walk": "animation.rapidash.ground_walk",
+        "rapidash.blink": "animation.rapidash.blink",
+        "controller.animation.rapidash.blink": "controller.animation.rapidash.blink",
+        "controller.animation.cobblemon.rapidash": "controller.animation.cobblemon.rapidash",
+        "rapidashgalarianmodel.singlebonelook": "animation.rapidashgalarianmodel.singlebonelook",
+        "rapidash_galar.ground_idle": "animation.rapidash_galar.ground_idle",
+        "rapidashgalarianmodel.quadrupedwalkanimation": "animation.rapidashgalarianmodel.quadrupedwalkanimation",
+        "rapidash_galar.blink": "animation.rapidash_galar.blink",
+        "controller.animation.rapidash_galarian.blink": "controller.animation.rapidash_galarian.blink",
+        "controller.animation.cobblemon.rapidash_galarian": "controller.animation.cobblemon.rapidash_galarian"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.rapidash_emissive",
+        "controller.render.cobblemon.rapidash_emissive_2",
+        "controller.render.cobblemon.rapidash"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.rapidash.blink",
+          {
+            "controller.animation.cobblemon.rapidash": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.rapidash_galarian.blink",
+          {
+            "controller.animation.cobblemon.rapidash_galarian": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_rapidash = -1.0;",
+          "v.state_of_rapidash_galarian = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

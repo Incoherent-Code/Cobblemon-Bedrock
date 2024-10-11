@@ -1,0 +1,47 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:yanma",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0193_yanma/yanma",
+        "shiny": "textures/pokemon/0193_yanma/yanma_shiny"
+      },
+      "geometry": {
+        "base": "geometry.yanma.geo",
+        "shiny": "geometry.yanma.geo"
+      },
+      "animations": {
+        "yanmamodel.singlebonelook": "animation.yanmamodel.singlebonelook",
+        "yanma.ground_idle": "animation.yanma.ground_idle",
+        "yanma.standing.transform": "animation.yanma.standing.transform",
+        "yanma.walk.transform": "animation.yanma.walk.transform",
+        "controller.animation.cobblemon.yanma": "controller.animation.cobblemon.yanma"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.yanma"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.yanma": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_yanma = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

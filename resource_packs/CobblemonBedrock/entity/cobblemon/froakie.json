@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:froakie",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0656_froakie/froakie",
+        "shiny": "textures/pokemon/0656_froakie/froakie_shiny"
+      },
+      "geometry": {
+        "base": "geometry.froakie.geo",
+        "shiny": "geometry.froakie.geo"
+      },
+      "animations": {
+        "froakie.sleep": "animation.froakie.sleep",
+        "froakiemodel.singlebonelook": "animation.froakiemodel.singlebonelook",
+        "froakie.ground_idle": "animation.froakie.ground_idle",
+        "froakie.ground_walk": "animation.froakie.ground_walk",
+        "froakie.water_idle": "animation.froakie.water_idle",
+        "froakie.water_swim": "animation.froakie.water_swim",
+        "froakie.battle_idle": "animation.froakie.battle_idle",
+        "froakie.blink": "animation.froakie.blink",
+        "controller.animation.froakie.blink": "controller.animation.froakie.blink",
+        "controller.animation.cobblemon.froakie": "controller.animation.cobblemon.froakie"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.froakie"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.froakie.blink",
+          {
+            "controller.animation.cobblemon.froakie": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_froakie = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,214 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.lopunnymodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.lopunny.ground_idle": {
+      "loop": true,
+      "bones": {
+        "ear_left": {
+          "rotation": [
+            -7.5,
+            0.0,
+            10.0
+          ]
+        },
+        "ear_left3": {
+          "rotation": [
+            0.0,
+            0.0,
+            5.0
+          ]
+        },
+        "ear_left4": {
+          "rotation": [
+            0.0,
+            0.0,
+            5.0
+          ]
+        },
+        "ear_left5": {
+          "rotation": [
+            0.0,
+            0.0,
+            5.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            15.0,
+            15.0,
+            -50.0
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            0.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            15.0,
+            -15.0,
+            50.0
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            0.0,
+            30.0,
+            0.0
+          ]
+        },
+        "eyebrow_left": {
+          "rotation": [
+            0.0,
+            5.0,
+            0.0
+          ]
+        },
+        "eyebrow_right": {
+          "rotation": [
+            0.0,
+            -5.0,
+            0.0
+          ]
+        },
+        "eyebrow_right2": {
+          "rotation": [
+            0.0,
+            -2.5,
+            0.0
+          ]
+        },
+        "ear_left2": {
+          "rotation": [
+            -0.98448,
+            -7.43547,
+            42.56397
+          ]
+        },
+        "ear_right": {
+          "rotation": [
+            -7.5,
+            0.0,
+            -10.0
+          ]
+        },
+        "ear_right2": {
+          "rotation": [
+            -0.98448,
+            7.43547,
+            -42.56397
+          ]
+        },
+        "ear_right3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -5.0
+          ]
+        },
+        "ear_right4": {
+          "rotation": [
+            0.0,
+            0.0,
+            -5.0
+          ]
+        },
+        "ear_right5": {
+          "rotation": [
+            0.0,
+            0.0,
+            -5.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.lopunnymodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.7 + 180) * 0.7 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.7) *  0.7 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.lopunny.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

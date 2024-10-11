@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:galvantula",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0596_galvantula/galvantula",
+        "shiny": "textures/pokemon/0596_galvantula/galvantula_shiny",
+        "base_glow": "textures/pokemon/0596_galvantula/galvantula_emissive",
+        "shiny_glow": "textures/pokemon/0596_galvantula/galvantula_emissive"
+      },
+      "geometry": {
+        "base": "geometry.galvantula.geo",
+        "shiny": "geometry.galvantula.geo"
+      },
+      "animations": {
+        "galvantula.ground_idle": "animation.galvantula.ground_idle",
+        "galvantula.ground_walk": "animation.galvantula.ground_walk",
+        "galvantula.blink1": "animation.galvantula.blink1",
+        "controller.animation.galvantula.blink1": "controller.animation.galvantula.blink1",
+        "galvantula.blink2": "animation.galvantula.blink2",
+        "controller.animation.galvantula.blink2": "controller.animation.galvantula.blink2",
+        "controller.animation.cobblemon.galvantula": "controller.animation.cobblemon.galvantula"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.galvantula_glow",
+        "controller.render.cobblemon.galvantula"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.galvantula.blink1",
+          "controller.animation.galvantula.blink2",
+          {
+            "controller.animation.cobblemon.galvantula": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_galvantula = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

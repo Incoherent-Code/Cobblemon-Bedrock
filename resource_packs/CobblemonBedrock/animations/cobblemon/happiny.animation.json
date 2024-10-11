@@ -1,0 +1,42 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.happiny.ground_idle": {
+      "loop": true,
+      "bones": {
+        "left_arm": {
+          "rotation": [
+            -5.0,
+            30.0,
+            2.5
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -5.0,
+            -30.0,
+            -2.5
+          ]
+        },
+        "torso": {
+          "rotation": [
+            -1.5,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            1.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

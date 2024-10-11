@@ -1,0 +1,59 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:greninja",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0658_greninja/greninja",
+        "shiny": "textures/pokemon/0658_greninja/greninja_shiny"
+      },
+      "geometry": {
+        "base": "geometry.greninja.geo",
+        "shiny": "geometry.greninja.geo"
+      },
+      "animations": {
+        "greninja.sleep": "animation.greninja.sleep",
+        "greninja.sleep.transform": "animation.greninja.sleep.transform",
+        "greninjamodel.singlebonelook": "animation.greninjamodel.singlebonelook",
+        "greninja.ground_idle": "animation.greninja.ground_idle",
+        "greninja.standing.transform": "animation.greninja.standing.transform",
+        "greninja.ground_walk": "animation.greninja.ground_walk",
+        "greninja.walk.transform": "animation.greninja.walk.transform",
+        "greninja.water_idle": "animation.greninja.water_idle",
+        "greninja.float.transform": "animation.greninja.float.transform",
+        "greninja.water_swim": "animation.greninja.water_swim",
+        "greninja.swim.transform": "animation.greninja.swim.transform",
+        "greninja.battle_idle": "animation.greninja.battle_idle",
+        "greninja.battleidle.transform": "animation.greninja.battleidle.transform",
+        "greninja.blink": "animation.greninja.blink",
+        "controller.animation.greninja.blink": "controller.animation.greninja.blink",
+        "controller.animation.cobblemon.greninja": "controller.animation.cobblemon.greninja"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.greninja"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.greninja.blink",
+          {
+            "controller.animation.cobblemon.greninja": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_greninja = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:lampent",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0608_lampent/lampent",
+        "shiny": "textures/pokemon/0608_lampent/lampent_shiny",
+        "base_color": "textures/pokemon/0608_lampent/lampent_emissive",
+        "shiny_color": "textures/pokemon/0608_lampent/lampent_emissive"
+      },
+      "geometry": {
+        "base": "geometry.lampent.geo",
+        "shiny": "geometry.lampent.geo"
+      },
+      "animations": {
+        "lampent.idle": "animation.lampent.idle",
+        "lampent.blink": "animation.lampent.blink",
+        "controller.animation.lampent.blink": "controller.animation.lampent.blink",
+        "controller.animation.cobblemon.lampent": "controller.animation.cobblemon.lampent"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.lampent_color",
+        "controller.render.cobblemon.lampent"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.lampent.blink",
+          {
+            "controller.animation.cobblemon.lampent": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_lampent = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

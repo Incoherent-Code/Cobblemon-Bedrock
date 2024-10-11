@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:mismagius",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0429_mismagius/mismagius",
+        "shiny": "textures/pokemon/0429_mismagius/mismagius_shiny",
+        "base_emissive": "textures/pokemon/0429_mismagius/mismagius_emissive",
+        "shiny_emissive": "textures/pokemon/0429_mismagius/mismagius_emissive"
+      },
+      "geometry": {
+        "base": "geometry.mismagius.geo",
+        "shiny": "geometry.mismagius.geo"
+      },
+      "animations": {
+        "mismagiusmodel.singlebonelook": "animation.mismagiusmodel.singlebonelook",
+        "mismagius.ground_idle": "animation.mismagius.ground_idle",
+        "mismagius.blink": "animation.mismagius.blink",
+        "controller.animation.mismagius.blink": "controller.animation.mismagius.blink",
+        "controller.animation.cobblemon.mismagius": "controller.animation.cobblemon.mismagius"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.mismagius_emissive",
+        "controller.render.cobblemon.mismagius"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.mismagius.blink",
+          {
+            "controller.animation.cobblemon.mismagius": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_mismagius = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

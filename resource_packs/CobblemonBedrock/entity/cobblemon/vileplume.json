@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:vileplume",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0045_vileplume/vileplume_male",
+        "shiny": "textures/pokemon/0045_vileplume/vileplume_male_shiny",
+        "female": "textures/pokemon/0045_vileplume/vileplume_female",
+        "shiny_female": "textures/pokemon/0045_vileplume/vileplume_female_shiny",
+        "valencian": "textures/pokemon/0045_vileplume/vileplume_valencian",
+        "valencian_shiny": "textures/pokemon/0045_vileplume/vileplume_valencian_shiny"
+      },
+      "geometry": {
+        "base": "geometry.vileplume.geo",
+        "shiny": "geometry.vileplume.geo",
+        "female": "geometry.vileplume.geo",
+        "shiny_female": "geometry.vileplume.geo",
+        "valencian": "geometry.vileplume.geo",
+        "valencian_shiny": "geometry.vileplume.geo"
+      },
+      "animations": {
+        "vileplume.idle": "animation.vileplume.idle",
+        "vileplume.sleep": "animation.vileplume.sleep",
+        "vileplume.ground_walk": "animation.vileplume.ground_walk",
+        "vileplume.blink": "animation.vileplume.blink",
+        "controller.animation.vileplume.blink": "controller.animation.vileplume.blink",
+        "controller.animation.cobblemon.vileplume": "controller.animation.cobblemon.vileplume"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.vileplume"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.vileplume.blink",
+          {
+            "controller.animation.cobblemon.vileplume": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5"
+          }
+        ],
+        "initialize": [
+          "v.state_of_vileplume = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

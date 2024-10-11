@@ -1,0 +1,149 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.torkoalmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "neck": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.torkoal.ground_idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            "-math.sin((query.anim_time)*90)*0.1",
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            "-math.sin((query.anim_time)*90)*2",
+            "-math.sin((query.anim_time)*90)*2",
+            0.0
+          ]
+        },
+        "neck2": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin((query.anim_time)*90)*2",
+            "math.sin((query.anim_time)*180)*1",
+            0.0
+          ]
+        },
+        "leg_front_left": {
+          "rotation": [
+            "-math.sin((query.anim_time)*90)*2",
+            -17.5,
+            0.0
+          ]
+        },
+        "leg_front_left2": {
+          "rotation": [
+            "math.sin((query.anim_time)*90)*2",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_front_right": {
+          "rotation": [
+            "-math.sin((query.anim_time)*90)*2",
+            17.5,
+            0.0
+          ]
+        },
+        "leg_front_right2": {
+          "rotation": [
+            "math.sin((query.anim_time)*90)*2",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_back_left": {
+          "rotation": [
+            "-math.sin((query.anim_time)*90)*2",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_back_left2": {
+          "rotation": [
+            "math.sin((query.anim_time)*90)*2",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_back_right": {
+          "rotation": [
+            "-math.sin((query.anim_time)*90)*2",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_back_right2": {
+          "rotation": [
+            "math.sin((query.anim_time)*90)*2",
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "particle_effects": {
+        "0.0": {
+          "effect": "smoke_plume",
+          "locator": "smoke"
+        }
+      }
+    },
+    "animation.torkoalmodel.quadrupedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_back_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.7) * 0.7 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_back_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.7 + 180) *  0.7 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_front_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.7 + 180) * 0.7 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_front_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.7) * 0.7 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

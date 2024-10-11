@@ -1,0 +1,56 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:delphox",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0655_delphox/delphox",
+        "shiny": "textures/pokemon/0655_delphox/delphox_shiny",
+        "base_flame_uv": "textures/pokemon/0655_delphox/base_flame_uv",
+        "shiny_flame_uv": "textures/pokemon/0655_delphox/shiny_flame_uv"
+      },
+      "geometry": {
+        "base": "geometry.delphox.geo",
+        "shiny": "geometry.delphox.geo"
+      },
+      "animations": {
+        "delphoxmodel.singlebonelook": "animation.delphoxmodel.singlebonelook",
+        "delphox.ground_idle": "animation.delphox.ground_idle",
+        "delphox.standing.transform": "animation.delphox.standing.transform",
+        "delphox.ground_walk": "animation.delphox.ground_walk",
+        "delphox.walk.transform": "animation.delphox.walk.transform",
+        "delphox.battle_idle": "animation.delphox.battle_idle",
+        "delphox.battleidle.transform": "animation.delphox.battleidle.transform",
+        "delphox.blink": "animation.delphox.blink",
+        "controller.animation.delphox.blink": "controller.animation.delphox.blink",
+        "controller.animation.cobblemon.delphox": "controller.animation.cobblemon.delphox"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.delphox_flame",
+        "controller.render.cobblemon.delphox"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.delphox.blink",
+          {
+            "controller.animation.cobblemon.delphox": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_delphox = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

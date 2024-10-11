@@ -1,0 +1,428 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.spinarakmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.spinarak.ground_idle": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "fang_left": {
+          "rotation": [
+            0.0,
+            -12.5,
+            0.0
+          ]
+        },
+        "fang_right": {
+          "rotation": [
+            0.0,
+            12.5,
+            0.0
+          ]
+        },
+        "horn": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "legfront_left": {
+          "rotation": [
+            -6.5,
+            30.0,
+            -12.5
+          ]
+        },
+        "legfront_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            52.0
+          ]
+        },
+        "legmiddle_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            52.0
+          ]
+        },
+        "legmiddle_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            -10.5
+          ]
+        },
+        "legback_left": {
+          "rotation": [
+            6.5,
+            -30.0,
+            -12.5
+          ]
+        },
+        "legback_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            52.0
+          ]
+        },
+        "legfront_right": {
+          "rotation": [
+            -6.5,
+            -30.0,
+            12.5
+          ]
+        },
+        "legfront_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -52.0
+          ]
+        },
+        "legmiddle_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            10.5
+          ]
+        },
+        "legmiddle_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -52.0
+          ]
+        },
+        "legback_right": {
+          "rotation": [
+            6.5,
+            30.0,
+            12.5
+          ]
+        },
+        "legback_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -52.0
+          ]
+        },
+        "torso_pattern_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "torso_pattern_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.spinarak.ground_walk": {
+      "loop": true,
+      "animation_length": 0.5,
+      "bones": {
+        "head": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "fang_left": {
+          "rotation": [
+            0.0,
+            -12.5,
+            0.0
+          ]
+        },
+        "fang_right": {
+          "rotation": [
+            0.0,
+            12.5,
+            0.0
+          ]
+        },
+        "horn": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "legfront_left": {
+          "rotation": {
+            "0.0": [
+              -0.7522,
+              -25.11578,
+              -14.51565
+            ],
+            "0.125": [
+              0.0,
+              3.75,
+              -14.0
+            ],
+            "0.25": [
+              0.0,
+              12.5,
+              0.0
+            ],
+            "0.375": [
+              0.0,
+              -18.75,
+              -3.0
+            ],
+            "0.5": [
+              -0.7522,
+              -25.11578,
+              -14.51565
+            ]
+          }
+        },
+        "legfront_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            52.0
+          ]
+        },
+        "legmiddle_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            52.0
+          ]
+        },
+        "legmiddle_left": {
+          "rotation": {
+            "0.0": [
+              -2.61435,
+              9.91358,
+              -1.31845
+            ],
+            "0.125": [
+              12.66253,
+              -10.09152,
+              -3.9374
+            ],
+            "0.25": [
+              14.8968,
+              -5.30767,
+              -13.89137
+            ],
+            "0.375": [
+              2.2227,
+              4.83983,
+              -14.50942
+            ],
+            "0.5": [
+              -2.61435,
+              9.91358,
+              -1.31845
+            ]
+          }
+        },
+        "legback_left": {
+          "rotation": {
+            "0.0": [
+              -0.7522,
+              -25.11578,
+              -14.51565
+            ],
+            "0.125": [
+              0.0,
+              3.75,
+              -14.0
+            ],
+            "0.25": [
+              0.0,
+              12.5,
+              0.0
+            ],
+            "0.375": [
+              0.0,
+              -18.75,
+              -3.0
+            ],
+            "0.5": [
+              -0.7522,
+              -25.11578,
+              -14.51565
+            ]
+          }
+        },
+        "legback_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            52.0
+          ]
+        },
+        "legfront_right": {
+          "rotation": {
+            "0.0": [
+              0.0,
+              -12.5,
+              0.0
+            ],
+            "0.125": [
+              0.0,
+              18.75,
+              3.0
+            ],
+            "0.25": [
+              -0.7522,
+              25.11578,
+              14.51565
+            ],
+            "0.375": [
+              0.0,
+              -3.75,
+              14.0
+            ],
+            "0.5": [
+              0.0,
+              -12.5,
+              0.0
+            ]
+          }
+        },
+        "legfront_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -52.0
+          ]
+        },
+        "legmiddle_right": {
+          "rotation": {
+            "0.0": [
+              14.8968,
+              5.30767,
+              13.89137
+            ],
+            "0.125": [
+              2.2227,
+              -4.83983,
+              14.50942
+            ],
+            "0.25": [
+              -2.61435,
+              -9.91358,
+              1.31845
+            ],
+            "0.375": [
+              12.66253,
+              10.09152,
+              3.9374
+            ],
+            "0.5": [
+              14.8968,
+              5.30767,
+              13.89137
+            ]
+          }
+        },
+        "legmiddle_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -52.0
+          ]
+        },
+        "legback_right": {
+          "rotation": {
+            "0.0": [
+              0.0,
+              -12.5,
+              0.0
+            ],
+            "0.125": [
+              0.0,
+              18.75,
+              3.0
+            ],
+            "0.25": [
+              -0.7522,
+              25.11578,
+              14.51565
+            ],
+            "0.375": [
+              0.0,
+              -3.75,
+              14.0
+            ],
+            "0.5": [
+              0.0,
+              -12.5,
+              0.0
+            ]
+          }
+        },
+        "legback_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -52.0
+          ]
+        },
+        "torso_pattern_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "torso_pattern_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            5.0,
+            0.0,
+            "math.cos((query.anim_time) * 90 * 8) * -2"
+          ],
+          "position": [
+            0.0,
+            "math.cos((query.anim_time) * 90 * 8*2) * 0.2",
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

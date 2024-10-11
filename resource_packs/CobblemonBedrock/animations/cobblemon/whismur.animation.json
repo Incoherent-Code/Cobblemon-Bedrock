@@ -1,0 +1,73 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.whismurmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.whismur.ground_idle": {
+      "loop": true,
+      "bones": {
+        "ear_right": {
+          "rotation": [
+            42.25489,
+            5.05904,
+            -5.54401
+          ]
+        },
+        "ear_right2": {
+          "rotation": [
+            77.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ear_left": {
+          "rotation": [
+            42.25489,
+            -5.05904,
+            5.54401
+          ]
+        },
+        "ear_left2": {
+          "rotation": [
+            77.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.whismurmodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "foot_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6 + 180) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

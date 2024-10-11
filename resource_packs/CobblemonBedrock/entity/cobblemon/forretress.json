@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:forretress",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0205_forretress/forretress",
+        "shiny": "textures/pokemon/0205_forretress/forretress_shiny",
+        "shulker": "textures/pokemon/0205_forretress/forretress_shulker",
+        "shulker_shiny": "textures/pokemon/0205_forretress/forretress_shulker_shiny"
+      },
+      "geometry": {
+        "base": "geometry.forretress.geo",
+        "shiny": "geometry.forretress.geo",
+        "shulker": "geometry.forretress_shulker.geo",
+        "shulker_shiny": "geometry.forretress_shulker.geo"
+      },
+      "animations": {
+        "forretress.ground_idle": "animation.forretress.ground_idle",
+        "forretress.ground_walk": "animation.forretress.ground_walk",
+        "forretress.sleep": "animation.forretress.sleep",
+        "forretress.blink": "animation.forretress.blink",
+        "controller.animation.forretress.blink": "controller.animation.forretress.blink",
+        "controller.animation.cobblemon.forretress": "controller.animation.cobblemon.forretress"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.forretress"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.forretress.blink",
+          {
+            "controller.animation.cobblemon.forretress": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_forretress = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

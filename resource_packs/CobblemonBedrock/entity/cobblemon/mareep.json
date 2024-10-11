@@ -1,0 +1,62 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:mareep",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0179_mareep/mareep",
+        "shiny": "textures/pokemon/0179_mareep/mareep_shiny",
+        "base_emissive": "textures/pokemon/0179_mareep/mareep_emissive",
+        "shiny_emissive": "textures/pokemon/0179_mareep/mareep_emissive"
+      },
+      "geometry": {
+        "base": "geometry.mareep.geo",
+        "shiny": "geometry.mareep.geo"
+      },
+      "animations": {
+        "mareep.sleep": "animation.mareep.sleep",
+        "mareep.sleep.transform": "animation.mareep.sleep.transform",
+        "mareep.shearedsleep.transform": "animation.mareep.shearedsleep.transform",
+        "mareepmodel.singlebonelook": "animation.mareepmodel.singlebonelook",
+        "mareep.ground_idle": "animation.mareep.ground_idle",
+        "mareep.standing.transform": "animation.mareep.standing.transform",
+        "mareep.ground_walk": "animation.mareep.ground_walk",
+        "mareep.walk.transform": "animation.mareep.walk.transform",
+        "mareep.shearedstanding.transform": "animation.mareep.shearedstanding.transform",
+        "mareep.shearedwalk.transform": "animation.mareep.shearedwalk.transform",
+        "mareep.battle_idle": "animation.mareep.battle_idle",
+        "mareep.battleidle.transform": "animation.mareep.battleidle.transform",
+        "mareep.shearedbattleidle.transform": "animation.mareep.shearedbattleidle.transform",
+        "mareep.blink": "animation.mareep.blink",
+        "controller.animation.mareep.blink": "controller.animation.mareep.blink",
+        "controller.animation.cobblemon.mareep": "controller.animation.cobblemon.mareep"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.mareep_emissive",
+        "controller.render.cobblemon.mareep"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.mareep.blink",
+          {
+            "controller.animation.cobblemon.mareep": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_mareep = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

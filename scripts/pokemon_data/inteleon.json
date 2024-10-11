@@ -1,0 +1,225 @@
+{
+  "minLevel": 35,
+  "maxLevel": 53,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 35,
+      "maxLevel": 53
+    },
+    "1": {
+      "minLevel": 35,
+      "maxLevel": 53
+    }
+  },
+  "name": "Inteleon",
+  "nationalPokedexNumber": 818,
+  "baseStats": {
+    "hp": 70,
+    "attack": 85,
+    "defence": 65,
+    "special_attack": 125,
+    "special_defence": 65,
+    "speed": 120
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.8,
+    "height": 2.5,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "abilities": [
+    "torrent",
+    "h:sniper"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:acrobatics",
+    "1:bind",
+    "1:growl",
+    "1:pound",
+    "1:watergun",
+    "1:snipeshot",
+    "12:waterpulse",
+    "19:tearfullook",
+    "24:suckerpunch",
+    "30:uturn",
+    "38:liquidation",
+    "46:soak",
+    "54:raindance",
+    "62:hydropump",
+    "tm:acrobatics",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:blizzard",
+    "tm:bounce",
+    "tm:breakingswipe",
+    "tm:chillingwater",
+    "tm:darkpulse",
+    "tm:dive",
+    "tm:endure",
+    "tm:facade",
+    "tm:fling",
+    "tm:focusenergy",
+    "tm:gigaimpact",
+    "tm:hydrocannon",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:iciclespear",
+    "tm:icywind",
+    "tm:lightscreen",
+    "tm:liquidation",
+    "tm:metronome",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:protect",
+    "tm:raindance",
+    "tm:reflect",
+    "tm:rest",
+    "tm:round",
+    "tm:safeguard",
+    "tm:scald",
+    "tm:shadowball",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:snowscape",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:uturn",
+    "tm:waterfall",
+    "tm:waterpledge",
+    "tm:waterpulse",
+    "tm:weatherball",
+    "tm:whirlpool",
+    "tm:workup",
+    "tutor:hydrocannon",
+    "tutor:scaleshot",
+    "tutor:waterpledge"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.inteleon.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:mystic_water",
+        "percentage": 25.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "water_1",
+    "field"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 19.0,
+  "weight": 452.0,
+  "forms": [
+    {
+      "name": "Gmax",
+      "baseStats": {
+        "hp": 70,
+        "attack": 85,
+        "defence": 65,
+        "special_attack": 125,
+        "special_defence": 65,
+        "speed": 120
+      },
+      "maleRatio": 0.875,
+      "catchRate": 45,
+      "experienceGroup": "medium_slow",
+      "baseExperienceYield": 265,
+      "baseFriendship": 50,
+      "primaryType": "water",
+      "evolutions": [],
+      "abilities": [
+        "torrent",
+        "h:sniper"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "water_1",
+        "field"
+      ],
+      "height": 30.0,
+      "weight": 0.0,
+      "battleOnly": false
+    }
+  ]
+}

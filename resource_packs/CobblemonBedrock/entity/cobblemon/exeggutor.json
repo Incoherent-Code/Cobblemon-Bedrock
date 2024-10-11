@@ -1,0 +1,83 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:exeggutor",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0103_exeggutor/exeggutor",
+        "shiny": "textures/pokemon/0103_exeggutor/exeggutor_shiny",
+        "alolan": "textures/pokemon/0103_exeggutor/exeggutor_alolan",
+        "shiny_alolan": "textures/pokemon/0103_exeggutor/exeggutor_alolan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.exeggutor.geo",
+        "shiny": "geometry.exeggutor.geo",
+        "alolan": "geometry.exeggutor_alolan.geo",
+        "shiny_alolan": "geometry.exeggutor_alolan.geo"
+      },
+      "animations": {
+        "exeggutor.sleep": "animation.exeggutor.sleep",
+        "exeggutormodel.singlebonelook": "animation.exeggutormodel.singlebonelook",
+        "exeggutor.ground_idle": "animation.exeggutor.ground_idle",
+        "exeggutor.ground_walk": "animation.exeggutor.ground_walk",
+        "exeggutor.battle_idle": "animation.exeggutor.battle_idle",
+        "exeggutor.blink": "animation.exeggutor.blink",
+        "controller.animation.exeggutor.blink1": "controller.animation.exeggutor.blink1",
+        "exeggutor.blink2": "animation.exeggutor.blink2",
+        "controller.animation.exeggutor.blink2": "controller.animation.exeggutor.blink2",
+        "exeggutor.blink3": "animation.exeggutor.blink3",
+        "controller.animation.exeggutor.blink3": "controller.animation.exeggutor.blink3",
+        "controller.animation.cobblemon.exeggutor": "controller.animation.cobblemon.exeggutor",
+        "exeggutor_alolan.sleep": "animation.exeggutor_alolan.sleep",
+        "exeggutoralolanmodel.singlebonelook": "animation.exeggutoralolanmodel.singlebonelook",
+        "exeggutor_alolan.ground_idle": "animation.exeggutor_alolan.ground_idle",
+        "exeggutor_alolan.ground_walk": "animation.exeggutor_alolan.ground_walk",
+        "exeggutor_alolan.battle_idle": "animation.exeggutor_alolan.battle_idle",
+        "exeggutor_alolan.blink": "animation.exeggutor_alolan.blink",
+        "controller.animation.exeggutor_alolan.blink1": "controller.animation.exeggutor_alolan.blink1",
+        "exeggutor_alolan.blink2": "animation.exeggutor_alolan.blink2",
+        "controller.animation.exeggutor_alolan.blink2": "controller.animation.exeggutor_alolan.blink2",
+        "exeggutor_alolan.blink3": "animation.exeggutor_alolan.blink3",
+        "controller.animation.exeggutor_alolan.blink3": "controller.animation.exeggutor_alolan.blink3",
+        "exeggutor_alolan.blink4": "animation.exeggutor_alolan.blink4",
+        "controller.animation.exeggutor_alolan.blink4": "controller.animation.exeggutor_alolan.blink4",
+        "controller.animation.cobblemon.exeggutor_alolan": "controller.animation.cobblemon.exeggutor_alolan"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.exeggutor"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.exeggutor.blink1",
+          "controller.animation.exeggutor.blink2",
+          "controller.animation.exeggutor.blink3",
+          {
+            "controller.animation.cobblemon.exeggutor": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.exeggutor_alolan.blink1",
+          "controller.animation.exeggutor_alolan.blink2",
+          "controller.animation.exeggutor_alolan.blink3",
+          "controller.animation.exeggutor_alolan.blink4",
+          {
+            "controller.animation.cobblemon.exeggutor_alolan": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_exeggutor = -1.0;",
+          "v.state_of_exeggutor_alolan = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

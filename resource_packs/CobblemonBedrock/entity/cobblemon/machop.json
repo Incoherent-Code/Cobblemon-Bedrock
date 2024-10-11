@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:machop",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0066_machop/machop",
+        "shiny": "textures/pokemon/0066_machop/machop_shiny"
+      },
+      "geometry": {
+        "base": "geometry.machop.geo",
+        "shiny": "geometry.machop.geo"
+      },
+      "animations": {
+        "machopmodel.singlebonelook": "animation.machopmodel.singlebonelook",
+        "machop.ground_idle": "animation.machop.ground_idle",
+        "machop.ground_walk": "animation.machop.ground_walk",
+        "machop.blink": "animation.machop.blink",
+        "controller.animation.machop.blink": "controller.animation.machop.blink",
+        "controller.animation.cobblemon.machop": "controller.animation.cobblemon.machop"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.machop"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.machop.blink",
+          {
+            "controller.animation.cobblemon.machop": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_machop = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:arrokuda",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0846_arrokuda/arrokuda",
+        "shiny": "textures/pokemon/0846_arrokuda/arrokuda_shiny"
+      },
+      "geometry": {
+        "base": "geometry.arrokuda.geo",
+        "shiny": "geometry.arrokuda.geo"
+      },
+      "animations": {
+        "arrokuda.sleep": "animation.arrokuda.sleep",
+        "arrokuda.water_sleep": "animation.arrokuda.water_sleep",
+        "arrokuda.ground_idle": "animation.arrokuda.ground_idle",
+        "arrokuda.ground_walk": "animation.arrokuda.ground_walk",
+        "arrokuda.water_idle": "animation.arrokuda.water_idle",
+        "arrokuda.water_swim": "animation.arrokuda.water_swim",
+        "arrokuda.battle_idle": "animation.arrokuda.battle_idle",
+        "arrokuda.water_battle_idle": "animation.arrokuda.water_battle_idle",
+        "arrokuda.blink": "animation.arrokuda.blink",
+        "controller.animation.arrokuda.blink": "controller.animation.arrokuda.blink",
+        "arrokuda.ground_quirk": "animation.arrokuda.ground_quirk",
+        "controller.animation.arrokuda.flop": "controller.animation.arrokuda.flop",
+        "controller.animation.cobblemon.arrokuda": "controller.animation.cobblemon.arrokuda"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.arrokuda"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.arrokuda.blink",
+          "controller.animation.arrokuda.flop",
+          {
+            "controller.animation.cobblemon.arrokuda": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_arrokuda = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

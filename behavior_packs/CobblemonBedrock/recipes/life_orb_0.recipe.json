@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "GTA",
+      "TET",
+      "ATG"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:golden_apple"
+      },
+      "T": {
+        "item": "minecraft:tinted_glass"
+      },
+      "E": {
+        "item": "minecraft:ender_pearl"
+      },
+      "G": {
+        "item": "minecraft:ghast_tear"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:golden_apple"
+      },
+      {
+        "item": "minecraft:tinted_glass"
+      },
+      {
+        "item": "minecraft:ender_pearl"
+      },
+      {
+        "item": "minecraft:ghast_tear"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:life_orb"
+    },
+    "description": {
+      "identifier": "cobblemon:life_orb_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

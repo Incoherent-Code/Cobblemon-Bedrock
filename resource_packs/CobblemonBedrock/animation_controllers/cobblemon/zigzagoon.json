@@ -1,0 +1,217 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.zigzagoon.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_zigzagoon_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_zigzagoon_blink = q.life_time + 1; return (q.life_time > v.next_quirk_zigzagoon_blink) && (v.state_of_zigzagoon == 1 || v.state_of_zigzagoon == 2 || v.state_of_zigzagoon == 3 || v.state_of_zigzagoon == 4 || v.state_of_zigzagoon == 5);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "zigzagoon.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_zigzagoon_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_zigzagoon_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.zigzagoon": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "zigzagoon.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_zigzagoon = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "zigzagoonmodel.singlebonelook",
+            "zigzagoon.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zigzagoon = 1; return q.is_sleeping;"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "zigzagoonmodel.singlebonelook",
+            "zigzagoon.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zigzagoon = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "zigzagoonmodel.singlebonelook",
+            "zigzagoon.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zigzagoon = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walking": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderLeft": {
+          "animations": [
+            "zigzagoonmodel.singlebonelook",
+            "zigzagoon.shoulder_left",
+            "zigzagoon.shoulderleft.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zigzagoon = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderRight": {
+          "animations": [
+            "zigzagoonmodel.singlebonelook",
+            "zigzagoon.shoulder_right",
+            "zigzagoon.shoulderright.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_zigzagoon = 5; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.zigzagoon_galarian.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_zigzagoon_galarian_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_zigzagoon_galarian_blink = q.life_time + 1; return (q.life_time > v.next_quirk_zigzagoon_galarian_blink) && (v.state_of_zigzagoon_galarian == 0 || v.state_of_zigzagoon_galarian == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "zigzagoon_galarian.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_zigzagoon_galarian_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_zigzagoon_galarian_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.zigzagoon_galarian": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "zigzagoongalarianmodel.singlebonelook",
+            "zigzagoon_galarian.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_zigzagoon_galarian = 0; return (q.is_moving && !q.is_swimming);"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "zigzagoongalarianmodel.quadrupedwalkanimation",
+            "zigzagoongalarianmodel.singlebonelook",
+            "zigzagoon_galarian.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_zigzagoon_galarian = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

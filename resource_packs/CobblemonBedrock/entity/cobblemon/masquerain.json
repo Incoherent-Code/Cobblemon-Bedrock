@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:masquerain",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0284_masquerain/masquerain",
+        "shiny": "textures/pokemon/0284_masquerain/masquerain_shiny",
+        "base_wings": "textures/pokemon/0284_masquerain/masquerain_wings",
+        "shiny_wings": "textures/pokemon/0284_masquerain/masquerain_wings"
+      },
+      "geometry": {
+        "base": "geometry.masquerain.geo",
+        "shiny": "geometry.masquerain.geo"
+      },
+      "animations": {
+        "masquerainmodel.singlebonelook": "animation.masquerainmodel.singlebonelook",
+        "masquerain.ground_idle": "animation.masquerain.ground_idle",
+        "masquerain.ground_walk": "animation.masquerain.ground_walk",
+        "masquerain.blink": "animation.masquerain.blink",
+        "controller.animation.masquerain.blink": "controller.animation.masquerain.blink",
+        "controller.animation.cobblemon.masquerain": "controller.animation.cobblemon.masquerain"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.masquerain_wings",
+        "controller.render.cobblemon.masquerain"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.masquerain.blink",
+          {
+            "controller.animation.cobblemon.masquerain": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_masquerain = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

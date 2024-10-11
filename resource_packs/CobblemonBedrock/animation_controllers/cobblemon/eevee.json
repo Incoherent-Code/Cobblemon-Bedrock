@@ -1,0 +1,99 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.eevee.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_eevee_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_eevee_blink = q.life_time + 1; return (q.life_time > v.next_quirk_eevee_blink) && (v.state_of_eevee == 0 || v.state_of_eevee == 1 || v.state_of_eevee == 2 || v.state_of_eevee == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "eevee.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_eevee_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_eevee_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.eevee": {
+      "initial_state": "stand",
+      "states": {
+        "stand": {
+          "animations": [
+            "eeveemodel.singlebonelook",
+            "eevee.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_eevee = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "eeveemodel.singlebonelook",
+            "eevee.ground_walk"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_eevee = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderLeft": {
+          "animations": [
+            "eeveemodel.singlebonelook",
+            "eevee.ground_idle",
+            "eevee.shoulderleft.transform"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_eevee = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderRight": {
+          "animations": [
+            "eeveemodel.singlebonelook",
+            "eevee.ground_idle",
+            "eevee.shoulderright.transform"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_eevee = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

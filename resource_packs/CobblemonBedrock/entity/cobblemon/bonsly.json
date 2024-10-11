@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:bonsly",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0438_bonsly/bonsly",
+        "shiny": "textures/pokemon/0438_bonsly/bonsly_shiny"
+      },
+      "geometry": {
+        "base": "geometry.bonsly.geo",
+        "shiny": "geometry.bonsly.geo"
+      },
+      "animations": {
+        "bonslymodel.singlebonelook": "animation.bonslymodel.singlebonelook",
+        "bonsly.ground_idle": "animation.bonsly.ground_idle",
+        "bonsly.ground_walk": "animation.bonsly.ground_walk",
+        "bonsly.sleep_pot": "animation.bonsly.sleep_pot",
+        "bonsly.sleep": "animation.bonsly.sleep",
+        "bonsly.battle_idle": "animation.bonsly.battle_idle",
+        "bonsly.blink": "animation.bonsly.blink",
+        "controller.animation.bonsly.blink": "controller.animation.bonsly.blink",
+        "controller.animation.cobblemon.bonsly": "controller.animation.cobblemon.bonsly"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.bonsly"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.bonsly.blink",
+          {
+            "controller.animation.cobblemon.bonsly": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_bonsly = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

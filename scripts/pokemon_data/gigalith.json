@@ -1,0 +1,205 @@
+{
+  "minLevel": 34,
+  "maxLevel": 52,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 34,
+      "maxLevel": 52
+    },
+    "1": {
+      "minLevel": 34,
+      "maxLevel": 52
+    }
+  },
+  "name": "Gigalith",
+  "nationalPokedexNumber": 526,
+  "baseStats": {
+    "hp": 85,
+    "attack": 135,
+    "defence": 130,
+    "special_attack": 60,
+    "special_defence": 80,
+    "speed": 25
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 1.4,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 1.4,
+    "height": 1.8,
+    "fixed": false
+  },
+  "primaryType": "rock",
+  "abilities": [
+    "sturdy",
+    "sandstream",
+    "h:sandforce"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:harden",
+    "1:powergem",
+    "1:sandattack",
+    "1:stealthrock",
+    "1:tackle",
+    "12:mudslap",
+    "16:smackdown",
+    "20:irondefense",
+    "24:headbutt",
+    "30:rockslide",
+    "36:rockblast",
+    "42:sandstorm",
+    "48:stoneedge",
+    "54:explosion",
+    "tm:attract",
+    "tm:bodypress",
+    "tm:bulldoze",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:heavyslam",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:naturepower",
+    "tm:powergem",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:rockblast",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:sandstorm",
+    "tm:sandtomb",
+    "tm:secretpower",
+    "tm:selfdestruct",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:stealthrock",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:strength",
+    "tm:substitute",
+    "tm:superpower",
+    "tm:swagger",
+    "tm:throatchop",
+    "tm:toxic",
+    "tm:weatherball",
+    "tutor:block",
+    "tutor:earthpower",
+    "tutor:gravity",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:laserfocus",
+    "tutor:meteorbeam",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stealthrock",
+    "tutor:stompingtantrum",
+    "tutor:superpower",
+    "tutor:throatchop"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.12
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.gigalith.desc"
+  ],
+  "drops": {
+    "amount": 6,
+    "entries": [
+      {
+        "item": "minecraft:raw_copper",
+        "quantityRange": "0-3"
+      },
+      {
+        "item": "cobblemon:hard_stone",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:everstone",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:black_augurite",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 17.0,
+  "weight": 2600.0
+}

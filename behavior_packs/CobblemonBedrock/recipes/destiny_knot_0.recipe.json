@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "WW ",
+      "WDS",
+      " SS"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:string"
+      },
+      "D": {
+        "item": "minecraft:diamond"
+      },
+      "W": {
+        "item": "minecraft:red_wool"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:string"
+      },
+      {
+        "item": "minecraft:diamond"
+      },
+      {
+        "item": "minecraft:red_wool"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:destiny_knot"
+    },
+    "description": {
+      "identifier": "cobblemon:destiny_knot_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

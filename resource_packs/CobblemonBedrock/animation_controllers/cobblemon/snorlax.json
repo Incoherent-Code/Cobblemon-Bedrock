@@ -1,0 +1,38 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.snorlax": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "snorlaxmodel.singlebonelook",
+            "snorlax.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_snorlax = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "snorlaxmodel.singlebonelook",
+            "snorlax.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_snorlax = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

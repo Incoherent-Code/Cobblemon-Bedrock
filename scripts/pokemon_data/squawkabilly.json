@@ -1,0 +1,319 @@
+{
+  "minLevel": 17,
+  "maxLevel": 42,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "squawkabilly-color-blue"
+    ],
+    "2": [
+      "squawkabilly-color-gray"
+    ],
+    "3": [
+      "squawkabilly-color-green"
+    ],
+    "4": [
+      "squawkabilly-color-yellow"
+    ],
+    "5": [
+      "squawkabilly-color-blue",
+      "shiny"
+    ],
+    "6": [
+      "squawkabilly-color-gray",
+      "shiny"
+    ],
+    "7": [
+      "squawkabilly-color-green",
+      "shiny"
+    ],
+    "8": [
+      "squawkabilly-color-yellow",
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "day",
+      "minLevel": 17,
+      "maxLevel": 42
+    },
+    "1": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 17,
+      "maxLevel": 42
+    },
+    "2": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 17,
+      "maxLevel": 42
+    },
+    "3": {
+      "timeRange": "day",
+      "minLevel": 17,
+      "maxLevel": 42
+    }
+  },
+  "name": "Squawkabilly",
+  "nationalPokedexNumber": 931,
+  "baseStats": {
+    "hp": 82,
+    "attack": 96,
+    "defence": 51,
+    "special_attack": 45,
+    "special_defence": 51,
+    "speed": 92
+  },
+  "maleRatio": 0.5,
+  "catchRate": 190,
+  "baseScale": 0.55,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "erratic",
+  "hitbox": {
+    "width": 0.5,
+    "height": 1.1,
+    "fixed": false
+  },
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "abilities": [
+    "intimidate",
+    "hustle",
+    "h:guts"
+  ],
+  "shoulderMountable": true,
+  "moves": [
+    "1:growl",
+    "1:mimic",
+    "1:peck",
+    "6:quickattack",
+    "10:torment",
+    "13:aerialace",
+    "17:furyattack",
+    "20:taunt",
+    "24:uproar",
+    "27:copycat",
+    "30:fly",
+    "34:facade",
+    "38:swagger",
+    "42:bravebird",
+    "47:roost",
+    "52:reversal",
+    "egg:doubleedge",
+    "egg:finalgambit",
+    "egg:flatter",
+    "egg:partingshot",
+    "tm:aerialace",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:bravebird",
+    "tm:endure",
+    "tm:facade",
+    "tm:faketears",
+    "tm:fly",
+    "tm:foulplay",
+    "tm:gigaimpact",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:hurricane",
+    "tm:hyperbeam",
+    "tm:hypervoice",
+    "tm:pounce",
+    "tm:protect",
+    "tm:rest",
+    "tm:reversal",
+    "tm:scaryface",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:tailwind",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:uturn"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.squawkabilly.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:chilan_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "flying"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 6.0,
+  "weight": 24.0,
+  "forms": [
+    {
+      "name": "Blue",
+      "baseStats": {
+        "hp": 82,
+        "attack": 96,
+        "defence": 51,
+        "special_attack": 45,
+        "special_defence": 51,
+        "speed": 92
+      },
+      "maleRatio": 0.5,
+      "catchRate": 190,
+      "experienceGroup": "erratic",
+      "baseFriendship": 50,
+      "primaryType": "normal",
+      "secondaryType": "flying",
+      "moves": [],
+      "evolutions": [],
+      "abilities": [
+        "intimidate",
+        "hustle",
+        "h:guts"
+      ],
+      "labels": [
+        "gen9"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "flying"
+      ],
+      "height": 6.0,
+      "weight": 24.0,
+      "battleOnly": false
+    },
+    {
+      "name": "Yellow",
+      "baseStats": {
+        "hp": 82,
+        "attack": 96,
+        "defence": 51,
+        "special_attack": 45,
+        "special_defence": 51,
+        "speed": 92
+      },
+      "maleRatio": 0.5,
+      "catchRate": 190,
+      "experienceGroup": "erratic",
+      "baseFriendship": 50,
+      "primaryType": "normal",
+      "secondaryType": "flying",
+      "moves": [],
+      "evolutions": [],
+      "abilities": [
+        "intimidate",
+        "hustle",
+        "h:sheerforce"
+      ],
+      "labels": [
+        "gen9"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "flying"
+      ],
+      "height": 6.0,
+      "weight": 24.0,
+      "battleOnly": false
+    },
+    {
+      "name": "White",
+      "baseStats": {
+        "hp": 82,
+        "attack": 96,
+        "defence": 51,
+        "special_attack": 45,
+        "special_defence": 51,
+        "speed": 92
+      },
+      "maleRatio": 0.5,
+      "catchRate": 190,
+      "experienceGroup": "erratic",
+      "baseFriendship": 50,
+      "primaryType": "normal",
+      "secondaryType": "flying",
+      "moves": [],
+      "evolutions": [],
+      "abilities": [
+        "intimidate",
+        "hustle",
+        "h:sheerforce"
+      ],
+      "labels": [
+        "gen9"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "flying"
+      ],
+      "height": 6.0,
+      "weight": 24.0,
+      "battleOnly": false
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "minLevel": 40,
+  "maxLevel": 50,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 40,
+      "maxLevel": 50
+    }
+  },
+  "name": "Wailord",
+  "nationalPokedexNumber": 321,
+  "baseStats": {
+    "hp": 170,
+    "attack": 90,
+    "defence": 45,
+    "special_attack": 90,
+    "special_defence": 45,
+    "speed": 60
+  },
+  "maleRatio": 0.5,
+  "catchRate": 60,
+  "baseScale": 2.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "fluctuating",
+  "hitbox": {
+    "width": 3.2,
+    "height": 2.1,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "abilities": [
+    "waterveil",
+    "oblivious",
+    "h:pressure"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:astonish",
+    "1:growl",
+    "1:nobleroar",
+    "1:rollout",
+    "1:soak",
+    "1:splash",
+    "1:watergun",
+    "15:mist",
+    "18:waterpulse",
+    "21:heavyslam",
+    "24:brine",
+    "27:whirlpool",
+    "30:dive",
+    "33:bounce",
+    "36:bodyslam",
+    "39:rest",
+    "44:amnesia",
+    "49:hydropump",
+    "54:waterspout",
+    "tm:amnesia",
+    "tm:attract",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:bounce",
+    "tm:brine",
+    "tm:bulldoze",
+    "tm:captivate",
+    "tm:confide",
+    "tm:dive",
+    "tm:doubleteam",
+    "tm:earthquake",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:heavyslam",
+    "tm:hiddenpower",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:hypervoice",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:ironhead",
+    "tm:liquidation",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:roar",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:scald",
+    "tm:secretpower",
+    "tm:selfdestruct",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:strength",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swagger",
+    "tm:toxic",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:weatherball",
+    "tm:whirlpool",
+    "tm:zenheadbutt",
+    "tutor:amnesia",
+    "tutor:block",
+    "tutor:bodyslam",
+    "tutor:bounce",
+    "tutor:defensecurl",
+    "tutor:dive",
+    "tutor:doubleedge",
+    "tutor:endure",
+    "tutor:headbutt",
+    "tutor:hydropump",
+    "tutor:hypervoice",
+    "tutor:icywind",
+    "tutor:ironhead",
+    "tutor:liquidation",
+    "tutor:mimic",
+    "tutor:mist",
+    "tutor:rest",
+    "tutor:rollout",
+    "tutor:selfdestruct",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:steelroller",
+    "tutor:substitute",
+    "tutor:swagger",
+    "tutor:waterpulse",
+    "tutor:waterspout",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": true,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": true,
+        "canWalkOnLava": false
+      },
+      "canLook": false,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.wailord.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:bone_block",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:chesto_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 40,
+  "eggGroups": [
+    "field",
+    "water_2"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 145.0,
+  "weight": 3980.0
+}

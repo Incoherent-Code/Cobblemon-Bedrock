@@ -1,0 +1,146 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.magnemite.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "math.sin((q.anim_time - 0.2) * 90) * 3",
+            "math.sin((q.anim_time - 0.5) * 90) * 3",
+            "math.sin(((q.anim_time + 0.4) * 90 * 0.5) * 1) * 2"
+          ],
+          "position": [
+            "math.sin((q.anim_time * 180 * 0.5) * 1) * 0",
+            "1+math.sin((q.anim_time * 90 * 0.5) * 1) * 0",
+            0.0
+          ]
+        },
+        "headnail": {
+          "rotation": [
+            0.0,
+            "q.anim_time * -90",
+            0.0
+          ]
+        },
+        "magnet_left": {
+          "rotation": [
+            "math.sin(q.anim_time * 90) * 20",
+            0.0,
+            0.0
+          ]
+        },
+        "magnet_right": {
+          "rotation": [
+            "math.sin(q.anim_time * 90) * 20",
+            0.0,
+            0.0
+          ]
+        },
+        "nail_left": {
+          "rotation": [
+            2.95375,
+            1.9973,
+            0.11369
+          ]
+        },
+        "nail_right": {
+          "rotation": [
+            2.95375,
+            -1.9973,
+            -0.11369
+          ]
+        },
+        "nail_left_rotation": {
+          "rotation": [
+            0.0,
+            0.0,
+            "q.anim_time * -90"
+          ]
+        },
+        "nail_right_rotation": {
+          "rotation": [
+            0.0,
+            0.0,
+            "q.anim_time * 90"
+          ]
+        },
+        "pupil": {
+          "position": [
+            0.0,
+            0.0,
+            0.2
+          ]
+        },
+        "pupilclosed": {
+          "position": [
+            0.0,
+            0.0,
+            -0.5
+          ]
+        },
+        "nail_head": {
+          "rotation": [
+            0.0,
+            "q.anim_time * 90 ",
+            0.0
+          ]
+        },
+        "pupil_closed": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        }
+      }
+    },
+    "animation.magnemite.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "pupil": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pupil_closed": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.1
+            ]
+          }
+        }
+      }
+    }
+  }
+}

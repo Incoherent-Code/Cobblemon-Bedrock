@@ -1,0 +1,207 @@
+{
+  "minLevel": 10,
+  "maxLevel": 35,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 10,
+      "maxLevel": 35
+    },
+    "1": {
+      "minLevel": 10,
+      "maxLevel": 35
+    }
+  },
+  "name": "Clamperl",
+  "nationalPokedexNumber": 366,
+  "baseStats": {
+    "hp": 35,
+    "attack": 64,
+    "defence": 85,
+    "special_attack": 74,
+    "special_defence": 55,
+    "speed": 32
+  },
+  "maleRatio": 0.5,
+  "catchRate": 255,
+  "baseScale": 0.75,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "erratic",
+  "hitbox": {
+    "width": 0.75,
+    "height": 0.67,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "abilities": [
+    "shellarmor",
+    "h:rattled"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:clamp",
+    "1:irondefense",
+    "1:watergun",
+    "1:whirlpool",
+    "51:shellsmash",
+    "egg:aquaring",
+    "egg:barrier",
+    "egg:bodyslam",
+    "egg:brine",
+    "egg:confuseray",
+    "egg:endure",
+    "egg:muddywater",
+    "egg:mudsport",
+    "egg:refresh",
+    "egg:supersonic",
+    "egg:waterpulse",
+    "tm:attract",
+    "tm:blizzard",
+    "tm:brine",
+    "tm:captivate",
+    "tm:confide",
+    "tm:dive",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:frustration",
+    "tm:hail",
+    "tm:hiddenpower",
+    "tm:icebeam",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:scald",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swagger",
+    "tm:toxic",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:aquaring",
+    "tutor:bodyslam",
+    "tutor:captivate",
+    "tutor:dive",
+    "tutor:doubleedge",
+    "tutor:endure",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:mimic",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:substitute",
+    "tutor:swagger",
+    "tutor:waterpulse",
+    "tutor:whirlpool"
+  ],
+  "evolutions": [
+    {
+      "id": "clamperl_huntail",
+      "variant": "trade",
+      "result": "huntail",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "held_item",
+          "itemCondition": "cobblemon:deep_sea_tooth"
+        }
+      ]
+    },
+    {
+      "id": "clamperl_gorebyss",
+      "variant": "trade",
+      "result": "gorebyss",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "held_item",
+          "itemCondition": "cobblemon:deep_sea_scale"
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": true,
+        "walkSpeed": 0.175
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.1,
+        "canSwimInWater": false,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.clamperl.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:prismarine_shard",
+        "quantityRange": "0-2"
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "water_1"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 4.0,
+  "weight": 525.0
+}

@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:shedinja",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0292_shedinja/shedinja",
+        "shiny": "textures/pokemon/0292_shedinja/shedinja_shiny"
+      },
+      "geometry": {
+        "base": "geometry.shedinja.geo",
+        "shiny": "geometry.shedinja.geo"
+      },
+      "animations": {
+        "shedinja.sleep": "animation.shedinja.sleep",
+        "shedinja.ground_idle": "animation.shedinja.ground_idle",
+        "shedinja.air_idle": "animation.shedinja.air_idle",
+        "shedinja.air_fly": "animation.shedinja.air_fly",
+        "shedinja.ground_walk": "animation.shedinja.ground_walk",
+        "shedinja.blink_WIP": "animation.shedinja.blink_WIP",
+        "controller.animation.shedinja.blink": "controller.animation.shedinja.blink",
+        "controller.animation.cobblemon.shedinja": "controller.animation.cobblemon.shedinja"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.shedinja"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.shedinja.blink",
+          {
+            "controller.animation.cobblemon.shedinja": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_shedinja = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

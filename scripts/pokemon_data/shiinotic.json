@@ -1,0 +1,194 @@
+{
+  "minLevel": 24,
+  "maxLevel": 41,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 24,
+      "maxLevel": 41
+    },
+    "1": {
+      "minLevel": 24,
+      "maxLevel": 41
+    },
+    "2": {
+      "minLevel": 24,
+      "maxLevel": 41
+    }
+  },
+  "name": "Shiinotic",
+  "nationalPokedexNumber": 756,
+  "baseStats": {
+    "hp": 60,
+    "attack": 45,
+    "defence": 80,
+    "special_attack": 90,
+    "special_defence": 100,
+    "speed": 30
+  },
+  "maleRatio": 0.5,
+  "catchRate": 75,
+  "baseScale": 0.75,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.75,
+    "height": 0.75,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "secondaryType": "fairy",
+  "abilities": [
+    "illuminate",
+    "effectspore",
+    "h:raindish"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:absorb",
+    "1:astonish",
+    "1:confuseray",
+    "1:flash",
+    "1:ingrain",
+    "12:megadrain",
+    "16:sleeppowder",
+    "20:moonlight",
+    "27:strengthsap",
+    "32:gigadrain",
+    "38:dazzlinggleam",
+    "44:spore",
+    "50:moonblast",
+    "53:spotlight",
+    "56:dreameater",
+    "tm:amnesia",
+    "tm:attract",
+    "tm:chargebeam",
+    "tm:confide",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:drainingkiss",
+    "tm:drainpunch",
+    "tm:dreameater",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:lightscreen",
+    "tm:magicroom",
+    "tm:naturepower",
+    "tm:pollenpuff",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:weatherball",
+    "tm:wonderroom",
+    "tutor:afteryou",
+    "tutor:gigadrain",
+    "tutor:magiccoat",
+    "tutor:magicroom",
+    "tutor:recycle",
+    "tutor:seedbomb",
+    "tutor:signalbeam",
+    "tutor:snore",
+    "tutor:synthesis",
+    "tutor:wonderroom",
+    "tutor:worryseed"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.shiinotic.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:brown_mushroom",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:kebia_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 10.0,
+  "weight": 115.0
+}

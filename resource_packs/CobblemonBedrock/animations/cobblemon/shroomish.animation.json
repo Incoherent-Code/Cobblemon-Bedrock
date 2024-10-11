@@ -1,0 +1,368 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.shroomishmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.shroomish.ground_idle": {
+      "loop": true,
+      "bones": {
+        "foot_left": {
+          "rotation": [
+            0.0,
+            -12.5,
+            0.0
+          ]
+        },
+        "foot_right": {
+          "rotation": [
+            0.0,
+            12.5,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*4)*1",
+            "0-math.cos(q.anim_time*90*2-60)*3",
+            "0-math.cos(q.anim_time*90*2-120)*3"
+          ],
+          "position": [
+            0.0,
+            "-0.1+math.sin(q.anim_time*90*4)*0.2",
+            0.0
+          ]
+        },
+        "skirt_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "0+math.cos(q.anim_time*90*4-30)*4"
+          ]
+        },
+        "skirt_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "0-math.cos(q.anim_time*90*4-30)*4"
+          ]
+        },
+        "skirt_front": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*4-30)*4",
+            0.0,
+            0.0
+          ]
+        },
+        "skirt_back": {
+          "rotation": [
+            "0-math.cos(q.anim_time*90*4-30)*4",
+            0.0,
+            0.0
+          ]
+        },
+        "hair": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*4-30)*2",
+            0.0,
+            "0-math.cos(q.anim_time*90*2+120)*5"
+          ]
+        }
+      }
+    },
+    "animation.shroomish.ground_walk": {
+      "loop": true,
+      "animation_length": 1.0,
+      "bones": {
+        "torso": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*4*2)*2",
+            "0+math.sin(q.anim_time*90*4)*4",
+            "0-math.cos(q.anim_time*90*4+30)*4"
+          ],
+          "position": [
+            0.0,
+            "0+math.sin(q.anim_time*90*4*2)*0.2",
+            0.0
+          ]
+        },
+        "skirt_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "0+math.cos(q.anim_time*90*4*2-30)*6"
+          ]
+        },
+        "skirt_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "0-math.cos(q.anim_time*90*4*2-30)*6"
+          ]
+        },
+        "skirt_front": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*4*2-30)*6",
+            0.0,
+            0.0
+          ]
+        },
+        "skirt_back": {
+          "rotation": [
+            "0-math.cos(q.anim_time*90*4*2-30)*6",
+            0.0,
+            0.0
+          ]
+        },
+        "hair": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*4*2-30)*2",
+            0.0,
+            "0-math.cos(q.anim_time*90*4-30)*4"
+          ]
+        },
+        "foot_left": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*4+180)*3",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "0+math.clamp(-math.cos(q.anim_time*90*4+180)*0.6,0,1)",
+            "0+math.sin(q.anim_time*90*4+180)*1"
+          ]
+        },
+        "foot_right": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*4)*3",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "0+math.clamp(-math.cos(q.anim_time*90*4)*0.6,0,1)",
+            "0+math.sin(q.anim_time*90*4)*1"
+          ]
+        },
+        "body": {
+          "position": [
+            0.0,
+            "0+math.sin(q.anim_time*90*8*2+90)*0.1",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.shroomish.battle_idle": {
+      "loop": true,
+      "bones": {
+        "foot_left": {
+          "rotation": [
+            0.0,
+            -12.5,
+            0.0
+          ]
+        },
+        "foot_right": {
+          "rotation": [
+            0.0,
+            22.5,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            "0.0051+math.cos(q.anim_time*90*4)*1",
+            "7.4988-math.cos(q.anim_time*90*2-60)*3",
+            "0.1312-math.cos(q.anim_time*90*2-120)*3"
+          ],
+          "position": [
+            0.0,
+            "-0.1+math.sin(q.anim_time*90*4)*0.2",
+            0.0
+          ]
+        },
+        "skirt_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "0+math.cos(q.anim_time*90*4-30)*4"
+          ]
+        },
+        "skirt_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "0-math.cos(q.anim_time*90*4-30)*4"
+          ]
+        },
+        "skirt_front": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*4-30)*4",
+            0.0,
+            0.0
+          ]
+        },
+        "skirt_back": {
+          "rotation": [
+            "0-math.cos(q.anim_time*90*4-30)*4",
+            0.0,
+            0.0
+          ]
+        },
+        "hair": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*4-30)*2",
+            0.0,
+            "0-math.cos(q.anim_time*90*2+120)*5"
+          ]
+        },
+        "body": {
+          "rotation": [
+            0.0,
+            -7.5,
+            0.0
+          ]
+        },
+        "Eyebrow": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.shroomish.sleep": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "torso": {
+          "rotation": [
+            "5+math.cos(q.anim_time*90*2)*1",
+            0.0,
+            "0+math.sin(q.anim_time*90*2)*0.5"
+          ],
+          "position": [
+            0.0,
+            "-0.5+math.sin(q.anim_time*90*2)*0.1",
+            0.0
+          ]
+        },
+        "skirt_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "0+math.cos(q.anim_time*90*2-30)*5"
+          ]
+        },
+        "skirt_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "0-math.cos(q.anim_time*90*2-30)*5"
+          ]
+        },
+        "skirt_front": {
+          "rotation": [
+            "0+math.cos(q.anim_time*90*2-30)*5",
+            0.0,
+            0.0
+          ]
+        },
+        "skirt_back": {
+          "rotation": [
+            "0-math.cos(q.anim_time*90*2-30)*5",
+            0.0,
+            0.0
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "Eyebrow": {
+          "position": [
+            0.0,
+            "0+math.sin(q.anim_time*90*2-30)*0.05",
+            0.0
+          ]
+        },
+        "hair": {
+          "rotation": [
+            "12.5+math.cos(q.anim_time*90*2-30)*3",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.shroomish.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

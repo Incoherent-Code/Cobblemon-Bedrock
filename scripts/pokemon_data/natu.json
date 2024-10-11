@@ -1,0 +1,301 @@
+{
+  "minLevel": 7,
+  "maxLevel": 32,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "day",
+      "minLevel": 7,
+      "maxLevel": 32
+    },
+    "1": {
+      "timeRange": "day",
+      "minLevel": 7,
+      "maxLevel": 32
+    }
+  },
+  "name": "Natu",
+  "nationalPokedexNumber": 177,
+  "baseStats": {
+    "hp": 40,
+    "attack": 50,
+    "defence": 45,
+    "special_attack": 70,
+    "special_defence": 45,
+    "speed": 70
+  },
+  "maleRatio": 0.5,
+  "catchRate": 190,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.5,
+    "fixed": false
+  },
+  "primaryType": "psychic",
+  "secondaryType": "flying",
+  "abilities": [
+    "synchronize",
+    "earlybird",
+    "h:magicbounce"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:leer",
+    "1:peck",
+    "5:storedpower",
+    "10:teleport",
+    "12:luckychant",
+    "15:confuseray",
+    "20:nightshade",
+    "20:ominouswind",
+    "26:psychoshift",
+    "30:powerswap",
+    "35:guardswap",
+    "35:psychic",
+    "36:miracleeye",
+    "40:wish",
+    "45:futuresight",
+    "50:mefirst",
+    "egg:allyswitch",
+    "egg:drillpeck",
+    "egg:featherdance",
+    "egg:feintattack",
+    "egg:haze",
+    "egg:psychup",
+    "egg:quickattack",
+    "egg:refresh",
+    "egg:roost",
+    "egg:simplebeam",
+    "egg:skillswap",
+    "egg:steelwing",
+    "egg:suckerpunch",
+    "egg:synchronoise",
+    "egg:zenheadbutt",
+    "tm:aerialace",
+    "tm:airslash",
+    "tm:allyswitch",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:calmmind",
+    "tm:captivate",
+    "tm:confide",
+    "tm:cosmicpower",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:dreameater",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:futuresight",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:guardswap",
+    "tm:heatwave",
+    "tm:hiddenpower",
+    "tm:imprison",
+    "tm:lightscreen",
+    "tm:magicroom",
+    "tm:naturalgift",
+    "tm:pluck",
+    "tm:powerswap",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychup",
+    "tm:psyshock",
+    "tm:raindance",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:roost",
+    "tm:round",
+    "tm:secretpower",
+    "tm:shadowball",
+    "tm:silverwind",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:steelwing",
+    "tm:storedpower",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swift",
+    "tm:telekinesis",
+    "tm:thief",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:uturn",
+    "tm:zenheadbutt",
+    "tutor:aerialace",
+    "tutor:aircutter",
+    "tutor:allyswitch",
+    "tutor:attract",
+    "tutor:batonpass",
+    "tutor:confuseray",
+    "tutor:curse",
+    "tutor:detect",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:dreameater",
+    "tutor:drillpeck",
+    "tutor:dualwingbeat",
+    "tutor:endure",
+    "tutor:expandingforce",
+    "tutor:featherdance",
+    "tutor:feintattack",
+    "tutor:flash",
+    "tutor:frustration",
+    "tutor:futuresight",
+    "tutor:gigadrain",
+    "tutor:haze",
+    "tutor:heatwave",
+    "tutor:hiddenpower",
+    "tutor:leer",
+    "tutor:magiccoat",
+    "tutor:magicroom",
+    "tutor:mimic",
+    "tutor:nightmare",
+    "tutor:nightshade",
+    "tutor:ominouswind",
+    "tutor:painsplit",
+    "tutor:peck",
+    "tutor:protect",
+    "tutor:psychic",
+    "tutor:psychup",
+    "tutor:quickattack",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:roost",
+    "tutor:signalbeam",
+    "tutor:skillswap",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:solarbeam",
+    "tutor:steelwing",
+    "tutor:substitute",
+    "tutor:suckerpunch",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:tailwind",
+    "tutor:telekinesis",
+    "tutor:teleport",
+    "tutor:thief",
+    "tutor:thunderwave",
+    "tutor:toxic",
+    "tutor:trick",
+    "tutor:twister",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "natu_xatu",
+      "variant": "level_up",
+      "result": "xatu",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "airslash"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 25
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.natu.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:wise_glasses",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:persim_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "flying"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 2.0,
+  "weight": 20.0
+}

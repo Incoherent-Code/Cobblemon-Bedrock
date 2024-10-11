@@ -1,0 +1,230 @@
+{
+  "minLevel": 16,
+  "maxLevel": 41,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 16,
+      "maxLevel": 41
+    },
+    "1": {
+      "minLevel": 16,
+      "maxLevel": 41
+    }
+  },
+  "name": "Bayleef",
+  "nationalPokedexNumber": 153,
+  "baseStats": {
+    "hp": 60,
+    "attack": 62,
+    "defence": 80,
+    "special_attack": 63,
+    "special_defence": 80,
+    "speed": 60
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.7,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "abilities": [
+    "overgrow",
+    "h:leafguard"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:growl",
+    "1:poisonpowder",
+    "1:razorleaf",
+    "1:tackle",
+    "12:synthesis",
+    "18:reflect",
+    "22:magicalleaf",
+    "26:naturalgift",
+    "32:sweetscent",
+    "36:lightscreen",
+    "40:bodyslam",
+    "46:safeguard",
+    "50:aromatherapy",
+    "54:solarbeam",
+    "tm:attract",
+    "tm:bulletseed",
+    "tm:captivate",
+    "tm:confide",
+    "tm:cut",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:irontail",
+    "tm:lightscreen",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:toxic",
+    "tm:workup",
+    "tutor:ancientpower",
+    "tutor:attract",
+    "tutor:bodyslam",
+    "tutor:counter",
+    "tutor:curse",
+    "tutor:cut",
+    "tutor:detect",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:endure",
+    "tutor:flash",
+    "tutor:frustration",
+    "tutor:furycutter",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:growl",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:irontail",
+    "tutor:laserfocus",
+    "tutor:lightscreen",
+    "tutor:magiccoat",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:poisonpowder",
+    "tutor:protect",
+    "tutor:razorleaf",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:rocksmash",
+    "tutor:safeguard",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:solarbeam",
+    "tutor:strength",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:sweetscent",
+    "tutor:swordsdance",
+    "tutor:synthesis",
+    "tutor:tackle",
+    "tutor:toxic",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "bayleef_meganium",
+      "variant": "level_up",
+      "result": "meganium",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.2
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.bayleef.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "monster",
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 12.0,
+  "weight": 158.0
+}

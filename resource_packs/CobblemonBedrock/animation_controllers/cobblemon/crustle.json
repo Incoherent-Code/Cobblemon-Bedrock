@@ -1,0 +1,38 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.crustle": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "crustlemodel.singlebonelook",
+            "crustle.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_crustle = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "crustlemodel.singlebonelook",
+            "crustle.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_crustle = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

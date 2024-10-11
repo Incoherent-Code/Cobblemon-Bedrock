@@ -1,0 +1,13 @@
+cobblemon.stat.defence.name=Defence
+cobblemon.stat.special_defence.name=Special Defence
+cobblemon.move.defensecurl=Defence Curl
+cobblemon.move.irondefense=Iron Defence
+item.cobblemon.blue_mint_leaf.tooltip=Capable of influencing a Pokémon's defence stat
+item.cobblemon.pink_mint_leaf.tooltip=Capable of influencing a Pokémon's special defence stat
+item.cobblemon.x_defence=X Defence
+item.cobblemon.x_special_defence=X Special Defence
+cobblemon.ui.interact=Interact
+cobblemon.ui.interact.challenge=Challenge
+cobblemon.ui.interact.exp_candy=Level Up
+cobblemon.battle.in_battle=%1s is already in a battle!
+cobblemon.ui.info.unsaved_changes=You must click the submit button to save changes.

@@ -1,0 +1,376 @@
+{
+  "minLevel": 18,
+  "maxLevel": 41,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 18,
+      "maxLevel": 41
+    }
+  },
+  "name": "Grotle",
+  "nationalPokedexNumber": 388,
+  "baseStats": {
+    "hp": 75,
+    "attack": 89,
+    "defence": 85,
+    "special_attack": 55,
+    "special_defence": 65,
+    "speed": 36
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "abilities": [
+    "overgrow",
+    "h:shellarmor"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:absorb",
+    "1:tackle",
+    "1:withdraw",
+    "9:absorb",
+    "13:razorleaf",
+    "17:curse",
+    "22:bite",
+    "27:megadrain",
+    "32:leechseed",
+    "37:synthesis",
+    "42:crunch",
+    "47:gigadrain",
+    "52:leafstorm",
+    "tm:attract",
+    "tm:bulletseed",
+    "tm:captivate",
+    "tm:confide",
+    "tm:cut",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:irontail",
+    "tm:lightscreen",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:rockclimb",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:stealthrock",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:toxic",
+    "tm:workup",
+    "tutor:earthpower",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:headbutt",
+    "tutor:irontail",
+    "tutor:mudslap",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stealthrock",
+    "tutor:superpower",
+    "tutor:synthesis",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "grotle_torterra_swamp",
+      "variant": "level_up",
+      "result": "torterra tree=swamp",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "minecraft:oak_sapling"
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "grotle_torterra_oak",
+      "variant": "level_up",
+      "result": "torterra tree=oak",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "minecraft:oak_sapling"
+        }
+      ]
+    },
+    {
+      "id": "grotle_torterra_birch",
+      "variant": "level_up",
+      "result": "torterra tree=birch",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "minecraft:birch_sapling"
+        }
+      ]
+    },
+    {
+      "id": "grotle_torterra_dark_oak",
+      "variant": "level_up",
+      "result": "torterra tree=darkoak",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "minecraft:dark_oak_sapling"
+        }
+      ]
+    },
+    {
+      "id": "grotle_torterra_acacia",
+      "variant": "level_up",
+      "result": "torterra tree=acacia",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "minecraft:acacia_sapling"
+        }
+      ]
+    },
+    {
+      "id": "grotle_torterra_azalea",
+      "variant": "level_up",
+      "result": "torterra tree=azalea",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "#cobblemon:azalea_tree"
+        }
+      ]
+    },
+    {
+      "id": "grotle_torterra_jungle",
+      "variant": "level_up",
+      "result": "torterra tree=jungle",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "minecraft:jungle_sapling"
+        }
+      ]
+    },
+    {
+      "id": "grotle_torterra_spruce",
+      "variant": "level_up",
+      "result": "torterra tree=spruce",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "minecraft:spruce_sapling"
+        }
+      ]
+    },
+    {
+      "id": "grotle_torterra_mangrove",
+      "variant": "level_up",
+      "result": "torterra tree=mangrove",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "minecraft:mangrove_propagule"
+        }
+      ]
+    },
+    {
+      "id": "grotle_torterra_cherry",
+      "variant": "level_up",
+      "result": "torterra tree=cherry",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "minecraft:cherry_sapling"
+        }
+      ]
+    },
+    {
+      "id": "grotle_torterra",
+      "variant": "level_up",
+      "result": "torterra",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.2
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.grotle.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "monster",
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 11.0,
+  "weight": 970.0
+}

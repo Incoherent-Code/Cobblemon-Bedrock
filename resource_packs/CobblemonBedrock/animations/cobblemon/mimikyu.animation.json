@@ -1,0 +1,583 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.mimikyu.ground_idle": {
+      "loop": true,
+      "bones": {
+        "hand_right": {
+          "position": [
+            7.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_right2": {
+          "position": [
+            4.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_right3": {
+          "position": [
+            4.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_right4": {
+          "position": [
+            4.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_right5": {
+          "position": [
+            4.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_left": {
+          "position": [
+            -7.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_left2": {
+          "position": [
+            -4.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_left3": {
+          "position": [
+            -4.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_left4": {
+          "position": [
+            -4.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_left5": {
+          "position": [
+            -4.0,
+            0.0,
+            0.0
+          ]
+        },
+        "torso_top": {
+          "rotation": [
+            -4.99527,
+            0.21782,
+            2.4905
+          ]
+        },
+        "head": {
+          "rotation": [
+            -9.85108,
+            1.72794,
+            9.85108
+          ]
+        }
+      }
+    },
+    "animation.mimikyu.shoulder_left": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0.0,
+            0.0,
+            17.5
+          ],
+          "position": [
+            0.0,
+            -6.0,
+            8.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -10.0,
+            0.0,
+            10.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -0.5
+          ]
+        },
+        "ear_left1": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "torso_bottom": {
+          "rotation": [
+            -17.5,
+            0.0,
+            -12.5
+          ]
+        },
+        "right_torso": {
+          "rotation": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        },
+        "front_torso": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_torso": {
+          "rotation": [
+            0.0,
+            0.0,
+            -20.0
+          ]
+        },
+        "tail1": {
+          "rotation": [
+            20.0,
+            45.5,
+            21.5
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            113.5,
+            -81.0,
+            -123.5
+          ],
+          "position": [
+            2.0,
+            -0.5,
+            0.0
+          ]
+        },
+        "hand_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            75.0
+          ]
+        },
+        "hand_right3": {
+          "rotation": [
+            0.0,
+            0.0,
+            40.0
+          ]
+        },
+        "hand_right4": {
+          "rotation": [
+            0.0,
+            0.0,
+            -75.0
+          ]
+        },
+        "hand_right5": {
+          "rotation": [
+            0.0,
+            0.0,
+            -46.5
+          ]
+        },
+        "finger_right1": {
+          "rotation": [
+            0.0,
+            0.0,
+            -10.0
+          ]
+        },
+        "finger_right_joint1": {
+          "rotation": [
+            0.0,
+            0.0,
+            -12.5
+          ]
+        },
+        "finger_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -17.5
+          ]
+        },
+        "finger_right_joint2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -20.0
+          ]
+        },
+        "finger_right3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -20.0
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            98.0,
+            70.0,
+            83.0
+          ],
+          "position": [
+            0.0,
+            0.5,
+            0.0
+          ]
+        },
+        "hand_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -87.5
+          ]
+        },
+        "hand_left3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -37.5
+          ]
+        },
+        "hand_left4": {
+          "rotation": [
+            0.0,
+            0.0,
+            67.5
+          ]
+        },
+        "hand_left5": {
+          "rotation": [
+            0.0,
+            0.0,
+            51.0
+          ]
+        },
+        "finger_left1": {
+          "rotation": [
+            0.0,
+            0.0,
+            17.5
+          ]
+        },
+        "finger_left_joint1": {
+          "rotation": [
+            0.0,
+            0.0,
+            25.0
+          ]
+        },
+        "finger_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            22.5
+          ]
+        },
+        "finger_left_joint2": {
+          "rotation": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        },
+        "finger_left3": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "finger_left_joint3": {
+          "rotation": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "animation.mimikyu.shoulderleft.transform": {
+      "bones": {
+        "mimikyu": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.mimikyu.shoulder_right": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0.0,
+            0.0,
+            -17.5
+          ],
+          "position": [
+            0.0,
+            -6.0,
+            8.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -10.0,
+            0.0,
+            -10.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -0.5
+          ]
+        },
+        "ear_right1": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "torso_bottom": {
+          "rotation": [
+            -17.5,
+            0.0,
+            12.5
+          ]
+        },
+        "right_torso": {
+          "rotation": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        },
+        "front_torso": {
+          "rotation": [
+            -40.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_torso": {
+          "rotation": [
+            0.0,
+            0.0,
+            -20.0
+          ]
+        },
+        "tail1": {
+          "rotation": [
+            20.0,
+            -45.5,
+            -21.5
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            98.0,
+            -70.0,
+            -83.0
+          ],
+          "position": [
+            0.0,
+            0.5,
+            0.0
+          ]
+        },
+        "hand_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            87.5
+          ]
+        },
+        "hand_right3": {
+          "rotation": [
+            0.0,
+            0.0,
+            35.0
+          ]
+        },
+        "hand_right4": {
+          "rotation": [
+            0.0,
+            0.0,
+            -67.5
+          ]
+        },
+        "hand_right5": {
+          "rotation": [
+            0.0,
+            0.0,
+            -51.0
+          ]
+        },
+        "finger_right1": {
+          "rotation": [
+            0.0,
+            0.0,
+            -17.5
+          ]
+        },
+        "finger_right_joint1": {
+          "rotation": [
+            0.0,
+            0.0,
+            -25.0
+          ]
+        },
+        "finger_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -22.5
+          ]
+        },
+        "finger_right_joint2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -20.0
+          ]
+        },
+        "finger_right3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "finger_right_joint3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -20.0
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            113.5,
+            81.0,
+            123.5
+          ],
+          "position": [
+            -2.0,
+            -0.5,
+            0.0
+          ]
+        },
+        "hand_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -75.0
+          ]
+        },
+        "hand_left3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -40.0
+          ]
+        },
+        "hand_left4": {
+          "rotation": [
+            0.0,
+            0.0,
+            75.0
+          ]
+        },
+        "hand_left5": {
+          "rotation": [
+            0.0,
+            0.0,
+            46.5
+          ]
+        },
+        "finger_left1": {
+          "rotation": [
+            0.0,
+            0.0,
+            10.0
+          ]
+        },
+        "finger_left_joint1": {
+          "rotation": [
+            0.0,
+            0.0,
+            12.5
+          ]
+        },
+        "finger_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            17.5
+          ]
+        },
+        "finger_left_joint2": {
+          "rotation": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        },
+        "finger_left3": {
+          "rotation": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        },
+        "finger_left_joint3": {
+          "rotation": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "animation.mimikyu.shoulderright.transform": {
+      "bones": {
+        "mimikyu": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

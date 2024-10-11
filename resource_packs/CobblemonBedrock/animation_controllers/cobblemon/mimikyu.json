@@ -1,0 +1,66 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.mimikyu": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "mimikyu.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_mimikyu = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "mimikyu.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_mimikyu = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderLeft": {
+          "animations": [
+            "mimikyu.shoulder_left",
+            "mimikyu.shoulderleft.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_mimikyu = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderRight": {
+          "animations": [
+            "mimikyu.shoulder_right",
+            "mimikyu.shoulderright.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_mimikyu = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

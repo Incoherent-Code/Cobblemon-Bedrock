@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:barboach",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0339_barboach/barboach",
+        "shiny": "textures/pokemon/0339_barboach/barboach_shiny"
+      },
+      "geometry": {
+        "base": "geometry.barboach.geo",
+        "shiny": "geometry.barboach.geo"
+      },
+      "animations": {
+        "barboach.water_sleep": "animation.barboach.water_sleep",
+        "barboach.ground_idle": "animation.barboach.ground_idle",
+        "barboach.water_idle": "animation.barboach.water_idle",
+        "barboach.water_swim": "animation.barboach.water_swim",
+        "barboach.battle_idle": "animation.barboach.battle_idle",
+        "barboach.blink": "animation.barboach.blink",
+        "controller.animation.barboach.blink": "controller.animation.barboach.blink",
+        "controller.animation.cobblemon.barboach": "controller.animation.cobblemon.barboach"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.barboach"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.barboach.blink",
+          {
+            "controller.animation.cobblemon.barboach": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_barboach = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

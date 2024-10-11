@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:staryu",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0120_staryu/staryu",
+        "shiny": "textures/pokemon/0120_staryu/staryu_shiny",
+        "base_glow": "textures/pokemon/0120_staryu/staryu_gem_emissive",
+        "shiny_glow": "textures/pokemon/0120_staryu/staryu_gem_emissive"
+      },
+      "geometry": {
+        "base": "geometry.staryu.geo",
+        "shiny": "geometry.staryu.geo"
+      },
+      "animations": {
+        "staryu.ground_idle": "animation.staryu.ground_idle",
+        "staryu.ground_walk": "animation.staryu.ground_walk",
+        "staryu.water_idle": "animation.staryu.water_idle",
+        "staryu.water_swim": "animation.staryu.water_swim",
+        "staryu.sleep": "animation.staryu.sleep",
+        "controller.animation.cobblemon.staryu": "controller.animation.cobblemon.staryu"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.staryu_glow",
+        "controller.render.cobblemon.staryu"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.staryu": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_staryu = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

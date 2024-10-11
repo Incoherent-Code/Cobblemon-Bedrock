@@ -1,0 +1,190 @@
+{
+  "minLevel": 24,
+  "maxLevel": 36,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 24,
+      "maxLevel": 36
+    },
+    "1": {
+      "minLevel": 24,
+      "maxLevel": 36
+    },
+    "2": {
+      "minLevel": 24,
+      "maxLevel": 36
+    }
+  },
+  "name": "Naclstack",
+  "nationalPokedexNumber": 933,
+  "baseStats": {
+    "hp": 60,
+    "attack": 60,
+    "defence": 100,
+    "special_attack": 35,
+    "special_defence": 65,
+    "speed": 35
+  },
+  "maleRatio": 0.5,
+  "catchRate": 120,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 1.0,
+    "height": 0.8,
+    "fixed": false
+  },
+  "primaryType": "rock",
+  "abilities": [
+    "purifyingsalt",
+    "sturdy",
+    "h:clearbody"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:harden",
+    "1:tackle",
+    "1:saltcure",
+    "5:rockthrow",
+    "7:mudshot",
+    "10:smackdown",
+    "13:rockpolish",
+    "16:headbutt",
+    "20:irondefense",
+    "30:recover",
+    "34:rockslide",
+    "38:stealthrock",
+    "41:heavyslam",
+    "45:earthquake",
+    "51:stoneedge",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:dig",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:gigaimpact",
+    "tm:heavyslam",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:mudshot",
+    "tm:powergem",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:sandstorm",
+    "tm:sleeptalk",
+    "tm:stealthrock",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "naclstack_garganacl",
+      "variant": "level_up",
+      "result": "garganacl",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "hammerarm"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 38
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.15
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.naclstack.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:quartz",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:passho_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 5.0,
+  "weight": 1050.0
+}

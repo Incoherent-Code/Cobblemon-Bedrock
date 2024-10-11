@@ -1,0 +1,27 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:red_mint_seeds"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "red_mint_seeds"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.red_mint_seeds"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:cobblemon_seeds",
+          "cobblemon:plants",
+          "cobblemon:seeds"
+        ]
+      }
+    }
+  }
+}

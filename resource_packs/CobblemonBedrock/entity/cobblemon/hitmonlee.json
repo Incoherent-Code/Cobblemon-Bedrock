@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:hitmonlee",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0106_hitmonlee/hitmonlee",
+        "shiny": "textures/pokemon/0106_hitmonlee/hitmonlee_shiny"
+      },
+      "geometry": {
+        "base": "geometry.hitmonlee.geo",
+        "shiny": "geometry.hitmonlee.geo"
+      },
+      "animations": {
+        "hitmonlee.sleep": "animation.hitmonlee.sleep",
+        "hitmonlee.ground_idle": "animation.hitmonlee.ground_idle",
+        "hitmonlee.ground_walk": "animation.hitmonlee.ground_walk",
+        "hitmonlee.battle_idle": "animation.hitmonlee.battle_idle",
+        "hitmonlee.blink": "animation.hitmonlee.blink",
+        "controller.animation.hitmonlee.blink": "controller.animation.hitmonlee.blink",
+        "controller.animation.cobblemon.hitmonlee": "controller.animation.cobblemon.hitmonlee"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.hitmonlee"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.hitmonlee.blink",
+          {
+            "controller.animation.cobblemon.hitmonlee": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_hitmonlee = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

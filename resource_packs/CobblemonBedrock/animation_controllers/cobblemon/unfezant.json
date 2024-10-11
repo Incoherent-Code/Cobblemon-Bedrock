@@ -1,0 +1,111 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.unfezant.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_unfezant_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_unfezant_blink = q.life_time + 1; return (q.life_time > v.next_quirk_unfezant_blink) && (v.state_of_unfezant == 0 || v.state_of_unfezant == 1 || v.state_of_unfezant == 2 || v.state_of_unfezant == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "unfezant.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_unfezant_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_unfezant_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.unfezant": {
+      "initial_state": "stand",
+      "states": {
+        "stand": {
+          "animations": [
+            "unfezantmodel.singlebonelook",
+            "unfezant.ground_idle",
+            "unfezant.stand.transform"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_unfezant = 0; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "fly": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "unfezantmodel.singlebonelook",
+            "unfezant.ground_idle",
+            "unfezantmodel.bipedwalkanimation",
+            "unfezant.walk.transform"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_unfezant = 1; return !q.is_moving;"
+            },
+            {
+              "fly": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "unfezantmodel.singlebonelook",
+            "unfezant.air_idle",
+            "unfezant.hover.transform"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_unfezant = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "fly": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "unfezantmodel.singlebonelook",
+            "unfezant.air_idle",
+            "unfezant.fly.transform"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_unfezant = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

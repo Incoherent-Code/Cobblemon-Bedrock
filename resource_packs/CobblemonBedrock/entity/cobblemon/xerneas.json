@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:xerneas",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0716_xerneas/xerneas",
+        "shiny": "textures/pokemon/0716_xerneas/xerneas_shiny"
+      },
+      "geometry": {
+        "base": "geometry.xerneas.geo",
+        "shiny": "geometry.xerneas.geo"
+      },
+      "animations": {
+        "xerneasmodel.singlebonelook": "animation.xerneasmodel.singlebonelook",
+        "xerneas.ground_idle": "animation.xerneas.ground_idle",
+        "xerneas.ground_walk": "animation.xerneas.ground_walk",
+        "controller.animation.cobblemon.xerneas": "controller.animation.cobblemon.xerneas"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.xerneas"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.xerneas": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_xerneas = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

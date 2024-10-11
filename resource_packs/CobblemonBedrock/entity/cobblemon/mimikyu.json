@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:mimikyu",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0778_mimikyu/mimikyu",
+        "shiny": "textures/pokemon/0778_mimikyu/mimikyu_shiny",
+        "female": "textures/pokemon/0778_mimikyu/mimikyu"
+      },
+      "geometry": {
+        "base": "geometry.mimikyu_male.geo",
+        "shiny": "geometry.mimikyu_male.geo",
+        "female": "geometry.mimikyu_female.geo"
+      },
+      "animations": {
+        "mimikyu.ground_idle": "animation.mimikyu.ground_idle",
+        "mimikyu.shoulder_left": "animation.mimikyu.shoulder_left",
+        "mimikyu.shoulderleft.transform": "animation.mimikyu.shoulderleft.transform",
+        "mimikyu.shoulder_right": "animation.mimikyu.shoulder_right",
+        "mimikyu.shoulderright.transform": "animation.mimikyu.shoulderright.transform",
+        "controller.animation.cobblemon.mimikyu": "controller.animation.cobblemon.mimikyu"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.mimikyu"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.mimikyu": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_mimikyu = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

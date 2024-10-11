@@ -1,0 +1,85 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:meowth",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0052_meowth/meowth",
+        "shiny": "textures/pokemon/0052_meowth/meowth_shiny",
+        "galarian": "textures/pokemon/0052_meowth/meowth_galarian",
+        "galarian_shiny": "textures/pokemon/0052_meowth/meowth_galarian_shiny",
+        "alolan": "textures/pokemon/0052_meowth/meowth_alolan",
+        "alolan_shiny": "textures/pokemon/0052_meowth/meowth_alolan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.meowth.geo",
+        "shiny": "geometry.meowth.geo",
+        "galarian": "geometry.meowth_galarian.geo",
+        "galarian_shiny": "geometry.meowth_galarian.geo",
+        "alolan": "geometry.meowth_alolan.geo",
+        "alolan_shiny": "geometry.meowth_alolan.geo"
+      },
+      "animations": {
+        "meowthmodel.singlebonelook": "animation.meowthmodel.singlebonelook",
+        "meowth.ground_idle": "animation.meowth.ground_idle",
+        "meowth.sleep": "animation.meowth.sleep",
+        "meowthmodel.bipedwalkanimation": "animation.meowthmodel.bipedwalkanimation",
+        "meowthmodel.bimanualswinganimation": "animation.meowthmodel.bimanualswinganimation",
+        "meowth.blink": "animation.meowth.blink",
+        "controller.animation.meowth.blink": "controller.animation.meowth.blink",
+        "controller.animation.cobblemon.meowth": "controller.animation.cobblemon.meowth",
+        "meowth_galarian.sleep": "animation.meowth_galarian.sleep",
+        "meowthgalarianmodel.singlebonelook": "animation.meowthgalarianmodel.singlebonelook",
+        "meowth_galarian.ground_idle": "animation.meowth_galarian.ground_idle",
+        "meowth_galarian.ground_walk": "animation.meowth_galarian.ground_walk",
+        "meowth_galarian.battle_idle": "animation.meowth_galarian.battle_idle",
+        "meowth_galarian.blink": "animation.meowth_galarian.blink",
+        "controller.animation.meowth_galarian.blink": "controller.animation.meowth_galarian.blink",
+        "controller.animation.cobblemon.meowth_galarian": "controller.animation.cobblemon.meowth_galarian",
+        "meowthalolanmodel.singlebonelook": "animation.meowthalolanmodel.singlebonelook",
+        "meowth_alolan.ground_idle": "animation.meowth_alolan.ground_idle",
+        "meowth_alolan.sleep": "animation.meowth_alolan.sleep",
+        "meowthalolanmodel.bipedwalkanimation": "animation.meowthalolanmodel.bipedwalkanimation",
+        "meowthalolanmodel.bimanualswinganimation": "animation.meowthalolanmodel.bimanualswinganimation",
+        "meowth_alolan.blink": "animation.meowth_alolan.blink",
+        "controller.animation.meowth_alolan.blink": "controller.animation.meowth_alolan.blink",
+        "controller.animation.cobblemon.meowth_alolan": "controller.animation.cobblemon.meowth_alolan"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.meowth"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.meowth.blink",
+          {
+            "controller.animation.cobblemon.meowth": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.meowth_galarian.blink",
+          {
+            "controller.animation.cobblemon.meowth_galarian": "q.variant == 2 || q.variant == 3"
+          },
+          "controller.animation.meowth_alolan.blink",
+          {
+            "controller.animation.cobblemon.meowth_alolan": "q.variant == 4 || q.variant == 5"
+          }
+        ],
+        "initialize": [
+          "v.state_of_meowth = -1.0;",
+          "v.state_of_meowth_galarian = -1.0;",
+          "v.state_of_meowth_alolan = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

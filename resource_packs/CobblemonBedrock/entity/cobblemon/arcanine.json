@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:arcanine",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0059_arcanine/arcanine",
+        "shiny": "textures/pokemon/0059_arcanine/arcanine_shiny"
+      },
+      "geometry": {
+        "base": "geometry.arcanine.geo",
+        "shiny": "geometry.arcanine.geo"
+      },
+      "animations": {
+        "arcaninemodel.singlebonelook": "animation.arcaninemodel.singlebonelook",
+        "arcaninemodel.quadrupedwalkanimation": "animation.arcaninemodel.quadrupedwalkanimation",
+        "controller.animation.cobblemon.arcanine": "controller.animation.cobblemon.arcanine"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.arcanine"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.arcanine": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_arcanine = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

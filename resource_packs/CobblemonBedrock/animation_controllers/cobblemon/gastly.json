@@ -1,0 +1,161 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.gastly.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_gastly_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_gastly_blink = q.life_time + 1; return (q.life_time > v.next_quirk_gastly_blink) && (v.state_of_gastly == 1 || v.state_of_gastly == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "gastly.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_gastly_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_gastly_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.gastly": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "gastly.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_gastly = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "gastly.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_gastly = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "gastly.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_gastly = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.gastly_shiny.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_gastly_shiny_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_gastly_shiny_blink = q.life_time + 1; return (q.life_time > v.next_quirk_gastly_shiny_blink) && (v.state_of_gastly_shiny == 1 || v.state_of_gastly_shiny == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "gastly_shiny.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_gastly_shiny_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_gastly_shiny_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.gastly_shiny": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "gastly_shiny.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_gastly_shiny = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "gastly_shiny.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_gastly_shiny = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "gastly_shiny.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_gastly_shiny = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

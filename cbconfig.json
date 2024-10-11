@@ -1,0 +1,21 @@
+{
+  "formatVersion": 2,
+  "cobblemonPath": "%userprofile%/Desktop/CobblemonToBedrock/cobblemon-1.4.1-src",
+  "projectPath": "%userprofile%/Documents/VSCode/Cobblemon TS",
+  "minecraftPath": "%appdata%/.minecraft/versions/1.20.1/1.20.1",
+  "BPName": "CobblemonBedrock",
+  "RPName": "CobblemonBedrock",
+  "useMinecraftPreview": false,
+  "usePowershell": false,
+  "minify": false,
+  "temporairlyExtract": false,
+  "cachePosers": true,
+  "multithreaded": false,
+  "gulpArgs": "",
+  "tasks": [
+    "clean",
+    "translatePosers",
+    "build",
+    "deploy"
+  ]
+}

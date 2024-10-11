@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:whimsicott",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0547_whimsicott/whimsicott",
+        "shiny": "textures/pokemon/0547_whimsicott/whimsicott_shiny"
+      },
+      "geometry": {
+        "base": "geometry.whimsicott.geo",
+        "shiny": "geometry.whimsicott.geo"
+      },
+      "animations": {
+        "whimsicottmodel.singlebonelook": "animation.whimsicottmodel.singlebonelook",
+        "whimsicott.ground_idle": "animation.whimsicott.ground_idle",
+        "whimsicottmodel.bipedwalkanimation": "animation.whimsicottmodel.bipedwalkanimation",
+        "whimsicottmodel.bimanualswinganimation": "animation.whimsicottmodel.bimanualswinganimation",
+        "whimsicott.blink": "animation.whimsicott.blink",
+        "controller.animation.whimsicott.blink": "controller.animation.whimsicott.blink",
+        "controller.animation.cobblemon.whimsicott": "controller.animation.cobblemon.whimsicott"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.whimsicott"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.whimsicott.blink",
+          {
+            "controller.animation.cobblemon.whimsicott": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_whimsicott = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

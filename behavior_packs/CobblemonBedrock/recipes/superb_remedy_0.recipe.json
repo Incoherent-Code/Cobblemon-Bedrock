@@ -1,0 +1,40 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "cobblemon:fine_remedy"
+      },
+      {
+        "item": "cobblemon:vivichoke"
+      },
+      {
+        "item": "cobblemon:energy_root"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "cobblemon:fine_remedy"
+      },
+      {
+        "item": "cobblemon:vivichoke"
+      },
+      {
+        "item": "cobblemon:energy_root"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:superb_remedy"
+    },
+    "description": {
+      "identifier": "cobblemon:superb_remedy_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

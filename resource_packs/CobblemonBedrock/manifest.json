@@ -1,0 +1,44 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Skidalypop"
+		]
+	},
+	"header": {
+		"name": "Cobblemon Bedrock Resource Pack",
+		"description": "§6Unnoficial Cobblemon Port to Minecraft Bedrock Edition. (Prerelease Build) Handle with care, love, grandma.",
+		"min_engine_version": [
+			1,
+			20,
+			50
+		],
+		"uuid": "7a3683d1-6c1b-4a57-a593-4daca83dcf10",
+		"version": [
+			0,
+			0,
+			1
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "73a82b26-7f14-4651-b8dd-332d0656cea1",
+			"version": [
+				0,
+				0,
+				1
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "1b7a2e08-8dc6-44ce-9f3d-bb6b448d48b6",
+			"version": [
+				0,
+				0,
+				1
+			]
+		}
+	]
+}

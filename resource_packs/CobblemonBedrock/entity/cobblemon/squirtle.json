@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:squirtle",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0007_squirtle/squirtle",
+        "shiny": "textures/pokemon/0007_squirtle/squirtle_shiny"
+      },
+      "geometry": {
+        "base": "geometry.squirtle.geo",
+        "shiny": "geometry.squirtle.geo"
+      },
+      "animations": {
+        "squirtle.sleep": "animation.squirtle.sleep",
+        "squirtlemodel.singlebonelook": "animation.squirtlemodel.singlebonelook",
+        "squirtle.ground_idle": "animation.squirtle.ground_idle",
+        "squirtle.ground_walk": "animation.squirtle.ground_walk",
+        "squirtle.water_idle": "animation.squirtle.water_idle",
+        "squirtle.water_swim": "animation.squirtle.water_swim",
+        "squirtle.blink": "animation.squirtle.blink",
+        "controller.animation.squirtle.blink": "controller.animation.squirtle.blink",
+        "controller.animation.cobblemon.squirtle": "controller.animation.cobblemon.squirtle"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.squirtle"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.squirtle.blink",
+          {
+            "controller.animation.cobblemon.squirtle": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_squirtle = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

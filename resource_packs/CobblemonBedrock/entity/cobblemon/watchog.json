@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:watchog",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0505_watchog/watchog",
+        "shiny": "textures/pokemon/0505_watchog/watchog_shiny",
+        "base_emissive": "textures/pokemon/0505_watchog/watchog_emissive",
+        "shiny_emissive": "textures/pokemon/0505_watchog/watchog_emissive"
+      },
+      "geometry": {
+        "base": "geometry.watchog.geo",
+        "shiny": "geometry.watchog.geo"
+      },
+      "animations": {
+        "watchogmodel.singlebonelook": "animation.watchogmodel.singlebonelook",
+        "watchog.ground_idle": "animation.watchog.ground_idle",
+        "watchog.ground_walk": "animation.watchog.ground_walk",
+        "watchog.sleep": "animation.watchog.sleep",
+        "watchog.blink": "animation.watchog.blink",
+        "controller.animation.watchog.blink": "controller.animation.watchog.blink",
+        "controller.animation.cobblemon.watchog": "controller.animation.cobblemon.watchog"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.watchog_emissive",
+        "controller.render.cobblemon.watchog"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.watchog.blink",
+          {
+            "controller.animation.cobblemon.watchog": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_watchog = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

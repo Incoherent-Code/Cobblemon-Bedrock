@@ -1,0 +1,56 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:charmeleon",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0005_charmeleon/charmeleon",
+        "shiny": "textures/pokemon/0005_charmeleon/charmeleon_shiny",
+        "base_glow": "textures/pokemon/0005_charmeleon/charmeleon_emissive",
+        "base_flame_uv": "textures/pokemon/0005_charmeleon/base_flame_uv",
+        "shiny_glow": "textures/pokemon/0005_charmeleon/charmeleon_emissive",
+        "shiny_flame_uv": "textures/pokemon/0005_charmeleon/shiny_flame_uv"
+      },
+      "geometry": {
+        "base": "geometry.charmeleon.geo",
+        "shiny": "geometry.charmeleon.geo"
+      },
+      "animations": {
+        "charmeleon.sleep": "animation.charmeleon.sleep",
+        "charmeleonmodel.singlebonelook": "animation.charmeleonmodel.singlebonelook",
+        "charmeleon.ground_idle": "animation.charmeleon.ground_idle",
+        "charmeleon.ground_walk": "animation.charmeleon.ground_walk",
+        "charmeleon.blink": "animation.charmeleon.blink",
+        "controller.animation.charmeleon.blink": "controller.animation.charmeleon.blink",
+        "controller.animation.cobblemon.charmeleon": "controller.animation.cobblemon.charmeleon"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.charmeleon_glow",
+        "controller.render.cobblemon.charmeleon_flame",
+        "controller.render.cobblemon.charmeleon"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.charmeleon.blink",
+          {
+            "controller.animation.cobblemon.charmeleon": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_charmeleon = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

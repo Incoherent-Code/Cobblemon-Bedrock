@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:serperior",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0497_serperior/serperior",
+        "shiny": "textures/pokemon/0497_serperior/serperior_shiny"
+      },
+      "geometry": {
+        "base": "geometry.serperior.geo",
+        "shiny": "geometry.serperior.geo"
+      },
+      "animations": {
+        "serperior.sleep": "animation.serperior.sleep",
+        "serperiormodel.singlebonelook": "animation.serperiormodel.singlebonelook",
+        "serperior.ground_idle": "animation.serperior.ground_idle",
+        "serperior.ground_walk": "animation.serperior.ground_walk",
+        "serperior.blink": "animation.serperior.blink",
+        "controller.animation.serperior.blink": "controller.animation.serperior.blink",
+        "controller.animation.cobblemon.serperior": "controller.animation.cobblemon.serperior"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.serperior"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.serperior.blink",
+          {
+            "controller.animation.cobblemon.serperior": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_serperior = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

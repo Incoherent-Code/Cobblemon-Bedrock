@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:phantump",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0708_phantump/phantump",
+        "shiny": "textures/pokemon/0708_phantump/phantump_shiny",
+        "base_emissive": "textures/pokemon/0708_phantump/phantump_emissive",
+        "shiny_emissive": "textures/pokemon/0708_phantump/phantump_emissive"
+      },
+      "geometry": {
+        "base": "geometry.phantump.geo",
+        "shiny": "geometry.phantump.geo"
+      },
+      "animations": {
+        "phantump.sleep": "animation.phantump.sleep",
+        "phantump.ground_idle": "animation.phantump.ground_idle",
+        "phantump.air_idle": "animation.phantump.air_idle",
+        "phantump.air_fly": "animation.phantump.air_fly",
+        "phantump.ground_walk": "animation.phantump.ground_walk",
+        "phantump.battle_idle": "animation.phantump.battle_idle",
+        "phantump.blink": "animation.phantump.blink",
+        "controller.animation.phantump.blink": "controller.animation.phantump.blink",
+        "controller.animation.cobblemon.phantump": "controller.animation.cobblemon.phantump"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.phantump_emissive",
+        "controller.render.cobblemon.phantump"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.phantump.blink",
+          {
+            "controller.animation.cobblemon.phantump": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_phantump = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

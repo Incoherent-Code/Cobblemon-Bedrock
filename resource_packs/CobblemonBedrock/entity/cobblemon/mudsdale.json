@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:mudsdale",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0750_mudsdale/mudsdale",
+        "shiny": "textures/pokemon/0750_mudsdale/mudsdale_shiny"
+      },
+      "geometry": {
+        "base": "geometry.mudsdale.geo",
+        "shiny": "geometry.mudsdale.geo"
+      },
+      "animations": {
+        "mudsdale.sleep": "animation.mudsdale.sleep",
+        "mudsdalemodel.singlebonelook": "animation.mudsdalemodel.singlebonelook",
+        "mudsdale.ground_idle": "animation.mudsdale.ground_idle",
+        "mudsdale.ground_walk": "animation.mudsdale.ground_walk",
+        "mudsdale.blink": "animation.mudsdale.blink",
+        "controller.animation.mudsdale.blink": "controller.animation.mudsdale.blink",
+        "controller.animation.cobblemon.mudsdale": "controller.animation.cobblemon.mudsdale"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.mudsdale"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.mudsdale.blink",
+          {
+            "controller.animation.cobblemon.mudsdale": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_mudsdale = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

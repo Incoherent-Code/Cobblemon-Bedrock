@@ -1,0 +1,77 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.politoed": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "politoedmodel.singlebonelook",
+            "politoed.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walking": "v.state_of_politoed = 0; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "politoedmodel.singlebonelook",
+            "politoed.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_politoed = 1; return !q.is_moving;"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "float": {
+          "animations": [
+            "politoedmodel.singlebonelook",
+            "politoed.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_politoed = 2; return !q.is_moving;"
+            },
+            {
+              "walking": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swim": {
+          "animations": [
+            "politoedmodel.singlebonelook",
+            "politoed.water_swim"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_politoed = 3; return !q.is_moving;"
+            },
+            {
+              "walking": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:wimpod",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0767_wimpod/wimpod",
+        "shiny": "textures/pokemon/0767_wimpod/wimpod_shiny"
+      },
+      "geometry": {
+        "base": "geometry.wimpod.geo",
+        "shiny": "geometry.wimpod.geo"
+      },
+      "animations": {
+        "wimpod.sleep": "animation.wimpod.sleep",
+        "wimpodmodel.singlebonelook": "animation.wimpodmodel.singlebonelook",
+        "wimpod.ground_idle": "animation.wimpod.ground_idle",
+        "wimpod.ground_walk": "animation.wimpod.ground_walk",
+        "wimpod.water_idle": "animation.wimpod.water_idle",
+        "wimpod.water_swim": "animation.wimpod.water_swim",
+        "wimpod.blink": "animation.wimpod.blink",
+        "controller.animation.wimpod.blink": "controller.animation.wimpod.blink",
+        "wimpod.twitch_quirk_left": "animation.wimpod.twitch_quirk_left",
+        "controller.animation.wimpod.leftTwitch": "controller.animation.wimpod.leftTwitch",
+        "wimpod.twitch_quirk_right": "animation.wimpod.twitch_quirk_right",
+        "controller.animation.wimpod.rightTwitch": "controller.animation.wimpod.rightTwitch",
+        "controller.animation.cobblemon.wimpod": "controller.animation.cobblemon.wimpod"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.wimpod"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.wimpod.blink",
+          "controller.animation.wimpod.leftTwitch",
+          "controller.animation.wimpod.rightTwitch",
+          {
+            "controller.animation.cobblemon.wimpod": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_wimpod = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

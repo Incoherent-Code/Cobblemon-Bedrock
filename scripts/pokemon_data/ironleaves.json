@@ -1,0 +1,164 @@
+{
+  "minLevel": 5,
+  "maxLevel": 30,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "sleep"
+    ],
+    "2": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {},
+  "name": "Iron Leaves",
+  "nationalPokedexNumber": 1010,
+  "baseStats": {
+    "hp": 90,
+    "attack": 130,
+    "defence": 88,
+    "special_attack": 70,
+    "special_defence": 108,
+    "speed": 104
+  },
+  "maleRatio": -1.0,
+  "catchRate": 5,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 0,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "slow",
+  "hitbox": {
+    "width": 0.9,
+    "height": 2.3,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "secondaryType": "psychic",
+  "abilities": [
+    "quarkdrive"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:electricterrain",
+    "1:helpinghand",
+    "1:leer",
+    "1:quash",
+    "1:quickattack",
+    "1:workup",
+    "7:magicalleaf",
+    "14:retaliate",
+    "21:quickguard",
+    "28:nightslash",
+    "35:swordsdance",
+    "42:sacredsword",
+    "49:leafblade",
+    "56:psyblade",
+    "63:closecombat",
+    "70:imprison",
+    "77:megahorn",
+    "84:allyswitch",
+    "91:solarblade",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:airslash",
+    "tm:brickbreak",
+    "tm:calmmind",
+    "tm:closecombat",
+    "tm:electricterrain",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:focusblast",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:imprison",
+    "tm:irondefense",
+    "tm:leafstorm",
+    "tm:magicalleaf",
+    "tm:protect",
+    "tm:psychicterrain",
+    "tm:rest",
+    "tm:reversal",
+    "tm:scaryface",
+    "tm:sleeptalk",
+    "tm:smartstrike",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:swift",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:trailblaze",
+    "tm:wildcharge",
+    "tm:xscissor",
+    "tutor:leafblade",
+    "tutor:megahorn",
+    "tutor:psyblade",
+    "tutor:swordsdance"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [],
+  "drops": {},
+  "eggCycles": 50,
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 15.0,
+  "weight": 1250.0
+}

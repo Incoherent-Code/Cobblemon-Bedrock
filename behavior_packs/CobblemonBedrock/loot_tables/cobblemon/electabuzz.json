@@ -1,0 +1,32 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:redstone",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:electirizer",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:cheri_berry",
+          "weight": 5
+        },
+        {
+          "type": "empty",
+          "weight": 88
+        }
+      ]
+    }
+  ]
+}

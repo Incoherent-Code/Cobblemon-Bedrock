@@ -1,0 +1,218 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.politoedmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.politoed.ground_idle": {
+      "loop": true,
+      "bones": {
+        "leftleg": {
+          "rotation": [
+            0.0,
+            -5.0,
+            0.0
+          ]
+        },
+        "rightleg": {
+          "rotation": [
+            0.0,
+            5.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            0.0,
+            0.0,
+            45.0
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            0.0,
+            0.0,
+            -45.0
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        }
+      }
+    },
+    "animation.politoed.water_idle": {
+      "loop": true,
+      "bones": {
+        "leftleg": {
+          "rotation": [
+            7.5,
+            -5.0,
+            0.0
+          ]
+        },
+        "rightleg": {
+          "rotation": [
+            7.5,
+            5.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            0.0,
+            -10.0,
+            30.0
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            0.0,
+            10.0,
+            -30.0
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftfoot": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightfoot": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.politoed.water_swim": {
+      "loop": true,
+      "bones": {
+        "leftleg": {
+          "rotation": [
+            15.0,
+            -5.0,
+            0.0
+          ]
+        },
+        "rightleg": {
+          "rotation": [
+            15.0,
+            5.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            0.0,
+            -10.0,
+            45.0
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            0.0,
+            10.0,
+            -45.0
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -55.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftfoot": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightfoot": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

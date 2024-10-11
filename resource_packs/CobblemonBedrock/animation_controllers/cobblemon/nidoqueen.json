@@ -1,0 +1,118 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.nidoqueen.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nidoqueen_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_nidoqueen_blink = q.life_time + 1; return (q.life_time > v.next_quirk_nidoqueen_blink) && (v.state_of_nidoqueen == 0 || v.state_of_nidoqueen == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "nidoqueen.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nidoqueen_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_nidoqueen_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.nidoqueen.spg": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nidoqueen_spg = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_nidoqueen_spg = q.life_time + 1; return (q.life_time > v.next_quirk_nidoqueen_spg) && (v.state_of_nidoqueen == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "nidoqueen.spgs_happy_place"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nidoqueen_spg = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_nidoqueen_spg ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.nidoqueen": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "nidoqueenmodel.singlebonelook",
+            "nidoqueen.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_nidoqueen = 0; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "sleep": {
+          "animations": [
+            "nidoqueen.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_nidoqueen = 1; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "nidoqueenmodel.singlebonelook",
+            "nidoqueen.ground_idle",
+            "nidoqueenmodel.bipedwalkanimation",
+            "nidoqueenmodel.bimanualswinganimation"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_nidoqueen = 2; return !q.is_moving;"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

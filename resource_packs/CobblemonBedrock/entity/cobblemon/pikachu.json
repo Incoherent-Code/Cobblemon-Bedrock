@@ -1,0 +1,65 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:pikachu",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0025_pikachu/pikachu",
+        "shiny": "textures/pokemon/0025_pikachu/pikachu_shiny",
+        "female": "textures/pokemon/0025_pikachu/pikachu",
+        "alolan": "textures/pokemon/0025_pikachu/pikachu_alola",
+        "shiny_alolan": "textures/pokemon/0025_pikachu/pikachu_alola_shiny",
+        "female_alolan": "textures/pokemon/0025_pikachu/pikachu_alola",
+        "female_shiny_alolan": "textures/pokemon/0025_pikachu/pikachu_alola_shiny"
+      },
+      "geometry": {
+        "base": "geometry.pikachu_male.geo",
+        "shiny": "geometry.pikachu_male.geo",
+        "female": "geometry.pikachu_female.geo",
+        "alolan": "geometry.pikachu_alolan_male.geo",
+        "shiny_alolan": "geometry.pikachu_alolan_male.geo",
+        "female_alolan": "geometry.pikachu_alolan_female.geo",
+        "female_shiny_alolan": "geometry.pikachu_alolan_female.geo"
+      },
+      "animations": {
+        "pikachumodel.singlebonelook": "animation.pikachumodel.singlebonelook",
+        "pikachu.ground_idle": "animation.pikachu.ground_idle",
+        "pikachu.ground_sleep": "animation.pikachu.ground_sleep",
+        "pikachu.ground_walk": "animation.pikachu.ground_walk",
+        "pikachu.shoulder_left": "animation.pikachu.shoulder_left",
+        "pikachu.shoulderleft.transform": "animation.pikachu.shoulderleft.transform",
+        "pikachu.shoulder_right": "animation.pikachu.shoulder_right",
+        "pikachu.shoulderright.transform": "animation.pikachu.shoulderright.transform",
+        "pikachu.battle_idle": "animation.pikachu.battle_idle",
+        "pikachu.blink": "animation.pikachu.blink",
+        "controller.animation.pikachu.blink": "controller.animation.pikachu.blink",
+        "controller.animation.cobblemon.pikachu": "controller.animation.cobblemon.pikachu"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.pikachu"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.pikachu.blink",
+          {
+            "controller.animation.cobblemon.pikachu": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5 || q.variant == 6"
+          }
+        ],
+        "initialize": [
+          "v.state_of_pikachu = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

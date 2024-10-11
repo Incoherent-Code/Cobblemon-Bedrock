@@ -1,0 +1,44 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:love_ball",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/pokeballs/love_ball"
+      },
+      "geometry": {
+        "default": "geometry.pokeball"
+      },
+      "animations": {
+        "open": "animation.poke_ball.open",
+        "open_idle": "animation.poke_ball.open_idle",
+        "shut": "animation.poke_ball.shut",
+        "shut_idle": "animation.poke_ball.shut_idle",
+        "bounce": "animation.poke_ball.bounce",
+        "bob1": "animation.poke_ball.bob1",
+        "bob2": "animation.poke_ball.bob2",
+        "bob3": "animation.poke_ball.bob3",
+        "bob4": "animation.poke_ball.bob4",
+        "bob5": "animation.poke_ball.bob5",
+        "bob6": "animation.poke_ball.bob6",
+        "critical": "animation.poke_ball.critical",
+        "throw": "animation.poke_ball.throw",
+        "throw_horizontal": "animation.poke_ball.throw_horizontal",
+        "throw_beast": "animation.poke_ball.throw_beast",
+        "throw_ace": "animation.poke_ball.throw_ace",
+        "break": "animation.poke_ball.break",
+        "capture": "animation.poke_ball.capture"
+      },
+      "render_controllers": [
+        "controller.render.cow"
+      ]
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,201 @@
+{
+  "minLevel": 10,
+  "maxLevel": 38,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ],
+    "2": [
+      "female"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "night",
+      "minLevel": 10,
+      "maxLevel": 38
+    }
+  },
+  "name": "Kricketune",
+  "nationalPokedexNumber": 402,
+  "baseStats": {
+    "hp": 77,
+    "attack": 85,
+    "defence": 51,
+    "special_attack": 55,
+    "special_defence": 51,
+    "speed": 65
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 0.7,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.7,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "abilities": [
+    "swarm",
+    "h:technician"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:bide",
+    "1:furycutter",
+    "1:growl",
+    "1:tackle",
+    "10:furycutter",
+    "14:absorb",
+    "14:leechlife",
+    "18:sing",
+    "22:focusenergy",
+    "26:slash",
+    "26:xscissor",
+    "30:screech",
+    "30:xscissor",
+    "34:bugbuzz",
+    "34:screech",
+    "36:fellstinger",
+    "38:perishsong",
+    "38:taunt",
+    "42:nightslash",
+    "44:stickyweb",
+    "46:bugbuzz",
+    "50:perishsong",
+    "tm:aerialace",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:brickbreak",
+    "tm:bugbuzz",
+    "tm:captivate",
+    "tm:confide",
+    "tm:cut",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:honeclaws",
+    "tm:hyperbeam",
+    "tm:hypervoice",
+    "tm:infestation",
+    "tm:leechlife",
+    "tm:naturalgift",
+    "tm:pounce",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:secretpower",
+    "tm:silverwind",
+    "tm:sleeptalk",
+    "tm:strength",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:toxic",
+    "tm:trailblaze",
+    "tm:xscissor",
+    "tutor:bugbite",
+    "tutor:endeavor",
+    "tutor:furycutter",
+    "tutor:healbell",
+    "tutor:hypervoice",
+    "tutor:knockoff",
+    "tutor:laserfocus",
+    "tutor:mudslap",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stringshot",
+    "tutor:throatchop",
+    "tutor:uproar"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.kricketune.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:coba_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 10.0,
+  "weight": 255.0
+}

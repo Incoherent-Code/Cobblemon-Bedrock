@@ -1,0 +1,379 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.magneton.sleep": {
+      "loop": true,
+      "bones": {
+        "magnet_left": {
+          "rotation": [
+            0.0,
+            20.0,
+            -30.0
+          ],
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "magnet_right": {
+          "rotation": [
+            0.0,
+            -20.0,
+            35.0
+          ],
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "body2": {
+          "rotation": [
+            -5.0,
+            0.0,
+            135.0
+          ],
+          "position": [
+            -4.0,
+            6.0,
+            0.5
+          ]
+        },
+        "nail_left_rotation2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "q.anim_time * 90"
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "magnet_left2": {
+          "rotation": [
+            0.0,
+            35.0,
+            -40.0
+          ],
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "magnet_right2": {
+          "rotation": [
+            0.0,
+            10.0,
+            25.0
+          ]
+        },
+        "body3": {
+          "rotation": [
+            -5.0,
+            0.0,
+            -135.0
+          ],
+          "position": [
+            4.0,
+            6.0,
+            0.5
+          ]
+        },
+        "nail_right_rotation3": {
+          "rotation": [
+            0.0,
+            0.0,
+            "q.anim_time * -90"
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "magnet_left3": {
+          "rotation": [
+            0.0,
+            -10.0,
+            -25.0
+          ]
+        },
+        "magnet_right3": {
+          "rotation": [
+            0.0,
+            -35.0,
+            40.0
+          ],
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "magnet_left_rotation": {
+          "rotation": [
+            "math.sin(q.anim_time * 90) * 20",
+            -35.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "magnet_right_rotation": {
+          "rotation": [
+            "math.sin(q.anim_time * 90) * 20",
+            35.0,
+            0.0
+          ]
+        },
+        "magnet_left2_rotation": {
+          "rotation": [
+            "0 - math.sin(q.anim_time * 90) * 20",
+            0.0,
+            0.0
+          ]
+        },
+        "magnet_right3_rotation": {
+          "rotation": [
+            "0 - math.sin(q.anim_time * 90) * 20",
+            0.0,
+            0.0
+          ]
+        },
+        "nail_head": {
+          "rotation": [
+            0.0,
+            "q.anim_time * -90",
+            0.0
+          ]
+        },
+        "nail_left_rotation": {
+          "rotation": [
+            0.0,
+            0.0,
+            "q.anim_time * -90"
+          ]
+        },
+        "nail_right_rotation": {
+          "rotation": [
+            0.0,
+            0.0,
+            "q.anim_time * 90"
+          ]
+        },
+        "nail_head2": {
+          "rotation": [
+            0.0,
+            "q.anim_time * -90",
+            0.0
+          ]
+        },
+        "magnet_right2_rotation": {
+          "rotation": [
+            "0 + math.sin(q.anim_time * 90) * 20",
+            0.0,
+            0.0
+          ]
+        },
+        "nail_head3": {
+          "rotation": [
+            0.0,
+            "q.anim_time * 90",
+            0.0
+          ]
+        },
+        "magnet_left3_rotation": {
+          "rotation": [
+            "0 + math.sin(q.anim_time * 90) * 20",
+            0.0,
+            0.0
+          ]
+        },
+        "pupil": {
+          "position": [
+            0.0,
+            0.0,
+            0.1
+          ]
+        },
+        "pupil_closed": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "pupil2": {
+          "position": [
+            0.0,
+            0.0,
+            0.1
+          ]
+        },
+        "pupil_closed2": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "pupil3": {
+          "position": [
+            0.0,
+            0.0,
+            0.1
+          ]
+        },
+        "pupil_closed3": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "allbodies": {
+          "rotation": [
+            "-15+math.sin((q.anim_time - 0.2) * 90) * 3",
+            "math.sin((q.anim_time - 0.5) * 90) * 3",
+            "math.sin(((q.anim_time + 0.4) * 90 * 0.5) * 1) * 2"
+          ],
+          "position": [
+            "math.sin((q.anim_time * 180 * 0.5) * 1) * 0",
+            "math.sin((q.anim_time * 90 * 0.5) * 1) * 0",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.magneton.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "pupil": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pupil_closed": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pupil2": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pupil_closed2": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pupil3": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pupil_closed3": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

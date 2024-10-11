@@ -1,0 +1,190 @@
+{
+  "minLevel": 5,
+  "maxLevel": 30,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 5,
+      "maxLevel": 30
+    },
+    "1": {
+      "minLevel": 5,
+      "maxLevel": 30
+    }
+  },
+  "name": "Varoom",
+  "nationalPokedexNumber": 965,
+  "baseStats": {
+    "hp": 45,
+    "attack": 70,
+    "defence": 63,
+    "special_attack": 30,
+    "special_defence": 45,
+    "speed": 47
+  },
+  "maleRatio": 0.5,
+  "catchRate": 190,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.75,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "steel",
+  "secondaryType": "poison",
+  "abilities": [
+    "overcoat",
+    "h:slowstart"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:lick",
+    "1:poisongas",
+    "4:smog",
+    "7:taunt",
+    "10:assurance",
+    "13:sludge",
+    "17:gyroball",
+    "21:headbutt",
+    "25:screech",
+    "28:ironhead",
+    "32:swagger",
+    "36:poisonjab",
+    "41:uproar",
+    "46:spinout",
+    "50:gunkshot",
+    "egg:haze",
+    "egg:partingshot",
+    "egg:selfdestruct",
+    "egg:torment",
+    "egg:toxic",
+    "tm:acidspray",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:gunkshot",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:sandstorm",
+    "tm:scaryface",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:steelbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:toxicspikes",
+    "tm:venoshock",
+    "tm:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "varoom_revavroom",
+      "variant": "level_up",
+      "result": "revavroom",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "shiftgear"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 40
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.varoom.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:iron_nugget",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:black_sludge",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:shuca_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 10.0,
+  "weight": 350.0
+}

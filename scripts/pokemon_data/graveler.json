@@ -1,0 +1,423 @@
+{
+  "minLevel": 25,
+  "maxLevel": 39,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 25,
+      "maxLevel": 39
+    },
+    "1": {
+      "minLevel": 25,
+      "maxLevel": 39
+    }
+  },
+  "name": "Graveler",
+  "nationalPokedexNumber": 75,
+  "baseStats": {
+    "hp": 55,
+    "attack": 95,
+    "defence": 115,
+    "special_attack": 45,
+    "special_defence": 45,
+    "speed": 35
+  },
+  "maleRatio": 0.5,
+  "catchRate": 120,
+  "baseScale": 1.1,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "rock",
+  "secondaryType": "ground",
+  "abilities": [
+    "rockhead",
+    "sturdy",
+    "h:sandveil"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:defensecurl",
+    "1:mudsport",
+    "1:rockpolish",
+    "1:tackle",
+    "10:rollout",
+    "12:magnitude",
+    "16:rockthrow",
+    "18:smackdown",
+    "22:bulldoze",
+    "24:selfdestruct",
+    "30:stealthrock",
+    "34:rockblast",
+    "40:earthquake",
+    "44:explosion",
+    "50:doubleedge",
+    "54:stoneedge",
+    "tm:attract",
+    "tm:brickbreak",
+    "tm:bulldoze",
+    "tm:captivate",
+    "tm:confide",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:flamethrower",
+    "tm:fling",
+    "tm:focuspunch",
+    "tm:frustration",
+    "tm:gyroball",
+    "tm:hiddenpower",
+    "tm:incinerate",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:rockclimb",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:sandstorm",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:stealthrock",
+    "tm:stoneedge",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:toxic",
+    "tutor:ancientpower",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:block",
+    "tutor:bodyslam",
+    "tutor:brickbreak",
+    "tutor:counter",
+    "tutor:curse",
+    "tutor:defensecurl",
+    "tutor:dig",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:dynamicpunch",
+    "tutor:earthpower",
+    "tutor:earthquake",
+    "tutor:endure",
+    "tutor:explosion",
+    "tutor:facade",
+    "tutor:fireblast",
+    "tutor:firepunch",
+    "tutor:fissure",
+    "tutor:flamethrower",
+    "tutor:focuspunch",
+    "tutor:frustration",
+    "tutor:harden",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:irondefense",
+    "tutor:magnitude",
+    "tutor:megapunch",
+    "tutor:metronome",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rockthrow",
+    "tutor:rollout",
+    "tutor:sandattack",
+    "tutor:sandstorm",
+    "tutor:seismictoss",
+    "tutor:selfdestruct",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stealthrock",
+    "tutor:stompingtantrum",
+    "tutor:strength",
+    "tutor:submission",
+    "tutor:substitute",
+    "tutor:suckerpunch",
+    "tutor:sunnyday",
+    "tutor:superpower",
+    "tutor:swagger",
+    "tutor:tackle",
+    "tutor:takedown",
+    "tutor:thunderpunch",
+    "tutor:toxic"
+  ],
+  "evolutions": [
+    {
+      "id": "graveler_golem",
+      "variant": "trade",
+      "result": "golem",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": []
+    }
+  ],
+  "features": [
+    "alolan"
+  ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.graveler.desc"
+  ],
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:flint",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:everstone",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:black_augurite",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:rindo_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 10.0,
+  "weight": 1050.0,
+  "forms": [
+    {
+      "name": "Alola",
+      "baseStats": {
+        "hp": 55,
+        "attack": 95,
+        "defence": 115,
+        "special_attack": 45,
+        "special_defence": 45,
+        "speed": 35
+      },
+      "maleRatio": 0.5,
+      "catchRate": 120,
+      "experienceGroup": "medium_slow",
+      "baseExperienceYield": 137,
+      "baseFriendship": 70,
+      "primaryType": "rock",
+      "secondaryType": "electric",
+      "moves": [
+        "1:charge",
+        "1:defensecurl",
+        "1:rockpolish",
+        "1:tackle",
+        "10:rollout",
+        "12:spark",
+        "16:rockthrow",
+        "18:smackdown",
+        "22:thunderpunch",
+        "24:selfdestruct",
+        "30:stealthrock",
+        "34:rockblast",
+        "40:discharge",
+        "44:explosion",
+        "50:doubleedge",
+        "54:stoneedge",
+        "tm:attract",
+        "tm:brickbreak",
+        "tm:brutalswing",
+        "tm:bulldoze",
+        "tm:chargebeam",
+        "tm:confide",
+        "tm:doubleteam",
+        "tm:earthquake",
+        "tm:explosion",
+        "tm:facade",
+        "tm:fireblast",
+        "tm:flamethrower",
+        "tm:fling",
+        "tm:frustration",
+        "tm:gyroball",
+        "tm:hiddenpower",
+        "tm:naturepower",
+        "tm:protect",
+        "tm:rest",
+        "tm:return",
+        "tm:rockpolish",
+        "tm:rockslide",
+        "tm:rocktomb",
+        "tm:round",
+        "tm:sandstorm",
+        "tm:sleeptalk",
+        "tm:smackdown",
+        "tm:stoneedge",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:swagger",
+        "tm:thunder",
+        "tm:thunderbolt",
+        "tm:toxic",
+        "tm:voltswitch",
+        "tutor:allyswitch",
+        "tutor:bide",
+        "tutor:block",
+        "tutor:brickbreak",
+        "tutor:defensecurl",
+        "tutor:dig",
+        "tutor:doubleedge",
+        "tutor:earthpower",
+        "tutor:earthquake",
+        "tutor:electroweb",
+        "tutor:explosion",
+        "tutor:facade",
+        "tutor:fireblast",
+        "tutor:firepunch",
+        "tutor:flamethrower",
+        "tutor:focuspunch",
+        "tutor:headbutt",
+        "tutor:irondefense",
+        "tutor:magnetrise",
+        "tutor:protect",
+        "tutor:rest",
+        "tutor:rockslide",
+        "tutor:rockthrow",
+        "tutor:seismictoss",
+        "tutor:selfdestruct",
+        "tutor:shockwave",
+        "tutor:snore",
+        "tutor:stealthrock",
+        "tutor:stompingtantrum",
+        "tutor:substitute",
+        "tutor:superpower",
+        "tutor:tackle",
+        "tutor:takedown",
+        "tutor:thunder",
+        "tutor:thunderbolt",
+        "tutor:thunderpunch",
+        "tutor:thundershock",
+        "tutor:thunderwave",
+        "tutor:toxic"
+      ],
+      "evolutions": [
+        {
+          "id": "graveler_golem",
+          "variant": "trade",
+          "result": "golem form=alola",
+          "optional": true,
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": []
+        }
+      ],
+      "abilities": [
+        "magnetpull",
+        "sturdy",
+        "h:galvanize"
+      ],
+      "drops": {
+        "amount": 5,
+        "entries": [
+          {
+            "item": "minecraft:raw_copper",
+            "quantityRange": "0-2"
+          },
+          {
+            "item": "cobblemon:cell_battery",
+            "percentage": 5.0
+          },
+          {
+            "item": "cobblemon:magnet",
+            "percentage": 5.0
+          },
+          {
+            "item": "cobblemon:shuca_berry",
+            "percentage": 5.0
+          }
+        ]
+      },
+      "preEvolution": "geodude form=alola",
+      "labels": [
+        "gen7",
+        "alola_regional"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "mineral"
+      ],
+      "height": 10.0,
+      "weight": 1100.0,
+      "battleOnly": false
+    }
+  ]
+}

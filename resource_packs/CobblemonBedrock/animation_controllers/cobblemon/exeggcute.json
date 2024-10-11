@@ -1,0 +1,248 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.exeggcute.blink1": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink1 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggcute_blink1 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggcute_blink1) && (v.state_of_exeggcute == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggcute.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink1 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggcute_blink1 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.exeggcute.blink2": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink2 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggcute_blink2 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggcute_blink2) && (v.state_of_exeggcute == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggcute.blink2"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink2 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggcute_blink2 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.exeggcute.blink3": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink3 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggcute_blink3 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggcute_blink3) && (v.state_of_exeggcute == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggcute.blink3"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink3 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggcute_blink3 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.exeggcute.blink4": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink4 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggcute_blink4 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggcute_blink4) && (v.state_of_exeggcute == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggcute.blink4"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink4 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggcute_blink4 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.exeggcute.blink5": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink5 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggcute_blink5 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggcute_blink5) && (v.state_of_exeggcute == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggcute.blink5"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink5 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggcute_blink5 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.exeggcute.blink6": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink6 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggcute_blink6 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggcute_blink6) && (v.state_of_exeggcute == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggcute.blink6"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggcute_blink6 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggcute_blink6 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.exeggcute": {
+      "initial_state": "standing",
+      "states": {
+        "uiPortrait": {
+          "animations": [
+            "exeggcute.portrait"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_exeggcute = 0; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "sleep": {
+          "animations": [
+            "exeggcute.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_exeggcute = 1; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "exeggcute.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_exeggcute = 2; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "exeggcute.ground_idle",
+            "exeggcute.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_exeggcute = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

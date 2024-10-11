@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:granbull",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0210_granbull/granbull",
+        "shiny": "textures/pokemon/0210_granbull/granbull_shiny"
+      },
+      "geometry": {
+        "base": "geometry.granbull.geo",
+        "shiny": "geometry.granbull.geo"
+      },
+      "animations": {
+        "granbull.sleep": "animation.granbull.sleep",
+        "granbullmodel.singlebonelook": "animation.granbullmodel.singlebonelook",
+        "granbull.ground_idle": "animation.granbull.ground_idle",
+        "granbull.ground_walk": "animation.granbull.ground_walk",
+        "granbull.battle_idle": "animation.granbull.battle_idle",
+        "granbull.blink": "animation.granbull.blink",
+        "controller.animation.granbull.blink": "controller.animation.granbull.blink",
+        "controller.animation.cobblemon.granbull": "controller.animation.cobblemon.granbull"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.granbull"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.granbull.blink",
+          {
+            "controller.animation.cobblemon.granbull": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_granbull = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

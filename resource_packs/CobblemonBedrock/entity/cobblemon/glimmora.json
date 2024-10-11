@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:glimmora",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0970_glimmora/glimmora",
+        "shiny": "textures/pokemon/0970_glimmora/glimmora_shiny"
+      },
+      "geometry": {
+        "base": "geometry.glimmora.geo",
+        "shiny": "geometry.glimmora.geo"
+      },
+      "animations": {
+        "glimmora.sleep": "animation.glimmora.sleep",
+        "glimmora.ground_idle": "animation.glimmora.ground_idle",
+        "glimmora.ground_walk": "animation.glimmora.ground_walk",
+        "glimmora.battle_idle": "animation.glimmora.battle_idle",
+        "glimmora.blink": "animation.glimmora.blink",
+        "controller.animation.glimmora.blink": "controller.animation.glimmora.blink",
+        "controller.animation.cobblemon.glimmora": "controller.animation.cobblemon.glimmora"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.glimmora"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.glimmora.blink",
+          {
+            "controller.animation.cobblemon.glimmora": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_glimmora = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

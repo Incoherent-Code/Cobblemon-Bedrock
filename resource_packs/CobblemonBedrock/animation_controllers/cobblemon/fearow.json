@@ -1,0 +1,98 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.fearow.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_fearow_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_fearow_blink = q.life_time + 1; return (q.life_time > v.next_quirk_fearow_blink) && (v.state_of_fearow == 0 || v.state_of_fearow == 1 || v.state_of_fearow == 2 || v.state_of_fearow == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "fearow.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_fearow_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_fearow_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.fearow": {
+      "initial_state": "stand",
+      "states": {
+        "stand": {
+          "animations": [
+            "fearowmodel.singlebonelook",
+            "fearow.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_fearow = 0; return (q.is_moving && !q.is_swimming);"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "fearowmodel.singlebonelook",
+            "fearow.blink"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_fearow = 1; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "fearowmodel.singlebonelook",
+            "fearow.blink"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_fearow = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "fearowmodel.singlebonelook",
+            "fearow.ground_idle",
+            "fearowmodel.bipedwalkanimation"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_fearow = 3; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

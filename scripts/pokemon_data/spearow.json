@@ -1,0 +1,254 @@
+{
+  "minLevel": 1,
+  "maxLevel": 26,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "day",
+      "minLevel": 1,
+      "maxLevel": 26
+    }
+  },
+  "name": "Spearow",
+  "nationalPokedexNumber": 21,
+  "baseStats": {
+    "hp": 40,
+    "attack": 60,
+    "defence": 30,
+    "special_attack": 31,
+    "special_defence": 31,
+    "speed": 70
+  },
+  "maleRatio": 0.5,
+  "catchRate": 255,
+  "baseScale": 0.8,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.8,
+    "fixed": false
+  },
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "abilities": [
+    "keeneye",
+    "h:sniper"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:growl",
+    "1:peck",
+    "4:leer",
+    "8:pursuit",
+    "11:furyattack",
+    "15:aerialace",
+    "18:mirrormove",
+    "22:assurance",
+    "25:agility",
+    "29:focusenergy",
+    "32:roost",
+    "36:drillpeck",
+    "egg:astonish",
+    "egg:falseswipe",
+    "egg:featherdance",
+    "egg:feintattack",
+    "egg:quickattack",
+    "egg:razorwind",
+    "egg:scaryface",
+    "egg:skyattack",
+    "egg:steelwing",
+    "egg:triattack",
+    "egg:uproar",
+    "egg:whirlwind",
+    "tm:aerialace",
+    "tm:attract",
+    "tm:captivate",
+    "tm:confide",
+    "tm:defog",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:fly",
+    "tm:frustration",
+    "tm:hiddenpower",
+    "tm:naturalgift",
+    "tm:pluck",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:roost",
+    "tm:round",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:thief",
+    "tm:toxic",
+    "tm:uturn",
+    "tm:workup",
+    "tutor:aerialace",
+    "tutor:agility",
+    "tutor:aircutter",
+    "tutor:attract",
+    "tutor:batonpass",
+    "tutor:bide",
+    "tutor:curse",
+    "tutor:defog",
+    "tutor:detect",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:drillpeck",
+    "tutor:drillrun",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:falseswipe",
+    "tutor:feintattack",
+    "tutor:fly",
+    "tutor:focusenergy",
+    "tutor:frustration",
+    "tutor:furyattack",
+    "tutor:growl",
+    "tutor:headbutt",
+    "tutor:heatwave",
+    "tutor:hiddenpower",
+    "tutor:leer",
+    "tutor:mimic",
+    "tutor:mirrormove",
+    "tutor:mudslap",
+    "tutor:ominouswind",
+    "tutor:peck",
+    "tutor:protect",
+    "tutor:pursuit",
+    "tutor:quickattack",
+    "tutor:rage",
+    "tutor:razorwind",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:roost",
+    "tutor:scaryface",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:steelwing",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:tailwind",
+    "tutor:takedown",
+    "tutor:thief",
+    "tutor:toxic",
+    "tutor:triattack",
+    "tutor:twister",
+    "tutor:uproar",
+    "tutor:uturn",
+    "tutor:whirlwind"
+  ],
+  "evolutions": [
+    {
+      "id": "spearow_fearow",
+      "variant": "level_up",
+      "result": "fearow",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 20
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.spearow.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:sharp_beak",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:charti_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "flying"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 3.0,
+  "weight": 20.0
+}

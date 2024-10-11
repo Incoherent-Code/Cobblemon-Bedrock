@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:staravia",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0397_staravia/staravia",
+        "shiny": "textures/pokemon/0397_staravia/staravia_shiny"
+      },
+      "geometry": {
+        "base": "geometry.staravia.geo",
+        "shiny": "geometry.staravia.geo"
+      },
+      "animations": {
+        "staraviamodel.singlebonelook": "animation.staraviamodel.singlebonelook",
+        "staravia.ground_idle": "animation.staravia.ground_idle",
+        "staravia.blink": "animation.staravia.blink",
+        "controller.animation.staravia.blink": "controller.animation.staravia.blink",
+        "controller.animation.cobblemon.staravia": "controller.animation.cobblemon.staravia"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.staravia"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.staravia.blink",
+          {
+            "controller.animation.cobblemon.staravia": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_staravia = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

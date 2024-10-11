@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:popplio",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0728_popplio/popplio",
+        "shiny": "textures/pokemon/0728_popplio/popplio_shiny"
+      },
+      "geometry": {
+        "base": "geometry.popplio.geo",
+        "shiny": "geometry.popplio.geo"
+      },
+      "animations": {
+        "popplio.sleep": "animation.popplio.sleep",
+        "poppliomodel.singlebonelook": "animation.poppliomodel.singlebonelook",
+        "popplio.ground_idle": "animation.popplio.ground_idle",
+        "popplio.ground_walk": "animation.popplio.ground_walk",
+        "popplio.water_idle": "animation.popplio.water_idle",
+        "popplio.water_swim": "animation.popplio.water_swim",
+        "popplio.battle_idle": "animation.popplio.battle_idle",
+        "popplio.shoulder_left": "animation.popplio.shoulder_left",
+        "popplio.shoulderleft.transform": "animation.popplio.shoulderleft.transform",
+        "popplio.shoulder_right": "animation.popplio.shoulder_right",
+        "popplio.shoulderright.transform": "animation.popplio.shoulderright.transform",
+        "popplio.blink": "animation.popplio.blink",
+        "controller.animation.popplio.blink": "controller.animation.popplio.blink",
+        "controller.animation.cobblemon.popplio": "controller.animation.cobblemon.popplio"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.popplio"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.popplio.blink",
+          {
+            "controller.animation.cobblemon.popplio": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_popplio = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

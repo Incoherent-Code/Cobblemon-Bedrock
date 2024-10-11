@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:clefairy",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0035_clefairy/clefairy",
+        "shiny": "textures/pokemon/0035_clefairy/clefairy_shiny"
+      },
+      "geometry": {
+        "base": "geometry.clefairy.geo",
+        "shiny": "geometry.clefairy.geo"
+      },
+      "animations": {
+        "clefairy.ground_idle": "animation.clefairy.ground_idle",
+        "clefairy.sleep": "animation.clefairy.sleep",
+        "clefairy.ground_walk": "animation.clefairy.ground_walk",
+        "clefairy.blink": "animation.clefairy.blink",
+        "controller.animation.clefairy.blink": "controller.animation.clefairy.blink",
+        "controller.animation.cobblemon.clefairy": "controller.animation.cobblemon.clefairy"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.clefairy"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.clefairy.blink",
+          {
+            "controller.animation.cobblemon.clefairy": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_clefairy = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

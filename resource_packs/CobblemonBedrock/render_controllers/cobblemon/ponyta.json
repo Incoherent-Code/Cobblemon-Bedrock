@@ -1,0 +1,106 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.0",
+  "render_controllers": {
+    "controller.render.cobblemon.ponyta": {
+      "arrays": {
+        "textures": {
+          "array.cobblemon_texture": [
+            "texture.base",
+            "texture.shiny",
+            "texture.galarian",
+            "texture.shiny_galarian"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.galarian",
+            "geometry.shiny_galarian"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.cobblemon_texture[query.variant]"
+      ]
+    },
+    "controller.render.cobblemon.ponyta_emissive": {
+      "arrays": {
+        "textures": {
+          "array.variation_emissive": [
+            "texture.blank",
+            "texture.blank",
+            "texture.galarian_emissive",
+            "texture.shiny_galarian_emissive"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.galarian",
+            "geometry.shiny_galarian"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.emissive"
+        }
+      ],
+      "textures": [
+        "array.variation_emissive[query.variant]"
+      ]
+    },
+    "controller.render.cobblemon.ponyta_emissive_2": {
+      "arrays": {
+        "textures": {
+          "array.variation_emissive": [
+            "texture.base_emissive_uv",
+            "texture.shiny_emissive_uv",
+            "texture.blank",
+            "texture.blank"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.galarian",
+            "geometry.shiny_galarian"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.emissive"
+        }
+      ],
+      "textures": [
+        "array.variation_emissive[query.variant]"
+      ],
+      "uv_anim": {
+        "offset": [
+          0.0,
+          "math.mod(math.floor(q.life_time * 10),4) / 4"
+        ],
+        "scale": [
+          1.0,
+          "1 / 4"
+        ]
+      }
+    }
+  }
+}

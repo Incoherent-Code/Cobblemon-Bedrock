@@ -1,0 +1,38 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "I I",
+      "GIG"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:tinted_glass"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:tinted_glass"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:black_glasses"
+    },
+    "description": {
+      "identifier": "cobblemon:black_glasses_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

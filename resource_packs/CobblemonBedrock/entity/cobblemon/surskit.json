@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:surskit",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0283_surskit/surskit",
+        "shiny": "textures/pokemon/0283_surskit/surskit_shiny"
+      },
+      "geometry": {
+        "base": "geometry.surskit.geo",
+        "shiny": "geometry.surskit.geo"
+      },
+      "animations": {
+        "surskit.ground_idle": "animation.surskit.ground_idle",
+        "surskit.ground_walk": "animation.surskit.ground_walk",
+        "surskit.waterstand.transform": "animation.surskit.waterstand.transform",
+        "surskit.waterwalk.transform": "animation.surskit.waterwalk.transform",
+        "surskit.blink": "animation.surskit.blink",
+        "controller.animation.surskit.blink": "controller.animation.surskit.blink",
+        "controller.animation.cobblemon.surskit": "controller.animation.cobblemon.surskit"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.surskit"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.surskit.blink",
+          {
+            "controller.animation.cobblemon.surskit": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_surskit = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

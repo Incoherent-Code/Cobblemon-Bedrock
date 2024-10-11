@@ -1,0 +1,931 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.wailord.sleep": {
+      "loop": true,
+      "animation_length": 8.0,
+      "bones": {
+        "body": {
+          "rotation": [
+            0.0,
+            0.0,
+            "0.2*math.sin(q.anim_time*90*0.5)"
+          ],
+          "position": [
+            -0.75,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            0.0,
+            -2.5,
+            0.0
+          ]
+        },
+        "lower_jaw": {
+          "rotation": [
+            "0.5*math.sin(q.anim_time*90*1)",
+            0.0,
+            0.0
+          ]
+        },
+        "fin_right_front": {
+          "rotation": [
+            0.0,
+            0.0,
+            "57.5+1*math.sin(q.anim_time*90*0.5-20)"
+          ]
+        },
+        "fin_right_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "57.5+3*math.sin(q.anim_time*90*0.5-40)"
+          ]
+        },
+        "fin_left_front": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-50+1*math.sin(q.anim_time*90*0.5-20)"
+          ]
+        },
+        "fin_left_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-52.5+3*math.sin(q.anim_time*90*0.5-40)"
+          ]
+        },
+        "torso_back": {
+          "rotation": [
+            0.0,
+            2.5,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -0.5
+          ]
+        },
+        "fin_right_back": {
+          "rotation": [
+            0.0,
+            0.0,
+            "45+3*math.cos(q.anim_time*90*0.5-20)"
+          ]
+        },
+        "fin_right_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "67.5+3*math.cos(q.anim_time*90*0.5-50)"
+          ]
+        },
+        "fin_left_back": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-55+3*math.cos(q.anim_time*90*0.5-20)"
+          ]
+        },
+        "fin_left_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-65+3*math.cos(q.anim_time*90*0.5-50)"
+          ]
+        },
+        "tail_base": {
+          "rotation": [
+            "-20+1*math.cos(q.anim_time*90*1-80)",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            -2.75,
+            0.0
+          ]
+        },
+        "tail_base2": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_fin": {
+          "rotation": [
+            "-7.5-1*math.sin(q.anim_time*90*1-20)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "5-1*math.sin(q.anim_time*90*0.5-60)"
+          ]
+        },
+        "tail_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-5+1*math.sin(q.anim_time*90*0.5-20)"
+          ]
+        },
+        "white_fin_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "17.5+1*math.sin(q.anim_time*90*3-40)"
+          ]
+        },
+        "white_fin_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-17.5+1*math.cos(q.anim_time*90*3-40)"
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            -0.1,
+            0.0,
+            0.0
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.1,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.wailord.ground_idle": {
+      "loop": true,
+      "animation_length": 8.0,
+      "bones": {
+        "body": {
+          "rotation": [
+            "0.2*math.sin(q.anim_time*90*1)",
+            0.0,
+            "0.5*math.sin(q.anim_time*90*0.5)"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "0.5*math.sin(q.anim_time*90*0.5+50)",
+            "0.5*math.sin(q.anim_time*90*0.5+50)",
+            0.0
+          ]
+        },
+        "lower_jaw": {
+          "rotation": [
+            "0.5*math.sin(q.anim_time*90*1)",
+            0.0,
+            0.0
+          ]
+        },
+        "fin_right_front": {
+          "rotation": [
+            0.0,
+            0.0,
+            "35+1*math.sin(q.anim_time*90*1-20)"
+          ]
+        },
+        "fin_right_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "12.5+3*math.sin(q.anim_time*90*1-40)"
+          ]
+        },
+        "fin_left_front": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-35+1*math.sin(q.anim_time*90*1-20)"
+          ]
+        },
+        "fin_left_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-12.5+3*math.sin(q.anim_time*90*1-40)"
+          ]
+        },
+        "torso_back": {
+          "position": [
+            0.0,
+            0.0,
+            -0.5
+          ]
+        },
+        "fin_right_back": {
+          "rotation": [
+            0.0,
+            0.0,
+            "17.5+3*math.cos(q.anim_time*90*1-20)"
+          ]
+        },
+        "fin_right_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "10+3*math.cos(q.anim_time*90*1-50)"
+          ]
+        },
+        "fin_left_back": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-17.5+3*math.cos(q.anim_time*90*1-20)"
+          ]
+        },
+        "fin_left_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-10+3*math.cos(q.anim_time*90*1-50)"
+          ]
+        },
+        "tail_base": {
+          "rotation": [
+            "1*math.cos(q.anim_time*90*1-80)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail_base2": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_fin": {
+          "rotation": [
+            "-1*math.sin(q.anim_time*90*1-20)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "5-1*math.sin(q.anim_time*90*0.5-60)"
+          ]
+        },
+        "tail_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-5+1*math.sin(q.anim_time*90*0.5-20)"
+          ]
+        },
+        "white_fin_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "1*math.sin(q.anim_time*90*3-40)"
+          ]
+        },
+        "white_fin_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "1*math.cos(q.anim_time*90*3-40)"
+          ]
+        }
+      }
+    },
+    "animation.wailord.standing.transform": {
+      "bones": {
+        "wailord": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.wailord.ground_walk": {
+      "loop": true,
+      "animation_length": 8.0,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            "math.clamp(-0.5*math.cos(q.anim_time*90*2+50),0,0.5)",
+            "1*math.sin(q.anim_time*90*2+10)"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "-1*math.sin(q.anim_time*90*2+30)",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            "0.3*math.sin(q.anim_time*90*2)"
+          ]
+        },
+        "torso_middle": {
+          "position": [
+            0.0,
+            0.0,
+            "0.5*math.sin(q.anim_time*90*2+30)"
+          ]
+        },
+        "fin_right_front": {
+          "rotation": [
+            0.0,
+            "-6*math.sin(q.anim_time*90*2+30)",
+            "3*math.cos(q.anim_time*90*2+30)"
+          ]
+        },
+        "fin_left_front": {
+          "rotation": [
+            0.0,
+            "6*math.sin(q.anim_time*90*2+30)",
+            "-3*math.cos(q.anim_time*90*2+30)"
+          ]
+        },
+        "torso_back": {
+          "rotation": [
+            "1*math.cos(q.anim_time*90*2+50)",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            "0.2*math.cos(q.anim_time*90*2+60)"
+          ]
+        },
+        "fin_right_back": {
+          "rotation": [
+            0.0,
+            "-6*math.sin(q.anim_time*90*2)",
+            "3*math.cos(q.anim_time*90*2)"
+          ]
+        },
+        "fin_left_back": {
+          "rotation": [
+            0.0,
+            "6*math.sin(q.anim_time*90*2)",
+            "-3*math.cos(q.anim_time*90*2)"
+          ]
+        },
+        "tail_base": {
+          "rotation": [
+            "1*math.cos(q.anim_time*90*2+40)",
+            0.0,
+            "2*math.cos(q.anim_time*90*1+40)"
+          ]
+        },
+        "tail_fin": {
+          "rotation": [
+            "2*math.cos(q.anim_time*90*2)",
+            0.0,
+            0.0
+          ]
+        },
+        "white_fin_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "5*math.sin(q.anim_time*90*2+40)"
+          ]
+        },
+        "white_fin_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "5*math.cos(q.anim_time*90*2+40)"
+          ]
+        }
+      }
+    },
+    "animation.wailord.walk.transform": {
+      "bones": {
+        "wailord": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.wailord.water_idle": {
+      "loop": true,
+      "animation_length": 8.0,
+      "bones": {
+        "body": {
+          "rotation": [
+            "0.5*math.sin(q.anim_time*90*1)",
+            0.0,
+            "0.5*math.sin(q.anim_time*90*0.5)"
+          ],
+          "position": [
+            0.0,
+            "1*math.sin(q.anim_time*90*0.5+40)",
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "0.5*math.sin(q.anim_time*90*0.5)",
+            0.0,
+            0.0
+          ]
+        },
+        "lower_jaw": {
+          "rotation": [
+            "7.5+0.5*math.sin(q.anim_time*90*1)",
+            0.0,
+            0.0
+          ]
+        },
+        "fin_right_front": {
+          "rotation": [
+            0.0,
+            0.0,
+            "7.5+1*math.sin(q.anim_time*90*1-20)"
+          ]
+        },
+        "fin_right_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "12.5+3*math.sin(q.anim_time*90*1-40)"
+          ]
+        },
+        "fin_left_front": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-10+1*math.sin(q.anim_time*90*1-20)"
+          ]
+        },
+        "fin_left_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-12.5+3*math.sin(q.anim_time*90*1-40)"
+          ]
+        },
+        "fin_right_back": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-2.5+3*math.cos(q.anim_time*90*1-20)"
+          ]
+        },
+        "fin_right_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "10+3*math.cos(q.anim_time*90*1-50)"
+          ]
+        },
+        "fin_left_back": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-10+3*math.cos(q.anim_time*90*1-20)"
+          ]
+        },
+        "fin_left_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-10+3*math.cos(q.anim_time*90*1-50)"
+          ]
+        },
+        "tail_base": {
+          "rotation": [
+            "1*math.cos(q.anim_time*90*1-80)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail_base2": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_fin": {
+          "rotation": [
+            "-7.5-1*math.sin(q.anim_time*90*1-20)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "5-1*math.sin(q.anim_time*90*0.5-60)"
+          ]
+        },
+        "tail_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-5+1*math.sin(q.anim_time*90*0.5-20)"
+          ]
+        },
+        "white_fin_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "1*math.sin(q.anim_time*90*3-40)"
+          ]
+        },
+        "white_fin_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "1*math.cos(q.anim_time*90*3-40)"
+          ]
+        }
+      }
+    },
+    "animation.wailord.water_swim": {
+      "loop": true,
+      "animation_length": 8.0,
+      "bones": {
+        "body": {
+          "rotation": [
+            "-0.5*math.sin(q.anim_time*90*2)",
+            0.0,
+            "0.5*math.cos(q.anim_time*90*2)"
+          ],
+          "position": [
+            0.0,
+            "1*math.sin(q.anim_time*90*0.5+40)+0.1*math.sin(q.anim_time*90*4+40)",
+            "1*math.sin(q.anim_time*90*1+40)"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "-1*math.sin(q.anim_time*90*2+50)",
+            0.0,
+            0.0
+          ]
+        },
+        "lower_jaw": {
+          "rotation": [
+            "12.5-1*math.sin(q.anim_time*90*2+50)+0.1*math.sin(q.anim_time*90*4+50)",
+            0.0,
+            0.0
+          ]
+        },
+        "fin_right_front": {
+          "rotation": [
+            "10*math.cos(q.anim_time*90*2-60)",
+            "5*math.cos(q.anim_time*90*2-60)",
+            "7.5+10*math.sin(q.anim_time*90*2-20)"
+          ]
+        },
+        "fin_right_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "12.5+15*math.sin(q.anim_time*90*2-30)"
+          ]
+        },
+        "fin_left_front": {
+          "rotation": [
+            "-10*math.cos(q.anim_time*90*2-60)",
+            "5*math.cos(q.anim_time*90*2-60)",
+            "-7.5+10*math.sin(q.anim_time*90*2-20)"
+          ]
+        },
+        "fin_left_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-12.5+15*math.sin(q.anim_time*90*2-30)"
+          ]
+        },
+        "fin_right_back": {
+          "rotation": [
+            "-5*math.sin(q.anim_time*90*2-20)",
+            "-5*math.sin(q.anim_time*90*2-20)",
+            "-2.5+10*math.cos(q.anim_time*90*2-20)"
+          ]
+        },
+        "fin_right_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "10+15*math.cos(q.anim_time*90*2-50)"
+          ]
+        },
+        "fin_left_back": {
+          "rotation": [
+            "5*math.sin(q.anim_time*90*2-20)",
+            "-5*math.sin(q.anim_time*90*2-20)",
+            "2.5+10*math.cos(q.anim_time*90*2-20)"
+          ]
+        },
+        "fin_left_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-10+15*math.cos(q.anim_time*90*2-50)"
+          ]
+        },
+        "tail_base": {
+          "rotation": [
+            "1*math.cos(q.anim_time*90*1-80)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail_base2": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_fin": {
+          "rotation": [
+            "-7.5-1*math.sin(q.anim_time*90*2-20)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail_right": {
+          "rotation": [
+            "-2-0.2*math.sin(q.anim_time*90*5-20)",
+            0.0,
+            "5-1*math.sin(q.anim_time*90*0.5-60)"
+          ]
+        },
+        "tail_left": {
+          "rotation": [
+            "-1-0.2*math.sin(q.anim_time*90*6-20)",
+            0.0,
+            "-5+1*math.sin(q.anim_time*90*0.5-20)"
+          ]
+        },
+        "white_fin_right": {
+          "rotation": [
+            "-5*math.sin(q.anim_time*90*1-20)",
+            0.0,
+            "1*math.sin(q.anim_time*90*6-40)"
+          ]
+        },
+        "white_fin_left": {
+          "rotation": [
+            "-5*math.sin(q.anim_time*90*1-20)",
+            0.0,
+            "1*math.cos(q.anim_time*90*6-40)"
+          ]
+        },
+        "tongue": {
+          "rotation": [
+            0.0,
+            0.0,
+            "1*math.sin(q.anim_time*90*4+40)"
+          ],
+          "position": [
+            0.0,
+            "0.2*math.sin(q.anim_time*90*2+40)",
+            0.0
+          ]
+        },
+        "torso_back": {
+          "rotation": [
+            "1*math.cos(q.anim_time*90*2)",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.wailord.battle_idle": {
+      "loop": true,
+      "animation_length": 8.0,
+      "bones": {
+        "body": {
+          "rotation": [
+            "0.2*math.sin(q.anim_time*90*1)",
+            0.0,
+            "1*math.sin(q.anim_time*90*0.5)"
+          ]
+        },
+        "head": {
+          "rotation": [
+            "2.5+0.5*math.sin(q.anim_time*90*0.5)",
+            "0+0.5*math.sin(q.anim_time*90*0.5)",
+            0.0
+          ]
+        },
+        "lower_jaw": {
+          "rotation": [
+            "2.5+0.5*math.sin(q.anim_time*90*1)",
+            0.0,
+            0.0
+          ]
+        },
+        "fin_right_front": {
+          "rotation": [
+            0.0,
+            0.0,
+            "17.5+6*math.sin(q.anim_time*90*2-20)"
+          ]
+        },
+        "fin_right_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "5+10*math.sin(q.anim_time*90*2-80)"
+          ]
+        },
+        "fin_left_front": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-17.5+6*math.sin(q.anim_time*90*2-20)"
+          ]
+        },
+        "fin_left_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-5+10*math.sin(q.anim_time*90*2-80)"
+          ]
+        },
+        "fin_right_back": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-2.5+5*math.cos(q.anim_time*90*2-20)"
+          ]
+        },
+        "fin_right_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "10*math.cos(q.anim_time*90*2-50)"
+          ]
+        },
+        "fin_left_back": {
+          "rotation": [
+            0.0,
+            0.0,
+            "2.5+5*math.cos(q.anim_time*90*2-20)"
+          ]
+        },
+        "fin_left_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "10*math.cos(q.anim_time*90*2-50)"
+          ]
+        },
+        "tail_base": {
+          "rotation": [
+            "1*math.cos(q.anim_time*90*1-80)",
+            0.0,
+            "1*math.cos(q.anim_time*90*2-80)"
+          ]
+        },
+        "tail_base2": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_fin": {
+          "rotation": [
+            "-1*math.sin(q.anim_time*90*1-20)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "5-1*math.sin(q.anim_time*90*0.5-60)"
+          ]
+        },
+        "tail_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-5+1*math.sin(q.anim_time*90*0.5-20)"
+          ]
+        },
+        "white_fin_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "1*math.sin(q.anim_time*90*3-40)"
+          ]
+        },
+        "white_fin_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "1*math.cos(q.anim_time*90*3-40)"
+          ]
+        },
+        "torso_middle": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "torso_back": {
+          "rotation": [
+            "1+1*math.cos(q.anim_time*90*1-80)",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.wailord.battleidle.transform": {
+      "bones": {
+        "wailord": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.wailord.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

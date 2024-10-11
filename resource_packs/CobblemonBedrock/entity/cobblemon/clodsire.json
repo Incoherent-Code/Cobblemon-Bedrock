@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:clodsire",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0980_clodsire/clodsire",
+        "shiny": "textures/pokemon/0980_clodsire/clodsire_shiny"
+      },
+      "geometry": {
+        "base": "geometry.clodsire.geo",
+        "shiny": "geometry.clodsire.geo"
+      },
+      "animations": {
+        "clodsiremodel.singlebonelook": "animation.clodsiremodel.singlebonelook",
+        "clodsire.ground_idle": "animation.clodsire.ground_idle",
+        "clodsiremodel.bipedwalkanimation": "animation.clodsiremodel.bipedwalkanimation",
+        "clodsiremodel.bimanualswinganimation": "animation.clodsiremodel.bimanualswinganimation",
+        "clodsire.blink": "animation.clodsire.blink",
+        "controller.animation.clodsire.blink": "controller.animation.clodsire.blink",
+        "controller.animation.cobblemon.clodsire": "controller.animation.cobblemon.clodsire"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.clodsire"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.clodsire.blink",
+          {
+            "controller.animation.cobblemon.clodsire": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_clodsire = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

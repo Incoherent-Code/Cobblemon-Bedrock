@@ -1,0 +1,87 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.heatmor.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_heatmor_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_heatmor_blink = q.life_time + 1; return (q.life_time > v.next_quirk_heatmor_blink) && (v.state_of_heatmor == 1 || v.state_of_heatmor == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "heatmor.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_heatmor_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_heatmor_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.heatmor": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "heatmor.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_heatmor = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "heatmormodel.singlebonelook",
+            "heatmor.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_heatmor = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "heatmormodel.singlebonelook",
+            "heatmor.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_heatmor = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

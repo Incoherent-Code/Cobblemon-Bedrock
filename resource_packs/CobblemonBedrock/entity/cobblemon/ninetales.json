@@ -1,0 +1,66 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:ninetales",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0038_ninetales/ninetales",
+        "shiny": "textures/pokemon/0038_ninetales/ninetales_shiny",
+        "alolan": "textures/pokemon/0038_ninetales/ninetales_alolan",
+        "alolan_shiny": "textures/pokemon/0038_ninetales/ninetales_alolan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.ninetales.geo",
+        "shiny": "geometry.ninetales.geo",
+        "alolan": "geometry.ninetales_alolan.geo",
+        "alolan_shiny": "geometry.ninetales_alolan.geo"
+      },
+      "animations": {
+        "ninetales.sleep": "animation.ninetales.sleep",
+        "ninetalesmodel.singlebonelook": "animation.ninetalesmodel.singlebonelook",
+        "ninetales.ground_idle": "animation.ninetales.ground_idle",
+        "ninetalesmodel.quadrupedwalkanimation": "animation.ninetalesmodel.quadrupedwalkanimation",
+        "ninetales.blink": "animation.ninetales.blink",
+        "controller.animation.ninetales.blink": "controller.animation.ninetales.blink",
+        "controller.animation.cobblemon.ninetales": "controller.animation.cobblemon.ninetales",
+        "ninetales_alolan.sleep": "animation.ninetales_alolan.sleep",
+        "ninetalesalolanmodel.singlebonelook": "animation.ninetalesalolanmodel.singlebonelook",
+        "ninetales_alolan.ground_idle": "animation.ninetales_alolan.ground_idle",
+        "ninetalesalolanmodel.quadrupedwalkanimation": "animation.ninetalesalolanmodel.quadrupedwalkanimation",
+        "ninetales_alolan.blink": "animation.ninetales_alolan.blink",
+        "controller.animation.ninetales_alolan.blink": "controller.animation.ninetales_alolan.blink",
+        "controller.animation.cobblemon.ninetales_alolan": "controller.animation.cobblemon.ninetales_alolan"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.ninetales"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.ninetales.blink",
+          {
+            "controller.animation.cobblemon.ninetales": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.ninetales_alolan.blink",
+          {
+            "controller.animation.cobblemon.ninetales_alolan": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_ninetales = -1.0;",
+          "v.state_of_ninetales_alolan = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

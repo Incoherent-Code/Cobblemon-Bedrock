@@ -1,0 +1,105 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.pressure_plate_up",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [
+						8,
+						0,
+						-8
+					],
+					"cubes": [
+						{
+							"origin": [
+								-7,
+								0,
+								-7
+							],
+							"size": [
+								14,
+								1,
+								14
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										1,
+										15
+									],
+									"uv_size": [
+										14,
+										1
+									]
+								},
+								"east": {
+									"uv": [
+										1,
+										15
+									],
+									"uv_size": [
+										14,
+										1
+									]
+								},
+								"south": {
+									"uv": [
+										1,
+										15
+									],
+									"uv_size": [
+										14,
+										1
+									]
+								},
+								"west": {
+									"uv": [
+										1,
+										15
+									],
+									"uv_size": [
+										14,
+										1
+									]
+								},
+								"up": {
+									"uv": [
+										15,
+										15
+									],
+									"uv_size": [
+										-14,
+										-14
+									]
+								},
+								"down": {
+									"uv": [
+										15,
+										15
+									],
+									"uv_size": [
+										-14,
+										-14
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

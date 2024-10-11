@@ -1,0 +1,155 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.dewgongmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.dewgong.ground_idle": {
+      "loop": true,
+      "bones": {
+        "leftflipper": {
+          "rotation": [
+            0.0,
+            -15.0,
+            17.5
+          ]
+        },
+        "rightflipper": {
+          "rotation": [
+            0.0,
+            15.0,
+            -17.5
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.dewgong.water_idle": {
+      "loop": true,
+      "bones": {
+        "leftflipper": {
+          "rotation": [
+            15.0,
+            -15.0,
+            15.0
+          ]
+        },
+        "rightflipper": {
+          "rotation": [
+            15.0,
+            15.0,
+            -15.0
+          ]
+        },
+        "head": {
+          "position": [
+            0.0,
+            -1.0,
+            -0.5
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.dewgong.water_swim": {
+      "loop": true,
+      "bones": {
+        "leftflipper": {
+          "rotation": [
+            45.0,
+            -60.0,
+            15.0
+          ]
+        },
+        "rightflipper": {
+          "rotation": [
+            45.0,
+            60.0,
+            -15.0
+          ]
+        },
+        "head": {
+          "position": [
+            0.0,
+            -1.0,
+            -0.5
+          ]
+        },
+        "tail": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "minLevel": 36,
+  "maxLevel": 48,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "day",
+      "minLevel": 36,
+      "maxLevel": 48
+    }
+  },
+  "name": "Pidgeot",
+  "nationalPokedexNumber": 18,
+  "baseStats": {
+    "hp": 83,
+    "attack": 80,
+    "defence": 75,
+    "special_attack": 70,
+    "special_defence": 70,
+    "speed": 101
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 1.4,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.75,
+    "height": 1.5,
+    "fixed": false
+  },
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "abilities": [
+    "keeneye",
+    "tangledfeet",
+    "h:bigpecks"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:gust",
+    "1:hurricane",
+    "1:quickattack",
+    "1:sandattack",
+    "1:tackle",
+    "17:whirlwind",
+    "22:twister",
+    "27:featherdance",
+    "32:agility",
+    "38:wingattack",
+    "44:roost",
+    "50:tailwind",
+    "56:mirrormove",
+    "62:airslash",
+    "tm:aerialace",
+    "tm:attract",
+    "tm:captivate",
+    "tm:confide",
+    "tm:defog",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:fly",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:naturalgift",
+    "tm:pluck",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:roost",
+    "tm:round",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:thief",
+    "tm:toxic",
+    "tm:uturn",
+    "tm:workup",
+    "tutor:agility",
+    "tutor:aircutter",
+    "tutor:airslash",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:curse",
+    "tutor:defog",
+    "tutor:detect",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:fly",
+    "tutor:frustration",
+    "tutor:gust",
+    "tutor:headbutt",
+    "tutor:heatwave",
+    "tutor:hiddenpower",
+    "tutor:hyperbeam",
+    "tutor:laserfocus",
+    "tutor:mimic",
+    "tutor:mirrormove",
+    "tutor:mudslap",
+    "tutor:ominouswind",
+    "tutor:protect",
+    "tutor:quickattack",
+    "tutor:rage",
+    "tutor:razorwind",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:roost",
+    "tutor:sandattack",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:steelwing",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:tackle",
+    "tutor:tailwind",
+    "tutor:takedown",
+    "tutor:thief",
+    "tutor:toxic",
+    "tutor:twister",
+    "tutor:uproar",
+    "tutor:uturn",
+    "tutor:whirlwind",
+    "tutor:wingattack"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.42
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.pidgeot.desc"
+  ],
+  "drops": {
+    "amount": 6,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-3"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:sharp_beak",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:chilan_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "flying"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 15.0,
+  "weight": 395.0,
+  "forms": [
+    {
+      "name": "Mega",
+      "baseStats": {
+        "hp": 83,
+        "attack": 80,
+        "defence": 80,
+        "special_attack": 135,
+        "special_defence": 80,
+        "speed": 121
+      },
+      "maleRatio": 0.5,
+      "catchRate": 45,
+      "experienceGroup": "medium_slow",
+      "baseExperienceYield": 216,
+      "baseFriendship": 70,
+      "primaryType": "normal",
+      "secondaryType": "flying",
+      "evolutions": [],
+      "abilities": [
+        "noguard"
+      ],
+      "labels": [
+        "gen6",
+        "mega"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "flying"
+      ],
+      "height": 22.0,
+      "weight": 505.0,
+      "battleOnly": true
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.0",
+  "render_controllers": {
+    "controller.render.cobblemon.arbok": {
+      "arrays": {
+        "textures": {
+          "array.cobblemon_texture": [
+            "texture.base",
+            "texture.shiny",
+            "texture.snake_pattern_attack",
+            "texture.snake_pattern_dark",
+            "texture.snake_pattern_elusive",
+            "texture.snake_pattern_heart",
+            "texture.snake_pattern_legacy",
+            "texture.snake_pattern_sound",
+            "texture.snake_pattern_speed",
+            "texture.shiny_snake_pattern_attack",
+            "texture.shiny_snake_pattern_dark",
+            "texture.shiny_snake_pattern_elusive",
+            "texture.shiny_snake_pattern_heart",
+            "texture.shiny_snake_pattern_legacy",
+            "texture.shiny_snake_pattern_sound",
+            "texture.shiny_snake_pattern_speed",
+            "texture.shiny_snake_pattern_classic"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.snake_pattern_attack",
+            "geometry.snake_pattern_dark",
+            "geometry.snake_pattern_elusive",
+            "geometry.snake_pattern_heart",
+            "geometry.snake_pattern_legacy",
+            "geometry.snake_pattern_sound",
+            "geometry.snake_pattern_speed",
+            "geometry.shiny_snake_pattern_attack",
+            "geometry.shiny_snake_pattern_dark",
+            "geometry.shiny_snake_pattern_elusive",
+            "geometry.shiny_snake_pattern_heart",
+            "geometry.shiny_snake_pattern_legacy",
+            "geometry.shiny_snake_pattern_sound",
+            "geometry.shiny_snake_pattern_speed",
+            "geometry.shiny_snake_pattern_classic"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.cobblemon_texture[query.variant]"
+      ]
+    },
+    "controller.render.cobblemon.arbok_pattern": {
+      "arrays": {
+        "textures": {
+          "array.variation_pattern": [
+            "texture.base_pattern",
+            "texture.shiny_pattern",
+            "texture.snake_pattern_attack_pattern",
+            "texture.snake_pattern_dark_pattern",
+            "texture.snake_pattern_elusive_pattern",
+            "texture.snake_pattern_heart_pattern",
+            "texture.snake_pattern_legacy_pattern",
+            "texture.snake_pattern_sound_pattern",
+            "texture.snake_pattern_speed_pattern",
+            "texture.shiny_snake_pattern_attack_pattern",
+            "texture.shiny_snake_pattern_dark_pattern",
+            "texture.shiny_snake_pattern_elusive_pattern",
+            "texture.shiny_snake_pattern_heart_pattern",
+            "texture.shiny_snake_pattern_legacy_pattern",
+            "texture.shiny_snake_pattern_sound_pattern",
+            "texture.shiny_snake_pattern_speed_pattern",
+            "texture.shiny_snake_pattern_classic_pattern"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.snake_pattern_attack",
+            "geometry.snake_pattern_dark",
+            "geometry.snake_pattern_elusive",
+            "geometry.snake_pattern_heart",
+            "geometry.snake_pattern_legacy",
+            "geometry.snake_pattern_sound",
+            "geometry.snake_pattern_speed",
+            "geometry.shiny_snake_pattern_attack",
+            "geometry.shiny_snake_pattern_dark",
+            "geometry.shiny_snake_pattern_elusive",
+            "geometry.shiny_snake_pattern_heart",
+            "geometry.shiny_snake_pattern_legacy",
+            "geometry.shiny_snake_pattern_sound",
+            "geometry.shiny_snake_pattern_speed",
+            "geometry.shiny_snake_pattern_classic"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.variation_pattern[query.variant]"
+      ]
+    }
+  }
+}

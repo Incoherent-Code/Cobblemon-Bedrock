@@ -1,0 +1,21 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_furnace": {
+    "input": {
+      "item": "cobblemon:red_apricorn"
+    },
+    "output": {
+      "item": "minecraft:red_dye"
+    },
+    "description": {
+      "identifier": "cobblemon:red_apricorn_smelt_to_dye_0"
+    },
+    "tags": [
+      "furnace"
+    ]
+  }
+}

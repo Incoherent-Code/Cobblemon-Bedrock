@@ -1,0 +1,199 @@
+{
+  "minLevel": 1,
+  "maxLevel": 21,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 1,
+      "maxLevel": 21
+    }
+  },
+  "name": "Bounsweet",
+  "nationalPokedexNumber": 761,
+  "baseStats": {
+    "hp": 42,
+    "attack": 30,
+    "defence": 38,
+    "special_attack": 30,
+    "special_defence": 38,
+    "speed": 32
+  },
+  "maleRatio": 0.0,
+  "catchRate": 235,
+  "baseScale": 0.8,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.6,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "abilities": [
+    "leafguard",
+    "oblivious",
+    "h:sweetveil"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:splash",
+    "4:playnice",
+    "8:rapidspin",
+    "12:razorleaf",
+    "16:sweetscent",
+    "20:magicalleaf",
+    "24:flail",
+    "28:teeterdance",
+    "32:aromaticmist",
+    "36:aromatherapy",
+    "egg:acupressure",
+    "egg:charm",
+    "egg:endeavor",
+    "egg:feint",
+    "egg:grasswhistle",
+    "egg:playrough",
+    "egg:synthesis",
+    "tm:attract",
+    "tm:bounce",
+    "tm:bulletseed",
+    "tm:charm",
+    "tm:confide",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:drainingkiss",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:leafstorm",
+    "tm:lightscreen",
+    "tm:magicalleaf",
+    "tm:naturepower",
+    "tm:playrough",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:toxic",
+    "tm:trailblaze",
+    "tm:zenheadbutt",
+    "tutor:bounce",
+    "tutor:covet",
+    "tutor:endeavor",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:seedbomb",
+    "tutor:snore",
+    "tutor:synthesis",
+    "tutor:worryseed",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "bounsweet_steenee",
+      "variant": "level_up",
+      "result": "steenee",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 18
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.bounsweet.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:persim_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 3.0,
+  "weight": 32.0
+}

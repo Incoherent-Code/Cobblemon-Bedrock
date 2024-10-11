@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:annihilape",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0979_annihilape/annihilape",
+        "shiny": "textures/pokemon/0979_annihilape/annihilape_shiny",
+        "base_color": "textures/pokemon/0979_annihilape/annihilape_emissive",
+        "shiny_color": "textures/pokemon/0979_annihilape/annihilape_emissive"
+      },
+      "geometry": {
+        "base": "geometry.annihilape.geo",
+        "shiny": "geometry.annihilape.geo"
+      },
+      "animations": {
+        "annihilape.sleep": "animation.annihilape.sleep",
+        "annihilape.hair_overlay": "animation.annihilape.hair_overlay",
+        "annihilape.ground_idle": "animation.annihilape.ground_idle",
+        "annihilape.ground_walk": "animation.annihilape.ground_walk",
+        "annihilape.battle_idle": "animation.annihilape.battle_idle",
+        "annihilape.blink": "animation.annihilape.blink",
+        "controller.animation.annihilape.blink": "controller.animation.annihilape.blink",
+        "controller.animation.cobblemon.annihilape": "controller.animation.cobblemon.annihilape"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.annihilape_color",
+        "controller.render.cobblemon.annihilape"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.annihilape.blink",
+          {
+            "controller.animation.cobblemon.annihilape": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_annihilape = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,181 @@
+{
+  "minLevel": 18,
+  "maxLevel": 46,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "night",
+      "minLevel": 18,
+      "maxLevel": 46
+    },
+    "1": {
+      "timeRange": "night",
+      "minLevel": 18,
+      "maxLevel": 46
+    }
+  },
+  "name": "Thievul",
+  "nationalPokedexNumber": 828,
+  "baseStats": {
+    "hp": 70,
+    "attack": 58,
+    "defence": 58,
+    "special_attack": 87,
+    "special_defence": 92,
+    "speed": 90
+  },
+  "maleRatio": 0.5,
+  "catchRate": 127,
+  "baseScale": 0.7,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "fast",
+  "hitbox": {
+    "width": 1.2,
+    "height": 2.0,
+    "fixed": false
+  },
+  "primaryType": "dark",
+  "abilities": [
+    "runaway",
+    "unburden",
+    "h:stakeout"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:beatup",
+    "1:honeclaws",
+    "1:quickattack",
+    "1:tailwhip",
+    "12:snarl",
+    "16:assurance",
+    "22:nastyplot",
+    "28:suckerpunch",
+    "34:nightslash",
+    "40:tailslap",
+    "46:foulplay",
+    "52:partingshot",
+    "tm:acrobatics",
+    "tm:agility",
+    "tm:assurance",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:beatup",
+    "tm:crunch",
+    "tm:darkpulse",
+    "tm:dig",
+    "tm:endure",
+    "tm:facade",
+    "tm:faketears",
+    "tm:firefang",
+    "tm:foulplay",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:hyperbeam",
+    "tm:icefang",
+    "tm:mudshot",
+    "tm:nastyplot",
+    "tm:playrough",
+    "tm:protect",
+    "tm:psychic",
+    "tm:rest",
+    "tm:round",
+    "tm:screech",
+    "tm:shadowball",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:snarl",
+    "tm:snore",
+    "tm:substitute",
+    "tm:swift",
+    "tm:tailslap",
+    "tm:taunt",
+    "tm:thief",
+    "tm:thunderfang",
+    "tm:uturn",
+    "tutor:burningjealousy",
+    "tutor:lashout"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.thievul.desc"
+  ],
+  "drops": {
+    "amount": 6,
+    "entries": [
+      {
+        "item": "minecraft:sweet_berries",
+        "quantityRange": "2-4"
+      },
+      {
+        "item": "minecraft:emerald",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:roseli_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "field"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 12.0,
+  "weight": 199.0
+}

@@ -1,0 +1,166 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.tentacruel.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_tentacruel_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_tentacruel_blink = q.life_time + 1; return (q.life_time > v.next_quirk_tentacruel_blink) && (v.state_of_tentacruel == 0 || v.state_of_tentacruel == 1 || v.state_of_tentacruel == 2 || v.state_of_tentacruel == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "tentacruel.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_tentacruel_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_tentacruel_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.tentacruel": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "tentacruel.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_tentacruel = 0; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "swim": "q.is_swimming"
+            },
+            {
+              "sleep": "(q.is_sleeping) && (!q.is_in_water)"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "tentacruel.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_tentacruel = 1; return !q.is_moving;"
+            },
+            {
+              "swim": "q.is_swimming"
+            },
+            {
+              "sleep": "(q.is_sleeping) && (!q.is_in_water)"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "float": {
+          "animations": [
+            "tentacruel.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_tentacruel = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swim": "q.is_swimming"
+            },
+            {
+              "sleep": "(q.is_sleeping) && (!q.is_in_water)"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swim": {
+          "animations": [
+            "tentacruel.water_swim"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_tentacruel = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "sleep": "(q.is_sleeping) && (!q.is_in_water)"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "sleep": {
+          "animations": [
+            "tentacruel.ground_sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_tentacruel = 4; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swim": "q.is_swimming"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "watersleep": {
+          "animations": [
+            "tentacruel.water_sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_tentacruel = 5; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swim": "q.is_swimming"
+            },
+            {
+              "sleep": "(q.is_sleeping) && (!q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

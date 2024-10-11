@@ -1,0 +1,64 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:vulpix",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0037_vulpix/vulpix",
+        "shiny": "textures/pokemon/0037_vulpix/vulpix_shiny",
+        "alolan": "textures/pokemon/0037_vulpix/vulpix_alolan",
+        "alolan_shiny": "textures/pokemon/0037_vulpix/vulpix_alolan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.vulpix.geo",
+        "shiny": "geometry.vulpix.geo",
+        "alolan": "geometry.vulpix_alolan.geo",
+        "alolan_shiny": "geometry.vulpix_alolan.geo"
+      },
+      "animations": {
+        "vulpix.sleep": "animation.vulpix.sleep",
+        "vulpixmodel.singlebonelook": "animation.vulpixmodel.singlebonelook",
+        "vulpixmodel.quadrupedwalkanimation": "animation.vulpixmodel.quadrupedwalkanimation",
+        "vulpix.blink": "animation.vulpix.blink",
+        "controller.animation.vulpix.blink": "controller.animation.vulpix.blink",
+        "controller.animation.cobblemon.vulpix": "controller.animation.cobblemon.vulpix",
+        "vulpix_alolan.sleep": "animation.vulpix_alolan.sleep",
+        "vulpixalolanmodel.singlebonelook": "animation.vulpixalolanmodel.singlebonelook",
+        "vulpixalolanmodel.quadrupedwalkanimation": "animation.vulpixalolanmodel.quadrupedwalkanimation",
+        "vulpix_alolan.blink": "animation.vulpix_alolan.blink",
+        "controller.animation.vulpix_alolan.blink": "controller.animation.vulpix_alolan.blink",
+        "controller.animation.cobblemon.vulpix_alolan": "controller.animation.cobblemon.vulpix_alolan"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.vulpix"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.vulpix.blink",
+          {
+            "controller.animation.cobblemon.vulpix": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.vulpix_alolan.blink",
+          {
+            "controller.animation.cobblemon.vulpix_alolan": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_vulpix = -1.0;",
+          "v.state_of_vulpix_alolan = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

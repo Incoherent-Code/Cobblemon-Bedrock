@@ -1,0 +1,564 @@
+{
+  "minLevel": 9,
+  "maxLevel": 21,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 9,
+      "maxLevel": 21
+    },
+    "1": {
+      "minLevel": 9,
+      "maxLevel": 21
+    }
+  },
+  "name": "Spewpa",
+  "nationalPokedexNumber": 665,
+  "baseStats": {
+    "hp": 45,
+    "attack": 22,
+    "defence": 60,
+    "special_attack": 27,
+    "special_defence": 30,
+    "speed": 29
+  },
+  "maleRatio": 0.5,
+  "catchRate": 120,
+  "baseScale": 0.8,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.7,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "abilities": [
+    "shedskin",
+    "h:friendguard"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:harden",
+    "1:protect",
+    "tm:irondefense",
+    "tm:pounce",
+    "tm:protect",
+    "tm:strugglebug",
+    "tm:terablast",
+    "tutor:bugbite",
+    "tutor:electroweb",
+    "tutor:irondefense"
+  ],
+  "evolutions": [
+    {
+      "id": "spewpa_vivillon_archipelago",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=archipelago",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_continental",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=continental",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_elegant",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=elegant",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_fancy",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=fancy",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_garden",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=garden",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_high_plains",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=high-plains",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_icy_snow",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=icy-snow",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_jungle",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=jungle",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_marine",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=marine",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_meadow",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=meadow",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_modern",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=modern",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "structure"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_monsoon",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=monsoon",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_ocean",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=ocean",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_polar",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=polar",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_river",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=river",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_sandstorm",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=sandstorm",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_savanna",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=savanna",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_sun",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=sun",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_tundra",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=tundra",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_inferno",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=inferno",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_void",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=void",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    },
+    {
+      "id": "spewpa_vivillon_forsaken",
+      "variant": "level_up",
+      "result": "vivillon vivillon_wings=forsaken",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "gust"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 12
+        },
+        {
+          "variant": "biome"
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": false,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": false,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": false,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.spewpa.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:bright_powder",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 3.0,
+  "weight": 84.0
+}

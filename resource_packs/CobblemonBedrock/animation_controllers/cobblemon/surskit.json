@@ -1,0 +1,113 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.surskit.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_surskit_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_surskit_blink = q.life_time + 1; return (q.life_time > v.next_quirk_surskit_blink) && (v.state_of_surskit == 0 || v.state_of_surskit == 1 || v.state_of_surskit == 2 || v.state_of_surskit == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "surskit.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_surskit_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_surskit_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.surskit": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "surskit.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_surskit = 0; return (q.is_moving) && (!q.is_in_water);"
+            },
+            {
+              "waterstand": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "waterwalk": "(q.is_moving) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "surskit.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_surskit = 1; return (!q.is_moving) && (!q.is_in_water);"
+            },
+            {
+              "waterstand": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "waterwalk": "(q.is_moving) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "waterstand": {
+          "animations": [
+            "surskit.ground_idle",
+            "surskit.waterstand.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_surskit = 2; return (!q.is_moving) && (!q.is_in_water);"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.is_in_water)"
+            },
+            {
+              "waterwalk": "(q.is_moving) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "waterwalk": {
+          "animations": [
+            "surskit.ground_walk",
+            "surskit.waterwalk.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_surskit = 3; return (!q.is_moving) && (!q.is_in_water);"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.is_in_water)"
+            },
+            {
+              "waterstand": "(!q.is_moving) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

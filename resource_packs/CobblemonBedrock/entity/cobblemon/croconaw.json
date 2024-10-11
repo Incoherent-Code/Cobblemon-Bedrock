@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:croconaw",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0159_croconaw/croconaw",
+        "shiny": "textures/pokemon/0159_croconaw/croconaw_shiny"
+      },
+      "geometry": {
+        "base": "geometry.croconaw.geo",
+        "shiny": "geometry.croconaw.geo"
+      },
+      "animations": {
+        "croconaw.sleep": "animation.croconaw.sleep",
+        "croconaw.water_sleep": "animation.croconaw.water_sleep",
+        "croconawmodel.singlebonelook": "animation.croconawmodel.singlebonelook",
+        "croconaw.ground_idle": "animation.croconaw.ground_idle",
+        "croconaw.ground_walk": "animation.croconaw.ground_walk",
+        "croconaw.water_idle": "animation.croconaw.water_idle",
+        "croconaw.water_swim": "animation.croconaw.water_swim",
+        "croconaw.battle_idle": "animation.croconaw.battle_idle",
+        "croconaw.surfacewater_idle": "animation.croconaw.surfacewater_idle",
+        "croconaw.water_surface_idle.transform": "animation.croconaw.water_surface_idle.transform",
+        "croconaw.surfacewater_swim": "animation.croconaw.surfacewater_swim",
+        "croconaw.water_surface_swim.transform": "animation.croconaw.water_surface_swim.transform",
+        "croconaw.blink": "animation.croconaw.blink",
+        "controller.animation.croconaw.blink": "controller.animation.croconaw.blink",
+        "controller.animation.cobblemon.croconaw": "controller.animation.cobblemon.croconaw"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.croconaw"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.croconaw.blink",
+          {
+            "controller.animation.cobblemon.croconaw": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_croconaw = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

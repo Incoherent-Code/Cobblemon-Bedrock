@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:typhlosion",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0157_typhlosion/typhlosion",
+        "shiny": "textures/pokemon/0157_typhlosion/typhlosion_shiny",
+        "base_emissive": "textures/pokemon/0157_typhlosion/typhlosion_fire_emissive",
+        "shiny_emissive": "textures/pokemon/0157_typhlosion/typhlosion_fire_emissive"
+      },
+      "geometry": {
+        "base": "geometry.typhlosion.geo",
+        "shiny": "geometry.typhlosion.geo"
+      },
+      "animations": {
+        "typhlosion.sleep": "animation.typhlosion.sleep",
+        "typhlosionmodel.singlebonelook": "animation.typhlosionmodel.singlebonelook",
+        "typhlosion.ground_idle": "animation.typhlosion.ground_idle",
+        "typhlosion.ground_walk": "animation.typhlosion.ground_walk",
+        "typhlosion.battle_idle": "animation.typhlosion.battle_idle",
+        "typhlosion.blink": "animation.typhlosion.blink",
+        "controller.animation.typhlosion.blink": "controller.animation.typhlosion.blink",
+        "controller.animation.cobblemon.typhlosion": "controller.animation.cobblemon.typhlosion"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.typhlosion_emissive",
+        "controller.render.cobblemon.typhlosion"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.typhlosion.blink",
+          {
+            "controller.animation.cobblemon.typhlosion": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_typhlosion = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

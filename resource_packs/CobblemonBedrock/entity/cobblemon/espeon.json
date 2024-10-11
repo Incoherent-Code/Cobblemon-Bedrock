@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:espeon",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0196_espeon/espeon",
+        "shiny": "textures/pokemon/0196_espeon/espeon_shiny",
+        "base_emissive": "textures/pokemon/0196_espeon/espeon_emissive",
+        "shiny_emissive": "textures/pokemon/0196_espeon/espeon_emissive"
+      },
+      "geometry": {
+        "base": "geometry.espeon.geo",
+        "shiny": "geometry.espeon.geo"
+      },
+      "animations": {
+        "espeonmodel.singlebonelook": "animation.espeonmodel.singlebonelook",
+        "espeon.ground_idle": "animation.espeon.ground_idle",
+        "espeon.ground_run": "animation.espeon.ground_run",
+        "espeon.blink": "animation.espeon.blink",
+        "controller.animation.espeon.blink": "controller.animation.espeon.blink",
+        "controller.animation.cobblemon.espeon": "controller.animation.cobblemon.espeon"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.espeon_emissive",
+        "controller.render.cobblemon.espeon"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.espeon.blink",
+          {
+            "controller.animation.cobblemon.espeon": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_espeon = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

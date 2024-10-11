@@ -1,0 +1,59 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:mightyena",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0262_mightyena/mightyena",
+        "shiny": "textures/pokemon/0262_mightyena/mightyena_shiny"
+      },
+      "geometry": {
+        "base": "geometry.mightyena.geo",
+        "shiny": "geometry.mightyena.geo"
+      },
+      "animations": {
+        "mightyena.sleep": "animation.mightyena.sleep",
+        "mightyenamodel.singlebonelook": "animation.mightyenamodel.singlebonelook",
+        "mightyena.ground_idle": "animation.mightyena.ground_idle",
+        "mightyena.ground_walk": "animation.mightyena.ground_walk",
+        "mightyena.battle_idle": "animation.mightyena.battle_idle",
+        "mightyena.blink": "animation.mightyena.blink",
+        "controller.animation.mightyena.blink": "controller.animation.mightyena.blink",
+        "mightyena.quirk": "animation.mightyena.quirk",
+        "controller.animation.mightyena.laugh_out_battle": "controller.animation.mightyena.laugh_out_battle",
+        "controller.animation.mightyena.laugh_in_battle": "controller.animation.mightyena.laugh_in_battle",
+        "mightyena.sleep_quirk": "animation.mightyena.sleep_quirk",
+        "controller.animation.mightyena.sleep_quirk": "controller.animation.mightyena.sleep_quirk",
+        "controller.animation.cobblemon.mightyena": "controller.animation.cobblemon.mightyena"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.mightyena"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.mightyena.blink",
+          "controller.animation.mightyena.laugh_out_battle",
+          "controller.animation.mightyena.laugh_in_battle",
+          "controller.animation.mightyena.sleep_quirk",
+          {
+            "controller.animation.cobblemon.mightyena": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_mightyena = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

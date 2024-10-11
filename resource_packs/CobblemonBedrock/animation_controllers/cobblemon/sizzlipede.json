@@ -1,0 +1,36 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.sizzlipede": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "sizzlipedemodel.singlebonelook"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_sizzlipede = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "sizzlipedemodel.singlebonelook"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_sizzlipede = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

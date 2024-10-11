@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:marshtomp",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0259_marshtomp/marshtomp",
+        "shiny": "textures/pokemon/0259_marshtomp/marshtomp_shiny"
+      },
+      "geometry": {
+        "base": "geometry.marshtomp.geo",
+        "shiny": "geometry.marshtomp.geo"
+      },
+      "animations": {
+        "marshtompmodel.singlebonelook": "animation.marshtompmodel.singlebonelook",
+        "marshtomp.ground_idle": "animation.marshtomp.ground_idle",
+        "marshtompmodel.bipedwalkanimation": "animation.marshtompmodel.bipedwalkanimation",
+        "marshtomp.blink": "animation.marshtomp.blink",
+        "controller.animation.marshtomp.blink": "controller.animation.marshtomp.blink",
+        "controller.animation.cobblemon.marshtomp": "controller.animation.cobblemon.marshtomp"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.marshtomp"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.marshtomp.blink",
+          {
+            "controller.animation.cobblemon.marshtomp": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_marshtomp = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

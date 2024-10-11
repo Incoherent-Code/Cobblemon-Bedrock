@@ -1,0 +1,162 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.noctowlmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.noctowl.ground_idle": {
+      "loop": true,
+      "bones": {
+        "waist": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            -13.17581,
+            -0.77164,
+            -1.53785
+          ]
+        },
+        "neck": {
+          "rotation": [
+            -10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            78.36626,
+            12.53918,
+            -86.31473
+          ]
+        },
+        "wing2_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "wing3_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -45.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            78.3663,
+            "--12.5392",
+            86.3147
+          ]
+        },
+        "wing3_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            45.0
+          ]
+        },
+        "foot_right": {
+          "rotation": [
+            0.0,
+            32.5,
+            0.0
+          ]
+        },
+        "toeback_right": {
+          "rotation": [
+            0.0,
+            -22.5,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            0.0,
+            -32.5,
+            0.0
+          ]
+        },
+        "toeback_left": {
+          "rotation": [
+            0.0,
+            22.5,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.noctowl.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelids": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyes_open": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

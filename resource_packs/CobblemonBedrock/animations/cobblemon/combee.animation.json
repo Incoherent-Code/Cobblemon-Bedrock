@@ -1,0 +1,279 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.combee.air_sleep": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            "math.sin(q.anim_time*90*2)*2",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "math.sin(q.anim_time*90*.5)*0.5+math.sin(q.anim_time*90*1)*1+1.5",
+            "math.sin(q.anim_time*90*.5)*0.5"
+          ]
+        },
+        "eyelids_right": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "antenna_right": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "antenna_right2": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            0.0,
+            "45-30*(math.sin(q.anim_time*90*2*3)*1+1)",
+            10.0
+          ]
+        },
+        "eyelids_gender": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "eyelids_left": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "antenna_left": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "antenna_left2": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            0.0,
+            "-45+30*(math.sin(q.anim_time*90*2*3)*1+1)",
+            -10.0
+          ]
+        }
+      }
+    },
+    "animation.combee.air_idle": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            "math.sin(q.anim_time*90*2)*2",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "math.sin(q.anim_time*90*1)*0.5+math.sin(q.anim_time*90*2)*1+1.5",
+            "math.sin(q.anim_time*90*1)*0.5"
+          ]
+        },
+        "antenna_right": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "antenna_right2": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            0.0,
+            "45-30*(math.sin(q.anim_time*90*4*6)*1+1)",
+            10.0
+          ]
+        },
+        "antenna_left": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "antenna_left2": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            0.0,
+            "-45+30*(math.sin(q.anim_time*90*4*6)*1+1)",
+            -10.0
+          ]
+        }
+      }
+    },
+    "animation.combee.air_fly": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            "math.sin(q.anim_time*90*4)*4+17.75",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "math.sin(q.anim_time*90*1)*0.75+math.sin(q.anim_time*90*2)*1.5+1.5",
+            "math.sin(q.anim_time*90*1.5)*0.5"
+          ]
+        },
+        "antenna_right": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "antenna_right2": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            0.0,
+            "45-30*(math.sin(q.anim_time*90*4*6)*1.5+1)",
+            10.0
+          ]
+        },
+        "antenna_left": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "antenna_left2": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            0.0,
+            "-45+30*(math.sin(q.anim_time*90*4*6)*1.5+1)",
+            -10.0
+          ]
+        }
+      }
+    },
+    "animation.combee.blink_right": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelids_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "animation.combee.blink_gender": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelids_gender": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "animation.combee.blink_left": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelids_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

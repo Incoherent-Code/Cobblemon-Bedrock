@@ -1,0 +1,25 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:prism_scale"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "prism_scale"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.prism_scale"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:evolution_items"
+        ]
+      }
+    }
+  }
+}

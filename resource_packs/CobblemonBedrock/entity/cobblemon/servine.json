@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:servine",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0496_servine/servine",
+        "shiny": "textures/pokemon/0496_servine/servine_shiny"
+      },
+      "geometry": {
+        "base": "geometry.servine.geo",
+        "shiny": "geometry.servine.geo"
+      },
+      "animations": {
+        "servine.sleep": "animation.servine.sleep",
+        "servinemodel.singlebonelook": "animation.servinemodel.singlebonelook",
+        "servine.ground_idle": "animation.servine.ground_idle",
+        "servine.ground_walk": "animation.servine.ground_walk",
+        "servine.blink": "animation.servine.blink",
+        "controller.animation.servine.blink": "controller.animation.servine.blink",
+        "controller.animation.cobblemon.servine": "controller.animation.cobblemon.servine"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.servine"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.servine.blink",
+          {
+            "controller.animation.cobblemon.servine": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_servine = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

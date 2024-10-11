@@ -1,0 +1,384 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.glimmet.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "0+math.cos((query.anim_time) * 90 * 1) * 1",
+            -15.0,
+            0.0
+          ],
+          "position": [
+            -6.0,
+            -8.75,
+            -1.0
+          ]
+        },
+        "face": {
+          "rotation": [
+            "0+math.cos((query.anim_time) * 90 * 1) * -1",
+            0.0,
+            0.0
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "petal_top_rotation": {
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_top2": {
+          "rotation": [
+            37.5,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_bottom_rotation": {
+          "rotation": [
+            "-87.5+math.cos((query.anim_time) * 90 * 1) * -1",
+            -2.0,
+            0.0
+          ]
+        },
+        "petal_top_left_rotation": {
+          "rotation": [
+            0.0,
+            0.0,
+            12.5
+          ]
+        },
+        "petal_top_left2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_bottom_left_rotation": {
+          "rotation": [
+            -28.82946,
+            -40.7758,
+            -7.94616
+          ],
+          "position": [
+            0.5,
+            -1.0,
+            0.0
+          ]
+        },
+        "petal_bottom_left2": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_top_right_rotation": {
+          "rotation": [
+            -2.5,
+            0.0,
+            -15.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.04
+          ]
+        },
+        "petal_top_right2": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_bottom_right1": {
+          "rotation": [
+            -14.54771,
+            55.75322,
+            13.84827
+          ],
+          "position": [
+            -0.25,
+            -1.0,
+            0.0
+          ]
+        },
+        "petal_bottom_right2": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "stem": {
+          "rotation": [
+            0.0,
+            20.0,
+            0.0
+          ]
+        },
+        "stem2": {
+          "rotation": [
+            "10+math.cos((query.anim_time) * 90 * 1) * -1",
+            25.0,
+            0.0
+          ]
+        },
+        "bulb": {
+          "rotation": [
+            -18.76479,
+            55.42658,
+            -22.42149
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -15.0,
+            22.5,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.glimmet.ground_idle": {
+      "loop": true,
+      "bones": {
+        "petal_top_right2": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_bottom2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_bottom_left2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_bottom_right2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            "0+math.cos((query.anim_time) * 90 * 1/2) * 4",
+            "0+math.cos((query.anim_time) * 90 * 1) * 4",
+            "0+math.cos((query.anim_time) * 90 * 1 - 90) * 2"
+          ],
+          "position": [
+            0.0,
+            "16+math.cos((query.anim_time) * 90 * 1) * 0.3",
+            -3.0
+          ]
+        },
+        "stem": {
+          "rotation": [
+            -45.0,
+            "0+math.cos((query.anim_time) * 90 * 1 - 60) * 4",
+            0.0
+          ]
+        },
+        "stem2": {
+          "rotation": [
+            -10.0,
+            "0+math.cos((query.anim_time) * 90 * 1 - 120) * 6",
+            0.0
+          ]
+        },
+        "bulb": {
+          "rotation": [
+            -10.0,
+            "0+math.cos((query.anim_time) * 90 * 1 - 180) * 8",
+            0.0
+          ]
+        },
+        "petal_top2": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_top_left2": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            0.0,
+            "0+math.cos((query.anim_time) * 90 * 1 - 240) * 14",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.glimmet.ground_walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "0+math.cos((query.anim_time) * 90 * 8 - 90) * 3",
+            0.0,
+            "0+math.cos((query.anim_time) * 90 * 1 - 90) * 5"
+          ],
+          "position": [
+            0.0,
+            "6+math.cos((query.anim_time) * 90 * 8) * 0.6",
+            -7.0
+          ]
+        },
+        "petal_top2": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_bottom2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_top_left2": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_bottom_left2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_top_right2": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "petal_bottom_right2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stem": {
+          "rotation": [
+            "-12.5+math.cos((query.anim_time) * 90 * 8 - 130) * 2",
+            "0+math.cos((query.anim_time) * 90 * 1 - 130) * -5",
+            0.0
+          ]
+        },
+        "stem2": {
+          "rotation": [
+            "-7.5+math.cos((query.anim_time) * 90 * 8 - 180) * 3",
+            0.0,
+            0.0
+          ]
+        },
+        "bulb": {
+          "rotation": [
+            "-7.5+math.cos((query.anim_time) * 90 * 8 - 225) * 6",
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "0+math.cos((query.anim_time) * 90 * 8 - 270) * 6",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.glimmet.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

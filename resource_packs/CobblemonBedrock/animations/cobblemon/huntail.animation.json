@@ -1,0 +1,231 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.huntailmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.huntail.ground_idle": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            0.9763,
+            0.21643,
+            -12.49816
+          ],
+          "position": [
+            0.0,
+            -0.5,
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            0.0,
+            0.0,
+            -12.5
+          ],
+          "position": [
+            0.0,
+            -0.5,
+            0.0
+          ]
+        },
+        "tail6": {
+          "rotation": [
+            0.0,
+            0.0,
+            -65.0
+          ],
+          "position": [
+            0.0,
+            0.5,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.huntail.water_idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "math.sin(q.anim_time*90+90)",
+            "2*math.sin(q.anim_time*90)",
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "-5*math.sin(q.anim_time*90+90)",
+            0.0,
+            0.0
+          ]
+        },
+        "fin_head": {
+          "rotation": [
+            "-5*math.sin(q.anim_time*90*2+135)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "-15*math.sin(q.anim_time*90+90)",
+            "10*math.sin(q.anim_time*90)",
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            "-25*math.sin(q.anim_time*90)",
+            "10*math.sin(q.anim_time*90-90)",
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            "-25*math.sin(q.anim_time*90-90)",
+            "10*math.sin(q.anim_time*90-90)",
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            "-25*math.sin(q.anim_time*90-135)",
+            "20*math.sin(q.anim_time*90-180)",
+            0.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            "-20*math.sin(q.anim_time*90+90-235)",
+            "15*math.sin(q.anim_time*90-180)",
+            0.0
+          ]
+        },
+        "tail6": {
+          "rotation": [
+            "-20*math.sin(q.anim_time*90+90-235)",
+            "10*math.sin(q.anim_time*90-180)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.huntail.water_swim": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            "math.sin(q.anim_time*2*90*1.3)",
+            "2*math.sin(q.anim_time*90*1.3)",
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "-10*math.sin(q.anim_time*90*1.3+90)",
+            "-10*math.sin(q.anim_time*2*90*1.3+90)",
+            0.0
+          ]
+        },
+        "fin_head": {
+          "rotation": [
+            "-5*math.sin(q.anim_time*90*2+135)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "-15*math.sin(q.anim_time*90*1.3+90)",
+            "10*math.sin(q.anim_time*2*1.3*90-90)",
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            "-25*math.sin(q.anim_time*90*1.3)",
+            "10*math.sin(q.anim_time*2*1.3*90-180)",
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            "-25*math.sin(q.anim_time*90*1.3-90)",
+            "10*math.sin(q.anim_time*2*1.3*90-180)",
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            "-25*math.sin(q.anim_time*90*1.3-135)",
+            "20*math.sin(q.anim_time*2*1.3*90-270)",
+            0.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            "-20*math.sin(q.anim_time*90*1.3+90-235)",
+            "15*math.sin(q.anim_time*2*1.3*90-270)",
+            0.0
+          ]
+        },
+        "tail6": {
+          "rotation": [
+            "-20*math.sin(q.anim_time*90*1.3+90-235)",
+            "10*math.sin(q.anim_time*2*1.3*90-270)",
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

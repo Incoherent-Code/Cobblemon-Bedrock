@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:heatmor",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0631_heatmor/heatmor",
+        "shiny": "textures/pokemon/0631_heatmor/heatmor_shiny"
+      },
+      "geometry": {
+        "base": "geometry.heatmor.geo",
+        "shiny": "geometry.heatmor.geo"
+      },
+      "animations": {
+        "heatmor.sleep": "animation.heatmor.sleep",
+        "heatmormodel.singlebonelook": "animation.heatmormodel.singlebonelook",
+        "heatmor.ground_idle": "animation.heatmor.ground_idle",
+        "heatmor.ground_walk": "animation.heatmor.ground_walk",
+        "heatmor.blink": "animation.heatmor.blink",
+        "controller.animation.heatmor.blink": "controller.animation.heatmor.blink",
+        "controller.animation.cobblemon.heatmor": "controller.animation.cobblemon.heatmor"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.heatmor"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.heatmor.blink",
+          {
+            "controller.animation.cobblemon.heatmor": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_heatmor = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

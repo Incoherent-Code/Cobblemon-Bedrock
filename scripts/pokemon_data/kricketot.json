@@ -1,0 +1,149 @@
+{
+  "minLevel": 1,
+  "maxLevel": 19,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ],
+    "2": [
+      "female"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "night",
+      "minLevel": 1,
+      "maxLevel": 19
+    }
+  },
+  "name": "Kricketot",
+  "nationalPokedexNumber": 401,
+  "baseStats": {
+    "hp": 37,
+    "attack": 25,
+    "defence": 41,
+    "special_attack": 25,
+    "special_defence": 41,
+    "speed": 25
+  },
+  "maleRatio": 0.5,
+  "catchRate": 255,
+  "baseScale": 0.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.9,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "abilities": [
+    "shedskin",
+    "h:runaway"
+  ],
+  "shoulderMountable": true,
+  "moves": [
+    "1:bide",
+    "1:growl",
+    "1:tackle",
+    "6:strugglebug",
+    "16:bugbite",
+    "tm:strugglebug",
+    "tm:terablast",
+    "tutor:bugbite",
+    "tutor:endeavor",
+    "tutor:mudslap",
+    "tutor:snore",
+    "tutor:stringshot",
+    "tutor:strugglebug",
+    "tutor:uproar"
+  ],
+  "evolutions": [
+    {
+      "id": "kricketot_kricketune",
+      "variant": "level_up",
+      "result": "kricketune",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "furycutter"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 10
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.kricketot.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:coba_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 3.0,
+  "weight": 22.0
+}

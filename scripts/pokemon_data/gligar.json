@@ -1,0 +1,285 @@
+{
+  "minLevel": 18,
+  "maxLevel": 43,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "night",
+      "minLevel": 18,
+      "maxLevel": 43
+    },
+    "1": {
+      "minLevel": 18,
+      "maxLevel": 43
+    }
+  },
+  "name": "Gligar",
+  "nationalPokedexNumber": 207,
+  "baseStats": {
+    "hp": 65,
+    "attack": 75,
+    "defence": 105,
+    "special_attack": 35,
+    "special_defence": 65,
+    "speed": 85
+  },
+  "maleRatio": 0.5,
+  "catchRate": 60,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.7,
+    "height": 0.9,
+    "fixed": false
+  },
+  "primaryType": "ground",
+  "secondaryType": "flying",
+  "abilities": [
+    "hypercutter",
+    "sandveil",
+    "h:immunity"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:poisonsting",
+    "4:sandattack",
+    "7:harden",
+    "10:knockoff",
+    "13:quickattack",
+    "16:furycutter",
+    "19:feintattack",
+    "22:acrobatics",
+    "27:slash",
+    "30:uturn",
+    "35:screech",
+    "40:xscissor",
+    "45:skyuppercut",
+    "50:swordsdance",
+    "55:guillotine",
+    "egg:agility",
+    "egg:batonpass",
+    "egg:counter",
+    "egg:crosspoison",
+    "egg:doubleedge",
+    "egg:feint",
+    "egg:metalclaw",
+    "egg:nightslash",
+    "egg:poisontail",
+    "egg:powertrick",
+    "egg:razorwind",
+    "egg:rockclimb",
+    "egg:sandtomb",
+    "egg:wingattack",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:attract",
+    "tm:brickbreak",
+    "tm:bulldoze",
+    "tm:captivate",
+    "tm:confide",
+    "tm:cut",
+    "tm:darkpulse",
+    "tm:defog",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:fling",
+    "tm:frustration",
+    "tm:hiddenpower",
+    "tm:honeclaws",
+    "tm:irontail",
+    "tm:naturalgift",
+    "tm:payback",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:roost",
+    "tm:round",
+    "tm:sandstorm",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:stealthrock",
+    "tm:steelwing",
+    "tm:stoneedge",
+    "tm:strength",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:taunt",
+    "tm:thief",
+    "tm:torment",
+    "tm:toxic",
+    "tm:uturn",
+    "tm:venoshock",
+    "tm:xscissor",
+    "tutor:aquatail",
+    "tutor:attract",
+    "tutor:bugbite",
+    "tutor:counter",
+    "tutor:curse",
+    "tutor:cut",
+    "tutor:darkpulse",
+    "tutor:defog",
+    "tutor:detect",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:dreameater",
+    "tutor:earthpower",
+    "tutor:endure",
+    "tutor:feint",
+    "tutor:feintattack",
+    "tutor:frustration",
+    "tutor:furycutter",
+    "tutor:guillotine",
+    "tutor:harden",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:irontail",
+    "tutor:knockoff",
+    "tutor:metalclaw",
+    "tutor:mimic",
+    "tutor:poisonsting",
+    "tutor:protect",
+    "tutor:quickattack",
+    "tutor:razorwind",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:roost",
+    "tutor:sandattack",
+    "tutor:sandstorm",
+    "tutor:screech",
+    "tutor:slash",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:snore",
+    "tutor:stealthrock",
+    "tutor:strength",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:swordsdance",
+    "tutor:tailwind",
+    "tutor:thief",
+    "tutor:throatchop",
+    "tutor:toxic",
+    "tutor:wingattack"
+  ],
+  "evolutions": [
+    {
+      "id": "gligar_gliscor",
+      "variant": "level_up",
+      "result": "gliscor",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "held_item",
+          "itemCondition": "cobblemon:razor_fang"
+        },
+        {
+          "variant": "time_range",
+          "range": "night"
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.gligar.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "cobblemon:razor_fang",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:yache_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 11.0,
+  "weight": 648.0
+}

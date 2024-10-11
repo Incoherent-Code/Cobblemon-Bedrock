@@ -1,0 +1,165 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.kangaskhanmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.kangaskhan.ground_idle": {
+      "loop": true,
+      "bones": {
+        "tail": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            13.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            15.0,
+            -10.0,
+            55.0
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            0.0,
+            60.0,
+            0.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            15.0,
+            10.0,
+            -55.0
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            0.0,
+            -60.0,
+            0.0
+          ]
+        },
+        "leftear": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "rightear": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "headbaby": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftarmbaby": {
+          "rotation": [
+            0.0,
+            60.0,
+            0.0
+          ]
+        },
+        "rightarmbaby": {
+          "rotation": [
+            0.0,
+            -60.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.kangaskhan.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "animation.kangaskhan.blink2": {
+      "loop": true,
+      "bones": {
+        "eyelid_left2": {
+          "position": [
+            0.1,
+            0.0,
+            0.0
+          ]
+        },
+        "eyelid_right2": {
+          "position": [
+            -0.1,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

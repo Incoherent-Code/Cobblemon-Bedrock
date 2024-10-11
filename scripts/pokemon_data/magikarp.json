@@ -1,0 +1,166 @@
+{
+  "minLevel": 1,
+  "maxLevel": 20,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ],
+    "2": [
+      "female"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 1,
+      "maxLevel": 20
+    },
+    "1": {
+      "minLevel": 1,
+      "maxLevel": 20
+    },
+    "2": {
+      "minLevel": 1,
+      "maxLevel": 20
+    },
+    "3": {
+      "minLevel": 1,
+      "maxLevel": 20
+    }
+  },
+  "name": "Magikarp",
+  "nationalPokedexNumber": 129,
+  "baseStats": {
+    "hp": 20,
+    "attack": 10,
+    "defence": 55,
+    "special_attack": 15,
+    "special_defence": 20,
+    "speed": 80
+  },
+  "maleRatio": 0.5,
+  "catchRate": 255,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "slow",
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "abilities": [
+    "swiftswim",
+    "h:rattled"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:splash",
+    "15:tackle",
+    "25:flail",
+    "tm:bounce",
+    "tm:hydropump",
+    "tutor:bounce",
+    "tutor:celebrate",
+    "tutor:flail",
+    "tutor:happyhour",
+    "tutor:hydropump",
+    "tutor:splash",
+    "tutor:tackle"
+  ],
+  "evolutions": [
+    {
+      "id": "magikarp_gyarados",
+      "variant": "level_up",
+      "result": "gyarados",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "bite"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 20
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": true,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.1,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": false,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.magikarp.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:salmon"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:wacan_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 5,
+  "eggGroups": [
+    "water_2",
+    "dragon"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 9.0,
+  "weight": 100.0
+}

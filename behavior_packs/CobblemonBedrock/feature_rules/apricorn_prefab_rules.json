@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "cobblemon:apricorn_prefab_rules",
+      "places_feature": "cobblemon:apricorn_prefab"
+    },
+    "conditions": {
+      "placement_pass": "first_pass",
+      "minecraft:biome_filter": {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "animal"
+      }
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": {
+        "extent": [0, 16],
+        "distribution": "uniform"
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)",
+      "z": {
+        "extent": [0, 16],
+        "distribution": "uniform"
+      },
+      "scatter_chance": {
+        "numerator": 1,
+        "denominator": 25
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:braixen",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0654_braixen/braixen",
+        "shiny": "textures/pokemon/0654_braixen/braixen_shiny",
+        "base_flame_uv": "textures/pokemon/0654_braixen/base_flame_uv",
+        "shiny_flame_uv": "textures/pokemon/0654_braixen/shiny_flame_uv"
+      },
+      "geometry": {
+        "base": "geometry.braixen.geo",
+        "shiny": "geometry.braixen.geo"
+      },
+      "animations": {
+        "braixenmodel.singlebonelook": "animation.braixenmodel.singlebonelook",
+        "braixen.ground_idle": "animation.braixen.ground_idle",
+        "braixen.standing.transform": "animation.braixen.standing.transform",
+        "braixen.ground_walk": "animation.braixen.ground_walk",
+        "braixen.walk.transform": "animation.braixen.walk.transform",
+        "braixen.battle_idle": "animation.braixen.battle_idle",
+        "braixen.battleidle.transform": "animation.braixen.battleidle.transform",
+        "braixen.blink": "animation.braixen.blink",
+        "controller.animation.braixen.blink": "controller.animation.braixen.blink",
+        "controller.animation.cobblemon.braixen": "controller.animation.cobblemon.braixen"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.braixen_flame",
+        "controller.render.cobblemon.braixen"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.braixen.blink",
+          {
+            "controller.animation.cobblemon.braixen": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_braixen = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:swellow",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0277_swellow/swellow",
+        "shiny": "textures/pokemon/0277_swellow/swellow_shiny"
+      },
+      "geometry": {
+        "base": "geometry.swellow.geo",
+        "shiny": "geometry.swellow.geo"
+      },
+      "animations": {
+        "swellow.sleep": "animation.swellow.sleep",
+        "swellowmodel.singlebonelook": "animation.swellowmodel.singlebonelook",
+        "swellow.ground_idle": "animation.swellow.ground_idle",
+        "swellow.air_idle": "animation.swellow.air_idle",
+        "swellow.air_fly": "animation.swellow.air_fly",
+        "swellow.ground_walk": "animation.swellow.ground_walk",
+        "swellow.blink": "animation.swellow.blink",
+        "controller.animation.swellow.blink": "controller.animation.swellow.blink",
+        "controller.animation.cobblemon.swellow": "controller.animation.cobblemon.swellow"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.swellow"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.swellow.blink",
+          {
+            "controller.animation.cobblemon.swellow": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_swellow = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

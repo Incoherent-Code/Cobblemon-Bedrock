@@ -1,0 +1,436 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.scythermodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.scyther.ground_idle": {
+      "loop": true,
+      "bones": {
+        "abdomen": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "spine": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "thorax": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_shoulder": {
+          "rotation": [
+            0.88045,
+            9.96156,
+            42.57673
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -10.80522,
+            18.58877,
+            8.52371
+          ]
+        },
+        "left_upper_leg": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_scythe": {
+          "rotation": [
+            -27.73195,
+            47.78189,
+            10.5603
+          ]
+        },
+        "left_wing": {
+          "rotation": [
+            0.0,
+            22.5,
+            0.0
+          ]
+        },
+        "left_upper_wing": {
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "left_lower_wing": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "right_wing": {
+          "rotation": [
+            0.0,
+            -22.5,
+            0.0
+          ]
+        },
+        "right_shoulder": {
+          "rotation": [
+            0.88045,
+            -9.96156,
+            -42.57673
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -10.80522,
+            -18.58877,
+            -8.52371
+          ]
+        },
+        "right_scythe": {
+          "rotation": [
+            -27.73195,
+            -47.78189,
+            -10.5603
+          ]
+        },
+        "right_upper_wing": {
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "right_lower_wing": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.scythermodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "right_upper_leg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.7 + 180) * 0.85 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "left_upper_leg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.7) *  0.85 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.scyther.air_idle": {
+      "loop": true,
+      "bones": {
+        "abdomen": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "spine": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "thorax": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_shoulder": {
+          "rotation": [
+            0.87473,
+            -7.53642,
+            42.30968
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            1.69478,
+            18.58877,
+            8.52371
+          ]
+        },
+        "left_upper_leg": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_scythe": {
+          "rotation": [
+            -24.49291,
+            41.04285,
+            15.17943
+          ]
+        },
+        "left_wing": {
+          "rotation": [
+            0.0,
+            62.5,
+            0.0
+          ]
+        },
+        "left_upper_wing": {
+          "rotation": [
+            47.5,
+            0.0,
+            0.0
+          ]
+        },
+        "left_lower_wing": {
+          "rotation": [
+            -17.5,
+            0.0,
+            0.0
+          ]
+        },
+        "right_wing": {
+          "rotation": [
+            0.0,
+            -62.5,
+            0.0
+          ]
+        },
+        "right_shoulder": {
+          "rotation": [
+            0.87473,
+            7.53642,
+            -42.30968
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            1.69478,
+            -18.58877,
+            -8.52371
+          ]
+        },
+        "right_scythe": {
+          "rotation": [
+            -24.49291,
+            -41.04285,
+            -15.17943
+          ]
+        },
+        "right_upper_wing": {
+          "rotation": [
+            47.5,
+            0.0,
+            0.0
+          ]
+        },
+        "right_lower_wing": {
+          "rotation": [
+            -17.5,
+            0.0,
+            0.0
+          ]
+        },
+        "left_lower_leg": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left1": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left2": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left3": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "toes_left": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "right_upper_leg": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_lower_leg": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right1": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right2": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right3": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "toes_right": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.scyther.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "left_eyelid": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "right_eyelid": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:joltik",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0595_joltik/joltik",
+        "shiny": "textures/pokemon/0595_joltik/joltik_shiny",
+        "base_glow": "textures/pokemon/0595_joltik/joltik_eye_emissives",
+        "shiny_glow": "textures/pokemon/0595_joltik/joltik_eye_emissives"
+      },
+      "geometry": {
+        "base": "geometry.joltik.geo",
+        "shiny": "geometry.joltik.geo"
+      },
+      "animations": {
+        "joltik.ground_idle": "animation.joltik.ground_idle",
+        "joltik.ground_walk": "animation.joltik.ground_walk",
+        "joltik.blink1": "animation.joltik.blink1",
+        "controller.animation.joltik.blink1": "controller.animation.joltik.blink1",
+        "joltik.blink2": "animation.joltik.blink2",
+        "controller.animation.joltik.blink2": "controller.animation.joltik.blink2",
+        "controller.animation.cobblemon.joltik": "controller.animation.cobblemon.joltik"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.joltik_glow",
+        "controller.render.cobblemon.joltik"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.joltik.blink1",
+          "controller.animation.joltik.blink2",
+          {
+            "controller.animation.cobblemon.joltik": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_joltik = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

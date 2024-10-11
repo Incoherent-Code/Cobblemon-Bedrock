@@ -1,0 +1,148 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.lanturn.ground_idle": {
+      "loop": true,
+      "bones": {
+        "stem": {
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "stem2": {
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "stem3": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stem4": {
+          "rotation": [
+            17.5,
+            0.0,
+            0.0
+          ]
+        },
+        "stem5": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stem6": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stem9": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stem8": {
+          "rotation": [
+            -27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "stem7": {
+          "rotation": [
+            -47.5,
+            0.0,
+            0.0
+          ]
+        },
+        "stem10": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.lanturn.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

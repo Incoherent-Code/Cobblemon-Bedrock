@@ -1,0 +1,16 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "cobblemon_animated_emissive:entity_alphatest": {
+      "+defines": [
+        "USE_EMISSIVE",
+        "USE_UV_ANIM"
+      ]
+    },
+    "cobblemon_animated:entity_alphatest": {
+      "+defines": [
+        "USE_UV_ANIM"
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:steenee",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0762_steenee/steenee",
+        "shiny": "textures/pokemon/0762_steenee/steenee_shiny"
+      },
+      "geometry": {
+        "base": "geometry.steenee.geo",
+        "shiny": "geometry.steenee.geo"
+      },
+      "animations": {
+        "steeneemodel.singlebonelook": "animation.steeneemodel.singlebonelook",
+        "steenee.ground_idle": "animation.steenee.ground_idle",
+        "steeneemodel.bimanualswinganimation": "animation.steeneemodel.bimanualswinganimation",
+        "steeneemodel.bipedwalkanimation": "animation.steeneemodel.bipedwalkanimation",
+        "steenee.blink": "animation.steenee.blink",
+        "controller.animation.steenee.blink": "controller.animation.steenee.blink",
+        "controller.animation.cobblemon.steenee": "controller.animation.cobblemon.steenee"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.steenee"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.steenee.blink",
+          {
+            "controller.animation.cobblemon.steenee": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_steenee = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

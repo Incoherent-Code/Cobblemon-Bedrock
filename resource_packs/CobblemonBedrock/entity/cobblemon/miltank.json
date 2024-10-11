@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:miltank",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0241_miltank/miltank",
+        "shiny": "textures/pokemon/0241_miltank/miltank_shiny",
+        "mooshtank_red": "textures/pokemon/0241_miltank/miltank_red_mushroom",
+        "mooshtank_red_shiny": "textures/pokemon/0241_miltank/miltank_red_mushroom_shiny",
+        "mooshtank_brown": "textures/pokemon/0241_miltank/miltank_brown_mushroom",
+        "mooshtank_brown_shiny": "textures/pokemon/0241_miltank/miltank_brown_mushroom_shiny"
+      },
+      "geometry": {
+        "base": "geometry.miltank.geo",
+        "shiny": "geometry.miltank.geo",
+        "mooshtank_red": "geometry.mooshtank.geo",
+        "mooshtank_red_shiny": "geometry.mooshtank.geo",
+        "mooshtank_brown": "geometry.mooshtank.geo",
+        "mooshtank_brown_shiny": "geometry.mooshtank.geo"
+      },
+      "animations": {
+        "miltank.ground_sleep": "animation.miltank.ground_sleep",
+        "miltankmodel.singlebonelook": "animation.miltankmodel.singlebonelook",
+        "miltank.ground_idle": "animation.miltank.ground_idle",
+        "miltank.ground_walk": "animation.miltank.ground_walk",
+        "miltank.blink": "animation.miltank.blink",
+        "controller.animation.miltank.blink": "controller.animation.miltank.blink",
+        "controller.animation.cobblemon.miltank": "controller.animation.cobblemon.miltank"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.miltank"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.miltank.blink",
+          {
+            "controller.animation.cobblemon.miltank": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5"
+          }
+        ],
+        "initialize": [
+          "v.state_of_miltank = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

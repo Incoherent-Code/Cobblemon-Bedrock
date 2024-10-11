@@ -1,0 +1,127 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.rhydonmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.rhydon.ground_idle": {
+      "loop": true,
+      "bones": {
+        "jaw": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            45.0,
+            -10.0,
+            45.0
+          ]
+        },
+        "lefthand": {
+          "rotation": [
+            0.0,
+            22.5,
+            0.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            45.0,
+            10.0,
+            -45.0
+          ]
+        },
+        "righthand": {
+          "rotation": [
+            0.0,
+            -22.5,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            9.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            -26.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            -29.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.rhydonmodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "rightleg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6 + 180) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leftleg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.rhydonmodel.bimanualswinganimation": {
+      "loop": true,
+      "bones": {
+        "rightarm": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

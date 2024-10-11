@@ -1,0 +1,244 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.chatotmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.chatot.ground_idle": {
+      "loop": true,
+      "bones": {
+        "wing_left": {
+          "rotation": [
+            0.0,
+            -90.0,
+            90.0
+          ]
+        },
+        "wing_left2": {
+          "rotation": [
+            0.0,
+            45.0,
+            0.0
+          ]
+        },
+        "wing_left3": {
+          "rotation": [
+            0.0,
+            -45.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            0.0,
+            90.0,
+            -90.0
+          ]
+        },
+        "wing_right2": {
+          "rotation": [
+            0.0,
+            -45.0,
+            0.0
+          ]
+        },
+        "wing_right3": {
+          "rotation": [
+            0.0,
+            45.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.chatot.air_idle": {
+      "loop": true,
+      "bones": {
+        "wing_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            -5.0
+          ]
+        },
+        "wing_left2": {
+          "rotation": [
+            -1.10693,
+            12.45167,
+            -5.12076
+          ]
+        },
+        "wing_left3": {
+          "rotation": [
+            0.0,
+            -15.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ]
+        },
+        "wing_right2": {
+          "rotation": [
+            -1.10693,
+            -12.45167,
+            5.12076
+          ]
+        },
+        "wing_right3": {
+          "rotation": [
+            0.0,
+            15.0,
+            0.0
+          ]
+        },
+        "leg_left2": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_inner_left": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_center_left": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_outer_left": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right2": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_inner_right": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_center_right": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "toe_outer_right": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.chatot.blink": {
+      "animation_length": 0.08333,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.0833": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.0833": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:wyrdeer",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0899_wyrdeer/wyrdeer",
+        "shiny": "textures/pokemon/0899_wyrdeer/wyrdeer_shiny"
+      },
+      "geometry": {
+        "base": "geometry.wyrdeer.geo",
+        "shiny": "geometry.wyrdeer.geo"
+      },
+      "animations": {
+        "wyrdeermodel.singlebonelook": "animation.wyrdeermodel.singlebonelook",
+        "wyrdeer.ground_idle": "animation.wyrdeer.ground_idle",
+        "wyrdeer.sleep": "animation.wyrdeer.sleep",
+        "wyrdeer.ground_walk": "animation.wyrdeer.ground_walk",
+        "wyrdeer.blink": "animation.wyrdeer.blink",
+        "controller.animation.wyrdeer.blink": "controller.animation.wyrdeer.blink",
+        "controller.animation.cobblemon.wyrdeer": "controller.animation.cobblemon.wyrdeer"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.wyrdeer"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.wyrdeer.blink",
+          {
+            "controller.animation.cobblemon.wyrdeer": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_wyrdeer = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

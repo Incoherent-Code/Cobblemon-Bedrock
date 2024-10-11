@@ -1,0 +1,39 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " S ",
+      "S S",
+      "GGG"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:red_stained_glass"
+      },
+      "S": {
+        "item": "minecraft:scute"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:red_stained_glass"
+      },
+      {
+        "item": "minecraft:scute"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:safety_goggles"
+    },
+    "description": {
+      "identifier": "cobblemon:safety_goggles_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

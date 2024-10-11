@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:varoom",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0965_varoom/varoom",
+        "shiny": "textures/pokemon/0965_varoom/varoom_shiny"
+      },
+      "geometry": {
+        "base": "geometry.varoom.geo",
+        "shiny": "geometry.varoom.geo"
+      },
+      "animations": {
+        "varoom.sleep": "animation.varoom.sleep",
+        "varoom.ground_idle": "animation.varoom.ground_idle",
+        "varoom.ground_walk": "animation.varoom.ground_walk",
+        "varoom.blink": "animation.varoom.blink",
+        "controller.animation.varoom.blink": "controller.animation.varoom.blink",
+        "controller.animation.cobblemon.varoom": "controller.animation.cobblemon.varoom"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.varoom"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.varoom.blink",
+          {
+            "controller.animation.cobblemon.varoom": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_varoom = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

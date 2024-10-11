@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " PG",
+      "PRP",
+      "WP "
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:white_dye"
+      },
+      "R": {
+        "item": "minecraft:red_dye"
+      },
+      "P": {
+        "item": "minecraft:paper"
+      },
+      "G": {
+        "item": "minecraft:gray_dye"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:white_dye"
+      },
+      {
+        "item": "minecraft:red_dye"
+      },
+      {
+        "item": "minecraft:paper"
+      },
+      {
+        "item": "minecraft:gray_dye"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:spell_tag"
+    },
+    "description": {
+      "identifier": "cobblemon:spell_tag_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

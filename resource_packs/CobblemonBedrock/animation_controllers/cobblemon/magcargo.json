@@ -1,0 +1,163 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.magcargo.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_magcargo_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_magcargo_blink = q.life_time + 1; return (q.life_time > v.next_quirk_magcargo_blink) && (v.state_of_magcargo == 1 || v.state_of_magcargo == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "magcargo.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_magcargo_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_magcargo_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.magcargo": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "magcargo.ground_sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_magcargo = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "magcargomodel.singlebonelook",
+            "magcargo.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_magcargo = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "magcargo.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_magcargo = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.magcargo_shiny.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_magcargo_shiny_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_magcargo_shiny_blink = q.life_time + 1; return (q.life_time > v.next_quirk_magcargo_shiny_blink) && (v.state_of_magcargo_shiny == 1 || v.state_of_magcargo_shiny == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "magcargo_shiny.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_magcargo_shiny_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_magcargo_shiny_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.magcargo_shiny": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "magcargo_shiny.ground_sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_magcargo_shiny = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "magcargoshinymodel.singlebonelook",
+            "magcargo_shiny.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_magcargo_shiny = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "magcargo_shiny.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_magcargo_shiny = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

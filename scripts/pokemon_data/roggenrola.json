@@ -1,0 +1,215 @@
+{
+  "minLevel": 3,
+  "maxLevel": 28,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 3,
+      "maxLevel": 28
+    },
+    "1": {
+      "minLevel": 3,
+      "maxLevel": 28
+    }
+  },
+  "name": "Roggenrola",
+  "nationalPokedexNumber": 524,
+  "baseStats": {
+    "hp": 55,
+    "attack": 75,
+    "defence": 85,
+    "special_attack": 25,
+    "special_defence": 25,
+    "speed": 15
+  },
+  "maleRatio": 0.5,
+  "catchRate": 255,
+  "baseScale": 0.7,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.8,
+    "fixed": false
+  },
+  "primaryType": "rock",
+  "abilities": [
+    "sturdy",
+    "weakarmor",
+    "h:sandforce"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:sandattack",
+    "1:tackle",
+    "4:harden",
+    "8:stealthrock",
+    "12:mudslap",
+    "16:smackdown",
+    "20:irondefense",
+    "24:headbutt",
+    "28:rockslide",
+    "32:rockblast",
+    "36:sandstorm",
+    "40:stoneedge",
+    "44:explosion",
+    "egg:autotomize",
+    "egg:curse",
+    "egg:gravity",
+    "egg:heavyslam",
+    "egg:lockon",
+    "egg:magnitude",
+    "egg:rocktomb",
+    "egg:takedown",
+    "egg:wideguard",
+    "tm:attract",
+    "tm:bodypress",
+    "tm:bulldoze",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:frustration",
+    "tm:heavyslam",
+    "tm:hiddenpower",
+    "tm:irondefense",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:rockblast",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:sandstorm",
+    "tm:sandtomb",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:snore",
+    "tm:stealthrock",
+    "tm:stoneedge",
+    "tm:strength",
+    "tm:substitute",
+    "tm:swagger",
+    "tm:toxic",
+    "tutor:block",
+    "tutor:earthpower",
+    "tutor:gravity",
+    "tutor:irondefense",
+    "tutor:meteorbeam",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stealthrock"
+  ],
+  "evolutions": [
+    {
+      "id": "roggenrola_boldore",
+      "variant": "level_up",
+      "result": "boldore",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "powergem"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 25
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.15
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.roggenrola.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:raw_copper",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:hard_stone",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:everstone",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:black_augurite",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 4.0,
+  "weight": 180.0
+}

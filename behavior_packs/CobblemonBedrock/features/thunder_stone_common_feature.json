@@ -1,0 +1,19 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:ore_feature": {
+    "count": 8,
+    "description": {
+      "identifier": "cobblemon:thunder_stone_common_feature"
+    },
+    "replace_rules": [
+      {
+        "places_block": "cobblemon:thunder_stone_ore",
+        "may_replace": ["minecraft:stone"]
+      },
+      {
+        "places_block": "cobblemon:deepslate_thunder_stone_ore",
+        "may_replace": ["minecraft:deepslate"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:weedle",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0013_weedle/weedle",
+        "shiny": "textures/pokemon/0013_weedle/weedle_shiny"
+      },
+      "geometry": {
+        "base": "geometry.weedle.geo",
+        "shiny": "geometry.weedle.geo"
+      },
+      "animations": {
+        "weedle.sleep": "animation.weedle.sleep",
+        "weedlemodel.singlebonelook": "animation.weedlemodel.singlebonelook",
+        "weedle.ground_idle2": "animation.weedle.ground_idle2",
+        "weedle.ground_walk": "animation.weedle.ground_walk",
+        "weedle.blink": "animation.weedle.blink",
+        "controller.animation.weedle.blink": "controller.animation.weedle.blink",
+        "controller.animation.cobblemon.weedle": "controller.animation.cobblemon.weedle"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.weedle"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.weedle.blink",
+          {
+            "controller.animation.cobblemon.weedle": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_weedle = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

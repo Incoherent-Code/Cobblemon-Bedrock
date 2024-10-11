@@ -1,0 +1,44 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:entity": {
+    "component_groups": {
+      "cobblemon:instant_kill": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events": {
+      "cobblemon:instant_kill": {
+        "add": {
+          "component_groups": [
+            "cobblemon:instant_kill"
+          ]
+        }
+      }
+    },
+    "description": {
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "identifier": "cobblemon:citrine_ball_dummy"
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.01,
+        "height": 0.01
+      },
+      "minecraft:type_family": {
+        "family": [
+          "cobblemon",
+          "pokeball_dummy"
+        ]
+      },
+      "minecraft:scale": {
+        "value": 0.4
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

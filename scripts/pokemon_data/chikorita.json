@@ -1,0 +1,244 @@
+{
+  "minLevel": 5,
+  "maxLevel": 32,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 5,
+      "maxLevel": 32
+    },
+    "1": {
+      "minLevel": 5,
+      "maxLevel": 32
+    }
+  },
+  "name": "Chikorita",
+  "nationalPokedexNumber": 152,
+  "baseStats": {
+    "hp": 45,
+    "attack": 49,
+    "defence": 65,
+    "special_attack": 49,
+    "special_defence": 65,
+    "speed": 45
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 0.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.1,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "abilities": [
+    "overgrow",
+    "h:leafguard"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:growl",
+    "1:tackle",
+    "6:razorleaf",
+    "9:poisonpowder",
+    "12:synthesis",
+    "17:reflect",
+    "20:magicalleaf",
+    "23:naturalgift",
+    "28:sweetscent",
+    "31:lightscreen",
+    "34:bodyslam",
+    "39:safeguard",
+    "42:aromatherapy",
+    "45:solarbeam",
+    "egg:ancientpower",
+    "egg:aromatherapy",
+    "egg:bodyslam",
+    "egg:counter",
+    "egg:flail",
+    "egg:grasswhistle",
+    "egg:grassyterrain",
+    "egg:healpulse",
+    "egg:ingrain",
+    "egg:leafstorm",
+    "egg:leechseed",
+    "egg:naturepower",
+    "egg:refresh",
+    "egg:vinewhip",
+    "egg:wringout",
+    "tm:attract",
+    "tm:bulletseed",
+    "tm:captivate",
+    "tm:confide",
+    "tm:cut",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:irontail",
+    "tm:lightscreen",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:toxic",
+    "tm:workup",
+    "tutor:ancientpower",
+    "tutor:attract",
+    "tutor:bodyslam",
+    "tutor:counter",
+    "tutor:curse",
+    "tutor:cut",
+    "tutor:detect",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:endure",
+    "tutor:flail",
+    "tutor:flash",
+    "tutor:frenzyplant",
+    "tutor:frustration",
+    "tutor:furycutter",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:growl",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:irontail",
+    "tutor:leechseed",
+    "tutor:lightscreen",
+    "tutor:magiccoat",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:poisonpowder",
+    "tutor:protect",
+    "tutor:razorleaf",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:safeguard",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:solarbeam",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:sweetscent",
+    "tutor:swordsdance",
+    "tutor:synthesis",
+    "tutor:tackle",
+    "tutor:toxic",
+    "tutor:vinewhip",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "chikorita_bayleef",
+      "variant": "level_up",
+      "result": "bayleef",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 16
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.2
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.chikorita.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "monster",
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 9.0,
+  "weight": 64.0
+}

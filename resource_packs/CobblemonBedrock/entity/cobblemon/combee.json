@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:combee",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0415_combee/combee",
+        "shiny": "textures/pokemon/0415_combee/combee_shiny",
+        "female": "textures/pokemon/0415_combee/combee"
+      },
+      "geometry": {
+        "base": "geometry.combee_male.geo",
+        "shiny": "geometry.combee_male.geo",
+        "female": "geometry.combee_female.geo"
+      },
+      "animations": {
+        "combee.air_sleep": "animation.combee.air_sleep",
+        "combee.air_idle": "animation.combee.air_idle",
+        "combee.air_fly": "animation.combee.air_fly",
+        "combee.blink_right": "animation.combee.blink_right",
+        "controller.animation.combee.blink1": "controller.animation.combee.blink1",
+        "combee.blink_gender": "animation.combee.blink_gender",
+        "controller.animation.combee.blink2": "controller.animation.combee.blink2",
+        "combee.blink_left": "animation.combee.blink_left",
+        "controller.animation.combee.blink3": "controller.animation.combee.blink3",
+        "controller.animation.cobblemon.combee": "controller.animation.cobblemon.combee"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.combee"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.combee.blink1",
+          "controller.animation.combee.blink2",
+          "controller.animation.combee.blink3",
+          {
+            "controller.animation.cobblemon.combee": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_combee = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

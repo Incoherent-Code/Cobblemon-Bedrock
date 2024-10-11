@@ -1,0 +1,115 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.0",
+  "render_controllers": {
+    "controller.render.cobblemon.conkeldurr": {
+      "arrays": {
+        "textures": {
+          "array.cobblemon_texture": [
+            "texture.base",
+            "texture.shiny",
+            "texture.color_white",
+            "texture.color_orange",
+            "texture.color_magenta",
+            "texture.color_light_blue",
+            "texture.color_yellow",
+            "texture.color_lime",
+            "texture.color_pink",
+            "texture.color_gray",
+            "texture.color_purple",
+            "texture.color_blue",
+            "texture.color_brown",
+            "texture.color_green",
+            "texture.color_red",
+            "texture.color_black"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.color_white",
+            "geometry.color_orange",
+            "geometry.color_magenta",
+            "geometry.color_light_blue",
+            "geometry.color_yellow",
+            "geometry.color_lime",
+            "geometry.color_pink",
+            "geometry.color_gray",
+            "geometry.color_purple",
+            "geometry.color_blue",
+            "geometry.color_brown",
+            "geometry.color_green",
+            "geometry.color_red",
+            "geometry.color_black"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.cobblemon_texture[query.variant]"
+      ]
+    },
+    "controller.render.cobblemon.conkeldurr_": {
+      "arrays": {
+        "textures": {
+          "array.variation_": [
+            "texture.blank",
+            "texture.blank",
+            "texture.color_white_",
+            "texture.color_orange_",
+            "texture.color_magenta_",
+            "texture.color_light_blue_",
+            "texture.color_yellow_",
+            "texture.color_lime_",
+            "texture.color_pink_",
+            "texture.color_gray_",
+            "texture.color_purple_",
+            "texture.color_blue_",
+            "texture.color_brown_",
+            "texture.color_green_",
+            "texture.color_red_",
+            "texture.color_black_"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.color_white",
+            "geometry.color_orange",
+            "geometry.color_magenta",
+            "geometry.color_light_blue",
+            "geometry.color_yellow",
+            "geometry.color_lime",
+            "geometry.color_pink",
+            "geometry.color_gray",
+            "geometry.color_purple",
+            "geometry.color_blue",
+            "geometry.color_brown",
+            "geometry.color_green",
+            "geometry.color_red",
+            "geometry.color_black"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.variation_[query.variant]"
+      ]
+    }
+  }
+}

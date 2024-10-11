@@ -1,0 +1,39 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " A",
+      " S",
+      " S"
+    ],
+    "key": {
+      "A": {
+        "item": "cobblemon:black_augurite"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "cobblemon:black_augurite"
+      },
+      {
+        "item": "minecraft:stick"
+      }
+    ],
+    "result": {
+      "item": "minecraft:stone_axe"
+    },
+    "description": {
+      "identifier": "cobblemon:augurite_axe_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

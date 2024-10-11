@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:gloom",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0044_gloom/gloom",
+        "shiny": "textures/pokemon/0044_gloom/gloom_shiny",
+        "female": "textures/pokemon/0044_gloom/gloom",
+        "valencian": "textures/pokemon/0044_gloom/gloom_valencian",
+        "valencian_shiny": "textures/pokemon/0044_gloom/gloom_valencian_shiny"
+      },
+      "geometry": {
+        "base": "geometry.gloom_male.geo",
+        "shiny": "geometry.gloom_male.geo",
+        "female": "geometry.gloom_female.geo",
+        "valencian": "geometry.gloom_male.geo",
+        "valencian_shiny": "geometry.gloom_male.geo"
+      },
+      "animations": {
+        "gloom.ground_idle": "animation.gloom.ground_idle",
+        "gloom.sleep": "animation.gloom.sleep",
+        "gloom.ground_walk": "animation.gloom.ground_walk",
+        "controller.animation.cobblemon.gloom": "controller.animation.cobblemon.gloom"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.gloom"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.gloom": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4"
+          }
+        ],
+        "initialize": [
+          "v.state_of_gloom = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

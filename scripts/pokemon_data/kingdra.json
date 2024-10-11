@@ -1,0 +1,233 @@
+{
+  "minLevel": 39,
+  "maxLevel": 54,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 39,
+      "maxLevel": 54
+    }
+  },
+  "name": "Kingdra",
+  "nationalPokedexNumber": 230,
+  "baseStats": {
+    "hp": 75,
+    "attack": 95,
+    "defence": 95,
+    "special_attack": 95,
+    "special_defence": 95,
+    "speed": 85
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 1.2,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.9,
+    "height": 2.3,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "secondaryType": "dragon",
+  "abilities": [
+    "swiftswim",
+    "sniper",
+    "h:damp"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:bubble",
+    "1:leer",
+    "1:smokescreen",
+    "1:twister",
+    "1:watergun",
+    "1:whirlpool",
+    "1:yawn",
+    "15:focusenergy",
+    "20:dragonbreath",
+    "25:bubblebeam",
+    "30:agility",
+    "31:brine",
+    "37:laserfocus",
+    "44:dragonpulse",
+    "51:hydropump",
+    "58:dragondance",
+    "65:raindance",
+    "tm:agility",
+    "tm:attract",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:bounce",
+    "tm:breakingswipe",
+    "tm:brine",
+    "tm:captivate",
+    "tm:confide",
+    "tm:dive",
+    "tm:doubleteam",
+    "tm:dragondance",
+    "tm:dragonpulse",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:focusenergy",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:hiddenpower",
+    "tm:hurricane",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:ironhead",
+    "tm:liquidation",
+    "tm:muddywater",
+    "tm:naturalgift",
+    "tm:outrage",
+    "tm:protect",
+    "tm:quash",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:scald",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swagger",
+    "tm:swift",
+    "tm:toxic",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:agility",
+    "tutor:attract",
+    "tutor:blizzard",
+    "tutor:bodyslam",
+    "tutor:bounce",
+    "tutor:bubble",
+    "tutor:curse",
+    "tutor:dive",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:dracometeor",
+    "tutor:dragonbreath",
+    "tutor:dragonpulse",
+    "tutor:endure",
+    "tutor:flipturn",
+    "tutor:frustration",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:hydropump",
+    "tutor:hyperbeam",
+    "tutor:icywind",
+    "tutor:ironhead",
+    "tutor:laserfocus",
+    "tutor:leer",
+    "tutor:mimic",
+    "tutor:muddywater",
+    "tutor:outrage",
+    "tutor:protect",
+    "tutor:raindance",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:scaleshot",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:smokescreen",
+    "tutor:snore",
+    "tutor:substitute",
+    "tutor:surf",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:toxic",
+    "tutor:twister",
+    "tutor:waterfall",
+    "tutor:watergun",
+    "tutor:waterpulse",
+    "tutor:whirlpool"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": true,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.kingdra.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:prismarine_shard",
+        "quantityRange": "0-3"
+      },
+      {
+        "item": "cobblemon:dragon_scale",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "water_1",
+    "dragon"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 18.0,
+  "weight": 1520.0
+}

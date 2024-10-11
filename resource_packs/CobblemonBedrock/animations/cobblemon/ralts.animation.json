@@ -1,0 +1,163 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.raltsmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.ralts.ground_idle": {
+      "loop": true,
+      "bones": {
+        "arm_left": {
+          "rotation": [
+            0.0,
+            -10.0,
+            50.0
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            0.0,
+            25.0,
+            0.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            0.0,
+            5.0,
+            -50.0
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            0.0,
+            -10.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            0.0,
+            2.5,
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            0.0,
+            -2.5,
+            0.0
+          ]
+        },
+        "leg_robe_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_robe_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.raltsmodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6 + 180) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.raltsmodel.bimanualswinganimation": {
+      "loop": true,
+      "bones": {
+        "arm_right": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.ralts.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:hitmonchan",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0107_hitmonchan/hitmonchan",
+        "shiny": "textures/pokemon/0107_hitmonchan/hitmonchan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.hitmonchan.geo",
+        "shiny": "geometry.hitmonchan.geo"
+      },
+      "animations": {
+        "hitmonchan.sleep": "animation.hitmonchan.sleep",
+        "hitmonchanmodel.singlebonelook": "animation.hitmonchanmodel.singlebonelook",
+        "hitmonchan.ground_idle": "animation.hitmonchan.ground_idle",
+        "hitmonchan.ground_walk": "animation.hitmonchan.ground_walk",
+        "hitmonchan.battle_idle": "animation.hitmonchan.battle_idle",
+        "hitmonchan.blink": "animation.hitmonchan.blink",
+        "controller.animation.hitmonchan.blink": "controller.animation.hitmonchan.blink",
+        "controller.animation.cobblemon.hitmonchan": "controller.animation.cobblemon.hitmonchan"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.hitmonchan"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.hitmonchan.blink",
+          {
+            "controller.animation.cobblemon.hitmonchan": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_hitmonchan = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

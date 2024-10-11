@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:plusle",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0311_plusle/plusle",
+        "shiny": "textures/pokemon/0311_plusle/plusle_shiny"
+      },
+      "geometry": {
+        "base": "geometry.plusle.geo",
+        "shiny": "geometry.plusle.geo"
+      },
+      "animations": {
+        "pluslemodel.singlebonelook": "animation.pluslemodel.singlebonelook",
+        "plusle.ground_idle": "animation.plusle.ground_idle",
+        "pluslemodel.bipedwalkanimation": "animation.pluslemodel.bipedwalkanimation",
+        "plusle.blink": "animation.plusle.blink",
+        "controller.animation.plusle.blink": "controller.animation.plusle.blink",
+        "controller.animation.cobblemon.plusle": "controller.animation.cobblemon.plusle"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.plusle"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.plusle.blink",
+          {
+            "controller.animation.cobblemon.plusle": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_plusle = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

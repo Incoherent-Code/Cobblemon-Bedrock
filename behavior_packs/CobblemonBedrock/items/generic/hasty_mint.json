@@ -1,0 +1,25 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:hasty_mint"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "hasty_mint"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.hasty_mint"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:mints"
+        ]
+      }
+    }
+  }
+}

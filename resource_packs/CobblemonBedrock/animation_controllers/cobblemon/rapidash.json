@@ -1,0 +1,173 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rapidash.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_rapidash_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_rapidash_blink = q.life_time + 1; return (q.life_time > v.next_quirk_rapidash_blink) && (v.state_of_rapidash == 1 || v.state_of_rapidash == 2 || v.state_of_rapidash == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "rapidash.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_rapidash_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_rapidash_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.rapidash": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "rapidash.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_rapidash = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battling": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "rapidashmodel.singlebonelook",
+            "rapidash.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_rapidash = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battling": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "rapidashmodel.singlebonelook",
+            "rapidash.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_rapidash = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battling": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battling": {
+          "animations": [
+            "rapidashmodel.singlebonelook",
+            "rapidash.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_rapidash = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.rapidash_galarian.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_rapidash_galarian_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_rapidash_galarian_blink = q.life_time + 1; return (q.life_time > v.next_quirk_rapidash_galarian_blink) && (v.state_of_rapidash_galarian == 0 || v.state_of_rapidash_galarian == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "rapidash_galar.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_rapidash_galarian_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_rapidash_galarian_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.rapidash_galarian": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "rapidashgalarianmodel.singlebonelook",
+            "rapidash_galar.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_rapidash_galarian = 0; return (q.is_moving && !q.is_swimming);"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "rapidashgalarianmodel.quadrupedwalkanimation",
+            "rapidashgalarianmodel.singlebonelook",
+            "rapidash_galar.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_rapidash_galarian = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

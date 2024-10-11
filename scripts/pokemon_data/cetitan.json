@@ -1,0 +1,171 @@
+{
+  "minLevel": 28,
+  "maxLevel": 52,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 28,
+      "maxLevel": 52
+    },
+    "1": {
+      "minLevel": 28,
+      "maxLevel": 52
+    }
+  },
+  "name": "Cetitan",
+  "nationalPokedexNumber": 975,
+  "baseStats": {
+    "hp": 170,
+    "attack": 113,
+    "defence": 65,
+    "special_attack": 45,
+    "special_defence": 55,
+    "speed": 73
+  },
+  "maleRatio": 0.5,
+  "catchRate": 50,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 2.8,
+    "height": 2.8,
+    "fixed": false
+  },
+  "primaryType": "ice",
+  "abilities": [
+    "thickfat",
+    "slushrush",
+    "h:sheerforce"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:powdersnow",
+    "1:tackle",
+    "6:growl",
+    "9:echoedvoice",
+    "12:iceshard",
+    "15:rest",
+    "19:takedown",
+    "25:flail",
+    "27:avalanche",
+    "31:bounce",
+    "36:bodyslam",
+    "40:amnesia",
+    "44:icespinner",
+    "49:doubleedge",
+    "53:blizzard",
+    "tm:amnesia",
+    "tm:avalanche",
+    "tm:blizzard",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:charm",
+    "tm:chillingwater",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:gigaimpact",
+    "tm:heavyslam",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:hypervoice",
+    "tm:icebeam",
+    "tm:icefang",
+    "tm:icepunch",
+    "tm:icespinner",
+    "tm:icywind",
+    "tm:liquidation",
+    "tm:playrough",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:sleeptalk",
+    "tm:snowscape",
+    "tm:stompingtantrum",
+    "tm:substitute",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:waterpulse"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.2
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.cetitan.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:bone_block",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:aspear_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 25,
+  "eggGroups": [
+    "field"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 45.0,
+  "weight": 7000.0
+}

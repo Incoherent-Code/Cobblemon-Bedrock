@@ -1,0 +1,133 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.luxraymodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.luxray.ground_idle": {
+      "loop": true,
+      "bones": {
+        "tail_1": {
+          "rotation": [
+            43.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_2": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "tail_3": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.1,
+            -0.3
+          ]
+        },
+        "tail_4": {
+          "rotation": [
+            -52.68932,
+            -2.64422,
+            -1.88999
+          ],
+          "position": [
+            0.0,
+            0.2,
+            -0.4
+          ]
+        },
+        "tail_5": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.1,
+            -0.2
+          ]
+        },
+        "tail_6": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "tail_fluff": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.luxraymodel.quadrupedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "back_leg_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "back_leg_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1 + 180) *  1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "front_leg_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1 + 180) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "front_leg_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

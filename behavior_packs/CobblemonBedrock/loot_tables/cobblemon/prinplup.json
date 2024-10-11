@@ -1,0 +1,31 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chicken"
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:mystic_water",
+          "weight": 10
+        },
+        {
+          "type": "empty",
+          "weight": 88
+        }
+      ]
+    }
+  ]
+}

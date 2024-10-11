@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:poliwhirl",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0061_poliwhirl/poliwhirl",
+        "shiny": "textures/pokemon/0061_poliwhirl/poliwhirl_shiny"
+      },
+      "geometry": {
+        "base": "geometry.poliwhirl.geo",
+        "shiny": "geometry.poliwhirl.geo"
+      },
+      "animations": {
+        "poliwhirl.sleep": "animation.poliwhirl.sleep",
+        "poliwhirl.ground_idle": "animation.poliwhirl.ground_idle",
+        "poliwhirl.water_idle": "animation.poliwhirl.water_idle",
+        "poliwhirl.water_swim": "animation.poliwhirl.water_swim",
+        "poliwhirl.blink": "animation.poliwhirl.blink",
+        "controller.animation.poliwhirl.blink": "controller.animation.poliwhirl.blink",
+        "controller.animation.cobblemon.poliwhirl": "controller.animation.cobblemon.poliwhirl"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.poliwhirl"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.poliwhirl.blink",
+          {
+            "controller.animation.cobblemon.poliwhirl": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_poliwhirl = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

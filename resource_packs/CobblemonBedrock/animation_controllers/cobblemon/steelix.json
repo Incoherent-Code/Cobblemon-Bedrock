@@ -1,0 +1,143 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.steelix.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_steelix_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_steelix_blink = q.life_time + 1; return (q.life_time > v.next_quirk_steelix_blink) && (v.state_of_steelix == 1 || v.state_of_steelix == 2 || v.state_of_steelix == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "steelix.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_steelix_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_steelix_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.steelix.jitter": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_steelix_jitter = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_steelix_jitter = q.life_time + 1; return (q.life_time > v.next_quirk_steelix_jitter) && (v.state_of_steelix == 1 || v.state_of_steelix == 2 || v.state_of_steelix == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "steelix.quirk_jawjitter"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_steelix_jitter = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_steelix_jitter ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.steelix": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "steelix.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_steelix = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "steelixmodel.singlebonelook",
+            "steelix.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_steelix = 1; return q.is_sleeping;"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "steelixmodel.singlebonelook",
+            "steelix.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_steelix = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "steelixmodel.singlebonelook",
+            "steelix.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_steelix = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walking": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

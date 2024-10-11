@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:gliscor",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0472_gliscor/gliscor",
+        "shiny": "textures/pokemon/0472_gliscor/gliscor_shiny",
+        "base_glow": "textures/pokemon/0472_gliscor/gliscor_emissive",
+        "shiny_glow": "textures/pokemon/0472_gliscor/gliscor_emissive"
+      },
+      "geometry": {
+        "base": "geometry.gliscor.geo",
+        "shiny": "geometry.gliscor.geo"
+      },
+      "animations": {
+        "gliscor.ground_idle": "animation.gliscor.ground_idle",
+        "gliscormodel.bipedwalkanimation": "animation.gliscormodel.bipedwalkanimation",
+        "gliscor.blink": "animation.gliscor.blink",
+        "controller.animation.gliscor.blink": "controller.animation.gliscor.blink",
+        "controller.animation.cobblemon.gliscor": "controller.animation.cobblemon.gliscor"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.gliscor_glow",
+        "controller.render.cobblemon.gliscor"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.gliscor.blink",
+          {
+            "controller.animation.cobblemon.gliscor": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_gliscor = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

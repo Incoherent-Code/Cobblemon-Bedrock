@@ -1,0 +1,285 @@
+{
+  "minLevel": 11,
+  "maxLevel": 36,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 11,
+      "maxLevel": 36
+    },
+    "1": {
+      "minLevel": 11,
+      "maxLevel": 36
+    }
+  },
+  "name": "Omanyte",
+  "nationalPokedexNumber": 138,
+  "baseStats": {
+    "hp": 35,
+    "attack": 40,
+    "defence": 100,
+    "special_attack": 90,
+    "special_defence": 55,
+    "speed": 35
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 1.1,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.5,
+    "fixed": false
+  },
+  "primaryType": "rock",
+  "secondaryType": "water",
+  "abilities": [
+    "swiftswim",
+    "shellarmor",
+    "h:weakarmor"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:bind",
+    "1:constrict",
+    "1:withdraw",
+    "5:rollout",
+    "7:bite",
+    "10:sandattack",
+    "15:watergun",
+    "20:leer",
+    "25:mudshot",
+    "30:ancientpower",
+    "35:brine",
+    "41:protect",
+    "43:tickle",
+    "45:rockblast",
+    "50:surf",
+    "55:shellsmash",
+    "60:hydropump",
+    "egg:aurorabeam",
+    "egg:bide",
+    "egg:bite",
+    "egg:bubblebeam",
+    "egg:haze",
+    "egg:knockoff",
+    "egg:muddywater",
+    "egg:reflecttype",
+    "egg:rockslide",
+    "egg:slam",
+    "egg:spikes",
+    "egg:supersonic",
+    "egg:tickle",
+    "egg:toxicspikes",
+    "egg:waterpulse",
+    "egg:whirlpool",
+    "egg:wringout",
+    "tm:attract",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:brine",
+    "tm:captivate",
+    "tm:confide",
+    "tm:dive",
+    "tm:doubleteam",
+    "tm:earthpower",
+    "tm:endure",
+    "tm:facade",
+    "tm:frustration",
+    "tm:gyroball",
+    "tm:hail",
+    "tm:hiddenpower",
+    "tm:hydropump",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:irondefense",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:rockblast",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:sandstorm",
+    "tm:scald",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:snore",
+    "tm:spikes",
+    "tm:stealthrock",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swagger",
+    "tm:thief",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:ancientpower",
+    "tutor:attract",
+    "tutor:aurorabeam",
+    "tutor:bide",
+    "tutor:bind",
+    "tutor:bite",
+    "tutor:blizzard",
+    "tutor:bodyslam",
+    "tutor:bubblebeam",
+    "tutor:constrict",
+    "tutor:curse",
+    "tutor:dive",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:earthpower",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:frustration",
+    "tutor:haze",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:hornattack",
+    "tutor:hydropump",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:knockoff",
+    "tutor:leer",
+    "tutor:meteorbeam",
+    "tutor:mimic",
+    "tutor:muddywater",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:raindance",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:rockthrow",
+    "tutor:rollout",
+    "tutor:sandstorm",
+    "tutor:scald",
+    "tutor:shellsmash",
+    "tutor:slam",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:spikecannon",
+    "tutor:stealthrock",
+    "tutor:substitute",
+    "tutor:supersonic",
+    "tutor:surf",
+    "tutor:swagger",
+    "tutor:takedown",
+    "tutor:thief",
+    "tutor:toxic",
+    "tutor:waterfall",
+    "tutor:watergun",
+    "tutor:waterpulse",
+    "tutor:whirlpool",
+    "tutor:withdraw"
+  ],
+  "evolutions": [
+    {
+      "id": "omanyte_omastar",
+      "variant": "level_up",
+      "result": "omastar",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "crunch"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 40
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.omanyte.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:nautilus_shell"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 30,
+  "eggGroups": [
+    "water_1",
+    "water_3"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 4.0,
+  "weight": 75.0
+}

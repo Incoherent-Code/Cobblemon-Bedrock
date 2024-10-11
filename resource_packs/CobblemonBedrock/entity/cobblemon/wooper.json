@@ -1,0 +1,76 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:wooper",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0194_wooper/wooper",
+        "shiny": "textures/pokemon/0194_wooper/wooper_shiny",
+        "female": "textures/pokemon/0194_wooper/wooper",
+        "paldean": "textures/pokemon/0194_wooper/wooper_paldean",
+        "paldean_shiny": "textures/pokemon/0194_wooper/wooper_paldean_shiny"
+      },
+      "geometry": {
+        "base": "geometry.wooper_male.geo",
+        "shiny": "geometry.wooper_male.geo",
+        "female": "geometry.wooper_female.geo",
+        "paldean": "geometry.wooper_paldean.geo",
+        "paldean_shiny": "geometry.wooper_paldean.geo"
+      },
+      "animations": {
+        "wooper.sleep": "animation.wooper.sleep",
+        "woopermodel.singlebonelook": "animation.woopermodel.singlebonelook",
+        "wooper.ground_idle": "animation.wooper.ground_idle",
+        "wooper.ground_walk": "animation.wooper.ground_walk",
+        "wooper.water_idle": "animation.wooper.water_idle",
+        "wooper.water_swim": "animation.wooper.water_swim",
+        "wooper.shoulderleft.transform": "animation.wooper.shoulderleft.transform",
+        "wooper.shoulderright.transform": "animation.wooper.shoulderright.transform",
+        "wooper.blink": "animation.wooper.blink",
+        "controller.animation.wooper.blink": "controller.animation.wooper.blink",
+        "controller.animation.cobblemon.wooper": "controller.animation.cobblemon.wooper",
+        "wooper_paldean.sleep": "animation.wooper_paldean.sleep",
+        "wooperpaldeanmodel.singlebonelook": "animation.wooperpaldeanmodel.singlebonelook",
+        "wooper_paldean.ground_idle": "animation.wooper_paldean.ground_idle",
+        "wooper_paldean.ground_walk": "animation.wooper_paldean.ground_walk",
+        "wooper_paldean.water_idle": "animation.wooper_paldean.water_idle",
+        "wooper_paldean.water_swim": "animation.wooper_paldean.water_swim",
+        "wooper_paldean.shoulderleft.transform": "animation.wooper_paldean.shoulderleft.transform",
+        "wooper_paldean.shoulderright.transform": "animation.wooper_paldean.shoulderright.transform",
+        "wooper_paldean.blink": "animation.wooper_paldean.blink",
+        "controller.animation.wooper_paldean.blink": "controller.animation.wooper_paldean.blink",
+        "controller.animation.cobblemon.wooper_paldean": "controller.animation.cobblemon.wooper_paldean"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.wooper"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.wooper.blink",
+          {
+            "controller.animation.cobblemon.wooper": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          },
+          "controller.animation.wooper_paldean.blink",
+          {
+            "controller.animation.cobblemon.wooper_paldean": "q.variant == 3 || q.variant == 4"
+          }
+        ],
+        "initialize": [
+          "v.state_of_wooper = -1.0;",
+          "v.state_of_wooper_paldean = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,968 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.mewtwomodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.mewtwo.ground_idle": {
+      "loop": true,
+      "bones": {
+        "tail": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            -52.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail6": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            15.0,
+            -10.0,
+            50.0
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            0.0,
+            45.0,
+            0.0
+          ]
+        },
+        "lefthand": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "finger4": {
+          "rotation": [
+            0.0,
+            0.0,
+            27.5
+          ]
+        },
+        "finger5": {
+          "rotation": [
+            0.0,
+            0.0,
+            30.0
+          ]
+        },
+        "finger6": {
+          "rotation": [
+            0.0,
+            0.0,
+            25.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            15.0,
+            10.0,
+            -50.0
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            0.0,
+            -45.0,
+            0.0
+          ]
+        },
+        "righthand": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "finger": {
+          "rotation": [
+            0.0,
+            0.0,
+            -27.5
+          ]
+        },
+        "finger2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -30.0
+          ]
+        },
+        "finger3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -25.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            15.0,
+            -10.0,
+            50.0
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            0.0,
+            45.0,
+            0.0
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "finger_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            12.5
+          ]
+        },
+        "finger_left2": {
+          "rotation": [
+            0.0,
+            -12.5,
+            22.5
+          ]
+        },
+        "finger_left3": {
+          "rotation": [
+            0.0,
+            12.5,
+            22.5
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            15.0,
+            10.0,
+            -50.0
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            0.0,
+            -45.0,
+            0.0
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "finger_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -12.5
+          ]
+        },
+        "finger_right2": {
+          "rotation": [
+            0.0,
+            12.5,
+            -22.5
+          ]
+        },
+        "finger_right3": {
+          "rotation": [
+            0.0,
+            -12.5,
+            -22.5
+          ]
+        },
+        "tail8": {
+          "rotation": [
+            -42.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail9": {
+          "rotation": [
+            -42.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.mewtwomodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6 + 180) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.mewtwomodel.bimanualswinganimation": {
+      "loop": true,
+      "bones": {
+        "arm_right": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.mewtwo.air_idle": {
+      "loop": true,
+      "bones": {
+        "tail": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail6": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            30.0,
+            -5.0,
+            47.5
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            0.0,
+            30.0,
+            0.0
+          ]
+        },
+        "lefthand": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "finger4": {
+          "rotation": [
+            0.0,
+            0.0,
+            27.5
+          ]
+        },
+        "finger5": {
+          "rotation": [
+            0.0,
+            0.0,
+            30.0
+          ]
+        },
+        "finger6": {
+          "rotation": [
+            0.0,
+            0.0,
+            25.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            30.0,
+            5.0,
+            -47.5
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            0.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "righthand": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "finger": {
+          "rotation": [
+            0.0,
+            0.0,
+            -27.5
+          ]
+        },
+        "finger2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -30.0
+          ]
+        },
+        "finger3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -25.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            2.0,
+            0.0
+          ]
+        },
+        "rightleg": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightknee": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightfoot": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leftleg": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftknee": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftfoot": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            15.0,
+            -10.0,
+            50.0
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            0.0,
+            45.0,
+            0.0
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "finger_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            12.5
+          ]
+        },
+        "finger_left2": {
+          "rotation": [
+            0.0,
+            -12.5,
+            22.5
+          ]
+        },
+        "finger_left3": {
+          "rotation": [
+            0.0,
+            12.5,
+            22.5
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            15.0,
+            10.0,
+            -50.0
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            0.0,
+            -45.0,
+            0.0
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "finger_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -12.5
+          ]
+        },
+        "finger_right2": {
+          "rotation": [
+            0.0,
+            12.5,
+            -22.5
+          ]
+        },
+        "finger_right3": {
+          "rotation": [
+            0.0,
+            -12.5,
+            -22.5
+          ]
+        }
+      }
+    },
+    "animation.mewtwo.air_fly": {
+      "loop": true,
+      "animation_length": 8.25,
+      "bones": {
+        "tail": {
+          "rotation": {
+            "0.0": [
+              -10.0,
+              0.0,
+              0.0
+            ],
+            "8.25": [
+              7.5,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "tail2": {
+          "rotation": {
+            "0.0": [
+              -7.5,
+              0.0,
+              0.0
+            ],
+            "8.25": [
+              -20.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "tail3": {
+          "rotation": {
+            "0.0": [
+              -7.5,
+              0.0,
+              0.0
+            ],
+            "8.25": [
+              -12.5,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "tail4": {
+          "rotation": {
+            "0.0": [
+              -7.5,
+              0.0,
+              0.0
+            ],
+            "8.25": [
+              -5.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "tail5": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail6": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            45.0,
+            -15.0,
+            47.5
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            0.0,
+            30.0,
+            0.0
+          ]
+        },
+        "lefthand": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "finger4": {
+          "rotation": [
+            0.0,
+            0.0,
+            27.5
+          ]
+        },
+        "finger5": {
+          "rotation": [
+            0.0,
+            0.0,
+            30.0
+          ]
+        },
+        "finger6": {
+          "rotation": [
+            0.0,
+            0.0,
+            25.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            45.0,
+            15.0,
+            -47.5
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            0.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "righthand": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "finger": {
+          "rotation": [
+            0.0,
+            0.0,
+            -27.5
+          ]
+        },
+        "finger2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -30.0
+          ]
+        },
+        "finger3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -25.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            2.0,
+            0.0
+          ]
+        },
+        "rightleg": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightknee": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightfoot": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leftleg": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftknee": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftfoot": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            45.0,
+            -15.0,
+            47.5
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            0.0,
+            30.0,
+            0.0
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "finger_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            10.0
+          ]
+        },
+        "finger_left2": {
+          "rotation": [
+            0.0,
+            -12.5,
+            17.5
+          ]
+        },
+        "finger_left3": {
+          "rotation": [
+            0.0,
+            10.0,
+            20.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            45.0,
+            15.0,
+            -47.5
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            0.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "finger_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -10.0
+          ]
+        },
+        "finger_right2": {
+          "rotation": [
+            0.0,
+            12.5,
+            -17.5
+          ]
+        },
+        "finger_right3": {
+          "rotation": [
+            0.0,
+            -10.0,
+            -20.0
+          ]
+        },
+        "tail8": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail9": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right": {
+          "rotation": [
+            17.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left": {
+          "rotation": [
+            17.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.mewtwo.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:melon_seeds",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:miracle_seed",
+          "weight": 5
+        },
+        {
+          "type": "empty",
+          "weight": 93
+        }
+      ]
+    }
+  ]
+}

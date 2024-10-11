@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:sawsbuck",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0586_sawsbuck/sawsbuck_spring",
+        "shiny": "textures/pokemon/0586_sawsbuck/sawsbuck_spring_shiny",
+        "autumn": "textures/pokemon/0586_sawsbuck/sawsbuck_autumn",
+        "summer": "textures/pokemon/0586_sawsbuck/sawsbuck_summer",
+        "winter": "textures/pokemon/0586_sawsbuck/sawsbuck_winter",
+        "autumn_shiny": "textures/pokemon/0586_sawsbuck/sawsbuck_autumn_shiny",
+        "summer_shiny": "textures/pokemon/0586_sawsbuck/sawsbuck_summer_shiny",
+        "winter_shiny": "textures/pokemon/0586_sawsbuck/sawsbuck_winter_shiny"
+      },
+      "geometry": {
+        "base": "geometry.sawsbuck_spring.geo",
+        "shiny": "geometry.sawsbuck_autumn.geo",
+        "autumn": "geometry.sawsbuck_autumn.geo",
+        "summer": "geometry.sawsbuck_summer.geo",
+        "winter": "geometry.sawsbuck_winter.geo",
+        "autumn_shiny": "geometry.sawsbuck_autumn.geo",
+        "summer_shiny": "geometry.sawsbuck_autumn.geo",
+        "winter_shiny": "geometry.sawsbuck_autumn.geo"
+      },
+      "animations": {
+        "sawsbuckmodel.singlebonelook": "animation.sawsbuckmodel.singlebonelook",
+        "sawsbuckmodel.quadrupedwalkanimation": "animation.sawsbuckmodel.quadrupedwalkanimation",
+        "controller.animation.cobblemon.sawsbuck": "controller.animation.cobblemon.sawsbuck"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.sawsbuck"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.sawsbuck": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5 || q.variant == 6 || q.variant == 7"
+          }
+        ],
+        "initialize": [
+          "v.state_of_sawsbuck = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

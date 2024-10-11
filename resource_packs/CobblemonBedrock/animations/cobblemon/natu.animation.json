@@ -1,0 +1,173 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.natu.sleep": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "position": [
+            0.0,
+            -1.2,
+            0.0
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            -0.1,
+            0.0,
+            -0.1
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.1,
+            0.0,
+            -0.1
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            5.0,
+            90.0,
+            -85.0
+          ],
+          "position": [
+            -0.1,
+            0.0,
+            -1.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            5.0,
+            -90.0,
+            85.0
+          ],
+          "position": [
+            0.1,
+            0.0,
+            -1.0
+          ]
+        }
+      }
+    },
+    "animation.natu.ground_idle": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            "0.25*(math.sin(q.anim_time*90*4-90)*1+1)",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "-0.05*(math.sin(q.anim_time*90*4-90)*1+1)",
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            30.0,
+            "85+0.5*(math.sin(q.anim_time*90*4-90)*1+1)",
+            -60.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            30.0,
+            "-85-0.5*(math.sin(q.anim_time*90*4-90)*1+1)",
+            60.0
+          ]
+        },
+        "feather": {
+          "rotation": [
+            "-0.25*(math.sin(q.anim_time*90*4-90)*1+1)",
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "-1*(math.sin(q.anim_time*90*4-90)*1+1)",
+            0.0,
+            0.0
+          ]
+        },
+        "feather2": {
+          "rotation": [
+            "-7.5-0.25*(math.sin(q.anim_time*90*4-90)*1+1)",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.natumodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.8 + 180) * 0.6 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.8) *  0.6 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.natu.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

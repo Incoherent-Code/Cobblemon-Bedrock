@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.huntail": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "huntailmodel.singlebonelook",
+            "huntail.ground_idle"
+          ],
+          "transitions": [
+            {
+              "swimming": "v.state_of_huntail = 0; return q.is_swimming;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "floating": {
+          "animations": [
+            "huntailmodel.singlebonelook",
+            "huntail.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_huntail = 1; return (q.is_moving && !q.is_swimming)|| !q.is_moving;"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swimming": {
+          "animations": [
+            "huntailmodel.singlebonelook",
+            "huntail.water_swim"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_huntail = 2; return (q.is_moving && !q.is_swimming)|| !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

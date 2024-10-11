@@ -1,0 +1,23 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:max_potion"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "max_potion"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.max_potion"
+      },
+      "minecraft:tags": {
+        "tags": []
+      }
+    }
+  }
+}

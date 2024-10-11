@@ -1,0 +1,192 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.greninja.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_greninja_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_greninja_blink = q.life_time + 1; return (q.life_time > v.next_quirk_greninja_blink) && (v.state_of_greninja == 1 || v.state_of_greninja == 2 || v.state_of_greninja == 3 || v.state_of_greninja == 4 || v.state_of_greninja == 5);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "greninja.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_greninja_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_greninja_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.greninja": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "greninja.sleep",
+            "greninja.sleep.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_greninja = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "float": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "swim": "(q.is_swimming) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "greninjamodel.singlebonelook",
+            "greninja.ground_idle",
+            "greninja.standing.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_greninja = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "float": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "swim": "(q.is_swimming) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "greninjamodel.singlebonelook",
+            "greninja.ground_walk",
+            "greninja.walk.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_greninja = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "float": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "swim": "(q.is_swimming) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "float": {
+          "animations": [
+            "greninjamodel.singlebonelook",
+            "greninja.water_idle",
+            "greninja.float.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_greninja = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swim": "(q.is_swimming) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swim": {
+          "animations": [
+            "greninjamodel.singlebonelook",
+            "greninja.water_swim",
+            "greninja.swim.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_greninja = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "float": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "greninjamodel.singlebonelook",
+            "greninja.battle_idle",
+            "greninja.battleidle.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_greninja = 5; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "float": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "swim": "(q.is_swimming) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

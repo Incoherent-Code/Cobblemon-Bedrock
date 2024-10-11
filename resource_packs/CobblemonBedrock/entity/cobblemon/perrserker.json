@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:perrserker",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0863_perrserker/perrserker",
+        "shiny": "textures/pokemon/0863_perrserker/perrserker_shiny"
+      },
+      "geometry": {
+        "base": "geometry.perrserker.geo",
+        "shiny": "geometry.perrserker.geo"
+      },
+      "animations": {
+        "perrserkermodel.singlebonelook": "animation.perrserkermodel.singlebonelook",
+        "perrserker.ground_idle": "animation.perrserker.ground_idle",
+        "perrserkermodel.bipedwalkanimation": "animation.perrserkermodel.bipedwalkanimation",
+        "perrserkermodel.bimanualswinganimation": "animation.perrserkermodel.bimanualswinganimation",
+        "perrserker.blink": "animation.perrserker.blink",
+        "controller.animation.perrserker.blink": "controller.animation.perrserker.blink",
+        "controller.animation.cobblemon.perrserker": "controller.animation.cobblemon.perrserker"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.perrserker"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.perrserker.blink",
+          {
+            "controller.animation.cobblemon.perrserker": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_perrserker = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

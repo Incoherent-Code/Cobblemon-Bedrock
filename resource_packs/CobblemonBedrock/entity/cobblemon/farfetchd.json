@@ -1,0 +1,76 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:farfetchd",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0083_farfetchd/farfetchd",
+        "shiny": "textures/pokemon/0083_farfetchd/farfetchd_shiny",
+        "galarian": "textures/pokemon/0083_farfetchd/farfetchd_galar",
+        "shiny_galarian": "textures/pokemon/0083_farfetchd/farfetchd_galar_shiny"
+      },
+      "geometry": {
+        "base": "geometry.farfetchd.geo",
+        "shiny": "geometry.farfetchd.geo",
+        "galarian": "geometry.farfetchd_galar.geo",
+        "shiny_galarian": "geometry.farfetchd_galar.geo"
+      },
+      "animations": {
+        "farfetchd.sleep": "animation.farfetchd.sleep",
+        "farfetchdmodel.singlebonelook": "animation.farfetchdmodel.singlebonelook",
+        "farfetchd.ground_idle": "animation.farfetchd.ground_idle",
+        "farfetchd.ground_walk": "animation.farfetchd.ground_walk",
+        "farfetchd.air_idle": "animation.farfetchd.air_idle",
+        "farfetchd.air_fly": "animation.farfetchd.air_fly",
+        "farfetchd.blink": "animation.farfetchd.blink",
+        "controller.animation.farfetchd.blink": "controller.animation.farfetchd.blink",
+        "farfetchd.quirk_leakflip_idle": "animation.farfetchd.quirk_leakflip_idle",
+        "controller.animation.farfetchd.leakflipidle": "controller.animation.farfetchd.leakflipidle",
+        "farfetchd.quirk_leakflip_walk": "animation.farfetchd.quirk_leakflip_walk",
+        "controller.animation.farfetchd.leakflipwalk": "controller.animation.farfetchd.leakflipwalk",
+        "farfetchd.quirk_wink": "animation.farfetchd.quirk_wink",
+        "controller.animation.farfetchd.wink": "controller.animation.farfetchd.wink",
+        "controller.animation.cobblemon.farfetchd": "controller.animation.cobblemon.farfetchd",
+        "farfetchdgalarianmodel.singlebonelook": "animation.farfetchdgalarianmodel.singlebonelook",
+        "farfetchd_galar.ground_idle": "animation.farfetchd_galar.ground_idle",
+        "farfetchdgalarianmodel.bipedwalkanimation": "animation.farfetchdgalarianmodel.bipedwalkanimation",
+        "farfetchd_galar.blink": "animation.farfetchd_galar.blink",
+        "controller.animation.farfetchd_galarian.blink": "controller.animation.farfetchd_galarian.blink",
+        "controller.animation.cobblemon.farfetchd_galarian": "controller.animation.cobblemon.farfetchd_galarian"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.farfetchd"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.farfetchd.blink",
+          "controller.animation.farfetchd.leakflipidle",
+          "controller.animation.farfetchd.leakflipwalk",
+          "controller.animation.farfetchd.wink",
+          {
+            "controller.animation.cobblemon.farfetchd": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.farfetchd_galarian.blink",
+          {
+            "controller.animation.cobblemon.farfetchd_galarian": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_farfetchd = -1.0;",
+          "v.state_of_farfetchd_galarian = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

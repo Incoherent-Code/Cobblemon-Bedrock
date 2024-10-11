@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:venusaur",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0003_venusaur/venusaur",
+        "shiny": "textures/pokemon/0003_venusaur/venusaur_shiny",
+        "female": "textures/pokemon/0003_venusaur/venusaur"
+      },
+      "geometry": {
+        "base": "geometry.venusaur_male.geo",
+        "shiny": "geometry.venusaur_male.geo",
+        "female": "geometry.venusaur_female.geo"
+      },
+      "animations": {
+        "venusaur.sleep": "animation.venusaur.sleep",
+        "venusaurmodel.singlebonelook": "animation.venusaurmodel.singlebonelook",
+        "venusaur.ground_idle": "animation.venusaur.ground_idle",
+        "venusaur.ground_walk": "animation.venusaur.ground_walk",
+        "turtwig.blink": "animation.turtwig.blink",
+        "controller.animation.venusaur.blink": "controller.animation.venusaur.blink",
+        "controller.animation.cobblemon.venusaur": "controller.animation.cobblemon.venusaur"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.venusaur"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.venusaur.blink",
+          {
+            "controller.animation.cobblemon.venusaur": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_venusaur = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

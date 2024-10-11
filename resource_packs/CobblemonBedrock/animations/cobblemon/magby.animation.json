@@ -1,0 +1,68 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.magbymodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.magby.ground_idle": {
+      "loop": true,
+      "bones": {
+        "tail": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leftleg": {
+          "rotation": [
+            0.0,
+            -5.0,
+            0.0
+          ]
+        },
+        "rightleg": {
+          "rotation": [
+            0.0,
+            5.0,
+            0.0
+          ]
+        },
+        "lefthand": {
+          "rotation": [
+            15.0,
+            10.0,
+            15.0
+          ]
+        },
+        "righthand": {
+          "rotation": [
+            15.0,
+            -10.0,
+            -15.0
+          ]
+        }
+      }
+    }
+  }
+}

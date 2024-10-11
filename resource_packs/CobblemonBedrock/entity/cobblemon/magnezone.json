@@ -1,0 +1,36 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:magnezone",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0462_magnezone/magnezone",
+        "shiny": "textures/pokemon/0462_magnezone/magnezone_shiny",
+        "base_emissive": "textures/pokemon/0462_magnezone/magnezone_emissive",
+        "shiny_emissive_shiny": "textures/pokemon/0462_magnezone/magnezone_emissive_shiny",
+        "shiny_emissive": "textures/pokemon/0462_magnezone/magnezone_emissive"
+      },
+      "geometry": {
+        "base": "geometry.magnezone.geo",
+        "shiny": "geometry.magnezone.geo"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.magnezone_emissive",
+        "controller.render.cobblemon.magnezone_emissive_shiny",
+        "controller.render.cobblemon.magnezone"
+      ],
+      "scripts": {}
+    }
+  },
+  "format_version": "1.20.40"
+}

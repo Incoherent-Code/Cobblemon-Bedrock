@@ -1,0 +1,151 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.0",
+  "render_controllers": {
+    "controller.render.cobblemon.vivillon": {
+      "arrays": {
+        "textures": {
+          "array.cobblemon_texture": [
+            "texture.base",
+            "texture.shiny",
+            "texture.vivillon_wings_archipelago",
+            "texture.vivillon_wings_continental",
+            "texture.vivillon_wings_elegant",
+            "texture.vivillon_wings_fancy",
+            "texture.vivillon_wings_garden",
+            "texture.vivillon_wings_high_plains",
+            "texture.vivillon_wings_icy_snow",
+            "texture.vivillon_wings_jungle",
+            "texture.vivillon_wings_marine",
+            "texture.vivillon_wings_meadow",
+            "texture.vivillon_wings_modern",
+            "texture.vivillon_wings_monsoon",
+            "texture.vivillon_wings_ocean",
+            "texture.vivillon_wings_poke_ball",
+            "texture.vivillon_wings_polar",
+            "texture.vivillon_wings_river",
+            "texture.vivillon_wings_sandstorm",
+            "texture.vivillon_wings_savanna",
+            "texture.vivillon_wings_sun",
+            "texture.vivillon_wings_tundra",
+            "texture.vivillon_wings_inferno",
+            "texture.vivillon_wings_void",
+            "texture.vivillon_wings_forsaken"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.vivillon_wings_archipelago",
+            "geometry.vivillon_wings_continental",
+            "geometry.vivillon_wings_elegant",
+            "geometry.vivillon_wings_fancy",
+            "geometry.vivillon_wings_garden",
+            "geometry.vivillon_wings_high_plains",
+            "geometry.vivillon_wings_icy_snow",
+            "geometry.vivillon_wings_jungle",
+            "geometry.vivillon_wings_marine",
+            "geometry.vivillon_wings_meadow",
+            "geometry.vivillon_wings_modern",
+            "geometry.vivillon_wings_monsoon",
+            "geometry.vivillon_wings_ocean",
+            "geometry.vivillon_wings_poke_ball",
+            "geometry.vivillon_wings_polar",
+            "geometry.vivillon_wings_river",
+            "geometry.vivillon_wings_sandstorm",
+            "geometry.vivillon_wings_savanna",
+            "geometry.vivillon_wings_sun",
+            "geometry.vivillon_wings_tundra",
+            "geometry.vivillon_wings_inferno",
+            "geometry.vivillon_wings_void",
+            "geometry.vivillon_wings_forsaken"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.cobblemon_texture[query.variant]"
+      ]
+    },
+    "controller.render.cobblemon.vivillon_wings": {
+      "arrays": {
+        "textures": {
+          "array.variation_wings": [
+            "texture.blank",
+            "texture.blank",
+            "texture.vivillon_wings_archipelago_wings",
+            "texture.vivillon_wings_continental_wings",
+            "texture.vivillon_wings_elegant_wings",
+            "texture.vivillon_wings_fancy_wings",
+            "texture.vivillon_wings_garden_wings",
+            "texture.vivillon_wings_high_plains_wings",
+            "texture.vivillon_wings_icy_snow_wings",
+            "texture.vivillon_wings_jungle_wings",
+            "texture.vivillon_wings_marine_wings",
+            "texture.vivillon_wings_meadow_wings",
+            "texture.vivillon_wings_modern_wings",
+            "texture.vivillon_wings_monsoon_wings",
+            "texture.vivillon_wings_ocean_wings",
+            "texture.vivillon_wings_poke_ball_wings",
+            "texture.vivillon_wings_polar_wings",
+            "texture.vivillon_wings_river_wings",
+            "texture.vivillon_wings_sandstorm_wings",
+            "texture.vivillon_wings_savanna_wings",
+            "texture.vivillon_wings_sun_wings",
+            "texture.vivillon_wings_tundra_wings",
+            "texture.vivillon_wings_inferno_wings",
+            "texture.vivillon_wings_void_wings",
+            "texture.vivillon_wings_forsaken_wings"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny",
+            "geometry.vivillon_wings_archipelago",
+            "geometry.vivillon_wings_continental",
+            "geometry.vivillon_wings_elegant",
+            "geometry.vivillon_wings_fancy",
+            "geometry.vivillon_wings_garden",
+            "geometry.vivillon_wings_high_plains",
+            "geometry.vivillon_wings_icy_snow",
+            "geometry.vivillon_wings_jungle",
+            "geometry.vivillon_wings_marine",
+            "geometry.vivillon_wings_meadow",
+            "geometry.vivillon_wings_modern",
+            "geometry.vivillon_wings_monsoon",
+            "geometry.vivillon_wings_ocean",
+            "geometry.vivillon_wings_poke_ball",
+            "geometry.vivillon_wings_polar",
+            "geometry.vivillon_wings_river",
+            "geometry.vivillon_wings_sandstorm",
+            "geometry.vivillon_wings_savanna",
+            "geometry.vivillon_wings_sun",
+            "geometry.vivillon_wings_tundra",
+            "geometry.vivillon_wings_inferno",
+            "geometry.vivillon_wings_void",
+            "geometry.vivillon_wings_forsaken"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "textures": [
+        "array.variation_wings[query.variant]"
+      ]
+    }
+  }
+}

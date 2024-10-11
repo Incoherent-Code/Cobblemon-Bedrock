@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:klink",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0599_klink/klink",
+        "shiny": "textures/pokemon/0599_klink/klink_shiny"
+      },
+      "geometry": {
+        "base": "geometry.klink.geo",
+        "shiny": "geometry.klink.geo"
+      },
+      "animations": {
+        "klink.sleep": "animation.klink.sleep",
+        "klink.ground_idle": "animation.klink.ground_idle",
+        "klink.ground_walk": "animation.klink.ground_walk",
+        "controller.animation.cobblemon.klink": "controller.animation.cobblemon.klink"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.klink"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.klink": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_klink = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

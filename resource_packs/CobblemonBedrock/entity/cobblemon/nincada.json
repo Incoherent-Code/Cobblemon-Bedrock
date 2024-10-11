@@ -1,0 +1,56 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:nincada",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0290_nincada/nincada",
+        "shiny": "textures/pokemon/0290_nincada/nincada_shiny",
+        "base_wings": "textures/pokemon/0290_nincada/nincada_transparency",
+        "shiny_wings": "textures/pokemon/0290_nincada/nincada_transparency"
+      },
+      "geometry": {
+        "base": "geometry.nincada.geo",
+        "shiny": "geometry.nincada.geo"
+      },
+      "animations": {
+        "nincada.sleep": "animation.nincada.sleep",
+        "nincadamodel.singlebonelook": "animation.nincadamodel.singlebonelook",
+        "nincada.ground_idle": "animation.nincada.ground_idle",
+        "nincada.ground_walk": "animation.nincada.ground_walk",
+        "nincada.blink": "animation.nincada.blink",
+        "controller.animation.nincada.blink": "controller.animation.nincada.blink",
+        "nincada.quirk_wingflutter": "animation.nincada.quirk_wingflutter",
+        "controller.animation.nincada.flutter": "controller.animation.nincada.flutter",
+        "controller.animation.cobblemon.nincada": "controller.animation.cobblemon.nincada"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.nincada_wings",
+        "controller.render.cobblemon.nincada"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.nincada.blink",
+          "controller.animation.nincada.flutter",
+          {
+            "controller.animation.cobblemon.nincada": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_nincada = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

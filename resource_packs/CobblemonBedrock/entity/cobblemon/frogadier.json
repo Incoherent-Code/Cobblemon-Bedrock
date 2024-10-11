@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:frogadier",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0657_frogadier/frogadier",
+        "shiny": "textures/pokemon/0657_frogadier/frogadier_shiny"
+      },
+      "geometry": {
+        "base": "geometry.frogadier.geo",
+        "shiny": "geometry.frogadier.geo"
+      },
+      "animations": {
+        "frogadier.sleep": "animation.frogadier.sleep",
+        "frogadiermodel.singlebonelook": "animation.frogadiermodel.singlebonelook",
+        "frogadier.ground_idle": "animation.frogadier.ground_idle",
+        "frogadier.ground_walk": "animation.frogadier.ground_walk",
+        "frogadier.water_idle": "animation.frogadier.water_idle",
+        "frogadier.water_swim": "animation.frogadier.water_swim",
+        "frogadier.battle_idle": "animation.frogadier.battle_idle",
+        "frogadier.blink": "animation.frogadier.blink",
+        "controller.animation.frogadier.blink": "controller.animation.frogadier.blink",
+        "controller.animation.cobblemon.frogadier": "controller.animation.cobblemon.frogadier"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.frogadier"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.frogadier.blink",
+          {
+            "controller.animation.cobblemon.frogadier": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_frogadier = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

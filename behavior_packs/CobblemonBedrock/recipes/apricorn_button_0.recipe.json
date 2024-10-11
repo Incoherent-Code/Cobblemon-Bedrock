@@ -1,0 +1,28 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "cobblemon:apricorn_planks"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "cobblemon:apricorn_planks"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:apricorn_button"
+    },
+    "description": {
+      "identifier": "cobblemon:apricorn_button_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

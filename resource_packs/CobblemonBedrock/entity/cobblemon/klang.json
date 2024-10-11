@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:klang",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0600_klang/klang",
+        "shiny": "textures/pokemon/0600_klang/klang_shiny"
+      },
+      "geometry": {
+        "base": "geometry.klang.geo",
+        "shiny": "geometry.klang.geo"
+      },
+      "animations": {
+        "klang.sleep": "animation.klang.sleep",
+        "klang.ground_idle": "animation.klang.ground_idle",
+        "klang.ground_walk": "animation.klang.ground_walk",
+        "controller.animation.cobblemon.klang": "controller.animation.cobblemon.klang"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.klang"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.klang": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_klang = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

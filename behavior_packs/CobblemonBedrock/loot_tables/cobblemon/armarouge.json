@@ -1,0 +1,37 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:charcoal",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:charcoal_stick",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:auspicious_armor",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:rawst_berry",
+          "weight": 5
+        },
+        {
+          "type": "empty",
+          "weight": 83
+        }
+      ]
+    }
+  ]
+}

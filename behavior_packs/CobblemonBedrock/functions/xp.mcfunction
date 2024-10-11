@@ -1,0 +1,1 @@
+summon minecraft:xp_orb ~ ~ ~

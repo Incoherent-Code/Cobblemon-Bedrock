@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " t ",
+      "lcr",
+      " b "
+    ],
+    "key": {
+      "t": {
+        "item": "cobblemon:pink_apricorn"
+      },
+      "l": {
+        "item": "cobblemon:pink_apricorn"
+      },
+      "c": {
+        "item": "minecraft:copper_ingot"
+      },
+      "r": {
+        "item": "cobblemon:pink_apricorn"
+      },
+      "b": {
+        "item": "cobblemon:pink_apricorn"
+      }
+    },
+    "unlock": [
+      {
+        "item": "cobblemon:pink_apricorn"
+      },
+      {
+        "item": "cobblemon:pink_apricorn"
+      },
+      {
+        "item": "minecraft:copper_ingot"
+      },
+      {
+        "item": "cobblemon:pink_apricorn"
+      },
+      {
+        "item": "cobblemon:pink_apricorn"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:roseate_ball",
+      "count": 4
+    },
+    "description": {
+      "identifier": "cobblemon:roseate_ball_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

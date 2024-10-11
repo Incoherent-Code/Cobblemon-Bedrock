@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:scyther",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0123_scyther/scyther",
+        "shiny": "textures/pokemon/0123_scyther/scyther_shiny",
+        "female": "textures/pokemon/0123_scyther/scyther"
+      },
+      "geometry": {
+        "base": "geometry.scyther_male.geo",
+        "shiny": "geometry.scyther_male.geo",
+        "female": "geometry.scyther_female.geo"
+      },
+      "animations": {
+        "scythermodel.singlebonelook": "animation.scythermodel.singlebonelook",
+        "scyther.ground_idle": "animation.scyther.ground_idle",
+        "scythermodel.bipedwalkanimation": "animation.scythermodel.bipedwalkanimation",
+        "scyther.air_idle": "animation.scyther.air_idle",
+        "scyther.blink": "animation.scyther.blink",
+        "controller.animation.scyther.blink": "controller.animation.scyther.blink",
+        "controller.animation.cobblemon.scyther": "controller.animation.cobblemon.scyther"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.scyther"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.scyther.blink",
+          {
+            "controller.animation.cobblemon.scyther": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_scyther = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

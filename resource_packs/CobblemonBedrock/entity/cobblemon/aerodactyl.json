@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:aerodactyl",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0142_aerodactyl/aerodactyl",
+        "shiny": "textures/pokemon/0142_aerodactyl/aerodactyl_shiny"
+      },
+      "geometry": {
+        "base": "geometry.aerodactyl.geo",
+        "shiny": "geometry.aerodactyl.geo"
+      },
+      "animations": {
+        "aerodactyl.sleep": "animation.aerodactyl.sleep",
+        "aerodactylmodel.singlebonelook": "animation.aerodactylmodel.singlebonelook",
+        "aerodactyl.ground_idle": "animation.aerodactyl.ground_idle",
+        "aerodactyl.ground_walk": "animation.aerodactyl.ground_walk",
+        "aerodactyl.air_idle": "animation.aerodactyl.air_idle",
+        "aerodactyl.air_fly": "animation.aerodactyl.air_fly",
+        "aerodactyl.blink": "animation.aerodactyl.blink",
+        "controller.animation.aerodactyl.blink": "controller.animation.aerodactyl.blink",
+        "controller.animation.cobblemon.aerodactyl": "controller.animation.cobblemon.aerodactyl"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.aerodactyl"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.aerodactyl.blink",
+          {
+            "controller.animation.cobblemon.aerodactyl": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_aerodactyl = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

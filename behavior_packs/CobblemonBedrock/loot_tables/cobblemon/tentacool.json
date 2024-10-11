@@ -1,0 +1,32 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 7,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:ink_sac",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glow_ink_sac",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:poison_barb",
+          "weight": 2
+        },
+        {
+          "type": "empty",
+          "weight": 86
+        }
+      ]
+    }
+  ]
+}

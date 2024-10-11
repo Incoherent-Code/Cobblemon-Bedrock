@@ -1,0 +1,163 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.tranquillmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head_ai": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.tranquill.ground_idle": {
+      "loop": true,
+      "bones": {
+        "toe_inner_left": {
+          "rotation": [
+            0.0,
+            5.0,
+            0.0
+          ]
+        },
+        "toe_outer_left": {
+          "rotation": [
+            0.0,
+            -5.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            50.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hair": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            173.06429,
+            -69.8486,
+            -82.7329
+          ],
+          "position": [
+            0.0,
+            -2.5,
+            -2.0
+          ]
+        },
+        "wing_left2": {
+          "rotation": [
+            -0.61072,
+            44.98912,
+            -0.37494
+          ]
+        },
+        "wing_left3": {
+          "rotation": [
+            0.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            173.06429,
+            69.84863,
+            82.73288
+          ],
+          "position": [
+            0.0,
+            -2.5,
+            -2.0
+          ]
+        },
+        "wing_right2": {
+          "rotation": [
+            -0.61072,
+            -44.98912,
+            0.37494
+          ]
+        },
+        "wing_right3": {
+          "rotation": [
+            0.0,
+            30.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.tranquill.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

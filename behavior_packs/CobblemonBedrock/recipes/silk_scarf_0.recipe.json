@@ -1,0 +1,39 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " WS",
+      "SWW",
+      "WS "
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:white_wool"
+      },
+      "S": {
+        "item": "minecraft:string"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "minecraft:string"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:silk_scarf"
+    },
+    "description": {
+      "identifier": "cobblemon:silk_scarf_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

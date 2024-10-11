@@ -1,0 +1,127 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.corviknight.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_corviknight_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_corviknight_blink = q.life_time + 1; return (q.life_time > v.next_quirk_corviknight_blink) && (v.state_of_corviknight == 1 || v.state_of_corviknight == 2 || v.state_of_corviknight == 3 || v.state_of_corviknight == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "corviknight.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_corviknight_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_corviknight_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.corviknight": {
+      "initial_state": "sleep",
+      "states": {
+        "sleep": {
+          "animations": [
+            "corviknight.sleep"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_corviknight = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "stand": {
+          "animations": [
+            "corviknightmodel.singlebonelook",
+            "corviknight.ground_idle",
+            "corviknight.stand.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_corviknight = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "corviknightmodel.singlebonelook",
+            "corviknight.air_idle",
+            "corviknight.hover.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_corviknight = 2; return q.is_sleeping;"
+            },
+            {
+              "stand": "!q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "corviknightmodel.singlebonelook",
+            "corviknight.air_fly",
+            "corviknight.fly.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_corviknight = 3; return q.is_sleeping;"
+            },
+            {
+              "stand": "!q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "corviknightmodel.singlebonelook",
+            "corviknight.ground_walk",
+            "corviknight.walk.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_corviknight = 4; return q.is_sleeping;"
+            },
+            {
+              "stand": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

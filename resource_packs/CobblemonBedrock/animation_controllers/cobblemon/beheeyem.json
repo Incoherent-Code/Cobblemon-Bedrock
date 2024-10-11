@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.beheeyem": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "beheeyem.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_beheeyem = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "beheeyemmodel.singlebonelook",
+            "beheeyem.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_beheeyem = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "beheeyemmodel.singlebonelook",
+            "beheeyem.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_beheeyem = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

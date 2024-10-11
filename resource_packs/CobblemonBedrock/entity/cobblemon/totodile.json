@@ -1,0 +1,68 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:totodile",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0158_totodile/totodile",
+        "shiny": "textures/pokemon/0158_totodile/totodile_shiny"
+      },
+      "geometry": {
+        "base": "geometry.totodile.geo",
+        "shiny": "geometry.totodile.geo"
+      },
+      "animations": {
+        "totodile.sleep": "animation.totodile.sleep",
+        "totodile.water_sleep": "animation.totodile.water_sleep",
+        "totodilemodel.singlebonelook": "animation.totodilemodel.singlebonelook",
+        "totodile.ground_idle": "animation.totodile.ground_idle",
+        "totodile.ground_walk": "animation.totodile.ground_walk",
+        "totodile.water_idle": "animation.totodile.water_idle",
+        "totodile.water_swim": "animation.totodile.water_swim",
+        "totodile.battle_idle": "animation.totodile.battle_idle",
+        "totodile.surfacewater_idle": "animation.totodile.surfacewater_idle",
+        "totodile.water_surface_idle.transform": "animation.totodile.water_surface_idle.transform",
+        "totodile.surfacewater_swim": "animation.totodile.surfacewater_swim",
+        "totodile.water_surface_swim.transform": "animation.totodile.water_surface_swim.transform",
+        "totodile.shoulder_right": "animation.totodile.shoulder_right",
+        "totodile.shoulderleft.transform": "animation.totodile.shoulderleft.transform",
+        "totodile.shoulder_left": "animation.totodile.shoulder_left",
+        "totodile.shoulderright.transform": "animation.totodile.shoulderright.transform",
+        "totodile.blink": "animation.totodile.blink",
+        "controller.animation.totodile.blink": "controller.animation.totodile.blink",
+        "totodile.sleep_quirk": "animation.totodile.sleep_quirk",
+        "controller.animation.totodile.sleepQuirk": "controller.animation.totodile.sleepQuirk",
+        "totodile.bitey_quirk": "animation.totodile.bitey_quirk",
+        "controller.animation.totodile.biteyQuirk": "controller.animation.totodile.biteyQuirk",
+        "controller.animation.cobblemon.totodile": "controller.animation.cobblemon.totodile"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.totodile"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.totodile.blink",
+          "controller.animation.totodile.sleepQuirk",
+          "controller.animation.totodile.biteyQuirk",
+          {
+            "controller.animation.cobblemon.totodile": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_totodile = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

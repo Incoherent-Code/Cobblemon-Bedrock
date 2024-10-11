@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.spiritomb.ground_idle": {
+      "loop": true,
+      "bones": {
+        "tomb": {
+          "rotation": [
+            "math.sin(query.anim_time*90*1.5)*2",
+            0.0,
+            "math.cos(query.anim_time*90*1.5)*2"
+          ]
+        },
+        "stem": {
+          "rotation": [
+            "-15+math.cos(query.anim_time*90*1.5)*5",
+            "math.sin(query.anim_time*90*1.5)*5",
+            0.0
+          ]
+        },
+        "spirit": {
+          "rotation": [
+            0.0,
+            "math.cos(query.anim_time*90*1.5)*-2",
+            0.0
+          ]
+        },
+        "face": {},
+        "back": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-(query.anim_time)*40"
+          ]
+        },
+        "orbs": {
+          "rotation": [
+            0.0,
+            0.0,
+            "(query.anim_time)*80"
+          ]
+        },
+        "mouth_open": {}
+      }
+    }
+  }
+}

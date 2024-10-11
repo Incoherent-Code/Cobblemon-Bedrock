@@ -1,0 +1,75 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cobblemon:apricorn_leaves",
+      "menu_category": {
+        "category": "nature",
+        "group": "itemGroup.name.leaves"
+      },
+      "states": {
+        "cobblemon:distance_from_log": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "cobblemon:decayable": [
+          true,
+          false
+        ],
+        "cobblemon:opaque": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "block.cobblemon.apricorn_leaves",
+      "tag:leaves": {},
+      "minecraft:flammable": true,
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.3
+      },
+      "minecraft:map_color": "#DDDDDD",
+      "minecraft:light_dampening": 0,
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "apricorn_leaves",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          10,
+          10
+        ],
+        "looping": true
+      },
+      "minecraft:custom_components": [
+        "cobblemon:apricorn_leaves_component"
+      ]
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('cobblemon:opaque')",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "apricorn_leaves",
+              "render_method": "opaque"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

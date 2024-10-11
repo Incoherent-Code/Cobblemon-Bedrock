@@ -1,0 +1,37 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:everstone",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:black_augurite",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:rindo_berry",
+          "weight": 5
+        },
+        {
+          "type": "empty",
+          "weight": 83
+        }
+      ]
+    }
+  ]
+}

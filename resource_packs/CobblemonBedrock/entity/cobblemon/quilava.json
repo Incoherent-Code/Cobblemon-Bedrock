@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:quilava",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0156_quilava/quilava",
+        "shiny": "textures/pokemon/0156_quilava/quilava_shiny",
+        "base_emissive": "textures/pokemon/0156_quilava/quilava_emissive",
+        "shiny_emissive": "textures/pokemon/0156_quilava/quilava_emissive"
+      },
+      "geometry": {
+        "base": "geometry.quilava.geo",
+        "shiny": "geometry.quilava.geo"
+      },
+      "animations": {
+        "quilava.sleep": "animation.quilava.sleep",
+        "quilavamodel.singlebonelook": "animation.quilavamodel.singlebonelook",
+        "quilava.fire_idle": "animation.quilava.fire_idle",
+        "quilava.ground_idle": "animation.quilava.ground_idle",
+        "quilava.ground_walk": "animation.quilava.ground_walk",
+        "quilava.battle_idle": "animation.quilava.battle_idle",
+        "quilava.blink": "animation.quilava.blink",
+        "controller.animation.quilava.blink": "controller.animation.quilava.blink",
+        "controller.animation.cobblemon.quilava": "controller.animation.cobblemon.quilava"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.quilava_emissive",
+        "controller.render.cobblemon.quilava"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.quilava.blink",
+          {
+            "controller.animation.cobblemon.quilava": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_quilava = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

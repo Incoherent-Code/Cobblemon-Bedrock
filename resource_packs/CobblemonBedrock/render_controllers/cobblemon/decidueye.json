@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.0",
+  "render_controllers": {
+    "controller.render.cobblemon.decidueye": {
+      "arrays": {
+        "textures": {
+          "array.cobblemon_texture": [
+            "texture.base",
+            "texture.shiny"
+          ]
+        },
+        "geometries": {
+          "array.cobblemon_geometry": [
+            "geometry.base",
+            "geometry.shiny"
+          ]
+        }
+      },
+      "geometry": "array.cobblemon_geometry[query.variant]",
+      "materials": [
+        {
+          "*": "material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "wing_left1": "!(v.state_of_decidueye == 0) && !(v.state_of_decidueye == 1)"
+        },
+        {
+          "wing_right1": "!(v.state_of_decidueye == 0) && !(v.state_of_decidueye == 1)"
+        },
+        {
+          "arrow": "!(v.state_of_decidueye == 0) && !(v.state_of_decidueye == 1) && !(v.state_of_decidueye == 2) && !(v.state_of_decidueye == 3)"
+        },
+        {
+          "folded_wings": "!(v.state_of_decidueye == 2) && !(v.state_of_decidueye == 3)"
+        }
+      ],
+      "textures": [
+        "array.cobblemon_texture[query.variant]"
+      ]
+    }
+  }
+}

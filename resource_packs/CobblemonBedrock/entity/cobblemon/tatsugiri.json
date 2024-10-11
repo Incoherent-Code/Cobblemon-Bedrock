@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:tatsugiri",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0978_tatsugiri/tatsugiri_curly",
+        "tatsugiri_texture_curly": "textures/pokemon/0978_tatsugiri/tatsugiri_curly",
+        "tatsugiri_texture_droopy": "textures/pokemon/0978_tatsugiri/tatsugiri_droopy",
+        "tatsugiri_texture_stretchy": "textures/pokemon/0978_tatsugiri/tatsugiri_stretchy",
+        "shiny": "textures/pokemon/0978_tatsugiri/tatsugiri_curly"
+      },
+      "geometry": {
+        "base": "geometry.tatsugiri.geo",
+        "tatsugiri_texture_curly": "geometry.tatsugiri.geo",
+        "tatsugiri_texture_droopy": "geometry.tatsugiri.geo",
+        "tatsugiri_texture_stretchy": "geometry.tatsugiri.geo",
+        "shiny": "geometry.tatsugiri.geo"
+      },
+      "animations": {
+        "tatsugirimodel.singlebonelook": "animation.tatsugirimodel.singlebonelook",
+        "tatsugiri.ground_idle": "animation.tatsugiri.ground_idle",
+        "tatsugiri.water_idle": "animation.tatsugiri.water_idle",
+        "controller.animation.cobblemon.tatsugiri": "controller.animation.cobblemon.tatsugiri"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.tatsugiri"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.tatsugiri": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4"
+          }
+        ],
+        "initialize": [
+          "v.state_of_tatsugiri = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

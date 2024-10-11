@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:apricorn_door"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "apricorn_door"
+      },
+      "minecraft:display_name": {
+        "value": "block.cobblemon.apricorn_door"
+      },
+      "minecraft:block_placer": {
+        "block": "cobblemon:apricorn_door_bottom_left"
+      }
+    }
+  }
+}

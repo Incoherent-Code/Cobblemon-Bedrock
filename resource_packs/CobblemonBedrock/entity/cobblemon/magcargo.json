@@ -1,0 +1,68 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:magcargo",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0219_magcargo/magcargo",
+        "shiny": "textures/pokemon/0219_magcargo/magcargo_shiny",
+        "base_glow": "textures/pokemon/0219_magcargo/magcargo_emissive",
+        "base_flame_uv": "textures/pokemon/0219_magcargo/base_flame_uv",
+        "shiny_glow": "textures/pokemon/0219_magcargo/magcargo_shiny_emissive",
+        "shiny_flame_uv": "textures/pokemon/0219_magcargo/shiny_flame_uv"
+      },
+      "geometry": {
+        "base": "geometry.magcargo.geo",
+        "shiny": "geometry.magcargo.geo"
+      },
+      "animations": {
+        "magcargo.ground_sleep": "animation.magcargo.ground_sleep",
+        "magcargomodel.singlebonelook": "animation.magcargomodel.singlebonelook",
+        "magcargo.ground_idle": "animation.magcargo.ground_idle",
+        "magcargo.ground_walk": "animation.magcargo.ground_walk",
+        "magcargo.blink": "animation.magcargo.blink",
+        "controller.animation.magcargo.blink": "controller.animation.magcargo.blink",
+        "controller.animation.cobblemon.magcargo": "controller.animation.cobblemon.magcargo",
+        "magcargo_shiny.ground_sleep": "animation.magcargo_shiny.ground_sleep",
+        "magcargoshinymodel.singlebonelook": "animation.magcargoshinymodel.singlebonelook",
+        "magcargo_shiny.ground_idle": "animation.magcargo_shiny.ground_idle",
+        "magcargo_shiny.ground_walk": "animation.magcargo_shiny.ground_walk",
+        "magcargo_shiny.blink": "animation.magcargo_shiny.blink",
+        "controller.animation.magcargo_shiny.blink": "controller.animation.magcargo_shiny.blink",
+        "controller.animation.cobblemon.magcargo_shiny": "controller.animation.cobblemon.magcargo_shiny"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.magcargo_glow",
+        "controller.render.cobblemon.magcargo_flame",
+        "controller.render.cobblemon.magcargo"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.magcargo.blink",
+          {
+            "controller.animation.cobblemon.magcargo": "q.variant == 0"
+          },
+          "controller.animation.magcargo_shiny.blink",
+          {
+            "controller.animation.cobblemon.magcargo_shiny": "q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_magcargo = -1.0;",
+          "v.state_of_magcargo_shiny = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

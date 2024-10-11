@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:alakazam",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0065_alakazam/alakazam",
+        "shiny": "textures/pokemon/0065_alakazam/alakazam_shiny",
+        "female": "textures/pokemon/0065_alakazam/alakazam"
+      },
+      "geometry": {
+        "base": "geometry.alakazam_male.geo",
+        "shiny": "geometry.alakazam_male.geo",
+        "female": "geometry.alakazam_female.geo"
+      },
+      "animations": {
+        "alakazammodel.singlebonelook": "animation.alakazammodel.singlebonelook",
+        "alakazam.ground_idle": "animation.alakazam.ground_idle",
+        "alakazammodel.bipedwalkanimation": "animation.alakazammodel.bipedwalkanimation",
+        "alakazammodel.bimanualswinganimation": "animation.alakazammodel.bimanualswinganimation",
+        "alakazam.blink": "animation.alakazam.blink",
+        "controller.animation.alakazam.blink": "controller.animation.alakazam.blink",
+        "controller.animation.cobblemon.alakazam": "controller.animation.cobblemon.alakazam"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.alakazam"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.alakazam.blink",
+          {
+            "controller.animation.cobblemon.alakazam": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_alakazam = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

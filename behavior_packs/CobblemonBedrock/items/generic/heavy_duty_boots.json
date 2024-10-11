@@ -1,0 +1,25 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:heavy_duty_boots"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "heavy_duty_boots"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.heavy_duty_boots"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:is_held_item"
+        ]
+      }
+    }
+  }
+}

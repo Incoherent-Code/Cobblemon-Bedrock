@@ -1,0 +1,192 @@
+{
+  "minLevel": 20,
+  "maxLevel": 43,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 20,
+      "maxLevel": 43
+    },
+    "1": {
+      "minLevel": 20,
+      "maxLevel": 43
+    },
+    "2": {
+      "minLevel": 20,
+      "maxLevel": 43
+    },
+    "3": {
+      "minLevel": 20,
+      "maxLevel": 43
+    }
+  },
+  "name": "Clodsire",
+  "nationalPokedexNumber": 980,
+  "baseStats": {
+    "hp": 130,
+    "attack": 75,
+    "defence": 60,
+    "special_attack": 45,
+    "special_defence": 100,
+    "speed": 20
+  },
+  "maleRatio": 0.5,
+  "catchRate": 90,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 1.4,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "poison",
+  "secondaryType": "ground",
+  "abilities": [
+    "poisonpoint",
+    "waterabsorb",
+    "h:unaware"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:poisonsting",
+    "1:tailwhip",
+    "1:amnesia",
+    "4:toxicspikes",
+    "8:mudshot",
+    "12:poisontail",
+    "16:slam",
+    "21:yawn",
+    "24:poisonjab",
+    "30:sludgewave",
+    "36:megahorn",
+    "40:toxic",
+    "48:earthquake",
+    "tm:acidspray",
+    "tm:amnesia",
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:chillingwater",
+    "tm:dig",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:gigaimpact",
+    "tm:gunkshot",
+    "tm:heavyslam",
+    "tm:helpinghand",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:ironhead",
+    "tm:liquidation",
+    "tm:lowkick",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:poisonjab",
+    "tm:poisontail",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:sandstorm",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:spikes",
+    "tm:stealthrock",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:substitute",
+    "tm:surf",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:toxicspikes",
+    "tm:trailblaze",
+    "tm:venoshock",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:zenheadbutt"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.clodsire.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:clay_ball",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "water_1",
+    "field"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 18.0,
+  "weight": 2230.0
+}

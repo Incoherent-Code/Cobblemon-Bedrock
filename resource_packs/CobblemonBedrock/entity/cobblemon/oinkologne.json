@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:oinkologne",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0916_oinkologne/oinkologne_male",
+        "shiny": "textures/pokemon/0916_oinkologne/oinkologne_male_shiny",
+        "female": "textures/pokemon/0916_oinkologne/oinkologne_female",
+        "female_shiny": "textures/pokemon/0916_oinkologne/oinkologne_female_shiny"
+      },
+      "geometry": {
+        "base": "geometry.oinkologne_male.geo",
+        "shiny": "geometry.oinkologne_male.geo",
+        "female": "geometry.oinkologne_female.geo",
+        "female_shiny": "geometry.oinkologne_female.geo"
+      },
+      "animations": {
+        "oinkolognemodel.singlebonelook": "animation.oinkolognemodel.singlebonelook",
+        "oinkologne.ground_idle": "animation.oinkologne.ground_idle",
+        "oinkolognemodel.quadrupedwalkanimation": "animation.oinkolognemodel.quadrupedwalkanimation",
+        "oinkologne.blink": "animation.oinkologne.blink",
+        "controller.animation.oinkologne.blink": "controller.animation.oinkologne.blink",
+        "controller.animation.cobblemon.oinkologne": "controller.animation.cobblemon.oinkologne"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.oinkologne"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.oinkologne.blink",
+          {
+            "controller.animation.cobblemon.oinkologne": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_oinkologne = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

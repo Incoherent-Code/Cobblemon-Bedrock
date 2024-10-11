@@ -1,0 +1,119 @@
+{
+  "format_version": "1.20.60",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cobblemon:apricorn_slab",
+      "menu_category": {
+        "category": "construction",
+        "group": "itemGroup.name.slab"
+      },
+      "traits": {
+        "minecraft:placement_position": {
+          "enabled_states": [
+            "minecraft:vertical_half"
+          ]
+        }
+      },
+      "states": {
+        "cobblemon:double": [
+          false,
+          true
+        ]
+      }
+    },
+    "permutations": [
+      // Bottom Slab
+      {
+        "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && !q.block_state('cobblemon:double')",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              8,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              0,
+              -8
+            ],
+            "size": [
+              16,
+              8,
+              16
+            ]
+          }
+        }
+      },
+      // Top Slab
+      {
+        "condition": "q.block_state('minecraft:vertical_half') == 'top' && !q.block_state('cobblemon:double')",
+        "components": {
+          "minecraft:collision_box": {
+            "origin": [
+              -8,
+              8,
+              -8
+            ],
+            "size": [
+              16,
+              8,
+              16
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -8,
+              8,
+              -8
+            ],
+            "size": [
+              16,
+              8,
+              16
+            ]
+          }
+        }
+      },
+      // Double Slab
+      {
+        "condition": "q.block_state('cobblemon:double')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "minecraft:geometry.full_block"
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.custom_slab",
+        "bone_visibility": {
+          "bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'",
+          "top_slab": "q.block_state('minecraft:vertical_half') == 'top'"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "apricorn_planks"
+        }
+      },
+      "minecraft:display_name": "block.cobblemon.apricorn_slab",
+      "minecraft:custom_components": [
+        "cobblemon:apricorn_slab_component"
+      ],
+      "minecraft:loot": "loot_tables/empty.json",
+      "tag:minecraft:wooden_slabs": {}
+    }
+  }
+}

@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:oddish",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0043_oddish/oddish",
+        "shiny": "textures/pokemon/0043_oddish/oddish_shiny"
+      },
+      "geometry": {
+        "base": "geometry.oddish.geo",
+        "shiny": "geometry.oddish.geo"
+      },
+      "animations": {
+        "oddish.ground_idle": "animation.oddish.ground_idle",
+        "oddish.sleep": "animation.oddish.sleep",
+        "oddish.ground_walk": "animation.oddish.ground_walk",
+        "oddish.blink": "animation.oddish.blink",
+        "controller.animation.oddish.blink": "controller.animation.oddish.blink",
+        "controller.animation.cobblemon.oddish": "controller.animation.cobblemon.oddish"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.oddish"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.oddish.blink",
+          {
+            "controller.animation.cobblemon.oddish": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_oddish = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

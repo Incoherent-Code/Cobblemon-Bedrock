@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:magmar",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0126_magmar/magmar",
+        "shiny": "textures/pokemon/0126_magmar/magmar_shiny",
+        "base_emissive": "textures/pokemon/0126_magmar/magmar_emissive",
+        "shiny_emissive": "textures/pokemon/0126_magmar/magmar_emissive"
+      },
+      "geometry": {
+        "base": "geometry.magmar.geo",
+        "shiny": "geometry.magmar.geo"
+      },
+      "animations": {
+        "magmarmodel.singlebonelook": "animation.magmarmodel.singlebonelook",
+        "magmar.ground_idle": "animation.magmar.ground_idle",
+        "controller.animation.cobblemon.magmar": "controller.animation.cobblemon.magmar"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.magmar_emissive",
+        "controller.render.cobblemon.magmar"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.magmar": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_magmar = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

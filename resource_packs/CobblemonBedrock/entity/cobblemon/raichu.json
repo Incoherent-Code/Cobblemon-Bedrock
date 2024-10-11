@@ -1,0 +1,69 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:raichu",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0026_raichu/raichu",
+        "shiny": "textures/pokemon/0026_raichu/raichu_shiny",
+        "female": "textures/pokemon/0026_raichu/raichu",
+        "alolan": "textures/pokemon/0026_raichu/raichu_alolan",
+        "shiny_alolan": "textures/pokemon/0026_raichu/raichu_alolan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.raichu_male.geo",
+        "shiny": "geometry.raichu_male.geo",
+        "female": "geometry.raichu_female.geo",
+        "alolan": "geometry.raichu_alolan.geo",
+        "shiny_alolan": "geometry.raichu_alolan.geo"
+      },
+      "animations": {
+        "raichumodel.singlebonelook": "animation.raichumodel.singlebonelook",
+        "raichu.ground_idle": "animation.raichu.ground_idle",
+        "raichu.ground_sleep": "animation.raichu.ground_sleep",
+        "raichu.ground_walk": "animation.raichu.ground_walk",
+        "raichu.battle_idle": "animation.raichu.battle_idle",
+        "raichu.blink": "animation.raichu.blink",
+        "controller.animation.raichu.blink": "controller.animation.raichu.blink",
+        "controller.animation.cobblemon.raichu": "controller.animation.cobblemon.raichu",
+        "raichualolanmodel.singlebonelook": "animation.raichualolanmodel.singlebonelook",
+        "raichu_alolan.ground_idle": "animation.raichu_alolan.ground_idle",
+        "raichu_alolan.ground_sleep": "animation.raichu_alolan.ground_sleep",
+        "raichu_alolan.ground_walk": "animation.raichu_alolan.ground_walk",
+        "raichu_alolan.blink": "animation.raichu_alolan.blink",
+        "controller.animation.raichu_alolan.blink": "controller.animation.raichu_alolan.blink",
+        "controller.animation.cobblemon.raichu_alolan": "controller.animation.cobblemon.raichu_alolan"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.raichu"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.raichu.blink",
+          {
+            "controller.animation.cobblemon.raichu": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          },
+          "controller.animation.raichu_alolan.blink",
+          {
+            "controller.animation.cobblemon.raichu_alolan": "q.variant == 3 || q.variant == 4"
+          }
+        ],
+        "initialize": [
+          "v.state_of_raichu = -1.0;",
+          "v.state_of_raichu_alolan = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

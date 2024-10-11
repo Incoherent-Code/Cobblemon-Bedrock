@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:blaziken",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0257_blaziken/blaziken",
+        "shiny": "textures/pokemon/0257_blaziken/blaziken_shiny",
+        "female": "textures/pokemon/0257_blaziken/blaziken"
+      },
+      "geometry": {
+        "base": "geometry.blaziken_male.geo",
+        "shiny": "geometry.blaziken_male.geo",
+        "female": "geometry.blaziken_female.geo"
+      },
+      "animations": {
+        "blazikenmodel.singlebonelook": "animation.blazikenmodel.singlebonelook",
+        "blaziken.ground_idle": "animation.blaziken.ground_idle",
+        "blazikenmodel.bipedwalkanimation": "animation.blazikenmodel.bipedwalkanimation",
+        "blaziken.blink": "animation.blaziken.blink",
+        "controller.animation.blaziken.blink": "controller.animation.blaziken.blink",
+        "controller.animation.cobblemon.blaziken": "controller.animation.cobblemon.blaziken"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.blaziken"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.blaziken.blink",
+          {
+            "controller.animation.cobblemon.blaziken": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_blaziken = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

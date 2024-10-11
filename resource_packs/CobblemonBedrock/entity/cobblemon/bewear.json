@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:bewear",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0760_bewear/bewear",
+        "shiny": "textures/pokemon/0760_bewear/bewear_shiny"
+      },
+      "geometry": {
+        "base": "geometry.bewear.geo",
+        "shiny": "geometry.bewear.geo"
+      },
+      "animations": {
+        "bewear.sleep": "animation.bewear.sleep",
+        "bewearmodel.singlebonelook": "animation.bewearmodel.singlebonelook",
+        "bewear.ground_idle": "animation.bewear.ground_idle",
+        "bewear.ground_walk": "animation.bewear.ground_walk",
+        "bewear.battle_idle": "animation.bewear.battle_idle",
+        "bewear.blink": "animation.bewear.blink",
+        "controller.animation.bewear.blink": "controller.animation.bewear.blink",
+        "controller.animation.cobblemon.bewear": "controller.animation.cobblemon.bewear"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.bewear"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.bewear.blink",
+          {
+            "controller.animation.cobblemon.bewear": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_bewear = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

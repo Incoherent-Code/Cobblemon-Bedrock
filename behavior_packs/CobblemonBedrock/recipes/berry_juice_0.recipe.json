@@ -1,0 +1,40 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "tag": "cobblemon:berries"
+      },
+      {
+        "tag": "cobblemon:berries"
+      },
+      {
+        "item": "minecraft:bowl"
+      }
+    ],
+    "unlock": [
+      {
+        "tag": "cobblemon:berries"
+      },
+      {
+        "tag": "cobblemon:berries"
+      },
+      {
+        "item": "minecraft:bowl"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:berry_juice"
+    },
+    "description": {
+      "identifier": "cobblemon:berry_juice_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:pinap_berry",
+          "weight": 2
+        },
+        {
+          "type": "empty",
+          "weight": 96
+        }
+      ]
+    }
+  ]
+}

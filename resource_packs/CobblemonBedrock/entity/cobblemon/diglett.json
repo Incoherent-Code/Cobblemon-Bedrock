@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:diglett",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0050_diglett/diglett",
+        "shiny": "textures/pokemon/0050_diglett/diglett_shiny"
+      },
+      "geometry": {
+        "base": "geometry.diglett.geo",
+        "shiny": "geometry.diglett.geo"
+      },
+      "animations": {
+        "diglett.ground_idle": "animation.diglett.ground_idle",
+        "diglett.sleep": "animation.diglett.sleep",
+        "diglett.ground_walk": "animation.diglett.ground_walk",
+        "diglett.blink": "animation.diglett.blink",
+        "controller.animation.diglett.blink": "controller.animation.diglett.blink",
+        "controller.animation.cobblemon.diglett": "controller.animation.cobblemon.diglett"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.diglett"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.diglett.blink",
+          {
+            "controller.animation.cobblemon.diglett": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_diglett = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

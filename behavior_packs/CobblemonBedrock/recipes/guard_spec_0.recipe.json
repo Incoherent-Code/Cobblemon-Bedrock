@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "item": "cobblemon:pep_up_flower"
+      },
+      {
+        "item": "cobblemon:starf_berry"
+      },
+      {
+        "item": "cobblemon:starf_berry"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "item": "cobblemon:pep_up_flower"
+      },
+      {
+        "item": "cobblemon:starf_berry"
+      },
+      {
+        "item": "cobblemon:starf_berry"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:guard_spec"
+    },
+    "description": {
+      "identifier": "cobblemon:guard_spec_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

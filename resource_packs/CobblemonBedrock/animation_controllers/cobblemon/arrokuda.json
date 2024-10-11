@@ -1,0 +1,283 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.arrokuda.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_arrokuda_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_arrokuda_blink = q.life_time + 1; return (q.life_time > v.next_quirk_arrokuda_blink) && (v.state_of_arrokuda == 2 || v.state_of_arrokuda == 3 || v.state_of_arrokuda == 6 || v.state_of_arrokuda == 7);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "arrokuda.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_arrokuda_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_arrokuda_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.arrokuda.flop": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_arrokuda_flop = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_arrokuda_flop = q.life_time + 1; return (q.life_time > v.next_quirk_arrokuda_flop) && (v.state_of_arrokuda == 2 || v.state_of_arrokuda == 6);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "arrokuda.ground_quirk"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_arrokuda_flop = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_arrokuda_flop ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.arrokuda": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "arrokuda.sleep"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_arrokuda = 0; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "watersleep": {
+          "animations": [
+            "arrokuda.water_sleep"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_arrokuda = 1; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "arrokuda.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_arrokuda = 2; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "arrokuda.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_arrokuda = 3; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "floating": {
+          "animations": [
+            "arrokuda.water_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_arrokuda = 4; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swimming": {
+          "animations": [
+            "arrokuda.water_swim"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_arrokuda = 5; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "arrokuda.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_arrokuda = 6; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "waterbattleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "waterbattleidle": {
+          "animations": [
+            "arrokuda.water_battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_arrokuda = 7; return (q.is_sleeping) && (!q.is_in_water);"
+            },
+            {
+              "watersleep": "(q.is_sleeping) && (q.is_in_water)"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

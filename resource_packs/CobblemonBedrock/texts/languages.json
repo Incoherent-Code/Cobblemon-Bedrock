@@ -1,0 +1,33 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+[
+  "cs_CZ",
+  "de_DE",
+  "el_CY",
+  "en_GB",
+  "en_PT",
+  "en_US",
+  "eo_EO",
+  "es_ES",
+  "es_MX",
+  "fr_CA",
+  "fr_FR",
+  "hu_HU",
+  "it_IT",
+  "ja_JP",
+  "ko_KR",
+  "nl_NL",
+  "pl_PL",
+  "pt_BR",
+  "pt_PT",
+  "ru_RU",
+  "sv_SE",
+  "th_TH",
+  "tr_TR",
+  "uk_UA",
+  "zh_CN",
+  "zh_HK",
+  "zh_TW"
+]

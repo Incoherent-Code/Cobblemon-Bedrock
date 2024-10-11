@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:lechonk",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0915_lechonk/lechonk",
+        "shiny": "textures/pokemon/0915_lechonk/lechonk_shiny"
+      },
+      "geometry": {
+        "base": "geometry.lechonk.geo",
+        "shiny": "geometry.lechonk.geo"
+      },
+      "animations": {
+        "lechonk.ground_idle": "animation.lechonk.ground_idle",
+        "lechonkmodel.quadrupedwalkanimation": "animation.lechonkmodel.quadrupedwalkanimation",
+        "lechonk.blink": "animation.lechonk.blink",
+        "controller.animation.lechonk.blink": "controller.animation.lechonk.blink",
+        "controller.animation.cobblemon.lechonk": "controller.animation.cobblemon.lechonk"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.lechonk"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.lechonk.blink",
+          {
+            "controller.animation.cobblemon.lechonk": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_lechonk = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,204 @@
+{
+  "minLevel": 5,
+  "maxLevel": 31,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 5,
+      "maxLevel": 31
+    }
+  },
+  "name": "Snivy",
+  "nationalPokedexNumber": 495,
+  "baseStats": {
+    "hp": 45,
+    "attack": 45,
+    "defence": 55,
+    "special_attack": 45,
+    "special_defence": 55,
+    "speed": 63
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 0.55,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.4,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "abilities": [
+    "overgrow",
+    "h:contrary"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:tackle",
+    "4:leer",
+    "7:vinewhip",
+    "10:wrap",
+    "13:growth",
+    "16:leaftornado",
+    "19:leechseed",
+    "22:megadrain",
+    "25:slam",
+    "28:leafblade",
+    "31:coil",
+    "34:gigadrain",
+    "37:wringout",
+    "40:gastroacid",
+    "43:leafstorm",
+    "egg:captivate",
+    "egg:glare",
+    "egg:grassyterrain",
+    "egg:irontail",
+    "egg:magicalleaf",
+    "egg:meanlook",
+    "egg:mirrorcoat",
+    "egg:naturalgift",
+    "egg:pursuit",
+    "egg:sweetscent",
+    "egg:twister",
+    "tm:aerialace",
+    "tm:attract",
+    "tm:calmmind",
+    "tm:confide",
+    "tm:cut",
+    "tm:doubleteam",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:lightscreen",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:taunt",
+    "tm:torment",
+    "tm:toxic",
+    "tm:workup",
+    "tutor:aquatail",
+    "tutor:aromatherapy",
+    "tutor:bind",
+    "tutor:defog",
+    "tutor:energyball",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:growth",
+    "tutor:irontail",
+    "tutor:knockoff",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:snatch",
+    "tutor:snore",
+    "tutor:synthesis",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "snivy_servine",
+      "variant": "level_up",
+      "result": "servine",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 17
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.snivy.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "field",
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 6.0,
+  "weight": 81.0
+}

@@ -1,0 +1,28 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.kabuto.ground_idle": {
+      "loop": true,
+      "bones": {
+        "leftbackarm": {
+          "rotation": [
+            0.0,
+            -22.5,
+            0.0
+          ]
+        },
+        "rightbackarm": {
+          "rotation": [
+            0.0,
+            22.5,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

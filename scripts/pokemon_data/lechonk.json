@@ -1,0 +1,200 @@
+{
+  "minLevel": 1,
+  "maxLevel": 25,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 1,
+      "maxLevel": 25
+    },
+    "1": {
+      "minLevel": 1,
+      "maxLevel": 25
+    },
+    "2": {
+      "minLevel": 1,
+      "maxLevel": 25
+    }
+  },
+  "name": "Lechonk",
+  "nationalPokedexNumber": 915,
+  "baseStats": {
+    "hp": 54,
+    "attack": 45,
+    "defence": 40,
+    "special_attack": 35,
+    "special_defence": 45,
+    "speed": 35
+  },
+  "maleRatio": 0.5,
+  "catchRate": 255,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.6,
+    "fixed": false
+  },
+  "primaryType": "normal",
+  "abilities": [
+    "aromaveil",
+    "gluttony",
+    "h:thickfat"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:tackle",
+    "1:tailwhip",
+    "5:disarmingvoice",
+    "8:echoedvoice",
+    "12:mudshot",
+    "15:covet",
+    "17:dig",
+    "21:headbutt",
+    "24:yawn",
+    "27:takedown",
+    "30:workup",
+    "32:uproar",
+    "35:doubleedge",
+    "egg:endeavor",
+    "egg:spitup",
+    "egg:stockpile",
+    "egg:stuffcheeks",
+    "egg:swallow",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:bulletseed",
+    "tm:chillingwater",
+    "tm:dig",
+    "tm:disarmingvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:helpinghand",
+    "tm:hypervoice",
+    "tm:ironhead",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:playrough",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:trailblaze",
+    "tm:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "lechonk_oinkologne",
+      "variant": "level_up",
+      "result": "oinkologne",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 18
+        }
+      ]
+    },
+    {
+      "id": "lechonk_oinkologne",
+      "variant": "level_up",
+      "result": "oinkologne form=f",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 18
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.lechonk.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:porkchop",
+        "quantityRange": "1-2"
+      },
+      {
+        "item": "cobblemon:oran_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "field"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 5.0,
+  "weight": 102.0
+}

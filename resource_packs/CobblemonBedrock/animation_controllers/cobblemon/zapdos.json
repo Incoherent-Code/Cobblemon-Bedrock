@@ -1,0 +1,78 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.zapdos": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "zapdosmodel.singlebonelook",
+            "zapdos.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_zapdos = 0; return (q.is_moving && !q.is_swimming)|| q.is_swimming;"
+            },
+            {
+              "fly": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "zapdosmodel.singlebonelook",
+            "zapdosmodel.bipedwalkanimation",
+            "zapdos.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_zapdos = 1; return !q.is_moving;"
+            },
+            {
+              "fly": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "zapdosmodel.singlebonelook",
+            "zapdos.air_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_zapdos = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            },
+            {
+              "fly": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "zapdosmodel.singlebonelook",
+            "zapdos.air_fly"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_zapdos = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

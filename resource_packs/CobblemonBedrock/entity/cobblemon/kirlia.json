@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:kirlia",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0281_kirlia/kirlia",
+        "shiny": "textures/pokemon/0281_kirlia/kirlia_shiny"
+      },
+      "geometry": {
+        "base": "geometry.kirlia.geo",
+        "shiny": "geometry.kirlia.geo"
+      },
+      "animations": {
+        "kirliamodel.singlebonelook": "animation.kirliamodel.singlebonelook",
+        "kirlia.ground_idle": "animation.kirlia.ground_idle",
+        "kirliamodel.bipedwalkanimation": "animation.kirliamodel.bipedwalkanimation",
+        "kirliamodel.bimanualswinganimation": "animation.kirliamodel.bimanualswinganimation",
+        "kirlia.blink": "animation.kirlia.blink",
+        "controller.animation.kirlia.blink": "controller.animation.kirlia.blink",
+        "controller.animation.cobblemon.kirlia": "controller.animation.cobblemon.kirlia"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.kirlia"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.kirlia.blink",
+          {
+            "controller.animation.cobblemon.kirlia": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_kirlia = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

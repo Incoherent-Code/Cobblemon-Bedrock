@@ -1,0 +1,179 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.stoutlandmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.stoutland.ground_idle": {
+      "loop": true,
+      "bones": {
+        "moustache_left": {
+          "rotation": [
+            0.0,
+            -2.5,
+            42.5
+          ]
+        },
+        "moustache_left2": {
+          "rotation": [
+            0.0,
+            -12.5,
+            0.0
+          ]
+        },
+        "moustache_left3": {
+          "rotation": [
+            0.0,
+            -40.0,
+            0.0
+          ]
+        },
+        "moustache_left4": {
+          "rotation": [
+            0.0,
+            -22.5,
+            0.0
+          ]
+        },
+        "moustache_right": {
+          "rotation": [
+            0.0,
+            2.5,
+            -42.5
+          ]
+        },
+        "moustache_right2": {
+          "rotation": [
+            0.0,
+            12.5,
+            0.0
+          ]
+        },
+        "moustache_right3": {
+          "rotation": [
+            0.0,
+            40.0,
+            0.0
+          ]
+        },
+        "moustache_right4": {
+          "rotation": [
+            0.0,
+            22.5,
+            0.0
+          ]
+        },
+        "moustache_right6": {
+          "rotation": [
+            0.0,
+            7.5,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.stoutlandmodel.quadrupedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_back_right1": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_back_left1": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1 + 180) *  1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_front_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1 + 180) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_front_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.stoutland.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

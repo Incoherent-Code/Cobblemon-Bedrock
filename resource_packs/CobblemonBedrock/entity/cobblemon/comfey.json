@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:comfey",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0764_comfey/comfey",
+        "shiny": "textures/pokemon/0764_comfey/comfey_shiny"
+      },
+      "geometry": {
+        "base": "geometry.comfey.geo",
+        "shiny": "geometry.comfey.geo"
+      },
+      "animations": {
+        "comfey.sleep": "animation.comfey.sleep",
+        "comfeymodel.singlebonelook": "animation.comfeymodel.singlebonelook",
+        "comfey.ground_idle": "animation.comfey.ground_idle",
+        "comfey.ground_walk": "animation.comfey.ground_walk",
+        "comfey.shoulder_left": "animation.comfey.shoulder_left",
+        "comfey.shoulderleft.transform": "animation.comfey.shoulderleft.transform",
+        "comfey.shoulder_right": "animation.comfey.shoulder_right",
+        "comfey.shoulderright.transform": "animation.comfey.shoulderright.transform",
+        "comfey.blink": "animation.comfey.blink",
+        "controller.animation.comfey.blink": "controller.animation.comfey.blink",
+        "controller.animation.cobblemon.comfey": "controller.animation.cobblemon.comfey"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.comfey"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.comfey.blink",
+          {
+            "controller.animation.cobblemon.comfey": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_comfey = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

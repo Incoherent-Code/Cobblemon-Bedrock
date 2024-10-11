@@ -1,0 +1,234 @@
+{
+  "minLevel": 31,
+  "maxLevel": 47,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ],
+    "2": [
+      "female"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 31,
+      "maxLevel": 47
+    }
+  },
+  "name": "Dodrio",
+  "nationalPokedexNumber": 85,
+  "baseStats": {
+    "hp": 60,
+    "attack": 110,
+    "defence": 70,
+    "special_attack": 60,
+    "special_defence": 60,
+    "speed": 110
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 1.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.6,
+    "height": 1.6,
+    "fixed": false
+  },
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "abilities": [
+    "runaway",
+    "earlybird",
+    "h:tangledfeet"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:growl",
+    "1:peck",
+    "1:quickattack",
+    "1:rage",
+    "1:triattack",
+    "12:furyattack",
+    "15:pursuit",
+    "19:pluck",
+    "22:doublehit",
+    "26:agility",
+    "29:uproar",
+    "34:acupressure",
+    "38:swordsdance",
+    "43:jumpkick",
+    "47:drillpeck",
+    "52:endeavor",
+    "56:thrash",
+    "tm:aerialace",
+    "tm:attract",
+    "tm:captivate",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:fly",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:naturalgift",
+    "tm:payback",
+    "tm:pluck",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:roost",
+    "tm:round",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:taunt",
+    "tm:thief",
+    "tm:torment",
+    "tm:toxic",
+    "tm:workup",
+    "tutor:agility",
+    "tutor:aircutter",
+    "tutor:attract",
+    "tutor:batonpass",
+    "tutor:bide",
+    "tutor:bodyslam",
+    "tutor:curse",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:drillpeck",
+    "tutor:endeavor",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:fly",
+    "tutor:frustration",
+    "tutor:furyattack",
+    "tutor:growl",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:hyperbeam",
+    "tutor:jumpkick",
+    "tutor:knockoff",
+    "tutor:mimic",
+    "tutor:mirrormove",
+    "tutor:mudslap",
+    "tutor:peck",
+    "tutor:protect",
+    "tutor:pursuit",
+    "tutor:quickattack",
+    "tutor:rage",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:roost",
+    "tutor:skullbash",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:steelwing",
+    "tutor:stompingtantrum",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:supersonic",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:swordsdance",
+    "tutor:takedown",
+    "tutor:taunt",
+    "tutor:thief",
+    "tutor:thrash",
+    "tutor:toxic",
+    "tutor:triattack",
+    "tutor:uproar",
+    "tutor:whirlwind"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.4
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.dodrio.desc"
+  ],
+  "drops": {
+    "amount": 5,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:sharp_beak",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:wacan_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "flying"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 18.0,
+  "weight": 852.0
+}

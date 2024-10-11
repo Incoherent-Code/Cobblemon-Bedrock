@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "minecraft:mud"
+      },
+      {
+        "item": "minecraft:mud"
+      },
+      {
+        "item": "minecraft:mud"
+      },
+      {
+        "item": "cobblemon:mulch_base"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:mud"
+      },
+      {
+        "item": "minecraft:mud"
+      },
+      {
+        "item": "minecraft:mud"
+      },
+      {
+        "item": "cobblemon:mulch_base"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:humid_mulch"
+    },
+    "description": {
+      "identifier": "cobblemon:humid_mulch_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

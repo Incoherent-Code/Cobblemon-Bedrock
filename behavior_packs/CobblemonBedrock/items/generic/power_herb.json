@@ -1,0 +1,27 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:power_herb"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "power_herb"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.power_herb"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:herbs",
+          "cobblemon:plants",
+          "cobblemon:is_held_item"
+        ]
+      }
+    }
+  }
+}

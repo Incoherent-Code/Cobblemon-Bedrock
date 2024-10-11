@@ -1,0 +1,66 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:linoone",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0264_linoone/linoone",
+        "shiny": "textures/pokemon/0264_linoone/linoone_shiny",
+        "galarian": "textures/pokemon/0264_linoone/linoone_galarian",
+        "shiny_galarian": "textures/pokemon/0264_linoone/linoone_galarian_shiny"
+      },
+      "geometry": {
+        "base": "geometry.linoone.geo",
+        "shiny": "geometry.linoone.geo",
+        "galarian": "geometry.linoone_galarian.geo",
+        "shiny_galarian": "geometry.linoone_galarian.geo"
+      },
+      "animations": {
+        "linoone.sleep": "animation.linoone.sleep",
+        "linoonemodel.singlebonelook": "animation.linoonemodel.singlebonelook",
+        "linoone.ground_idle": "animation.linoone.ground_idle",
+        "linoone.ground_walk": "animation.linoone.ground_walk",
+        "linoone.battle_idle": "animation.linoone.battle_idle",
+        "linoone.blink": "animation.linoone.blink",
+        "controller.animation.linoone.blink": "controller.animation.linoone.blink",
+        "controller.animation.cobblemon.linoone": "controller.animation.cobblemon.linoone",
+        "linoonegalarianmodel.singlebonelook": "animation.linoonegalarianmodel.singlebonelook",
+        "linoone_galarian.ground_idle": "animation.linoone_galarian.ground_idle",
+        "linoonegalarianmodel.quadrupedwalkanimation": "animation.linoonegalarianmodel.quadrupedwalkanimation",
+        "linoone_galarian.blink": "animation.linoone_galarian.blink",
+        "controller.animation.linoone_galarian.blink": "controller.animation.linoone_galarian.blink",
+        "controller.animation.cobblemon.linoone_galarian": "controller.animation.cobblemon.linoone_galarian"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.linoone"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.linoone.blink",
+          {
+            "controller.animation.cobblemon.linoone": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.linoone_galarian.blink",
+          {
+            "controller.animation.cobblemon.linoone_galarian": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_linoone = -1.0;",
+          "v.state_of_linoone_galarian = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

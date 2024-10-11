@@ -1,0 +1,36 @@
+{
+  "name": "cobblemon-bedrock",
+  "version": "0.1.0",
+  "productName": "Cobblemon Bedrock",
+  "description": "A port of the Minecraft mod Cobblemon to Bedrock Edition",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "del": "^6.0.0",
+    "esbuild-plugin-ignore": "^1.1.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-esbuild": "^0.12.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-zip": "5.1.0",
+    "merge-stream": "^2.0.0",
+    "source-map": "^0.7.4",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "enablemcloopback": "CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-1958404141-86561845-1752920682-3514627264-368642714-62675701-733520436",
+    "enablemcpreviewloopback": "CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-424268864-5579737-879501358-346833251-474568803-887069379-4040235476",
+    "build": "gulp",
+    "watch": "gulp watch",
+    "release": "gulp release",
+    "test": "tsc"
+  },
+  "dependencies": {
+    "@minecraft/math": "^1.4.0",
+    "@minecraft/server": "^1.15.0-beta.1.21.30-stable",
+    "@minecraft/server-ui": "^1.1.0",
+    "decode-uri-component": "^0.2.2",
+    "esbuild": "^0.23.1",
+    "esbuild-plugin-polyfill-node": "^0.3.0"
+  }
+}

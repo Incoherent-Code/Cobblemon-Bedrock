@@ -1,0 +1,63 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:nickit",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0827_nickit/nickit",
+        "shiny": "textures/pokemon/0827_nickit/nickit_shiny"
+      },
+      "geometry": {
+        "base": "geometry.nickit.geo",
+        "shiny": "geometry.nickit.geo"
+      },
+      "animations": {
+        "nickit.sleep": "animation.nickit.sleep",
+        "nickitmodel.singlebonelook": "animation.nickitmodel.singlebonelook",
+        "nickit.ground_idle": "animation.nickit.ground_idle",
+        "nickit.ground_walk": "animation.nickit.ground_walk",
+        "nickit.battle_idle": "animation.nickit.battle_idle",
+        "nickit.blink": "animation.nickit.blink",
+        "controller.animation.nickit.blink": "controller.animation.nickit.blink",
+        "nickit.quirk_shiftyglance_left": "animation.nickit.quirk_shiftyglance_left",
+        "controller.animation.nickit.glanceleft": "controller.animation.nickit.glanceleft",
+        "nickit.quirk_shiftyglance_right": "animation.nickit.quirk_shiftyglance_right",
+        "controller.animation.nickit.glanceright": "controller.animation.nickit.glanceright",
+        "nickit.quirk_eartwitch_left": "animation.nickit.quirk_eartwitch_left",
+        "controller.animation.nickit.eartwitchleft": "controller.animation.nickit.eartwitchleft",
+        "nickit.quirk_eartwitch_right": "animation.nickit.quirk_eartwitch_right",
+        "controller.animation.nickit.eartwitchright": "controller.animation.nickit.eartwitchright",
+        "controller.animation.cobblemon.nickit": "controller.animation.cobblemon.nickit"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.nickit"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.nickit.blink",
+          "controller.animation.nickit.glanceleft",
+          "controller.animation.nickit.glanceright",
+          "controller.animation.nickit.eartwitchleft",
+          "controller.animation.nickit.eartwitchright",
+          {
+            "controller.animation.cobblemon.nickit": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_nickit = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

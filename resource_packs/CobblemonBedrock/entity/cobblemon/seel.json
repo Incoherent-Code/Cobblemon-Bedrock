@@ -1,0 +1,47 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:seel",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0086_seel/seel",
+        "shiny": "textures/pokemon/0086_seel/seel_shiny"
+      },
+      "geometry": {
+        "base": "geometry.seel.geo",
+        "shiny": "geometry.seel.geo"
+      },
+      "animations": {
+        "seelmodel.singlebonelook": "animation.seelmodel.singlebonelook",
+        "seel.ground_idle": "animation.seel.ground_idle",
+        "seel.water_idle": "animation.seel.water_idle",
+        "seel.water_swim": "animation.seel.water_swim",
+        "controller.animation.cobblemon.seel": "controller.animation.cobblemon.seel"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.seel"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.seel": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_seel = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,47 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:dartrix",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0723_dartrix/dartrix",
+        "shiny": "textures/pokemon/0723_dartrix/dartrix_shiny"
+      },
+      "geometry": {
+        "base": "geometry.dartrix.geo",
+        "shiny": "geometry.dartrix.geo"
+      },
+      "animations": {
+        "dartrix.ground_idle": "animation.dartrix.ground_idle",
+        "dartrix.air_idle": "animation.dartrix.air_idle",
+        "dartrix.air_fly": "animation.dartrix.air_fly",
+        "dartrixmodel.bipedwalkanimation": "animation.dartrixmodel.bipedwalkanimation",
+        "controller.animation.cobblemon.dartrix": "controller.animation.cobblemon.dartrix"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.dartrix"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.dartrix": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_dartrix = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

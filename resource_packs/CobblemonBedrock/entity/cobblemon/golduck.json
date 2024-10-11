@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:golduck",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0055_golduck/golduck",
+        "shiny": "textures/pokemon/0055_golduck/golduck_shiny",
+        "base_emissive": "textures/pokemon/0055_golduck/golduck_emissive",
+        "shiny_emissive": "textures/pokemon/0055_golduck/golduck_emissive"
+      },
+      "geometry": {
+        "base": "geometry.golduck.geo",
+        "shiny": "geometry.golduck.geo"
+      },
+      "animations": {
+        "golduckmodel.singlebonelook": "animation.golduckmodel.singlebonelook",
+        "golduck.ground_idle": "animation.golduck.ground_idle",
+        "golduck.sleep": "animation.golduck.sleep",
+        "golduck.ground_walk": "animation.golduck.ground_walk",
+        "golduck.water_idle": "animation.golduck.water_idle",
+        "golduck.water_swim": "animation.golduck.water_swim",
+        "golduck.blink": "animation.golduck.blink",
+        "controller.animation.golduck.blink": "controller.animation.golduck.blink",
+        "controller.animation.cobblemon.golduck": "controller.animation.cobblemon.golduck"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.golduck_emissive",
+        "controller.render.cobblemon.golduck"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.golduck.blink",
+          {
+            "controller.animation.cobblemon.golduck": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_golduck = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

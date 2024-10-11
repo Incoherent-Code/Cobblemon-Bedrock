@@ -1,0 +1,152 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.starmie": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "starmie.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_starmie = 0; return ((q.is_moving && !q.is_swimming)) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "float": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "swim": "(q.is_swimming) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "starmie.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_starmie = 1; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "float": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "swim": "(q.is_swimming) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "float": {
+          "animations": [
+            "starmie.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_starmie = 2; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "swim": "(q.is_swimming) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swim": {
+          "animations": [
+            "starmie.water_swim"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_starmie = 3; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "float": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "sleep": {
+          "animations": [
+            "starmie.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_starmie = 4; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "float": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "swim": "(q.is_swimming) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "starmie.battle_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_starmie = 5; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "float": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "swim": "(q.is_swimming) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

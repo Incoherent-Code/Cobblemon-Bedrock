@@ -1,0 +1,56 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:garganacl",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0934_garganacl/garganacl",
+        "shiny": "textures/pokemon/0934_garganacl/garganacl_shiny",
+        "base_glow": "textures/pokemon/0934_garganacl/garganacl_emissive",
+        "shiny_glow": "textures/pokemon/0934_garganacl/garganacl_emissive"
+      },
+      "geometry": {
+        "base": "geometry.garganacl.geo",
+        "shiny": "geometry.garganacl.geo"
+      },
+      "animations": {
+        "garganaclmodel.singlebonelook": "animation.garganaclmodel.singlebonelook",
+        "garganacl.ground_idle": "animation.garganacl.ground_idle",
+        "garganacl.standing.transform": "animation.garganacl.standing.transform",
+        "garganacl.battle_idle": "animation.garganacl.battle_idle",
+        "garganacl.battlestanding.transform": "animation.garganacl.battlestanding.transform",
+        "garganacl.sleep": "animation.garganacl.sleep",
+        "garganacl.sleep.transform": "animation.garganacl.sleep.transform",
+        "garganacl.portrait.transform": "animation.garganacl.portrait.transform",
+        "garganacl.ground_walk": "animation.garganacl.ground_walk",
+        "garganacl.walk.transform": "animation.garganacl.walk.transform",
+        "controller.animation.cobblemon.garganacl": "controller.animation.cobblemon.garganacl"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.garganacl_glow",
+        "controller.render.cobblemon.garganacl"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.garganacl": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_garganacl = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

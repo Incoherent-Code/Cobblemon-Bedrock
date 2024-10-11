@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:floatzel",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0419_floatzel/floatzel",
+        "shiny": "textures/pokemon/0419_floatzel/floatzel_shiny",
+        "female": "textures/pokemon/0419_floatzel/floatzel"
+      },
+      "geometry": {
+        "base": "geometry.floatzel_male.geo",
+        "shiny": "geometry.floatzel_male.geo",
+        "female": "geometry.floatzel_female.geo"
+      },
+      "animations": {
+        "floatzelmodel.singlebonelook": "animation.floatzelmodel.singlebonelook",
+        "floatzel.ground_idle": "animation.floatzel.ground_idle",
+        "floatzelmodel.bipedwalkanimation": "animation.floatzelmodel.bipedwalkanimation",
+        "floatzelmodel.bimanualswinganimation": "animation.floatzelmodel.bimanualswinganimation",
+        "floatzel.blink": "animation.floatzel.blink",
+        "controller.animation.floatzel.blink": "controller.animation.floatzel.blink",
+        "controller.animation.cobblemon.floatzel": "controller.animation.cobblemon.floatzel"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.floatzel"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.floatzel.blink",
+          {
+            "controller.animation.cobblemon.floatzel": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_floatzel = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " t ",
+      "lcr",
+      " b "
+    ],
+    "key": {
+      "t": {
+        "item": "cobblemon:green_apricorn"
+      },
+      "l": {
+        "item": "cobblemon:yellow_apricorn"
+      },
+      "c": {
+        "item": "minecraft:iron_ingot"
+      },
+      "r": {
+        "item": "cobblemon:yellow_apricorn"
+      },
+      "b": {
+        "item": "cobblemon:green_apricorn"
+      }
+    },
+    "unlock": [
+      {
+        "item": "cobblemon:green_apricorn"
+      },
+      {
+        "item": "cobblemon:yellow_apricorn"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "cobblemon:yellow_apricorn"
+      },
+      {
+        "item": "cobblemon:green_apricorn"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:nest_ball",
+      "count": 4
+    },
+    "description": {
+      "identifier": "cobblemon:nest_ball_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.kakuna.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "math.clamp(math.sin(q.anim_time*90*1)*1,-1,0)+math.clamp(math.sin(q.anim_time*90*1)*1,0,1)+math.sin(q.anim_time*90*1)*0.5",
+            0.0,
+            "math.clamp(math.sin(q.anim_time*90*2)*0.5,-1,0)+math.clamp(math.sin(q.anim_time*90*2)*0.5,0,1)+math.sin(q.anim_time*90*2)*0.1"
+          ],
+          "position": [
+            0.0,
+            "(-math.clamp(math.sin(q.anim_time*90*1)*0.2,-0.1,0)-math.clamp(math.sin(q.anim_time*90*1)*0.2,0,0.1)-math.sin(q.anim_time*90*2)*0.2)*0.1",
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "-math.clamp(math.sin(q.anim_time*90*2)*0.5,-0.8,0)-math.clamp(math.sin(q.anim_time*90*2)*0.5,0,0.8)-math.sin(q.anim_time*90*2)*0.5",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.kakunamodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.kakuna.ground_idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "math.clamp(math.sin(q.anim_time*90*2)*1,-1,0)+math.clamp(math.sin(q.anim_time*90*2)*1,0,1)+math.sin(q.anim_time*90*2)*0.5",
+            0.0,
+            "math.clamp(math.sin(q.anim_time*90*4)*0.5,-1,0)+math.clamp(math.sin(q.anim_time*90*4)*0.5,0,1)+math.sin(q.anim_time*90*4)*0.1"
+          ],
+          "position": [
+            0.0,
+            "(-math.clamp(math.sin(q.anim_time*90*2)*0.2,-0.1,0)-math.clamp(math.sin(q.anim_time*90*2)*0.2,0,0.1)-math.sin(q.anim_time*90*2)*0.2)*0.1",
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            "-math.clamp(math.sin(q.anim_time*90*2)*0.5,-0.8,0)-math.clamp(math.sin(q.anim_time*90*2)*0.5,0,0.8)-math.sin(q.anim_time*90*2)*0.5",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

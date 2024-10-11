@@ -1,0 +1,312 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.luvdisc.ground_sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0.0,
+            "-1+math.sin(q.anim_time*90*1)*2",
+            -90.0
+          ],
+          "position": [
+            0.0,
+            -3.75,
+            0.0
+          ]
+        },
+        "fin_upper_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "22.5+math.clamp(math.sin(q.anim_time*90*2)*10, 8, 10)+math.clamp(math.sin(q.anim_time*90*2+90)*10,-10, -8)"
+          ]
+        },
+        "fin_upper2_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "22.5+math.clamp(math.sin(q.anim_time*90*2)*20, 13, 20)+math.clamp(math.sin(q.anim_time*90*2+90)*20,-20, -13)"
+          ]
+        },
+        "fin_lower_right": {
+          "rotation": [
+            0.0,
+            "22.5+math.clamp(math.sin(q.anim_time*90*2)*10, 8, 10)+math.clamp(math.sin(q.anim_time*90*2+90)*10,-10, -8)",
+            0.0
+          ]
+        },
+        "fin_lower2_right": {
+          "rotation": [
+            0.0,
+            "22.5+math.clamp(math.sin(q.anim_time*90*2)*20, 13, 20)+math.clamp(math.sin(q.anim_time*90*2+90)*20,-20, -13)",
+            0.0
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            -0.79,
+            0.0,
+            0.0
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.79,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.luvdisc.ground_idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0.26993,
+            -1.8985,
+            "-89.9715+math.sin(q.anim_time*90*4)*5-math.clamp(math.sin(q.anim_time*90*4+10+180)*10, 5, 20)+math.clamp(math.sin(q.anim_time*90*4+180)*10, 5, 20)"
+          ],
+          "position": [
+            0.0,
+            "-3.75+math.clamp(math.sin(q.anim_time*90*4+180)*0.5, 0, 1)",
+            0.0
+          ]
+        },
+        "fin_upper_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "12.5+math.clamp(math.sin(q.anim_time*90*4)*10, 0, 10)+math.sin(q.anim_time*90*4)*5"
+          ]
+        },
+        "fin_upper2_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "math.clamp(math.sin(q.anim_time*90*4+10)*30, 0, 30)"
+          ]
+        },
+        "fin_lower_right": {
+          "rotation": [
+            0.0,
+            "7.5+math.clamp(math.sin(q.anim_time*90*4+30+30)*10, 0, 10)+math.sin(q.anim_time*90*4+30+30)*5",
+            0.0
+          ]
+        },
+        "fin_lower2_right": {
+          "rotation": [
+            0.0,
+            "math.clamp(math.sin(q.anim_time*90*4+10+10)*20, 0, 20)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.luvdisc.ground_walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "math.sin(q.anim_time*90*8 +180+60)*5",
+            "2.5+math.sin(q.anim_time*90*8 +180+60)*10",
+            "-100+math.sin(q.anim_time*90*4)*20-math.clamp(math.sin(q.anim_time*90*4+10+180)*30, 5, 30)+math.clamp(math.sin(q.anim_time*90*4+180)*30, 5, 30)"
+          ],
+          "position": [
+            0.0,
+            "-3+math.clamp(math.sin(q.anim_time*90*4+180)*2, -0.5, 2)",
+            "math.cos(q.anim_time*90*4+180)*2"
+          ]
+        },
+        "fin_upper_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "math.clamp(12.5+math.clamp(math.sin(q.anim_time*90*4+30)*10, 0, 10)+math.sin(q.anim_time*90*4+30)*50, 0, 100)"
+          ]
+        },
+        "fin_upper2_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "math.clamp(math.sin(q.anim_time*90*4+10)*30, 0, 30)"
+          ]
+        },
+        "fin_lower_right": {
+          "rotation": [
+            0.0,
+            "math.clamp(12.5+math.clamp(math.sin(q.anim_time*90*4+30+30)*10, 0, 10)+math.sin(q.anim_time*90*4+30+30)*50, 0, 100)",
+            0.0
+          ]
+        },
+        "fin_lower2_right": {
+          "rotation": [
+            0.0,
+            "math.clamp(math.sin(q.anim_time*90*4+10+10)*20, 0, 20)",
+            0.0
+          ]
+        },
+        "fin_upper_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "30-math.clamp(12.5+math.clamp(math.sin(q.anim_time*90*4+30+180)*10, 0, 10)+math.sin(q.anim_time*90*4+30+180)*50, 30, 100)"
+          ]
+        },
+        "fin_lower_left": {
+          "rotation": [
+            0.0,
+            "30-math.clamp(12.5+math.clamp(math.sin(q.anim_time*90*4+30+30+180)*10, 0, 10)+math.sin(q.anim_time*90*4+30+30+180)*60, 30, 100)",
+            0.0
+          ]
+        },
+        "fin_upper2_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.luvdisc.water_idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0.0,
+            "math.sin(q.anim_time*90*1)*4",
+            0.0
+          ],
+          "position": [
+            "0.2*math.cos(q.anim_time*90*0.1)",
+            "math.sin(q.anim_time*90*0.1)+0.1*math.sin(q.anim_time*90*2)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.luvdisc.water_swim": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            -5.0,
+            "math.sin(q.anim_time*90*2-60)*10",
+            0.0
+          ],
+          "position": [
+            "math.sin(q.anim_time*90*2)*0.95",
+            "math.sin(q.anim_time*90*4)*0.2",
+            "-0.280+math.sin(q.anim_time*90*4+20)*0.2"
+          ]
+        },
+        "fin_upper_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "math.clamp(-math.sin(q.anim_time*90*2+30)*5, 0, 5)"
+          ]
+        },
+        "fin_upper2_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "math.clamp(-math.sin(q.anim_time*90*2+60)*10, 0, 10)"
+          ]
+        },
+        "fin_lower_right": {
+          "rotation": [
+            0.0,
+            "math.clamp(-math.sin(q.anim_time*90*2+30)*5, 0, 5)",
+            0.0
+          ]
+        },
+        "fin_lower2_right": {
+          "rotation": [
+            0.0,
+            "math.clamp(-math.sin(q.anim_time*90*2+60)*10, 0, 10)",
+            0.0
+          ]
+        },
+        "fin_upper_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-math.clamp(-math.sin(q.anim_time*90*2+30+180)*5, 0, 5)"
+          ]
+        },
+        "fin_upper2_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-math.clamp(-math.sin(q.anim_time*90*2+60+180)*10, 0, 10)"
+          ]
+        },
+        "fin_lower_left": {
+          "rotation": [
+            0.0,
+            "-math.clamp(-math.sin(q.anim_time*90*2+30+180)*5, 0, 5)",
+            0.0
+          ]
+        },
+        "fin_lower2_right2": {
+          "rotation": [
+            0.0,
+            "-math.clamp(-math.sin(q.anim_time*90*2+60+180)*10, 0, 10)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.luvdisc.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.79,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.79,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.79,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.79,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

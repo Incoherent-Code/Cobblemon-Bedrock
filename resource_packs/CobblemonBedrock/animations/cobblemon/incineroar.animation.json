@@ -1,0 +1,324 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.incineroarmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.incineroar.ground_idle": {
+      "loop": true,
+      "bones": {
+        "arm_right1": {
+          "rotation": [
+            15.0,
+            15.0,
+            -50.0
+          ]
+        },
+        "arm_right2": {
+          "rotation": [
+            0.0,
+            -40.0,
+            -15.0
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "finger_right1": {
+          "rotation": [
+            0.0,
+            2.5,
+            -10.0
+          ]
+        },
+        "finger_right_joint1": {
+          "rotation": [
+            0.0,
+            0.0,
+            -40.0
+          ]
+        },
+        "finger_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -7.5
+          ]
+        },
+        "finger_right_joint2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -45.0
+          ]
+        },
+        "finger_right3": {
+          "rotation": [
+            0.0,
+            -2.5,
+            -5.0
+          ]
+        },
+        "finger_right_joint3": {
+          "rotation": [
+            0.0,
+            0.0,
+            -35.0
+          ]
+        },
+        "finger_right4": {
+          "rotation": [
+            0.0,
+            -5.0,
+            -10.0
+          ]
+        },
+        "finger_right_joint4": {
+          "rotation": [
+            0.0,
+            0.0,
+            -45.0
+          ]
+        },
+        "finger_right5": {
+          "rotation": [
+            0.0,
+            -20.0,
+            -20.0
+          ]
+        },
+        "finger_right_joint5": {
+          "rotation": [
+            0.0,
+            45.0,
+            0.0
+          ]
+        },
+        "arm_left1": {
+          "rotation": [
+            15.0,
+            -15.0,
+            50.0
+          ]
+        },
+        "arm_left2": {
+          "rotation": [
+            0.0,
+            40.0,
+            15.0
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "finger_left1": {
+          "rotation": [
+            0.0,
+            -2.5,
+            10.0
+          ]
+        },
+        "finger_left_joint1": {
+          "rotation": [
+            0.0,
+            0.0,
+            40.0
+          ]
+        },
+        "finger_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ]
+        },
+        "finger_left_joint2": {
+          "rotation": [
+            0.0,
+            0.0,
+            45.0
+          ]
+        },
+        "finger_left3": {
+          "rotation": [
+            0.0,
+            2.5,
+            5.0
+          ]
+        },
+        "finger_left_joint3": {
+          "rotation": [
+            0.0,
+            0.0,
+            35.0
+          ]
+        },
+        "finger_left4": {
+          "rotation": [
+            0.0,
+            5.0,
+            10.0
+          ]
+        },
+        "finger_left_joint4": {
+          "rotation": [
+            0.0,
+            0.0,
+            45.0
+          ]
+        },
+        "finger_left5": {
+          "rotation": [
+            0.0,
+            20.0,
+            20.0
+          ]
+        },
+        "finger_left_joint5": {
+          "rotation": [
+            0.0,
+            -45.0,
+            0.0
+          ]
+        },
+        "tail1": {
+          "rotation": [
+            -40.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.incineroarmodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_right1": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6 + 180) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left1": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.incineroarmodel.bimanualswinganimation": {
+      "loop": true,
+      "bones": {
+        "arm_right1": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) * 0.9 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        },
+        "arm_left1": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.6) *  0.9 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.incineroar.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

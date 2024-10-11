@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "SSS",
+      "LHL",
+      "G G"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "L": {
+        "item": "minecraft:lime_dye"
+      },
+      "S": {
+        "item": "cobblemon:hard_stone"
+      },
+      "H": {
+        "item": "minecraft:golden_helmet"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:gold_ingot"
+      },
+      {
+        "item": "minecraft:lime_dye"
+      },
+      {
+        "item": "cobblemon:hard_stone"
+      },
+      {
+        "item": "minecraft:golden_helmet"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:rocky_helmet"
+    },
+    "description": {
+      "identifier": "cobblemon:rocky_helmet_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "minLevel": 1,
+  "maxLevel": 23,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 1,
+      "maxLevel": 23
+    },
+    "1": {
+      "minLevel": 1,
+      "maxLevel": 23
+    },
+    "2": {
+      "minLevel": 1,
+      "maxLevel": 23
+    }
+  },
+  "name": "Wimpod",
+  "nationalPokedexNumber": 767,
+  "baseStats": {
+    "hp": 25,
+    "attack": 35,
+    "defence": 40,
+    "special_attack": 20,
+    "special_defence": 30,
+    "speed": 80
+  },
+  "maleRatio": 0.5,
+  "catchRate": 90,
+  "baseScale": 0.65,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.8,
+    "height": 0.4,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "water",
+  "abilities": [
+    "wimpout"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:defensecurl",
+    "1:sandattack",
+    "1:strugglebug",
+    "egg:aquajet",
+    "egg:harden",
+    "egg:metalclaw",
+    "egg:rollout",
+    "egg:spikes",
+    "egg:wideguard",
+    "tm:assurance",
+    "tm:attract",
+    "tm:bugbuzz",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:frustration",
+    "tm:hail",
+    "tm:hiddenpower",
+    "tm:leechlife",
+    "tm:mudshot",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:scald",
+    "tm:screech",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:spikes",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swagger",
+    "tm:swift",
+    "tm:taunt",
+    "tm:toxic",
+    "tm:waterfall",
+    "tutor:skittersmack",
+    "tutor:snore"
+  ],
+  "evolutions": [
+    {
+      "id": "wimpod_golisopod",
+      "variant": "level_up",
+      "result": "golisopod",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "firstimpression"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 30
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.wimpod.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:bluk_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "bug",
+    "water_3"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 5.0,
+  "weight": 120.0
+}

@@ -1,0 +1,104 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "count": 1,
+          "name": "cobblemon:leaf_stone"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:diamond_pickaxe",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "count": 1,
+          "name": "cobblemon:leaf_stone"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:netherite_pickaxe",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "count": 1,
+          "name": "cobblemon:leaf_stone"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:gold_pickaxe",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "count": 1,
+          "name": "cobblemon:leaf_stone"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:iron_pickaxe",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "count": 1,
+          "name": "cobblemon:leaf_stone"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": "minecraft:stone_pickaxe",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

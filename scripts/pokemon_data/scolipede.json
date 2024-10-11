@@ -1,0 +1,224 @@
+{
+  "minLevel": 30,
+  "maxLevel": 49,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "night",
+      "minLevel": 30,
+      "maxLevel": 49
+    },
+    "1": {
+      "timeRange": "night",
+      "minLevel": 30,
+      "maxLevel": 49
+    },
+    "2": {
+      "minLevel": 30,
+      "maxLevel": 49
+    },
+    "3": {
+      "minLevel": 30,
+      "maxLevel": 49
+    }
+  },
+  "name": "Scolipede",
+  "nationalPokedexNumber": 545,
+  "baseStats": {
+    "hp": 60,
+    "attack": 100,
+    "defence": 89,
+    "special_attack": 55,
+    "special_defence": 69,
+    "speed": 112
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 2.5,
+    "height": 3.0,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "poison",
+  "abilities": [
+    "poisonpoint",
+    "swarm",
+    "h:speedboost"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:batonpass",
+    "1:defensecurl",
+    "1:irondefense",
+    "1:poisonsting",
+    "1:protect",
+    "1:rollout",
+    "12:poisontail",
+    "12:pursuit",
+    "16:screech",
+    "20:bugbite",
+    "26:venoshock",
+    "34:takedown",
+    "39:steamroller",
+    "42:agility",
+    "50:rockclimb",
+    "50:toxic",
+    "58:venomdrench",
+    "66:doubleedge",
+    "74:megahorn",
+    "tm:agility",
+    "tm:assurance",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:bulldoze",
+    "tm:confide",
+    "tm:crosspoison",
+    "tm:cut",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:gyroball",
+    "tm:hex",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:irontail",
+    "tm:megahorn",
+    "tm:payback",
+    "tm:pinmissile",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:screech",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:smartstrike",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:spikes",
+    "tm:stompingtantrum",
+    "tm:strength",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:superpower",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:throatchop",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:venomdrench",
+    "tm:venoshock",
+    "tm:xscissor",
+    "tutor:aquatail",
+    "tutor:bugbite",
+    "tutor:endeavor",
+    "tutor:irondefense",
+    "tutor:irontail",
+    "tutor:poisontail",
+    "tutor:signalbeam",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:snatch",
+    "tutor:snore",
+    "tutor:steelroller",
+    "tutor:stompingtantrum",
+    "tutor:superpower",
+    "tutor:throatchop",
+    "tutor:toxicspikes"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.24
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "11-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.scolipede.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 25.0,
+  "weight": 2005.0
+}

@@ -1,0 +1,125 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.garchomp.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_garchomp_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_garchomp_blink = q.life_time + 1; return (q.life_time > v.next_quirk_garchomp_blink) && (v.state_of_garchomp == 0 || v.state_of_garchomp == 1 || v.state_of_garchomp == 2 || v.state_of_garchomp == 3 || v.state_of_garchomp == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "garchomp.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_garchomp_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_garchomp_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.garchomp": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "garchompmodel.singlebonelook",
+            "garchomp.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_garchomp = 0; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "garchompmodel.singlebonelook",
+            "garchomp.ground_idle",
+            "garchomp.ground_run"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_garchomp = 1; return (q.is_swimming|| !q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "flyidle": {
+          "animations": [
+            "garchompmodel.singlebonelook",
+            "garchomp.air_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_garchomp = 2; return (q.is_swimming|| !q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "garchompmodel.singlebonelook",
+            "garchomp.air_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_garchomp = 3; return (q.is_swimming|| !q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "garchompmodel.singlebonelook",
+            "garchomp.battle_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_garchomp = 4; return (q.is_swimming|| !q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

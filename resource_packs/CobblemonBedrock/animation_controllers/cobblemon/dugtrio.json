@@ -1,0 +1,108 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.dugtrio.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_dugtrio_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_dugtrio_blink = q.life_time + 1; return (q.life_time > v.next_quirk_dugtrio_blink) && (true);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "dugtrio.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_dugtrio_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_dugtrio_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.dugtrio.blink2": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_dugtrio_blink2 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_dugtrio_blink2 = q.life_time + 1; return (q.life_time > v.next_quirk_dugtrio_blink2) && (true);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "dugtrio.blink2"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_dugtrio_blink2 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_dugtrio_blink2 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.dugtrio.blink3": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_dugtrio_blink3 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_dugtrio_blink3 = q.life_time + 1; return (q.life_time > v.next_quirk_dugtrio_blink3) && (true);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "dugtrio.blink3"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_dugtrio_blink3 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_dugtrio_blink3 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.dugtrio": {
+      "initial_state": "sleep",
+      "states": {
+        "sleep": {
+          "animations": [
+            "dugtrio.sleep"
+          ],
+          "transitions": [],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

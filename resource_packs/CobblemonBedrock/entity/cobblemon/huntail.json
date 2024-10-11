@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:huntail",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0367_huntail/huntail",
+        "shiny": "textures/pokemon/0367_huntail/huntail_shiny",
+        "base_emissive": "textures/pokemon/0367_huntail/huntail_emissive",
+        "shiny_emissive": "textures/pokemon/0367_huntail/huntail_emissive"
+      },
+      "geometry": {
+        "base": "geometry.huntail.geo",
+        "shiny": "geometry.huntail.geo"
+      },
+      "animations": {
+        "huntailmodel.singlebonelook": "animation.huntailmodel.singlebonelook",
+        "huntail.ground_idle": "animation.huntail.ground_idle",
+        "huntail.water_idle": "animation.huntail.water_idle",
+        "huntail.water_swim": "animation.huntail.water_swim",
+        "controller.animation.cobblemon.huntail": "controller.animation.cobblemon.huntail"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.huntail_emissive",
+        "controller.render.cobblemon.huntail"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.huntail": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_huntail = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

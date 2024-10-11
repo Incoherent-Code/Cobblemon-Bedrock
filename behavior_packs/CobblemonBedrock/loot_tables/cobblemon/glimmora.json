@@ -1,0 +1,27 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:shuca_berry",
+          "weight": 5
+        },
+        {
+          "type": "empty",
+          "weight": 94
+        }
+      ]
+    }
+  ]
+}

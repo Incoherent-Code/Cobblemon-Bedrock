@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:pachirisu",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0417_pachirisu/pachirisu",
+        "shiny": "textures/pokemon/0417_pachirisu/pachirisu_shiny"
+      },
+      "geometry": {
+        "base": "geometry.pachirisu.geo",
+        "shiny": "geometry.pachirisu.geo"
+      },
+      "animations": {
+        "pachirisumodel.singlebonelook": "animation.pachirisumodel.singlebonelook",
+        "pachirisu.ground_idle": "animation.pachirisu.ground_idle",
+        "pachirisumodel.bipedwalkanimation": "animation.pachirisumodel.bipedwalkanimation",
+        "pachirisu.blink": "animation.pachirisu.blink",
+        "controller.animation.pachirisu.blink": "controller.animation.pachirisu.blink",
+        "controller.animation.cobblemon.pachirisu": "controller.animation.cobblemon.pachirisu"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.pachirisu"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.pachirisu.blink",
+          {
+            "controller.animation.cobblemon.pachirisu": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_pachirisu = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,218 @@
+{
+  "minLevel": 34,
+  "maxLevel": 49,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 34,
+      "maxLevel": 49
+    }
+  },
+  "name": "Victreebel",
+  "nationalPokedexNumber": 71,
+  "baseStats": {
+    "hp": 80,
+    "attack": 105,
+    "defence": 65,
+    "special_attack": 100,
+    "special_defence": 70,
+    "speed": 70
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 1.5,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.1,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "secondaryType": "poison",
+  "abilities": [
+    "chlorophyll",
+    "h:gluttony"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:leaftornado",
+    "1:razorleaf",
+    "1:sleeppowder",
+    "1:spitup",
+    "1:stockpile",
+    "1:swallow",
+    "1:sweetscent",
+    "1:vinewhip",
+    "32:leafstorm",
+    "44:leafblade",
+    "tm:attract",
+    "tm:bulletseed",
+    "tm:captivate",
+    "tm:confide",
+    "tm:cut",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:infestation",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:thief",
+    "tm:toxic",
+    "tm:venoshock",
+    "tutor:acid",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:bind",
+    "tutor:bodyslam",
+    "tutor:bugbite",
+    "tutor:clearsmog",
+    "tutor:curse",
+    "tutor:cut",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:flash",
+    "tutor:frustration",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:growth",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:hyperbeam",
+    "tutor:knockoff",
+    "tutor:leechlife",
+    "tutor:megadrain",
+    "tutor:mimic",
+    "tutor:poisonjab",
+    "tutor:poisonpowder",
+    "tutor:powerwhip",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:razorleaf",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:seedbomb",
+    "tutor:sleeppowder",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:snore",
+    "tutor:solarbeam",
+    "tutor:stunspore",
+    "tutor:substitute",
+    "tutor:suckerpunch",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:sweetscent",
+    "tutor:swordsdance",
+    "tutor:synthesis",
+    "tutor:takedown",
+    "tutor:toxic",
+    "tutor:vinewhip",
+    "tutor:worryseed",
+    "tutor:wrap"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.victreebel.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:big_root",
+        "percentage": 10.0
+      },
+      {
+        "item": "cobblemon:pinap_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 17.0,
+  "weight": 155.0
+}

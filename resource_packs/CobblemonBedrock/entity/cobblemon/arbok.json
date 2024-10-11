@@ -1,0 +1,99 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:arbok",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0024_arbok/arbok",
+        "shiny": "textures/pokemon/0024_arbok/arbok_shiny",
+        "snake_pattern_attack": "textures/pokemon/0024_arbok/arbok",
+        "snake_pattern_dark": "textures/pokemon/0024_arbok/arbok",
+        "snake_pattern_elusive": "textures/pokemon/0024_arbok/arbok",
+        "snake_pattern_heart": "textures/pokemon/0024_arbok/arbok",
+        "snake_pattern_legacy": "textures/pokemon/0024_arbok/arbok",
+        "snake_pattern_sound": "textures/pokemon/0024_arbok/arbok",
+        "snake_pattern_speed": "textures/pokemon/0024_arbok/arbok",
+        "shiny_snake_pattern_attack": "textures/pokemon/0024_arbok/arbok",
+        "shiny_snake_pattern_dark": "textures/pokemon/0024_arbok/arbok",
+        "shiny_snake_pattern_elusive": "textures/pokemon/0024_arbok/arbok",
+        "shiny_snake_pattern_heart": "textures/pokemon/0024_arbok/arbok",
+        "shiny_snake_pattern_legacy": "textures/pokemon/0024_arbok/arbok",
+        "shiny_snake_pattern_sound": "textures/pokemon/0024_arbok/arbok",
+        "shiny_snake_pattern_speed": "textures/pokemon/0024_arbok/arbok",
+        "shiny_snake_pattern_classic": "textures/pokemon/0024_arbok/arbok",
+        "base_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "shiny_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "snake_pattern_attack_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "snake_pattern_dark_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "snake_pattern_elusive_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "snake_pattern_heart_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "snake_pattern_legacy_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "snake_pattern_sound_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "snake_pattern_speed_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "shiny_snake_pattern_attack_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "shiny_snake_pattern_dark_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "shiny_snake_pattern_elusive_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "shiny_snake_pattern_heart_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "shiny_snake_pattern_legacy_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "shiny_snake_pattern_sound_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "shiny_snake_pattern_speed_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic",
+        "shiny_snake_pattern_classic_pattern": "textures/pokemon/0024_arbok/arbok_pattern_classic"
+      },
+      "geometry": {
+        "base": "geometry.arbok.geo",
+        "shiny": "geometry.arbok.geo",
+        "snake_pattern_attack": "geometry.arbok.geo",
+        "snake_pattern_dark": "geometry.arbok.geo",
+        "snake_pattern_elusive": "geometry.arbok.geo",
+        "snake_pattern_heart": "geometry.arbok.geo",
+        "snake_pattern_legacy": "geometry.arbok.geo",
+        "snake_pattern_sound": "geometry.arbok.geo",
+        "snake_pattern_speed": "geometry.arbok.geo",
+        "shiny_snake_pattern_attack": "geometry.arbok.geo",
+        "shiny_snake_pattern_dark": "geometry.arbok.geo",
+        "shiny_snake_pattern_elusive": "geometry.arbok.geo",
+        "shiny_snake_pattern_heart": "geometry.arbok.geo",
+        "shiny_snake_pattern_legacy": "geometry.arbok.geo",
+        "shiny_snake_pattern_sound": "geometry.arbok.geo",
+        "shiny_snake_pattern_speed": "geometry.arbok.geo",
+        "shiny_snake_pattern_classic": "geometry.arbok.geo"
+      },
+      "animations": {
+        "arbok.sleep": "animation.arbok.sleep",
+        "arbokmodel.singlebonelook": "animation.arbokmodel.singlebonelook",
+        "arbok.ground_idle": "animation.arbok.ground_idle",
+        "arbok.ground_walk": "animation.arbok.ground_walk",
+        "arbok.summary_idle": "animation.arbok.summary_idle",
+        "arbok.blink": "animation.arbok.blink",
+        "controller.animation.arbok.blink": "controller.animation.arbok.blink",
+        "controller.animation.cobblemon.arbok": "controller.animation.cobblemon.arbok"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.arbok_pattern",
+        "controller.render.cobblemon.arbok"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.arbok.blink",
+          {
+            "controller.animation.cobblemon.arbok": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5 || q.variant == 6 || q.variant == 7 || q.variant == 8 || q.variant == 9 || q.variant == 10 || q.variant == 11 || q.variant == 12 || q.variant == 13 || q.variant == 14 || q.variant == 15 || q.variant == 16"
+          }
+        ],
+        "initialize": [
+          "v.state_of_arbok = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:fuecoco",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0909_fuecoco/fuecoco",
+        "shiny": "textures/pokemon/0909_fuecoco/fuecoco_shiny",
+        "base_emissive": "textures/pokemon/0909_fuecoco/fuecoco_emissive",
+        "shiny_emissive": "textures/pokemon/0909_fuecoco/fuecoco_emissive"
+      },
+      "geometry": {
+        "base": "geometry.fuecoco.geo",
+        "shiny": "geometry.fuecoco.geo"
+      },
+      "animations": {
+        "fuecoco.sleep": "animation.fuecoco.sleep",
+        "fuecocomodel.singlebonelook": "animation.fuecocomodel.singlebonelook",
+        "fuecoco.ground_idle": "animation.fuecoco.ground_idle",
+        "fuecoco.ground_walk": "animation.fuecoco.ground_walk",
+        "fuecoco.battle_idle": "animation.fuecoco.battle_idle",
+        "fuecoco.blink": "animation.fuecoco.blink",
+        "controller.animation.fuecoco.blink": "controller.animation.fuecoco.blink",
+        "controller.animation.cobblemon.fuecoco": "controller.animation.cobblemon.fuecoco"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.fuecoco_emissive",
+        "controller.render.cobblemon.fuecoco"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.fuecoco.blink",
+          {
+            "controller.animation.cobblemon.fuecoco": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_fuecoco = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

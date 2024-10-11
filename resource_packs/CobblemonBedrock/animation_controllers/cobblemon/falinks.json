@@ -1,0 +1,247 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.falinks.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_falinks_blink = q.life_time + 1; return (q.life_time > v.next_quirk_falinks_blink) && (v.state_of_falinks == 0 || v.state_of_falinks == 1 || v.state_of_falinks == 2 || v.state_of_falinks == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "falinks.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_falinks_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.falinks.blink2": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink2 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_falinks_blink2 = q.life_time + 1; return (q.life_time > v.next_quirk_falinks_blink2) && (v.state_of_falinks == 0 || v.state_of_falinks == 1 || v.state_of_falinks == 2 || v.state_of_falinks == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "falinks.blink2"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink2 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_falinks_blink2 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.falinks.blink3": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink3 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_falinks_blink3 = q.life_time + 1; return (q.life_time > v.next_quirk_falinks_blink3) && (v.state_of_falinks == 0 || v.state_of_falinks == 1 || v.state_of_falinks == 2 || v.state_of_falinks == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "falinks.blink3"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink3 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_falinks_blink3 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.falinks.blink4": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink4 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_falinks_blink4 = q.life_time + 1; return (q.life_time > v.next_quirk_falinks_blink4) && (v.state_of_falinks == 0 || v.state_of_falinks == 1 || v.state_of_falinks == 2 || v.state_of_falinks == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "falinks.blink4"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink4 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_falinks_blink4 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.falinks.blink5": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink5 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_falinks_blink5 = q.life_time + 1; return (q.life_time > v.next_quirk_falinks_blink5) && (v.state_of_falinks == 0 || v.state_of_falinks == 1 || v.state_of_falinks == 2 || v.state_of_falinks == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "falinks.blink5"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink5 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_falinks_blink5 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.falinks.blink6": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink6 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_falinks_blink6 = q.life_time + 1; return (q.life_time > v.next_quirk_falinks_blink6) && (v.state_of_falinks == 0 || v.state_of_falinks == 1 || v.state_of_falinks == 2 || v.state_of_falinks == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "falinks.blink6"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_falinks_blink6 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_falinks_blink6 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.falinks": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "falinks.ground_idle"
+          ],
+          "transitions": [
+            {
+              "battlestanding": "v.state_of_falinks = 0; return (!q.is_moving) && (q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battlestanding": {
+          "animations": [
+            "falinks.battle_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_falinks = 1; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "falinks.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_falinks = 2; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "battlestanding": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "uipose": {
+          "animations": [
+            "falinks.summary_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_falinks = 3; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "battlestanding": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

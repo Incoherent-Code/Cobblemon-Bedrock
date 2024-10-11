@@ -1,0 +1,307 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.ariadosmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.ariados.ground_idle": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "fang_left": {
+          "rotation": [
+            0.0,
+            -15.0,
+            0.0
+          ]
+        },
+        "leg_front_left": {
+          "rotation": [
+            -25.0,
+            30.0,
+            9.5
+          ]
+        },
+        "leg_front2_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            31.0
+          ]
+        },
+        "leg_back_left": {
+          "rotation": [
+            5.0,
+            -32.5,
+            33.5
+          ]
+        },
+        "leg_back2_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            25.0
+          ]
+        },
+        "leg_top_left": {
+          "rotation": [
+            -45.0,
+            30.0,
+            0.0
+          ]
+        },
+        "leg_top_right": {
+          "rotation": [
+            -45.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "leg_back_right": {
+          "rotation": [
+            5.0,
+            32.5,
+            -33.5
+          ]
+        },
+        "leg_back2_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -25.0
+          ]
+        },
+        "leg_front_right": {
+          "rotation": [
+            -25.0,
+            -30.0,
+            -9.5
+          ]
+        },
+        "leg_front2_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -31.0
+          ]
+        },
+        "fang_right": {
+          "rotation": [
+            0.0,
+            15.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.ariados.ground_walk": {
+      "loop": true,
+      "animation_length": 0.5,
+      "bones": {
+        "torso": {
+          "rotation": [
+            5.0,
+            0.0,
+            "math.cos((query.anim_time) * 90 * 8) * -2"
+          ],
+          "position": [
+            0.0,
+            "math.cos((query.anim_time) * 90 * 8*2) * 0.2",
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "fang_left": {
+          "rotation": [
+            0.0,
+            -15.0,
+            0.0
+          ]
+        },
+        "leg_front_left": {
+          "rotation": {
+            "0.0": [
+              -17.36867,
+              4.48726,
+              27.84403
+            ],
+            "0.25": [
+              -16.693,
+              33.02695,
+              18.81127
+            ],
+            "0.5": [
+              -17.36867,
+              4.48726,
+              27.84403
+            ]
+          }
+        },
+        "leg_front2_left": {
+          "rotation": [
+            "math.cos((query.anim_time-0.15) * 90 * 8) * 5",
+            0.0,
+            "31-10+math.cos((query.anim_time-0.1) * 90 * 8) * -15"
+          ]
+        },
+        "leg_back_left": {
+          "rotation": {
+            "0.0": [
+              2.06966,
+              12.92532,
+              26.884
+            ],
+            "0.25": [
+              2.26505,
+              -27.04839,
+              25.39043
+            ],
+            "0.5": [
+              2.06966,
+              12.92532,
+              26.884
+            ]
+          }
+        },
+        "leg_back2_left": {
+          "rotation": [
+            "0.0526+math.cos((query.anim_time-0.15) * 90 * 8) * 5",
+            -0.39985,
+            "10.0052+10+math.cos((query.anim_time-0.1) * 90 * 8) * 15"
+          ]
+        },
+        "leg_top_left": {
+          "rotation": [
+            -45.0,
+            30.0,
+            0.0
+          ]
+        },
+        "leg_top_right": {
+          "rotation": [
+            -45.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "leg_back_right": {
+          "rotation": {
+            "0.0": [
+              5.0,
+              32.5,
+              -33.5
+            ],
+            "0.25": [
+              5.16909,
+              -0.51032,
+              -28.77324
+            ],
+            "0.5": [
+              5.0,
+              32.5,
+              -33.5
+            ]
+          }
+        },
+        "leg_back2_right": {
+          "rotation": {
+            "0.0": [
+              "0.0059+math.cos((query.anim_time-0.15) * 90 * 8) * 5",
+              0.13465,
+              "-20.0018-10+math.cos((query.anim_time-0.1) * 90 * 8) * 15"
+            ],
+            "0.25": [
+              "-0.0017+math.cos((query.anim_time-0.15) * 90 * 8) * 5",
+              -0.2042,
+              "-7.5063-10+math.cos((query.anim_time-0.1) * 90 * 8) * 15"
+            ],
+            "0.5": [
+              "0.0059+math.cos((query.anim_time-0.15) * 90 * 8) * 5",
+              0.13465,
+              "-20.0018-10+math.cos((query.anim_time-0.1) * 90 * 8) * 15"
+            ]
+          }
+        },
+        "leg_front_right": {
+          "rotation": {
+            "0.0": [
+              -25.0,
+              -30.0,
+              -9.5
+            ],
+            "0.25": [
+              -21.94128,
+              1.8719,
+              -31.43589
+            ],
+            "0.5": [
+              -25.0,
+              -30.0,
+              -9.5
+            ]
+          }
+        },
+        "leg_front2_right": {
+          "rotation": [
+            "math.cos((query.anim_time-0.15) * 90 * 8) * 5",
+            0.0,
+            "-31+10+math.cos((query.anim_time-0.1) * 90 * 8) * -15"
+          ]
+        },
+        "fang_right": {
+          "rotation": [
+            0.0,
+            15.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

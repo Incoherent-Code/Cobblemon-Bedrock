@@ -1,0 +1,253 @@
+{
+  "minLevel": 16,
+  "maxLevel": 40,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 16,
+      "maxLevel": 40
+    }
+  },
+  "name": "Ivysaur",
+  "nationalPokedexNumber": 2,
+  "baseStats": {
+    "hp": 60,
+    "attack": 62,
+    "defence": 63,
+    "special_attack": 80,
+    "special_defence": 80,
+    "speed": 60
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.7,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "secondaryType": "poison",
+  "abilities": [
+    "overgrow",
+    "h:chlorophyll"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:growl",
+    "1:growth",
+    "1:tackle",
+    "1:vinewhip",
+    "9:leechseed",
+    "12:razorleaf",
+    "15:poisonpowder",
+    "15:sleeppowder",
+    "20:seedbomb",
+    "25:takedown",
+    "30:sweetscent",
+    "35:synthesis",
+    "40:worryseed",
+    "45:doubleedge",
+    "50:solarbeam",
+    "tm:amnesia",
+    "tm:attract",
+    "tm:bodyslam",
+    "tm:bulletseed",
+    "tm:captivate",
+    "tm:charm",
+    "tm:confide",
+    "tm:cut",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:leafstorm",
+    "tm:lightscreen",
+    "tm:magicalleaf",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:powerwhip",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:toxic",
+    "tm:venoshock",
+    "tm:weatherball",
+    "tm:workup",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:bind",
+    "tutor:bodyslam",
+    "tutor:curse",
+    "tutor:cut",
+    "tutor:defensecurl",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:flash",
+    "tutor:frustration",
+    "tutor:furycutter",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:grassyglide",
+    "tutor:growl",
+    "tutor:growth",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:knockoff",
+    "tutor:leechseed",
+    "tutor:lightscreen",
+    "tutor:megadrain",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:outrage",
+    "tutor:poisonpowder",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:razorleaf",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:seedbomb",
+    "tutor:sleeppowder",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:snore",
+    "tutor:solarbeam",
+    "tutor:stringshot",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:sweetscent",
+    "tutor:swordsdance",
+    "tutor:synthesis",
+    "tutor:tackle",
+    "tutor:takedown",
+    "tutor:toxic",
+    "tutor:vinewhip",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "ivysaur_venusaur",
+      "variant": "level_up",
+      "result": "venusaur",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "petalblizzard"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.ivysaur.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:melon_seeds",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "monster",
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 10.0,
+  "weight": 130.0
+}

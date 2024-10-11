@@ -1,0 +1,191 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.dubwool.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_dubwool_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_dubwool_blink = q.life_time + 1; return (q.life_time > v.next_quirk_dubwool_blink) && (v.state_of_dubwool == 1 || v.state_of_dubwool == 2 || v.state_of_dubwool == 4 || v.state_of_dubwool == 5);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "dubwool.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_dubwool_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_dubwool_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.dubwool": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "dubwool.sleep",
+            "dubwool.sleep.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_dubwool = 0; return (!q.is_moving) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)|| q.is_swimming) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedwalk": "((q.is_moving && !q.is_swimming)|| q.is_swimming) && (q.property('cobblemon:has_been_sheared'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "dubwoolmodel.singlebonelook",
+            "dubwool.ground_idle",
+            "dubwool.standing.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dubwool = 1; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)|| q.is_swimming) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedwalk": "((q.is_moving && !q.is_swimming)|| q.is_swimming) && (q.property('cobblemon:has_been_sheared'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "dubwoolmodel.singlebonelook",
+            "dubwool.ground_walk",
+            "dubwool.walk.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dubwool = 2; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedwalk": "((q.is_moving && !q.is_swimming)|| q.is_swimming) && (q.property('cobblemon:has_been_sheared'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shearedsleep": {
+          "animations": [
+            "dubwool.sleep",
+            "dubwool.shearedsleep.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dubwool = 3; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)|| q.is_swimming) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedwalk": "((q.is_moving && !q.is_swimming)|| q.is_swimming) && (q.property('cobblemon:has_been_sheared'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shearedstanding": {
+          "animations": [
+            "dubwoolmodel.singlebonelook",
+            "dubwool.ground_idle",
+            "dubwool.shearedstanding.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dubwool = 4; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)|| q.is_swimming) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedwalk": "((q.is_moving && !q.is_swimming)|| q.is_swimming) && (q.property('cobblemon:has_been_sheared'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shearedwalk": {
+          "animations": [
+            "dubwoolmodel.singlebonelook",
+            "dubwool.ground_walk",
+            "dubwool.shearedwalk.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dubwool = 5; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "walk": "((q.is_moving && !q.is_swimming)|| q.is_swimming) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

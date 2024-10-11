@@ -1,0 +1,68 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.kleavor.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_kleavor_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_kleavor_blink = q.life_time + 1; return (q.life_time > v.next_quirk_kleavor_blink) && (v.state_of_kleavor == 0 || v.state_of_kleavor == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "kleavor.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_kleavor_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_kleavor_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.kleavor": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "kleavormodel.singlebonelook",
+            "kleavor.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_kleavor = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "kleavormodel.singlebonelook",
+            "kleavor.ground_idle",
+            "kleavormodel.bipedwalkanimation"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_kleavor = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

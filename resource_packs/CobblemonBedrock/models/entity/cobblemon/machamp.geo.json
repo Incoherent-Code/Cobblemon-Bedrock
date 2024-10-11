@@ -1,0 +1,2321 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.machamp.geo",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 3.0,
+        "visible_bounds_height": 3.5,
+        "visible_bounds_offset": [
+          0.0,
+          1.25,
+          0.0
+        ]
+      },
+      "bones": [
+        {
+          "name": "machamp",
+          "pivot": [
+            0.0,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "name": "body",
+          "parent": "machamp",
+          "pivot": [
+            0.0,
+            -0.5,
+            0.0
+          ]
+        },
+        {
+          "name": "torso",
+          "parent": "body",
+          "pivot": [
+            0.0,
+            14.5,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.0,
+                12.75,
+                -2.5
+              ],
+              "size": [
+                8.0,
+                4.0,
+                5.0
+              ],
+              "uv": [
+                21.0,
+                23.0
+              ],
+              "inflate": 0.01
+            },
+            {
+              "origin": [
+                -2.0,
+                10.75,
+                -2.5
+              ],
+              "size": [
+                4.0,
+                2.0,
+                5.0
+              ],
+              "uv": [
+                26.0,
+                16.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "chest",
+          "parent": "torso",
+          "pivot": [
+            0.0,
+            16.25,
+            0.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5.0,
+                16.25,
+                -4.25
+              ],
+              "size": [
+                10.0,
+                8.0,
+                8.0
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "origin": [
+                -4.5,
+                19.25,
+                0.75
+              ],
+              "size": [
+                9.0,
+                7.0,
+                4.0
+              ],
+              "uv": [
+                0.0,
+                16.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "head",
+          "parent": "chest",
+          "pivot": [
+            0.0,
+            22.75,
+            -3.0
+          ]
+        },
+        {
+          "name": "head_correction",
+          "parent": "head",
+          "pivot": [
+            0.0,
+            22.75,
+            -3.0
+          ]
+        },
+        {
+          "name": "head_ai",
+          "parent": "head_correction",
+          "pivot": [
+            0.0,
+            22.75,
+            -3.0
+          ]
+        },
+        {
+          "name": "head_angle",
+          "parent": "head_ai",
+          "pivot": [
+            0.0,
+            22.75,
+            -3.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3.0,
+                24.75,
+                -6.25
+              ],
+              "size": [
+                6.0,
+                4.0,
+                6.0
+              ],
+              "uv": [
+                0.0,
+                27.0
+              ],
+              "inflate": 0.01
+            },
+            {
+              "origin": [
+                -3.0,
+                22.75,
+                -3.25
+              ],
+              "size": [
+                6.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                14.0,
+                56.0
+              ]
+            },
+            {
+              "origin": [
+                -2.0,
+                25.0,
+                -6.75
+              ],
+              "size": [
+                0.02,
+                6.0,
+                7.0
+              ],
+              "uv": [
+                0.0,
+                30.0
+              ],
+              "rotation": [
+                0.0,
+                -15.0,
+                -10.0
+              ],
+              "pivot": [
+                -2.0,
+                27.75,
+                -3.25
+              ]
+            },
+            {
+              "origin": [
+                0.0,
+                25.25,
+                -6.75
+              ],
+              "size": [
+                0.02,
+                6.0,
+                7.0
+              ],
+              "uv": [
+                0.0,
+                36.0
+              ]
+            },
+            {
+              "origin": [
+                2.0,
+                25.0,
+                -6.75
+              ],
+              "size": [
+                0.02,
+                6.0,
+                7.0
+              ],
+              "uv": [
+                0.0,
+                30.0
+              ],
+              "rotation": [
+                0.0,
+                15.0,
+                10.0
+              ],
+              "pivot": [
+                2.0,
+                27.75,
+                -3.25
+              ]
+            },
+            {
+              "origin": [
+                -3.5,
+                24.75,
+                -6.75
+              ],
+              "size": [
+                7.0,
+                1.0,
+                4.0
+              ],
+              "uv": [
+                28.0,
+                0.0
+              ]
+            },
+            {
+              "origin": [
+                -1.5,
+                24.5,
+                -6.75
+              ],
+              "size": [
+                3.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                28.0,
+                5.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "jaw",
+          "parent": "head_angle",
+          "pivot": [
+            0.0,
+            24.75,
+            -3.25
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3.0,
+                22.75,
+                -6.25
+              ],
+              "size": [
+                6.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                38.0,
+                48.0
+              ],
+              "inflate": 0.01
+            },
+            {
+              "origin": [
+                -3.5,
+                23.75,
+                -6.75
+              ],
+              "size": [
+                7.0,
+                1.0,
+                3.0
+              ],
+              "uv": [
+                38.0,
+                32.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eye_right",
+          "parent": "head_angle",
+          "pivot": [
+            -2.025,
+            26.75,
+            -5.775
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3.0,
+                25.75,
+                -6.25
+              ],
+              "size": [
+                2.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                50.0,
+                9.0
+              ],
+              "inflate": 0.02,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "eyelid_right",
+          "parent": "eye_right",
+          "pivot": [
+            -1.9,
+            26.75,
+            -5.65
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2.9,
+                25.75,
+                -6.15
+              ],
+              "size": [
+                2.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                50.0,
+                12.0
+              ],
+              "inflate": 0.03,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "eye_left",
+          "parent": "head_angle",
+          "pivot": [
+            2.025,
+            26.75,
+            -5.775
+          ],
+          "cubes": [
+            {
+              "origin": [
+                1.0,
+                25.75,
+                -6.25
+              ],
+              "size": [
+                2.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                50.0,
+                9.0
+              ],
+              "inflate": 0.02
+            }
+          ]
+        },
+        {
+          "name": "eyelid_left",
+          "parent": "eye_left",
+          "pivot": [
+            1.9,
+            26.75,
+            -5.65
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.9,
+                25.75,
+                -6.15
+              ],
+              "size": [
+                2.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                50.0,
+                12.0
+              ],
+              "inflate": 0.03
+            }
+          ]
+        },
+        {
+          "name": "arm_right",
+          "parent": "chest",
+          "pivot": [
+            -5.0,
+            24.25,
+            -1.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -10.0,
+                19.75,
+                -3.5
+              ],
+              "size": [
+                5.0,
+                5.0,
+                4.0
+              ],
+              "uv": [
+                24.0,
+                32.0
+              ],
+              "inflate": 0.01
+            },
+            {
+              "origin": [
+                -14.0,
+                19.75,
+                -3.5
+              ],
+              "size": [
+                4.0,
+                4.0,
+                4.0
+              ],
+              "uv": [
+                22.0,
+                48.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "forearm_right",
+          "parent": "arm_right",
+          "pivot": [
+            -14.0,
+            21.5,
+            0.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -21.0,
+                20.0,
+                -3.5
+              ],
+              "size": [
+                7.0,
+                3.0,
+                4.0
+              ],
+              "uv": [
+                0.0,
+                49.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hand_right",
+          "parent": "forearm_right",
+          "pivot": [
+            -21.0,
+            21.5,
+            -1.25
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -24.0,
+                20.5,
+                -3.25
+              ],
+              "size": [
+                3.0,
+                2.0,
+                4.0
+              ],
+              "uv": [
+                0.0,
+                56.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "finger_index_right",
+          "parent": "hand_right",
+          "pivot": [
+            -24.0,
+            22.5,
+            -2.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -26.0,
+                21.5,
+                -3.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                31.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "finger_index_right2",
+          "parent": "finger_index_right",
+          "pivot": [
+            -26.0,
+            22.5,
+            -2.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -28.0,
+                21.5,
+                -3.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                29.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "finger_middle_right",
+          "parent": "hand_right",
+          "pivot": [
+            -24.0,
+            22.5,
+            -1.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -26.0,
+                21.5,
+                -2.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                14.0,
+                37.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "finger_middle_right2",
+          "parent": "finger_middle_right",
+          "pivot": [
+            -26.0,
+            22.5,
+            -1.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -28.0,
+                21.5,
+                -2.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                4.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "finger_ring_right",
+          "parent": "hand_right",
+          "pivot": [
+            -24.0,
+            22.5,
+            -0.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -26.0,
+                21.5,
+                -1.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                27.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "finger_ring_right2",
+          "parent": "finger_ring_right",
+          "pivot": [
+            -26.0,
+            22.5,
+            -0.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -28.0,
+                21.5,
+                -1.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                14.0,
+                39.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "finger_pinky_right",
+          "parent": "hand_right",
+          "pivot": [
+            -24.0,
+            22.5,
+            0.25
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -26.0,
+                21.5,
+                -0.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                6.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "finger_pinky_right2",
+          "parent": "finger_pinky_right",
+          "pivot": [
+            -26.0,
+            22.5,
+            0.25
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -28.0,
+                21.5,
+                -0.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "thumb_right",
+          "parent": "hand_right",
+          "pivot": [
+            -23.5,
+            21.0,
+            -3.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -25.0,
+                20.5,
+                -3.5
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                2.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "thumb_right2",
+          "parent": "thumb_right",
+          "pivot": [
+            -25.0,
+            21.0,
+            -3.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -26.0,
+                20.5,
+                -3.5
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                22.0,
+                16.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "arm_left",
+          "parent": "chest",
+          "pivot": [
+            5.0,
+            24.25,
+            -1.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                5.0,
+                19.75,
+                -3.5
+              ],
+              "size": [
+                5.0,
+                5.0,
+                4.0
+              ],
+              "uv": [
+                24.0,
+                32.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            },
+            {
+              "origin": [
+                10.0,
+                19.75,
+                -3.5
+              ],
+              "size": [
+                4.0,
+                4.0,
+                4.0
+              ],
+              "uv": [
+                22.0,
+                48.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "forearm_left",
+          "parent": "arm_left",
+          "pivot": [
+            14.0,
+            21.5,
+            0.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                14.0,
+                20.0,
+                -3.5
+              ],
+              "size": [
+                7.0,
+                3.0,
+                4.0
+              ],
+              "uv": [
+                0.0,
+                49.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "hand_left",
+          "parent": "forearm_left",
+          "pivot": [
+            21.0,
+            21.5,
+            -1.25
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                21.0,
+                20.5,
+                -3.25
+              ],
+              "size": [
+                3.0,
+                2.0,
+                4.0
+              ],
+              "uv": [
+                0.0,
+                56.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_index_left",
+          "parent": "hand_left",
+          "pivot": [
+            24.0,
+            22.5,
+            -2.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                24.0,
+                21.5,
+                -3.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                31.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_index_left2",
+          "parent": "finger_index_left",
+          "pivot": [
+            26.0,
+            22.5,
+            -2.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                26.0,
+                21.5,
+                -3.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                29.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_middle_left",
+          "parent": "hand_left",
+          "pivot": [
+            24.0,
+            22.5,
+            -1.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                24.0,
+                21.5,
+                -2.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                14.0,
+                37.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_middle_left2",
+          "parent": "finger_middle_left",
+          "pivot": [
+            26.0,
+            22.5,
+            -1.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                26.0,
+                21.5,
+                -2.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                4.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_ring_left",
+          "parent": "hand_left",
+          "pivot": [
+            24.0,
+            22.5,
+            -0.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                24.0,
+                21.5,
+                -1.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                27.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_ring_left2",
+          "parent": "finger_ring_left",
+          "pivot": [
+            26.0,
+            22.5,
+            -0.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                26.0,
+                21.5,
+                -1.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                14.0,
+                39.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_pinky_left",
+          "parent": "hand_left",
+          "pivot": [
+            24.0,
+            22.5,
+            0.25
+          ],
+          "cubes": [
+            {
+              "origin": [
+                24.0,
+                21.5,
+                -0.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                6.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_pinky_left2",
+          "parent": "finger_pinky_left",
+          "pivot": [
+            26.0,
+            22.5,
+            0.25
+          ],
+          "cubes": [
+            {
+              "origin": [
+                26.0,
+                21.5,
+                -0.25
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "thumb_left",
+          "parent": "hand_left",
+          "pivot": [
+            23.5,
+            21.0,
+            -3.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                23.0,
+                20.5,
+                -3.5
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                2.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "thumb_left2",
+          "parent": "thumb_left",
+          "pivot": [
+            25.0,
+            21.0,
+            -3.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                25.0,
+                20.5,
+                -3.5
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                22.0,
+                16.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "arm_back_right",
+          "parent": "chest",
+          "pivot": [
+            -4.0,
+            25.25,
+            3.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -9.0,
+                21.75,
+                1.75
+              ],
+              "size": [
+                5.0,
+                5.0,
+                4.0
+              ],
+              "uv": [
+                24.0,
+                32.0
+              ],
+              "inflate": 0.01
+            },
+            {
+              "origin": [
+                -13.0,
+                21.75,
+                1.75
+              ],
+              "size": [
+                4.0,
+                4.0,
+                4.0
+              ],
+              "uv": [
+                22.0,
+                48.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "forearm_back_right",
+          "parent": "arm_back_right",
+          "pivot": [
+            -13.0,
+            23.5,
+            5.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -20.0,
+                22.0,
+                1.75
+              ],
+              "size": [
+                7.0,
+                3.0,
+                4.0
+              ],
+              "uv": [
+                0.0,
+                49.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hand_back_right",
+          "parent": "forearm_back_right",
+          "pivot": [
+            -20.0,
+            23.5,
+            4.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -23.0,
+                22.5,
+                2.0
+              ],
+              "size": [
+                3.0,
+                2.0,
+                4.0
+              ],
+              "uv": [
+                0.0,
+                56.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "finger_index_back_right",
+          "parent": "hand_back_right",
+          "pivot": [
+            -23.0,
+            24.5,
+            2.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -25.0,
+                23.5,
+                2.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                31.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "finger_index_back_right2",
+          "parent": "finger_index_back_right",
+          "pivot": [
+            -25.0,
+            24.5,
+            2.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -27.0,
+                23.5,
+                2.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                29.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "finger_middle_back_right",
+          "parent": "hand_back_right",
+          "pivot": [
+            -23.0,
+            24.5,
+            3.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -25.0,
+                23.5,
+                3.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                14.0,
+                37.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "finger_middle_back_right2",
+          "parent": "finger_middle_back_right",
+          "pivot": [
+            -25.0,
+            24.5,
+            3.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -27.0,
+                23.5,
+                3.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                4.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "finger_ring_back_right",
+          "parent": "hand_back_right",
+          "pivot": [
+            -23.0,
+            24.5,
+            4.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -25.0,
+                23.5,
+                4.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                27.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "finger_ring_back_right2",
+          "parent": "finger_ring_back_right",
+          "pivot": [
+            -25.0,
+            24.5,
+            4.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -27.0,
+                23.5,
+                4.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                14.0,
+                39.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "finger_pinky_back_right",
+          "parent": "hand_back_right",
+          "pivot": [
+            -23.0,
+            24.5,
+            5.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -25.0,
+                23.5,
+                5.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                6.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "finger_pinky_back_right2",
+          "parent": "finger_pinky_back_right",
+          "pivot": [
+            -25.0,
+            24.5,
+            5.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -27.0,
+                23.5,
+                5.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "thumb_back_right",
+          "parent": "hand_back_right",
+          "pivot": [
+            -22.5,
+            23.0,
+            2.25
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -24.0,
+                22.5,
+                1.75
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                2.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "thumb_back_right2",
+          "parent": "thumb_back_right",
+          "pivot": [
+            -24.0,
+            23.0,
+            1.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -25.0,
+                22.5,
+                1.75
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                22.0,
+                16.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "arm_back_left",
+          "parent": "chest",
+          "pivot": [
+            4.0,
+            25.25,
+            3.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                4.0,
+                21.75,
+                1.75
+              ],
+              "size": [
+                5.0,
+                5.0,
+                4.0
+              ],
+              "uv": [
+                24.0,
+                32.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            },
+            {
+              "origin": [
+                9.0,
+                21.75,
+                1.75
+              ],
+              "size": [
+                4.0,
+                4.0,
+                4.0
+              ],
+              "uv": [
+                22.0,
+                48.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "forearm_back_left",
+          "parent": "arm_back_left",
+          "pivot": [
+            13.0,
+            23.5,
+            5.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                13.0,
+                22.0,
+                1.75
+              ],
+              "size": [
+                7.0,
+                3.0,
+                4.0
+              ],
+              "uv": [
+                0.0,
+                49.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "hand_back_left",
+          "parent": "forearm_back_left",
+          "pivot": [
+            20.0,
+            23.5,
+            4.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                20.0,
+                22.5,
+                2.0
+              ],
+              "size": [
+                3.0,
+                2.0,
+                4.0
+              ],
+              "uv": [
+                0.0,
+                56.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_index_back_left",
+          "parent": "hand_back_left",
+          "pivot": [
+            23.0,
+            24.5,
+            2.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                23.0,
+                23.5,
+                2.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                31.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_index_back_left2",
+          "parent": "finger_index_back_left",
+          "pivot": [
+            25.0,
+            24.5,
+            2.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                25.0,
+                23.5,
+                2.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                29.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_middle_back_left",
+          "parent": "hand_back_left",
+          "pivot": [
+            23.0,
+            24.5,
+            3.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                23.0,
+                23.5,
+                3.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                14.0,
+                37.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_middle_back_left2",
+          "parent": "finger_middle_back_left",
+          "pivot": [
+            25.0,
+            24.5,
+            3.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                25.0,
+                23.5,
+                3.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                4.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_ring_back_left",
+          "parent": "hand_back_left",
+          "pivot": [
+            23.0,
+            24.5,
+            4.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                23.0,
+                23.5,
+                4.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                27.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_ring_back_left2",
+          "parent": "finger_ring_back_left",
+          "pivot": [
+            25.0,
+            24.5,
+            4.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                25.0,
+                23.5,
+                4.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                14.0,
+                39.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_pinky_back_left",
+          "parent": "hand_back_left",
+          "pivot": [
+            23.0,
+            24.5,
+            5.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                23.0,
+                23.5,
+                5.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                6.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "finger_pinky_back_left2",
+          "parent": "finger_pinky_back_left",
+          "pivot": [
+            25.0,
+            24.5,
+            5.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                25.0,
+                23.5,
+                5.0
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "thumb_back_left",
+          "parent": "hand_back_left",
+          "pivot": [
+            22.5,
+            23.0,
+            2.25
+          ],
+          "cubes": [
+            {
+              "origin": [
+                22.0,
+                22.5,
+                1.75
+              ],
+              "size": [
+                2.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                2.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "thumb_back_left2",
+          "parent": "thumb_back_left",
+          "pivot": [
+            24.0,
+            23.0,
+            1.75
+          ],
+          "cubes": [
+            {
+              "origin": [
+                24.0,
+                22.5,
+                1.75
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                22.0,
+                16.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "leg_right",
+          "parent": "body",
+          "pivot": [
+            -2.5,
+            12.5,
+            0.0
+          ],
+          "rotation": [
+            -10.0,
+            2.5,
+            10.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.5,
+                6.5,
+                -2.0
+              ],
+              "size": [
+                4.0,
+                7.0,
+                4.0
+              ],
+              "uv": [
+                38.0,
+                37.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "leg_right2",
+          "parent": "leg_right",
+          "pivot": [
+            -2.5,
+            6.5,
+            -2.0
+          ],
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.0,
+                -0.5,
+                -2.0
+              ],
+              "size": [
+                3.0,
+                7.0,
+                4.0
+              ],
+              "uv": [
+                36.0,
+                5.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "foot_right",
+          "parent": "leg_right2",
+          "pivot": [
+            -2.5,
+            0.5,
+            0.0
+          ],
+          "rotation": [
+            -17.5,
+            0.0,
+            -10.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.5,
+                -1.5,
+                -2.75
+              ],
+              "size": [
+                4.0,
+                2.0,
+                5.0
+              ],
+              "uv": [
+                14.0,
+                41.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "toe_right1",
+          "parent": "foot_right",
+          "pivot": [
+            -3.5,
+            -1.5,
+            -2.75
+          ],
+          "rotation": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.5,
+                -1.5,
+                -5.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                39.0,
+                16.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "toe_right2",
+          "parent": "foot_right",
+          "pivot": [
+            -1.5,
+            -1.5,
+            -2.75
+          ],
+          "rotation": [
+            0.0,
+            -5.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2.5,
+                -1.5,
+                -5.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                50.0,
+                36.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "leg_left",
+          "parent": "body",
+          "pivot": [
+            2.5,
+            12.5,
+            0.0
+          ],
+          "rotation": [
+            -10.0,
+            -2.5,
+            -10.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.5,
+                6.5,
+                -2.0
+              ],
+              "size": [
+                4.0,
+                7.0,
+                4.0
+              ],
+              "uv": [
+                38.0,
+                37.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "leg_left2",
+          "parent": "leg_left",
+          "pivot": [
+            2.5,
+            6.5,
+            -2.0
+          ],
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                1.0,
+                -0.5,
+                -2.0
+              ],
+              "size": [
+                3.0,
+                7.0,
+                4.0
+              ],
+              "uv": [
+                36.0,
+                5.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "foot_left",
+          "parent": "leg_left2",
+          "pivot": [
+            2.5,
+            0.5,
+            0.0
+          ],
+          "rotation": [
+            -17.5,
+            0.0,
+            10.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.5,
+                -1.5,
+                -2.75
+              ],
+              "size": [
+                4.0,
+                2.0,
+                5.0
+              ],
+              "uv": [
+                14.0,
+                41.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "toe_left1",
+          "parent": "foot_left",
+          "pivot": [
+            1.5,
+            -1.5,
+            -2.75
+          ],
+          "rotation": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.5,
+                -1.5,
+                -5.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                50.0,
+                36.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "toe_left2",
+          "parent": "foot_left",
+          "pivot": [
+            3.5,
+            -1.5,
+            -2.75
+          ],
+          "rotation": [
+            0.0,
+            -5.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                2.5,
+                -1.5,
+                -5.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                39.0,
+                16.0
+              ],
+              "mirror": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

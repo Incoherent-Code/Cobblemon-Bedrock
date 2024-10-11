@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:combusken",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0256_combusken/combusken",
+        "shiny": "textures/pokemon/0256_combusken/combusken_shiny",
+        "female": "textures/pokemon/0256_combusken/combusken"
+      },
+      "geometry": {
+        "base": "geometry.combusken_male.geo",
+        "shiny": "geometry.combusken_male.geo",
+        "female": "geometry.combusken_female.geo"
+      },
+      "animations": {
+        "combuskenmodel.singlebonelook": "animation.combuskenmodel.singlebonelook",
+        "combusken.ground_idle": "animation.combusken.ground_idle",
+        "combuskenmodel.bipedwalkanimation": "animation.combuskenmodel.bipedwalkanimation",
+        "combusken.blink": "animation.combusken.blink",
+        "controller.animation.combusken.blink": "controller.animation.combusken.blink",
+        "controller.animation.cobblemon.combusken": "controller.animation.cobblemon.combusken"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.combusken"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.combusken.blink",
+          {
+            "controller.animation.cobblemon.combusken": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_combusken = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

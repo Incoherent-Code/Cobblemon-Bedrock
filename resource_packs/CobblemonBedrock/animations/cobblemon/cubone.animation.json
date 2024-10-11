@@ -1,0 +1,73 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.cubonemodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.cubone.ground_idle": {
+      "loop": true,
+      "bones": {
+        "leftarm": {
+          "rotation": [
+            15.0,
+            15.0,
+            45.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            15.0,
+            -15.0,
+            -45.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.cubonemodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "rightleg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1 + 180) * 1.15 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leftleg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1.1) *  1.15 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

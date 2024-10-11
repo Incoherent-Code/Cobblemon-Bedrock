@@ -1,0 +1,77 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.seel": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "seelmodel.singlebonelook",
+            "seel.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_seel = 0; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "seelmodel.singlebonelook",
+            "seel.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_seel = 1; return !q.is_moving;"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "float": {
+          "animations": [
+            "seelmodel.singlebonelook",
+            "seel.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_seel = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swim": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swim": {
+          "animations": [
+            "seelmodel.singlebonelook",
+            "seel.water_swim"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_seel = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

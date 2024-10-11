@@ -1,0 +1,254 @@
+{
+  "minLevel": 36,
+  "maxLevel": 50,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 36,
+      "maxLevel": 50
+    },
+    "1": {
+      "minLevel": 36,
+      "maxLevel": 50
+    },
+    "2": {
+      "minLevel": 36,
+      "maxLevel": 50
+    }
+  },
+  "name": "Claydol",
+  "nationalPokedexNumber": 344,
+  "baseStats": {
+    "hp": 60,
+    "attack": 70,
+    "defence": 105,
+    "special_attack": 70,
+    "special_defence": 120,
+    "speed": 75
+  },
+  "maleRatio": -1.0,
+  "catchRate": 90,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "ground",
+  "secondaryType": "psychic",
+  "abilities": [
+    "levitate"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:confusion",
+    "1:harden",
+    "1:hyperbeam",
+    "1:mudslap",
+    "1:rapidspin",
+    "1:teleport",
+    "9:rocktomb",
+    "10:healblock",
+    "12:powertrick",
+    "15:psybeam",
+    "18:ancientpower",
+    "21:imprison",
+    "24:cosmicpower",
+    "27:extrasensory",
+    "30:earthpower",
+    "33:selfdestruct",
+    "38:guardsplit",
+    "38:powersplit",
+    "43:sandstorm",
+    "48:explosion",
+    "tm:allyswitch",
+    "tm:bodypress",
+    "tm:bulldoze",
+    "tm:calmmind",
+    "tm:chargebeam",
+    "tm:confide",
+    "tm:cosmicpower",
+    "tm:dazzlinggleam",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:dreameater",
+    "tm:drillrun",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:eerieimpulse",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:futuresight",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:guardswap",
+    "tm:gyroball",
+    "tm:hex",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:imprison",
+    "tm:irondefense",
+    "tm:lightscreen",
+    "tm:nastyplot",
+    "tm:naturalgift",
+    "tm:powerswap",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychicterrain",
+    "tm:psychup",
+    "tm:psyshock",
+    "tm:raindance",
+    "tm:recycle",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:safeguard",
+    "tm:sandstorm",
+    "tm:sandtomb",
+    "tm:secretpower",
+    "tm:selfdestruct",
+    "tm:shadowball",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:stealthrock",
+    "tm:stoneedge",
+    "tm:storedpower",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:telekinesis",
+    "tm:toxic",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:wonderroom",
+    "tm:zenheadbutt",
+    "tutor:allyswitch",
+    "tutor:ancientpower",
+    "tutor:doubleedge",
+    "tutor:dreameater",
+    "tutor:drillrun",
+    "tutor:earthpower",
+    "tutor:endure",
+    "tutor:expandingforce",
+    "tutor:explosion",
+    "tutor:gravity",
+    "tutor:headbutt",
+    "tutor:magiccoat",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:psychup",
+    "tutor:recycle",
+    "tutor:rockslide",
+    "tutor:scorchingsands",
+    "tutor:selfdestruct",
+    "tutor:signalbeam",
+    "tutor:skillswap",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stealthrock",
+    "tutor:substitute",
+    "tutor:swagger",
+    "tutor:telekinesis",
+    "tutor:trick",
+    "tutor:wonderroom",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.claydol.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:clay_ball",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:light_clay",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:colbur_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 15.0,
+  "weight": 1080.0
+}

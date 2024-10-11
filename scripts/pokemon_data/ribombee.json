@@ -1,0 +1,324 @@
+{
+  "minLevel": 25,
+  "maxLevel": 46,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 25,
+      "maxLevel": 46
+    },
+    "1": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 25,
+      "maxLevel": 46
+    },
+    "2": {
+      "minLevel": 25,
+      "maxLevel": 46
+    }
+  },
+  "name": "Ribombee",
+  "nationalPokedexNumber": 743,
+  "baseStats": {
+    "hp": 60,
+    "attack": 55,
+    "defence": 60,
+    "special_attack": 95,
+    "special_defence": 70,
+    "speed": 124
+  },
+  "maleRatio": 0.5,
+  "catchRate": 75,
+  "baseScale": 0.35,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.85,
+    "height": 2.6,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "fairy",
+  "abilities": [
+    "honeygather",
+    "shielddust",
+    "h:sweetveil"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:absorb",
+    "1:covet",
+    "1:fairywind",
+    "1:pollenpuff",
+    "1:stunspore",
+    "1:sweetscent",
+    "13:silverwind",
+    "18:drainingkiss",
+    "24:strugglebug",
+    "32:aromatherapy",
+    "40:switcheroo",
+    "48:dazzlinggleam",
+    "56:bugbuzz",
+    "64:quiverdance",
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:allyswitch",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:bugbuzz",
+    "tm:calmmind",
+    "tm:charm",
+    "tm:confide",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:drainingkiss",
+    "tm:dreameater",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:faketears",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:imprison",
+    "tm:infestation",
+    "tm:leechlife",
+    "tm:lightscreen",
+    "tm:magicalleaf",
+    "tm:magicroom",
+    "tm:naturepower",
+    "tm:playrough",
+    "tm:pollenpuff",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychup",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:roost",
+    "tm:round",
+    "tm:safeguard",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:speedswap",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swift",
+    "tm:thief",
+    "tm:toxic",
+    "tm:trick",
+    "tm:uturn",
+    "tm:wonderroom",
+    "tutor:afteryou",
+    "tutor:allyswitch",
+    "tutor:bugbite",
+    "tutor:covet",
+    "tutor:defog",
+    "tutor:dualwingbeat",
+    "tutor:helpinghand",
+    "tutor:lastresort",
+    "tutor:magicroom",
+    "tutor:signalbeam",
+    "tutor:skillswap",
+    "tutor:snore",
+    "tutor:tailwind",
+    "tutor:telekinesis",
+    "tutor:trick",
+    "tutor:wonderroom"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": true,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.ribombee.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:honey_bottle",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "bug",
+    "fairy"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 2.0,
+  "weight": 5.0,
+  "forms": [
+    {
+      "name": "Totem",
+      "baseStats": {
+        "hp": 60,
+        "attack": 55,
+        "defence": 60,
+        "special_attack": 95,
+        "special_defence": 70,
+        "speed": 124
+      },
+      "maleRatio": 0.5,
+      "hitbox": {
+        "width": 0.9,
+        "height": 2.6,
+        "fixed": false
+      },
+      "catchRate": 75,
+      "experienceGroup": "medium_fast",
+      "baseExperienceYield": 162,
+      "baseFriendship": 50,
+      "primaryType": "bug",
+      "secondaryType": "fairy",
+      "moves": [
+        "1:absorb",
+        "1:fairywind",
+        "1:pollenpuff",
+        "1:strugglebug",
+        "1:stunspore",
+        "13:silverwind",
+        "16:drainingkiss",
+        "21:sweetscent",
+        "28:bugbuzz",
+        "35:dazzlinggleam",
+        "42:aromatherapy",
+        "49:quiverdance",
+        "tm:acrobatics",
+        "tm:aerialace",
+        "tm:attract",
+        "tm:calmmind",
+        "tm:confide",
+        "tm:dazzlinggleam",
+        "tm:doubleteam",
+        "tm:dreameater",
+        "tm:energyball",
+        "tm:facade",
+        "tm:frustration",
+        "tm:hiddenpower",
+        "tm:infestation",
+        "tm:leechlife",
+        "tm:lightscreen",
+        "tm:naturepower",
+        "tm:protect",
+        "tm:psychic",
+        "tm:psychup",
+        "tm:reflect",
+        "tm:rest",
+        "tm:return",
+        "tm:roost",
+        "tm:round",
+        "tm:safeguard",
+        "tm:sleeptalk",
+        "tm:solarbeam",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:swagger",
+        "tm:thief",
+        "tm:toxic",
+        "tm:uturn",
+        "tutor:afteryou",
+        "tutor:allyswitch",
+        "tutor:aromatherapy",
+        "tutor:bugbite",
+        "tutor:bugbuzz",
+        "tutor:covet",
+        "tutor:dazzlinggleam",
+        "tutor:defog",
+        "tutor:helpinghand",
+        "tutor:lastresort",
+        "tutor:magicroom",
+        "tutor:quiverdance",
+        "tutor:signalbeam",
+        "tutor:skillswap",
+        "tutor:snore",
+        "tutor:tailwind",
+        "tutor:telekinesis",
+        "tutor:trick",
+        "tutor:wonderroom"
+      ],
+      "evolutions": [],
+      "abilities": [
+        "sweetveil"
+      ],
+      "labels": [
+        "gen7",
+        "totem"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "bug",
+        "fairy"
+      ],
+      "height": 4.0,
+      "weight": 20.0,
+      "battleOnly": false
+    }
+  ]
+}

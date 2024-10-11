@@ -1,0 +1,97 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.clamperl": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "clamperlmodel.singlebonelook",
+            "clamperl.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walking": "v.state_of_clamperl = 0; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "clamperlmodel.singlebonelook",
+            "clamperl.ground_idle",
+            "clamperl.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_clamperl = 1; return !q.is_moving;"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "floating": {
+          "animations": [
+            "clamperlmodel.singlebonelook",
+            "clamperl.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_clamperl = 2; return !q.is_moving;"
+            },
+            {
+              "walking": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swimming": {
+          "animations": [
+            "clamperlmodel.singlebonelook",
+            "clamperl.water_swim",
+            "clamperl.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_clamperl = 3; return !q.is_moving;"
+            },
+            {
+              "walking": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "portrait": {
+          "animations": [
+            "clamperlmodel.singlebonelook",
+            "clamperl.portrait"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_clamperl = 4; return !q.is_moving;"
+            },
+            {
+              "walking": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

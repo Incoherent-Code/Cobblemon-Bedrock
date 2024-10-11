@@ -1,0 +1,143 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.thievul.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_thievul_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_thievul_blink = q.life_time + 1; return (q.life_time > v.next_quirk_thievul_blink) && (v.state_of_thievul == 1 || v.state_of_thievul == 2 || v.state_of_thievul == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "thievul.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_thievul_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_thievul_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.thievul.sleepquirk": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_thievul_sleepquirk = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_thievul_sleepquirk = q.life_time + 1; return (q.life_time > v.next_quirk_thievul_sleepquirk) && (v.state_of_thievul == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "thievul.quirk_sleep"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_thievul_sleepquirk = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_thievul_sleepquirk ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.thievul": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "thievul.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_thievul = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "thievulmodel.singlebonelook",
+            "thievul.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_thievul = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "thievulmodel.singlebonelook",
+            "thievul.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_thievul = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "thievulmodel.singlebonelook",
+            "thievul.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_thievul = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

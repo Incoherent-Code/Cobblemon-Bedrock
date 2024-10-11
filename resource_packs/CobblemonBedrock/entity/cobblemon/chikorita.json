@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:chikorita",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0152_chikorita/chikorita",
+        "shiny": "textures/pokemon/0152_chikorita/chikorita_shiny"
+      },
+      "geometry": {
+        "base": "geometry.chikorita.geo",
+        "shiny": "geometry.chikorita.geo"
+      },
+      "animations": {
+        "chikorita.sleep": "animation.chikorita.sleep",
+        "chikoritamodel.singlebonelook": "animation.chikoritamodel.singlebonelook",
+        "chikorita.ground_idle": "animation.chikorita.ground_idle",
+        "chikorita.ground_walk": "animation.chikorita.ground_walk",
+        "chikorita.battle_idle": "animation.chikorita.battle_idle",
+        "chikorita.blink": "animation.chikorita.blink",
+        "controller.animation.chikorita.blink": "controller.animation.chikorita.blink",
+        "controller.animation.cobblemon.chikorita": "controller.animation.cobblemon.chikorita"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.chikorita"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.chikorita.blink",
+          {
+            "controller.animation.cobblemon.chikorita": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_chikorita = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

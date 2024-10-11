@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:umbreon",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0197_umbreon/umbreon",
+        "shiny": "textures/pokemon/0197_umbreon/umbreon_shiny",
+        "base_emissive": "textures/pokemon/0197_umbreon/umbreon_emissive",
+        "shiny_emissive": "textures/pokemon/0197_umbreon/umbreon_emissive"
+      },
+      "geometry": {
+        "base": "geometry.umbreon.geo",
+        "shiny": "geometry.umbreon.geo"
+      },
+      "animations": {
+        "umbreonmodel.singlebonelook": "animation.umbreonmodel.singlebonelook",
+        "umbreon.ground_idle": "animation.umbreon.ground_idle",
+        "umbreon.ground_run": "animation.umbreon.ground_run",
+        "umbreon.blink": "animation.umbreon.blink",
+        "controller.animation.umbreon.blink": "controller.animation.umbreon.blink",
+        "controller.animation.cobblemon.umbreon": "controller.animation.cobblemon.umbreon"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.umbreon_emissive",
+        "controller.render.cobblemon.umbreon"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.umbreon.blink",
+          {
+            "controller.animation.cobblemon.umbreon": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_umbreon = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

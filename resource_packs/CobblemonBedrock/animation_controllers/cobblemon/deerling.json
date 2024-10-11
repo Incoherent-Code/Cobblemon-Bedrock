@@ -1,0 +1,37 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.deerling": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "deerlingmodel.singlebonelook"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_deerling = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "deerlingmodel.singlebonelook",
+            "deerlingmodel.quadrupedwalkanimation"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_deerling = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "#W#",
+      "#W#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "W": {
+        "item": "cobblemon:apricorn_planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "item": "cobblemon:apricorn_planks"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:apricorn_fence_gate"
+    },
+    "description": {
+      "identifier": "cobblemon:apricorn_fence_gate_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

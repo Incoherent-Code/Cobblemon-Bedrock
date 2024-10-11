@@ -1,0 +1,239 @@
+{
+  "minLevel": 35,
+  "maxLevel": 49,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ],
+    "2": [
+      "valencian"
+    ],
+    "3": [
+      "valencian",
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "day",
+      "minLevel": 35,
+      "maxLevel": 49
+    },
+    "1": {
+      "timeRange": "day",
+      "minLevel": 35,
+      "maxLevel": 49
+    },
+    "2": {
+      "timeRange": "day",
+      "minLevel": 35,
+      "maxLevel": 49
+    }
+  },
+  "name": "Bellossom",
+  "nationalPokedexNumber": 182,
+  "baseStats": {
+    "hp": 75,
+    "attack": 80,
+    "defence": 95,
+    "special_attack": 90,
+    "special_defence": 100,
+    "speed": 50
+  },
+  "maleRatio": 0.5,
+  "catchRate": 45,
+  "baseScale": 0.5,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.8,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "abilities": [
+    "chlorophyll",
+    "h:healer"
+  ],
+  "shoulderMountable": true,
+  "moves": [
+    "1:absorb",
+    "1:acid",
+    "1:gigadrain",
+    "1:grassyterrain",
+    "1:growth",
+    "1:leafblade",
+    "1:leafstorm",
+    "1:magicalleaf",
+    "1:megadrain",
+    "1:moonblast",
+    "1:moonlight",
+    "1:petaldance",
+    "1:poisonpowder",
+    "1:quiverdance",
+    "1:sleeppowder",
+    "1:stunspore",
+    "1:sunnyday",
+    "1:sweetscent",
+    "1:toxic",
+    "49:petalblizzard",
+    "55:solarbeam",
+    "tm:attract",
+    "tm:batonpass",
+    "tm:bulletseed",
+    "tm:captivate",
+    "tm:charm",
+    "tm:confide",
+    "tm:cut",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:drainpunch",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:fling",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:infestation",
+    "tm:leafblade",
+    "tm:leafstorm",
+    "tm:magicalleaf",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:playrough",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:toxic",
+    "tm:uproar",
+    "tm:venoshock",
+    "tutor:absorb",
+    "tutor:afteryou",
+    "tutor:attract",
+    "tutor:curse",
+    "tutor:cut",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:drainpunch",
+    "tutor:endure",
+    "tutor:flash",
+    "tutor:frustration",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:hiddenpower",
+    "tutor:hyperbeam",
+    "tutor:laserfocus",
+    "tutor:mimic",
+    "tutor:petaldance",
+    "tutor:protect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:solarbeam",
+    "tutor:stunspore",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:sweetscent",
+    "tutor:swordsdance",
+    "tutor:synthesis",
+    "tutor:toxic",
+    "tutor:uproar",
+    "tutor:worryseed"
+  ],
+  "evolutions": [],
+  "features": [
+    "valencian"
+  ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.bellossom.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 4.0,
+  "weight": 58.0
+}

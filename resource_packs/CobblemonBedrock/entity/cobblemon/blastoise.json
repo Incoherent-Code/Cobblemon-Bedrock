@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:blastoise",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0009_blastoise/blastoise",
+        "shiny": "textures/pokemon/0009_blastoise/blastoise_shiny"
+      },
+      "geometry": {
+        "base": "geometry.blastoise.geo",
+        "shiny": "geometry.blastoise.geo"
+      },
+      "animations": {
+        "blastoise.sleep": "animation.blastoise.sleep",
+        "blastoisemodel.singlebonelook": "animation.blastoisemodel.singlebonelook",
+        "blastoise.ground_idle": "animation.blastoise.ground_idle",
+        "blastoise.water_idle": "animation.blastoise.water_idle",
+        "blastoise.water_swim": "animation.blastoise.water_swim",
+        "blastoise.ground_walk": "animation.blastoise.ground_walk",
+        "blastoise.blink": "animation.blastoise.blink",
+        "controller.animation.blastoise.blink": "controller.animation.blastoise.blink",
+        "controller.animation.cobblemon.blastoise": "controller.animation.cobblemon.blastoise"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.blastoise"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.blastoise.blink",
+          {
+            "controller.animation.cobblemon.blastoise": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_blastoise = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

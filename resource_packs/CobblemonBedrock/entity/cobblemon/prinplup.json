@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:prinplup",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0394_prinplup/prinplup",
+        "shiny": "textures/pokemon/0394_prinplup/prinplup_shiny"
+      },
+      "geometry": {
+        "base": "geometry.prinplup.geo",
+        "shiny": "geometry.prinplup.geo"
+      },
+      "animations": {
+        "prinplup.sleep": "animation.prinplup.sleep",
+        "prinplupmodel.singlebonelook": "animation.prinplupmodel.singlebonelook",
+        "prinplup.ground_idle": "animation.prinplup.ground_idle",
+        "prinplup.ground_walk": "animation.prinplup.ground_walk",
+        "prinplup.water_idle": "animation.prinplup.water_idle",
+        "prinplup.water_swim": "animation.prinplup.water_swim",
+        "prinplup.battle_idle": "animation.prinplup.battle_idle",
+        "prinplup.blink": "animation.prinplup.blink",
+        "controller.animation.prinplup.blink": "controller.animation.prinplup.blink",
+        "controller.animation.cobblemon.prinplup": "controller.animation.cobblemon.prinplup"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.prinplup"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.prinplup.blink",
+          {
+            "controller.animation.cobblemon.prinplup": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_prinplup = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,47 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:sharpedo",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0319_sharpedo/sharpedo",
+        "shiny": "textures/pokemon/0319_sharpedo/sharpedo_shiny",
+        "base_emissive": "textures/pokemon/0319_sharpedo/sharpedo_emissive",
+        "shiny_emissive": "textures/pokemon/0319_sharpedo/sharpedo_emissive"
+      },
+      "geometry": {
+        "base": "geometry.sharpedo.geo",
+        "shiny": "geometry.sharpedo.geo"
+      },
+      "animations": {
+        "sharpedo.water_idle": "animation.sharpedo.water_idle",
+        "controller.animation.cobblemon.sharpedo": "controller.animation.cobblemon.sharpedo"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.sharpedo_emissive",
+        "controller.render.cobblemon.sharpedo"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.sharpedo": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_sharpedo = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:naclstack",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0933_naclstack/naclstack",
+        "shiny": "textures/pokemon/0933_naclstack/naclstack_shiny",
+        "base_glow": "textures/pokemon/0933_naclstack/naclstack_emissive",
+        "shiny_glow": "textures/pokemon/0933_naclstack/naclstack_emissive"
+      },
+      "geometry": {
+        "base": "geometry.naclstack.geo",
+        "shiny": "geometry.naclstack.geo"
+      },
+      "animations": {
+        "naclstack.ground_idle": "animation.naclstack.ground_idle",
+        "naclstack.sleep": "animation.naclstack.sleep",
+        "naclstack.ground_walk": "animation.naclstack.ground_walk",
+        "controller.animation.cobblemon.naclstack": "controller.animation.cobblemon.naclstack"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.naclstack_glow",
+        "controller.render.cobblemon.naclstack"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.naclstack": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_naclstack = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

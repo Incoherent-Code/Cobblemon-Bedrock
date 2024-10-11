@@ -1,0 +1,209 @@
+{
+  "minLevel": 22,
+  "maxLevel": 36,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "night",
+      "minLevel": 22,
+      "maxLevel": 36
+    },
+    "1": {
+      "timeRange": "night",
+      "minLevel": 22,
+      "maxLevel": 36
+    },
+    "2": {
+      "minLevel": 22,
+      "maxLevel": 36
+    },
+    "3": {
+      "minLevel": 22,
+      "maxLevel": 36
+    }
+  },
+  "name": "Whirlipede",
+  "nationalPokedexNumber": 544,
+  "baseStats": {
+    "hp": 40,
+    "attack": 55,
+    "defence": 99,
+    "special_attack": 40,
+    "special_defence": 79,
+    "speed": 47
+  },
+  "maleRatio": 0.5,
+  "catchRate": 120,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 1.3,
+    "height": 1.6,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "poison",
+  "abilities": [
+    "poisonpoint",
+    "swarm",
+    "h:speedboost"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:defensecurl",
+    "1:irondefense",
+    "1:poisonsting",
+    "1:protect",
+    "1:rollout",
+    "12:poisontail",
+    "12:pursuit",
+    "16:screech",
+    "20:bugbite",
+    "26:venoshock",
+    "32:takedown",
+    "37:steamroller",
+    "38:agility",
+    "44:toxic",
+    "46:rockclimb",
+    "50:venomdrench",
+    "56:doubleedge",
+    "tm:agility",
+    "tm:attract",
+    "tm:confide",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:frustration",
+    "tm:gyroball",
+    "tm:hex",
+    "tm:hiddenpower",
+    "tm:infestation",
+    "tm:irondefense",
+    "tm:payback",
+    "tm:pinmissile",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:screech",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:spikes",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:toxic",
+    "tm:toxicspikes",
+    "tm:venomdrench",
+    "tm:venoshock",
+    "tutor:bugbite",
+    "tutor:endeavor",
+    "tutor:irondefense",
+    "tutor:signalbeam",
+    "tutor:skittersmack",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:steelroller"
+  ],
+  "evolutions": [
+    {
+      "id": "whirlipede_scolipede",
+      "variant": "level_up",
+      "result": "scolipede",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 30
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.47
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "11-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.whirlipede.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 12.0,
+  "weight": 585.0
+}

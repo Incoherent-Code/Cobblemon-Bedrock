@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:piloswine",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0221_piloswine/piloswine",
+        "shiny": "textures/pokemon/0221_piloswine/piloswine_shiny",
+        "female": "textures/pokemon/0221_piloswine/piloswine"
+      },
+      "geometry": {
+        "base": "geometry.piloswine_male.geo",
+        "shiny": "geometry.piloswine_male.geo",
+        "female": "geometry.piloswine_female.geo"
+      },
+      "animations": {
+        "piloswine.sleep": "animation.piloswine.sleep",
+        "piloswine.ground_idle": "animation.piloswine.ground_idle",
+        "piloswine.ground_walk": "animation.piloswine.ground_walk",
+        "controller.animation.cobblemon.piloswine": "controller.animation.cobblemon.piloswine"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.piloswine"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.piloswine": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_piloswine = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

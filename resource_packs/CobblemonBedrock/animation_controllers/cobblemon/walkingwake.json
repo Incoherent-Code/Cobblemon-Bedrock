@@ -1,0 +1,149 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.walkingwake.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_walkingwake_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_walkingwake_blink = q.life_time + 1; return (q.life_time > v.next_quirk_walkingwake_blink) && (v.state_of_walkingwake == 1 || v.state_of_walkingwake == 2 || v.state_of_walkingwake == 3 || v.state_of_walkingwake == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "walkingwake.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_walkingwake_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_walkingwake_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.walkingwake": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "walkingwake.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_walkingwake = 0; return (!q.is_moving) && (!q.is_in_water);"
+            },
+            {
+              "waterstanding": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.is_in_water)"
+            },
+            {
+              "waterwalk": "(q.is_moving) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "walkingwakemodel.singlebonelook",
+            "walkingwake.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_walkingwake = 1; return q.is_sleeping;"
+            },
+            {
+              "waterstanding": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.is_in_water)"
+            },
+            {
+              "waterwalk": "(q.is_moving) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "waterstanding": {
+          "animations": [
+            "walkingwakemodel.singlebonelook",
+            "walkingwake.ground_idle",
+            "walkingwake.waterstanding.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_walkingwake = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.is_in_water)"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.is_in_water)"
+            },
+            {
+              "waterwalk": "(q.is_moving) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "walkingwakemodel.singlebonelook",
+            "walkingwake.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_walkingwake = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.is_in_water)"
+            },
+            {
+              "waterstanding": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "waterwalk": "(q.is_moving) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "waterwalk": {
+          "animations": [
+            "walkingwakemodel.singlebonelook",
+            "walkingwake.ground_walk",
+            "walkingwake.waterwalk.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_walkingwake = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.is_in_water)"
+            },
+            {
+              "waterstanding": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

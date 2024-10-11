@@ -1,0 +1,279 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.kleavormodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.kleavor.ground_idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "left_brow": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_brow": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_eye": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "abdomen": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "spine": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "upper_spine": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_eye": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_upper_leg": {
+          "rotation": [
+            5.25313,
+            -9.53274,
+            -3.03513
+          ]
+        },
+        "left_lower_leg": {
+          "rotation": [
+            9.61265,
+            5.46857,
+            1.01759
+          ]
+        },
+        "left_foot": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "left_toes": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "right_upper_leg": {
+          "rotation": [
+            5.25313,
+            9.53274,
+            3.03513
+          ]
+        },
+        "right_lower_leg": {
+          "rotation": [
+            9.61265,
+            -5.46857,
+            -1.01759
+          ]
+        },
+        "right_foot": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "right_toes": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "right_shoulder": {
+          "rotation": [
+            -47.25471,
+            -5.52235,
+            -5.08269
+          ]
+        },
+        "right_upper_arm": {
+          "rotation": [
+            13.85738,
+            1.78966,
+            -53.54717
+          ]
+        },
+        "right_hand": {
+          "rotation": [
+            -5.0,
+            0.0,
+            -10.0
+          ]
+        },
+        "right_axe": {
+          "rotation": [
+            2.46207,
+            0.43399,
+            0.00933
+          ]
+        },
+        "left_shoulder": {
+          "rotation": [
+            -47.25471,
+            5.52235,
+            5.08269
+          ]
+        },
+        "right_lower_arm": {
+          "rotation": [
+            15.418,
+            -74.05376,
+            50.90146
+          ]
+        },
+        "left_upper_arm": {
+          "rotation": [
+            13.85738,
+            -1.78966,
+            53.54717
+          ]
+        },
+        "left_lower_arm": {
+          "rotation": [
+            15.418,
+            74.05376,
+            -50.90146
+          ]
+        },
+        "left_hand": {
+          "rotation": [
+            -5.0,
+            0.0,
+            10.0
+          ]
+        },
+        "left_axe": {
+          "rotation": [
+            2.46207,
+            -0.43399,
+            -0.00933
+          ]
+        },
+        "right_cheek_spike": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.kleavormodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "right_upper_leg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.7 + 180) * 0.85 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "left_upper_leg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.7) *  0.85 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.kleavor.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "closed": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

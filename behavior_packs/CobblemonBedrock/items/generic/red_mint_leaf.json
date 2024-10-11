@@ -1,0 +1,26 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:red_mint_leaf"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "red_mint_leaf"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.red_mint_leaf"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:mint_leaf",
+          "cobblemon:plants"
+        ]
+      }
+    }
+  }
+}

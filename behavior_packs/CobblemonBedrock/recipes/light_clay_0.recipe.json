@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "GCG",
+      "CEC",
+      "GCG"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:glow_ink_sac"
+      },
+      "C": {
+        "item": "minecraft:clay_ball"
+      },
+      "E": {
+        "item": "minecraft:ender_pearl"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:glow_ink_sac"
+      },
+      {
+        "item": "minecraft:clay_ball"
+      },
+      {
+        "item": "minecraft:ender_pearl"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:light_clay"
+    },
+    "description": {
+      "identifier": "cobblemon:light_clay_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

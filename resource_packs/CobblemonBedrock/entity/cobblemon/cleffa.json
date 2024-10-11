@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:cleffa",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0173_cleffa/cleffa",
+        "shiny": "textures/pokemon/0173_cleffa/cleffa_shiny"
+      },
+      "geometry": {
+        "base": "geometry.cleffa.geo",
+        "shiny": "geometry.cleffa.geo"
+      },
+      "animations": {
+        "cleffa.ground_idle": "animation.cleffa.ground_idle",
+        "cleffa.leftshoulder.transform": "animation.cleffa.leftshoulder.transform",
+        "cleffa.rightshoulder.transform": "animation.cleffa.rightshoulder.transform",
+        "cleffa.ground_walk": "animation.cleffa.ground_walk",
+        "cleffa.blink": "animation.cleffa.blink",
+        "controller.animation.cleffa.blink": "controller.animation.cleffa.blink",
+        "controller.animation.cobblemon.cleffa": "controller.animation.cobblemon.cleffa"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.cleffa"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.cleffa.blink",
+          {
+            "controller.animation.cobblemon.cleffa": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_cleffa = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

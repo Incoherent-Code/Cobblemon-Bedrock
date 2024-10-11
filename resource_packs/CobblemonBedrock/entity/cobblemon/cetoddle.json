@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:cetoddle",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0974_cetoddle/cetoddle",
+        "shiny": "textures/pokemon/0974_cetoddle/cetoddle_shiny"
+      },
+      "geometry": {
+        "base": "geometry.cetoddle.geo",
+        "shiny": "geometry.cetoddle.geo"
+      },
+      "animations": {
+        "cetoddle.sleep": "animation.cetoddle.sleep",
+        "cetoddle.ground_idle": "animation.cetoddle.ground_idle",
+        "cetoddle.ground_walk": "animation.cetoddle.ground_walk",
+        "cetoddle.battle_idle": "animation.cetoddle.battle_idle",
+        "cetoddle.blink": "animation.cetoddle.blink",
+        "controller.animation.cetoddle.blink": "controller.animation.cetoddle.blink",
+        "controller.animation.cobblemon.cetoddle": "controller.animation.cobblemon.cetoddle"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.cetoddle"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.cetoddle.blink",
+          {
+            "controller.animation.cobblemon.cetoddle": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_cetoddle = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

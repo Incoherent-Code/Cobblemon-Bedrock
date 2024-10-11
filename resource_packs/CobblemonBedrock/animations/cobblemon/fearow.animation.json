@@ -1,0 +1,213 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.fearowmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "neck": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.fearow.ground_idle": {
+      "loop": true,
+      "bones": {
+        "hairstrand": {
+          "rotation": [
+            7.5,
+            0.0,
+            12.5
+          ]
+        },
+        "hairstrand2": {
+          "rotation": [
+            -17.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_fluff": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            -205.97212,
+            -73.26807,
+            -63.0391
+          ],
+          "position": [
+            0.0,
+            -7.0,
+            -3.0
+          ]
+        },
+        "wing_fluff_left": {
+          "rotation": [
+            -7.5,
+            30.0,
+            -15.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            3.0
+          ]
+        },
+        "wing_left2": {
+          "rotation": [
+            0.0,
+            40.0,
+            0.0
+          ]
+        },
+        "wing_left3": {
+          "rotation": [
+            0.0,
+            -22.5,
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            -205.97212,
+            73.26807,
+            63.0391
+          ],
+          "position": [
+            0.0,
+            -7.0,
+            -3.0
+          ]
+        },
+        "wing_fluff_right": {
+          "rotation": [
+            -7.5,
+            -30.0,
+            15.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            3.0
+          ]
+        },
+        "wing_right2": {
+          "rotation": [
+            0.0,
+            -40.0,
+            0.0
+          ]
+        },
+        "wing_right3": {
+          "rotation": [
+            0.0,
+            22.5,
+            0.0
+          ]
+        },
+        "wing_fluff_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            17.5
+          ]
+        },
+        "wing_fluff_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -17.5
+          ]
+        },
+        "neck_fluff3": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.fearow.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "animation.fearowmodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662 + 180) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662) *  1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

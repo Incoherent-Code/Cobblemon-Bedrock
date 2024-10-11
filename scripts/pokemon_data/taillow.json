@@ -1,0 +1,219 @@
+{
+  "minLevel": 2,
+  "maxLevel": 27,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "timeRange": "day",
+      "minLevel": 2,
+      "maxLevel": 27
+    }
+  },
+  "name": "Taillow",
+  "nationalPokedexNumber": 276,
+  "baseStats": {
+    "hp": 40,
+    "attack": 55,
+    "defence": 30,
+    "special_attack": 30,
+    "special_defence": 30,
+    "speed": 85
+  },
+  "maleRatio": 0.5,
+  "catchRate": 200,
+  "baseScale": 0.8,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.65,
+    "fixed": false
+  },
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "abilities": [
+    "guts",
+    "h:scrappy"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:growl",
+    "1:peck",
+    "5:focusenergy",
+    "9:quickattack",
+    "13:wingattack",
+    "17:doubleteam",
+    "21:aerialace",
+    "25:quickguard",
+    "29:agility",
+    "33:airslash",
+    "37:endeavor",
+    "41:bravebird",
+    "45:reversal",
+    "egg:boomburst",
+    "egg:bravebird",
+    "egg:defog",
+    "egg:hurricane",
+    "egg:mirrormove",
+    "egg:pursuit",
+    "egg:rage",
+    "egg:refresh",
+    "egg:roost",
+    "egg:skyattack",
+    "egg:steelwing",
+    "egg:supersonic",
+    "egg:whirlwind",
+    "tm:aerialace",
+    "tm:attract",
+    "tm:captivate",
+    "tm:confide",
+    "tm:defog",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:fly",
+    "tm:frustration",
+    "tm:hiddenpower",
+    "tm:naturalgift",
+    "tm:pluck",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:roost",
+    "tm:round",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:steelwing",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:thief",
+    "tm:toxic",
+    "tm:uturn",
+    "tm:workup",
+    "tutor:aircutter",
+    "tutor:bravebird",
+    "tutor:counter",
+    "tutor:defog",
+    "tutor:doubleedge",
+    "tutor:endeavor",
+    "tutor:endure",
+    "tutor:featherdance",
+    "tutor:focusenergy",
+    "tutor:growl",
+    "tutor:heatwave",
+    "tutor:mimic",
+    "tutor:mirrormove",
+    "tutor:mudslap",
+    "tutor:ominouswind",
+    "tutor:peck",
+    "tutor:roost",
+    "tutor:skyattack",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:substitute",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:tailwind",
+    "tutor:twister"
+  ],
+  "evolutions": [
+    {
+      "id": "taillow_swellow",
+      "variant": "level_up",
+      "result": "swellow",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 22
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.taillow.desc"
+  ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:charti_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "flying"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 3.0,
+  "weight": 23.0
+}

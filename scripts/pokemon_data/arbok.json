@@ -1,0 +1,318 @@
+{
+  "minLevel": 22,
+  "maxLevel": 45,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ],
+    "2": [
+      "snake-pattern-attack"
+    ],
+    "3": [
+      "snake-pattern-dark"
+    ],
+    "4": [
+      "snake-pattern-elusive"
+    ],
+    "5": [
+      "snake-pattern-heart"
+    ],
+    "6": [
+      "snake-pattern-legacy"
+    ],
+    "7": [
+      "snake-pattern-sound"
+    ],
+    "8": [
+      "snake-pattern-speed"
+    ],
+    "9": [
+      "shiny",
+      "snake-pattern-attack"
+    ],
+    "10": [
+      "shiny",
+      "snake-pattern-dark"
+    ],
+    "11": [
+      "shiny",
+      "snake-pattern-elusive"
+    ],
+    "12": [
+      "shiny",
+      "snake-pattern-heart"
+    ],
+    "13": [
+      "shiny",
+      "snake-pattern-legacy"
+    ],
+    "14": [
+      "shiny",
+      "snake-pattern-sound"
+    ],
+    "15": [
+      "shiny",
+      "snake-pattern-speed"
+    ],
+    "16": [
+      "shiny",
+      "snake-pattern-classic"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 22,
+      "maxLevel": 45
+    },
+    "1": {
+      "minLevel": 22,
+      "maxLevel": 45
+    },
+    "2": {
+      "minLevel": 22,
+      "maxLevel": 45
+    },
+    "3": {
+      "minLevel": 22,
+      "maxLevel": 45
+    },
+    "4": {
+      "minLevel": 22,
+      "maxLevel": 45
+    },
+    "5": {
+      "minLevel": 22,
+      "maxLevel": 45
+    },
+    "6": {
+      "minLevel": 22,
+      "maxLevel": 45
+    }
+  },
+  "name": "Arbok",
+  "nationalPokedexNumber": 24,
+  "baseStats": {
+    "hp": 60,
+    "attack": 95,
+    "defence": 69,
+    "special_attack": 65,
+    "special_defence": 79,
+    "speed": 80
+  },
+  "maleRatio": 0.5,
+  "catchRate": 90,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.8,
+    "fixed": false
+  },
+  "primaryType": "poison",
+  "abilities": [
+    "intimidate",
+    "shedskin",
+    "h:unnerve"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:bite",
+    "1:crunch",
+    "1:firefang",
+    "1:icefang",
+    "1:leer",
+    "1:poisonsting",
+    "1:thunderfang",
+    "1:wrap",
+    "12:glare",
+    "17:screech",
+    "20:acid",
+    "27:spitup",
+    "27:stockpile",
+    "27:swallow",
+    "32:acidspray",
+    "39:mudbomb",
+    "44:gastroacid",
+    "48:belch",
+    "51:haze",
+    "56:coil",
+    "63:gunkshot",
+    "tm:attract",
+    "tm:brutalswing",
+    "tm:bulldoze",
+    "tm:captivate",
+    "tm:confide",
+    "tm:darkpulse",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:dragontail",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:infestation",
+    "tm:irontail",
+    "tm:naturalgift",
+    "tm:payback",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:sludgewave",
+    "tm:snatch",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:thief",
+    "tm:torment",
+    "tm:toxic",
+    "tm:venoshock",
+    "tutor:acid",
+    "tutor:aquatail",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:bind",
+    "tutor:bite",
+    "tutor:bodyslam",
+    "tutor:crunch",
+    "tutor:curse",
+    "tutor:darkpulse",
+    "tutor:dig",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:dragontail",
+    "tutor:earthquake",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:fissure",
+    "tutor:frustration",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:glare",
+    "tutor:gunkshot",
+    "tutor:haze",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:hyperbeam",
+    "tutor:irontail",
+    "tutor:leer",
+    "tutor:megadrain",
+    "tutor:mimic",
+    "tutor:poisonjab",
+    "tutor:poisonsting",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:refresh",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:rockslide",
+    "tutor:screech",
+    "tutor:seedbomb",
+    "tutor:skullbash",
+    "tutor:slam",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:snatch",
+    "tutor:snore",
+    "tutor:spite",
+    "tutor:stompingtantrum",
+    "tutor:strength",
+    "tutor:substitute",
+    "tutor:suckerpunch",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:takedown",
+    "tutor:thief",
+    "tutor:throatchop",
+    "tutor:toxic",
+    "tutor:wrap"
+  ],
+  "evolutions": [],
+  "features": [
+    "snake-pattern"
+  ],
+  "standingEyeHeight": 1.0,
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.arbok.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:razor_fang",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "field",
+    "dragon"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 35.0,
+  "weight": 650.0
+}

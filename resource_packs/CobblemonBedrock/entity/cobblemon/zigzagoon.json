@@ -1,0 +1,70 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:zigzagoon",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0263_zigzagoon/zigzagoon",
+        "shiny": "textures/pokemon/0263_zigzagoon/zigzagoon_shiny",
+        "galarian": "textures/pokemon/0263_zigzagoon/zigzagoon_galarian",
+        "shiny_galarian": "textures/pokemon/0263_zigzagoon/zigzagoon_galarian_shiny"
+      },
+      "geometry": {
+        "base": "geometry.zigzagoon.geo",
+        "shiny": "geometry.zigzagoon.geo",
+        "galarian": "geometry.zigzagoon_galarian.geo",
+        "shiny_galarian": "geometry.zigzagoon_galarian.geo"
+      },
+      "animations": {
+        "zigzagoon.sleep": "animation.zigzagoon.sleep",
+        "zigzagoonmodel.singlebonelook": "animation.zigzagoonmodel.singlebonelook",
+        "zigzagoon.ground_idle": "animation.zigzagoon.ground_idle",
+        "zigzagoon.ground_walk": "animation.zigzagoon.ground_walk",
+        "zigzagoon.battle_idle": "animation.zigzagoon.battle_idle",
+        "zigzagoon.shoulder_left": "animation.zigzagoon.shoulder_left",
+        "zigzagoon.shoulderleft.transform": "animation.zigzagoon.shoulderleft.transform",
+        "zigzagoon.shoulder_right": "animation.zigzagoon.shoulder_right",
+        "zigzagoon.shoulderright.transform": "animation.zigzagoon.shoulderright.transform",
+        "zigzagoon.blink": "animation.zigzagoon.blink",
+        "controller.animation.zigzagoon.blink": "controller.animation.zigzagoon.blink",
+        "controller.animation.cobblemon.zigzagoon": "controller.animation.cobblemon.zigzagoon",
+        "zigzagoongalarianmodel.singlebonelook": "animation.zigzagoongalarianmodel.singlebonelook",
+        "zigzagoon_galarian.ground_idle": "animation.zigzagoon_galarian.ground_idle",
+        "zigzagoongalarianmodel.quadrupedwalkanimation": "animation.zigzagoongalarianmodel.quadrupedwalkanimation",
+        "zigzagoon_galarian.blink": "animation.zigzagoon_galarian.blink",
+        "controller.animation.zigzagoon_galarian.blink": "controller.animation.zigzagoon_galarian.blink",
+        "controller.animation.cobblemon.zigzagoon_galarian": "controller.animation.cobblemon.zigzagoon_galarian"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.zigzagoon"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.zigzagoon.blink",
+          {
+            "controller.animation.cobblemon.zigzagoon": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.zigzagoon_galarian.blink",
+          {
+            "controller.animation.cobblemon.zigzagoon_galarian": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_zigzagoon = -1.0;",
+          "v.state_of_zigzagoon_galarian = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

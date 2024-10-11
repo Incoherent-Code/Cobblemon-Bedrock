@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:bellsprout",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0069_bellsprout/bellsprout",
+        "shiny": "textures/pokemon/0069_bellsprout/bellsprout_shiny"
+      },
+      "geometry": {
+        "base": "geometry.bellsprout.geo",
+        "shiny": "geometry.bellsprout.geo"
+      },
+      "animations": {
+        "bellsproutmodel.singlebonelook": "animation.bellsproutmodel.singlebonelook",
+        "bellsprout.ground_idle": "animation.bellsprout.ground_idle",
+        "controller.animation.cobblemon.bellsprout": "controller.animation.cobblemon.bellsprout"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.bellsprout"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.bellsprout": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_bellsprout = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

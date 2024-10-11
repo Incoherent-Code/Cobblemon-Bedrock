@@ -1,0 +1,186 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.avalugg.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_avalugg_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_avalugg_blink = q.life_time + 1; return (q.life_time > v.next_quirk_avalugg_blink) && (v.state_of_avalugg == 1 || v.state_of_avalugg == 2 || v.state_of_avalugg == 3 || v.state_of_avalugg == 4 || v.state_of_avalugg == 5);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "avalugg.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_avalugg_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_avalugg_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.avalugg": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "avalugg.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_avalugg = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water);"
+            },
+            {
+              "walking": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "avaluggmodel.singlebonelook",
+            "avalugg.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_avalugg = 1; return q.is_sleeping;"
+            },
+            {
+              "walking": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "avaluggmodel.singlebonelook",
+            "avalugg.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_avalugg = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "water_surface_idle": {
+          "animations": [
+            "avalugg.water_idle",
+            "avalugg.water_surface_idle.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_avalugg = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "walking": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "water_surface_swim": {
+          "animations": [
+            "avalugg.water_swim",
+            "avalugg.water_surface_swim.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_avalugg = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "walking": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "avaluggmodel.singlebonelook",
+            "avalugg.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_avalugg = 5; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle') && !q.is_in_water)"
+            },
+            {
+              "walking": "((q.is_moving && !q.is_swimming)) && (!q.is_in_water)"
+            },
+            {
+              "water_surface_idle": "(!q.is_moving) && (q.is_in_water)"
+            },
+            {
+              "water_surface_swim": "(q.is_moving) && (q.is_in_water)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

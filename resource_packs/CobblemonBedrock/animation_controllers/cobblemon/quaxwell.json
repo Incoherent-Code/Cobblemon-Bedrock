@@ -1,0 +1,147 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.quaxwell.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_quaxwell_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_quaxwell_blink = q.life_time + 1; return (q.life_time > v.next_quirk_quaxwell_blink) && (v.state_of_quaxwell == 1 || v.state_of_quaxwell == 2 || v.state_of_quaxwell == 3 || v.state_of_quaxwell == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "quaxwell.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_quaxwell_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_quaxwell_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.quaxwell": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "quaxwell.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_quaxwell = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "quaxwellmodel.singlebonelook",
+            "quaxwell.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_quaxwell = 1; return q.is_sleeping;"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "quaxwellmodel.singlebonelook",
+            "quaxwell.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_quaxwell = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "floating": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "floating": {
+          "animations": [
+            "quaxwellmodel.singlebonelook",
+            "quaxwell.water_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_quaxwell = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "quaxwellmodel.singlebonelook",
+            "quaxwell.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_quaxwell = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "floating": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

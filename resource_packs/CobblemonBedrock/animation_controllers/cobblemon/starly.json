@@ -1,0 +1,95 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.starly.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_starly_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_starly_blink = q.life_time + 1; return (q.life_time > v.next_quirk_starly_blink) && (v.state_of_starly == 0 || v.state_of_starly == 1 || v.state_of_starly == 2 || v.state_of_starly == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "starly.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_starly_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_starly_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.starly": {
+      "initial_state": "stand",
+      "states": {
+        "stand": {
+          "animations": [
+            "starlymodel.singlebonelook",
+            "starly.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_starly = 0; return (q.is_moving && !q.is_swimming);"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "starlymodel.singlebonelook"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_starly = 1; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "starlymodel.singlebonelook"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_starly = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "starlymodel.singlebonelook",
+            "starly.ground_idle"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_starly = 3; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

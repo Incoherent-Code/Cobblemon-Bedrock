@@ -1,0 +1,12 @@
+[
+  {
+    "flipbook_texture": "textures/healing_machine_flipbook",
+    "atlas_tile": "healing_machine",
+    "ticks_per_frame": 10
+  },
+  {
+    "flipbook_texture": "textures/healing_machine_flipbook",
+    "atlas_tile": "active_healing_machine",
+    "ticks_per_frame": 2
+  }
+]

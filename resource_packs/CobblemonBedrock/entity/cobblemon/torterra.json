@@ -1,0 +1,102 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:torterra",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0389_torterra/torterra",
+        "shiny": "textures/pokemon/0389_torterra/torterra_shiny",
+        "tree_cherry": "textures/pokemon/0389_torterra/torterra_cherry",
+        "shiny_tree_cherry": "textures/pokemon/0389_torterra/torterra_cherry_shiny",
+        "tree_birch": "textures/pokemon/0389_torterra/torterra_birch",
+        "shiny_tree_birch": "textures/pokemon/0389_torterra/torterra_birch_shiny",
+        "tree_darkoak": "textures/pokemon/0389_torterra/torterra_darkoak",
+        "shiny_tree_darkoak": "textures/pokemon/0389_torterra/torterra_darkoak_shiny",
+        "tree_oak": "textures/pokemon/0389_torterra/torterra_oak",
+        "shiny_tree_oak": "textures/pokemon/0389_torterra/torterra_oak_shiny",
+        "tree_spruce": "textures/pokemon/0389_torterra/torterra_spruce",
+        "shiny_tree_spruce": "textures/pokemon/0389_torterra/torterra_spruce_shiny",
+        "tree_jungle": "textures/pokemon/0389_torterra/torterra_jungle",
+        "shiny_tree_jungle": "textures/pokemon/0389_torterra/torterra_jungle_shiny",
+        "tree_swamp": "textures/pokemon/0389_torterra/torterra_swamp",
+        "shiny_tree_swamp": "textures/pokemon/0389_torterra/torterra_swamp_shiny",
+        "tree_acacia": "textures/pokemon/0389_torterra/torterra_acacia",
+        "shiny_tree_acacia": "textures/pokemon/0389_torterra/torterra_acacia_shiny",
+        "tree_azalea": "textures/pokemon/0389_torterra/torterra_azalea",
+        "shiny_tree_azalea": "textures/pokemon/0389_torterra/torterra_azalea_shiny",
+        "tree_mangrove": "textures/pokemon/0389_torterra/torterra_mangrove",
+        "shiny_tree_mangrove": "textures/pokemon/0389_torterra/torterra_mangrove_shiny"
+      },
+      "geometry": {
+        "base": "geometry.torterra.geo",
+        "shiny": "geometry.torterra.geo",
+        "tree_cherry": "geometry.torterra_cherry.geo",
+        "shiny_tree_cherry": "geometry.torterra_cherry.geo",
+        "tree_birch": "geometry.torterra_birch.geo",
+        "shiny_tree_birch": "geometry.torterra_birch.geo",
+        "tree_darkoak": "geometry.torterra_darkoak.geo",
+        "shiny_tree_darkoak": "geometry.torterra_darkoak.geo",
+        "tree_oak": "geometry.torterra_oak.geo",
+        "shiny_tree_oak": "geometry.torterra_oak.geo",
+        "tree_spruce": "geometry.torterra_spruce.geo",
+        "shiny_tree_spruce": "geometry.torterra_spruce.geo",
+        "tree_jungle": "geometry.torterra_jungle.geo",
+        "shiny_tree_jungle": "geometry.torterra_jungle.geo",
+        "tree_swamp": "geometry.torterra_swamp.geo",
+        "shiny_tree_swamp": "geometry.torterra_swamp.geo",
+        "tree_acacia": "geometry.torterra_acacia.geo",
+        "shiny_tree_acacia": "geometry.torterra_acacia.geo",
+        "tree_azalea": "geometry.torterra_azalea.geo",
+        "shiny_tree_azalea": "geometry.torterra_azalea.geo",
+        "tree_mangrove": "geometry.torterra_mangrove.geo",
+        "shiny_tree_mangrove": "geometry.torterra_mangrove.geo"
+      },
+      "animations": {
+        "torterra.sleep": "animation.torterra.sleep",
+        "torterramodel.singlebonelook": "animation.torterramodel.singlebonelook",
+        "torterra.ground_idle": "animation.torterra.ground_idle",
+        "torterra.ground_walk": "animation.torterra.ground_walk",
+        "torterra.blink": "animation.torterra.blink",
+        "controller.animation.torterra.blink": "controller.animation.torterra.blink",
+        "controller.animation.cobblemon.torterra": "controller.animation.cobblemon.torterra",
+        "torterra_cherry.sleep": "animation.torterra_cherry.sleep",
+        "torterracherrymodel.singlebonelook": "animation.torterracherrymodel.singlebonelook",
+        "torterra_cherry.ground_idle": "animation.torterra_cherry.ground_idle",
+        "torterra_cherry.ground_walk": "animation.torterra_cherry.ground_walk",
+        "torterra_cherry.blink": "animation.torterra_cherry.blink",
+        "controller.animation.torterra_cherry.blink": "controller.animation.torterra_cherry.blink",
+        "controller.animation.cobblemon.torterra_cherry": "controller.animation.cobblemon.torterra_cherry"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.torterra"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.torterra.blink",
+          {
+            "controller.animation.cobblemon.torterra": "q.variant == 0 || q.variant == 1 || q.variant == 4 || q.variant == 5 || q.variant == 6 || q.variant == 7 || q.variant == 8 || q.variant == 9 || q.variant == 10 || q.variant == 11 || q.variant == 12 || q.variant == 13 || q.variant == 14 || q.variant == 15 || q.variant == 16 || q.variant == 17 || q.variant == 18 || q.variant == 19 || q.variant == 20 || q.variant == 21"
+          },
+          "controller.animation.torterra_cherry.blink",
+          {
+            "controller.animation.cobblemon.torterra_cherry": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_torterra = -1.0;",
+          "v.state_of_torterra_cherry = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

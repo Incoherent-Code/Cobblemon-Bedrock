@@ -1,0 +1,198 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.haunter.ground_idle": {
+      "loop": true,
+      "bones": {
+        "hand_left": {
+          "rotation": [
+            -15.0,
+            0.0,
+            30.0
+          ]
+        },
+        "finger_left_index": {
+          "rotation": [
+            -45.0,
+            15.0,
+            -15.0
+          ]
+        },
+        "finger_left_index2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "finger_left_middle": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "finger_left_middle2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "finger_left_ring": {
+          "rotation": [
+            -45.0,
+            -15.0,
+            15.0
+          ]
+        },
+        "finger_left_ring2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_left2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            -15.0,
+            0.0,
+            -30.0
+          ]
+        },
+        "finger_right_index": {
+          "rotation": [
+            -45.0,
+            -15.0,
+            15.0
+          ]
+        },
+        "finger_right_index2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "finger_right_middle": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "finger_right_middle2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "finger_right_ring": {
+          "rotation": [
+            -45.0,
+            15.0,
+            -15.0
+          ]
+        },
+        "finger_right_ring2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hand_right2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mouth_top": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.haunter.standing.transform": {
+      "bones": {
+        "haunter": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.haunter.walk.transform": {
+      "bones": {
+        "haunter": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.haunter.blink": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

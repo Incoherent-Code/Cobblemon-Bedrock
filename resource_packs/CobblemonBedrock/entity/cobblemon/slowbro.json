@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:slowbro",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0080_slowbro/slowbro",
+        "shiny": "textures/pokemon/0080_slowbro/slowbro_shiny"
+      },
+      "geometry": {
+        "base": "geometry.slowbro.geo",
+        "shiny": "geometry.slowbro.geo"
+      },
+      "animations": {
+        "slowbromodel.singlebonelook": "animation.slowbromodel.singlebonelook",
+        "slowbro.ground_idle": "animation.slowbro.ground_idle",
+        "slowbro.ground_walk": "animation.slowbro.ground_walk",
+        "slowbro.water_idle": "animation.slowbro.water_idle",
+        "slowbro.water_swim": "animation.slowbro.water_swim",
+        "slowbro.battle_idle": "animation.slowbro.battle_idle",
+        "slowbro.blink1": "animation.slowbro.blink1",
+        "controller.animation.slowbro.blink": "controller.animation.slowbro.blink",
+        "slowbro.blink2": "animation.slowbro.blink2",
+        "controller.animation.slowbro.blink2": "controller.animation.slowbro.blink2",
+        "slowbro.bite_quirk": "animation.slowbro.bite_quirk",
+        "controller.animation.slowbro.bite": "controller.animation.slowbro.bite",
+        "controller.animation.cobblemon.slowbro": "controller.animation.cobblemon.slowbro"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.slowbro"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.slowbro.blink",
+          "controller.animation.slowbro.blink2",
+          "controller.animation.slowbro.bite",
+          {
+            "controller.animation.cobblemon.slowbro": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_slowbro = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

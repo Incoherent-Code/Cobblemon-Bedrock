@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.milcery": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "milcerymodel.singlebonelook",
+            "milcery.ground_idle"
+          ],
+          "transitions": [],
+          "blend_transition": 0.5
+        },
+        "shoulderLeft": {
+          "animations": [
+            "milcerymodel.singlebonelook",
+            "milcery.ground_idle",
+            "milcery.shoulderleft.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_milcery = 1; return q.is_moving|| !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderRight": {
+          "animations": [
+            "milcerymodel.singlebonelook",
+            "milcery.ground_idle",
+            "milcery.shoulderright.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_milcery = 2; return q.is_moving|| !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

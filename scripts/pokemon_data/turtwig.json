@@ -1,0 +1,213 @@
+{
+  "minLevel": 5,
+  "maxLevel": 32,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 5,
+      "maxLevel": 32
+    }
+  },
+  "name": "Turtwig",
+  "nationalPokedexNumber": 387,
+  "baseStats": {
+    "hp": 55,
+    "attack": 68,
+    "defence": 64,
+    "special_attack": 45,
+    "special_defence": 55,
+    "speed": 31
+  },
+  "maleRatio": 0.875,
+  "catchRate": 45,
+  "baseScale": 0.7,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.75,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "abilities": [
+    "overgrow",
+    "h:shellarmor"
+  ],
+  "shoulderMountable": true,
+  "moves": [
+    "1:tackle",
+    "5:withdraw",
+    "9:absorb",
+    "13:razorleaf",
+    "17:curse",
+    "21:bite",
+    "25:megadrain",
+    "29:leechseed",
+    "33:synthesis",
+    "37:crunch",
+    "41:gigadrain",
+    "45:leafstorm",
+    "egg:amnesia",
+    "egg:bodyslam",
+    "egg:doubleedge",
+    "egg:earthpower",
+    "egg:grassyterrain",
+    "egg:growth",
+    "egg:heavyslam",
+    "egg:sandtomb",
+    "egg:seedbomb",
+    "egg:spitup",
+    "egg:stockpile",
+    "egg:superpower",
+    "egg:swallow",
+    "egg:thrash",
+    "egg:tickle",
+    "egg:wideguard",
+    "egg:worryseed",
+    "tm:attract",
+    "tm:bulletseed",
+    "tm:captivate",
+    "tm:confide",
+    "tm:cut",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:irontail",
+    "tm:lightscreen",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:rockclimb",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:stealthrock",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:toxic",
+    "tm:workup",
+    "tutor:absorb",
+    "tutor:earthpower",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:headbutt",
+    "tutor:irontail",
+    "tutor:mudslap",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stealthrock",
+    "tutor:stockpile",
+    "tutor:superpower",
+    "tutor:synthesis",
+    "tutor:tackle",
+    "tutor:withdraw",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "turtwig_grotle",
+      "variant": "level_up",
+      "result": "grotle",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 18
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.turtwig.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "monster",
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 4.0,
+  "weight": 102.0
+}

@@ -1,0 +1,125 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.turtwig.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_turtwig_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_turtwig_blink = q.life_time + 1; return (q.life_time > v.next_quirk_turtwig_blink) && (v.state_of_turtwig == 1 || v.state_of_turtwig == 2 || v.state_of_turtwig == 3 || v.state_of_turtwig == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "turtwig.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_turtwig_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_turtwig_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.turtwig": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "turtwig.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_turtwig = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "turtwigmodel.singlebonelook",
+            "turtwig.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_turtwig = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "turtwigmodel.singlebonelook",
+            "turtwig.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_turtwig = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderLeft": {
+          "animations": [
+            "turtwigmodel.singlebonelook",
+            "turtwig.shoulder_left",
+            "turtwig.shoulderleft.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_turtwig = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderRight": {
+          "animations": [
+            "turtwigmodel.singlebonelook",
+            "turtwig.shoulder_right",
+            "turtwig.shoulderright.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_turtwig = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

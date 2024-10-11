@@ -1,0 +1,364 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.exeggutor.blink1": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_blink1 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggutor_blink1 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggutor_blink1) && (v.state_of_exeggutor == 1 || v.state_of_exeggutor == 2 || v.state_of_exeggutor == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggutor.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_blink1 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggutor_blink1 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.exeggutor.blink2": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_blink2 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggutor_blink2 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggutor_blink2) && (v.state_of_exeggutor == 1 || v.state_of_exeggutor == 2 || v.state_of_exeggutor == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggutor.blink2"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_blink2 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggutor_blink2 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.exeggutor.blink3": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_blink3 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggutor_blink3 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggutor_blink3) && (v.state_of_exeggutor == 1 || v.state_of_exeggutor == 2 || v.state_of_exeggutor == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggutor.blink3"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_blink3 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggutor_blink3 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.exeggutor": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "exeggutor.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_exeggutor = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "exeggutormodel.singlebonelook",
+            "exeggutor.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_exeggutor = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "exeggutormodel.singlebonelook",
+            "exeggutor.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_exeggutor = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "exeggutormodel.singlebonelook",
+            "exeggutor.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_exeggutor = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.exeggutor_alolan.blink1": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_alolan_blink1 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggutor_alolan_blink1 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggutor_alolan_blink1) && (v.state_of_exeggutor_alolan == 1 || v.state_of_exeggutor_alolan == 2 || v.state_of_exeggutor_alolan == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggutor_alolan.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_alolan_blink1 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggutor_alolan_blink1 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.exeggutor_alolan.blink2": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_alolan_blink2 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggutor_alolan_blink2 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggutor_alolan_blink2) && (v.state_of_exeggutor_alolan == 1 || v.state_of_exeggutor_alolan == 2 || v.state_of_exeggutor_alolan == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggutor_alolan.blink2"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_alolan_blink2 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggutor_alolan_blink2 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.exeggutor_alolan.blink3": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_alolan_blink3 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggutor_alolan_blink3 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggutor_alolan_blink3) && (v.state_of_exeggutor_alolan == 1 || v.state_of_exeggutor_alolan == 2 || v.state_of_exeggutor_alolan == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggutor_alolan.blink3"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_alolan_blink3 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggutor_alolan_blink3 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.exeggutor_alolan.blink4": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_alolan_blink4 = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_exeggutor_alolan_blink4 = q.life_time + 1; return (q.life_time > v.next_quirk_exeggutor_alolan_blink4) && (v.state_of_exeggutor_alolan == 1 || v.state_of_exeggutor_alolan == 2 || v.state_of_exeggutor_alolan == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "exeggutor_alolan.blink4"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_exeggutor_alolan_blink4 = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_exeggutor_alolan_blink4 ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.exeggutor_alolan": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "exeggutor_alolan.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_exeggutor_alolan = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "exeggutoralolanmodel.singlebonelook",
+            "exeggutor_alolan.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_exeggutor_alolan = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "exeggutoralolanmodel.singlebonelook",
+            "exeggutor_alolan.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_exeggutor_alolan = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "exeggutoralolanmodel.singlebonelook",
+            "exeggutor_alolan.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_exeggutor_alolan = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

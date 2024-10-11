@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:scizor",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0212_scizor/scizor",
+        "shiny": "textures/pokemon/0212_scizor/scizor_shiny",
+        "female": "textures/pokemon/0212_scizor/scizor"
+      },
+      "geometry": {
+        "base": "geometry.scizor_male.geo",
+        "shiny": "geometry.scizor_male.geo",
+        "female": "geometry.scizor_female.geo"
+      },
+      "animations": {
+        "scizormodel.singlebonelook": "animation.scizormodel.singlebonelook",
+        "scizor.ground_idle": "animation.scizor.ground_idle",
+        "scizormodel.bipedwalkanimation": "animation.scizormodel.bipedwalkanimation",
+        "scizormodel.bimanualswinganimation": "animation.scizormodel.bimanualswinganimation",
+        "scizor.air_idle": "animation.scizor.air_idle",
+        "scizor.blink": "animation.scizor.blink",
+        "controller.animation.scizor.blink": "controller.animation.scizor.blink",
+        "controller.animation.cobblemon.scizor": "controller.animation.cobblemon.scizor"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.scizor"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.scizor.blink",
+          {
+            "controller.animation.cobblemon.scizor": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_scizor = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

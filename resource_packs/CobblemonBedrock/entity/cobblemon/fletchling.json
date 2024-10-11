@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:fletchling",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0661_fletchling/fletchling",
+        "shiny": "textures/pokemon/0661_fletchling/fletchling_shiny"
+      },
+      "geometry": {
+        "base": "geometry.fletchling.geo",
+        "shiny": "geometry.fletchling.geo"
+      },
+      "animations": {
+        "fletchlingmodel.singlebonelook": "animation.fletchlingmodel.singlebonelook",
+        "fletchling.ground_idle": "animation.fletchling.ground_idle",
+        "fletchling.blink": "animation.fletchling.blink",
+        "controller.animation.fletchling.blink": "controller.animation.fletchling.blink",
+        "controller.animation.cobblemon.fletchling": "controller.animation.cobblemon.fletchling"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.fletchling"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.fletchling.blink",
+          {
+            "controller.animation.cobblemon.fletchling": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_fletchling = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,163 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.slugma.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_slugma_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_slugma_blink = q.life_time + 1; return (q.life_time > v.next_quirk_slugma_blink) && (v.state_of_slugma == 1 || v.state_of_slugma == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "slugma.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_slugma_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_slugma_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.slugma": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "slugma.ground_sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_slugma = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "slugmamodel.singlebonelook",
+            "slugma.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_slugma = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "slugma.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_slugma = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.slugma_shiny.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_slugma_shiny_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_slugma_shiny_blink = q.life_time + 1; return (q.life_time > v.next_quirk_slugma_shiny_blink) && (v.state_of_slugma_shiny == 1 || v.state_of_slugma_shiny == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "slugma_shiny.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_slugma_shiny_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_slugma_shiny_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.slugma_shiny": {
+      "initial_state": "shiny_sleep",
+      "states": {
+        "shiny_sleep": {
+          "animations": [
+            "slugma_shiny.ground_sleep"
+          ],
+          "transitions": [
+            {
+              "shiny_standing": "v.state_of_slugma_shiny = 0; return !q.is_moving;"
+            },
+            {
+              "shiny_walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shiny_standing": {
+          "animations": [
+            "slugmashinymodel.singlebonelook",
+            "slugma_shiny.ground_idle"
+          ],
+          "transitions": [
+            {
+              "shiny_sleep": "v.state_of_slugma_shiny = 1; return q.is_sleeping;"
+            },
+            {
+              "shiny_walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shiny_walk": {
+          "animations": [
+            "slugma_shiny.ground_walk"
+          ],
+          "transitions": [
+            {
+              "shiny_sleep": "v.state_of_slugma_shiny = 2; return q.is_sleeping;"
+            },
+            {
+              "shiny_standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

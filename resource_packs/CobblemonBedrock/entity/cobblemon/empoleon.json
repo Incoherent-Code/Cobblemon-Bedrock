@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:empoleon",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0395_empoleon/empoleon",
+        "shiny": "textures/pokemon/0395_empoleon/empoleon_shiny"
+      },
+      "geometry": {
+        "base": "geometry.empoleon.geo",
+        "shiny": "geometry.empoleon.geo"
+      },
+      "animations": {
+        "empoleon.sleep": "animation.empoleon.sleep",
+        "empoleonmodel.singlebonelook": "animation.empoleonmodel.singlebonelook",
+        "empoleon.ground_idle": "animation.empoleon.ground_idle",
+        "empoleon.ground_walk": "animation.empoleon.ground_walk",
+        "empoleon.water_idle": "animation.empoleon.water_idle",
+        "empoleon.water_swim": "animation.empoleon.water_swim",
+        "empoleon.battle_idle": "animation.empoleon.battle_idle",
+        "empoleon.blink": "animation.empoleon.blink",
+        "controller.animation.empoleon.blink": "controller.animation.empoleon.blink",
+        "controller.animation.cobblemon.empoleon": "controller.animation.cobblemon.empoleon"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.empoleon"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.empoleon.blink",
+          {
+            "controller.animation.cobblemon.empoleon": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_empoleon = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

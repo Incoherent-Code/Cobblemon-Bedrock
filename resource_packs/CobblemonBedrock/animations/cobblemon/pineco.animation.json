@@ -1,0 +1,699 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.pineco.ground_idle": {
+      "loop": true,
+      "bones": {
+        "pineco": {
+          "rotation": [
+            "math.cos((query.anim_time) * 90 * 2) * 10",
+            0.0,
+            "math.sin((query.anim_time) * 90 * 2) * 6"
+          ]
+        },
+        "row1_scale1_left": {
+          "rotation": [
+            -55.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale2_left": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale3_left": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale1_right": {
+          "rotation": [
+            -55.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale2_right": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale3_right": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale1_left": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale2_left": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale3_left": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale1_right": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale2_right": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale3_right": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale_back": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale_front": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale1_left": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale2_left": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale3_left": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale4_left": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale1_right": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale2_right": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale3_right": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale4_right": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.pineco.ground_walk": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "row1_scale1_left": {
+          "rotation": [
+            -55.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale1_right": {
+          "rotation": [
+            -55.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale3_right": {
+          "rotation": [
+            "-35+math.sin((query.anim_time-0.1) * 90 * 8) * -5",
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale1_left": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale1_right": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale3_left": {
+          "rotation": [
+            "-35+math.sin((query.anim_time-0.1) * 90 * 8) * -5",
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale2_left": {
+          "rotation": [
+            "-35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale2_right": {
+          "rotation": [
+            "-35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale3_left": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale3_right": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale_back": {
+          "rotation": [
+            "-35+math.sin((query.anim_time-0.1) * 90 * 8) * -5",
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale_front": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale2_left": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale2_right": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale1_left": {
+          "rotation": [
+            "-35+math.sin((query.anim_time-0.1) * 90 * 8) * -5",
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale1_right": {
+          "rotation": [
+            "-35+math.sin((query.anim_time-0.1) * 90 * 8) * -5",
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale4_left": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale4_right": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale2_left": {
+          "rotation": [
+            "-35+math.sin((query.anim_time-0.1) * 90 * 8) * -5",
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale3_right": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale2_right": {
+          "rotation": [
+            "-35+math.sin((query.anim_time-0.1) * 90 * 8) * -5",
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale3_left": {
+          "rotation": [
+            "35+math.sin((query.anim_time-0.1) * 90 * 8) * 5",
+            0.0,
+            0.0
+          ]
+        },
+        "pineco": {
+          "rotation": [
+            "10+math.sin((query.anim_time+0.2) * 90 * 4) * 10",
+            0.0,
+            0.0
+          ],
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "0.0833": [
+              0.0,
+              3.75,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              4.75,
+              0.0
+            ],
+            "0.25": [
+              0.0,
+              5.0,
+              0.0
+            ],
+            "0.3333": [
+              0.0,
+              4.75,
+              0.0
+            ],
+            "0.4167": [
+              0.0,
+              3.75,
+              0.0
+            ],
+            "0.5": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "0.5833": [
+              0.0,
+              3.75,
+              0.0
+            ],
+            "0.6667": [
+              0.0,
+              4.75,
+              0.0
+            ],
+            "0.75": [
+              0.0,
+              5.0,
+              0.0
+            ],
+            "0.8333": [
+              0.0,
+              4.75,
+              0.0
+            ],
+            "0.9167": [
+              0.0,
+              3.75,
+              0.0
+            ],
+            "1.0": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "1.0833": [
+              0.0,
+              3.75,
+              0.0
+            ],
+            "1.1667": [
+              0.0,
+              4.75,
+              0.0
+            ],
+            "1.25": [
+              0.0,
+              5.0,
+              0.0
+            ],
+            "1.3333": [
+              0.0,
+              4.75,
+              0.0
+            ],
+            "1.4167": [
+              0.0,
+              3.75,
+              0.0
+            ],
+            "1.5": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "1.5833": [
+              0.0,
+              3.75,
+              0.0
+            ],
+            "1.6667": [
+              0.0,
+              4.75,
+              0.0
+            ],
+            "1.75": [
+              0.0,
+              5.0,
+              0.0
+            ],
+            "1.8333": [
+              0.0,
+              4.75,
+              0.0
+            ],
+            "1.9167": [
+              0.0,
+              3.75,
+              0.0
+            ],
+            "2.0": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "animation.pineco.sleep": {
+      "loop": true,
+      "bones": {
+        "pineco": {
+          "rotation": [
+            "math.cos((query.anim_time) * 90 * 1) * 10",
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale1_left": {
+          "rotation": [
+            40.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale2_left": {
+          "rotation": [
+            40.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale3_left": {
+          "rotation": [
+            -40.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale1_right": {
+          "rotation": [
+            40.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale2_right": {
+          "rotation": [
+            40.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row1_scale3_right": {
+          "rotation": [
+            -40.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale1_left": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale2_left": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale3_left": {
+          "rotation": [
+            -60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale1_right": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale2_right": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale3_right": {
+          "rotation": [
+            -60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale_back": {
+          "rotation": [
+            -60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row2_scale_front": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale1_left": {
+          "rotation": [
+            -60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale2_left": {
+          "rotation": [
+            -60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale3_left": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale4_left": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale1_right": {
+          "rotation": [
+            -60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale2_right": {
+          "rotation": [
+            -60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale3_right": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "row3_scale4_right": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0.0,
+            0.0,
+            67.5
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.0,
+            -0.1,
+            0.0
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            0.0,
+            -0.1,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.pineco.blink": {
+      "animation_length": 0.20833,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              -0.25,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              -0.25,
+              0.0
+            ],
+            "0.2083": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              -0.25,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              -0.25,
+              0.0
+            ],
+            "0.2083": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

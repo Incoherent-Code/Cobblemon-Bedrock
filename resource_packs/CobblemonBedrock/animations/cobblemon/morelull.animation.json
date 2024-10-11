@@ -1,0 +1,106 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.morelull.ground_idle": {
+      "loop": true,
+      "bones": {
+        "mushroom_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -30.0
+          ]
+        },
+        "cap3": {
+          "rotation": [
+            0.0,
+            0.0,
+            12.5
+          ]
+        },
+        "mushroom_left": {
+          "rotation": [
+            15.0,
+            0.0,
+            35.0
+          ]
+        },
+        "cap4": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -32.5
+          ]
+        },
+        "foot4": {
+          "rotation": [
+            0.0,
+            0.0,
+            32.5
+          ]
+        },
+        "foot6": {
+          "rotation": [
+            0.0,
+            0.0,
+            32.5
+          ]
+        }
+      }
+    },
+    "animation.morelull.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

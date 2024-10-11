@@ -1,0 +1,181 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.dusclops.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_dusclops_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_dusclops_blink = q.life_time + 1; return (q.life_time > v.next_quirk_dusclops_blink) && (v.state_of_dusclops == 1 || v.state_of_dusclops == 2 || v.state_of_dusclops == 3 || v.state_of_dusclops == 4 || v.state_of_dusclops == 5);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "dusclops.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_dusclops_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_dusclops_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.dusclops": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "dusclops.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_dusclops = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "hover": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "fly": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "dusclops.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dusclops = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "hover": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "fly": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "dusclops.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dusclops = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "hover": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "fly": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "dusclops.air_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dusclops = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "fly": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "dusclops.air_fly"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dusclops = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "hover": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "dusclops.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_dusclops = 5; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "hover": "!q.property('cobblemon:in_battle')"
+            },
+            {
+              "fly": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

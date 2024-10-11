@@ -1,0 +1,224 @@
+{
+  "minLevel": 24,
+  "maxLevel": 49,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 24,
+      "maxLevel": 49
+    },
+    "1": {
+      "minLevel": 24,
+      "maxLevel": 49
+    },
+    "2": {
+      "minLevel": 24,
+      "maxLevel": 49
+    }
+  },
+  "name": "Comfey",
+  "nationalPokedexNumber": 764,
+  "baseStats": {
+    "hp": 51,
+    "attack": 52,
+    "defence": 90,
+    "special_attack": 82,
+    "special_defence": 110,
+    "speed": 100
+  },
+  "maleRatio": 0.25,
+  "catchRate": 60,
+  "baseScale": 0.37,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "fast",
+  "hitbox": {
+    "width": 1.5,
+    "height": 2.2,
+    "fixed": false
+  },
+  "primaryType": "fairy",
+  "abilities": [
+    "flowerveil",
+    "triage",
+    "h:naturalcure"
+  ],
+  "shoulderMountable": true,
+  "moves": [
+    "1:growth",
+    "1:wrap",
+    "3:vinewhip",
+    "6:helpinghand",
+    "9:drainingkiss",
+    "12:flowershield",
+    "15:magicalleaf",
+    "18:synthesis",
+    "21:leechseed",
+    "22:naturalgift",
+    "24:grassknot",
+    "27:sweetkiss",
+    "30:floralhealing",
+    "33:petalblizzard",
+    "36:aromatherapy",
+    "39:playrough",
+    "42:sweetscent",
+    "45:petaldance",
+    "48:grassyterrain",
+    "egg:afteryou",
+    "egg:amnesia",
+    "egg:endure",
+    "egg:leaftornado",
+    "egg:luckychant",
+    "egg:worryseed",
+    "tm:acrobatics",
+    "tm:allyswitch",
+    "tm:amnesia",
+    "tm:attract",
+    "tm:bulletseed",
+    "tm:calmmind",
+    "tm:charm",
+    "tm:confide",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:drainingkiss",
+    "tm:echoedvoice",
+    "tm:encore",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:fling",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:lightscreen",
+    "tm:magicalleaf",
+    "tm:naturepower",
+    "tm:playrough",
+    "tm:pollenpuff",
+    "tm:protect",
+    "tm:psychup",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:storedpower",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:taunt",
+    "tm:thief",
+    "tm:toxic",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:uturn",
+    "tutor:afteryou",
+    "tutor:allyswitch",
+    "tutor:bind",
+    "tutor:celebrate",
+    "tutor:covet",
+    "tutor:defog",
+    "tutor:drainingkiss",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:healbell",
+    "tutor:helpinghand",
+    "tutor:leechseed",
+    "tutor:magicalleaf",
+    "tutor:magiccoat",
+    "tutor:painsplit",
+    "tutor:roleplay",
+    "tutor:seedbomb",
+    "tutor:snore",
+    "tutor:synthesis",
+    "tutor:tailwind",
+    "tutor:telekinesis",
+    "tutor:trick",
+    "tutor:worryseed"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.comfey.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:misty_seed",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:kebia_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 1.0,
+  "weight": 3.0
+}

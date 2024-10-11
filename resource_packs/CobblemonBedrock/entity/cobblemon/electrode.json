@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:electrode",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0101_electrode/electrode",
+        "shiny": "textures/pokemon/0101_electrode/electrode_shiny"
+      },
+      "geometry": {
+        "base": "geometry.electrode.geo",
+        "shiny": "geometry.electrode.geo"
+      },
+      "animations": {
+        "electrode.ground_idle": "animation.electrode.ground_idle",
+        "electrode.ground_walk": "animation.electrode.ground_walk",
+        "electrode.blink": "animation.electrode.blink",
+        "controller.animation.electrode.blink": "controller.animation.electrode.blink",
+        "controller.animation.cobblemon.electrode": "controller.animation.cobblemon.electrode"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.electrode"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.electrode.blink",
+          {
+            "controller.animation.cobblemon.electrode": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_electrode = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

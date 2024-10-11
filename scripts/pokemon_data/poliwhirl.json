@@ -1,0 +1,292 @@
+{
+  "minLevel": 25,
+  "maxLevel": 39,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "isRaining": true,
+      "minLevel": 25,
+      "maxLevel": 39
+    },
+    "1": {
+      "minLevel": 25,
+      "maxLevel": 39
+    },
+    "2": {
+      "minLevel": 25,
+      "maxLevel": 39
+    },
+    "3": {
+      "minLevel": 25,
+      "maxLevel": 39
+    }
+  },
+  "name": "Poliwhirl",
+  "nationalPokedexNumber": 61,
+  "baseStats": {
+    "hp": 65,
+    "attack": 65,
+    "defence": 65,
+    "special_attack": 50,
+    "special_defence": 50,
+    "speed": 90
+  },
+  "maleRatio": 0.5,
+  "catchRate": 120,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.1,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "abilities": [
+    "waterabsorb",
+    "damp",
+    "h:swiftswim"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:hypnosis",
+    "1:mudshot",
+    "1:pound",
+    "1:watergun",
+    "1:watersport",
+    "11:bubble",
+    "15:doubleslap",
+    "18:bubblebeam",
+    "24:raindance",
+    "32:bodyslam",
+    "40:earthpower",
+    "43:wakeupslap",
+    "48:hydropump",
+    "53:mudbomb",
+    "56:bellydrum",
+    "66:doubleedge",
+    "tm:attract",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:bulldoze",
+    "tm:captivate",
+    "tm:confide",
+    "tm:dig",
+    "tm:dive",
+    "tm:doubleteam",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:encore",
+    "tm:endure",
+    "tm:facade",
+    "tm:fling",
+    "tm:focuspunch",
+    "tm:frustration",
+    "tm:hail",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:hydropump",
+    "tm:icebeam",
+    "tm:icepunch",
+    "tm:icywind",
+    "tm:megakick",
+    "tm:megapunch",
+    "tm:metronome",
+    "tm:muddywater",
+    "tm:mudshot",
+    "tm:naturalgift",
+    "tm:poweruppunch",
+    "tm:protect",
+    "tm:psychic",
+    "tm:raindance",
+    "tm:rest",
+    "tm:return",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:scald",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:strength",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swagger",
+    "tm:thief",
+    "tm:toxic",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:amnesia",
+    "tutor:attract",
+    "tutor:bellydrum",
+    "tutor:bide",
+    "tutor:blizzard",
+    "tutor:bodyslam",
+    "tutor:brickbreak",
+    "tutor:bubble",
+    "tutor:bubblebeam",
+    "tutor:counter",
+    "tutor:curse",
+    "tutor:defensecurl",
+    "tutor:detect",
+    "tutor:dig",
+    "tutor:dive",
+    "tutor:doubleedge",
+    "tutor:doubleslap",
+    "tutor:doubleteam",
+    "tutor:earthquake",
+    "tutor:endeavor",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:fissure",
+    "tutor:focuspunch",
+    "tutor:frustration",
+    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:hiddenpower",
+    "tutor:hydropump",
+    "tutor:hypnosis",
+    "tutor:icebeam",
+    "tutor:icepunch",
+    "tutor:icywind",
+    "tutor:lowkick",
+    "tutor:megakick",
+    "tutor:megapunch",
+    "tutor:metronome",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:pound",
+    "tutor:protect",
+    "tutor:psychic",
+    "tutor:psywave",
+    "tutor:rage",
+    "tutor:raindance",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:rocksmash",
+    "tutor:scald",
+    "tutor:seismictoss",
+    "tutor:skullbash",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:strength",
+    "tutor:submission",
+    "tutor:substitute",
+    "tutor:surf",
+    "tutor:swagger",
+    "tutor:takedown",
+    "tutor:thief",
+    "tutor:toxic",
+    "tutor:waterfall",
+    "tutor:watergun",
+    "tutor:waterpulse",
+    "tutor:whirlpool"
+  ],
+  "evolutions": [
+    {
+      "id": "poliwhirl_poliwrath",
+      "variant": "item_interact",
+      "result": "poliwrath",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "submission"
+      ],
+      "requiredContext": "cobblemon:water_stone",
+      "requirements": []
+    },
+    {
+      "id": "poliwhirl_politoed",
+      "variant": "trade",
+      "result": "politoed",
+      "optional": true,
+      "consumeHeldItem": true,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "held_item",
+          "itemCondition": "cobblemon:kings_rock"
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.poliwhirl.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:kings_rock",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:chesto_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "water_1"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 10.0,
+  "weight": 200.0
+}

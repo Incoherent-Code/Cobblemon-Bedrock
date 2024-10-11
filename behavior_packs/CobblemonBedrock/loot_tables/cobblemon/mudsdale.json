@@ -1,0 +1,37 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 6,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clay_ball",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:light_clay",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:passho_berry",
+          "weight": 5
+        },
+        {
+          "type": "empty",
+          "weight": 84
+        }
+      ]
+    }
+  ]
+}

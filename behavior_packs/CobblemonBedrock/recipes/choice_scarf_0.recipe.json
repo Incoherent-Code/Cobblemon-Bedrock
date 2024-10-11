@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " WD",
+      "DSW",
+      "WD "
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:light_blue_wool"
+      },
+      "D": {
+        "item": "minecraft:diamond"
+      },
+      "S": {
+        "item": "cobblemon:silk_scarf"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:light_blue_wool"
+      },
+      {
+        "item": "minecraft:diamond"
+      },
+      {
+        "item": "cobblemon:silk_scarf"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:choice_scarf"
+    },
+    "description": {
+      "identifier": "cobblemon:choice_scarf_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

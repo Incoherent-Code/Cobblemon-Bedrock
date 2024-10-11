@@ -1,0 +1,65 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.metapod.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_metapod_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_metapod_blink = q.life_time + 1; return (q.life_time > v.next_quirk_metapod_blink) && (v.state_of_metapod == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "metapod.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_metapod_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_metapod_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.metapod": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "metapod.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_metapod = 0; return q.is_moving|| !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "metapod.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_metapod = 1; return q.is_sleeping;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

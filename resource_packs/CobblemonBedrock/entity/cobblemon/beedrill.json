@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:beedrill",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0015_beedrill/beedrill",
+        "shiny": "textures/pokemon/0015_beedrill/beedrill_shiny",
+        "base_emissive": "textures/pokemon/0015_beedrill/beedrill_emissive",
+        "shiny_emissive": "textures/pokemon/0015_beedrill/beedrill_emissive"
+      },
+      "geometry": {
+        "base": "geometry.beedrill.geo",
+        "shiny": "geometry.beedrill.geo"
+      },
+      "animations": {
+        "beedrill.sleep": "animation.beedrill.sleep",
+        "beedrill.sleep.transform": "animation.beedrill.sleep.transform",
+        "beedrillmodel.singlebonelook": "animation.beedrillmodel.singlebonelook",
+        "beedrill.air_idle": "animation.beedrill.air_idle",
+        "beedrill.standing.transform": "animation.beedrill.standing.transform",
+        "beedrill.air_fly": "animation.beedrill.air_fly",
+        "beedrill.walk.transform": "animation.beedrill.walk.transform",
+        "controller.animation.cobblemon.beedrill": "controller.animation.cobblemon.beedrill"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.beedrill_emissive",
+        "controller.render.cobblemon.beedrill"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.beedrill": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_beedrill = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

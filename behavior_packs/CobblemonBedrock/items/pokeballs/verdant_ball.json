@@ -1,0 +1,42 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:verdant_ball"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "verdant_ball"
+      },
+      "minecraft:projectile": {
+        "projectile_entity": "cobblemon:verdant_ball"
+      },
+      "minecraft:shooter": {
+        "ammunition": [
+          {
+            "item": "cobblemon:verdant_ball",
+            "use_offhand": false,
+            "search_inventory": true,
+            "use_in_creative": true
+          }
+        ]
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 0.5,
+        "movement_modifier": 1.0
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.verdant_ball"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:poke_balls"
+        ]
+      }
+    }
+  }
+}

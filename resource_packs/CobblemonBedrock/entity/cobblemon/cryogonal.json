@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:cryogonal",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0615_cryogonal/cryogonal",
+        "shiny": "textures/pokemon/0615_cryogonal/cryogonal_shiny",
+        "base_emissive": "textures/pokemon/0615_cryogonal/cryogonal_emissive",
+        "shiny_emissive": "textures/pokemon/0615_cryogonal/cryogonal_emissive"
+      },
+      "geometry": {
+        "base": "geometry.cryogonal.geo",
+        "shiny": "geometry.cryogonal.geo"
+      },
+      "animations": {
+        "cryogonalmodel.singlebonelook": "animation.cryogonalmodel.singlebonelook",
+        "cryogonal.ground_idle": "animation.cryogonal.ground_idle",
+        "cryogonal.sleep": "animation.cryogonal.sleep",
+        "cryogonal.ground_walk": "animation.cryogonal.ground_walk",
+        "cryogonal.blink": "animation.cryogonal.blink",
+        "controller.animation.cryogonal.blink": "controller.animation.cryogonal.blink",
+        "controller.animation.cobblemon.cryogonal": "controller.animation.cobblemon.cryogonal"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.cryogonal_emissive",
+        "controller.render.cobblemon.cryogonal"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.cryogonal.blink",
+          {
+            "controller.animation.cobblemon.cryogonal": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_cryogonal = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

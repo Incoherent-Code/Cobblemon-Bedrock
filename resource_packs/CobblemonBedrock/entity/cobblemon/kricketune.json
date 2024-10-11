@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:kricketune",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0402_kricketune/kricketune",
+        "shiny": "textures/pokemon/0402_kricketune/kricketune_shiny",
+        "female": "textures/pokemon/0402_kricketune/kricketune"
+      },
+      "geometry": {
+        "base": "geometry.kricketune_male.geo",
+        "shiny": "geometry.kricketune_male.geo",
+        "female": "geometry.kricketune_female.geo"
+      },
+      "animations": {
+        "kricketune.sleep": "animation.kricketune.sleep",
+        "kricketunemodel.singlebonelook": "animation.kricketunemodel.singlebonelook",
+        "kricketune.ground_idle": "animation.kricketune.ground_idle",
+        "kricketune.ground_walk": "animation.kricketune.ground_walk",
+        "kricketune.air_idle": "animation.kricketune.air_idle",
+        "kricketune.air_fly": "animation.kricketune.air_fly",
+        "kricketune.battle_idle": "animation.kricketune.battle_idle",
+        "kricketune.blink": "animation.kricketune.blink",
+        "controller.animation.kricketune.blink": "controller.animation.kricketune.blink",
+        "controller.animation.cobblemon.kricketune": "controller.animation.cobblemon.kricketune"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.kricketune"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.kricketune.blink",
+          {
+            "controller.animation.cobblemon.kricketune": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_kricketune = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

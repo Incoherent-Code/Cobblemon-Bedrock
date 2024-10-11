@@ -1,0 +1,36 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.sharpedo": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "sharpedo.water_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_sharpedo = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "sharpedo.water_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_sharpedo = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

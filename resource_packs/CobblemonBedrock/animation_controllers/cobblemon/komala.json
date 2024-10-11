@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.komala.doze": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_komala_doze = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_komala_doze = q.life_time + 1; return (q.life_time > v.next_quirk_komala_doze) && (v.state_of_komala == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "komala.quirk_doze_off"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_komala_doze = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_komala_doze ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.komala": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "komala.ground_idle"
+          ],
+          "transitions": [],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

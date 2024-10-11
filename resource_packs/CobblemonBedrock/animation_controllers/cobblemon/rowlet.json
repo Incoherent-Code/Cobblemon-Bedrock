@@ -1,0 +1,94 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rowlet.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_rowlet_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_rowlet_blink = q.life_time + 1; return (q.life_time > v.next_quirk_rowlet_blink) && (v.state_of_rowlet == 0 || v.state_of_rowlet == 1 || v.state_of_rowlet == 2 || v.state_of_rowlet == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "rowlet.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_rowlet_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_rowlet_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.rowlet": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "rowlet.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_rowlet = 0; return (q.is_moving && !q.is_swimming)|| q.is_swimming;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "flyidle": {
+          "animations": [
+            "rowlet.air_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_rowlet = 1; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "rowlet.air_fly"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_rowlet = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "rowlet.ground_idle",
+            "rowletmodel.bipedwalkanimation"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_rowlet = 3; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

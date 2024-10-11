@@ -1,0 +1,47 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:venomoth",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0049_venomoth/venomoth",
+        "shiny": "textures/pokemon/0049_venomoth/venomoth_shiny"
+      },
+      "geometry": {
+        "base": "geometry.venomoth.geo",
+        "shiny": "geometry.venomoth.geo"
+      },
+      "animations": {
+        "venomothmodel.singlebonelook": "animation.venomothmodel.singlebonelook",
+        "venomoth.ground_idle": "animation.venomoth.ground_idle",
+        "venomoth.sleep": "animation.venomoth.sleep",
+        "venomoth.ground_walk": "animation.venomoth.ground_walk",
+        "controller.animation.cobblemon.venomoth": "controller.animation.cobblemon.venomoth"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.venomoth"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.venomoth": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_venomoth = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

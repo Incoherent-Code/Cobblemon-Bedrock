@@ -1,0 +1,155 @@
+{
+  "minLevel": 5,
+  "maxLevel": 30,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {},
+  "name": "Walking Wake",
+  "nationalPokedexNumber": 1009,
+  "baseStats": {
+    "hp": 99,
+    "attack": 83,
+    "defence": 91,
+    "special_attack": 125,
+    "special_defence": 83,
+    "speed": 109
+  },
+  "maleRatio": -1.0,
+  "catchRate": 5,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 0,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "slow",
+  "hitbox": {
+    "width": 1.9,
+    "height": 3.2,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "secondaryType": "dragon",
+  "abilities": [
+    "protosynthesis"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:aquajet",
+    "1:honeclaws",
+    "1:leer",
+    "1:roar",
+    "1:sunnyday",
+    "1:twister",
+    "7:bite",
+    "14:waterpulse",
+    "21:nobleroar",
+    "28:dragonbreath",
+    "35:breakingswipe",
+    "42:dragonrush",
+    "56:hydrosteam",
+    "63:dragonpulse",
+    "70:outrage",
+    "77:flamethrower",
+    "84:hydropump",
+    "tm:agility",
+    "tm:bodyslam",
+    "tm:chillingwater",
+    "tm:crunch",
+    "tm:dracometeor",
+    "tm:dragonclaw",
+    "tm:dragondance",
+    "tm:dragonpulse",
+    "tm:dragontail",
+    "tm:endure",
+    "tm:facade",
+    "tm:firefang",
+    "tm:flamethrower",
+    "tm:gigaimpact",
+    "tm:hurricane",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:liquidation",
+    "tm:lowkick",
+    "tm:mudshot",
+    "tm:outrage",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:scaryface",
+    "tm:sleeptalk",
+    "tm:snarl",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:surf",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tutor:dragonpulse",
+    "tutor:flamethrower",
+    "tutor:hydrosteam",
+    "tutor:nobleroar"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": true,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [],
+  "drops": {},
+  "eggCycles": 50,
+  "eggGroups": [
+    "undiscovered"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 35.0,
+  "weight": 2800.0
+}

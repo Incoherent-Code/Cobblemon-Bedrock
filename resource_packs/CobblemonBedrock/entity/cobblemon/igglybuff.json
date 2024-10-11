@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:igglybuff",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0174_igglybuff/igglybuff",
+        "shiny": "textures/pokemon/0174_igglybuff/igglybuff_shiny"
+      },
+      "geometry": {
+        "base": "geometry.igglybuff.geo",
+        "shiny": "geometry.igglybuff.geo"
+      },
+      "animations": {
+        "igglybuff.ground_idle": "animation.igglybuff.ground_idle",
+        "igglybuff.ground_walk": "animation.igglybuff.ground_walk",
+        "igglybuff.blink": "animation.igglybuff.blink",
+        "controller.animation.igglybuff.blink": "controller.animation.igglybuff.blink",
+        "controller.animation.cobblemon.igglybuff": "controller.animation.cobblemon.igglybuff"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.igglybuff"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.igglybuff.blink",
+          {
+            "controller.animation.cobblemon.igglybuff": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_igglybuff = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

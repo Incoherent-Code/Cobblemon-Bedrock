@@ -1,0 +1,268 @@
+{
+  "minLevel": 8,
+  "maxLevel": 33,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 8,
+      "maxLevel": 33
+    },
+    "1": {
+      "minLevel": 8,
+      "maxLevel": 33
+    }
+  },
+  "name": "Magnemite",
+  "nationalPokedexNumber": 81,
+  "baseStats": {
+    "hp": 25,
+    "attack": 35,
+    "defence": 70,
+    "special_attack": 95,
+    "special_defence": 55,
+    "speed": 45
+  },
+  "maleRatio": -1.0,
+  "catchRate": 190,
+  "baseScale": 0.9,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.9,
+    "height": 0.6,
+    "fixed": false
+  },
+  "primaryType": "electric",
+  "secondaryType": "steel",
+  "abilities": [
+    "magnetpull",
+    "sturdy",
+    "h:analytic"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:tackle",
+    "1:thundershock",
+    "4:supersonic",
+    "8:thunderwave",
+    "11:magnetbomb",
+    "12:electroball",
+    "16:gyroball",
+    "17:sonicboom",
+    "20:spark",
+    "23:mirrorshot",
+    "24:screech",
+    "28:magnetrise",
+    "32:flashcannon",
+    "36:discharge",
+    "38:swift",
+    "40:metalsound",
+    "44:lightscreen",
+    "48:lockon",
+    "52:zapcannon",
+    "egg:electroweb",
+    "egg:explosion",
+    "tm:chargebeam",
+    "tm:confide",
+    "tm:confuseray",
+    "tm:doubleteam",
+    "tm:eerieimpulse",
+    "tm:electricterrain",
+    "tm:electroball",
+    "tm:electroweb",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:flash",
+    "tm:flashcannon",
+    "tm:frustration",
+    "tm:gyroball",
+    "tm:heavyslam",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:lightscreen",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:psychup",
+    "tm:raindance",
+    "tm:recycle",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:sandstorm",
+    "tm:screech",
+    "tm:secretpower",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:steelbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:voltswitch",
+    "tm:wildcharge",
+    "tutor:bide",
+    "tutor:curse",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:electroweb",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:flash",
+    "tutor:flashcannon",
+    "tutor:frustration",
+    "tutor:gravity",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:irondefense",
+    "tutor:lightscreen",
+    "tutor:lockon",
+    "tutor:magiccoat",
+    "tutor:magnetrise",
+    "tutor:metalsound",
+    "tutor:mimic",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:raindance",
+    "tutor:recycle",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:risingvoltage",
+    "tutor:rollout",
+    "tutor:screech",
+    "tutor:shockwave",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:sonicboom",
+    "tutor:steelbeam",
+    "tutor:substitute",
+    "tutor:supersonic",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:tackle",
+    "tutor:takedown",
+    "tutor:teleport",
+    "tutor:thunder",
+    "tutor:thunderbolt",
+    "tutor:thundershock",
+    "tutor:thunderwave",
+    "tutor:toxic",
+    "tutor:zapcannon"
+  ],
+  "evolutions": [
+    {
+      "id": "magnemite_magneton",
+      "variant": "level_up",
+      "result": "magneton",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "triattack"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 30
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": false,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.magnemite.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:raw_iron",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:magnet",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:metal_coat",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:shuca_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 3.0,
+  "weight": 60.0
+}

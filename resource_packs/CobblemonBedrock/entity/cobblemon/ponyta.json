@@ -1,0 +1,78 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:ponyta",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0077_ponyta/ponyta",
+        "shiny": "textures/pokemon/0077_ponyta/ponyta_shiny",
+        "galarian": "textures/pokemon/0077_ponyta/ponyta_galar",
+        "shiny_galarian": "textures/pokemon/0077_ponyta/ponyta_galar_shiny",
+        "base_emissive_uv": "textures/pokemon/0077_ponyta/base_emissive_uv",
+        "shiny_emissive_uv": "textures/pokemon/0077_ponyta/shiny_emissive_uv",
+        "galarian_emissive": "textures/pokemon/0077_ponyta/ponyta_galar_emissive",
+        "shiny_galarian_emissive": "textures/pokemon/0077_ponyta/ponyta_galar_emissive"
+      },
+      "geometry": {
+        "base": "geometry.ponyta.geo",
+        "shiny": "geometry.ponyta.geo",
+        "galarian": "geometry.ponyta_galar.geo",
+        "shiny_galarian": "geometry.ponyta_galar.geo"
+      },
+      "animations": {
+        "ponyta.sleep": "animation.ponyta.sleep",
+        "ponytamodel.singlebonelook": "animation.ponytamodel.singlebonelook",
+        "ponyta.ground_idle": "animation.ponyta.ground_idle",
+        "ponyta.ground_walk": "animation.ponyta.ground_walk",
+        "ponyta.blink": "animation.ponyta.blink",
+        "controller.animation.ponyta.blink": "controller.animation.ponyta.blink",
+        "ponyta.quirk1": "animation.ponyta.quirk1",
+        "controller.animation.ponyta.quirk": "controller.animation.ponyta.quirk",
+        "controller.animation.cobblemon.ponyta": "controller.animation.cobblemon.ponyta",
+        "ponyta_galar.sleep": "animation.ponyta_galar.sleep",
+        "ponytagalarianmodel.singlebonelook": "animation.ponytagalarianmodel.singlebonelook",
+        "ponyta_galar.ground_idle": "animation.ponyta_galar.ground_idle",
+        "ponyta_galar.ground_walk": "animation.ponyta_galar.ground_walk",
+        "ponyta_galar.blink": "animation.ponyta_galar.blink",
+        "controller.animation.ponyta_galarian.blink": "controller.animation.ponyta_galarian.blink",
+        "ponyta_galar.quirk": "animation.ponyta_galar.quirk",
+        "controller.animation.ponyta_galarian.quirk": "controller.animation.ponyta_galarian.quirk",
+        "controller.animation.cobblemon.ponyta_galarian": "controller.animation.cobblemon.ponyta_galarian"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.ponyta_emissive",
+        "controller.render.cobblemon.ponyta_emissive_2",
+        "controller.render.cobblemon.ponyta"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.ponyta.blink",
+          "controller.animation.ponyta.quirk",
+          {
+            "controller.animation.cobblemon.ponyta": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.ponyta_galarian.blink",
+          "controller.animation.ponyta_galarian.quirk",
+          {
+            "controller.animation.cobblemon.ponyta_galarian": "q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_ponyta = -1.0;",
+          "v.state_of_ponyta_galarian = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

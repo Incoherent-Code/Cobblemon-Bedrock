@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "WQW",
+      "LMQ",
+      "RLW"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:white_wool"
+      },
+      "L": {
+        "item": "minecraft:lapis_lazuli"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "M": {
+        "item": "cobblemon:muscle_band"
+      },
+      "Q": {
+        "item": "minecraft:quartz"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:white_wool"
+      },
+      {
+        "item": "minecraft:lapis_lazuli"
+      },
+      {
+        "item": "minecraft:redstone"
+      },
+      {
+        "item": "cobblemon:muscle_band"
+      },
+      {
+        "item": "minecraft:quartz"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:choice_band"
+    },
+    "description": {
+      "identifier": "cobblemon:choice_band_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

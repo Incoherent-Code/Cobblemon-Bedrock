@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.articuno": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "articunomodel.singlebonelook",
+            "articuno.ground_idle",
+            "articunomodel.bipedwalkanimation"
+          ],
+          "transitions": [
+            {
+              "fly": "v.state_of_articuno = 0; return q.is_swimming;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "articunomodel.singlebonelook",
+            "articuno.air_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_articuno = 1; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "fly": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "articunomodel.singlebonelook",
+            "articuno.air_fly"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_articuno = 2; return (q.is_moving && !q.is_swimming);"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

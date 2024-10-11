@@ -1,0 +1,236 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.ditto.ground_idle": {
+      "loop": true,
+      "bones": {
+        "body2": {
+          "rotation": [
+            "-1.25+math.sin(q.anim_time*90*1.5-60)*4",
+            0.0,
+            "-math.sin(q.anim_time*90*0.75)*3"
+          ],
+          "position": [
+            0.0,
+            "math.sin(q.anim_time*90*1.5+30)*0.25",
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "-1.25+math.sin(q.anim_time*90*1.5-120)*3",
+            0.0,
+            "-math.sin(q.anim_time*90*0.75)*3"
+          ],
+          "position": [
+            0.0,
+            "-math.sin(q.anim_time*90*1.5-120)*0.25",
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-10-math.sin(q.anim_time*90*1.5+30)*8"
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "10+math.sin(q.anim_time*90*1.5+30)*8"
+          ]
+        },
+        "body": {
+          "scale": [
+            "1+math.sin(q.anim_time*90*1.5)*-0.065",
+            "1+math.sin(q.anim_time*90*1.5)*0.09",
+            "1+math.sin(q.anim_time*90*1.5)*-0.065"
+          ],
+          "position": [
+            0.0,
+            "0+math.sin(q.anim_time*90*1.5+30)*0.1",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.ditto.ground_walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "5-math.sin(q.anim_time*90*4-30)*10",
+            0.0,
+            0.0
+          ],
+          "scale": [
+            "1+math.sin(q.anim_time*90*4-30)*-0.08",
+            "1+math.sin(q.anim_time*90*4-30)*0.2",
+            "1+math.sin(q.anim_time*90*4-30)*-0.2"
+          ],
+          "position": [
+            0.0,
+            "-1+math.clamp(math.sin(q.anim_time*90*4+60)*0.25,-4,0)+math.clamp(math.sin(q.anim_time*90*4+60)*0.4,0,4)",
+            "-1+math.sin(q.anim_time*90*4-120)*1"
+          ]
+        },
+        "body2": {
+          "rotation": [
+            "2.5+math.sin(q.anim_time*90*4-40)*5-math.clamp(math.sin(q.anim_time*90*4-90)*15,-5,20)",
+            0.0,
+            "math.sin(q.anim_time*90*4*2+90)*2"
+          ],
+          "position": [
+            0.0,
+            "math.sin(q.anim_time*90*4+30)*0.25+math.clamp(math.sin(q.anim_time*90*4+60)*0.5,-4,0)",
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "math.sin(q.anim_time*90*4-120)*0.5-math.clamp(math.sin(q.anim_time*90*4+120)*10,0,10)",
+            0.0,
+            "math.sin(q.anim_time*90*2+60)*2"
+          ],
+          "position": [
+            0.0,
+            "math.clamp(math.sin(q.anim_time*90*4+130)*0.5,0,1)+math.clamp(math.sin(q.anim_time*90*4+130)*0.2,-1,0)",
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-15-math.sin(q.anim_time*90*4+30)*8-4"
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "15+math.sin(q.anim_time*90*4+30)*8+4"
+          ]
+        }
+      }
+    },
+    "animation.ditto.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "scale": [
+            "1+math.cos((query.anim_time) * 90 * 1) * -0.05",
+            "0.7+math.cos((query.anim_time) * 90 * 1) * 0.05",
+            "1.4+math.cos((query.anim_time) * 90 * 1) * -0.05"
+          ],
+          "position": [
+            0.0,
+            -0.75,
+            0.0
+          ]
+        },
+        "body2": {
+          "rotation": [
+            "-5+math.cos((query.anim_time) * 90 * 1-90) * -3",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "17.5+math.cos((query.anim_time) * 90 * 1-130) * -1",
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.1
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            0.0,
+            35.0,
+            17.5
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            0.0,
+            -35.0,
+            -17.5
+          ]
+        }
+      }
+    },
+    "animation.ditto.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

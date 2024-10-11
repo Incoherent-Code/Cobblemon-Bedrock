@@ -1,0 +1,2279 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.weezing.geo",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 4.0,
+        "visible_bounds_height": 3.5,
+        "visible_bounds_offset": [
+          0.0,
+          1.25,
+          0.0
+        ]
+      },
+      "bones": [
+        {
+          "name": "weezing",
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "bone",
+          "parent": "weezing",
+          "pivot": [
+            0.0,
+            11.5,
+            0.0
+          ]
+        },
+        {
+          "name": "main_body",
+          "parent": "bone",
+          "pivot": [
+            -4.0,
+            11.5,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -11.5,
+                4.0,
+                -7.5
+              ],
+              "size": [
+                15.0,
+                15.0,
+                15.0
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "origin": [
+                0.5,
+                3.99,
+                -7.0
+              ],
+              "size": [
+                1.0,
+                0.02,
+                2.0
+              ],
+              "uv": [
+                49.0,
+                33.0
+              ]
+            },
+            {
+              "origin": [
+                0.5,
+                6.5,
+                -7.52
+              ],
+              "size": [
+                1.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                55.0,
+                32.0
+              ]
+            },
+            {
+              "origin": [
+                -9.5,
+                3.99,
+                -7.0
+              ],
+              "size": [
+                1.0,
+                0.02,
+                2.0
+              ],
+              "uv": [
+                51.0,
+                33.0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -9.5,
+                6.5,
+                -7.52
+              ],
+              "size": [
+                1.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                57.0,
+                32.0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -6.0,
+                8.0,
+                -7.51
+              ],
+              "size": [
+                4.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                51.0,
+                30.0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -5.0,
+                8.5,
+                -7.52
+              ],
+              "size": [
+                2.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                51.0,
+                32.0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -4.5,
+                7.5,
+                -7.52
+              ],
+              "size": [
+                1.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                55.0,
+                34.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "eyes",
+          "parent": "main_body",
+          "pivot": [
+            -3.5,
+            15.0,
+            -7.52
+          ]
+        },
+        {
+          "name": "eye_left",
+          "parent": "eyes",
+          "pivot": [
+            -0.5,
+            15.0,
+            -7.52
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2.25,
+                14.0,
+                -7.52
+              ],
+              "size": [
+                5.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                0.0,
+                3.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pupil_left",
+          "parent": "eye_left",
+          "pivot": [
+            -0.75,
+            15.5,
+            -7.53
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.25,
+                15.0,
+                -7.53
+              ],
+              "size": [
+                1.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                13.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eyebrow_left",
+          "parent": "eye_left",
+          "pivot": [
+            0.0,
+            18.0,
+            -7.5
+          ],
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3.0,
+                16.0,
+                -7.5
+              ],
+              "size": [
+                6.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eyelid_left",
+          "parent": "eye_left",
+          "pivot": [
+            0.25,
+            15.0,
+            -6.93
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2.25,
+                14.0,
+                -7.43
+              ],
+              "size": [
+                5.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                52.0,
+                44.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "eye_right",
+          "parent": "eyes",
+          "pivot": [
+            -7.5,
+            15.0,
+            -7.52
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            -7.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -10.75,
+                14.0,
+                -7.52
+              ],
+              "size": [
+                5.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                0.0,
+                8.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "pupil_right",
+          "parent": "eye_right",
+          "pivot": [
+            -7.25,
+            15.5,
+            -7.53
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7.75,
+                15.0,
+                -7.53
+              ],
+              "size": [
+                1.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                13.0,
+                5.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "eyebrow_right",
+          "parent": "eye_right",
+          "pivot": [
+            -8.0,
+            18.0,
+            -7.5
+          ],
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -11.0,
+                16.0,
+                -7.5
+              ],
+              "size": [
+                6.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                0.0,
+                5.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "eyelid_right",
+          "parent": "eye_right",
+          "pivot": [
+            -8.25,
+            15.0,
+            -6.93
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -10.75,
+                14.0,
+                -7.43
+              ],
+              "size": [
+                5.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                52.0,
+                47.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "mouth",
+          "parent": "main_body",
+          "pivot": [
+            -4.0,
+            12.0,
+            -7.52
+          ]
+        },
+        {
+          "name": "mouth_open",
+          "parent": "mouth",
+          "pivot": [
+            -4.0,
+            11.75,
+            -7.51
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.5,
+                10.75,
+                -7.51
+              ],
+              "size": [
+                7.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                45.0,
+                0.0
+              ]
+            },
+            {
+              "origin": [
+                -10.5,
+                10.75,
+                -7.51
+              ],
+              "size": [
+                7.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                45.0,
+                2.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "tooth_open_left1",
+          "parent": "mouth_open",
+          "pivot": [
+            -1.75,
+            12.25,
+            -7.52
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2.75,
+                11.75,
+                -7.52
+              ],
+              "size": [
+                2.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                60.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "tooth_open_left2",
+          "parent": "mouth_open",
+          "pivot": [
+            0.0,
+            10.75,
+            -7.52
+          ],
+          "rotation": [
+            10.0,
+            0.0,
+            5.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.0,
+                10.75,
+                -7.52
+              ],
+              "size": [
+                2.0,
+                3.0,
+                0.02
+              ],
+              "uv": [
+                60.0,
+                2.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "tooth_open_right1",
+          "parent": "mouth_open",
+          "pivot": [
+            -6.25,
+            12.25,
+            -7.52
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -7.25,
+                11.75,
+                -7.52
+              ],
+              "size": [
+                2.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                60.0,
+                1.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "tooth_open_right2",
+          "parent": "mouth_open",
+          "pivot": [
+            -8.0,
+            10.75,
+            -7.52
+          ],
+          "rotation": [
+            10.0,
+            0.0,
+            -5.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -10.0,
+                10.75,
+                -7.52
+              ],
+              "size": [
+                2.0,
+                3.0,
+                0.02
+              ],
+              "uv": [
+                60.0,
+                5.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "mouth_closed",
+          "parent": "mouth",
+          "pivot": [
+            -4.0,
+            11.5,
+            -6.76
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.0,
+                11.0,
+                -6.76
+              ],
+              "size": [
+                6.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                45.0,
+                5.0
+              ]
+            },
+            {
+              "origin": [
+                -10.0,
+                11.0,
+                -6.76
+              ],
+              "size": [
+                6.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                45.0,
+                4.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "tooth_closed_left",
+          "parent": "mouth_closed",
+          "pivot": [
+            0.0,
+            11.0,
+            -6.77
+          ],
+          "rotation": [
+            10.0,
+            0.0,
+            5.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.0,
+                11.0,
+                -6.77
+              ],
+              "size": [
+                2.0,
+                3.0,
+                0.02
+              ],
+              "uv": [
+                60.0,
+                8.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "tooth_closed_right",
+          "parent": "mouth_closed",
+          "pivot": [
+            -8.0,
+            11.0,
+            -6.77
+          ],
+          "rotation": [
+            10.0,
+            0.0,
+            -5.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -10.0,
+                11.0,
+                -6.77
+              ],
+              "size": [
+                2.0,
+                3.0,
+                0.02
+              ],
+              "uv": [
+                60.0,
+                11.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "main_craters",
+          "parent": "main_body",
+          "pivot": [
+            -4.0,
+            11.5,
+            0.0
+          ]
+        },
+        {
+          "name": "main_crater_back1",
+          "parent": "main_craters",
+          "pivot": [
+            -3.75,
+            11.9,
+            7.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5.25,
+                10.4,
+                7.0
+              ],
+              "size": [
+                3.0,
+                3.0,
+                2.0
+              ],
+              "uv": [
+                0.0,
+                48.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "main_crater_back2",
+          "parent": "main_craters",
+          "pivot": [
+            -8.5,
+            17.9,
+            7.5
+          ],
+          "rotation": [
+            25.0,
+            -5.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -10.0,
+                16.4,
+                6.75
+              ],
+              "size": [
+                3.0,
+                3.0,
+                2.0
+              ],
+              "uv": [
+                10.0,
+                48.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "main_crater_back3",
+          "parent": "main_craters",
+          "pivot": [
+            -5.25,
+            4.85,
+            6.75
+          ],
+          "rotation": [
+            -40.0,
+            -5.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -6.75,
+                3.35,
+                6.25
+              ],
+              "size": [
+                3.0,
+                3.0,
+                2.0
+              ],
+              "uv": [
+                0.0,
+                53.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "main_crater_top1",
+          "parent": "main_craters",
+          "pivot": [
+            0.75,
+            18.9,
+            -1.5
+          ],
+          "rotation": [
+            5.0,
+            0.0,
+            15.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.75,
+                18.4,
+                -3.0
+              ],
+              "size": [
+                3.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                20.0,
+                48.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "main_crater_top2",
+          "parent": "main_craters",
+          "pivot": [
+            -8.75,
+            18.9,
+            -1.5
+          ],
+          "rotation": [
+            5.0,
+            0.0,
+            -15.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -10.25,
+                18.4,
+                -3.0
+              ],
+              "size": [
+                3.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                10.0,
+                53.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "main_crater_top3",
+          "parent": "main_craters",
+          "pivot": [
+            -0.5,
+            19.0,
+            7.5
+          ],
+          "rotation": [
+            -45.0,
+            5.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2.0,
+                17.5,
+                6.0
+              ],
+              "size": [
+                3.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                22.0,
+                53.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "main_crater_bottom1",
+          "parent": "main_craters",
+          "pivot": [
+            -0.25,
+            3.9,
+            1.0
+          ],
+          "rotation": [
+            5.0,
+            0.0,
+            -10.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.75,
+                2.4,
+                -0.5
+              ],
+              "size": [
+                3.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                0.0,
+                58.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "main_crater_bottom2",
+          "parent": "main_craters",
+          "pivot": [
+            -7.75,
+            3.9,
+            1.0
+          ],
+          "rotation": [
+            5.0,
+            0.0,
+            10.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -9.25,
+                2.4,
+                -0.5
+              ],
+              "size": [
+                3.0,
+                2.0,
+                3.0
+              ],
+              "uv": [
+                12.0,
+                58.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "main_crater_left1",
+          "parent": "main_craters",
+          "pivot": [
+            3.5,
+            7.5,
+            -5.5
+          ],
+          "rotation": [
+            0.0,
+            10.0,
+            10.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                2.75,
+                6.0,
+                -7.0
+              ],
+              "size": [
+                2.0,
+                3.0,
+                3.0
+              ],
+              "uv": [
+                24.0,
+                58.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "main_crater_left2",
+          "parent": "main_craters",
+          "pivot": [
+            3.5,
+            8.5,
+            7.5
+          ],
+          "rotation": [
+            0.0,
+            -45.0,
+            5.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                2.0,
+                7.0,
+                6.0
+              ],
+              "size": [
+                2.0,
+                3.0,
+                3.0
+              ],
+              "uv": [
+                31.0,
+                55.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "main_crater_right1",
+          "parent": "main_craters",
+          "pivot": [
+            -11.5,
+            7.5,
+            -5.5
+          ],
+          "rotation": [
+            0.0,
+            -10.0,
+            -10.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -12.75,
+                6.0,
+                -7.0
+              ],
+              "size": [
+                2.0,
+                3.0,
+                3.0
+              ],
+              "uv": [
+                36.0,
+                40.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "main_crater_right2",
+          "parent": "main_craters",
+          "pivot": [
+            -11.5,
+            10.5,
+            -1.5
+          ],
+          "rotation": [
+            0.0,
+            -5.0,
+            -5.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -13.0,
+                9.0,
+                -3.0
+              ],
+              "size": [
+                2.0,
+                3.0,
+                3.0
+              ],
+              "uv": [
+                33.0,
+                46.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "main_crater_right3",
+          "parent": "main_craters",
+          "pivot": [
+            -11.5,
+            16.0,
+            2.5
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            12.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -13.0,
+                14.5,
+                1.0
+              ],
+              "size": [
+                2.0,
+                3.0,
+                3.0
+              ],
+              "uv": [
+                38.0,
+                52.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "main_crater_right4",
+          "parent": "main_craters",
+          "pivot": [
+            -11.5,
+            9.0,
+            6.0
+          ],
+          "rotation": [
+            0.0,
+            10.0,
+            -5.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -13.0,
+                7.5,
+                4.5
+              ],
+              "size": [
+                2.0,
+                3.0,
+                3.0
+              ],
+              "uv": [
+                38.0,
+                58.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "middle_body",
+          "parent": "main_body",
+          "pivot": [
+            7.5,
+            13.0,
+            2.5
+          ],
+          "rotation": [
+            -10.0,
+            -37.5,
+            15.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                3.0,
+                8.5,
+                -2.0
+              ],
+              "size": [
+                9.0,
+                9.0,
+                9.0
+              ],
+              "uv": [
+                0.0,
+                30.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "small_eyes",
+          "parent": "middle_body",
+          "pivot": [
+            7.5,
+            15.0,
+            -2.02
+          ]
+        },
+        {
+          "name": "small_eye_left",
+          "parent": "small_eyes",
+          "pivot": [
+            10.0,
+            15.0,
+            -2.01
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            -5.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                8.5,
+                14.0,
+                -2.01
+              ],
+              "size": [
+                3.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                0.0,
+                10.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "small_pupil_left",
+          "parent": "small_eye_left",
+          "pivot": [
+            9.5,
+            15.25,
+            -2.02
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9.0,
+                14.75,
+                -2.02
+              ],
+              "size": [
+                1.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                10.0,
+                8.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "small_eyebrow_left",
+          "parent": "small_eye_left",
+          "pivot": [
+            8.55,
+            16.0,
+            -2.03
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            12.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                8.5,
+                15.75,
+                -2.03
+              ],
+              "size": [
+                3.25,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                0.0,
+                12.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "small_eyelid_left",
+          "parent": "small_eye_left",
+          "pivot": [
+            10.0,
+            15.0,
+            -1.42
+          ],
+          "cubes": [
+            {
+              "origin": [
+                8.5,
+                14.0,
+                -1.92
+              ],
+              "size": [
+                3.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                56.0,
+                38.0
+              ],
+              "inflate": 0.01
+            }
+          ]
+        },
+        {
+          "name": "small_eye_right",
+          "parent": "small_eyes",
+          "pivot": [
+            5.0,
+            15.0,
+            -2.01
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            5.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                3.5,
+                14.0,
+                -2.01
+              ],
+              "size": [
+                3.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                6.0,
+                10.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_pupil_right",
+          "parent": "small_eye_right",
+          "pivot": [
+            5.5,
+            15.25,
+            -2.02
+          ],
+          "cubes": [
+            {
+              "origin": [
+                5.0,
+                14.75,
+                -2.02
+              ],
+              "size": [
+                1.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                10.0,
+                9.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_eyebrow_right",
+          "parent": "small_eye_right",
+          "pivot": [
+            6.45,
+            16.0,
+            -2.03
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            -12.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                3.25,
+                15.75,
+                -2.03
+              ],
+              "size": [
+                3.25,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                0.0,
+                13.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_eyelid_right",
+          "parent": "small_eye_right",
+          "pivot": [
+            5.0,
+            15.0,
+            -1.42
+          ],
+          "cubes": [
+            {
+              "origin": [
+                3.5,
+                14.0,
+                -1.92
+              ],
+              "size": [
+                3.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                54.0,
+                41.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_mouth",
+          "parent": "middle_body",
+          "pivot": [
+            7.5,
+            12.25,
+            -2.02
+          ]
+        },
+        {
+          "name": "small_mouth_closed",
+          "parent": "small_mouth",
+          "pivot": [
+            7.5,
+            13.0,
+            -2.02
+          ],
+          "cubes": [
+            {
+              "origin": [
+                5.5,
+                12.5,
+                -2.02
+              ],
+              "size": [
+                4.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                45.0,
+                6.0
+              ]
+            },
+            {
+              "origin": [
+                9.5,
+                12.0,
+                -2.02
+              ],
+              "size": [
+                2.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                45.0,
+                7.0
+              ]
+            },
+            {
+              "origin": [
+                3.5,
+                12.0,
+                -2.02
+              ],
+              "size": [
+                2.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                45.0,
+                8.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_tooth_closed_left",
+          "parent": "small_mouth_closed",
+          "pivot": [
+            10.75,
+            13.0,
+            -2.02
+          ],
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                10.25,
+                12.5,
+                -2.02
+              ],
+              "size": [
+                1.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                49.0,
+                7.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                45.0
+              ],
+              "pivot": [
+                10.75,
+                13.0,
+                -2.02
+              ]
+            }
+          ]
+        },
+        {
+          "name": "small_tooth_closed_right",
+          "parent": "small_mouth_closed",
+          "pivot": [
+            4.25,
+            13.0,
+            -2.02
+          ],
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                3.75,
+                12.5,
+                -2.02
+              ],
+              "size": [
+                1.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                49.0,
+                8.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                -45.0
+              ],
+              "pivot": [
+                4.25,
+                13.0,
+                -2.02
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_mouth_open",
+          "parent": "small_mouth",
+          "pivot": [
+            7.5,
+            13.0,
+            -1.77
+          ],
+          "cubes": [
+            {
+              "origin": [
+                7.5,
+                11.75,
+                -1.77
+              ],
+              "size": [
+                4.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                45.0,
+                9.0
+              ]
+            },
+            {
+              "origin": [
+                3.5,
+                11.75,
+                -1.77
+              ],
+              "size": [
+                4.0,
+                2.0,
+                0.02
+              ],
+              "uv": [
+                45.0,
+                11.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_tooth_open_left",
+          "parent": "small_mouth_open",
+          "pivot": [
+            9.75,
+            13.75,
+            -1.77
+          ],
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                9.25,
+                13.25,
+                -1.77
+              ],
+              "size": [
+                1.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                51.0,
+                7.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                45.0
+              ],
+              "pivot": [
+                9.75,
+                13.75,
+                -1.77
+              ]
+            }
+          ]
+        },
+        {
+          "name": "small_tooth_open_right",
+          "parent": "small_mouth_open",
+          "pivot": [
+            5.25,
+            13.75,
+            -1.77
+          ],
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                4.75,
+                13.25,
+                -1.77
+              ],
+              "size": [
+                1.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                51.0,
+                8.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                -45.0
+              ],
+              "pivot": [
+                5.25,
+                13.75,
+                -1.77
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "middle_craters",
+          "parent": "middle_body",
+          "pivot": [
+            7.5,
+            13.0,
+            2.5
+          ]
+        },
+        {
+          "name": "middle_crater_top1",
+          "parent": "middle_craters",
+          "pivot": [
+            6.0,
+            17.5,
+            0.0
+          ],
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                5.0,
+                16.5,
+                -1.0
+              ],
+              "size": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                46.0,
+                40.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "middle_crater_top2",
+          "parent": "middle_craters",
+          "pivot": [
+            7.5,
+            17.5,
+            4.5
+          ],
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                6.5,
+                16.75,
+                3.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                44.0,
+                44.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "middle_crater_left1",
+          "parent": "middle_craters",
+          "pivot": [
+            12.0,
+            15.5,
+            1.5
+          ],
+          "rotation": [
+            0.0,
+            5.0,
+            -15.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                11.5,
+                14.5,
+                0.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                43.0,
+                48.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "middle_crater_left2",
+          "parent": "middle_craters",
+          "pivot": [
+            12.0,
+            10.5,
+            -0.5
+          ],
+          "rotation": [
+            0.0,
+            5.0,
+            15.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                11.5,
+                9.5,
+                -1.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                48.0,
+                52.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "middle_crater_left3",
+          "parent": "middle_craters",
+          "pivot": [
+            12.0,
+            14.0,
+            5.5
+          ],
+          "rotation": [
+            0.0,
+            -15.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                11.5,
+                13.0,
+                4.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                46.0,
+                56.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "middle_crater_right1",
+          "parent": "middle_craters",
+          "pivot": [
+            3.0,
+            16.0,
+            1.25
+          ],
+          "rotation": [
+            0.0,
+            -5.0,
+            20.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                1.5,
+                15.0,
+                0.25
+              ],
+              "size": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                48.0,
+                60.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "middle_crater_right2",
+          "parent": "middle_craters",
+          "pivot": [
+            3.0,
+            10.25,
+            -0.5
+          ],
+          "rotation": [
+            0.0,
+            -5.0,
+            -17.5
+          ],
+          "cubes": [
+            {
+              "origin": [
+                1.5,
+                9.25,
+                -1.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                56.0,
+                60.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "tube",
+          "parent": "main_body",
+          "pivot": [
+            1.0,
+            8.0,
+            2.0
+          ],
+          "rotation": [
+            15.0,
+            0.0,
+            -55.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                2.0,
+                6.0,
+                2.0
+              ],
+              "uv": [
+                1.0,
+                31.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "small_body",
+          "parent": "tube",
+          "pivot": [
+            1.0,
+            -0.5,
+            2.0
+          ],
+          "rotation": [
+            -2.5,
+            0.0,
+            45.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.5,
+                -3.0,
+                -0.5
+              ],
+              "size": [
+                5.0,
+                5.0,
+                5.0
+              ],
+              "uv": [
+                36.0,
+                30.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "small_craters",
+          "parent": "small_body",
+          "pivot": [
+            1.0,
+            -0.5,
+            2.0
+          ]
+        },
+        {
+          "name": "small_crater_front1",
+          "parent": "small_craters",
+          "pivot": [
+            3.5,
+            -1.0,
+            -0.5
+          ],
+          "rotation": [
+            0.0,
+            -50.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                3.0,
+                -1.5,
+                -0.75
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                54.0,
+                60.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "small_crater_front2",
+          "parent": "small_craters",
+          "pivot": [
+            -1.5,
+            -1.0,
+            -0.5
+          ],
+          "rotation": [
+            0.0,
+            50.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2.0,
+                -1.5,
+                -0.75
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                54.0,
+                58.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_crater_back1",
+          "parent": "small_craters",
+          "pivot": [
+            2.0,
+            -2.0,
+            4.5
+          ],
+          "rotation": [
+            0.0,
+            12.5,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                1.5,
+                -2.5,
+                4.25
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                52.0,
+                56.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_crater_back2",
+          "parent": "small_craters",
+          "pivot": [
+            -0.25,
+            -3.0,
+            4.5
+          ],
+          "rotation": [
+            -45.0,
+            -10.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.75,
+                -3.5,
+                3.75
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                56.0,
+                56.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_crater_back3",
+          "parent": "small_craters",
+          "pivot": [
+            -1.5,
+            0.5,
+            4.5
+          ],
+          "rotation": [
+            0.0,
+            -45.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2.0,
+                0.0,
+                3.75
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                58.0,
+                58.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "small_crater_back4",
+          "parent": "small_craters",
+          "pivot": [
+            1.0,
+            1.5,
+            4.5
+          ],
+          "rotation": [
+            17.5,
+            0.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.5,
+                1.0,
+                4.25
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "uv": [
+                60.0,
+                56.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "tube2",
+          "parent": "small_body",
+          "pivot": [
+            2.0,
+            1.0,
+            1.5
+          ],
+          "rotation": [
+            10.0,
+            0.0,
+            20.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                1.0,
+                1.0,
+                0.5
+              ],
+              "size": [
+                2.0,
+                5.0,
+                2.0
+              ],
+              "uv": [
+                27.0,
+                32.0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

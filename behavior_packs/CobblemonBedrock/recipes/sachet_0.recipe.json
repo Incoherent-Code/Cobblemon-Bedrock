@@ -1,0 +1,63 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "SPS",
+      "LAF",
+      "MPM"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:purple_wool"
+      },
+      "S": {
+        "item": "minecraft:string"
+      },
+      "M": {
+        "item": "minecraft:magenta_wool"
+      },
+      "L": {
+        "item": "minecraft:lilac"
+      },
+      "A": {
+        "item": "minecraft:allium"
+      },
+      "F": {
+        "item": "minecraft:peony"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:purple_wool"
+      },
+      {
+        "item": "minecraft:string"
+      },
+      {
+        "item": "minecraft:magenta_wool"
+      },
+      {
+        "item": "minecraft:lilac"
+      },
+      {
+        "item": "minecraft:allium"
+      },
+      {
+        "item": "minecraft:peony"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:sachet"
+    },
+    "description": {
+      "identifier": "cobblemon:sachet_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

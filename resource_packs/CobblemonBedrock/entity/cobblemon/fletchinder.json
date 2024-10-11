@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:fletchinder",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0662_fletchinder/fletchinder",
+        "shiny": "textures/pokemon/0662_fletchinder/fletchinder_shiny"
+      },
+      "geometry": {
+        "base": "geometry.fletchinder.geo",
+        "shiny": "geometry.fletchinder.geo"
+      },
+      "animations": {
+        "fletchindermodel.singlebonelook": "animation.fletchindermodel.singlebonelook",
+        "fletchinder.ground_idle": "animation.fletchinder.ground_idle",
+        "fletchinder.blink": "animation.fletchinder.blink",
+        "controller.animation.fletchinder.blink": "controller.animation.fletchinder.blink",
+        "controller.animation.cobblemon.fletchinder": "controller.animation.cobblemon.fletchinder"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.fletchinder"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.fletchinder.blink",
+          {
+            "controller.animation.cobblemon.fletchinder": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_fletchinder = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

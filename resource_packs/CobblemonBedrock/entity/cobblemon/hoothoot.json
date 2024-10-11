@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:hoothoot",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0163_hoothoot/hoothoot",
+        "shiny": "textures/pokemon/0163_hoothoot/hoothoot_shiny",
+        "base_emissive": "textures/pokemon/0163_hoothoot/hoothoot_emissive",
+        "shiny_emissive": "textures/pokemon/0163_hoothoot/hoothoot_emissive"
+      },
+      "geometry": {
+        "base": "geometry.hoothoot.geo",
+        "shiny": "geometry.hoothoot.geo"
+      },
+      "animations": {
+        "hoothoot.sleep": "animation.hoothoot.sleep",
+        "hoothoot.ground_idle": "animation.hoothoot.ground_idle",
+        "hoothoot.air_idle": "animation.hoothoot.air_idle",
+        "hoothoot.air_fly": "animation.hoothoot.air_fly",
+        "hoothoot.ground_walk": "animation.hoothoot.ground_walk",
+        "hoothoot.battle_idle": "animation.hoothoot.battle_idle",
+        "hoothoot.blink": "animation.hoothoot.blink",
+        "controller.animation.hoothoot.blink": "controller.animation.hoothoot.blink",
+        "hoothoot.quirk_foot": "animation.hoothoot.quirk_foot",
+        "controller.animation.hoothoot.quirk": "controller.animation.hoothoot.quirk",
+        "controller.animation.cobblemon.hoothoot": "controller.animation.cobblemon.hoothoot"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.hoothoot_emissive",
+        "controller.render.cobblemon.hoothoot"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.hoothoot.blink",
+          "controller.animation.hoothoot.quirk",
+          {
+            "controller.animation.cobblemon.hoothoot": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_hoothoot = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

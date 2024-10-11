@@ -1,0 +1,57 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:kricketot",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0401_kricketot/kricketot",
+        "shiny": "textures/pokemon/0401_kricketot/kricketot_shiny",
+        "female": "textures/pokemon/0401_kricketot/kricketot"
+      },
+      "geometry": {
+        "base": "geometry.kricketot_male.geo",
+        "shiny": "geometry.kricketot_male.geo",
+        "female": "geometry.kricketot_female.geo"
+      },
+      "animations": {
+        "kricketot.sleep": "animation.kricketot.sleep",
+        "kricketotmodel.singlebonelook": "animation.kricketotmodel.singlebonelook",
+        "kricketot.ground_idle": "animation.kricketot.ground_idle",
+        "kricketot.ground_walk": "animation.kricketot.ground_walk",
+        "kricketot.battle_idle": "animation.kricketot.battle_idle",
+        "kricketot.shoulder_left": "animation.kricketot.shoulder_left",
+        "kricketot.shoulderleft.transform": "animation.kricketot.shoulderleft.transform",
+        "kricketot.shoulder_right": "animation.kricketot.shoulder_right",
+        "kricketot.shoulderright.transform": "animation.kricketot.shoulderright.transform",
+        "kricketot.blink": "animation.kricketot.blink",
+        "controller.animation.kricketot.blink": "controller.animation.kricketot.blink",
+        "controller.animation.cobblemon.kricketot": "controller.animation.cobblemon.kricketot"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.kricketot"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.kricketot.blink",
+          {
+            "controller.animation.cobblemon.kricketot": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_kricketot = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:bayleef",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0153_bayleef/bayleef",
+        "shiny": "textures/pokemon/0153_bayleef/bayleef_shiny"
+      },
+      "geometry": {
+        "base": "geometry.bayleef.geo",
+        "shiny": "geometry.bayleef.geo"
+      },
+      "animations": {
+        "bayleef.sleep": "animation.bayleef.sleep",
+        "bayleefmodel.singlebonelook": "animation.bayleefmodel.singlebonelook",
+        "bayleef.ground_idle": "animation.bayleef.ground_idle",
+        "bayleef.ground_walk": "animation.bayleef.ground_walk",
+        "bayleef.battle_idle": "animation.bayleef.battle_idle",
+        "bayleef.blink": "animation.bayleef.blink",
+        "controller.animation.bayleef.blink": "controller.animation.bayleef.blink",
+        "controller.animation.cobblemon.bayleef": "controller.animation.cobblemon.bayleef"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.bayleef"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.bayleef.blink",
+          {
+            "controller.animation.cobblemon.bayleef": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_bayleef = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

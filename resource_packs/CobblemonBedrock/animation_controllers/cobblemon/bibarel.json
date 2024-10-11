@@ -1,0 +1,91 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.bibarel.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_bibarel_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_bibarel_blink = q.life_time + 1; return (q.life_time > v.next_quirk_bibarel_blink) && (v.state_of_bibarel == 0 || v.state_of_bibarel == 1 || v.state_of_bibarel == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "bibarel.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_bibarel_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_bibarel_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.bibarel": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "bibarelmodel.singlebonelook",
+            "bibarel.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_bibarel = 0; return q.is_moving;"
+            },
+            {
+              "floating": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "bibarelmodel.singlebonelook",
+            "bibarel.ground_idle",
+            "bibarelmodel.quadrupedwalkanimation"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_bibarel = 1; return !q.is_moving;"
+            },
+            {
+              "floating": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "floating": {
+          "animations": [
+            "bibarelmodel.singlebonelook",
+            "bibarel.ground_idle",
+            "bibarelmodel.quadrupedwalkanimation",
+            "bibarel.floating.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_bibarel = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

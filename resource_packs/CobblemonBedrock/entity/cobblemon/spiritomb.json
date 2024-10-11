@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:spiritomb",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0442_spiritomb/spiritomb",
+        "shiny": "textures/pokemon/0442_spiritomb/spiritomb",
+        "base_emissive": "textures/pokemon/0442_spiritomb/spiritomb_emissive",
+        "base_transparent_emissive": "textures/pokemon/0442_spiritomb/spiritomb_transparency",
+        "shiny_emissive": "textures/pokemon/0442_spiritomb/spiritomb_emissive",
+        "shiny_transparent_emissive": "textures/pokemon/0442_spiritomb/spiritomb_transparency"
+      },
+      "geometry": {
+        "base": "geometry.spiritomb.geo",
+        "shiny": "geometry.spiritomb.geo"
+      },
+      "animations": {
+        "spiritomb.ground_idle": "animation.spiritomb.ground_idle",
+        "controller.animation.cobblemon.spiritomb": "controller.animation.cobblemon.spiritomb"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.spiritomb_emissive",
+        "controller.render.cobblemon.spiritomb_transparent_emissive",
+        "controller.render.cobblemon.spiritomb"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.spiritomb": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_spiritomb = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,59 @@
+{
+	"format_version": "1.18.0",
+	"render_controllers": {
+		"controller.render.cobblemon.standard": {
+			"arrays": {
+				"textures": {
+					"array.cobblemon_texture": [
+						"Texture.base",
+						"Texture.shiny"
+					]
+				},
+				"geometries": {
+					"array.cobblemon_geometry":[
+						"Geometry.base",
+						"Geometry.shiny"
+					]
+				}
+			},
+			"geometry": "array.cobblemon_geometry[query.variant]",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.cobblemon_texture[query.variant]"
+			]
+		},
+		"controller.render.cobblemon.gendered": {
+			"arrays": {
+				"textures": {
+					"array.cobblemon_texture": [
+						"Texture.base",
+						"Texture.female",
+						"Texture.shiny",
+						"Texture.female_shiny"
+					]
+				},
+				"geometries": {
+					"array.cobblemon_geometry": [
+						"Geometry.base",
+						"Geometry.female",
+						"Geometry.shiny",
+						"Geometry.female_shiny"
+					]
+				}
+			},
+			"geometry": "array.cobblemon_geometry[query.variant]",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.cobblemon_texture[query.variant]"
+			]
+		}
+	}
+}

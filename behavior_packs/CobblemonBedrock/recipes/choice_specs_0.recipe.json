@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "B B",
+      "GWG",
+      "RGR"
+    ],
+    "key": {
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "B": {
+        "item": "minecraft:blaze_rod"
+      },
+      "W": {
+        "item": "cobblemon:wise_glasses"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:gold_ingot"
+      },
+      {
+        "item": "minecraft:blaze_rod"
+      },
+      {
+        "item": "cobblemon:wise_glasses"
+      },
+      {
+        "item": "minecraft:redstone"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:choice_specs"
+    },
+    "description": {
+      "identifier": "cobblemon:choice_specs_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

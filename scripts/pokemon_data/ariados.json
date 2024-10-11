@@ -1,0 +1,251 @@
+{
+  "minLevel": 22,
+  "maxLevel": 40,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "isRaining": false,
+      "timeRange": "night",
+      "minLevel": 22,
+      "maxLevel": 40
+    },
+    "1": {
+      "minLevel": 22,
+      "maxLevel": 40
+    },
+    "2": {
+      "minLevel": 22,
+      "maxLevel": 40
+    },
+    "3": {
+      "minLevel": 22,
+      "maxLevel": 40
+    },
+    "4": {
+      "minLevel": 22,
+      "maxLevel": 40
+    }
+  },
+  "name": "Ariados",
+  "nationalPokedexNumber": 168,
+  "baseStats": {
+    "hp": 70,
+    "attack": 90,
+    "defence": 70,
+    "special_attack": 60,
+    "special_defence": 70,
+    "speed": 40
+  },
+  "maleRatio": 0.5,
+  "catchRate": 90,
+  "baseScale": 0.8,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "fast",
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "poison",
+  "abilities": [
+    "swarm",
+    "insomnia",
+    "h:sniper"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:absorb",
+    "1:bugbite",
+    "1:constrict",
+    "1:fellstinger",
+    "1:focusenergy",
+    "1:poisonsting",
+    "1:stringshot",
+    "1:swordsdance",
+    "1:venomdrench",
+    "8:infestation",
+    "12:leechlife",
+    "12:scaryface",
+    "15:nightshade",
+    "19:shadowsneak",
+    "23:furyswipes",
+    "28:suckerpunch",
+    "32:spiderweb",
+    "37:agility",
+    "41:pinmissile",
+    "46:psychic",
+    "50:poisonjab",
+    "55:crosspoison",
+    "58:stickyweb",
+    "63:toxicthread",
+    "tm:attract",
+    "tm:captivate",
+    "tm:confide",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:hiddenpower",
+    "tm:honeclaws",
+    "tm:hyperbeam",
+    "tm:infestation",
+    "tm:leechlife",
+    "tm:naturalgift",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:psychic",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:smartstrike",
+    "tm:solarbeam",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:thief",
+    "tm:toxic",
+    "tm:venoshock",
+    "tm:xscissor",
+    "tutor:agility",
+    "tutor:attract",
+    "tutor:bodyslam",
+    "tutor:bounce",
+    "tutor:bugbite",
+    "tutor:constrict",
+    "tutor:curse",
+    "tutor:dig",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:electroweb",
+    "tutor:endure",
+    "tutor:flash",
+    "tutor:foulplay",
+    "tutor:frustration",
+    "tutor:furyswipes",
+    "tutor:gigadrain",
+    "tutor:hiddenpower",
+    "tutor:hyperbeam",
+    "tutor:leechlife",
+    "tutor:mimic",
+    "tutor:nightshade",
+    "tutor:poisonsting",
+    "tutor:protect",
+    "tutor:psychic",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:scaryface",
+    "tutor:screech",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:snore",
+    "tutor:solarbeam",
+    "tutor:spiderweb",
+    "tutor:stompingtantrum",
+    "tutor:stringshot",
+    "tutor:substitute",
+    "tutor:suckerpunch",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:thief",
+    "tutor:throatchop",
+    "tutor:toxic"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.ariados.desc"
+  ],
+  "drops": {
+    "amount": 7,
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:spider_eye",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:rotten_flesh",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:poison_barb",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 11.0,
+  "weight": 335.0
+}

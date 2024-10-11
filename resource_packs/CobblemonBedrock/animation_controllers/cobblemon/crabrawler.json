@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.crabrawler": {
+      "initial_state": "standing",
+      "states": {
+        "portrait": {
+          "animations": [
+            "crabrawlermodel.singlebonelook",
+            "crabrawler.portrait"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_crabrawler = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "crabrawlermodel.singlebonelook",
+            "crabrawler.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_crabrawler = 1; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "crabrawlermodel.singlebonelook",
+            "crabrawler.ground_idle",
+            "crabrawler.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_crabrawler = 2; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

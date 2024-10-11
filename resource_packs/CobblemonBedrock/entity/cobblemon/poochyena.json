@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:poochyena",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0261_poochyena/poochyena",
+        "shiny": "textures/pokemon/0261_poochyena/poochyena_shiny"
+      },
+      "geometry": {
+        "base": "geometry.poochyena.geo",
+        "shiny": "geometry.poochyena.geo"
+      },
+      "animations": {
+        "poochyenamodel.singlebonelook": "animation.poochyenamodel.singlebonelook",
+        "poochyena.ground_idle": "animation.poochyena.ground_idle",
+        "poochyenamodel.quadrupedwalkanimation": "animation.poochyenamodel.quadrupedwalkanimation",
+        "poochyena.blink": "animation.poochyena.blink",
+        "controller.animation.poochyena.blink": "controller.animation.poochyena.blink",
+        "controller.animation.cobblemon.poochyena": "controller.animation.cobblemon.poochyena"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.poochyena"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.poochyena.blink",
+          {
+            "controller.animation.cobblemon.poochyena": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_poochyena = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

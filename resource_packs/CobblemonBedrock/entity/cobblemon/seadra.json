@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:seadra",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0117_seadra/seadra",
+        "shiny": "textures/pokemon/0117_seadra/seadra_shiny"
+      },
+      "geometry": {
+        "base": "geometry.seadra.geo",
+        "shiny": "geometry.seadra.geo"
+      },
+      "animations": {
+        "seadramodel.singlebonelook": "animation.seadramodel.singlebonelook",
+        "seadra.ground_idle": "animation.seadra.ground_idle",
+        "seadra.ground_walk": "animation.seadra.ground_walk",
+        "seadra.water_idle": "animation.seadra.water_idle",
+        "seadra.water_swim": "animation.seadra.water_swim",
+        "seadra.blink": "animation.seadra.blink",
+        "controller.animation.seadra.blink": "controller.animation.seadra.blink",
+        "controller.animation.cobblemon.seadra": "controller.animation.cobblemon.seadra"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.seadra"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.seadra.blink",
+          {
+            "controller.animation.cobblemon.seadra": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_seadra = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

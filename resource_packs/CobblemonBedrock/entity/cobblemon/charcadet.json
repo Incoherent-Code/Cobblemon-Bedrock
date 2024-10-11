@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:charcadet",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0935_charcadet/charcadet",
+        "shiny": "textures/pokemon/0935_charcadet/charcadet_shiny"
+      },
+      "geometry": {
+        "base": "geometry.charcadet.geo",
+        "shiny": "geometry.charcadet.geo"
+      },
+      "animations": {
+        "charcadet.sleep": "animation.charcadet.sleep",
+        "charcadetmodel.singlebonelook": "animation.charcadetmodel.singlebonelook",
+        "charcadet.ground_idle": "animation.charcadet.ground_idle",
+        "charcadet.ground_walk": "animation.charcadet.ground_walk",
+        "charcadet.blink": "animation.charcadet.blink",
+        "controller.animation.charcadet.blink": "controller.animation.charcadet.blink",
+        "controller.animation.cobblemon.charcadet": "controller.animation.cobblemon.charcadet"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.charcadet"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.charcadet.blink",
+          {
+            "controller.animation.cobblemon.charcadet": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_charcadet = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

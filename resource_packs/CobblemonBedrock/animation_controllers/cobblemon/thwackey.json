@@ -1,0 +1,91 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.thwackey.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_thwackey_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_thwackey_blink = q.life_time + 1; return (q.life_time > v.next_quirk_thwackey_blink) && (v.state_of_thwackey == 0 || v.state_of_thwackey == 1 || v.state_of_thwackey == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "thwackey.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_thwackey_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_thwackey_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.thwackey": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "thwackeymodel.singlebonelook",
+            "thwackey.ground_idle",
+            "thwackey.standing.transform"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_thwackey = 0; return q.is_moving;"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "thwackeymodel.singlebonelook",
+            "thwackey.ground_walk",
+            "thwackey.walk.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_thwackey = 1; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "thwackeymodel.singlebonelook",
+            "thwackey.ground_idle",
+            "thwackey.battleidle.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_thwackey = 2; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

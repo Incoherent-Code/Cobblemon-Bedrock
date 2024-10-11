@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:grookey",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0810_grookey/grookey",
+        "shiny": "textures/pokemon/0810_grookey/grookey_shiny"
+      },
+      "geometry": {
+        "base": "geometry.grookey.geo",
+        "shiny": "geometry.grookey.geo"
+      },
+      "animations": {
+        "grookeymodel.singlebonelook": "animation.grookeymodel.singlebonelook",
+        "grookey.ground_idle": "animation.grookey.ground_idle",
+        "grookey.standing.transform": "animation.grookey.standing.transform",
+        "grookey.ground_walk": "animation.grookey.ground_walk",
+        "grookey.walk.transform": "animation.grookey.walk.transform",
+        "grookey.battle_idle": "animation.grookey.battle_idle",
+        "grookey.battleidle.transform": "animation.grookey.battleidle.transform",
+        "grookey.blink": "animation.grookey.blink",
+        "controller.animation.grookey.blink": "controller.animation.grookey.blink",
+        "controller.animation.cobblemon.grookey": "controller.animation.cobblemon.grookey"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.grookey"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.grookey.blink",
+          {
+            "controller.animation.cobblemon.grookey": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_grookey = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

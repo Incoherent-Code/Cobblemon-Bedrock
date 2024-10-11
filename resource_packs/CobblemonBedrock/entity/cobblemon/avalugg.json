@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:avalugg",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0713_avalugg/avalugg",
+        "shiny": "textures/pokemon/0713_avalugg/avalugg_shiny"
+      },
+      "geometry": {
+        "base": "geometry.avalugg.geo",
+        "shiny": "geometry.avalugg.geo"
+      },
+      "animations": {
+        "avalugg.sleep": "animation.avalugg.sleep",
+        "avaluggmodel.singlebonelook": "animation.avaluggmodel.singlebonelook",
+        "avalugg.ground_idle": "animation.avalugg.ground_idle",
+        "avalugg.ground_walk": "animation.avalugg.ground_walk",
+        "avalugg.water_idle": "animation.avalugg.water_idle",
+        "avalugg.water_surface_idle.transform": "animation.avalugg.water_surface_idle.transform",
+        "avalugg.water_swim": "animation.avalugg.water_swim",
+        "avalugg.water_surface_swim.transform": "animation.avalugg.water_surface_swim.transform",
+        "avalugg.battle_idle": "animation.avalugg.battle_idle",
+        "avalugg.blink": "animation.avalugg.blink",
+        "controller.animation.avalugg.blink": "controller.animation.avalugg.blink",
+        "controller.animation.cobblemon.avalugg": "controller.animation.cobblemon.avalugg"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.avalugg"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.avalugg.blink",
+          {
+            "controller.animation.cobblemon.avalugg": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_avalugg = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

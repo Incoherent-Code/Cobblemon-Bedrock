@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:rhyhorn",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0111_rhyhorn/rhyhorn",
+        "shiny": "textures/pokemon/0111_rhyhorn/rhyhorn_shiny"
+      },
+      "geometry": {
+        "base": "geometry.rhyhorn.geo",
+        "shiny": "geometry.rhyhorn.geo"
+      },
+      "animations": {
+        "rhyhornmodel.singlebonelook": "animation.rhyhornmodel.singlebonelook",
+        "rhyhornmodel.quadrupedwalkanimation": "animation.rhyhornmodel.quadrupedwalkanimation",
+        "controller.animation.cobblemon.rhyhorn": "controller.animation.cobblemon.rhyhorn"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.rhyhorn"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.rhyhorn": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_rhyhorn = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

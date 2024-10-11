@@ -1,0 +1,296 @@
+{
+  "minLevel": 28,
+  "maxLevel": 48,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 28,
+      "maxLevel": 48
+    }
+  },
+  "name": "Kingler",
+  "nationalPokedexNumber": 99,
+  "baseStats": {
+    "hp": 55,
+    "attack": 130,
+    "defence": 115,
+    "special_attack": 50,
+    "special_defence": 50,
+    "speed": 75
+  },
+  "maleRatio": 0.5,
+  "catchRate": 60,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 1.0,
+    "height": 1.0,
+    "fixed": false
+  },
+  "primaryType": "water",
+  "abilities": [
+    "hypercutter",
+    "shellarmor",
+    "h:sheerforce"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:bubble",
+    "1:hammerarm",
+    "1:harden",
+    "1:leer",
+    "1:metalclaw",
+    "1:mudsport",
+    "1:visegrip",
+    "1:watergun",
+    "1:wideguard",
+    "12:mudshot",
+    "16:protect",
+    "20:bubblebeam",
+    "24:stomp",
+    "31:flail",
+    "36:razorshell",
+    "42:slam",
+    "48:swordsdance",
+    "51:brine",
+    "54:crabhammer",
+    "60:guillotine",
+    "tm:agility",
+    "tm:allyswitch",
+    "tm:amnesia",
+    "tm:attract",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:brickbreak",
+    "tm:brine",
+    "tm:brutalswing",
+    "tm:captivate",
+    "tm:confide",
+    "tm:cut",
+    "tm:dig",
+    "tm:dive",
+    "tm:doubleteam",
+    "tm:endure",
+    "tm:facade",
+    "tm:falseswipe",
+    "tm:fling",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:hail",
+    "tm:hiddenpower",
+    "tm:highhorsepower",
+    "tm:honeclaws",
+    "tm:hydropump",
+    "tm:hyperbeam",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:irondefense",
+    "tm:liquidation",
+    "tm:mudshot",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:quash",
+    "tm:raindance",
+    "tm:razorshell",
+    "tm:rest",
+    "tm:return",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:scald",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:stompingtantrum",
+    "tm:strength",
+    "tm:substitute",
+    "tm:superpower",
+    "tm:surf",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:thief",
+    "tm:toxic",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tm:xscissor",
+    "tutor:agility",
+    "tutor:allyswitch",
+    "tutor:amnesia",
+    "tutor:ancientpower",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:blizzard",
+    "tutor:bodyslam",
+    "tutor:brickbreak",
+    "tutor:bubble",
+    "tutor:bubblebeam",
+    "tutor:crabhammer",
+    "tutor:curse",
+    "tutor:cut",
+    "tutor:dig",
+    "tutor:dive",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:frustration",
+    "tutor:furycutter",
+    "tutor:guillotine",
+    "tutor:harden",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:hyperbeam",
+    "tutor:icebeam",
+    "tutor:icywind",
+    "tutor:irondefense",
+    "tutor:knockoff",
+    "tutor:leer",
+    "tutor:liquidation",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:raindance",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:rockslide",
+    "tutor:rocksmash",
+    "tutor:scald",
+    "tutor:slam",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stomp",
+    "tutor:stompingtantrum",
+    "tutor:strength",
+    "tutor:substitute",
+    "tutor:superpower",
+    "tutor:surf",
+    "tutor:swagger",
+    "tutor:swordsdance",
+    "tutor:takedown",
+    "tutor:thief",
+    "tutor:toxic",
+    "tutor:visegrip",
+    "tutor:watergun",
+    "tutor:waterpulse",
+    "tutor:whirlpool",
+    "tutor:xscissor"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.1,
+        "canSwimInWater": false,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": true,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.kingler.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "cobblemon:kings_rock",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:pinap_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "water_3"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 13.0,
+  "weight": 600.0,
+  "forms": [
+    {
+      "name": "Gmax",
+      "baseStats": {
+        "hp": 55,
+        "attack": 130,
+        "defence": 115,
+        "special_attack": 50,
+        "special_defence": 50,
+        "speed": 75
+      },
+      "maleRatio": 0.5,
+      "catchRate": 60,
+      "experienceGroup": "medium_fast",
+      "baseExperienceYield": 166,
+      "baseFriendship": 50,
+      "primaryType": "water",
+      "evolutions": [],
+      "abilities": [
+        "hypercutter",
+        "shellarmor",
+        "h:sheerforce"
+      ],
+      "labels": [
+        "gen8",
+        "gmax"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "water_3"
+      ],
+      "height": 190.0,
+      "weight": 0.0,
+      "battleOnly": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:rattata",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0019_rattata/rattata",
+        "shiny": "textures/pokemon/0019_rattata/rattata_shiny",
+        "female": "textures/pokemon/0019_rattata/rattata",
+        "alolan": "textures/pokemon/0019_rattata/rattata_alolan",
+        "alolan_shiny": "textures/pokemon/0019_rattata/rattata_alolan_shiny"
+      },
+      "geometry": {
+        "base": "geometry.rattata_male.geo",
+        "shiny": "geometry.rattata_male.geo",
+        "female": "geometry.rattata_female.geo",
+        "alolan": "geometry.rattata_alolan.geo",
+        "alolan_shiny": "geometry.rattata_alolan.geo"
+      },
+      "animations": {
+        "rattata.sleep": "animation.rattata.sleep",
+        "rattatamodel.singlebonelook": "animation.rattatamodel.singlebonelook",
+        "rattata.ground_idle": "animation.rattata.ground_idle",
+        "rattata.ground_walk": "animation.rattata.ground_walk",
+        "rattata.blink": "animation.rattata.blink",
+        "controller.animation.rattata.blink": "controller.animation.rattata.blink",
+        "controller.animation.cobblemon.rattata": "controller.animation.cobblemon.rattata",
+        "rattata_alolan.sleep": "animation.rattata_alolan.sleep",
+        "rattataalolanmodel.singlebonelook": "animation.rattataalolanmodel.singlebonelook",
+        "rattata_alolan.ground_idle": "animation.rattata_alolan.ground_idle",
+        "rattata_alolan.ground_walk": "animation.rattata_alolan.ground_walk",
+        "rattata_alolan.blink": "animation.rattata_alolan.blink",
+        "controller.animation.rattata_alolan.blink": "controller.animation.rattata_alolan.blink",
+        "controller.animation.cobblemon.rattata_alolan": "controller.animation.cobblemon.rattata_alolan"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.rattata"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.rattata.blink",
+          {
+            "controller.animation.cobblemon.rattata": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          },
+          "controller.animation.rattata_alolan.blink",
+          {
+            "controller.animation.cobblemon.rattata_alolan": "q.variant == 3 || q.variant == 4"
+          }
+        ],
+        "initialize": [
+          "v.state_of_rattata = -1.0;",
+          "v.state_of_rattata_alolan = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

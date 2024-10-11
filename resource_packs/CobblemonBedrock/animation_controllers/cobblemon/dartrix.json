@@ -1,0 +1,65 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.dartrix": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "dartrix.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_dartrix = 0; return (q.is_moving && !q.is_swimming)|| q.is_swimming;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "flyidle": {
+          "animations": [
+            "dartrix.air_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_dartrix = 1; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "dartrix.air_fly"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_dartrix = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "dartrix.ground_idle",
+            "dartrixmodel.bipedwalkanimation"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_dartrix = 3; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

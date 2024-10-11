@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:crocalor",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0910_crocalor/crocalor",
+        "shiny": "textures/pokemon/0910_crocalor/crocalor_shiny",
+        "base_emissive": "textures/pokemon/0910_crocalor/crocalor_emissive",
+        "shiny_emissive": "textures/pokemon/0910_crocalor/crocalor_emissive"
+      },
+      "geometry": {
+        "base": "geometry.crocalor.geo",
+        "shiny": "geometry.crocalor.geo"
+      },
+      "animations": {
+        "crocalor.sleep": "animation.crocalor.sleep",
+        "crocalormodel.singlebonelook": "animation.crocalormodel.singlebonelook",
+        "crocalor.ground_idle": "animation.crocalor.ground_idle",
+        "crocalor.ground_walk": "animation.crocalor.ground_walk",
+        "crocalor.battle_idle": "animation.crocalor.battle_idle",
+        "crocalor.blink": "animation.crocalor.blink",
+        "controller.animation.crocalor.blink": "controller.animation.crocalor.blink",
+        "controller.animation.cobblemon.crocalor": "controller.animation.cobblemon.crocalor"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.crocalor_emissive",
+        "controller.render.cobblemon.crocalor"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.crocalor.blink",
+          {
+            "controller.animation.cobblemon.crocalor": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_crocalor = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

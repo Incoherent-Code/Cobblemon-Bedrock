@@ -1,0 +1,56 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:illumise",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0314_illumise/illumise",
+        "shiny": "textures/pokemon/0314_illumise/illumise_shiny",
+        "base_emissive": "textures/pokemon/0314_illumise/illumise_emissive",
+        "shiny_emissive": "textures/pokemon/0314_illumise/illumise_emissive"
+      },
+      "geometry": {
+        "base": "geometry.illumise.geo",
+        "shiny": "geometry.illumise.geo"
+      },
+      "animations": {
+        "illumise.sleep": "animation.illumise.sleep",
+        "illumisemodel.singlebonelook": "animation.illumisemodel.singlebonelook",
+        "illumise.ground_idle": "animation.illumise.ground_idle",
+        "illumise.air_idle": "animation.illumise.air_idle",
+        "illumise.air_fly": "animation.illumise.air_fly",
+        "illumise.ground_walk": "animation.illumise.ground_walk",
+        "illumise.battle_idle": "animation.illumise.battle_idle",
+        "illumise.blink": "animation.illumise.blink",
+        "controller.animation.illumise.blink": "controller.animation.illumise.blink",
+        "controller.animation.cobblemon.illumise": "controller.animation.cobblemon.illumise"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.illumise_emissive",
+        "controller.render.cobblemon.illumise"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.illumise.blink",
+          {
+            "controller.animation.cobblemon.illumise": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_illumise = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

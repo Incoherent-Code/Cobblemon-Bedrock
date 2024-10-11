@@ -1,0 +1,277 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.porygon.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "27.5+math.cos((query.anim_time-0.6) * 90 * 1) * 2",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "6+math.cos((query.anim_time) * 90 * 1) * 0.4",
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "40+math.cos((query.anim_time-0.2) * 90 * 1) * 1",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -2.0
+          ]
+        },
+        "pupil_left": {
+          "position": [
+            -0.225,
+            0.0,
+            0.0
+          ]
+        },
+        "pupil_closed_left": {
+          "position": [
+            0.1,
+            0.0,
+            0.0
+          ]
+        },
+        "pupil_right": {
+          "position": [
+            0.225,
+            0.0,
+            0.0
+          ]
+        },
+        "pupil_closed_right": {
+          "position": [
+            -0.1,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -52.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            -52.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "25+math.cos((query.anim_time-0.2) * 90 * 1) * -10",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            "25+math.cos((query.anim_time-0.2) * 90 * 1) * 10",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.porygonmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.porygon.ground_idle": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "12.5+(math.cos(q.anim_time*90*2+180)*10)*0.6",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "-2.5+math.clamp(math.sin(q.anim_time*90*3+270)*20,-8,20)-math.clamp(math.sin(q.anim_time*90*3+90)*20,0,20)",
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0.0,
+            "0+(math.cos(q.anim_time*90*2+180)*10)*0.6",
+            "0+(math.sin(q.anim_time*90*3+180)*4)*0.6"
+          ],
+          "position": [
+            0.0,
+            "11+(math.cos(q.anim_time*90*3+180)*6)*0.6",
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            0.0,
+            "0+(math.cos(q.anim_time*90*2+180)*10)*0.6",
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            "2.5+math.clamp(math.sin(q.anim_time*90*3+90)*20,-8,20)-math.clamp(math.sin(q.anim_time*90*3+270)*20,0,20)",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.porygon.ground_walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "27.5+math.cos((query.anim_time-0.3) * 90 * 4) * 2",
+            0.0,
+            "math.cos((query.anim_time-0.3) * 90 * 2) * 4"
+          ],
+          "position": [
+            0.0,
+            "8+math.cos((query.anim_time) * 90 * 4) * 2",
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "-7.5+math.cos((query.anim_time-0.5) * 90 * 4) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "17.5+math.cos((query.anim_time) * 90 * 4) * -20",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            "17.5+math.cos((query.anim_time) * 90 * 4) * 20",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.porygonz.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "pupil_left": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pupil_closed_left": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pupil_right": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pupil_closed_right": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

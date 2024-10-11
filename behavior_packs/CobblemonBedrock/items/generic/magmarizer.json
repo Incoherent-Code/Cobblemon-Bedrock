@@ -1,0 +1,25 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:magmarizer"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "magmarizer"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.magmarizer"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:evolution_items"
+        ]
+      }
+    }
+  }
+}

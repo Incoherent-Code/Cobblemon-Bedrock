@@ -1,0 +1,205 @@
+{
+  "minLevel": 33,
+  "maxLevel": 52,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 33,
+      "maxLevel": 52
+    },
+    "1": {
+      "minLevel": 33,
+      "maxLevel": 52
+    },
+    "2": {
+      "minLevel": 33,
+      "maxLevel": 52
+    }
+  },
+  "name": "Yanmega",
+  "nationalPokedexNumber": 469,
+  "baseStats": {
+    "hp": 86,
+    "attack": 76,
+    "defence": 86,
+    "special_attack": 116,
+    "special_defence": 56,
+    "speed": 95
+  },
+  "maleRatio": 0.5,
+  "catchRate": 30,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 1.6,
+    "height": 1.4,
+    "fixed": false
+  },
+  "primaryType": "bug",
+  "secondaryType": "flying",
+  "abilities": [
+    "speedboost",
+    "tintedlens",
+    "h:frisk"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:airslash",
+    "1:bugbite",
+    "1:bugbuzz",
+    "1:doubleteam",
+    "1:foresight",
+    "1:nightslash",
+    "1:quickattack",
+    "1:tackle",
+    "14:sonicboom",
+    "17:detect",
+    "22:supersonic",
+    "27:uproar",
+    "30:pursuit",
+    "33:ancientpower",
+    "38:feint",
+    "38:slash",
+    "43:screech",
+    "43:slash",
+    "46:screech",
+    "46:uturn",
+    "49:airslash",
+    "49:uturn",
+    "54:airslash",
+    "54:bugbuzz",
+    "57:bugbuzz",
+    "tm:aerialace",
+    "tm:attract",
+    "tm:captivate",
+    "tm:confide",
+    "tm:defog",
+    "tm:doubleteam",
+    "tm:dreameater",
+    "tm:endure",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:leechlife",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:psychic",
+    "tm:psychup",
+    "tm:rest",
+    "tm:return",
+    "tm:roost",
+    "tm:round",
+    "tm:secretpower",
+    "tm:shadowball",
+    "tm:silverwind",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:steelwing",
+    "tm:strugglebug",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:thief",
+    "tm:toxic",
+    "tm:uturn",
+    "tutor:aircutter",
+    "tutor:ancientpower",
+    "tutor:bugbite",
+    "tutor:defog",
+    "tutor:gigadrain",
+    "tutor:headbutt",
+    "tutor:laserfocus",
+    "tutor:mudslap",
+    "tutor:ominouswind",
+    "tutor:roost",
+    "tutor:signalbeam",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stringshot",
+    "tutor:swift",
+    "tutor:tailwind",
+    "tutor:uproar"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": true,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.yanmega.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:charti_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "bug"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 19.0,
+  "weight": 515.0
+}

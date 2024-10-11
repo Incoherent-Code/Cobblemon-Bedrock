@@ -1,0 +1,202 @@
+{
+  "minLevel": 28,
+  "maxLevel": 51,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 28,
+      "maxLevel": 51
+    }
+  },
+  "name": "Tsareena",
+  "nationalPokedexNumber": 763,
+  "baseStats": {
+    "hp": 72,
+    "attack": 120,
+    "defence": 98,
+    "special_attack": 50,
+    "special_defence": 98,
+    "speed": 72
+  },
+  "maleRatio": 0.0,
+  "catchRate": 45,
+  "baseScale": 0.6,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.9,
+    "height": 2.2,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "abilities": [
+    "leafguard",
+    "queenlymajesty",
+    "h:sweetveil"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:doubleslap",
+    "1:flail",
+    "1:playnice",
+    "1:powerwhip",
+    "1:punishment",
+    "1:rapidspin",
+    "1:razorleaf",
+    "1:splash",
+    "1:swagger",
+    "1:tropkick",
+    "16:sweetscent",
+    "22:magicalleaf",
+    "28:stomp",
+    "34:teeterdance",
+    "37:captivate",
+    "40:aromaticmist",
+    "46:aromatherapy",
+    "46:leafstorm",
+    "58:highjumpkick",
+    "tm:acrobatics",
+    "tm:attract",
+    "tm:bounce",
+    "tm:bulletseed",
+    "tm:charm",
+    "tm:confide",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:drainingkiss",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:fling",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:leafstorm",
+    "tm:lightscreen",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:magicalleaf",
+    "tm:megakick",
+    "tm:naturepower",
+    "tm:payback",
+    "tm:playrough",
+    "tm:powerwhip",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:solarblade",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swift",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:toxic",
+    "tm:trailblaze",
+    "tm:uturn",
+    "tm:zenheadbutt",
+    "tutor:bounce",
+    "tutor:covet",
+    "tutor:endeavor",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:helpinghand",
+    "tutor:knockoff",
+    "tutor:laserfocus",
+    "tutor:lowkick",
+    "tutor:seedbomb",
+    "tutor:snore",
+    "tutor:synthesis",
+    "tutor:tripleaxel",
+    "tutor:worryseed",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.tsareena.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:persim_berry",
+        "percentage": 10.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 12.0,
+  "weight": 214.0
+}

@@ -1,0 +1,235 @@
+{
+  "minLevel": 13,
+  "maxLevel": 38,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 13,
+      "maxLevel": 38
+    }
+  },
+  "name": "Nosepass",
+  "nationalPokedexNumber": 299,
+  "baseStats": {
+    "hp": 30,
+    "attack": 45,
+    "defence": 135,
+    "special_attack": 45,
+    "special_defence": 90,
+    "speed": 30
+  },
+  "maleRatio": 0.5,
+  "catchRate": 255,
+  "baseScale": 0.8,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 70,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.9,
+    "height": 1.35,
+    "fixed": false
+  },
+  "primaryType": "rock",
+  "abilities": [
+    "sturdy",
+    "magnetpull",
+    "h:sandforce"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:tackle",
+    "4:harden",
+    "7:block",
+    "10:rockthrow",
+    "13:thunderwave",
+    "16:rest",
+    "19:spark",
+    "22:rockslide",
+    "25:powergem",
+    "28:rockblast",
+    "31:discharge",
+    "34:sandstorm",
+    "37:earthpower",
+    "40:stoneedge",
+    "43:lockon",
+    "43:zapcannon",
+    "egg:block",
+    "egg:doubleedge",
+    "egg:endure",
+    "egg:explosion",
+    "egg:magnitude",
+    "egg:rollout",
+    "egg:stealthrock",
+    "egg:wideguard",
+    "tm:attract",
+    "tm:bulldoze",
+    "tm:captivate",
+    "tm:confide",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:explosion",
+    "tm:facade",
+    "tm:frustration",
+    "tm:hiddenpower",
+    "tm:naturalgift",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:rockpolish",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:rocktomb",
+    "tm:round",
+    "tm:sandstorm",
+    "tm:secretpower",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:smackdown",
+    "tm:stealthrock",
+    "tm:stoneedge",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:taunt",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:torment",
+    "tm:toxic",
+    "tm:voltswitch",
+    "tutor:ancientpower",
+    "tutor:block",
+    "tutor:bodyslam",
+    "tutor:defensecurl",
+    "tutor:doubleedge",
+    "tutor:dynamicpunch",
+    "tutor:earthpower",
+    "tutor:endure",
+    "tutor:explosion",
+    "tutor:firepunch",
+    "tutor:gravity",
+    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:icepunch",
+    "tutor:irondefense",
+    "tutor:magiccoat",
+    "tutor:magnetrise",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:painsplit",
+    "tutor:rockslide",
+    "tutor:rollout",
+    "tutor:selfdestruct",
+    "tutor:shockwave",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stealthrock",
+    "tutor:stompingtantrum",
+    "tutor:substitute",
+    "tutor:swagger",
+    "tutor:tackle",
+    "tutor:thunderbolt",
+    "tutor:thunderpunch",
+    "tutor:thunderwave"
+  ],
+  "evolutions": [
+    {
+      "id": "nosepass_probopass",
+      "variant": "item_interact",
+      "result": "probopass",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requiredContext": "cobblemon:thunder_stone",
+      "requirements": []
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.nosepass.desc"
+  ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:flint",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:hard_stone",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:magnet",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:chople_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 10.0,
+  "weight": 970.0
+}

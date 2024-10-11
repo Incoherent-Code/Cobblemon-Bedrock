@@ -1,0 +1,289 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.mareep.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mareep_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_mareep_blink = q.life_time + 1; return (q.life_time > v.next_quirk_mareep_blink) && (v.state_of_mareep == 2 || v.state_of_mareep == 3 || v.state_of_mareep == 4 || v.state_of_mareep == 5 || v.state_of_mareep == 6 || v.state_of_mareep == 7);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "mareep.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mareep_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_mareep_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.mareep": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "mareep.sleep",
+            "mareep.sleep.transform"
+          ],
+          "transitions": [
+            {
+              "shearedsleep": "v.state_of_mareep = 0; return (q.is_sleeping) && (q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedwalk": "(q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedbattleidle": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shearedsleep": {
+          "animations": [
+            "mareep.sleep",
+            "mareep.shearedsleep.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_mareep = 1; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedwalk": "(q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedbattleidle": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "mareepmodel.singlebonelook",
+            "mareep.ground_idle",
+            "mareep.standing.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_mareep = 2; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedwalk": "(q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedbattleidle": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "mareepmodel.singlebonelook",
+            "mareep.ground_walk",
+            "mareep.walk.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_mareep = 3; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedwalk": "(q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedbattleidle": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shearedstanding": {
+          "animations": [
+            "mareepmodel.singlebonelook",
+            "mareep.ground_idle",
+            "mareep.shearedstanding.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_mareep = 4; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedwalk": "(q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedbattleidle": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shearedwalk": {
+          "animations": [
+            "mareepmodel.singlebonelook",
+            "mareep.ground_walk",
+            "mareep.shearedwalk.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_mareep = 5; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedbattleidle": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "mareepmodel.singlebonelook",
+            "mareep.battle_idle",
+            "mareep.battleidle.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_mareep = 6; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedwalk": "(q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedbattleidle": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shearedbattleidle": {
+          "animations": [
+            "mareepmodel.singlebonelook",
+            "mareep.battle_idle",
+            "mareep.shearedbattleidle.transform"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_mareep = 7; return (q.is_sleeping) && (!q.property('cobblemon:has_been_sheared'));"
+            },
+            {
+              "shearedsleep": "(q.is_sleeping) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "shearedstanding": "(!q.is_moving) && (q.property('cobblemon:has_been_sheared') && !q.property('cobblemon:in_battle'))"
+            },
+            {
+              "shearedwalk": "(q.is_moving) && (q.property('cobblemon:has_been_sheared'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

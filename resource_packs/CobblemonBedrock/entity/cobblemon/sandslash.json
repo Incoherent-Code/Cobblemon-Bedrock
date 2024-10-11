@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:sandslash",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0028_sandslash/sandslash",
+        "shiny": "textures/pokemon/0028_sandslash/sandslash_shiny"
+      },
+      "geometry": {
+        "base": "geometry.sandslash.geo",
+        "shiny": "geometry.sandslash.geo"
+      },
+      "animations": {
+        "sandslashmodel.singlebonelook": "animation.sandslashmodel.singlebonelook",
+        "sandslash.ground_idle": "animation.sandslash.ground_idle",
+        "sandslash.sleep": "animation.sandslash.sleep",
+        "sandslash.ground_walk": "animation.sandslash.ground_walk",
+        "sandslash.blink": "animation.sandslash.blink",
+        "controller.animation.sandslash.blink": "controller.animation.sandslash.blink",
+        "controller.animation.cobblemon.sandslash": "controller.animation.cobblemon.sandslash"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.sandslash"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.sandslash.blink",
+          {
+            "controller.animation.cobblemon.sandslash": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_sandslash = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

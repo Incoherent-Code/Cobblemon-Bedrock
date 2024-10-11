@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:blissey",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0242_blissey/blissey",
+        "shiny": "textures/pokemon/0242_blissey/blissey_shiny"
+      },
+      "geometry": {
+        "base": "geometry.blissey.geo",
+        "shiny": "geometry.blissey.geo"
+      },
+      "animations": {
+        "blissey.ground_idle": "animation.blissey.ground_idle",
+        "blisseymodel.bipedwalkanimation": "animation.blisseymodel.bipedwalkanimation",
+        "blisseymodel.bimanualswinganimation": "animation.blisseymodel.bimanualswinganimation",
+        "controller.animation.cobblemon.blissey": "controller.animation.cobblemon.blissey"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.blissey"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.blissey": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_blissey = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

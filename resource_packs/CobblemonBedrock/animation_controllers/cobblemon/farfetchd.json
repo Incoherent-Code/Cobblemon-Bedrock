@@ -1,0 +1,267 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.farfetchd.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_farfetchd_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_farfetchd_blink = q.life_time + 1; return (q.life_time > v.next_quirk_farfetchd_blink) && (v.state_of_farfetchd == 1 || v.state_of_farfetchd == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "farfetchd.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_farfetchd_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_farfetchd_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.farfetchd.leakflipidle": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_farfetchd_leakflipidle = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_farfetchd_leakflipidle = q.life_time + 1; return (q.life_time > v.next_quirk_farfetchd_leakflipidle) && (v.state_of_farfetchd == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "farfetchd.quirk_leakflip_idle"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_farfetchd_leakflipidle = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_farfetchd_leakflipidle ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.farfetchd.leakflipwalk": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_farfetchd_leakflipwalk = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_farfetchd_leakflipwalk = q.life_time + 1; return (q.life_time > v.next_quirk_farfetchd_leakflipwalk) && (v.state_of_farfetchd == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "farfetchd.quirk_leakflip_walk"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_farfetchd_leakflipwalk = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_farfetchd_leakflipwalk ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.farfetchd.wink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_farfetchd_wink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_farfetchd_wink = q.life_time + 1; return (q.life_time > v.next_quirk_farfetchd_wink) && (v.state_of_farfetchd == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "farfetchd.quirk_wink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_farfetchd_wink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_farfetchd_wink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.farfetchd": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "farfetchd.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_farfetchd = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "farfetchdmodel.singlebonelook",
+            "farfetchd.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_farfetchd = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "farfetchdmodel.singlebonelook",
+            "farfetchd.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_farfetchd = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "farfetchd.air_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_farfetchd = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "farfetchd.air_fly"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_farfetchd = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)|| q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.farfetchd_galarian.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_farfetchd_galarian_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_farfetchd_galarian_blink = q.life_time + 1; return (q.life_time > v.next_quirk_farfetchd_galarian_blink) && (v.state_of_farfetchd_galarian == 0 || v.state_of_farfetchd_galarian == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "farfetchd_galar.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_farfetchd_galarian_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_farfetchd_galarian_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.farfetchd_galarian": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "farfetchdgalarianmodel.singlebonelook",
+            "farfetchd_galar.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_farfetchd_galarian = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "farfetchdgalarianmodel.singlebonelook",
+            "farfetchd_galar.ground_idle",
+            "farfetchdgalarianmodel.bipedwalkanimation"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_farfetchd_galarian = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

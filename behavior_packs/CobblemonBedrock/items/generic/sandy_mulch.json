@@ -1,0 +1,23 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:sandy_mulch"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "sandy_mulch"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.sandy_mulch"
+      },
+      "minecraft:tags": {
+        "tags": []
+      }
+    }
+  }
+}

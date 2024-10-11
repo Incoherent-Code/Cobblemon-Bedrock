@@ -1,0 +1,62 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:zubat",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0041_zubat/zubat",
+        "shiny": "textures/pokemon/0041_zubat/zubat_shiny",
+        "female": "textures/pokemon/0041_zubat/zubat"
+      },
+      "geometry": {
+        "base": "geometry.zubat_male.geo",
+        "shiny": "geometry.zubat_male.geo",
+        "female": "geometry.zubat_female.geo"
+      },
+      "animations": {
+        "zubat.sleep": "animation.zubat.sleep",
+        "zubat.sleep.transform": "animation.zubat.sleep.transform",
+        "zubat.ground_idle": "animation.zubat.ground_idle",
+        "zubat.standing.transform": "animation.zubat.standing.transform",
+        "zubat.ground_walk": "animation.zubat.ground_walk",
+        "zubat.walk.transform": "animation.zubat.walk.transform",
+        "zubat.air_idle": "animation.zubat.air_idle",
+        "zubat.hover.transform": "animation.zubat.hover.transform",
+        "zubat.air_fly": "animation.zubat.air_fly",
+        "zubat.fly.transform": "animation.zubat.fly.transform",
+        "zubat.shoulder_left": "animation.zubat.shoulder_left",
+        "zubat.shoulderleft.transform": "animation.zubat.shoulderleft.transform",
+        "zubat.shoulder_right": "animation.zubat.shoulder_right",
+        "zubat.shoulderright.transform": "animation.zubat.shoulderright.transform",
+        "zubat.eartwitch": "animation.zubat.eartwitch",
+        "controller.animation.zubat.twitch": "controller.animation.zubat.twitch",
+        "controller.animation.cobblemon.zubat": "controller.animation.cobblemon.zubat"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.zubat"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.zubat.twitch",
+          {
+            "controller.animation.cobblemon.zubat": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_zubat = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

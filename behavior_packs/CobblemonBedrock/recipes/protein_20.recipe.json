@@ -1,0 +1,64 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "cobblemon:medicinal_brew"
+      },
+      {
+        "item": "minecraft:rabbit"
+      },
+      {
+        "item": "minecraft:beef"
+      },
+      {
+        "item": "cobblemon:kelpsy_berry"
+      },
+      {
+        "item": "cobblemon:kelpsy_berry"
+      },
+      {
+        "item": "cobblemon:red_mint_leaf"
+      },
+      {
+        "item": "cobblemon:red_mint_leaf"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "cobblemon:medicinal_brew"
+      },
+      {
+        "item": "minecraft:rabbit"
+      },
+      {
+        "item": "minecraft:beef"
+      },
+      {
+        "item": "cobblemon:kelpsy_berry"
+      },
+      {
+        "item": "cobblemon:kelpsy_berry"
+      },
+      {
+        "item": "cobblemon:red_mint_leaf"
+      },
+      {
+        "item": "cobblemon:red_mint_leaf"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:protein"
+    },
+    "description": {
+      "identifier": "cobblemon:protein_20"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

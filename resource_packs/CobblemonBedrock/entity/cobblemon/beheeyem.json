@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:beheeyem",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0606_beheeyem/beheeyem",
+        "shiny": "textures/pokemon/0606_beheeyem/beheeyem_shiny",
+        "base_color_uv": "textures/pokemon/0606_beheeyem/base_color_uv",
+        "shiny_shiny_color_uv": "textures/pokemon/0606_beheeyem/shiny_shiny_color_uv",
+        "shiny_color_uv": "textures/pokemon/0606_beheeyem/shiny_color_uv"
+      },
+      "geometry": {
+        "base": "geometry.beheeyem.geo",
+        "shiny": "geometry.beheeyem.geo"
+      },
+      "animations": {
+        "beheeyem.sleep": "animation.beheeyem.sleep",
+        "beheeyemmodel.singlebonelook": "animation.beheeyemmodel.singlebonelook",
+        "beheeyem.ground_idle": "animation.beheeyem.ground_idle",
+        "beheeyem.ground_walk": "animation.beheeyem.ground_walk",
+        "controller.animation.cobblemon.beheeyem": "controller.animation.cobblemon.beheeyem"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.beheeyem_color",
+        "controller.render.cobblemon.beheeyem_shiny_color",
+        "controller.render.cobblemon.beheeyem"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.beheeyem": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_beheeyem = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

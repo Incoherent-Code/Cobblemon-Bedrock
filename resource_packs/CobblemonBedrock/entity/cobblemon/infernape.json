@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:infernape",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0392_infernape/infernape",
+        "shiny": "textures/pokemon/0392_infernape/infernape_shiny",
+        "base_emissive": "textures/pokemon/0392_infernape/infernape_emissive",
+        "shiny_emissive": "textures/pokemon/0392_infernape/infernape_emissive"
+      },
+      "geometry": {
+        "base": "geometry.infernape.geo",
+        "shiny": "geometry.infernape.geo"
+      },
+      "animations": {
+        "infernapemodel.singlebonelook": "animation.infernapemodel.singlebonelook",
+        "infernape.ground_idle": "animation.infernape.ground_idle",
+        "infernape.ground_walk": "animation.infernape.ground_walk",
+        "infernape.blink": "animation.infernape.blink",
+        "controller.animation.infernape.blink": "controller.animation.infernape.blink",
+        "controller.animation.cobblemon.infernape": "controller.animation.cobblemon.infernape"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.infernape_emissive",
+        "controller.render.cobblemon.infernape"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.infernape.blink",
+          {
+            "controller.animation.cobblemon.infernape": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_infernape = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

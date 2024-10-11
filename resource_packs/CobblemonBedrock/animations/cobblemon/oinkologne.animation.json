@@ -1,0 +1,232 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.oinkolognemodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.oinkologne.ground_idle": {
+      "loop": true,
+      "bones": {
+        "tail": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail6": {
+          "rotation": [
+            42.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ear_left": {
+          "rotation": [
+            70.0,
+            -17.5,
+            0.0
+          ]
+        },
+        "ear_left2": {
+          "rotation": [
+            72.5,
+            0.0,
+            0.0
+          ]
+        },
+        "ear_right": {
+          "rotation": [
+            70.0,
+            17.5,
+            0.0
+          ]
+        },
+        "ear_right2": {
+          "rotation": [
+            72.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail7": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_finger1": {
+          "rotation": [
+            0.0,
+            -10.0,
+            0.0
+          ]
+        },
+        "tail_finger1_2": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_finger2_2": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail_finger3": {
+          "rotation": [
+            0.0,
+            10.0,
+            0.0
+          ]
+        },
+        "tail_finger3_2": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.oinkolognemodel.quadrupedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "leg_back_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.75) * 1 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_back_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.75 + 180) *  1 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_front_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.75 + 180) * 1 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_front_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.75) * 1 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.oinkologne.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_half_left": {
+          "position": {
+            "0.125": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_half_right": {
+          "position": {
+            "0.125": [
+              0.0,
+              0.0,
+              0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

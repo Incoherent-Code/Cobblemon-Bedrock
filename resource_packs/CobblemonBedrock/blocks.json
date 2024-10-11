@@ -1,0 +1,49 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "cobblemon:black_apricorn_block": {
+    "sound": "wood"
+  },
+  "cobblemon:blue_apricorn_block": {
+    "sound": "wood"
+  },
+  "cobblemon:green_apricorn_block": {
+    "sound": "wood"
+  },
+  "cobblemon:pink_apricorn_block": {
+    "sound": "wood"
+  },
+  "cobblemon:red_apricorn_block": {
+    "sound": "wood"
+  },
+  "cobblemon:white_apricorn_block": {
+    "sound": "wood"
+  },
+  "cobblemon:yellow_apricorn_block": {
+    "sound": "wood"
+  },
+  "cobblemon:apricorn_planks": {
+    "sound": "wood"
+  },
+  "cobblemon:apricorn_log": {
+    "sound": "wood"
+  },
+  "cobblemon:stripped_apricorn_log": {
+    "sound": "wood"
+  },
+  "cobblemon:apricorn_leaves": {
+    "sound": "grass"
+  },
+  "cobblemon:apricorn_wood": {
+    "sound": "wood"
+  },
+  "cobblemon:stripped_apricorn_wood": {
+    "sound": "wood"
+  },
+  "cobblemon:apricorn_slab": {
+    "sound": "wood"
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "minLevel": 20,
+  "maxLevel": 42,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ],
+    "2": [
+      "galarian"
+    ],
+    "3": [
+      "shiny",
+      "galarian"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 20,
+      "maxLevel": 42
+    },
+    "1": {
+      "minLevel": 20,
+      "maxLevel": 42
+    }
+  },
+  "name": "Linoone",
+  "nationalPokedexNumber": 264,
+  "baseStats": {
+    "hp": 78,
+    "attack": 70,
+    "defence": 61,
+    "special_attack": 50,
+    "special_defence": 61,
+    "speed": 100
+  },
+  "maleRatio": 0.5,
+  "catchRate": 90,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.5,
+    "fixed": false
+  },
+  "primaryType": "normal",
+  "abilities": [
+    "pickup",
+    "gluttony",
+    "h:quickfeet"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:babydolleyes",
+    "1:growl",
+    "1:pinmissile",
+    "1:playrough",
+    "1:rototiller",
+    "1:sandattack",
+    "1:switcheroo",
+    "1:tackle",
+    "1:tailwhip",
+    "9:covet",
+    "12:headbutt",
+    "13:odorsleuth",
+    "15:honeclaws",
+    "17:mudsport",
+    "18:furyswipes",
+    "23:rest",
+    "27:bestow",
+    "28:takedown",
+    "32:slash",
+    "33:fling",
+    "38:flail",
+    "43:bellydrum",
+    "48:doubleedge",
+    "tm:attract",
+    "tm:blizzard",
+    "tm:bodyslam",
+    "tm:captivate",
+    "tm:chargebeam",
+    "tm:charm",
+    "tm:confide",
+    "tm:cut",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:facade",
+    "tm:fling",
+    "tm:frustration",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:gunkshot",
+    "tm:helpinghand",
+    "tm:hiddenpower",
+    "tm:honeclaws",
+    "tm:hyperbeam",
+    "tm:hypervoice",
+    "tm:icebeam",
+    "tm:icywind",
+    "tm:irontail",
+    "tm:mudshot",
+    "tm:naturalgift",
+    "tm:pinmissile",
+    "tm:playrough",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:return",
+    "tm:roar",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:secretpower",
+    "tm:seedbomb",
+    "tm:shadowball",
+    "tm:shadowclaw",
+    "tm:shockwave",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:stompingtantrum",
+    "tm:strength",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:surf",
+    "tm:swagger",
+    "tm:swift",
+    "tm:tailslap",
+    "tm:thief",
+    "tm:throatchop",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:trick",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tm:workup",
+    "tutor:babydolleyes",
+    "tutor:bodyslam",
+    "tutor:covet",
+    "tutor:defensecurl",
+    "tutor:doubleedge",
+    "tutor:endure",
+    "tutor:extremespeed",
+    "tutor:furycutter",
+    "tutor:gunkshot",
+    "tutor:headbutt",
+    "tutor:helpinghand",
+    "tutor:hypervoice",
+    "tutor:icywind",
+    "tutor:irontail",
+    "tutor:lastresort",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:protect",
+    "tutor:rollout",
+    "tutor:seedbomb",
+    "tutor:shockwave",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:stompingtantrum",
+    "tutor:substitute",
+    "tutor:superfang",
+    "tutor:swagger",
+    "tutor:swift",
+    "tutor:throatchop",
+    "tutor:thunderwave",
+    "tutor:trick",
+    "tutor:waterpulse"
+  ],
+  "evolutions": [],
+  "features": [
+    "galarian"
+  ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.31
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.linoone.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:oran_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 15,
+  "eggGroups": [
+    "field"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 5.0,
+  "weight": 325.0,
+  "forms": [
+    {
+      "name": "Galar",
+      "baseStats": {
+        "hp": 78,
+        "attack": 70,
+        "defence": 61,
+        "special_attack": 50,
+        "special_defence": 61,
+        "speed": 100
+      },
+      "maleRatio": 0.5,
+      "catchRate": 90,
+      "experienceGroup": "medium_fast",
+      "baseExperienceYield": 147,
+      "baseFriendship": 50,
+      "primaryType": "dark",
+      "secondaryType": "normal",
+      "moves": [
+        "1:babydolleyes",
+        "1:leer",
+        "1:lick",
+        "1:pinmissile",
+        "1:sandattack",
+        "1:switcheroo",
+        "1:tackle",
+        "9:snarl",
+        "12:headbutt",
+        "15:honeclaws",
+        "18:furyswipes",
+        "23:rest",
+        "28:takedown",
+        "33:scaryface",
+        "38:counter",
+        "43:taunt",
+        "48:doubleedge",
+        "tm:assurance",
+        "tm:attract",
+        "tm:blizzard",
+        "tm:bodypress",
+        "tm:bodyslam",
+        "tm:dig",
+        "tm:endure",
+        "tm:facade",
+        "tm:faketears",
+        "tm:fling",
+        "tm:gigaimpact",
+        "tm:grassknot",
+        "tm:gunkshot",
+        "tm:helpinghand",
+        "tm:hyperbeam",
+        "tm:hypervoice",
+        "tm:icebeam",
+        "tm:icywind",
+        "tm:irontail",
+        "tm:mudshot",
+        "tm:payback",
+        "tm:pinmissile",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:retaliate",
+        "tm:round",
+        "tm:scaryface",
+        "tm:screech",
+        "tm:seedbomb",
+        "tm:shadowball",
+        "tm:shadowclaw",
+        "tm:sleeptalk",
+        "tm:snarl",
+        "tm:snore",
+        "tm:stompingtantrum",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:surf",
+        "tm:swift",
+        "tm:taunt",
+        "tm:thief",
+        "tm:throatchop",
+        "tm:thunder",
+        "tm:thunderbolt",
+        "tm:thunderwave",
+        "tm:trick",
+        "tm:whirlpool",
+        "tm:workup",
+        "tutor:lashout"
+      ],
+      "evolutions": [
+        {
+          "id": "linoone_obstagoon",
+          "variant": "level_up",
+          "result": "obstagoon",
+          "optional": true,
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 35
+            },
+            {
+              "variant": "time_range",
+              "range": "night"
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        "pickup",
+        "gluttony",
+        "h:quickfeet"
+      ],
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "item": "cobblemon:chople_berry",
+            "percentage": 5.0
+          }
+        ]
+      },
+      "preEvolution": "zigzagoon form=galar",
+      "labels": [
+        "gen8",
+        "galar_regional"
+      ],
+      "cannotDynamax": false,
+      "eggGroups": [
+        "field"
+      ],
+      "height": 5.0,
+      "weight": 325.0,
+      "battleOnly": false
+    }
+  ]
+}

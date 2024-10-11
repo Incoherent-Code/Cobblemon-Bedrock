@@ -1,0 +1,321 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.poliwag.ground_idle": {
+      "loop": true,
+      "bones": {
+        "tail1": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.poliwag.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            -1.75,
+            0.0
+          ]
+        },
+        "eyelids": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            -56.86824,
+            13.96782,
+            -1.24205
+          ],
+          "position": [
+            0.0,
+            0.25,
+            -0.75
+          ]
+        },
+        "foot_right1": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right2": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            -27.43103,
+            -15.68951,
+            1.9062
+          ],
+          "position": [
+            0.0,
+            0.5,
+            -0.75
+          ]
+        },
+        "foot_left1": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left2": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail1": {
+          "rotation": [
+            -0.16127,
+            25.11621,
+            5.5184
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            12.30936,
+            7.61658,
+            -1.09051
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -0.35
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            10.0,
+            7.5,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -0.5
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        }
+      }
+    },
+    "animation.poliwag.water_idle": {
+      "loop": true,
+      "bones": {
+        "tail1": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right1": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left1": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.poliwag.water_swim": {
+      "loop": true,
+      "bones": {
+        "tail1": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right1": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left1": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.poliwag.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1534 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.glimmora.sleep": {
+      "loop": true,
+      "bones": {
+        "frontpetal_top_rotation": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top2": {
+          "rotation": [
+            "-75+math.cos((query.anim_time) * 90 * 1) * 1",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top3": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top4": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left_rotation": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left2": {
+          "rotation": [
+            "-65+math.cos((query.anim_time) * 90 * 1) * 1",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left3": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left4": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right2": {
+          "rotation": [
+            "-65+math.cos((query.anim_time) * 90 * 1) * 1",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right3": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right4": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom2": {
+          "rotation": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom3": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom4": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left2": {
+          "rotation": [
+            63.21865,
+            "20.2935+math.cos((query.anim_time) * 90 * 1 - 90) * 1",
+            -9.92926
+          ]
+        },
+        "frontpetal_bottom_left3": {
+          "rotation": [
+            29.40842,
+            -6.21271,
+            10.86815
+          ]
+        },
+        "frontpetal_bottom_left4": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right2": {
+          "rotation": [
+            63.21865,
+            "-20.2935+math.cos((query.anim_time) * 90 * 1 - 90) * 1",
+            9.92926
+          ]
+        },
+        "frontpetal_bottom_right3": {
+          "rotation": [
+            29.40842,
+            6.21271,
+            -10.86815
+          ]
+        },
+        "frontpetal_bottom_right4": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ]
+        },
+        "midpetal_top_left_rotation": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left2": {
+          "rotation": [
+            -54.76837,
+            6.13784,
+            4.31837
+          ]
+        },
+        "midpetal_top_left3": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left4": {
+          "rotation": [
+            -10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right4": {
+          "rotation": [
+            -10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right3": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right2": {
+          "rotation": [
+            -54.76837,
+            -6.13784,
+            -4.31837
+          ]
+        },
+        "midpetal_top_right_rotation": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -7.5
+          ]
+        },
+        "midpetal_bottom_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            -7.5
+          ]
+        },
+        "midpetal_bottom_left_rotation": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left2": {
+          "rotation": [
+            55.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left3": {
+          "rotation": [
+            26.94078,
+            20.52869,
+            15.28676
+          ]
+        },
+        "midpetal_bottom_left4": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ]
+        },
+        "midpetal_bottom_right_rotation": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right2": {
+          "rotation": [
+            55.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right3": {
+          "rotation": [
+            26.94078,
+            -20.52869,
+            -15.28676
+          ]
+        },
+        "midpetal_bottom_right4": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_bottom_rotation": {
+          "rotation": [
+            77.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_bottom2": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_left_rotation": {
+          "rotation": [
+            -77.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_left2": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_right_rotation": {
+          "rotation": [
+            -77.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_right2": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right_rotation": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_rotation": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left_rotation": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right_rotation": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            "-7.5+math.cos((query.anim_time) * 90 * 1 - 90) * -0.5",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "-9+math.cos((query.anim_time) * 90 * 1) * 0.2",
+            0.0
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        }
+      }
+    },
+    "animation.glimmora.ground_idle": {
+      "loop": true,
+      "bones": {
+        "frontpetal_top_rotation": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top2": {
+          "rotation": [
+            "-65+math.cos((query.anim_time) * 90 * 1 - 120) * 2",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top3": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top4": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left_rotation": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left2": {
+          "rotation": [
+            "-65+math.cos((query.anim_time) * 90 * 1 - 120) * 2",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left3": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left4": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right2": {
+          "rotation": [
+            "-65+math.cos((query.anim_time) * 90 * 1 - 120) * 2",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right3": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right4": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom2": {
+          "rotation": [
+            "65+math.cos((query.anim_time) * 90 * 1 - 120) * -2",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom3": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom4": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left2": {
+          "rotation": [
+            "65+math.cos((query.anim_time) * 90 * 1 - 120) * -2",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left3": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left4": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right2": {
+          "rotation": [
+            "65+math.cos((query.anim_time) * 90 * 1 - 120) * -2",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right3": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right4": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ]
+        },
+        "midpetal_top_left_rotation": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left2": {
+          "rotation": [
+            "-55+math.cos((query.anim_time) * 90 * 1 - 160) * 1",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left3": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left4": {
+          "rotation": [
+            "-5+math.cos((query.anim_time)*90*1-160)*-8",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right4": {
+          "rotation": [
+            "-5+math.cos((query.anim_time)*90*1-160)*-8",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right3": {
+          "rotation": [
+            -35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right2": {
+          "rotation": [
+            "-55+math.cos((query.anim_time) * 90 * 1 - 160) * 1",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right_rotation": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -7.5
+          ]
+        },
+        "midpetal_bottom_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            -7.5
+          ]
+        },
+        "midpetal_bottom_left_rotation": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left2": {
+          "rotation": [
+            "55+math.cos((query.anim_time) * 90 * 1 - 160) * -1",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left3": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left4": {
+          "rotation": [
+            "5+math.cos((query.anim_time)*90*1-160)*8",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ]
+        },
+        "midpetal_bottom_right_rotation": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right2": {
+          "rotation": [
+            "55+math.cos((query.anim_time) * 90 * 1 - 160) * -1",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right3": {
+          "rotation": [
+            35.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right4": {
+          "rotation": [
+            "5+math.cos((query.anim_time)*90*1-160)*8",
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_bottom_rotation": {
+          "rotation": [
+            77.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_bottom2": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_left_rotation": {
+          "rotation": [
+            -77.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_left2": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_right_rotation": {
+          "rotation": [
+            -77.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_right2": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right_rotation": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_rotation": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left_rotation": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right_rotation": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            "0+math.cos((query.anim_time) * 90 * 1 - 90) * -2",
+            0.0,
+            "0+math.cos((query.anim_time) * 90 * 1/2) * -2"
+          ],
+          "position": [
+            0.0,
+            "0+math.cos((query.anim_time) * 90 * 1) * 0.5",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.glimmora.ground_walk": {
+      "loop": true,
+      "bones": {
+        "frontpetal_top_rotation": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top2": {
+          "rotation": [
+            "-65+math.cos((query.anim_time) * 90 * 4 - 150) * 3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top3": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top4": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left_rotation": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left2": {
+          "rotation": [
+            "-65+math.cos((query.anim_time) * 90 * 4 - 150) * 3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left3": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left4": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right2": {
+          "rotation": [
+            "-65+math.cos((query.anim_time) * 90 * 4 - 150) * 3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right3": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right4": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom2": {
+          "rotation": [
+            "65+math.cos((query.anim_time) * 90 * 4 - 150) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom3": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom4": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left2": {
+          "rotation": [
+            "65+math.cos((query.anim_time) * 90 * 4 - 150) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left3": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left4": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right2": {
+          "rotation": [
+            "65+math.cos((query.anim_time) * 90 * 4 - 150) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right3": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right4": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ]
+        },
+        "midpetal_top_left_rotation": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left2": {
+          "rotation": [
+            "-55+math.cos((query.anim_time) * 90 * 4 - 180) * 2",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left3": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left4": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right4": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right3": {
+          "rotation": [
+            -32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right2": {
+          "rotation": [
+            "-55+math.cos((query.anim_time) * 90 * 4 - 180) * 2",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right_rotation": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -7.5
+          ]
+        },
+        "midpetal_bottom_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            -7.5
+          ]
+        },
+        "midpetal_bottom_left_rotation": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left2": {
+          "rotation": [
+            "55+math.cos((query.anim_time) * 90 * 4 - 180) * -2",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left3": {
+          "rotation": [
+            32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left4": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ]
+        },
+        "midpetal_bottom_right_rotation": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right2": {
+          "rotation": [
+            "55+math.cos((query.anim_time) * 90 * 4 - 180) * -2",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right3": {
+          "rotation": [
+            32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right4": {
+          "rotation": [
+            2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_bottom_rotation": {
+          "rotation": [
+            77.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_bottom2": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_left_rotation": {
+          "rotation": [
+            -77.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_left2": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_right_rotation": {
+          "rotation": [
+            -77.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_right2": {
+          "rotation": [
+            -25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right_rotation": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_rotation": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left_rotation": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right_rotation": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            "0+math.cos((query.anim_time) * 90 * 4 - 90) * 4",
+            0.0,
+            "0+math.cos((query.anim_time) * 90 * 2 - 45) * -3"
+          ],
+          "position": [
+            0.0,
+            "0+math.cos((query.anim_time) * 90 * 4) * 0.5",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.glimmora.battle_idle": {
+      "loop": true,
+      "bones": {
+        "frontpetal_top": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_rotation": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top2": {
+          "rotation": [
+            "-30+math.cos((query.anim_time) * 90 * 2 - 120) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top3": {
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top4": {
+          "rotation": [
+            -27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left_rotation": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left2": {
+          "rotation": [
+            "-30+math.cos((query.anim_time) * 90 * 2 - 120) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left3": {
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_left4": {
+          "rotation": [
+            -27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            "0+math.cos((query.anim_time) * 90 * 2 - 90) * -2",
+            0.0,
+            "0+math.cos((query.anim_time) * 90 * 1 - 45) * 5"
+          ],
+          "position": [
+            0.0,
+            "11+math.cos((query.anim_time) * 90 * 2) * 0.8",
+            0.0
+          ]
+        },
+        "frontpetal_top_right_rotation": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right2": {
+          "rotation": [
+            "-30+math.cos((query.anim_time) * 90 * 2 - 120) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right3": {
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_top_right4": {
+          "rotation": [
+            -27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_rotation": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom2": {
+          "rotation": [
+            "30+math.cos((query.anim_time) * 90 * 2 - 120) * 3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom3": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom4": {
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left_rotation": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left2": {
+          "rotation": [
+            "30+math.cos((query.anim_time) * 90 * 2 - 120) * 3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left3": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_left4": {
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right_rotation": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right2": {
+          "rotation": [
+            "30+math.cos((query.anim_time) * 90 * 2 - 120) * 3",
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right3": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "frontpetal_bottom_right4": {
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left_rotation": {
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left2": {
+          "rotation": [
+            "-17.5+math.cos((query.anim_time) * 90 * 2 - 160) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left3": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_left4": {
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right_rotation": {
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right2": {
+          "rotation": [
+            "-17.5+math.cos((query.anim_time) * 90 * 2 - 160) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right3": {
+          "rotation": [
+            -20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_top_right4": {
+          "rotation": [
+            -12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left_rotation": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left2": {
+          "rotation": [
+            "17.5+math.cos((query.anim_time) * 90 * 2 - 160) * 3",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left3": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_left4": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right_rotation": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right2": {
+          "rotation": [
+            "17.5+math.cos((query.anim_time) * 90 * 2 - 160) * 3",
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right3": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "midpetal_bottom_right4": {
+          "rotation": [
+            12.5,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_bottom2": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_bottom_rotation": {
+          "rotation": [
+            "50+math.cos((query.anim_time) * 90 * 2 - 200) * 3",
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_left_rotation": {
+          "rotation": [
+            "-50+math.cos((query.anim_time) * 90 * 2 - 200) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_left2": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_right_rotation": {
+          "rotation": [
+            "-50+math.cos((query.anim_time) * 90 * 2 - 200) * -3",
+            0.0,
+            0.0
+          ]
+        },
+        "backpetal_top_right2": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.glimmora.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

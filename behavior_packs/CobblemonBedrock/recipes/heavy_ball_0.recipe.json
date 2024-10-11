@@ -1,0 +1,58 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " t ",
+      "lcr",
+      " b "
+    ],
+    "key": {
+      "t": {
+        "item": "cobblemon:black_apricorn"
+      },
+      "l": {
+        "item": "cobblemon:blue_apricorn"
+      },
+      "c": {
+        "item": "minecraft:iron_ingot"
+      },
+      "r": {
+        "item": "cobblemon:blue_apricorn"
+      },
+      "b": {
+        "item": "cobblemon:black_apricorn"
+      }
+    },
+    "unlock": [
+      {
+        "item": "cobblemon:black_apricorn"
+      },
+      {
+        "item": "cobblemon:blue_apricorn"
+      },
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "cobblemon:blue_apricorn"
+      },
+      {
+        "item": "cobblemon:black_apricorn"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:heavy_ball",
+      "count": 4
+    },
+    "description": {
+      "identifier": "cobblemon:heavy_ball_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

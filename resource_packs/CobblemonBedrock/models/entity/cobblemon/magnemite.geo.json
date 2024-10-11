@@ -1,0 +1,453 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.magnemite.geo",
+        "texture_width": 64,
+        "texture_height": 32,
+        "visible_bounds_width": 3.0,
+        "visible_bounds_height": 2.5,
+        "visible_bounds_offset": [
+          0.0,
+          0.75,
+          0.0
+        ]
+      },
+      "bones": [
+        {
+          "name": "magnemite",
+          "pivot": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "body",
+          "parent": "magnemite",
+          "pivot": [
+            0.0,
+            4.5,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -4.0,
+                1.0,
+                -4.0
+              ],
+              "size": [
+                8.0,
+                8.0,
+                8.0
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eye",
+          "parent": "body",
+          "pivot": [
+            0.0,
+            5.0,
+            -4.01
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -2.0,
+                3.0,
+                -4.01
+              ],
+              "size": [
+                4.0,
+                4.0,
+                0.02
+              ],
+              "uv": [
+                32.0,
+                8.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pupil",
+          "parent": "eye",
+          "pivot": [
+            0.0,
+            5.0,
+            -4.1
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.5,
+                4.5,
+                -4.02
+              ],
+              "size": [
+                1.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                40.0,
+                8.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pupil_closed",
+          "parent": "eye",
+          "pivot": [
+            0.0,
+            5.0,
+            -3.92
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.5,
+                4.5,
+                -3.92
+              ],
+              "size": [
+                3.0,
+                1.0,
+                0.02
+              ],
+              "uv": [
+                32.0,
+                15.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "nail_head",
+          "parent": "body",
+          "pivot": [
+            0.0,
+            9.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.0,
+                8.5,
+                -1.0
+              ],
+              "size": [
+                2.0,
+                3.0,
+                2.0
+              ],
+              "uv": [
+                38.0,
+                11.0
+              ]
+            },
+            {
+              "origin": [
+                -2.0,
+                11.5,
+                -2.0
+              ],
+              "size": [
+                4.0,
+                1.0,
+                4.0
+              ],
+              "uv": [
+                48.0,
+                8.0
+              ]
+            },
+            {
+              "origin": [
+                -1.5,
+                12.51,
+                -1.5
+              ],
+              "size": [
+                3.0,
+                0.02,
+                3.0
+              ],
+              "uv": [
+                49.0,
+                13.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "nail_left",
+          "parent": "body",
+          "pivot": [
+            2.75,
+            2.0,
+            -4.0
+          ],
+          "rotation": [
+            0.0,
+            -25.0,
+            0.0
+          ]
+        },
+        {
+          "name": "nail_left_rotation",
+          "parent": "nail_left",
+          "pivot": [
+            2.75,
+            2.0,
+            -4.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                1.75,
+                1.0,
+                -6.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                32.0,
+                12.0
+              ]
+            },
+            {
+              "origin": [
+                2.25,
+                1.5,
+                -5.5
+              ],
+              "size": [
+                1.0,
+                1.0,
+                2.0
+              ],
+              "uv": [
+                40.0,
+                8.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "nail_right",
+          "parent": "body",
+          "pivot": [
+            -2.75,
+            2.0,
+            -4.0
+          ],
+          "rotation": [
+            0.0,
+            25.0,
+            0.0
+          ]
+        },
+        {
+          "name": "nail_right_rotation",
+          "parent": "nail_right",
+          "pivot": [
+            -2.75,
+            2.0,
+            -4.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3.75,
+                1.0,
+                -6.5
+              ],
+              "size": [
+                2.0,
+                2.0,
+                1.0
+              ],
+              "uv": [
+                46.0,
+                8.0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -3.25,
+                1.5,
+                -5.5
+              ],
+              "size": [
+                1.0,
+                1.0,
+                2.0
+              ],
+              "uv": [
+                46.0,
+                13.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "magnets",
+          "parent": "body",
+          "pivot": [
+            0.5,
+            0.5,
+            0.0
+          ]
+        },
+        {
+          "name": "magnet_left",
+          "parent": "magnets",
+          "pivot": [
+            4.0,
+            5.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                3.5,
+                2.0,
+                -1.0
+              ],
+              "size": [
+                2.0,
+                6.0,
+                2.0
+              ],
+              "uv": [
+                0.0,
+                0.0
+              ],
+              "inflate": 0.01
+            },
+            {
+              "origin": [
+                5.0,
+                6.0,
+                -1.0
+              ],
+              "size": [
+                6.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                32.0,
+                0.0
+              ]
+            },
+            {
+              "origin": [
+                5.0,
+                2.0,
+                -1.0
+              ],
+              "size": [
+                6.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                48.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "magnet_right",
+          "parent": "magnets",
+          "pivot": [
+            -4.0,
+            5.0,
+            0.0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -5.5,
+                2.0,
+                -1.0
+              ],
+              "size": [
+                2.0,
+                6.0,
+                2.0
+              ],
+              "uv": [
+                24.0,
+                0.0
+              ],
+              "inflate": 0.01,
+              "mirror": true
+            },
+            {
+              "origin": [
+                -11.0,
+                6.0,
+                -1.0
+              ],
+              "size": [
+                6.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                32.0,
+                4.0
+              ],
+              "mirror": true
+            },
+            {
+              "origin": [
+                -11.0,
+                2.0,
+                -1.0
+              ],
+              "size": [
+                6.0,
+                2.0,
+                2.0
+              ],
+              "uv": [
+                48.0,
+                4.0
+              ],
+              "mirror": true
+            }
+          ]
+        },
+        {
+          "name": "nails",
+          "parent": "body",
+          "pivot": [
+            0.0,
+            4.5,
+            0.0
+          ]
+        }
+      ]
+    }
+  ]
+}

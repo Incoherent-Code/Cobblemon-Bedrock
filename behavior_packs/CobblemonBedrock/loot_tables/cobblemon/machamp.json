@@ -1,0 +1,32 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "name": "cobblemon:focus_band",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:muscle_band",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:wepear_berry",
+          "weight": 10
+        },
+        {
+          "type": "empty",
+          "weight": 70
+        }
+      ]
+    }
+  ]
+}

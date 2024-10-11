@@ -1,0 +1,297 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.aegislash.ground_idle": {
+      "loop": true,
+      "bones": {
+        "shield": {
+          "rotation": [
+            90.0,
+            0.0,
+            90.0
+          ],
+          "position": [
+            -40.0,
+            -17.0,
+            -2.25
+          ]
+        },
+        "body": {
+          "rotation": [
+            "0+math.sin(q.anim_time*90*1-90)*2",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "2+math.sin(q.anim_time*90*1)*1",
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            87.5,
+            0.0,
+            32.5
+          ]
+        },
+        "arm_left4": {
+          "rotation": [
+            0.0,
+            90.0,
+            -5.0
+          ]
+        },
+        "arm_left5": {
+          "rotation": [
+            0.0,
+            12.5,
+            0.0
+          ]
+        },
+        "arm_left6": {
+          "rotation": [
+            0.0,
+            12.5,
+            0.0
+          ]
+        },
+        "finger_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ]
+        },
+        "finger_left7": {
+          "rotation": [
+            0.0,
+            0.0,
+            10.0
+          ]
+        },
+        "finger_left10": {
+          "rotation": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            87.5,
+            0.0,
+            -32.5
+          ]
+        },
+        "arm_right4": {
+          "rotation": [
+            0.0,
+            -90.0,
+            5.0
+          ]
+        },
+        "arm_right5": {
+          "rotation": [
+            0.0,
+            -12.5,
+            0.0
+          ]
+        },
+        "arm_right6": {
+          "rotation": [
+            0.0,
+            -12.5,
+            0.0
+          ]
+        },
+        "finger_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -12.5
+          ]
+        },
+        "finger_right4": {
+          "rotation": [
+            0.0,
+            0.0,
+            -5.0
+          ]
+        },
+        "finger_right10": {
+          "rotation": [
+            0.0,
+            0.0,
+            -5.0
+          ]
+        }
+      }
+    },
+    "animation.aegislash.ground_walk": {
+      "loop": true,
+      "bones": {
+        "shield": {
+          "rotation": [
+            90.0,
+            0.0,
+            90.0
+          ],
+          "position": [
+            -40.0,
+            -17.0,
+            -2.25
+          ]
+        },
+        "body": {
+          "rotation": [
+            "27.5+math.sin(q.anim_time*90*2-90)*2",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "2+math.sin(q.anim_time*90*2)*1.5",
+            -9.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            87.5,
+            0.0,
+            32.5
+          ]
+        },
+        "arm_left4": {
+          "rotation": [
+            0.0,
+            90.0,
+            -5.0
+          ]
+        },
+        "arm_left5": {
+          "rotation": [
+            0.0,
+            12.5,
+            0.0
+          ]
+        },
+        "arm_left6": {
+          "rotation": [
+            0.0,
+            12.5,
+            0.0
+          ]
+        },
+        "finger_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            7.5
+          ]
+        },
+        "finger_left7": {
+          "rotation": [
+            0.0,
+            0.0,
+            10.0
+          ]
+        },
+        "finger_left10": {
+          "rotation": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            87.5,
+            0.0,
+            -32.5
+          ]
+        },
+        "arm_right4": {
+          "rotation": [
+            0.0,
+            -90.0,
+            5.0
+          ]
+        },
+        "arm_right5": {
+          "rotation": [
+            0.0,
+            -12.5,
+            0.0
+          ]
+        },
+        "arm_right6": {
+          "rotation": [
+            0.0,
+            -12.5,
+            0.0
+          ]
+        },
+        "finger_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -12.5
+          ]
+        },
+        "finger_right4": {
+          "rotation": [
+            0.0,
+            0.0,
+            -5.0
+          ]
+        },
+        "finger_right10": {
+          "rotation": [
+            0.0,
+            0.0,
+            -5.0
+          ]
+        }
+      }
+    },
+    "animation.aegislash.blink": {
+      "animation_length": 0.5,
+      "bones": {
+        "eyelid": {
+          "position": {
+            "0.0417": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "0.0833": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.2083": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

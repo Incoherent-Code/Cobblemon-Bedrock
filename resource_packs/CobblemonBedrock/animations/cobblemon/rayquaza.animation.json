@@ -1,0 +1,260 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.rayquazamodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.rayquaza.ground_idle": {
+      "loop": true,
+      "bones": {
+        "rayquaza": {
+          "rotation": [
+            -75.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck_end": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "arm_right1": {
+          "rotation": [
+            75.0,
+            45.0,
+            0.0
+          ]
+        },
+        "arm_right3": {
+          "rotation": [
+            0.0,
+            -75.0,
+            0.0
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            30.0
+          ]
+        },
+        "finger_left1": {
+          "rotation": [
+            0.0,
+            0.0,
+            15.0
+          ]
+        },
+        "finger_left2": {
+          "rotation": [
+            30.0,
+            -30.0,
+            -15.0
+          ]
+        },
+        "finger_left3": {
+          "rotation": [
+            -30.0,
+            30.0,
+            -15.0
+          ]
+        },
+        "arm_left1": {
+          "rotation": [
+            75.0,
+            -45.0,
+            0.0
+          ]
+        },
+        "arm_left3": {
+          "rotation": [
+            0.0,
+            75.0,
+            0.0
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            -30.0
+          ]
+        },
+        "finger_right1": {
+          "rotation": [
+            0.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "finger_right2": {
+          "rotation": [
+            30.0,
+            30.0,
+            15.0
+          ]
+        },
+        "finger_right3": {
+          "rotation": [
+            -30.0,
+            -30.0,
+            15.0
+          ]
+        },
+        "tail1": {
+          "rotation": [
+            -30.0,
+            -5.0,
+            20.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            -30.0,
+            -15.0,
+            20.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            -15.0,
+            -30.0,
+            15.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            -5.0,
+            -40.0,
+            5.0
+          ]
+        },
+        "tail5": {
+          "rotation": [
+            -5.0,
+            -30.0,
+            5.0
+          ]
+        },
+        "tail6": {
+          "rotation": [
+            5.0,
+            -40.0,
+            -5.0
+          ]
+        },
+        "tail7": {
+          "rotation": [
+            0.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "tail8": {
+          "rotation": [
+            5.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "tail9": {
+          "rotation": [
+            5.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "tail10": {
+          "rotation": [
+            5.0,
+            -15.0,
+            0.0
+          ]
+        },
+        "tail11": {
+          "rotation": [
+            5.0,
+            -15.0,
+            0.0
+          ]
+        },
+        "tail_end1": {
+          "rotation": [
+            5.0,
+            -15.0,
+            0.0
+          ]
+        },
+        "tail_end2": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "body": {
+          "position": [
+            0.0,
+            -4.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

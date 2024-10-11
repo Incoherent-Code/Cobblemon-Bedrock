@@ -1,0 +1,142 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.squawkabilly.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_squawkabilly_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_squawkabilly_blink = q.life_time + 1; return (q.life_time > v.next_quirk_squawkabilly_blink) && (v.state_of_squawkabilly == 0 || v.state_of_squawkabilly == 1 || v.state_of_squawkabilly == 2 || v.state_of_squawkabilly == 3 || v.state_of_squawkabilly == 4 || v.state_of_squawkabilly == 5);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "squawkabilly.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_squawkabilly_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_squawkabilly_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.squawkabilly": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "squawkabillymodel.singlebonelook",
+            "squawkabilly.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_squawkabilly = 0; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "flying": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "squawkabillymodel.singlebonelook",
+            "squawkabilly.ground_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_squawkabilly = 1; return !q.is_moving;"
+            },
+            {
+              "flying": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hovering": {
+          "animations": [
+            "squawkabillymodel.singlebonelook"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_squawkabilly = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "flying": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "flying": {
+          "animations": [
+            "squawkabillymodel.singlebonelook"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_squawkabilly = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderLeft": {
+          "animations": [
+            "squawkabillymodel.singlebonelook",
+            "squawkabilly.ground_idle",
+            "squawkabilly.shoulderleft.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_squawkabilly = 4; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "flying": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "shoulderRight": {
+          "animations": [
+            "squawkabillymodel.singlebonelook",
+            "squawkabilly.ground_idle",
+            "squawkabilly.shoulderright.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_squawkabilly = 5; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "flying": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

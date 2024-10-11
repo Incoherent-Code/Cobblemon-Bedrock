@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:nacli",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0932_nacli/nacli",
+        "shiny": "textures/pokemon/0932_nacli/nacli_shiny",
+        "base_glow": "textures/pokemon/0932_nacli/nacli_emissive",
+        "shiny_glow": "textures/pokemon/0932_nacli/nacli_emissive"
+      },
+      "geometry": {
+        "base": "geometry.nacli.geo",
+        "shiny": "geometry.nacli.geo"
+      },
+      "animations": {
+        "nacli.sleep": "animation.nacli.sleep",
+        "nacli.ground_idle": "animation.nacli.ground_idle",
+        "nacli.ground_walk": "animation.nacli.ground_walk",
+        "controller.animation.cobblemon.nacli": "controller.animation.cobblemon.nacli"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.nacli_glow",
+        "controller.render.cobblemon.nacli"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.nacli": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_nacli = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

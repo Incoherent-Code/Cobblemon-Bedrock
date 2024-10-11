@@ -1,0 +1,260 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.nidokingmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.nidoking.ground_idle": {
+      "loop": true,
+      "bones": {
+        "stomach": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -2.5,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "left_shoulder": {
+          "rotation": [
+            5.32288,
+            7.27506,
+            15.01071
+          ]
+        },
+        "left_upper_arm": {
+          "rotation": [
+            -35.0,
+            0.0,
+            7.5
+          ],
+          "position": [
+            0.0,
+            -0.25,
+            0.75
+          ]
+        },
+        "left_lower_arm": {
+          "rotation": [
+            0.16712,
+            33.29198,
+            27.02829
+          ],
+          "position": [
+            0.0,
+            -0.25,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "upper_torso": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "right_shoulder": {
+          "rotation": [
+            5.32288,
+            -7.27506,
+            -15.01071
+          ]
+        },
+        "right_upper_arm": {
+          "rotation": [
+            -35.0,
+            0.0,
+            -7.5
+          ],
+          "position": [
+            0.0,
+            -0.25,
+            0.75
+          ]
+        },
+        "right_lower_arm": {
+          "rotation": [
+            0.16712,
+            -33.29198,
+            -27.02829
+          ],
+          "position": [
+            0.0,
+            -0.25,
+            0.0
+          ]
+        },
+        "left_lower_arm_2": {
+          "rotation": [
+            0.0,
+            0.0,
+            12.5
+          ]
+        },
+        "right_lower_arm_2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -12.5
+          ]
+        }
+      }
+    },
+    "animation.nidokingmodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "right_upper_leg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662 + 180) * 1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "left_upper_leg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662) *  1.4 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.nidokingmodel.bimanualswinganimation": {
+      "loop": true,
+      "bones": {
+        "right_shoulder": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662) * 1 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        },
+        "left_shoulder": {
+          "rotation": [
+            0.0,
+            "math.cos(query.modified_distance_moved * 57.3 * 0.662) *  1 * 57.3 * q.modified_move_speed",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.nidoking.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "left_eyelid": {
+          "position": {
+            "0.0": [
+              0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": {
+              "pre": [
+                0.1,
+                0.0,
+                0.0
+              ],
+              "post": [
+                0.1,
+                0.0,
+                0.0
+              ]
+            },
+            "0.1667": {
+              "pre": [
+                0.1,
+                0.0,
+                0.0
+              ],
+              "post": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "right_eyelid": {
+          "position": {
+            "0.0": [
+              -0.1,
+              0.0,
+              0.0
+            ],
+            "0.125": {
+              "pre": [
+                -0.1,
+                0.0,
+                0.0
+              ],
+              "post": [
+                -0.1,
+                0.0,
+                0.0
+              ]
+            },
+            "0.1667": {
+              "pre": [
+                -0.1,
+                0.0,
+                0.0
+              ],
+              "post": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "minLevel": 4,
+  "maxLevel": 29,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 4,
+      "maxLevel": 29
+    },
+    "1": {
+      "minLevel": 4,
+      "maxLevel": 29
+    },
+    "2": {
+      "minLevel": 4,
+      "maxLevel": 29
+    }
+  },
+  "name": "Morelull",
+  "nationalPokedexNumber": 755,
+  "baseStats": {
+    "hp": 40,
+    "attack": 35,
+    "defence": 55,
+    "special_attack": 65,
+    "special_defence": 75,
+    "speed": 15
+  },
+  "maleRatio": 0.5,
+  "catchRate": 190,
+  "baseScale": 0.5,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_fast",
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.5,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "secondaryType": "fairy",
+  "abilities": [
+    "illuminate",
+    "effectspore",
+    "h:raindish"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:absorb",
+    "1:astonish",
+    "4:confuseray",
+    "8:flash",
+    "8:ingrain",
+    "12:megadrain",
+    "16:sleeppowder",
+    "20:moonlight",
+    "25:strengthsap",
+    "28:gigadrain",
+    "32:dazzlinggleam",
+    "36:spore",
+    "40:moonblast",
+    "44:dreameater",
+    "46:spotlight",
+    "egg:amnesia",
+    "egg:growth",
+    "egg:leechseed",
+    "egg:poisonpowder",
+    "egg:stunspore",
+    "tm:amnesia",
+    "tm:attract",
+    "tm:confide",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:drainingkiss",
+    "tm:dreameater",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:lightscreen",
+    "tm:magicroom",
+    "tm:naturepower",
+    "tm:pollenpuff",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:thunderwave",
+    "tm:toxic",
+    "tm:wonderroom",
+    "tutor:afteryou",
+    "tutor:gigadrain",
+    "tutor:magiccoat",
+    "tutor:magicroom",
+    "tutor:recycle",
+    "tutor:seedbomb",
+    "tutor:signalbeam",
+    "tutor:snore",
+    "tutor:synthesis",
+    "tutor:wonderroom",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "morelull_shiinotic",
+      "variant": "level_up",
+      "result": "shiinotic",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 24
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": false,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-15",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.morelull.desc"
+  ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:brown_mushroom",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:kebia_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 2.0,
+  "weight": 15.0
+}

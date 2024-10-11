@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:beldum",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0374_beldum/beldum",
+        "shiny": "textures/pokemon/0374_beldum/beldum_shiny"
+      },
+      "geometry": {
+        "base": "geometry.beldum.geo",
+        "shiny": "geometry.beldum.geo"
+      },
+      "animations": {
+        "beldum.sleep": "animation.beldum.sleep",
+        "beldum.ground_idle": "animation.beldum.ground_idle",
+        "beldum.air_idle": "animation.beldum.air_idle",
+        "beldum.air_fly": "animation.beldum.air_fly",
+        "beldum.ground_walk": "animation.beldum.ground_walk",
+        "beldum.battle_idle": "animation.beldum.battle_idle",
+        "beldum.blink": "animation.beldum.blink",
+        "controller.animation.beldum.blink": "controller.animation.beldum.blink",
+        "beldum.quirk_spin": "animation.beldum.quirk_spin",
+        "controller.animation.beldum.quirk": "controller.animation.beldum.quirk",
+        "controller.animation.cobblemon.beldum": "controller.animation.cobblemon.beldum"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.beldum"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.beldum.blink",
+          "controller.animation.beldum.quirk",
+          {
+            "controller.animation.cobblemon.beldum": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_beldum = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

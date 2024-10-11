@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.41",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cobblemon:apricorn_planks",
+      "menu_category": {
+        "category": "construction",
+        "group": "itemGroup.name.planks"
+      }
+    },
+    "components": {
+      "tag:wood": {},
+      "tag:minecraft:planks": {},
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "apricorn_planks"
+        }
+      },
+      "minecraft:flammable": true,
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "minecraft:display_name": "block.cobblemon.apricorn_planks"
+    }
+  }
+}

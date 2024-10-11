@@ -1,0 +1,409 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.parasect.ground_idle": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            "(math.sin(q.anim_time*90*4*1)*1)*0.2",
+            0.0
+          ]
+        },
+        "mushroom": {
+          "rotation": [
+            "1*(math.sin(q.anim_time*90*4*1-90-45)*1-1)",
+            0.0,
+            0.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            0.0,
+            "math.sin(q.anim_time*90*4*1+90)*2",
+            "-2*(math.sin(q.anim_time*90*4*1-90-45)*1-1)"
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            0.0,
+            "-math.sin(q.anim_time*90*4*1+90)*2",
+            "2*(math.sin(q.anim_time*90*4*1-45)*1-1)"
+          ]
+        },
+        "claw_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            "3*(math.sin(q.anim_time*90*4*1-90-45)*1-1)"
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            0.0,
+            "-math.sin(q.anim_time*90*4*1+90)*2",
+            "2*(math.sin(q.anim_time*90*4*1-90-45)*1-1)"
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            0.0,
+            "math.sin(q.anim_time*90*4*1+90)*2",
+            "-2*(math.sin(q.anim_time*90*4*1-45)*1-1)"
+          ]
+        },
+        "claw_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-3*(math.sin(q.anim_time*90*4*1-90-45)*1-1)"
+          ]
+        },
+        "leg_right_front": {
+          "rotation": [
+            0.0,
+            "1*(math.sin(q.anim_time*90*4*1)*1-1)",
+            "-4*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_left_front": {
+          "rotation": [
+            0.0,
+            "-1*(math.sin(q.anim_time*90*4*1)*1-1)",
+            "4*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_right_back": {
+          "rotation": [
+            0.0,
+            "-1*(math.sin(q.anim_time*90*4*1)*1-1)",
+            "-2.5*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_left_back": {
+          "rotation": [
+            0.0,
+            "1*(math.sin(q.anim_time*90*4*1)*1-1)",
+            "2.5*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_right_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "4.5*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_right_front3": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-1.5*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_right_front4": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-1*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_left_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-4.5*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_left_front3": {
+          "rotation": [
+            0.0,
+            0.0,
+            "1.5*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_left_front4": {
+          "rotation": [
+            0.0,
+            0.0,
+            "1*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_right_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "2*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_right_back3": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-0.5*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_right_back4": {
+          "rotation": [
+            0.0,
+            0.0,
+            "1*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_left_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-2*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_left_back3": {
+          "rotation": [
+            0.0,
+            0.0,
+            "0.5*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        },
+        "leg_left_back4": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-1*(math.sin(q.anim_time*90*4*1)*1-1)"
+          ]
+        }
+      }
+    },
+    "animation.parasectmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.parasect.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            -5.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            -5.25,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            25.0,
+            0.0,
+            0.0
+          ]
+        },
+        "mushroom": {
+          "rotation": [
+            -4.98848,
+            0.54094,
+            -2.55919
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            -4.71374,
+            -13.10686,
+            -61.2244
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            2.47864,
+            0.32621,
+            -7.49294
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            46.77311,
+            11.5328,
+            88.58523
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            -30.0,
+            0.0,
+            -35.0
+          ]
+        },
+        "leg_right_front": {
+          "rotation": [
+            -6.92546,
+            -43.42114,
+            51.30836
+          ]
+        },
+        "leg_left_front": {
+          "rotation": [
+            -37.55945,
+            40.39543,
+            -62.55466
+          ]
+        },
+        "leg_right_back": {
+          "rotation": [
+            69.87065,
+            -41.90314,
+            7.26404
+          ]
+        },
+        "leg_left_back": {
+          "rotation": [
+            71.04314,
+            36.95106,
+            -6.92164
+          ]
+        }
+      }
+    },
+    "animation.parasect.ground_walk": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "(math.sin(q.anim_time*90*4*4)*1)*0.4+0.2",
+            "math.sin(q.anim_time*90*4*1)*0.5"
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            0.0,
+            "math.sin(q.anim_time*90*4*1+90)*4",
+            "-2*(math.sin(q.anim_time*90*4*1-90-45)*1-1)"
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            0.0,
+            "-math.sin(q.anim_time*90*4*1+90)*4",
+            0.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            0.0,
+            "-math.sin(q.anim_time*90*4*1+90)*4",
+            "2*(math.sin(q.anim_time*90*4*1-90-45)*1-1)"
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            0.0,
+            "math.sin(q.anim_time*90*4*1+90)*4",
+            0.0
+          ]
+        },
+        "leg_right_front": {
+          "rotation": [
+            0.0,
+            "-math.sin(q.anim_time*90*4*2+90+180)*15",
+            "math.clamp(math.sin(q.anim_time*90*4*2+180*2)*20,0,15)"
+          ],
+          "position": [
+            0.0,
+            "-(math.sin(q.anim_time*90*4*2*2)*1)*0.25",
+            0.0
+          ]
+        },
+        "leg_left_front": {
+          "rotation": [
+            0.0,
+            "math.sin(q.anim_time*90*4*2+90)*15",
+            "-math.clamp(math.sin(q.anim_time*90*4*2+180)*20,0,15)"
+          ],
+          "position": [
+            0.0,
+            "-(math.sin(q.anim_time*90*4*2*2)*1)*0.25",
+            0.0
+          ]
+        },
+        "leg_right_back": {
+          "rotation": [
+            0.0,
+            "-math.sin(q.anim_time*90*4*2+90)*15",
+            "math.clamp(math.sin(q.anim_time*90*4*2+180)*20,0,15)"
+          ],
+          "position": [
+            0.0,
+            "-(math.sin(q.anim_time*90*4*2*2)*1)*0.25",
+            0.0
+          ]
+        },
+        "leg_left_back": {
+          "rotation": [
+            0.0,
+            "math.sin(q.anim_time*90*4*2+90+180)*15",
+            "-math.clamp(math.sin(q.anim_time*90*4*2+180*2)*20,0,15)"
+          ],
+          "position": [
+            0.0,
+            "-(math.sin(q.anim_time*90*4*2*2)*1)*0.25",
+            0.0
+          ]
+        },
+        "mushroom": {
+          "rotation": [
+            "2*(math.sin(q.anim_time*90*4*1)*1-1)",
+            0.0,
+            0.0
+          ]
+        },
+        "leg_right_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-math.clamp(math.sin(q.anim_time*90*4*2+180*2)*20,0,15)"
+          ]
+        },
+        "leg_left_front2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "math.clamp(math.sin(q.anim_time*90*4*2+180)*20,0,15)"
+          ]
+        },
+        "leg_right_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "-math.clamp(math.sin(q.anim_time*90*4*2+180)*20,0,15)"
+          ]
+        },
+        "leg_left_back2": {
+          "rotation": [
+            0.0,
+            0.0,
+            "math.clamp(math.sin(q.anim_time*90*4*2+180*2)*20,0,15)"
+          ]
+        }
+      }
+    }
+  }
+}

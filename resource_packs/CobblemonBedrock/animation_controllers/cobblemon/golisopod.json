@@ -1,0 +1,171 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.golisopod.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_golisopod_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_golisopod_blink = q.life_time + 1; return (q.life_time > v.next_quirk_golisopod_blink) && (v.state_of_golisopod == 1 || v.state_of_golisopod == 2 || v.state_of_golisopod == 3 || v.state_of_golisopod == 4 || v.state_of_golisopod == 5);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "golisopod.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_golisopod_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_golisopod_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.golisopod": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "golisopod.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_golisopod = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "golisopodmodel.singlebonelook",
+            "golisopod.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_golisopod = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "golisopodmodel.singlebonelook",
+            "golisopod.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_golisopod = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "floating": {
+          "animations": [
+            "golisopodmodel.singlebonelook",
+            "golisopod.water_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_golisopod = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swimming": {
+          "animations": [
+            "golisopodmodel.singlebonelook",
+            "golisopod.water_swim"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_golisopod = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle') && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "golisopodmodel.singlebonelook",
+            "golisopod.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_golisopod = 5; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

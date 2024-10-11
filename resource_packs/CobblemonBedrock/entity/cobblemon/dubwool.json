@@ -1,0 +1,56 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:dubwool",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0832_dubwool/dubwool",
+        "shiny": "textures/pokemon/0832_dubwool/dubwool_shiny"
+      },
+      "geometry": {
+        "base": "geometry.dubwool.geo",
+        "shiny": "geometry.dubwool.geo"
+      },
+      "animations": {
+        "dubwool.sleep": "animation.dubwool.sleep",
+        "dubwool.sleep.transform": "animation.dubwool.sleep.transform",
+        "dubwoolmodel.singlebonelook": "animation.dubwoolmodel.singlebonelook",
+        "dubwool.ground_idle": "animation.dubwool.ground_idle",
+        "dubwool.standing.transform": "animation.dubwool.standing.transform",
+        "dubwool.ground_walk": "animation.dubwool.ground_walk",
+        "dubwool.walk.transform": "animation.dubwool.walk.transform",
+        "dubwool.shearedsleep.transform": "animation.dubwool.shearedsleep.transform",
+        "dubwool.shearedstanding.transform": "animation.dubwool.shearedstanding.transform",
+        "dubwool.shearedwalk.transform": "animation.dubwool.shearedwalk.transform",
+        "dubwool.blink": "animation.dubwool.blink",
+        "controller.animation.dubwool.blink": "controller.animation.dubwool.blink",
+        "controller.animation.cobblemon.dubwool": "controller.animation.cobblemon.dubwool"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.dubwool"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.dubwool.blink",
+          {
+            "controller.animation.cobblemon.dubwool": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_dubwool = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

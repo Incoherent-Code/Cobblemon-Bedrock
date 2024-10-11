@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:caterpie",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0010_caterpie/caterpie",
+        "shiny": "textures/pokemon/0010_caterpie/caterpie_shiny"
+      },
+      "geometry": {
+        "base": "geometry.caterpie.geo",
+        "shiny": "geometry.caterpie.geo"
+      },
+      "animations": {
+        "caterpie.sleep": "animation.caterpie.sleep",
+        "caterpiemodel.singlebonelook": "animation.caterpiemodel.singlebonelook",
+        "caterpie.ground_idle": "animation.caterpie.ground_idle",
+        "caterpie.ground_walk": "animation.caterpie.ground_walk",
+        "caterpie.blink": "animation.caterpie.blink",
+        "controller.animation.caterpie.blink": "controller.animation.caterpie.blink",
+        "controller.animation.cobblemon.caterpie": "controller.animation.cobblemon.caterpie"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.caterpie"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.caterpie.blink",
+          {
+            "controller.animation.cobblemon.caterpie": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_caterpie = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

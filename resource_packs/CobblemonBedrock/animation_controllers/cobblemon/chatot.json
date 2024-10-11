@@ -1,0 +1,82 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.chatot.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_chatot_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_chatot_blink = q.life_time + 1; return (q.life_time > v.next_quirk_chatot_blink) && (v.state_of_chatot == 0 || v.state_of_chatot == 1 || v.state_of_chatot == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "chatot.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_chatot_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_chatot_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.chatot": {
+      "initial_state": "stand",
+      "states": {
+        "stand": {
+          "animations": [
+            "chatotmodel.singlebonelook",
+            "chatot.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_chatot = 0; return (q.is_moving && !q.is_swimming);"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "chatotmodel.singlebonelook",
+            "chatot.air_idle"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_chatot = 1; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "chatotmodel.singlebonelook",
+            "chatot.ground_idle"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_chatot = 2; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

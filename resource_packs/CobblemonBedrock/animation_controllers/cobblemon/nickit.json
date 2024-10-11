@@ -1,0 +1,230 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.nickit.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nickit_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_nickit_blink = q.life_time + 1; return (q.life_time > v.next_quirk_nickit_blink) && (v.state_of_nickit == 1 || v.state_of_nickit == 2 || v.state_of_nickit == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "nickit.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nickit_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_nickit_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.nickit.glanceleft": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nickit_glanceleft = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_nickit_glanceleft = q.life_time + 1; return (q.life_time > v.next_quirk_nickit_glanceleft) && (v.state_of_nickit == 1 || v.state_of_nickit == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "nickit.quirk_shiftyglance_left"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nickit_glanceleft = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_nickit_glanceleft ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.nickit.glanceright": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nickit_glanceright = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_nickit_glanceright = q.life_time + 1; return (q.life_time > v.next_quirk_nickit_glanceright) && (v.state_of_nickit == 1 || v.state_of_nickit == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "nickit.quirk_shiftyglance_right"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nickit_glanceright = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_nickit_glanceright ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.nickit.eartwitchleft": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nickit_eartwitchleft = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_nickit_eartwitchleft = q.life_time + 1; return (q.life_time > v.next_quirk_nickit_eartwitchleft) && (v.state_of_nickit == 1 || v.state_of_nickit == 2 || v.state_of_nickit == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "nickit.quirk_eartwitch_left"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nickit_eartwitchleft = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_nickit_eartwitchleft ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.nickit.eartwitchright": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nickit_eartwitchright = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_nickit_eartwitchright = q.life_time + 1; return (q.life_time > v.next_quirk_nickit_eartwitchright) && (v.state_of_nickit == 1 || v.state_of_nickit == 2 || v.state_of_nickit == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "nickit.quirk_eartwitch_right"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_nickit_eartwitchright = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_nickit_eartwitchright ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.nickit": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "nickit.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_nickit = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "nickitmodel.singlebonelook",
+            "nickit.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_nickit = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "nickitmodel.singlebonelook",
+            "nickit.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_nickit = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "nickitmodel.singlebonelook",
+            "nickit.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_nickit = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

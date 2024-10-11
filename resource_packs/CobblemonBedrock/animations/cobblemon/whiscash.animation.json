@@ -1,0 +1,196 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.whiscash.water_idle": {
+      "loop": true,
+      "bones": {
+        "tail": {
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail3": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail4": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jaw": {
+          "position": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        "mouth_opening": {
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "dangle_right": {
+          "rotation": [
+            15.0,
+            0.0,
+            15.0
+          ]
+        },
+        "fin_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            12.5
+          ]
+        },
+        "fin_left2": {
+          "rotation": [
+            0.0,
+            0.0,
+            17.5
+          ]
+        },
+        "fin_left3": {
+          "rotation": [
+            -1.63219,
+            -7.32123,
+            12.60443
+          ]
+        },
+        "whisker_right": {
+          "rotation": [
+            0.0,
+            30.0,
+            0.0
+          ]
+        },
+        "whisker_right2": {
+          "rotation": [
+            16.0129,
+            37.15855,
+            25.41377
+          ]
+        },
+        "whisker_right3": {
+          "rotation": [
+            7.98205,
+            23.7695,
+            19.18246
+          ]
+        },
+        "whisker_right4": {
+          "rotation": [
+            -4.30963,
+            29.7174,
+            -8.64388
+          ]
+        },
+        "whisker_right5": {
+          "rotation": [
+            -6.1191,
+            21.69365,
+            -16.17354
+          ]
+        },
+        "whisker_right6": {
+          "rotation": [
+            0.0,
+            0.0,
+            -12.5
+          ]
+        },
+        "dangle_left": {
+          "rotation": [
+            15.0,
+            0.0,
+            -15.0
+          ]
+        },
+        "fin_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            -12.5
+          ]
+        },
+        "fin_right2": {
+          "rotation": [
+            0.0,
+            0.0,
+            -17.5
+          ]
+        },
+        "fin_right3": {
+          "rotation": [
+            -1.63219,
+            7.32123,
+            -12.60443
+          ]
+        },
+        "whisker_left": {
+          "rotation": [
+            0.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "whisker_left2": {
+          "rotation": [
+            16.0129,
+            -37.15855,
+            -25.41377
+          ]
+        },
+        "whisker_left3": {
+          "rotation": [
+            7.98205,
+            -23.7695,
+            -19.18246
+          ]
+        },
+        "whisker_left4": {
+          "rotation": [
+            -4.30963,
+            -29.7174,
+            8.64388
+          ]
+        },
+        "whisker_left5": {
+          "rotation": [
+            -6.1191,
+            -21.69365,
+            16.17354
+          ]
+        },
+        "whisker_left6": {
+          "rotation": [
+            0.0,
+            0.0,
+            12.5
+          ]
+        }
+      }
+    }
+  }
+}

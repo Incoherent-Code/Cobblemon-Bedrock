@@ -1,0 +1,200 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.venonat.ground_idle": {
+      "loop": true,
+      "bones": {
+        "hair_right": {
+          "rotation": [
+            0.0,
+            15.0,
+            -30.0
+          ]
+        },
+        "hair_left": {
+          "rotation": [
+            0.0,
+            -15.0,
+            30.0
+          ]
+        },
+        "atenna_right1": {
+          "rotation": [
+            15.0,
+            30.0,
+            0.0
+          ]
+        },
+        "atenna_right2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "atenna_right3": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "atenna_left1": {
+          "rotation": [
+            15.0,
+            -30.0,
+            0.0
+          ]
+        },
+        "atenna_left2": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "atenna_left3": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.venonat.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            -7.5,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        "hair_right": {
+          "rotation": [
+            -22.5,
+            0.0,
+            -22.5
+          ]
+        },
+        "hair_left": {
+          "rotation": [
+            -22.5,
+            0.0,
+            22.5
+          ]
+        },
+        "hand_right": {
+          "rotation": [
+            0.0,
+            0.0,
+            25.0
+          ]
+        },
+        "hand_left": {
+          "rotation": [
+            0.0,
+            0.0,
+            -25.0
+          ]
+        },
+        "atenna_right1": {
+          "rotation": [
+            22.5,
+            22.5,
+            0.0
+          ]
+        },
+        "atenna_right2": {
+          "rotation": [
+            27.5,
+            0.0,
+            0.0
+          ]
+        },
+        "atenna_right3": {
+          "rotation": [
+            30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "atenna_left1": {
+          "rotation": [
+            25.0,
+            -22.5,
+            0.0
+          ]
+        },
+        "atenna_left2": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "atenna_left3": {
+          "rotation": [
+            32.5,
+            0.0,
+            0.0
+          ]
+        },
+        "foot_right": {
+          "rotation": [
+            -17.5,
+            40.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -2.0
+          ]
+        },
+        "foot_left": {
+          "rotation": [
+            -17.5,
+            -47.5,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -2.0
+          ]
+        }
+      }
+    },
+    "animation.venonatmodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "foot_right": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1 + 180) * 0.8 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "foot_left": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1) *  0.8 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

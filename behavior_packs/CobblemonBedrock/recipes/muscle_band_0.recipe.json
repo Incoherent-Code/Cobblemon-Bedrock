@@ -1,0 +1,45 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "WIW",
+      "D I",
+      "WDW"
+    ],
+    "key": {
+      "W": {
+        "item": "minecraft:yellow_wool"
+      },
+      "D": {
+        "item": "minecraft:redstone"
+      },
+      "I": {
+        "item": "minecraft:gold_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:yellow_wool"
+      },
+      {
+        "item": "minecraft:redstone"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:muscle_band"
+    },
+    "description": {
+      "identifier": "cobblemon:muscle_band_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

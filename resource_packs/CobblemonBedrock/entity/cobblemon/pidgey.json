@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:pidgey",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0016_pidgey/pidgey",
+        "shiny": "textures/pokemon/0016_pidgey/pidgey_shiny"
+      },
+      "geometry": {
+        "base": "geometry.pidgey.geo",
+        "shiny": "geometry.pidgey.geo"
+      },
+      "animations": {
+        "pidgey.sleep": "animation.pidgey.sleep",
+        "pidgeymodel.singlebonelook": "animation.pidgeymodel.singlebonelook",
+        "pidgey.ground_idle": "animation.pidgey.ground_idle",
+        "pidgey.air_idle": "animation.pidgey.air_idle",
+        "pidgey.air_fly": "animation.pidgey.air_fly",
+        "pidgey.blink": "animation.pidgey.blink",
+        "controller.animation.pidgey.blink": "controller.animation.pidgey.blink",
+        "controller.animation.cobblemon.pidgey": "controller.animation.cobblemon.pidgey"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.pidgey"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.pidgey.blink",
+          {
+            "controller.animation.cobblemon.pidgey": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_pidgey = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

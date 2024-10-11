@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      "PTS",
+      "TET",
+      "STP"
+    ],
+    "key": {
+      "S": {
+        "item": "cobblemon:fire_stone"
+      },
+      "T": {
+        "item": "minecraft:tinted_glass"
+      },
+      "E": {
+        "item": "minecraft:ender_pearl"
+      },
+      "P": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "unlock": [
+      {
+        "item": "cobblemon:fire_stone"
+      },
+      {
+        "item": "minecraft:tinted_glass"
+      },
+      {
+        "item": "minecraft:ender_pearl"
+      },
+      {
+        "item": "minecraft:blaze_powder"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:flame_orb"
+    },
+    "description": {
+      "identifier": "cobblemon:flame_orb_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

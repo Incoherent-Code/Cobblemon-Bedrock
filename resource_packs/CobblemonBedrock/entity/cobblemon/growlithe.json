@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:growlithe",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0058_growlithe/growlithe",
+        "shiny": "textures/pokemon/0058_growlithe/growlithe_shiny"
+      },
+      "geometry": {
+        "base": "geometry.growlithe.geo",
+        "shiny": "geometry.growlithe.geo"
+      },
+      "animations": {
+        "growlithe.sleep": "animation.growlithe.sleep",
+        "growlithemodel.singlebonelook": "animation.growlithemodel.singlebonelook",
+        "growlithe.ground_idle": "animation.growlithe.ground_idle",
+        "growlithe.ground_walk": "animation.growlithe.ground_walk",
+        "growlithe.blink": "animation.growlithe.blink",
+        "controller.animation.growlithe.blink": "controller.animation.growlithe.blink",
+        "controller.animation.cobblemon.growlithe": "controller.animation.cobblemon.growlithe"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.growlithe"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.growlithe.blink",
+          {
+            "controller.animation.cobblemon.growlithe": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_growlithe = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

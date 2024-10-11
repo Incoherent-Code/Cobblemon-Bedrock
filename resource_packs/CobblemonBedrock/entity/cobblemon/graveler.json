@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:graveler",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0075_graveler/graveler",
+        "shiny": "textures/pokemon/0075_graveler/graveler_shiny"
+      },
+      "geometry": {
+        "base": "geometry.graveler.geo",
+        "shiny": "geometry.graveler.geo"
+      },
+      "animations": {
+        "graveler.ground_idle": "animation.graveler.ground_idle",
+        "gravelermodel.bipedwalkanimation": "animation.gravelermodel.bipedwalkanimation",
+        "graveler.blink": "animation.graveler.blink",
+        "controller.animation.graveler.blink": "controller.animation.graveler.blink",
+        "controller.animation.cobblemon.graveler": "controller.animation.cobblemon.graveler"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.graveler"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.graveler.blink",
+          {
+            "controller.animation.cobblemon.graveler": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_graveler = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

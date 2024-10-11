@@ -1,0 +1,37 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "pools": [
+    {
+      "rolls": 6,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:dragon_breath",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:dragon_fang",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:dragon_scale",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "cobblemon:yache_berry",
+          "weight": 10
+        },
+        {
+          "type": "empty",
+          "weight": 68
+        }
+      ]
+    }
+  ]
+}

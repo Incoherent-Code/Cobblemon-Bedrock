@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:misdreavus",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0200_misdreavus/misdreavus",
+        "shiny": "textures/pokemon/0200_misdreavus/misdreavus_shiny",
+        "base_emissive": "textures/pokemon/0200_misdreavus/misdreavus_emissive",
+        "shiny_emissive": "textures/pokemon/0200_misdreavus/misdreavus_emissive"
+      },
+      "geometry": {
+        "base": "geometry.misdreavus.geo",
+        "shiny": "geometry.misdreavus.geo"
+      },
+      "animations": {
+        "misdreavusmodel.singlebonelook": "animation.misdreavusmodel.singlebonelook",
+        "misdreavus.ground_idle": "animation.misdreavus.ground_idle",
+        "misdreavus.ground_walk": "animation.misdreavus.ground_walk",
+        "misdreavus.blink": "animation.misdreavus.blink",
+        "controller.animation.misdreavus.blink": "controller.animation.misdreavus.blink",
+        "controller.animation.cobblemon.misdreavus": "controller.animation.cobblemon.misdreavus"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.misdreavus_emissive",
+        "controller.render.cobblemon.misdreavus"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.misdreavus.blink",
+          {
+            "controller.animation.cobblemon.misdreavus": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_misdreavus = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

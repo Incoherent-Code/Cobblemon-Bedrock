@@ -1,0 +1,55 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:krabby",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0098_krabby/krabby",
+        "shiny": "textures/pokemon/0098_krabby/krabby_shiny"
+      },
+      "geometry": {
+        "base": "geometry.krabby.geo",
+        "shiny": "geometry.krabby.geo"
+      },
+      "animations": {
+        "krabby.ground_idle": "animation.krabby.ground_idle",
+        "krabby.ground_walk": "animation.krabby.ground_walk",
+        "krabby.battle_idle": "animation.krabby.battle_idle",
+        "krabby.blink": "animation.krabby.blink",
+        "controller.animation.krabby.blink": "controller.animation.krabby.blink",
+        "krabby.snip_left": "animation.krabby.snip_left",
+        "controller.animation.krabby.snipLeft": "controller.animation.krabby.snipLeft",
+        "krabby.snip_right": "animation.krabby.snip_right",
+        "controller.animation.krabby.snipRight": "controller.animation.krabby.snipRight",
+        "controller.animation.cobblemon.krabby": "controller.animation.cobblemon.krabby"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.krabby"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.krabby.blink",
+          "controller.animation.krabby.snipLeft",
+          "controller.animation.krabby.snipRight",
+          {
+            "controller.animation.cobblemon.krabby": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_krabby = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

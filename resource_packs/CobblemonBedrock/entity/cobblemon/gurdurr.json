@@ -1,0 +1,62 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:gurdurr",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0533_gurdurr/gurdurr",
+        "shiny": "textures/pokemon/0533_gurdurr/gurdurr_shiny",
+        "metals_copper": "textures/pokemon/0533_gurdurr/gurdurr",
+        "metals_iron": "textures/pokemon/0533_gurdurr/gurdurr",
+        "metals_gold": "textures/pokemon/0533_gurdurr/gurdurr",
+        "metals_netherite": "textures/pokemon/0533_gurdurr/gurdurr",
+        "metals_copper_": "textures/pokemon/0533_gurdurr/gurdurr_copper",
+        "metals_iron_": "textures/pokemon/0533_gurdurr/gurdurr_iron",
+        "metals_gold_": "textures/pokemon/0533_gurdurr/gurdurr_gold",
+        "metals_netherite_": "textures/pokemon/0533_gurdurr/gurdurr_netherite"
+      },
+      "geometry": {
+        "base": "geometry.gurdurr.geo",
+        "shiny": "geometry.gurdurr.geo",
+        "metals_copper": "geometry.gurdurr.geo",
+        "metals_iron": "geometry.gurdurr.geo",
+        "metals_gold": "geometry.gurdurr.geo",
+        "metals_netherite": "geometry.gurdurr.geo"
+      },
+      "animations": {
+        "gurdurrmodel.singlebonelook": "animation.gurdurrmodel.singlebonelook",
+        "gurdurr.ground_idle": "animation.gurdurr.ground_idle",
+        "gurdurrmodel.bipedwalkanimation": "animation.gurdurrmodel.bipedwalkanimation",
+        "gurdurr.blink": "animation.gurdurr.blink",
+        "controller.animation.gurdurr.blink": "controller.animation.gurdurr.blink",
+        "controller.animation.cobblemon.gurdurr": "controller.animation.cobblemon.gurdurr"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.gurdurr_",
+        "controller.render.cobblemon.gurdurr"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.gurdurr.blink",
+          {
+            "controller.animation.cobblemon.gurdurr": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4 || q.variant == 5"
+          }
+        ],
+        "initialize": [
+          "v.state_of_gurdurr = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:golisopod",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0768_golisopod/golisopod",
+        "shiny": "textures/pokemon/0768_golisopod/golisopod_shiny"
+      },
+      "geometry": {
+        "base": "geometry.golisopod.geo",
+        "shiny": "geometry.golisopod.geo"
+      },
+      "animations": {
+        "golisopod.sleep": "animation.golisopod.sleep",
+        "golisopodmodel.singlebonelook": "animation.golisopodmodel.singlebonelook",
+        "golisopod.ground_idle": "animation.golisopod.ground_idle",
+        "golisopod.ground_walk": "animation.golisopod.ground_walk",
+        "golisopod.water_idle": "animation.golisopod.water_idle",
+        "golisopod.water_swim": "animation.golisopod.water_swim",
+        "golisopod.battle_idle": "animation.golisopod.battle_idle",
+        "golisopod.blink": "animation.golisopod.blink",
+        "controller.animation.golisopod.blink": "controller.animation.golisopod.blink",
+        "controller.animation.cobblemon.golisopod": "controller.animation.cobblemon.golisopod"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.golisopod"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.golisopod.blink",
+          {
+            "controller.animation.cobblemon.golisopod": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_golisopod = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

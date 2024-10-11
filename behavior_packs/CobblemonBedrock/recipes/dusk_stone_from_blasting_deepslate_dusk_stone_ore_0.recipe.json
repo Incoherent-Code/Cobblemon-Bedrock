@@ -1,0 +1,21 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_furnace": {
+    "input": {
+      "item": "cobblemon:deepslate_dusk_stone_ore"
+    },
+    "output": {
+      "item": "cobblemon:dusk_stone"
+    },
+    "description": {
+      "identifier": "cobblemon:dusk_stone_from_blasting_deepslate_dusk_stone_ore_0"
+    },
+    "tags": [
+      "blast_furnace"
+    ]
+  }
+}

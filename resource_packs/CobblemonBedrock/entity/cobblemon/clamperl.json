@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:clamperl",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0366_clamperl/clamperl",
+        "shiny": "textures/pokemon/0366_clamperl/clamperl_shiny"
+      },
+      "geometry": {
+        "base": "geometry.clamperl.geo",
+        "shiny": "geometry.clamperl.geo"
+      },
+      "animations": {
+        "clamperlmodel.singlebonelook": "animation.clamperlmodel.singlebonelook",
+        "clamperl.ground_idle": "animation.clamperl.ground_idle",
+        "clamperl.ground_walk": "animation.clamperl.ground_walk",
+        "clamperl.water_idle": "animation.clamperl.water_idle",
+        "clamperl.water_swim": "animation.clamperl.water_swim",
+        "clamperl.portrait": "animation.clamperl.portrait",
+        "controller.animation.cobblemon.clamperl": "controller.animation.cobblemon.clamperl"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.clamperl"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.clamperl": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_clamperl = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

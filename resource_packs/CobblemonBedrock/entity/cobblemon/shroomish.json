@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:shroomish",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0285_shroomish/shroomish",
+        "shiny": "textures/pokemon/0285_shroomish/shroomish_shiny"
+      },
+      "geometry": {
+        "base": "geometry.shroomish.geo",
+        "shiny": "geometry.shroomish.geo"
+      },
+      "animations": {
+        "shroomishmodel.singlebonelook": "animation.shroomishmodel.singlebonelook",
+        "shroomish.ground_idle": "animation.shroomish.ground_idle",
+        "shroomish.ground_walk": "animation.shroomish.ground_walk",
+        "shroomish.battle_idle": "animation.shroomish.battle_idle",
+        "shroomish.sleep": "animation.shroomish.sleep",
+        "shroomish.blink": "animation.shroomish.blink",
+        "controller.animation.shroomish.blink": "controller.animation.shroomish.blink",
+        "controller.animation.cobblemon.shroomish": "controller.animation.cobblemon.shroomish"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.shroomish"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.shroomish.blink",
+          {
+            "controller.animation.cobblemon.shroomish": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_shroomish = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

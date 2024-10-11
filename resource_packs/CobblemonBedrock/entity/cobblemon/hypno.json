@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:hypno",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0097_hypno/hypno",
+        "shiny": "textures/pokemon/0097_hypno/hypno_shiny",
+        "female": "textures/pokemon/0097_hypno/hypno"
+      },
+      "geometry": {
+        "base": "geometry.hypno_male.geo",
+        "shiny": "geometry.hypno_male.geo",
+        "female": "geometry.hypno_female.geo"
+      },
+      "animations": {
+        "hypno.sleep": "animation.hypno.sleep",
+        "hypnomodel.singlebonelook": "animation.hypnomodel.singlebonelook",
+        "hypno.ground_idle": "animation.hypno.ground_idle",
+        "hypno.ground_walk": "animation.hypno.ground_walk",
+        "hypno.battle_idle": "animation.hypno.battle_idle",
+        "hypno.blink": "animation.hypno.blink",
+        "controller.animation.hypno.blink": "controller.animation.hypno.blink",
+        "controller.animation.cobblemon.hypno": "controller.animation.cobblemon.hypno"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.hypno"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.hypno.blink",
+          {
+            "controller.animation.cobblemon.hypno": "q.variant == 0 || q.variant == 1 || q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_hypno = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,326 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.kabutopsmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.kabutops.ground_idle": {
+      "loop": true,
+      "bones": {
+        "kabutops": {
+          "position": [
+            0.0,
+            -0.55,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "leftleg": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "rightleg": {
+          "rotation": [
+            -22.5,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -75.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            0.0,
+            30.0,
+            30.0
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            -45.0,
+            45.0,
+            -75.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            0.0,
+            -30.0,
+            -30.0
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            -45.0,
+            -45.0,
+            75.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.kabutops.water_idle": {
+      "loop": true,
+      "bones": {
+        "kabutops": {
+          "position": [
+            0.0,
+            -0.55,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            45.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -3.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            0.0,
+            30.0,
+            30.0
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            45.0,
+            30.0,
+            -15.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            0.0,
+            -30.0,
+            -30.0
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            45.0,
+            -30.0,
+            15.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -30.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftfoot": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightfoot": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.kabutops.water_swim": {
+      "loop": true,
+      "bones": {
+        "kabutops": {
+          "position": [
+            0.0,
+            -0.55,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            -4.0
+          ]
+        },
+        "leftleg": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightleg": {
+          "rotation": [
+            15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -75.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftarm": {
+          "rotation": [
+            15.0,
+            15.0,
+            60.0
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            45.0,
+            30.0,
+            -15.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            15.0,
+            -15.0,
+            -60.0
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            45.0,
+            -30.0,
+            15.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        "neck": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "head": {
+          "rotation": [
+            -45.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftknee": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leftfoot": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightknee": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rightfoot": {
+          "rotation": [
+            60.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

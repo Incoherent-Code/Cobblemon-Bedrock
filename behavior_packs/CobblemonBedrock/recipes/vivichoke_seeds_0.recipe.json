@@ -1,0 +1,29 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "ingredients": [
+      {
+        "item": "cobblemon:vivichoke"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "cobblemon:vivichoke"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:vivichoke_seeds",
+      "count": 2
+    },
+    "description": {
+      "identifier": "cobblemon:vivichoke_seeds_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

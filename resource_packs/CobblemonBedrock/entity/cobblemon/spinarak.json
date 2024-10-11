@@ -1,0 +1,46 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:spinarak",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0167_spinarak/spinarak",
+        "shiny": "textures/pokemon/0167_spinarak/spinarak_shiny"
+      },
+      "geometry": {
+        "base": "geometry.spinarak.geo",
+        "shiny": "geometry.spinarak.geo"
+      },
+      "animations": {
+        "spinarakmodel.singlebonelook": "animation.spinarakmodel.singlebonelook",
+        "spinarak.ground_idle": "animation.spinarak.ground_idle",
+        "spinarak.ground_walk": "animation.spinarak.ground_walk",
+        "controller.animation.cobblemon.spinarak": "controller.animation.cobblemon.spinarak"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.spinarak"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.spinarak": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_spinarak = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,91 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rillaboom.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_rillaboom_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_rillaboom_blink = q.life_time + 1; return (q.life_time > v.next_quirk_rillaboom_blink) && (v.state_of_rillaboom == 0 || v.state_of_rillaboom == 1 || v.state_of_rillaboom == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "rillaboom.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_rillaboom_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_rillaboom_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.rillaboom": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "rillaboommodel.singlebonelook",
+            "rillaboom.ground_idle",
+            "rillaboom.standing.transform"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_rillaboom = 0; return q.is_moving;"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "rillaboommodel.singlebonelook",
+            "rillaboom.ground_walk",
+            "rillaboom.walk.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_rillaboom = 1; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "rillaboommodel.singlebonelook",
+            "rillaboom.battle_idle",
+            "rillaboom.battleidle.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_rillaboom = 2; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

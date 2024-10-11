@@ -1,0 +1,201 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.mightyena.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mightyena_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_mightyena_blink = q.life_time + 1; return (q.life_time > v.next_quirk_mightyena_blink) && (v.state_of_mightyena == 1 || v.state_of_mightyena == 2 || v.state_of_mightyena == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "mightyena.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mightyena_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_mightyena_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mightyena.laugh_out_battle": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mightyena_laugh_out_battle = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_mightyena_laugh_out_battle = q.life_time + 1; return (q.life_time > v.next_quirk_mightyena_laugh_out_battle) && (v.state_of_mightyena == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "mightyena.quirk"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mightyena_laugh_out_battle = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_mightyena_laugh_out_battle ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mightyena.laugh_in_battle": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mightyena_laugh_in_battle = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_mightyena_laugh_in_battle = q.life_time + 1; return (q.life_time > v.next_quirk_mightyena_laugh_in_battle) && (v.state_of_mightyena == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "mightyena.quirk"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mightyena_laugh_in_battle = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_mightyena_laugh_in_battle ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mightyena.sleep_quirk": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mightyena_sleep_quirk = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_mightyena_sleep_quirk = q.life_time + 1; return (q.life_time > v.next_quirk_mightyena_sleep_quirk) && (v.state_of_mightyena == 0);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "mightyena.sleep_quirk"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_mightyena_sleep_quirk = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_mightyena_sleep_quirk ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.mightyena": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "mightyena.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_mightyena = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "mightyenamodel.singlebonelook",
+            "mightyena.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_mightyena = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "mightyenamodel.singlebonelook",
+            "mightyena.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_mightyena = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "mightyenamodel.singlebonelook",
+            "mightyena.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_mightyena = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

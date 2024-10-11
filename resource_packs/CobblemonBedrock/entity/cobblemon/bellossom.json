@@ -1,0 +1,53 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:bellossom",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0182_bellossom/bellossom",
+        "shiny": "textures/pokemon/0182_bellossom/bellossom_shiny",
+        "valencian": "textures/pokemon/0182_bellossom/bellossom_valencian",
+        "valencian_shiny": "textures/pokemon/0182_bellossom/bellossom_valencian_shiny"
+      },
+      "geometry": {
+        "base": "geometry.bellossom.geo",
+        "shiny": "geometry.bellossom.geo",
+        "valencian": "geometry.bellossom.geo",
+        "valencian_shiny": "geometry.bellossom.geo"
+      },
+      "animations": {
+        "bellossom.ground_idle": "animation.bellossom.ground_idle",
+        "bellossommodel.singlebonelook": "animation.bellossommodel.singlebonelook",
+        "bellossom.ground_walk": "animation.bellossom.ground_walk",
+        "bellossom.blink": "animation.bellossom.blink",
+        "controller.animation.bellossom.blink": "controller.animation.bellossom.blink",
+        "controller.animation.cobblemon.bellossom": "controller.animation.cobblemon.bellossom"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.bellossom"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.bellossom.blink",
+          {
+            "controller.animation.cobblemon.bellossom": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3"
+          }
+        ],
+        "initialize": [
+          "v.state_of_bellossom = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

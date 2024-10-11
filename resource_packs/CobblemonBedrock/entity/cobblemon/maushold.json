@@ -1,0 +1,73 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:maushold",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0925_maushold/maushold",
+        "shiny": "textures/pokemon/0925_maushold/maushold_shiny",
+        "maushold_family_four": "textures/pokemon/0925_maushold/maushold"
+      },
+      "geometry": {
+        "base": "geometry.maushold_three.geo",
+        "shiny": "geometry.maushold_three.geo",
+        "maushold_family_four": "geometry.maushold_four.geo"
+      },
+      "animations": {
+        "mausholdmodel.singlebonelook": "animation.mausholdmodel.singlebonelook",
+        "maushold_four.ground_idle": "animation.maushold_four.ground_idle",
+        "maushold_four.ground_walk": "animation.maushold_four.ground_walk",
+        "maushold_four.sleep": "animation.maushold_four.sleep",
+        "maushold_four.blink1": "animation.maushold_four.blink1",
+        "controller.animation.maushold.blink1": "controller.animation.maushold.blink1",
+        "maushold_four.blink2": "animation.maushold_four.blink2",
+        "controller.animation.maushold.blink2": "controller.animation.maushold.blink2",
+        "maushold_four.blink3": "animation.maushold_four.blink3",
+        "controller.animation.maushold.blink3": "controller.animation.maushold.blink3",
+        "controller.animation.cobblemon.maushold": "controller.animation.cobblemon.maushold",
+        "mausholdfourmodel.singlebonelook": "animation.mausholdfourmodel.singlebonelook",
+        "controller.animation.mausholdfour.blink1": "controller.animation.mausholdfour.blink1",
+        "controller.animation.mausholdfour.blink2": "controller.animation.mausholdfour.blink2",
+        "controller.animation.mausholdfour.blink3": "controller.animation.mausholdfour.blink3",
+        "maushold_four.blink4": "animation.maushold_four.blink4",
+        "controller.animation.mausholdfour.blink4": "controller.animation.mausholdfour.blink4",
+        "controller.animation.cobblemon.mausholdfour": "controller.animation.cobblemon.mausholdfour"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.maushold"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.maushold.blink1",
+          "controller.animation.maushold.blink2",
+          "controller.animation.maushold.blink3",
+          {
+            "controller.animation.cobblemon.maushold": "q.variant == 0 || q.variant == 1"
+          },
+          "controller.animation.mausholdfour.blink1",
+          "controller.animation.mausholdfour.blink2",
+          "controller.animation.mausholdfour.blink3",
+          "controller.animation.mausholdfour.blink4",
+          {
+            "controller.animation.cobblemon.mausholdfour": "q.variant == 2"
+          }
+        ],
+        "initialize": [
+          "v.state_of_maushold = -1.0;",
+          "v.state_of_mausholdfour = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "cobblemon:apricorn_prefab"
+    },
+    "features": [
+      ["cobblemon:black_apricorn_prefab", 1],
+      ["cobblemon:white_apricorn_prefab", 1],
+      ["cobblemon:red_apricorn_prefab", 1],
+      ["cobblemon:blue_apricorn_prefab", 1],
+      ["cobblemon:green_apricorn_prefab", 1],
+      ["cobblemon:pink_apricorn_prefab", 1],
+      ["cobblemon:yellow_apricorn_prefab", 1]
+    ]
+  }
+}

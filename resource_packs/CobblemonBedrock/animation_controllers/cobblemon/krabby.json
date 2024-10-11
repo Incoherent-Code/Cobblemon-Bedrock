@@ -1,0 +1,143 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.krabby.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_krabby_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_krabby_blink = q.life_time + 1; return (q.life_time > v.next_quirk_krabby_blink) && (v.state_of_krabby == 0 || v.state_of_krabby == 1 || v.state_of_krabby == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "krabby.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_krabby_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_krabby_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.krabby.snipLeft": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_krabby_snipLeft = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_krabby_snipLeft = q.life_time + 1; return (q.life_time > v.next_quirk_krabby_snipLeft) && (v.state_of_krabby == 0 || v.state_of_krabby == 1 || v.state_of_krabby == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "krabby.snip_left"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_krabby_snipLeft = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_krabby_snipLeft ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.krabby.snipRight": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_krabby_snipRight = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_krabby_snipRight = q.life_time + 1; return (q.life_time > v.next_quirk_krabby_snipRight) && (v.state_of_krabby == 0 || v.state_of_krabby == 1 || v.state_of_krabby == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "krabby.snip_right"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_krabby_snipRight = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_krabby_snipRight ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.krabby": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "krabby.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_krabby = 0; return q.is_moving;"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "krabby.ground_walk"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_krabby = 1; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "krabby.battle_idle"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_krabby = 2; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

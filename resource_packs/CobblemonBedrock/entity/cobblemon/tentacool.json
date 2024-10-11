@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:tentacool",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0072_tentacool/tentacool",
+        "shiny": "textures/pokemon/0072_tentacool/tentacool_shiny",
+        "base_glow": "textures/pokemon/0072_tentacool/tentacool_emissive",
+        "shiny_glow": "textures/pokemon/0072_tentacool/tentacool_emissive"
+      },
+      "geometry": {
+        "base": "geometry.tentacool.geo",
+        "shiny": "geometry.tentacool.geo"
+      },
+      "animations": {
+        "tentacool.ground_idle": "animation.tentacool.ground_idle",
+        "tentacool.water_idle": "animation.tentacool.water_idle",
+        "tentacool.water_swim": "animation.tentacool.water_swim",
+        "tentacool.ground_sleep": "animation.tentacool.ground_sleep",
+        "tentacool.water_sleep": "animation.tentacool.water_sleep",
+        "tentacool.blink": "animation.tentacool.blink",
+        "controller.animation.tentacool.blink": "controller.animation.tentacool.blink",
+        "controller.animation.cobblemon.tentacool": "controller.animation.cobblemon.tentacool"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.tentacool_glow",
+        "controller.render.cobblemon.tentacool"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.tentacool.blink",
+          {
+            "controller.animation.cobblemon.tentacool": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_tentacool = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

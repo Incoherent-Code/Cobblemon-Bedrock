@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "pattern": [
+      " B ",
+      "SMS",
+      "HSH"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:sweet_berries"
+      },
+      "S": {
+        "item": "minecraft:sugar"
+      },
+      "M": {
+        "item": "minecraft:milk_bucket"
+      },
+      "H": {
+        "item": "minecraft:honey_bottle"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:sugar"
+      },
+      {
+        "item": "minecraft:milk_bucket"
+      },
+      {
+        "item": "minecraft:honey_bottle"
+      }
+    ],
+    "result": {
+      "item": "cobblemon:whipped_dream"
+    },
+    "description": {
+      "identifier": "cobblemon:whipped_dream_0"
+    },
+    "tags": [
+      "crafting_table"
+    ]
+  }
+}

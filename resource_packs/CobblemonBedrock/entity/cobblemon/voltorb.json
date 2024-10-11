@@ -1,0 +1,48 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:voltorb",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0100_voltorb/voltorb",
+        "shiny": "textures/pokemon/0100_voltorb/voltorb_shiny"
+      },
+      "geometry": {
+        "base": "geometry.voltorb.geo",
+        "shiny": "geometry.voltorb.geo"
+      },
+      "animations": {
+        "voltorb.ground_idle": "animation.voltorb.ground_idle",
+        "voltorb.ground_walk": "animation.voltorb.ground_walk",
+        "voltorb.blink": "animation.voltorb.blink",
+        "controller.animation.voltorb.blink": "controller.animation.voltorb.blink",
+        "controller.animation.cobblemon.voltorb": "controller.animation.cobblemon.voltorb"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.voltorb"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.voltorb.blink",
+          {
+            "controller.animation.cobblemon.voltorb": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_voltorb = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

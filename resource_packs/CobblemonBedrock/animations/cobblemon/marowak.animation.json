@@ -1,0 +1,87 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.marowakmodel.singlebonelook": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.clamp(query.target_x_rotation - this, -45, 70)",
+            "math.clamp(query.target_y_rotation - this, -45, 45)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.marowak.ground_idle": {
+      "loop": true,
+      "bones": {
+        "leftarm": {
+          "rotation": [
+            75.0,
+            0.0,
+            40.0
+          ]
+        },
+        "leftforearm": {
+          "rotation": [
+            0.0,
+            45.0,
+            0.0
+          ]
+        },
+        "rightarm": {
+          "rotation": [
+            75.0,
+            0.0,
+            -40.0
+          ]
+        },
+        "rightforearm": {
+          "rotation": [
+            0.0,
+            -45.0,
+            0.0
+          ]
+        },
+        "tail": {
+          "rotation": [
+            -15.0,
+            0.0,
+            0.0
+          ]
+        },
+        "tail2": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.marowakmodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "rightleg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.9 + 180) * 1.1 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "leftleg": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 0.9) *  1.1 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

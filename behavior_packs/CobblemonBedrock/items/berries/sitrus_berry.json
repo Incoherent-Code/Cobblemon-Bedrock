@@ -1,0 +1,30 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:sitrus_berry"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "sitrus_berry"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.sitrus_berry"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:berries",
+          "cobblemon:mutated_berries",
+          "cobblemon:plants",
+          "cobblemon:consumed_in_npc_battle",
+          "cobblemon:consumed_in_pvp_battle",
+          "cobblemon:consumed_in_wild_battle"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:destiny_knot"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "destiny_knot"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.destiny_knot"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:destiny_knot",
+          "cobblemon:is_held_item"
+        ]
+      }
+    }
+  }
+}

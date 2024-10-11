@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:pignite",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0499_pignite/pignite",
+        "shiny": "textures/pokemon/0499_pignite/pignite_shiny"
+      },
+      "geometry": {
+        "base": "geometry.pignite.geo",
+        "shiny": "geometry.pignite.geo"
+      },
+      "animations": {
+        "pignite.sleep": "animation.pignite.sleep",
+        "pignitemodel.singlebonelook": "animation.pignitemodel.singlebonelook",
+        "pignite.ground_idle": "animation.pignite.ground_idle",
+        "pignite.ground_walk": "animation.pignite.ground_walk",
+        "pignite.blink": "animation.pignite.blink",
+        "controller.animation.pignite.blink": "controller.animation.pignite.blink",
+        "controller.animation.cobblemon.pignite": "controller.animation.cobblemon.pignite"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.pignite"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.pignite.blink",
+          {
+            "controller.animation.cobblemon.pignite": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_pignite = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

@@ -1,0 +1,68 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:porygonz",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0474_porygonz/porygonz",
+        "shiny": "textures/pokemon/0474_porygonz/porygonz_shiny"
+      },
+      "geometry": {
+        "base": "geometry.porygonz.geo",
+        "shiny": "geometry.porygonz.geo"
+      },
+      "animations": {
+        "porygonz.sleep": "animation.porygonz.sleep",
+        "porygonzmodel.singlebonelook": "animation.porygonzmodel.singlebonelook",
+        "porygonz.ground_idle": "animation.porygonz.ground_idle",
+        "porygonz.ground_walk": "animation.porygonz.ground_walk",
+        "porygonz.blink": "animation.porygonz.blink",
+        "controller.animation.porygonz.blink": "controller.animation.porygonz.blink",
+        "porygonz.twitch1": "animation.porygonz.twitch1",
+        "controller.animation.porygonz.twitch1": "controller.animation.porygonz.twitch1",
+        "porygonz.twitch2": "animation.porygonz.twitch2",
+        "controller.animation.porygonz.twitch2": "controller.animation.porygonz.twitch2",
+        "porygonz.twitch3": "animation.porygonz.twitch3",
+        "controller.animation.porygonz.twitch3": "controller.animation.porygonz.twitch3",
+        "porygonz.twitch4": "animation.porygonz.twitch4",
+        "controller.animation.porygonz.twitch4": "controller.animation.porygonz.twitch4",
+        "porygonz.twitch5": "animation.porygonz.twitch5",
+        "controller.animation.porygonz.twitch5": "controller.animation.porygonz.twitch5",
+        "porygonz.twitch6": "animation.porygonz.twitch6",
+        "controller.animation.porygonz.twitch6": "controller.animation.porygonz.twitch6",
+        "controller.animation.cobblemon.porygonz": "controller.animation.cobblemon.porygonz"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.porygonz"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.porygonz.blink",
+          "controller.animation.porygonz.twitch1",
+          "controller.animation.porygonz.twitch2",
+          "controller.animation.porygonz.twitch3",
+          "controller.animation.porygonz.twitch4",
+          "controller.animation.porygonz.twitch5",
+          "controller.animation.porygonz.twitch6",
+          {
+            "controller.animation.cobblemon.porygonz": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_porygonz = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

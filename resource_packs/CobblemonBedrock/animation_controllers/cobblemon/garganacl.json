@@ -1,0 +1,111 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cobblemon.garganacl": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "garganaclmodel.singlebonelook",
+            "garganacl.ground_idle",
+            "garganacl.standing.transform"
+          ],
+          "transitions": [
+            {
+              "battlestanding": "v.state_of_garganacl = 0; return (!q.is_moving) && (q.property('cobblemon:in_battle'));"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battlestanding": {
+          "animations": [
+            "garganaclmodel.singlebonelook",
+            "garganacl.battle_idle",
+            "garganacl.battlestanding.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_garganacl = 1; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "sleep": {
+          "animations": [
+            "garganacl.sleep",
+            "garganacl.sleep.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_garganacl = 2; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "battlestanding": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "portrait": {
+          "animations": [
+            "garganacl.ground_idle",
+            "garganacl.portrait.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_garganacl = 3; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "battlestanding": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            },
+            {
+              "walk": "(q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "garganaclmodel.singlebonelook",
+            "garganacl.ground_idle",
+            "garganacl.ground_walk",
+            "garganacl.walk.transform"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_garganacl = 4; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "battlestanding": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            },
+            {
+              "sleep": "q.is_sleeping"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

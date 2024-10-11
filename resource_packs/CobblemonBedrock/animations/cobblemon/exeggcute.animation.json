@@ -1,0 +1,677 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.exeggcute.portrait": {
+      "loop": true,
+      "animation_length": 4.0,
+      "bones": {
+        "egg": {
+          "rotation": [
+            "-(math.sin(q.anim_time*90*1)*2)",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "math.abs(math.sin(q.anim_time*90*1)*0.125)",
+            0.0
+          ]
+        },
+        "egg2": {
+          "rotation": [
+            "(math.sin(q.anim_time*90*8)*1)",
+            "15-(math.sin(q.anim_time*90*2)*2)",
+            0.0
+          ],
+          "position": [
+            1.0,
+            "0+math.abs(math.sin(q.anim_time*90*4)*0.25)",
+            0.0
+          ]
+        },
+        "egg3": {
+          "rotation": [
+            0.0,
+            -15.0,
+            "0+(math.sin(q.anim_time*90*3)*2)"
+          ],
+          "position": [
+            -1.0,
+            "math.abs(math.sin(q.anim_time*90*3)*0.125)",
+            0.0
+          ]
+        },
+        "egg4": {
+          "rotation": [
+            "0+math.random(0,(math.sin(q.anim_time*90*1)*1))",
+            -10.0,
+            "0+math.random(0,(math.sin(q.anim_time*90*1)*1))"
+          ],
+          "position": [
+            -0.5,
+            0.0,
+            0.0
+          ]
+        },
+        "egg5": {
+          "rotation": [
+            "math.sin(q.anim_time*90*3-90)*1",
+            -180.0,
+            "math.sin(q.anim_time*90*3)*1"
+          ],
+          "position": [
+            0.0,
+            "math.abs(math.sin(q.anim_time*90*3)*0.125)",
+            -0.5
+          ]
+        },
+        "egg6": {
+          "rotation": [
+            "math.sin(q.anim_time*90*4-90)*2",
+            10.0,
+            "math.sin(q.anim_time*90*4)*2"
+          ],
+          "position": [
+            0.5,
+            0.2,
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            10.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.exeggcute.sleep": {
+      "loop": true,
+      "animation_length": 4.0,
+      "bones": {
+        "egg": {
+          "rotation": [
+            "-(math.sin(q.anim_time*90*1)*2)",
+            10.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "math.abs(math.sin(q.anim_time*90*0.5)*0.125)",
+            0.0
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "egg2": {
+          "rotation": [
+            "-(math.sin(q.anim_time*90*1-30)*2)",
+            32.5,
+            0.0
+          ],
+          "position": [
+            1.0,
+            "math.abs(math.sin(q.anim_time*90*0.5)*0.125)",
+            0.5
+          ]
+        },
+        "eyelid_right2": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "eyelid_left2": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "egg3": {
+          "rotation": [
+            "-(math.sin(q.anim_time*90*1-60)*2)",
+            -32.5,
+            0.0
+          ],
+          "position": [
+            -1.0,
+            "math.abs(math.sin(q.anim_time*90*0.5)*0.125)",
+            1.0
+          ]
+        },
+        "eyelid_right3": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "eyelid_left3": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "egg4": {
+          "rotation": [
+            "-(math.sin(q.anim_time*90*1-90)*2)",
+            -105.0,
+            0.0
+          ],
+          "position": [
+            -1.0,
+            "math.abs(math.sin(q.anim_time*90*0.5)*0.125)",
+            1.0
+          ]
+        },
+        "eyelid_right4": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "eyelid_left4": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "egg5": {
+          "rotation": [
+            "-(math.sin(q.anim_time*90*1-150)*2)",
+            187.5,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "math.abs(math.sin(q.anim_time*90*0.5)*0.125)",
+            -1.0
+          ]
+        },
+        "eyelid_right5": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "eyelid_left5": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "egg6": {
+          "rotation": [
+            "-(math.sin(q.anim_time*90*1-120)*2)",
+            70.0,
+            0.0
+          ],
+          "position": [
+            1.0,
+            "math.abs(math.sin(q.anim_time*90*0.5+120)*0.125)",
+            0.0
+          ]
+        },
+        "eyelid_right6": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        },
+        "eyelid_left6": {
+          "position": [
+            0.0,
+            0.0,
+            -0.2
+          ]
+        }
+      }
+    },
+    "animation.exeggcute.ground_idle": {
+      "loop": true,
+      "animation_length": 4.0,
+      "bones": {
+        "egg": {
+          "rotation": [
+            "-(math.sin(q.anim_time*90*1)*2)",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "math.abs(math.sin(q.anim_time*90*1)*0.125)",
+            0.0
+          ]
+        },
+        "egg2": {
+          "rotation": [
+            "(math.sin(q.anim_time*90*8)*1)",
+            "15-(math.sin(q.anim_time*90*2)*2)",
+            0.0
+          ],
+          "position": [
+            1.0,
+            "0+math.abs(math.sin(q.anim_time*90*4)*0.25)",
+            0.0
+          ]
+        },
+        "egg3": {
+          "rotation": [
+            0.0,
+            -15.0,
+            "0+(math.sin(q.anim_time*90*3)*2)"
+          ],
+          "position": [
+            -1.0,
+            "math.abs(math.sin(q.anim_time*90*3)*0.125)",
+            0.0
+          ]
+        },
+        "egg4": {
+          "rotation": [
+            "0+math.random(0,(math.sin(q.anim_time*90*1)*1))",
+            -10.0,
+            "0+math.random(0,(math.sin(q.anim_time*90*1)*1))"
+          ],
+          "position": [
+            -0.5,
+            0.0,
+            0.0
+          ]
+        },
+        "egg5": {
+          "rotation": [
+            "math.sin(q.anim_time*90*3-90)*1",
+            -180.0,
+            "math.sin(q.anim_time*90*3)*1"
+          ],
+          "position": [
+            0.0,
+            "math.abs(math.sin(q.anim_time*90*3)*0.125)",
+            -0.5
+          ]
+        },
+        "egg6": {
+          "rotation": [
+            "math.sin(q.anim_time*90*4-90)*2",
+            10.0,
+            "math.sin(q.anim_time*90*4)*2"
+          ],
+          "position": [
+            0.5,
+            0.2,
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.exeggcute.ground_walk": {
+      "loop": true,
+      "animation_length": 2.0,
+      "bones": {
+        "egg": {
+          "rotation": [
+            "12.5-(math.sin(q.anim_time*90*8-40)*8)",
+            0.0,
+            "-(math.sin(q.anim_time*90*4-40)*4)"
+          ],
+          "position": [
+            "-(math.sin(q.anim_time*90*4-40)*0.25)",
+            "0.5+math.abs(math.sin(q.anim_time*90*4-40)*4)",
+            "-math.abs(math.sin(q.anim_time*90*4-40)*1.5)"
+          ]
+        },
+        "egg2": {
+          "rotation": [
+            "12.5-(math.sin(q.anim_time*90*8)*8)",
+            0.0,
+            "-(math.sin(q.anim_time*90*4)*4)"
+          ],
+          "position": [
+            "-(math.sin(q.anim_time*90*4)*0.25)",
+            "0.5+math.abs(math.sin(q.anim_time*90*4)*4)",
+            "-math.abs(math.sin(q.anim_time*90*4)*1.5)"
+          ]
+        },
+        "egg3": {
+          "rotation": [
+            "12.5-(math.sin(q.anim_time*90*8-20)*8)",
+            0.0,
+            "-(math.sin(q.anim_time*90*4-20)*4)"
+          ],
+          "position": [
+            "-(math.sin(q.anim_time*90*4-20)*0.25)",
+            "0.5+math.abs(math.sin(q.anim_time*90*4-20)*4)",
+            "-math.abs(math.sin(q.anim_time*90*4-20)*1.5)"
+          ]
+        },
+        "egg4": {
+          "rotation": [
+            "12.5-(math.sin(q.anim_time*90*8-80)*8)",
+            0.0,
+            "-(math.sin(q.anim_time*90*4-80)*4)"
+          ],
+          "position": [
+            "-(math.sin(q.anim_time*90*4-80)*0.25)",
+            "0.5+math.abs(math.sin(q.anim_time*90*4-80)*4)",
+            "-math.abs(math.sin(q.anim_time*90*4-80)*1.5)"
+          ]
+        },
+        "egg5": {
+          "rotation": [
+            "-5+(math.sin(q.anim_time*90*8-100)*8)",
+            0.0,
+            "-(math.sin(q.anim_time*90*4-100)*4)"
+          ],
+          "position": [
+            "-(math.sin(q.anim_time*90*4-100)*0.25)",
+            "0.5+math.abs(math.sin(q.anim_time*90*4-100)*4)",
+            "-math.abs(math.sin(q.anim_time*90*4-100)*1.5)"
+          ]
+        },
+        "egg6": {
+          "rotation": [
+            "12.5-(math.sin(q.anim_time*90*8-60)*8)",
+            0.0,
+            "-(math.sin(q.anim_time*90*4-60)*4)"
+          ],
+          "position": [
+            "-(math.sin(q.anim_time*90*4-60)*0.25)",
+            "0.5+math.abs(math.sin(q.anim_time*90*4-60)*4)",
+            "-math.abs(math.sin(q.anim_time*90*4-60)*1.5)"
+          ]
+        },
+        "yoke": {
+          "position": [
+            0.0,
+            "-0.5+math.abs(math.sin(q.anim_time*90*4-130)*1.25)",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.exeggcute.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "animation.exeggcute.blink2": {
+      "animation_length": 0.1667,
+      "bones": {
+        "eyelid_right2": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left2": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "animation.exeggcute.blink3": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right3": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left3": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "animation.exeggcute.blink4": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right4": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left4": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "animation.exeggcute.blink5": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right6": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left6": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "animation.exeggcute.blink6": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right5": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left5": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.2
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

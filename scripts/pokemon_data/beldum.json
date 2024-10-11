@@ -1,0 +1,153 @@
+{
+  "minLevel": 5,
+  "maxLevel": 30,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 5,
+      "maxLevel": 30
+    },
+    "1": {
+      "minLevel": 5,
+      "maxLevel": 30
+    },
+    "2": {
+      "minLevel": 5,
+      "maxLevel": 30
+    }
+  },
+  "name": "Beldum",
+  "nationalPokedexNumber": 374,
+  "baseStats": {
+    "hp": 40,
+    "attack": 55,
+    "defence": 80,
+    "special_attack": 35,
+    "special_defence": 60,
+    "speed": 30
+  },
+  "maleRatio": -1.0,
+  "catchRate": 3,
+  "baseScale": 0.75,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 35,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "slow",
+  "hitbox": {
+    "width": 0.4,
+    "height": 0.8,
+    "fixed": false
+  },
+  "primaryType": "steel",
+  "secondaryType": "psychic",
+  "abilities": [
+    "clearbody",
+    "h:lightmetal"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:tackle",
+    "1:takedown",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:zenheadbutt",
+    "tutor:headbutt",
+    "tutor:holdback",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:steelbeam",
+    "tutor:takedown",
+    "tutor:zenheadbutt"
+  ],
+  "evolutions": [
+    {
+      "id": "beldum_metang",
+      "variant": "level_up",
+      "result": "metang",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "confusion",
+        "metalclaw"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 20
+        }
+      ]
+    }
+  ],
+  "features": [],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": true,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.beldum.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:metal_coat",
+        "percentage": 2.5
+      }
+    ]
+  },
+  "eggCycles": 40,
+  "eggGroups": [
+    "mineral"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 6.0,
+  "weight": 952.0
+}

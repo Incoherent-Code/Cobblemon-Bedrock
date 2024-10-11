@@ -1,0 +1,105 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.staraptor.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_staraptor_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_staraptor_blink = q.life_time + 1; return (q.life_time > v.next_quirk_staraptor_blink) && (v.state_of_staraptor == 0 || v.state_of_staraptor == 1 || v.state_of_staraptor == 2 || v.state_of_staraptor == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "staraptor.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_staraptor_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_staraptor_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.staraptor": {
+      "initial_state": "stand",
+      "states": {
+        "stand": {
+          "animations": [
+            "staraptormodel.singlebonelook",
+            "staraptor.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_staraptor = 0; return (q.is_moving && !q.is_swimming);"
+            },
+            {
+              "fly": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "staraptormodel.singlebonelook",
+            "staraptor.ground_idle",
+            "staraptormodel.bipedwalkanimation"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_staraptor = 1; return !q.is_moving;"
+            },
+            {
+              "fly": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "staraptormodel.singlebonelook"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_staraptor = 2; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "fly": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "staraptormodel.singlebonelook"
+          ],
+          "transitions": [
+            {
+              "stand": "v.state_of_staraptor = 3; return !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

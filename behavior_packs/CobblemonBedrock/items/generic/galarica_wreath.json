@@ -1,0 +1,25 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cobblemon:galarica_wreath"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "galarica_wreath"
+      },
+      "minecraft:display_name": {
+        "value": "item.cobblemon.galarica_wreath"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "cobblemon:evolution_items"
+        ]
+      }
+    }
+  }
+}

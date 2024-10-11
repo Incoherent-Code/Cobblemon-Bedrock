@@ -1,0 +1,19 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:ore_feature": {
+    "count": 4,
+    "description": {
+      "identifier": "cobblemon:sun_stone_rare_feature"
+    },
+    "replace_rules": [
+      {
+        "places_block": "cobblemon:sun_stone_ore",
+        "may_replace": ["minecraft:stone"]
+      },
+      {
+        "places_block": "cobblemon:deepslate_sun_stone_ore",
+        "may_replace": ["minecraft:deepslate"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.espeon.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_espeon_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_espeon_blink = q.life_time + 1; return (q.life_time > v.next_quirk_espeon_blink) && (v.state_of_espeon == 0 || v.state_of_espeon == 1);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "espeon.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_espeon_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_espeon_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.espeon": {
+      "initial_state": "standing",
+      "states": {
+        "standing": {
+          "animations": [
+            "espeonmodel.singlebonelook",
+            "espeon.ground_idle"
+          ],
+          "transitions": [
+            {
+              "walk": "v.state_of_espeon = 0; return q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "espeonmodel.singlebonelook",
+            "espeon.ground_run"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_espeon = 1; return !q.is_moving;"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

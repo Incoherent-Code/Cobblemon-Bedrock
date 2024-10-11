@@ -1,0 +1,49 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:machamp",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0068_machamp/machamp",
+        "shiny": "textures/pokemon/0068_machamp/machamp_shiny"
+      },
+      "geometry": {
+        "base": "geometry.machamp.geo",
+        "shiny": "geometry.machamp.geo"
+      },
+      "animations": {
+        "machampmodel.singlebonelook": "animation.machampmodel.singlebonelook",
+        "machamp.ground_idle": "animation.machamp.ground_idle",
+        "machamp.ground_walk": "animation.machamp.ground_walk",
+        "machamp.blink": "animation.machamp.blink",
+        "controller.animation.machamp.blink": "controller.animation.machamp.blink",
+        "controller.animation.cobblemon.machamp": "controller.animation.cobblemon.machamp"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.machamp"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.machamp.blink",
+          {
+            "controller.animation.cobblemon.machamp": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_machamp = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

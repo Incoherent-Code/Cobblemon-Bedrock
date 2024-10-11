@@ -1,0 +1,108 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.seaking.ground_idle": {
+      "loop": true,
+      "bones": {
+        "lefttail": {
+          "rotation": [
+            20.0,
+            15.0,
+            -5.0
+          ]
+        },
+        "righttail": {
+          "rotation": [
+            20.0,
+            -15.0,
+            5.0
+          ]
+        },
+        "rightwing": {
+          "rotation": [
+            0.0,
+            0.0,
+            -27.5
+          ]
+        },
+        "leftwing": {
+          "rotation": [
+            0.0,
+            0.0,
+            27.5
+          ]
+        }
+      }
+    },
+    "animation.seaking.water_idle": {
+      "loop": true,
+      "bones": {
+        "lefttail": {
+          "rotation": [
+            0.0,
+            30.0,
+            -15.0
+          ]
+        },
+        "righttail": {
+          "rotation": [
+            0.0,
+            -30.0,
+            15.0
+          ]
+        },
+        "rightwing": {
+          "rotation": [
+            15.0,
+            0.0,
+            -30.0
+          ]
+        },
+        "leftwing": {
+          "rotation": [
+            15.0,
+            0.0,
+            30.0
+          ]
+        }
+      }
+    },
+    "animation.seaking.water_swim": {
+      "loop": true,
+      "bones": {
+        "lefttail": {
+          "rotation": [
+            0.0,
+            15.0,
+            -15.0
+          ]
+        },
+        "righttail": {
+          "rotation": [
+            0.0,
+            -15.0,
+            15.0
+          ]
+        },
+        "rightwing": {
+          "rotation": [
+            15.0,
+            15.0,
+            -30.0
+          ]
+        },
+        "leftwing": {
+          "rotation": [
+            15.0,
+            -15.0,
+            30.0
+          ]
+        }
+      }
+    }
+  }
+}

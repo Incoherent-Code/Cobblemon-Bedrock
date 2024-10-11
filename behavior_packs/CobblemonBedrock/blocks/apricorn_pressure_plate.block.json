@@ -1,0 +1,103 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cobblemon:apricorn_pressure_plate",
+      "states": {
+        "cobblemon:pressed": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.pressure_plate_up"
+      },
+      "minecraft:display_name": "block.cobblemon.apricorn_pressure_plate",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "apricorn_planks"
+        }
+      },
+      "minecraft:custom_components": [
+        "cobblemon:pressure_plate_component"
+      ],
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('cobblemon:pressed')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.pressure_plate_down"
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -7,
+              0,
+              -7
+            ],
+            "size": [
+              14,
+              0.5,
+              14
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -7,
+              0,
+              -7
+            ],
+            "size": [
+              14,
+              0.5,
+              14
+            ]
+          }
+        }
+      },
+      {
+        "condition": "!q.block_state('cobblemon:pressed')",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.pressure_plate_up"
+          },
+          "minecraft:collision_box": {
+            "origin": [
+              -7,
+              0,
+              -7
+            ],
+            "size": [
+              14,
+              1,
+              14
+            ]
+          },
+          "minecraft:selection_box": {
+            "origin": [
+              -7,
+              0,
+              -7
+            ],
+            "size": [
+              14,
+              1,
+              14
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.revavroom.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_revavroom_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_revavroom_blink = q.life_time + 1; return (q.life_time > v.next_quirk_revavroom_blink) && (v.state_of_revavroom == 1 || v.state_of_revavroom == 2);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "revavroom.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_revavroom_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_revavroom_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.revavroom": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "revavroom.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_revavroom = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "revavroom.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_revavroom = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "revavroom.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_revavroom = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

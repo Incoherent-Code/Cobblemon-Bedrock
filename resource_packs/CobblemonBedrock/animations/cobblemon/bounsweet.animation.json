@@ -1,0 +1,28 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.bounsweetmodel.bipedwalkanimation": {
+      "loop": true,
+      "bones": {
+        "right_foot": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1 + 180) * 0.5 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        },
+        "left_foot": {
+          "rotation": [
+            "math.cos(query.modified_distance_moved * 57.3 * 1) *  0.5 * 57.3 * q.modified_move_speed",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

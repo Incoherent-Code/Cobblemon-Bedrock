@@ -1,0 +1,54 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:turtwig",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0387_turtwig/turtwig",
+        "shiny": "textures/pokemon/0387_turtwig/turtwig_shiny"
+      },
+      "geometry": {
+        "base": "geometry.turtwig.geo",
+        "shiny": "geometry.turtwig.geo"
+      },
+      "animations": {
+        "turtwig.sleep": "animation.turtwig.sleep",
+        "turtwigmodel.singlebonelook": "animation.turtwigmodel.singlebonelook",
+        "turtwig.ground_idle": "animation.turtwig.ground_idle",
+        "turtwig.ground_walk": "animation.turtwig.ground_walk",
+        "turtwig.shoulder_left": "animation.turtwig.shoulder_left",
+        "turtwig.shoulderleft.transform": "animation.turtwig.shoulderleft.transform",
+        "turtwig.shoulder_right": "animation.turtwig.shoulder_right",
+        "turtwig.shoulderright.transform": "animation.turtwig.shoulderright.transform",
+        "turtwig.blink": "animation.turtwig.blink",
+        "controller.animation.turtwig.blink": "controller.animation.turtwig.blink",
+        "controller.animation.cobblemon.turtwig": "controller.animation.cobblemon.turtwig"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.turtwig"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.turtwig.blink",
+          {
+            "controller.animation.cobblemon.turtwig": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_turtwig = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

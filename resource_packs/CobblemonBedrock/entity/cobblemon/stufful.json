@@ -1,0 +1,51 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:stufful",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0759_stufful/stufful",
+        "shiny": "textures/pokemon/0759_stufful/stufful_shiny"
+      },
+      "geometry": {
+        "base": "geometry.stufful.geo",
+        "shiny": "geometry.stufful.geo"
+      },
+      "animations": {
+        "stufful.sleep": "animation.stufful.sleep",
+        "stuffulmodel.singlebonelook": "animation.stuffulmodel.singlebonelook",
+        "stufful.ground_idle": "animation.stufful.ground_idle",
+        "stufful.ground_walk": "animation.stufful.ground_walk",
+        "stufful.battle_idle": "animation.stufful.battle_idle",
+        "stufful.blink": "animation.stufful.blink",
+        "controller.animation.stufful.blink": "controller.animation.stufful.blink",
+        "controller.animation.cobblemon.stufful": "controller.animation.cobblemon.stufful"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.stufful"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.stufful.blink",
+          {
+            "controller.animation.cobblemon.stufful": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_stufful = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

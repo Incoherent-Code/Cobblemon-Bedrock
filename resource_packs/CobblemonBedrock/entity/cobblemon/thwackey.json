@@ -1,0 +1,52 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:thwackey",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0811_thwackey/thwackey",
+        "shiny": "textures/pokemon/0811_thwackey/thwackey_shiny"
+      },
+      "geometry": {
+        "base": "geometry.thwackey.geo",
+        "shiny": "geometry.thwackey.geo"
+      },
+      "animations": {
+        "thwackeymodel.singlebonelook": "animation.thwackeymodel.singlebonelook",
+        "thwackey.ground_idle": "animation.thwackey.ground_idle",
+        "thwackey.standing.transform": "animation.thwackey.standing.transform",
+        "thwackey.ground_walk": "animation.thwackey.ground_walk",
+        "thwackey.walk.transform": "animation.thwackey.walk.transform",
+        "thwackey.battleidle.transform": "animation.thwackey.battleidle.transform",
+        "thwackey.blink": "animation.thwackey.blink",
+        "controller.animation.thwackey.blink": "controller.animation.thwackey.blink",
+        "controller.animation.cobblemon.thwackey": "controller.animation.cobblemon.thwackey"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.thwackey"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.thwackey.blink",
+          {
+            "controller.animation.cobblemon.thwackey": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_thwackey = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

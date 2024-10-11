@@ -1,0 +1,111 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.hitmonlee.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_hitmonlee_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_hitmonlee_blink = q.life_time + 1; return (q.life_time > v.next_quirk_hitmonlee_blink) && (v.state_of_hitmonlee == 1 || v.state_of_hitmonlee == 2 || v.state_of_hitmonlee == 3);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "hitmonlee.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_hitmonlee_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_hitmonlee_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.hitmonlee": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "hitmonlee.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_hitmonlee = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "hitmonlee.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_hitmonlee = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "hitmonlee.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_hitmonlee = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "hitmonlee.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_hitmonlee = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

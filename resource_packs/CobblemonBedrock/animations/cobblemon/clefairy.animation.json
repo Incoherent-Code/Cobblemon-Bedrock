@@ -1,0 +1,283 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.clefairy.ground_idle": {
+      "loop": true,
+      "bones": {
+        "torso": {
+          "rotation": [
+            0.0,
+            0.0,
+            "math.sin(q.anim_time*90*4)*1"
+          ],
+          "position": [
+            "math.sin(q.anim_time*90*4)*0.05",
+            "-0.25*(math.sin(q.anim_time*90*4-90)*1+1)",
+            0.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            "3*(math.sin(q.anim_time*90*4-45)*1+1)+15",
+            "-math.sin(query.anim_time*90*4+45)*10-15",
+            -20.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            "3*(math.sin(q.anim_time*90*4-45)*1+1)+15",
+            "math.sin(query.anim_time*90*4+45)*10+15",
+            "20+3*(math.sin(q.anim_time*90*4-45)*1+1)"
+          ]
+        },
+        "tail": {
+          "rotation": [
+            0.0,
+            "4*(math.sin(q.anim_time*90*4)*1)+4*(math.sin(q.anim_time*90*4/2)*1)",
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            0.0,
+            "-55-math.sin(query.anim_time*90*4+90)*10",
+            0.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            0.0,
+            "55+math.sin(query.anim_time*90*4+90)*10",
+            0.0
+          ]
+        }
+      }
+    },
+    "animation.clefairy.sleep": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [
+            0.0,
+            -2.0,
+            0.0
+          ]
+        },
+        "torso": {
+          "rotation": [
+            7.5,
+            0.0,
+            0.0
+          ]
+        },
+        "eyelid_right": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "eyelid_left": {
+          "position": [
+            0.0,
+            0.0,
+            -0.1
+          ]
+        },
+        "ear_right": {
+          "rotation": [
+            0.0,
+            -20.0,
+            0.0
+          ]
+        },
+        "ear_left": {
+          "rotation": [
+            0.0,
+            20.0,
+            0.0
+          ]
+        },
+        "arm_right": {
+          "rotation": [
+            190.68246,
+            -49.9012,
+            -118.44756
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            -170.60687,
+            43.40362,
+            -244.01297
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            0.0,
+            -40.0,
+            0.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            0.0,
+            40.0,
+            0.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            -68.55504,
+            24.29278,
+            5.10535
+          ]
+        },
+        "leg_right2": {
+          "rotation": [
+            22.99008,
+            11.53486,
+            4.8493
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            -71.88679,
+            -33.64409,
+            -10.27206
+          ]
+        },
+        "leg_left2": {
+          "rotation": [
+            18.07779,
+            -14.2906,
+            -4.60659
+          ]
+        }
+      }
+    },
+    "animation.clefairy.ground_walk": {
+      "loop": true,
+      "bones": {
+        "arm_right": {
+          "rotation": [
+            "3*(math.sin(q.anim_time*90*4-45+180*2)*1+1)+60",
+            "math.sin(query.anim_time*90*4+45+180*2)*14-5",
+            -20.0
+          ]
+        },
+        "arm_left": {
+          "rotation": [
+            "3*(math.sin(q.anim_time*90*4-45+180)*1+1)+60",
+            "-math.sin(query.anim_time*90*4+45+180)*14+5",
+            20.0
+          ]
+        },
+        "leg_right": {
+          "rotation": [
+            "-math.clamp(math.sin(query.anim_time*90*4+45+180)*10,-5,8)",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "-math.clamp(math.sin(query.anim_time*90*4+180)*0.8,0,0.7)+-math.clamp(math.sin(query.anim_time*90*4-110+180)*1,0.5,1)+0.5",
+            "-math.clamp(math.sin(query.anim_time*90*4+180)*0.2,-0.5,1)-math.clamp(math.sin(query.anim_time*90*4)*0.4,-0.8,0)-0.1"
+          ]
+        },
+        "leg_left": {
+          "rotation": [
+            "-math.clamp(math.sin(query.anim_time*90*4+45)*10,-5,8)",
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            "-math.clamp(math.sin(query.anim_time*90*4)*0.8,0,0.7)+-math.clamp(math.sin(query.anim_time*90*4-110)*1,0.5,1)+0.5",
+            "-math.clamp(math.sin(query.anim_time*90*4)*0.2,-0.5,1)-math.clamp(math.sin(query.anim_time*90*4)*0.4,-0.8,0)-0.1"
+          ]
+        },
+        "tail": {
+          "rotation": [
+            0.0,
+            "math.sin(query.anim_time*90*4-90)*5",
+            0.0
+          ]
+        },
+        "wing_right": {
+          "rotation": [
+            0.0,
+            "-45-math.sin(query.anim_time*90*8+90)*20",
+            0.0
+          ]
+        },
+        "wing_left": {
+          "rotation": [
+            0.0,
+            "45+math.sin(query.anim_time*90*8+90)*20",
+            0.0
+          ]
+        },
+        "body": {
+          "rotation": [
+            "math.clamp(math.sin(query.anim_time*180*4/2+20)*2,0.2,2)+math.clamp(-math.sin(query.anim_time*180*4/2+20)*2,0.2,2)+1",
+            "math.sin(query.anim_time*90*4+20)*6",
+            0.0
+          ],
+          "position": [
+            0.0,
+            "-math.clamp(math.sin(-query.anim_time*90*4+45/2)*2,0.2,1.8)-math.clamp(math.sin(-query.anim_time*90*4+45/2+180)*2,0.2,1.8)+2.5",
+            "-math.clamp(math.sin(query.anim_time*90*4)*1,0.1,0.9)-math.clamp(math.sin(-query.anim_time*90*4)*1,0.1,0.9)+0.2"
+          ]
+        }
+      }
+    },
+    "animation.clefairy.blink": {
+      "animation_length": 0.16667,
+      "bones": {
+        "eyelid_right": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "eyelid_left": {
+          "position": {
+            "0.0": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.125": [
+              0.0,
+              0.0,
+              -0.1
+            ],
+            "0.1667": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

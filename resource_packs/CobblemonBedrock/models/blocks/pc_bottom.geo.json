@@ -1,0 +1,233 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cobblemon.pc_bottom",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [
+						8,
+						0,
+						-8
+					],
+					"cubes": [
+						{
+							"origin": [
+								-7,
+								1,
+								-7
+							],
+							"size": [
+								14,
+								15,
+								13
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										13,
+										48
+									],
+									"uv_size": [
+										14,
+										15
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										48
+									],
+									"uv_size": [
+										13,
+										15
+									]
+								},
+								"south": {
+									"uv": [
+										40,
+										48
+									],
+									"uv_size": [
+										14,
+										15
+									]
+								},
+								"west": {
+									"uv": [
+										27,
+										48
+									],
+									"uv_size": [
+										13,
+										15
+									]
+								},
+								"up": {
+									"uv": [
+										14,
+										44
+									],
+									"uv_size": [
+										-14,
+										-13
+									]
+								},
+								"down": {
+									"uv": [
+										14,
+										48
+									],
+									"uv_size": [
+										-14,
+										-13
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-6,
+								0,
+								-6
+							],
+							"size": [
+								12,
+								1,
+								12
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										1,
+										63
+									],
+									"uv_size": [
+										12,
+										1
+									]
+								},
+								"east": {
+									"uv": [
+										37,
+										63
+									],
+									"uv_size": [
+										12,
+										1
+									]
+								},
+								"south": {
+									"uv": [
+										25,
+										63
+									],
+									"uv_size": [
+										12,
+										1
+									]
+								},
+								"west": {
+									"uv": [
+										13,
+										63
+									],
+									"uv_size": [
+										12,
+										1
+									]
+								},
+								"down": {
+									"uv": [
+										13,
+										47
+									],
+									"uv_size": [
+										-12,
+										-12
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-5,
+								0,
+								6
+							],
+							"size": [
+								10,
+								16,
+								2
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										12,
+										14
+									],
+									"uv_size": [
+										2,
+										16
+									]
+								},
+								"south": {
+									"uv": [
+										2,
+										14
+									],
+									"uv_size": [
+										10,
+										16
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										14
+									],
+									"uv_size": [
+										2,
+										16
+									]
+								},
+								"up": {
+									"uv": [
+										24,
+										2
+									],
+									"uv_size": [
+										-10,
+										-2
+									]
+								},
+								"down": {
+									"uv": [
+										52,
+										61
+									],
+									"uv_size": [
+										-10,
+										-2
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

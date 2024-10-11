@@ -1,0 +1,226 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.wishiwashi_solo.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_wishiwashi_solo_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_wishiwashi_solo_blink = q.life_time + 1; return (q.life_time > v.next_quirk_wishiwashi_solo_blink) && (v.state_of_wishiwashi_solo == 1 || v.state_of_wishiwashi_solo == 2 || v.state_of_wishiwashi_solo == 3 || v.state_of_wishiwashi_solo == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "wishiwashi_solo.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_wishiwashi_solo_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_wishiwashi_solo_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.wishiwashi_solo": {
+      "initial_state": "standing",
+      "states": {
+        "watersleep": {
+          "animations": [
+            "wishiwashi_solo.water_sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_wishiwashi_solo = 0; return (q.is_moving && !q.is_swimming)|| !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "wishiwashi_solo.ground_idle"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_wishiwashi_solo = 1; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "wishiwashi_solo.ground_walk"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_wishiwashi_solo = 2; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "standing": "(q.is_moving && !q.is_swimming)|| !q.is_moving"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "floating": {
+          "animations": [
+            "wishiwashi_solo.water_idle"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_wishiwashi_solo = 3; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "standing": "(q.is_moving && !q.is_swimming)|| !q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swimming": {
+          "animations": [
+            "wishiwashi_solo.water_swim"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_wishiwashi_solo = 4; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "standing": "(q.is_moving && !q.is_swimming)|| !q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.cobblemon.wishiwashi_schooling": {
+      "initial_state": "standing",
+      "states": {
+        "watersleep": {
+          "animations": [
+            "wishiwashi_school.water_sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_wishiwashi_schooling = 0; return (q.is_moving && !q.is_swimming)|| !q.is_moving;"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "wishiwashi_school.water_idle",
+            "wishiwashi_schooling.standing.transform"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_wishiwashi_schooling = 1; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "wishiwashi_school.water_swim",
+            "wishiwashi_schooling.walk.transform"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_wishiwashi_schooling = 2; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "standing": "(q.is_moving && !q.is_swimming)|| !q.is_moving"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "floating": {
+          "animations": [
+            "wishiwashi_school.water_idle"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_wishiwashi_schooling = 3; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "standing": "(q.is_moving && !q.is_swimming)|| !q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            },
+            {
+              "swimming": "q.is_swimming"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swimming": {
+          "animations": [
+            "wishiwashi_school.water_swim"
+          ],
+          "transitions": [
+            {
+              "watersleep": "v.state_of_wishiwashi_schooling = 4; return (q.is_sleeping) && (q.is_in_water);"
+            },
+            {
+              "standing": "(q.is_moving && !q.is_swimming)|| !q.is_moving"
+            },
+            {
+              "walk": "(q.is_moving && !q.is_swimming)"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}

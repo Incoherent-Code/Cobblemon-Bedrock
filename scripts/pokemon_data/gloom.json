@@ -1,0 +1,262 @@
+{
+  "minLevel": 21,
+  "maxLevel": 40,
+  "variationMap": {
+    "0": [],
+    "1": [
+      "shiny"
+    ],
+    "2": [
+      "female"
+    ],
+    "3": [
+      "valencian"
+    ],
+    "4": [
+      "valencian",
+      "shiny"
+    ]
+  },
+  "spawnConditionsMap": {
+    "0": {
+      "minLevel": 21,
+      "maxLevel": 40
+    },
+    "1": {
+      "minLevel": 21,
+      "maxLevel": 40
+    },
+    "2": {
+      "minLevel": 21,
+      "maxLevel": 40
+    }
+  },
+  "name": "Gloom",
+  "nationalPokedexNumber": 44,
+  "baseStats": {
+    "hp": 60,
+    "attack": 65,
+    "defence": 70,
+    "special_attack": 85,
+    "special_defence": 75,
+    "speed": 40
+  },
+  "maleRatio": 0.5,
+  "catchRate": 120,
+  "baseScale": 1.0,
+  "baseExperienceYeild": 10,
+  "baseFriendship": 50,
+  "evYeild": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "experienceGroup": "medium_slow",
+  "hitbox": {
+    "width": 0.6,
+    "height": 0.8,
+    "fixed": false
+  },
+  "primaryType": "grass",
+  "secondaryType": "poison",
+  "abilities": [
+    "chlorophyll",
+    "h:stench"
+  ],
+  "shoulderMountable": false,
+  "moves": [
+    "1:absorb",
+    "1:acid",
+    "1:growth",
+    "1:sweetscent",
+    "12:megadrain",
+    "14:poisonpowder",
+    "16:stunspore",
+    "18:sleeppowder",
+    "20:gigadrain",
+    "24:luckychant",
+    "26:toxic",
+    "32:moonblast",
+    "38:grassyterrain",
+    "44:moonlight",
+    "44:naturalgift",
+    "49:petalblizzard",
+    "50:petaldance",
+    "tm:attract",
+    "tm:bulletseed",
+    "tm:captivate",
+    "tm:charm",
+    "tm:confide",
+    "tm:cut",
+    "tm:dazzlinggleam",
+    "tm:doubleteam",
+    "tm:drainpunch",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:fling",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grassyterrain",
+    "tm:hiddenpower",
+    "tm:infestation",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:secretpower",
+    "tm:seedbomb",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:toxic",
+    "tm:venoshock",
+    "tutor:absorb",
+    "tutor:acid",
+    "tutor:afteryou",
+    "tutor:attract",
+    "tutor:bide",
+    "tutor:curse",
+    "tutor:cut",
+    "tutor:dazzlinggleam",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:drainpunch",
+    "tutor:endure",
+    "tutor:facade",
+    "tutor:flash",
+    "tutor:frustration",
+    "tutor:gastroacid",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:growth",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:megadrain",
+    "tutor:mimic",
+    "tutor:moonblast",
+    "tutor:moonlight",
+    "tutor:petaldance",
+    "tutor:poisonpowder",
+    "tutor:protect",
+    "tutor:rage",
+    "tutor:razorleaf",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:seedbomb",
+    "tutor:sleeppowder",
+    "tutor:sleeptalk",
+    "tutor:sludgebomb",
+    "tutor:snore",
+    "tutor:solarbeam",
+    "tutor:stunspore",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:sweetscent",
+    "tutor:swordsdance",
+    "tutor:synthesis",
+    "tutor:takedown",
+    "tutor:toxic",
+    "tutor:worryseed"
+  ],
+  "evolutions": [
+    {
+      "id": "gloom_vileplume",
+      "variant": "item_interact",
+      "result": "vileplume",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "petalblizzard"
+      ],
+      "requiredContext": "cobblemon:leaf_stone",
+      "requirements": []
+    },
+    {
+      "id": "gloom_bellossom",
+      "variant": "item_interact",
+      "result": "bellossom",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requiredContext": "cobblemon:sun_stone",
+      "requirements": []
+    }
+  ],
+  "features": [
+    "valencian"
+  ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "canWalk": true,
+        "avoidsLand": false,
+        "walkSpeed": 0.35
+      },
+      "fly": {
+        "canFly": false,
+        "flySpeedHorizontal": 0.3
+      },
+      "swim": {
+        "avoidsWater": false,
+        "swimSpeed": 0.3,
+        "canSwimInWater": true,
+        "canSwimInLava": true,
+        "canBreatheUnderwater": false,
+        "canBreathUnderlava": false,
+        "hurtByLava": true,
+        "canWalkOnWater": false,
+        "canWalkOnLava": false
+      },
+      "canLook": true,
+      "wanderSpeed": 1.0,
+      "wanderChance": 120.0,
+      "lookAtEntities": true
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4",
+      "sleepChance": 0.0016666667,
+      "times": "night"
+    },
+    "idle": {
+      "pointAtSpawn": false
+    }
+  },
+  "pokedex": [
+    "cobblemon.species.gloom.desc"
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:pecha_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
+  "eggCycles": 20,
+  "eggGroups": [
+    "grass"
+  ],
+  "cannotDynamax": false,
+  "implemented": true,
+  "height": 8.0,
+  "weight": 86.0
+}

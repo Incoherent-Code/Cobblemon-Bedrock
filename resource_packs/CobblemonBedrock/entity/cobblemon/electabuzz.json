@@ -1,0 +1,50 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cobblemon:electabuzz",
+      "materials": {
+        "default": "entity_alphatest",
+        "animated": "cobblemon_animated",
+        "emissive": "entity_emissive_alpha",
+        "animated_emissive": "cobblemon_animated_emissive"
+      },
+      "textures": {
+        "blank": "textures/blank",
+        "base": "textures/pokemon/0125_electabuzz/electabuzz",
+        "shiny": "textures/pokemon/0125_electabuzz/electabuzz_shiny"
+      },
+      "geometry": {
+        "base": "geometry.electabuzz.geo",
+        "shiny": "geometry.electabuzz.geo"
+      },
+      "animations": {
+        "electabuzzmodel.singlebonelook": "animation.electabuzzmodel.singlebonelook",
+        "electabuzz.ground_idle": "animation.electabuzz.ground_idle",
+        "electabuzzmodel.bipedwalkanimation": "animation.electabuzzmodel.bipedwalkanimation",
+        "electabuzzmodel.bimanualswinganimation": "animation.electabuzzmodel.bimanualswinganimation",
+        "electabuzz.blink": "animation.electabuzz.blink",
+        "controller.animation.electabuzz.blink": "controller.animation.electabuzz.blink",
+        "controller.animation.cobblemon.electabuzz": "controller.animation.cobblemon.electabuzz"
+      },
+      "render_controllers": [
+        "controller.render.cobblemon.electabuzz"
+      ],
+      "scripts": {
+        "animate": [
+          "controller.animation.electabuzz.blink",
+          {
+            "controller.animation.cobblemon.electabuzz": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_electabuzz = -1.0;"
+        ]
+      }
+    }
+  },
+  "format_version": "1.20.40"
+}

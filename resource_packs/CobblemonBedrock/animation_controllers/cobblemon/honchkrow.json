@@ -1,0 +1,124 @@
+/* This File was generated with CobbleBuild.
+ * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
+ * instead of fixing them here. 
+ */
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.honchkrow.blink": {
+      "initial_state": "init",
+      "states": {
+        "init": {
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_honchkrow_blink = q.life_time + math.random(2, 7); return true;"
+            }
+          ]
+        },
+        "quirk_inactive": {
+          "transitions": [
+            {
+              "quirk_active": "v.quirk_end_honchkrow_blink = q.life_time + 1; return (q.life_time > v.next_quirk_honchkrow_blink) && (v.state_of_honchkrow == 1 || v.state_of_honchkrow == 2 || v.state_of_honchkrow == 3 || v.state_of_honchkrow == 4);"
+            }
+          ]
+        },
+        "quirk_active": {
+          "animations": [
+            "honchkrow.blink"
+          ],
+          "transitions": [
+            {
+              "quirk_inactive": "v.next_quirk_honchkrow_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_honchkrow_blink ?? 1));"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cobblemon.honchkrow": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "honchkrow.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_honchkrow = 0; return !q.is_moving;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "honchkrowmodel.singlebonelook",
+            "honchkrow.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_honchkrow = 1; return q.is_sleeping;"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walk": {
+          "animations": [
+            "honchkrowmodel.singlebonelook",
+            "honchkrow.ground_idle",
+            "honchkrowmodel.bipedwalkanimation"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_honchkrow = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "hover": {
+          "animations": [
+            "honchkrowmodel.singlebonelook",
+            "honchkrow.air_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_honchkrow = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "fly": {
+          "animations": [
+            "honchkrowmodel.singlebonelook",
+            "honchkrow.air_fly"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_honchkrow = 4; return q.is_sleeping;"
+            },
+            {
+              "standing": "!q.is_moving"
+            },
+            {
+              "walk": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
+}
