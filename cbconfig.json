@@ -1,8 +1,7 @@
 {
   "formatVersion": 2,
   "cobblemonPath": "%userprofile%/Desktop/CobblemonToBedrock/cobblemon-1.4.1-src",
-  "projectPath": "%userprofile%/Documents/VSCode/Cobblemon TS",
-  "minecraftJavaPath": "%appdata%/.minecraft/versions/1.20.1/1.20.1",
+  "minecraftJavaPath": "%appdata%/.minecraft/versions/1.20.1/1.20.1.jar",
   "minecraftPath": "/AppData/Local/Packages/Microsoft.MinecraftUWP_8wekyb3d8bbwe/LocalState/games/com.mojang/",
   "minecraftPreviewPath": "/AppData/Local/Packages/Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe/LocalState/games/com.mojang/",
   "useMinecraftPreview": false,
