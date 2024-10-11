@@ -1,5 +1,5 @@
 
-const { useMinecraftPreview, minify, BPName, RPName } = require("./cbconfig.json");
+const { useMinecraftPreview, minify, BPName, RPName, minecraftPath, minecraftPreviewPath } = require("./cbconfig.json");
 
 const gulp = require("gulp");
 const del = require("del");
@@ -16,8 +16,8 @@ let package = false;
 
 const mcdir = os.homedir() + (useMinecraftPreview
       //Change this if not building on windows
-      ? "/AppData/Local/Packages/Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe/LocalState/games/com.mojang/"
-      : "/AppData/Local/Packages/Microsoft.MinecraftUWP_8wekyb3d8bbwe/LocalState/games/com.mojang/")
+      ? minecraftPreviewPath
+      : minecraftPath)
 
 
 // the overwrite: true is important because quick_copy doesnt clean before deploying
