@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@minecraft/math": "^1.4.0",
-    "@minecraft/server": "^1.15.0-beta.1.21.30-stable",
+    "@minecraft/server": "^1.15.0-beta.1.21.31-stable",
     "@minecraft/server-ui": "^1.1.0",
     "decode-uri-component": "^0.2.2",
     "esbuild": "^0.23.1",
