@@ -1,6 +1,6 @@
-/* This File was generated with CobbleBuild.
+/* This File was generated and/or processed with CobbleBuild.
  * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
- * instead of fixing them here. 
+ * instead of fixing them here. This file should not be overwritten in cobblemon-bedrock.
  */
 {
   "minecraft:client_entity": {
@@ -25,7 +25,6 @@
         "weedle.sleep": "animation.weedle.sleep",
         "weedlemodel.singlebonelook": "animation.weedlemodel.singlebonelook",
         "weedle.ground_idle2": "animation.weedle.ground_idle2",
-        "weedle.ground_walk": "animation.weedle.ground_walk",
         "weedle.blink": "animation.weedle.blink",
         "controller.animation.weedle.blink": "controller.animation.weedle.blink",
         "controller.animation.cobblemon.weedle": "controller.animation.cobblemon.weedle"

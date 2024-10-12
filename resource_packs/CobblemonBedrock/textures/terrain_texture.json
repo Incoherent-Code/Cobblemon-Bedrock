@@ -10,20 +10,23 @@
     "active_healing_machine": {
       "textures": "textures/block/healing_machine"
     },
+    "aguav_tree": {
+      "textures": "textures/block/aguav_tree"
+    },
     "apicot_leaves": {
       "textures": "textures/block/apicot_leaves"
     },
     "apicot_tree": {
       "textures": "textures/block/apicot_tree"
     },
-    "apricorn_door_top": {
-      "textures": "textures/block/apricorn_door_top"
+    "apricorn_door_bottom": {
+      "textures": "textures/block/apricorn_door_bottom"
     },
     "apricorn_door_side": {
       "textures": "textures/block/apricorn_door_side"
     },
-    "aguav_tree": {
-      "textures": "textures/block/aguav_tree"
+    "apricorn_door_top": {
+      "textures": "textures/block/apricorn_door_top"
     },
     "apricorn_leaves": {
       "textures": "textures/block/apricorn_leaves"
@@ -34,17 +37,14 @@
     "apricorn_log_top": {
       "textures": "textures/block/apricorn_log_top"
     },
-    "apricorn_stage_0": {
-      "textures": "textures/block/apricorn_stage_0"
-    },
     "apricorn_planks": {
       "textures": "textures/block/apricorn_planks"
     },
+    "apricorn_stage_0": {
+      "textures": "textures/block/apricorn_stage_0"
+    },
     "apricorn_stage_1": {
       "textures": "textures/block/apricorn_stage_1"
-    },
-    "apricorn_door_bottom": {
-      "textures": "textures/block/apricorn_door_bottom"
     },
     "apricorn_stage_2": {
       "textures": "textures/block/apricorn_stage_2"
@@ -76,14 +76,17 @@
     "black_apricorn": {
       "textures": "textures/block/black_apricorn"
     },
-    "blue_mint": {
-      "textures": "textures/block/blue_mint"
-    },
     "black_apricorn_sapling": {
       "textures": "textures/block/black_apricorn_sapling"
     },
+    "blue_apricorn": {
+      "textures": "textures/block/blue_apricorn"
+    },
     "blue_apricorn_sapling": {
       "textures": "textures/block/blue_apricorn_sapling"
+    },
+    "blue_mint": {
+      "textures": "textures/block/blue_mint"
     },
     "bluk_tree": {
       "textures": "textures/block/bluk_tree"
@@ -99,9 +102,6 @@
     },
     "cheri_stem": {
       "textures": "textures/block/cheri_stem"
-    },
-    "blue_apricorn": {
-      "textures": "textures/block/blue_apricorn"
     },
     "chesto_leaves": {
       "textures": "textures/block/chesto_leaves"
@@ -184,11 +184,11 @@
     "durin_tree": {
       "textures": "textures/block/durin_tree"
     },
-    "energy_root": {
-      "textures": "textures/block/energy_root"
-    },
     "dusk_stone_ore": {
       "textures": "textures/block/dusk_stone_ore"
+    },
+    "energy_root": {
+      "textures": "textures/block/energy_root"
     },
     "enigma_leaves": {
       "textures": "textures/block/enigma_leaves"
@@ -205,6 +205,9 @@
     "ganlon_tree": {
       "textures": "textures/block/ganlon_tree"
     },
+    "green_apricorn": {
+      "textures": "textures/block/green_apricorn"
+    },
     "green_apricorn_sapling": {
       "textures": "textures/block/green_apricorn_sapling"
     },
@@ -216,9 +219,6 @@
     },
     "grepa_tree": {
       "textures": "textures/block/grepa_tree"
-    },
-    "green_apricorn": {
-      "textures": "textures/block/green_apricorn"
     },
     "growth_mulch": {
       "textures": "textures/block/growth_mulch"
@@ -232,26 +232,35 @@
     "healing_machine": {
       "textures": "textures/block/healing_machine"
     },
-    "healing_machine_particle": {
-      "textures": "textures/block/healing_machine_particle"
-    },
     "healing_machine_active": {
       "textures": "textures/block/healing_machine_active"
     },
-    "hopo_leaves": {
-      "textures": "textures/block/hopo_leaves"
+    "healing_machine_particle": {
+      "textures": "textures/block/healing_machine_particle"
     },
     "healing_machine_tray": {
       "textures": "textures/block/healing_machine_tray"
     },
-    "iapapa_tree": {
-      "textures": "textures/block/iapapa_tree"
+    "hondew_tree": {
+      "textures": "textures/block/hondew_tree"
     },
-    "jaboca_leaves": {
-      "textures": "textures/block/jaboca_leaves"
+    "hopo_leaves": {
+      "textures": "textures/block/hopo_leaves"
+    },
+    "hopo_tree": {
+      "textures": "textures/block/hopo_tree"
     },
     "humid_mulch": {
       "textures": "textures/block/humid_mulch"
+    },
+    "iapapa_tree": {
+      "textures": "textures/block/iapapa_tree"
+    },
+    "ice_stone_ore": {
+      "textures": "textures/block/ice_stone_ore"
+    },
+    "jaboca_leaves": {
+      "textures": "textures/block/jaboca_leaves"
     },
     "jaboca_tree": {
       "textures": "textures/block/jaboca_tree"
@@ -262,29 +271,17 @@
     "kebia_leaves": {
       "textures": "textures/block/kebia_leaves"
     },
-    "kee_leaves": {
-      "textures": "textures/block/kee_leaves"
-    },
     "kebia_tree": {
       "textures": "textures/block/kebia_tree"
     },
-    "ice_stone_ore": {
-      "textures": "textures/block/ice_stone_ore"
-    },
-    "hopo_tree": {
-      "textures": "textures/block/hopo_tree"
+    "kee_leaves": {
+      "textures": "textures/block/kee_leaves"
     },
     "kee_tree": {
       "textures": "textures/block/kee_tree"
     },
-    "hondew_tree": {
-      "textures": "textures/block/hondew_tree"
-    },
     "kelpsy_tree": {
       "textures": "textures/block/kelpsy_tree"
-    },
-    "leaf_stone_ore": {
-      "textures": "textures/block/leaf_stone_ore"
     },
     "lansat_leaves": {
       "textures": "textures/block/lansat_leaves"
@@ -292,14 +289,17 @@
     "lansat_tree": {
       "textures": "textures/block/lansat_tree"
     },
-    "loamy_mulch": {
-      "textures": "textures/block/loamy_mulch"
+    "leaf_stone_ore": {
+      "textures": "textures/block/leaf_stone_ore"
     },
     "leppa_tree": {
       "textures": "textures/block/leppa_tree"
     },
     "liechi_tree": {
       "textures": "textures/block/liechi_tree"
+    },
+    "loamy_mulch": {
+      "textures": "textures/block/loamy_mulch"
     },
     "lum_tree": {
       "textures": "textures/block/lum_tree"
@@ -313,65 +313,68 @@
     "mago_tree": {
       "textures": "textures/block/mago_tree"
     },
-    "medicinal_leek_stage_0": {
-      "textures": "textures/block/medicinal_leek_stage_0"
-    },
     "maranga_tree": {
       "textures": "textures/block/maranga_tree"
     },
-    "medicinal_leek_stage_2": {
-      "textures": "textures/block/medicinal_leek_stage_2"
+    "medicinal_leek_stage_0": {
+      "textures": "textures/block/medicinal_leek_stage_0"
     },
     "medicinal_leek_stage_1": {
       "textures": "textures/block/medicinal_leek_stage_1"
     },
+    "medicinal_leek_stage_2": {
+      "textures": "textures/block/medicinal_leek_stage_2"
+    },
     "medicinal_leek_stage_3": {
       "textures": "textures/block/medicinal_leek_stage_3"
-    },
-    "mental_herb_stage_1": {
-      "textures": "textures/block/mental_herb_stage_1"
-    },
-    "micle_tree": {
-      "textures": "textures/block/micle_tree"
-    },
-    "micle_leaves": {
-      "textures": "textures/block/micle_leaves"
-    },
-    "mirror_herb_stage_1": {
-      "textures": "textures/block/mirror_herb_stage_1"
-    },
-    "mirror_herb_stage_0": {
-      "textures": "textures/block/mirror_herb_stage_0"
-    },
-    "moon_stone_ore": {
-      "textures": "textures/block/moon_stone_ore"
-    },
-    "mulch_base": {
-      "textures": "textures/block/mulch_base"
     },
     "mental_herb_stage_0": {
       "textures": "textures/block/mental_herb_stage_0"
     },
-    "nanab_tree": {
-      "textures": "textures/block/nanab_tree"
+    "mental_herb_stage_1": {
+      "textures": "textures/block/mental_herb_stage_1"
     },
-    "nanab_leaves": {
-      "textures": "textures/block/nanab_leaves"
+    "micle_leaves": {
+      "textures": "textures/block/micle_leaves"
     },
-    "occa_tree": {
-      "textures": "textures/block/occa_tree"
+    "micle_tree": {
+      "textures": "textures/block/micle_tree"
+    },
+    "mirror_herb_stage_0": {
+      "textures": "textures/block/mirror_herb_stage_0"
+    },
+    "mirror_herb_stage_1": {
+      "textures": "textures/block/mirror_herb_stage_1"
+    },
+    "moon_stone_ore": {
+      "textures": "textures/block/moon_stone_ore"
     },
     "mulch": {
       "textures": "textures/block/mulch"
     },
+    "mulch_base": {
+      "textures": "textures/block/mulch_base"
+    },
+    "nanab_leaves": {
+      "textures": "textures/block/nanab_leaves"
+    },
+    "nanab_tree": {
+      "textures": "textures/block/nanab_tree"
+    },
     "nomel_tree": {
       "textures": "textures/block/nomel_tree"
+    },
+    "occa_tree": {
+      "textures": "textures/block/occa_tree"
     },
     "oran_leaves": {
       "textures": "textures/block/oran_leaves"
     },
     "oran_stem": {
       "textures": "textures/block/oran_stem"
+    },
+    "pamtre_tree": {
+      "textures": "textures/block/pamtre_tree"
     },
     "passho_tree": {
       "textures": "textures/block/passho_tree"
@@ -381,9 +384,6 @@
     },
     "pasture_particle": {
       "textures": "textures/block/pasture_particle"
-    },
-    "pamtre_tree": {
-      "textures": "textures/block/pamtre_tree"
     },
     "payapa_tree": {
       "textures": "textures/block/payapa_tree"
@@ -409,6 +409,9 @@
     "petaya_tree": {
       "textures": "textures/block/petaya_tree"
     },
+    "pinap_tree": {
+      "textures": "textures/block/pinap_tree"
+    },
     "pink_apricorn": {
       "textures": "textures/block/pink_apricorn"
     },
@@ -417,9 +420,6 @@
     },
     "pink_mint": {
       "textures": "textures/block/pink_mint"
-    },
-    "pinap_tree": {
-      "textures": "textures/block/pinap_tree"
     },
     "pomeg_tree": {
       "textures": "textures/block/pomeg_tree"
@@ -439,11 +439,11 @@
     "qualot_tree": {
       "textures": "textures/block/qualot_tree"
     },
-    "rawst_tree": {
-      "textures": "textures/block/rawst_tree"
-    },
     "rabuta_tree": {
       "textures": "textures/block/rabuta_tree"
+    },
+    "rawst_tree": {
+      "textures": "textures/block/rawst_tree"
     },
     "razz_tree": {
       "textures": "textures/block/razz_tree"
@@ -454,11 +454,14 @@
     "red_apricorn_sapling": {
       "textures": "textures/block/red_apricorn_sapling"
     },
-    "revival_herb_stage_1": {
-      "textures": "textures/block/revival_herb_stage_1"
-    },
     "red_mint": {
       "textures": "textures/block/red_mint"
+    },
+    "revival_herb_stage_0": {
+      "textures": "textures/block/revival_herb_stage_0"
+    },
+    "revival_herb_stage_1": {
+      "textures": "textures/block/revival_herb_stage_1"
     },
     "revival_herb_stage_2": {
       "textures": "textures/block/revival_herb_stage_2"
@@ -466,17 +469,14 @@
     "revival_herb_stage_3": {
       "textures": "textures/block/revival_herb_stage_3"
     },
-    "revival_herb_stage_0": {
-      "textures": "textures/block/revival_herb_stage_0"
-    },
     "revival_herb_stage_4": {
       "textures": "textures/block/revival_herb_stage_4"
     },
-    "revival_herb_stage_6": {
-      "textures": "textures/block/revival_herb_stage_6"
-    },
     "revival_herb_stage_5": {
       "textures": "textures/block/revival_herb_stage_5"
+    },
+    "revival_herb_stage_6": {
+      "textures": "textures/block/revival_herb_stage_6"
     },
     "revival_herb_stage_7": {
       "textures": "textures/block/revival_herb_stage_7"
@@ -496,6 +496,9 @@
     "roseli_tree": {
       "textures": "textures/block/roseli_tree"
     },
+    "rowap_tree": {
+      "textures": "textures/block/rowap_tree"
+    },
     "salac_tree": {
       "textures": "textures/block/salac_tree"
     },
@@ -511,11 +514,17 @@
     "shuca_stem": {
       "textures": "textures/block/shuca_stem"
     },
-    "spelon_tree": {
-      "textures": "textures/block/spelon_tree"
+    "sitrus_leaves": {
+      "textures": "textures/block/sitrus_leaves"
     },
     "sitrus_stem": {
       "textures": "textures/block/sitrus_stem"
+    },
+    "spelon_tree": {
+      "textures": "textures/block/spelon_tree"
+    },
+    "sprout": {
+      "textures": "textures/block/sprout"
     },
     "starf_leaves": {
       "textures": "textures/block/starf_leaves"
@@ -523,17 +532,17 @@
     "starf_tree": {
       "textures": "textures/block/starf_tree"
     },
-    "sitrus_leaves": {
-      "textures": "textures/block/sitrus_leaves"
-    },
-    "sprout": {
-      "textures": "textures/block/sprout"
-    },
     "stripped_apricorn_log": {
       "textures": "textures/block/stripped_apricorn_log"
     },
     "stripped_apricorn_log_top": {
       "textures": "textures/block/stripped_apricorn_log_top"
+    },
+    "sun_stone_ore": {
+      "textures": "textures/block/sun_stone_ore"
+    },
+    "surprise_mulch": {
+      "textures": "textures/block/surprise_mulch"
     },
     "tamato_leaves": {
       "textures": "textures/block/tamato_leaves"
@@ -544,20 +553,11 @@
     "tanga_leaves": {
       "textures": "textures/block/tanga_leaves"
     },
-    "sun_stone_ore": {
-      "textures": "textures/block/sun_stone_ore"
-    },
     "tanga_tree": {
       "textures": "textures/block/tanga_tree"
     },
-    "surprise_mulch": {
-      "textures": "textures/block/surprise_mulch"
-    },
     "thunder_stone_ore": {
       "textures": "textures/block/thunder_stone_ore"
-    },
-    "rowap_tree": {
-      "textures": "textures/block/rowap_tree"
     },
     "touga_tree": {
       "textures": "textures/block/touga_tree"
@@ -571,14 +571,14 @@
     "vivichoke_seed_stage_2": {
       "textures": "textures/block/vivichoke_seed_stage_2"
     },
+    "vivichoke_seed_stage_3": {
+      "textures": "textures/block/vivichoke_seed_stage_3"
+    },
     "vivichoke_seed_stage_4": {
       "textures": "textures/block/vivichoke_seed_stage_4"
     },
     "vivichoke_seed_stage_5": {
       "textures": "textures/block/vivichoke_seed_stage_5"
-    },
-    "vivichoke_seed_stage_3": {
-      "textures": "textures/block/vivichoke_seed_stage_3"
     },
     "vivichoke_seed_stage_6": {
       "textures": "textures/block/vivichoke_seed_stage_6"
@@ -586,23 +586,29 @@
     "vivichoke_seed_stage_7": {
       "textures": "textures/block/vivichoke_seed_stage_7"
     },
+    "wacan_tree": {
+      "textures": "textures/block/wacan_tree"
+    },
+    "water_stone_ore": {
+      "textures": "textures/block/water_stone_ore"
+    },
+    "watmel_tree": {
+      "textures": "textures/block/watmel_tree"
+    },
     "wepear_leaves": {
       "textures": "textures/block/wepear_leaves"
     },
     "wepear_tree": {
       "textures": "textures/block/wepear_tree"
     },
-    "water_stone_ore": {
-      "textures": "textures/block/water_stone_ore"
-    },
     "white_apricorn": {
       "textures": "textures/block/white_apricorn"
     },
-    "watmel_tree": {
-      "textures": "textures/block/watmel_tree"
+    "white_apricorn_sapling": {
+      "textures": "textures/block/white_apricorn_sapling"
     },
-    "wacan_tree": {
-      "textures": "textures/block/wacan_tree"
+    "white_herb_stage_0": {
+      "textures": "textures/block/white_herb_stage_0"
     },
     "white_herb_stage_1": {
       "textures": "textures/block/white_herb_stage_1"
@@ -610,23 +616,17 @@
     "white_mint": {
       "textures": "textures/block/white_mint"
     },
-    "white_herb_stage_0": {
-      "textures": "textures/block/white_herb_stage_0"
-    },
     "wiki_tree": {
       "textures": "textures/block/wiki_tree"
-    },
-    "white_apricorn_sapling": {
-      "textures": "textures/block/white_apricorn_sapling"
     },
     "yache_tree": {
       "textures": "textures/block/yache_tree"
     },
-    "yellow_apricorn_sapling": {
-      "textures": "textures/block/yellow_apricorn_sapling"
-    },
     "yellow_apricorn": {
       "textures": "textures/block/yellow_apricorn"
+    },
+    "yellow_apricorn_sapling": {
+      "textures": "textures/block/yellow_apricorn_sapling"
     }
   }
 }

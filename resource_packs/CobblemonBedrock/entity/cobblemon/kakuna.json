@@ -1,6 +1,6 @@
-/* This File was generated with CobbleBuild.
+/* This File was generated and/or processed with CobbleBuild.
  * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
- * instead of fixing them here. 
+ * instead of fixing them here. This file should not be overwritten in cobblemon-bedrock.
  */
 {
   "minecraft:client_entity": {
@@ -24,7 +24,6 @@
       "animations": {
         "kakuna.sleep": "animation.kakuna.sleep",
         "kakunamodel.singlebonelook": "animation.kakunamodel.singlebonelook",
-        "kakuna.ground_idle": "animation.kakuna.ground_idle",
         "controller.animation.cobblemon.kakuna": "controller.animation.cobblemon.kakuna"
       },
       "render_controllers": [

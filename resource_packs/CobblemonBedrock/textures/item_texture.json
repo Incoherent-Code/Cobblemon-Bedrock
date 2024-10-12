@@ -11,38 +11,38 @@
     "blue_apricorn": {
       "textures": "textures/item/blue_apricorn"
     },
-    "blue_apricorn_seed": {
-      "textures": "textures/item/blue_apricorn_seed"
+    "pink_apricorn": {
+      "textures": "textures/item/pink_apricorn"
     },
     "green_apricorn": {
       "textures": "textures/item/green_apricorn"
     },
+    "yellow_apricorn": {
+      "textures": "textures/item/yellow_apricorn"
+    },
     "green_apricorn_seed": {
       "textures": "textures/item/green_apricorn_seed"
-    },
-    "pink_apricorn": {
-      "textures": "textures/item/pink_apricorn"
     },
     "pink_apricorn_seed": {
       "textures": "textures/item/pink_apricorn_seed"
     },
+    "blue_apricorn_seed": {
+      "textures": "textures/item/blue_apricorn_seed"
+    },
     "red_apricorn": {
       "textures": "textures/item/red_apricorn"
-    },
-    "red_apricorn_seed": {
-      "textures": "textures/item/red_apricorn_seed"
     },
     "white_apricorn": {
       "textures": "textures/item/white_apricorn"
     },
+    "yellow_apricorn_seed": {
+      "textures": "textures/item/yellow_apricorn_seed"
+    },
     "white_apricorn_seed": {
       "textures": "textures/item/white_apricorn_seed"
     },
-    "yellow_apricorn": {
-      "textures": "textures/item/yellow_apricorn"
-    },
-    "yellow_apricorn_seed": {
-      "textures": "textures/item/yellow_apricorn_seed"
+    "red_apricorn_seed": {
+      "textures": "textures/item/red_apricorn_seed"
     },
     "apricorn_boat": {
       "textures": "textures/item/apricorn_boat"
@@ -122,11 +122,11 @@
     "babiri_berry": {
       "textures": "textures/item/berries/babiri_berry"
     },
-    "bluk_berry": {
-      "textures": "textures/item/berries/bluk_berry"
-    },
     "belue_berry": {
       "textures": "textures/item/berries/belue_berry"
+    },
+    "bluk_berry": {
+      "textures": "textures/item/berries/bluk_berry"
     },
     "charti_berry": {
       "textures": "textures/item/berries/charti_berry"
@@ -185,11 +185,11 @@
     "jaboca_berry": {
       "textures": "textures/item/berries/jaboca_berry"
     },
-    "kebia_berry": {
-      "textures": "textures/item/berries/kebia_berry"
-    },
     "kasib_berry": {
       "textures": "textures/item/berries/kasib_berry"
+    },
+    "kebia_berry": {
+      "textures": "textures/item/berries/kebia_berry"
     },
     "kee_berry": {
       "textures": "textures/item/berries/kee_berry"
@@ -239,11 +239,11 @@
     "passho_berry": {
       "textures": "textures/item/berries/passho_berry"
     },
-    "pecha_berry": {
-      "textures": "textures/item/berries/pecha_berry"
-    },
     "payapa_berry": {
       "textures": "textures/item/berries/payapa_berry"
+    },
+    "pecha_berry": {
+      "textures": "textures/item/berries/pecha_berry"
     },
     "persim_berry": {
       "textures": "textures/item/berries/persim_berry"
@@ -251,11 +251,11 @@
     "petaya_berry": {
       "textures": "textures/item/berries/petaya_berry"
     },
-    "pomeg_berry": {
-      "textures": "textures/item/berries/pomeg_berry"
-    },
     "pinap_berry": {
       "textures": "textures/item/berries/pinap_berry"
+    },
+    "pomeg_berry": {
+      "textures": "textures/item/berries/pomeg_berry"
     },
     "qualot_berry": {
       "textures": "textures/item/berries/qualot_berry"
@@ -269,11 +269,11 @@
     "razz_berry": {
       "textures": "textures/item/berries/razz_berry"
     },
-    "roselei_berry": {
-      "textures": "textures/item/berries/roselei_berry"
-    },
     "rindo_berry": {
       "textures": "textures/item/berries/rindo_berry"
+    },
+    "roselei_berry": {
+      "textures": "textures/item/berries/roselei_berry"
     },
     "roseli_berry": {
       "textures": "textures/item/berries/roseli_berry"
@@ -281,29 +281,29 @@
     "rowap_berry": {
       "textures": "textures/item/berries/rowap_berry"
     },
+    "salac_berry": {
+      "textures": "textures/item/berries/salac_berry"
+    },
+    "shuca_berry": {
+      "textures": "textures/item/berries/shuca_berry"
+    },
     "sitrus_berry": {
       "textures": "textures/item/berries/sitrus_berry"
     },
     "spelon_berry": {
       "textures": "textures/item/berries/spelon_berry"
     },
-    "shuca_berry": {
-      "textures": "textures/item/berries/shuca_berry"
-    },
     "starf_berry": {
       "textures": "textures/item/berries/starf_berry"
-    },
-    "salac_berry": {
-      "textures": "textures/item/berries/salac_berry"
     },
     "tamato_berry": {
       "textures": "textures/item/berries/tamato_berry"
     },
-    "touga_berry": {
-      "textures": "textures/item/berries/touga_berry"
-    },
     "tanga_berry": {
       "textures": "textures/item/berries/tanga_berry"
+    },
+    "touga_berry": {
+      "textures": "textures/item/berries/touga_berry"
     },
     "wacan_berry": {
       "textures": "textures/item/berries/wacan_berry"
@@ -326,11 +326,17 @@
     "berry_sweet": {
       "textures": "textures/item/evolution/berry_sweet"
     },
+    "black_augurite": {
+      "textures": "textures/item/evolution/black_augurite"
+    },
     "chipped_pot": {
       "textures": "textures/item/evolution/chipped_pot"
     },
-    "black_augurite": {
-      "textures": "textures/item/evolution/black_augurite"
+    "clover_sweet": {
+      "textures": "textures/item/evolution/clover_sweet"
+    },
+    "cracked_pot": {
+      "textures": "textures/item/evolution/cracked_pot"
     },
     "dawn_stone": {
       "textures": "textures/item/evolution/dawn_stone"
@@ -338,14 +344,8 @@
     "deep_sea_scale": {
       "textures": "textures/item/evolution/deep_sea_scale"
     },
-    "cracked_pot": {
-      "textures": "textures/item/evolution/cracked_pot"
-    },
     "deep_sea_tooth": {
       "textures": "textures/item/evolution/deep_sea_tooth"
-    },
-    "clover_sweet": {
-      "textures": "textures/item/evolution/clover_sweet"
     },
     "dragon_scale": {
       "textures": "textures/item/evolution/dragon_scale"
@@ -359,11 +359,11 @@
     "electirizer": {
       "textures": "textures/item/evolution/electirizer"
     },
-    "flower_sweet": {
-      "textures": "textures/item/evolution/flower_sweet"
-    },
     "fire_stone": {
       "textures": "textures/item/evolution/fire_stone"
+    },
+    "flower_sweet": {
+      "textures": "textures/item/evolution/flower_sweet"
     },
     "galarica_cuff": {
       "textures": "textures/item/evolution/galarica_cuff"
@@ -371,14 +371,11 @@
     "galarica_wreath": {
       "textures": "textures/item/evolution/galarica_wreath"
     },
-    "kings_rock": {
-      "textures": "textures/item/evolution/kings_rock"
-    },
     "ice_stone": {
       "textures": "textures/item/evolution/ice_stone"
     },
-    "love_sweet": {
-      "textures": "textures/item/evolution/love_sweet"
+    "kings_rock": {
+      "textures": "textures/item/evolution/kings_rock"
     },
     "leaf_stone": {
       "textures": "textures/item/evolution/leaf_stone"
@@ -386,20 +383,23 @@
     "link_cable": {
       "textures": "textures/item/evolution/link_cable"
     },
+    "love_sweet": {
+      "textures": "textures/item/evolution/love_sweet"
+    },
     "magmarizer": {
       "textures": "textures/item/evolution/magmarizer"
-    },
-    "oval_stone": {
-      "textures": "textures/item/evolution/oval_stone"
-    },
-    "moon_stone": {
-      "textures": "textures/item/evolution/moon_stone"
     },
     "malicious_armor": {
       "textures": "textures/item/evolution/malicious_armor"
     },
     "metal_coat": {
       "textures": "textures/item/evolution/metal_coat"
+    },
+    "moon_stone": {
+      "textures": "textures/item/evolution/moon_stone"
+    },
+    "oval_stone": {
+      "textures": "textures/item/evolution/oval_stone"
     },
     "peat_block": {
       "textures": "textures/item/evolution/peat_block"
@@ -410,14 +410,14 @@
     "protector": {
       "textures": "textures/item/evolution/protector"
     },
-    "reaper_cloth": {
-      "textures": "textures/item/evolution/reaper_cloth"
-    },
     "razor_claw": {
       "textures": "textures/item/evolution/razor_claw"
     },
     "razor_fang": {
       "textures": "textures/item/evolution/razor_fang"
+    },
+    "reaper_cloth": {
+      "textures": "textures/item/evolution/reaper_cloth"
     },
     "ribbon_sweet": {
       "textures": "textures/item/evolution/ribbon_sweet"
@@ -428,35 +428,38 @@
     "shiny_stone": {
       "textures": "textures/item/evolution/shiny_stone"
     },
+    "star_sweet": {
+      "textures": "textures/item/evolution/star_sweet"
+    },
     "strawberry_sweet": {
       "textures": "textures/item/evolution/strawberry_sweet"
-    },
-    "tart_apple": {
-      "textures": "textures/item/evolution/tart_apple"
-    },
-    "sweet_apple": {
-      "textures": "textures/item/evolution/sweet_apple"
     },
     "sun_stone": {
       "textures": "textures/item/evolution/sun_stone"
     },
-    "star_sweet": {
-      "textures": "textures/item/evolution/star_sweet"
+    "sweet_apple": {
+      "textures": "textures/item/evolution/sweet_apple"
     },
-    "upgrade": {
-      "textures": "textures/item/evolution/upgrade"
+    "tart_apple": {
+      "textures": "textures/item/evolution/tart_apple"
     },
     "thunder_stone": {
       "textures": "textures/item/evolution/thunder_stone"
     },
-    "exp_candy_l": {
-      "textures": "textures/item/experience_candy/exp_candy_l"
+    "upgrade": {
+      "textures": "textures/item/evolution/upgrade"
+    },
+    "water_stone": {
+      "textures": "textures/item/evolution/water_stone"
     },
     "whipped_dream": {
       "textures": "textures/item/evolution/whipped_dream"
     },
-    "water_stone": {
-      "textures": "textures/item/evolution/water_stone"
+    "exp_candy_l": {
+      "textures": "textures/item/experience_candy/exp_candy_l"
+    },
+    "exp_candy_m": {
+      "textures": "textures/item/experience_candy/exp_candy_m"
     },
     "exp_candy_s": {
       "textures": "textures/item/experience_candy/exp_candy_s"
@@ -467,9 +470,6 @@
     "exp_candy_xs": {
       "textures": "textures/item/experience_candy/exp_candy_xs"
     },
-    "exp_candy_m": {
-      "textures": "textures/item/experience_candy/exp_candy_m"
-    },
     "rare_candy": {
       "textures": "textures/item/experience_candy/rare_candy"
     },
@@ -479,14 +479,14 @@
     "big_root": {
       "textures": "textures/item/held_items/big_root"
     },
+    "black_belt": {
+      "textures": "textures/item/held_items/black_belt"
+    },
     "black_glasses": {
       "textures": "textures/item/held_items/black_glasses"
     },
     "black_sludge": {
       "textures": "textures/item/held_items/black_sludge"
-    },
-    "black_belt": {
-      "textures": "textures/item/held_items/black_belt"
     },
     "bright_powder": {
       "textures": "textures/item/held_items/bright_powder"
@@ -563,23 +563,23 @@
     "muscle_band": {
       "textures": "textures/item/held_items/muscle_band"
     },
+    "mystic_water": {
+      "textures": "textures/item/held_items/mystic_water"
+    },
     "never_melt_ice": {
       "textures": "textures/item/held_items/never_melt_ice"
     },
     "poison_barb": {
       "textures": "textures/item/held_items/poison_barb"
     },
-    "mystic_water": {
-      "textures": "textures/item/held_items/mystic_water"
-    },
     "power_anklet": {
       "textures": "textures/item/held_items/power_anklet"
     },
-    "power_belt": {
-      "textures": "textures/item/held_items/power_belt"
-    },
     "power_band": {
       "textures": "textures/item/held_items/power_band"
+    },
+    "power_belt": {
+      "textures": "textures/item/held_items/power_belt"
     },
     "power_bracer": {
       "textures": "textures/item/held_items/power_bracer"
@@ -593,14 +593,14 @@
     "power_weight": {
       "textures": "textures/item/held_items/power_weight"
     },
+    "quick_claw": {
+      "textures": "textures/item/held_items/quick_claw"
+    },
     "quick_powder": {
       "textures": "textures/item/held_items/quick_powder"
     },
     "rocky_helmet": {
       "textures": "textures/item/held_items/rocky_helmet"
-    },
-    "quick_claw": {
-      "textures": "textures/item/held_items/quick_claw"
     },
     "safety_goggles": {
       "textures": "textures/item/held_items/safety_goggles"
@@ -611,11 +611,11 @@
     "silk_scarf": {
       "textures": "textures/item/held_items/silk_scarf"
     },
-    "smoke_ball": {
-      "textures": "textures/item/held_items/smoke_ball"
-    },
     "silver_powder": {
       "textures": "textures/item/held_items/silver_powder"
+    },
+    "smoke_ball": {
+      "textures": "textures/item/held_items/smoke_ball"
     },
     "soft_sand": {
       "textures": "textures/item/held_items/soft_sand"
@@ -629,26 +629,26 @@
     "twisted_spoon": {
       "textures": "textures/item/held_items/twisted_spoon"
     },
-    "wise_glasses": {
-      "textures": "textures/item/held_items/wise_glasses"
-    },
     "white_herb": {
       "textures": "textures/item/held_items/white_herb"
+    },
+    "wise_glasses": {
+      "textures": "textures/item/held_items/wise_glasses"
     },
     "antidote": {
       "textures": "textures/item/medicine/antidote"
     },
+    "awakening": {
+      "textures": "textures/item/medicine/awakening"
+    },
     "burn_heal": {
       "textures": "textures/item/medicine/burn_heal"
-    },
-    "carbos": {
-      "textures": "textures/item/medicine/carbos"
     },
     "calcium": {
       "textures": "textures/item/medicine/calcium"
     },
-    "awakening": {
-      "textures": "textures/item/medicine/awakening"
+    "carbos": {
+      "textures": "textures/item/medicine/carbos"
     },
     "elixir": {
       "textures": "textures/item/medicine/elixir"
@@ -659,8 +659,23 @@
     "ether": {
       "textures": "textures/item/medicine/ether"
     },
+    "fine_remedy": {
+      "textures": "textures/item/medicine/fine_remedy"
+    },
+    "full_heal": {
+      "textures": "textures/item/medicine/full_heal"
+    },
+    "full_restore": {
+      "textures": "textures/item/medicine/full_restore"
+    },
     "heal_powder": {
       "textures": "textures/item/medicine/heal_powder"
+    },
+    "hp_up": {
+      "textures": "textures/item/medicine/hp_up"
+    },
+    "hyper_potion": {
+      "textures": "textures/item/medicine/hyper_potion"
     },
     "ice_heal": {
       "textures": "textures/item/medicine/ice_heal"
@@ -668,26 +683,11 @@
     "iron": {
       "textures": "textures/item/medicine/iron"
     },
-    "hyper_potion": {
-      "textures": "textures/item/medicine/hyper_potion"
-    },
     "max_elixir": {
       "textures": "textures/item/medicine/max_elixir"
     },
     "max_ether": {
       "textures": "textures/item/medicine/max_ether"
-    },
-    "hp_up": {
-      "textures": "textures/item/medicine/hp_up"
-    },
-    "full_restore": {
-      "textures": "textures/item/medicine/full_restore"
-    },
-    "fine_remedy": {
-      "textures": "textures/item/medicine/fine_remedy"
-    },
-    "full_heal": {
-      "textures": "textures/item/medicine/full_heal"
     },
     "max_potion": {
       "textures": "textures/item/medicine/max_potion"
@@ -701,14 +701,14 @@
     "medicinal_leek": {
       "textures": "textures/item/medicine/medicinal_leek"
     },
+    "paralyze_heal": {
+      "textures": "textures/item/medicine/paralyze_heal"
+    },
     "potion": {
       "textures": "textures/item/medicine/potion"
     },
     "pp_max": {
       "textures": "textures/item/medicine/pp_max"
-    },
-    "paralyze_heal": {
-      "textures": "textures/item/medicine/paralyze_heal"
     },
     "pp_up": {
       "textures": "textures/item/medicine/pp_up"
@@ -734,29 +734,29 @@
     "adamant_mint": {
       "textures": "textures/item/mints/adamant_mint"
     },
+    "blue_mint_leaf": {
+      "textures": "textures/item/mints/blue_mint_leaf"
+    },
     "blue_mint_seeds": {
       "textures": "textures/item/mints/blue_mint_seeds"
+    },
+    "bold_mint": {
+      "textures": "textures/item/mints/bold_mint"
     },
     "brave_mint": {
       "textures": "textures/item/mints/brave_mint"
     },
-    "careful_mint": {
-      "textures": "textures/item/mints/careful_mint"
-    },
     "calm_mint": {
       "textures": "textures/item/mints/calm_mint"
     },
-    "blue_mint_leaf": {
-      "textures": "textures/item/mints/blue_mint_leaf"
+    "careful_mint": {
+      "textures": "textures/item/mints/careful_mint"
     },
     "cyan_mint_leaf": {
       "textures": "textures/item/mints/cyan_mint_leaf"
     },
     "cyan_mint_seeds": {
       "textures": "textures/item/mints/cyan_mint_seeds"
-    },
-    "bold_mint": {
-      "textures": "textures/item/mints/bold_mint"
     },
     "gentle_mint": {
       "textures": "textures/item/mints/gentle_mint"
@@ -770,11 +770,11 @@
     "hasty_mint": {
       "textures": "textures/item/mints/hasty_mint"
     },
-    "jolly_mint": {
-      "textures": "textures/item/mints/jolly_mint"
-    },
     "impish_mint": {
       "textures": "textures/item/mints/impish_mint"
+    },
+    "jolly_mint": {
+      "textures": "textures/item/mints/jolly_mint"
     },
     "lax_mint": {
       "textures": "textures/item/mints/lax_mint"
@@ -794,11 +794,11 @@
     "naughty_mint": {
       "textures": "textures/item/mints/naughty_mint"
     },
-    "pink_mint_seeds": {
-      "textures": "textures/item/mints/pink_mint_seeds"
-    },
     "pink_mint_leaf": {
       "textures": "textures/item/mints/pink_mint_leaf"
+    },
+    "pink_mint_seeds": {
+      "textures": "textures/item/mints/pink_mint_seeds"
     },
     "quiet_mint": {
       "textures": "textures/item/mints/quiet_mint"
@@ -812,6 +812,9 @@
     "red_mint_seeds": {
       "textures": "textures/item/mints/red_mint_seeds"
     },
+    "relaxed_mint": {
+      "textures": "textures/item/mints/relaxed_mint"
+    },
     "sassy_mint": {
       "textures": "textures/item/mints/sassy_mint"
     },
@@ -820,9 +823,6 @@
     },
     "timid_mint": {
       "textures": "textures/item/mints/timid_mint"
-    },
-    "relaxed_mint": {
-      "textures": "textures/item/mints/relaxed_mint"
     },
     "white_mint_leaf": {
       "textures": "textures/item/mints/white_mint_leaf"
@@ -857,14 +857,14 @@
     "surprise_mulch": {
       "textures": "textures/item/mulches/surprise_mulch"
     },
-    "cherish_ball": {
-      "textures": "textures/item/poke_balls/cherish_ball"
+    "azure_ball": {
+      "textures": "textures/item/poke_balls/azure_ball"
     },
     "beast_ball": {
       "textures": "textures/item/poke_balls/beast_ball"
     },
-    "azure_ball": {
-      "textures": "textures/item/poke_balls/azure_ball"
+    "cherish_ball": {
+      "textures": "textures/item/poke_balls/cherish_ball"
     },
     "citrine_ball": {
       "textures": "textures/item/poke_balls/citrine_ball"
@@ -887,17 +887,23 @@
     "great_ball": {
       "textures": "textures/item/poke_balls/great_ball"
     },
-    "heavy_ball": {
-      "textures": "textures/item/poke_balls/heavy_ball"
-    },
     "heal_ball": {
       "textures": "textures/item/poke_balls/heal_ball"
+    },
+    "heavy_ball": {
+      "textures": "textures/item/poke_balls/heavy_ball"
     },
     "level_ball": {
       "textures": "textures/item/poke_balls/level_ball"
     },
     "love_ball": {
       "textures": "textures/item/poke_balls/love_ball"
+    },
+    "lure_ball": {
+      "textures": "textures/item/poke_balls/lure_ball"
+    },
+    "luxury_ball": {
+      "textures": "textures/item/poke_balls/luxury_ball"
     },
     "master_ball": {
       "textures": "textures/item/poke_balls/master_ball"
@@ -911,14 +917,8 @@
     "net_ball": {
       "textures": "textures/item/poke_balls/net_ball"
     },
-    "lure_ball": {
-      "textures": "textures/item/poke_balls/lure_ball"
-    },
     "park_ball": {
       "textures": "textures/item/poke_balls/park_ball"
-    },
-    "luxury_ball": {
-      "textures": "textures/item/poke_balls/luxury_ball"
     },
     "poke_ball": {
       "textures": "textures/item/poke_balls/poke_ball"
@@ -935,11 +935,11 @@
     "roseate_ball": {
       "textures": "textures/item/poke_balls/roseate_ball"
     },
-    "slate_ball": {
-      "textures": "textures/item/poke_balls/slate_ball"
-    },
     "safari_ball": {
       "textures": "textures/item/poke_balls/safari_ball"
+    },
+    "slate_ball": {
+      "textures": "textures/item/poke_balls/slate_ball"
     },
     "sport_ball": {
       "textures": "textures/item/poke_balls/sport_ball"
@@ -956,11 +956,11 @@
     "x_accuracy": {
       "textures": "textures/item/x_items/x_accuracy"
     },
-    "x_defense": {
-      "textures": "textures/item/x_items/x_defense"
-    },
     "x_attack": {
       "textures": "textures/item/x_items/x_attack"
+    },
+    "x_defense": {
+      "textures": "textures/item/x_items/x_defense"
     },
     "x_speed": {
       "textures": "textures/item/x_items/x_speed"

@@ -1,46 +1,14 @@
-/* This File was generated with CobbleBuild.
+/* This File was generated and/or processed with CobbleBuild.
  * These files might be overwritable in the future, but for now please submit any issues to CobbleBuild
- * instead of fixing them here. 
+ * instead of fixing them here. This file should not be overwritten in cobblemon-bedrock.
  */
 {
   "format_version": "1.10.0",
   "animation_controllers": {
-    "controller.animation.blastoise.blink": {
-      "initial_state": "init",
-      "states": {
-        "init": {
-          "transitions": [
-            {
-              "quirk_inactive": "v.next_quirk_blastoise_blink = q.life_time + math.random(2, 7); return true;"
-            }
-          ]
-        },
-        "quirk_inactive": {
-          "transitions": [
-            {
-              "quirk_active": "v.quirk_end_blastoise_blink = q.life_time + 1; return (q.life_time > v.next_quirk_blastoise_blink) && (v.state_of_blastoise == 1 || v.state_of_blastoise == 2 || v.state_of_blastoise == 3 || v.state_of_blastoise == 4);"
-            }
-          ]
-        },
-        "quirk_active": {
-          "animations": [
-            "blastoise.blink"
-          ],
-          "transitions": [
-            {
-              "quirk_inactive": "v.next_quirk_blastoise_blink = q.life_time + math.random(2, 7); return q.all_animations_finished && (q.life_time > (v.quirk_end_blastoise_blink ?? 1));"
-            }
-          ]
-        }
-      }
-    },
     "controller.animation.cobblemon.blastoise": {
       "initial_state": "standing",
       "states": {
         "sleep": {
-          "animations": [
-            "blastoise.sleep"
-          ],
           "transitions": [
             {
               "standing": "v.state_of_blastoise = 0; return !q.is_moving;"
@@ -56,8 +24,7 @@
         },
         "standing": {
           "animations": [
-            "blastoisemodel.singlebonelook",
-            "blastoise.ground_idle"
+            "blastoisemodel.singlebonelook"
           ],
           "transitions": [
             {
@@ -74,7 +41,6 @@
         },
         "swimIdle": {
           "animations": [
-            "blastoise.water_idle",
             "blastoisemodel.singlebonelook"
           ],
           "transitions": [
@@ -95,8 +61,7 @@
         },
         "swimMove": {
           "animations": [
-            "blastoisemodel.singlebonelook",
-            "blastoise.water_swim"
+            "blastoisemodel.singlebonelook"
           ],
           "transitions": [
             {
@@ -113,8 +78,7 @@
         },
         "walk": {
           "animations": [
-            "blastoisemodel.singlebonelook",
-            "blastoise.ground_walk"
+            "blastoisemodel.singlebonelook"
           ],
           "transitions": [
             {
