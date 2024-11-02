@@ -24,7 +24,8 @@ export interface PCLocation {
 }
 
 export interface BoxData {
-  boxName?: string,
+  /** Custom name of box if there is one */
+  name?: string,
   boxData: (PokemonData | null)[]
 }
 
@@ -40,12 +41,12 @@ function initializePlayer(player: Player) {
  * @returns Json Array of Box
  * @throws Invalid BoxID Number
  */
-function initializePlayerBox(player: Player, boxID: number): string {
+function initializePlayerBox(player: Player, boxID: number): BoxData {
   if (boxID < 0 || boxID > totalBoxes - 1) throw new Error("Invalid Box ID to Initialize");
   let boxArray = generateNewBoxData();
   let boxStringify = JSON.stringify(boxArray);
   player.setDynamicProperty("box" + boxID, boxStringify);
-  return boxStringify;
+  return boxArray;
 }
 function generateNewBoxData(): BoxData {
   let boxArray: null[] = (new Array(spacesPerBox)).fill(null);
@@ -111,9 +112,8 @@ export function storePokemonInFirstSpace(data: PokemonData | string, player: Pla
 
   //Add if Boxes have room
   for (let i = 0; i < totalBoxes; i++) {
-    let boxJson = player.getDynamicProperty("box" + i) as string;
-    if (!boxJson || !(typeof boxJson === "string")) boxJson = initializePlayerBox(player, i);
-    let boxArray = decodePokemonArray(boxJson)!;
+    let boxData = getBoxData(player, i) || generateNewBoxData();
+    let boxArray = boxData.boxData;
     for (let space = 0; space < boxArray.length; space++) {
       if (boxArray[space] === null) {
         boxArray[space] = data;
@@ -147,7 +147,8 @@ export function getSafeTeam(player: Player): (PokemonData | null)[] {
  */
 function decodePokemonArray(jsonArray: string | (PokemonData | null)[]): (PokemonData | null)[] | undefined {
   let array: (PokemonData | null)[] = (Array.isArray(jsonArray)) ? jsonArray : JSON.parse(jsonArray);
-  if (!Array.isArray(array)) return undefined;
+  if (!Array.isArray(array))
+    return undefined;
   //Make sure each item is initialized as a class.
   array.forEach((x, i) => {
     if (x && typeof x === "object") {
@@ -163,10 +164,12 @@ function decodePokemonArray(jsonArray: string | (PokemonData | null)[]): (Pokemo
  */
 // I want this function to throw errors so that duplication exploits don't happen as easily
 export function removePokemon(player: Player, boxID: number, space: number) {
-  let dataJson = player.getDynamicProperty("box" + boxID);
-  if (!dataJson || !(typeof dataJson === "string")) throw new Error("Could not read box data.");
-  let dataArray = decodePokemonArray(dataJson);
-  if (!dataArray) throw new Error("Could not decode box data.");
+  let dataJson = getBoxData(player, boxID);
+  if (!dataJson)
+    throw new Error("Could not read box data.");
+  let dataArray = dataJson.boxData;
+  if (!dataArray)
+    throw new Error("Could not decode box data.");
   dataArray[space] = null;
   player.setDynamicProperty("box" + boxID, JSON.stringify(dataArray));
 }
@@ -193,6 +196,10 @@ export function getBoxData(player: Player, boxID: number): BoxData | undefined {
     return getBoxData(player, boxID);
   }
   let boxData = jsonData as BoxData;
+  let decodedArray = decodePokemonArray(boxData.boxData);
+  if (decodedArray == undefined)
+    return undefined;
+  boxData.boxData = decodedArray;
   return boxData;
 }
 
