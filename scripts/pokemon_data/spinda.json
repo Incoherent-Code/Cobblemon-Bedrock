@@ -304,23 +304,123 @@
   "spawnConditionsMap": {
     "0": {
       "minLevel": 11,
-      "maxLevel": 36
+      "maxLevel": 36,
+      "preventedNearbyBlocks": [
+        [
+          "minecraft:white_concrete",
+          "minecraft:orange_concrete",
+          "minecraft:magenta_concrete",
+          "minecraft:light_blue_concrete",
+          "minecraft:yellow_concrete",
+          "minecraft:lime_concrete",
+          "minecraft:pink_concrete",
+          "minecraft:gray_concrete",
+          "minecraft:light_gray_concrete",
+          "minecraft:cyan_concrete",
+          "minecraft:purple_concrete",
+          "minecraft:blue_concrete",
+          "minecraft:brown_concrete",
+          "minecraft:green_concrete",
+          "minecraft:red_concrete",
+          "minecraft:black_concrete"
+        ]
+      ]
     },
     "1": {
       "minLevel": 11,
-      "maxLevel": 36
+      "maxLevel": 36,
+      "preventedNearbyBlocks": [
+        [
+          "minecraft:white_concrete",
+          "minecraft:orange_concrete",
+          "minecraft:magenta_concrete",
+          "minecraft:light_blue_concrete",
+          "minecraft:yellow_concrete",
+          "minecraft:lime_concrete",
+          "minecraft:pink_concrete",
+          "minecraft:gray_concrete",
+          "minecraft:light_gray_concrete",
+          "minecraft:cyan_concrete",
+          "minecraft:purple_concrete",
+          "minecraft:blue_concrete",
+          "minecraft:brown_concrete",
+          "minecraft:green_concrete",
+          "minecraft:red_concrete",
+          "minecraft:black_concrete"
+        ]
+      ]
     },
     "2": {
       "minLevel": 11,
-      "maxLevel": 36
+      "maxLevel": 36,
+      "preventedNearbyBlocks": [
+        [
+          "minecraft:white_concrete",
+          "minecraft:orange_concrete",
+          "minecraft:magenta_concrete",
+          "minecraft:light_blue_concrete",
+          "minecraft:yellow_concrete",
+          "minecraft:lime_concrete",
+          "minecraft:pink_concrete",
+          "minecraft:gray_concrete",
+          "minecraft:light_gray_concrete",
+          "minecraft:cyan_concrete",
+          "minecraft:purple_concrete",
+          "minecraft:blue_concrete",
+          "minecraft:brown_concrete",
+          "minecraft:green_concrete",
+          "minecraft:red_concrete",
+          "minecraft:black_concrete"
+        ]
+      ]
     },
     "3": {
       "minLevel": 11,
-      "maxLevel": 36
+      "maxLevel": 36,
+      "preventedNearbyBlocks": [
+        [
+          "minecraft:white_concrete",
+          "minecraft:orange_concrete",
+          "minecraft:magenta_concrete",
+          "minecraft:light_blue_concrete",
+          "minecraft:yellow_concrete",
+          "minecraft:lime_concrete",
+          "minecraft:pink_concrete",
+          "minecraft:gray_concrete",
+          "minecraft:light_gray_concrete",
+          "minecraft:cyan_concrete",
+          "minecraft:purple_concrete",
+          "minecraft:blue_concrete",
+          "minecraft:brown_concrete",
+          "minecraft:green_concrete",
+          "minecraft:red_concrete",
+          "minecraft:black_concrete"
+        ]
+      ]
     },
     "4": {
       "minLevel": 11,
-      "maxLevel": 36
+      "maxLevel": 36,
+      "preventedNearbyBlocks": [
+        [
+          "minecraft:white_concrete",
+          "minecraft:orange_concrete",
+          "minecraft:magenta_concrete",
+          "minecraft:light_blue_concrete",
+          "minecraft:yellow_concrete",
+          "minecraft:lime_concrete",
+          "minecraft:pink_concrete",
+          "minecraft:gray_concrete",
+          "minecraft:light_gray_concrete",
+          "minecraft:cyan_concrete",
+          "minecraft:purple_concrete",
+          "minecraft:blue_concrete",
+          "minecraft:brown_concrete",
+          "minecraft:green_concrete",
+          "minecraft:red_concrete",
+          "minecraft:black_concrete"
+        ]
+      ]
     }
   },
   "name": "Spinda",

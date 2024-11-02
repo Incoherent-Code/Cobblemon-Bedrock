@@ -11,7 +11,13 @@
     "0": {
       "timeRange": "night",
       "minLevel": 29,
-      "maxLevel": 49
+      "maxLevel": 49,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:pumpkin",
+          "minecraft:carved_pumpkin"
+        ]
+      ]
     },
     "1": {
       "minLevel": 29,

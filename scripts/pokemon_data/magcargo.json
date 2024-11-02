@@ -22,7 +22,12 @@
     },
     "3": {
       "minLevel": 38,
-      "maxLevel": 43
+      "maxLevel": 43,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:lava"
+        ]
+      ]
     },
     "4": {
       "minLevel": 38,

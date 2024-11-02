@@ -17,7 +17,15 @@
     },
     "1": {
       "minLevel": 23,
-      "maxLevel": 48
+      "maxLevel": 48,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:birch_planks",
+          "minecraft:stone_stairs",
+          "minecraft:cobblestone_wall",
+          "minecraft:dark_oak_planks"
+        ]
+      ]
     }
   },
   "name": "Mimikyu",

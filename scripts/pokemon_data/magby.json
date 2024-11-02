@@ -11,7 +11,13 @@
     "0": {
       "isRaining": false,
       "minLevel": 11,
-      "maxLevel": 36
+      "maxLevel": 36,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:lava",
+          "minecraft:magma"
+        ]
+      ]
     },
     "1": {
       "isRaining": false,

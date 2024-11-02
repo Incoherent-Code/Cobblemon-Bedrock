@@ -302,9 +302,6 @@
             ]
           }
         ],
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:lightning_rod"
-        ],
         "minecraft:weight": {
           "default": 6.0
         },
@@ -346,9 +343,6 @@
               }
             ]
           }
-        ],
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:lightning_rod"
         ],
         "minecraft:weight": {
           "default": 1.5

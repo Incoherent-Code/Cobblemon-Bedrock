@@ -15,7 +15,12 @@
     "1": {
       "timeRange": "night",
       "minLevel": 9,
-      "maxLevel": 34
+      "maxLevel": 34,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:wheat"
+        ]
+      ]
     },
     "2": {
       "minLevel": 9,

@@ -22,7 +22,12 @@
     },
     "3": {
       "minLevel": 1,
-      "maxLevel": 25
+      "maxLevel": 25,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:lava"
+        ]
+      ]
     }
   },
   "name": "Slugma",

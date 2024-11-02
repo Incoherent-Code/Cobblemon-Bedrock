@@ -540,29 +540,6 @@
             ]
           }
         ],
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:activator_rail",
-          "minecraft:daylight_detector",
-          "minecraft:detector_rail",
-          "minecraft:dispenser",
-          "minecraft:dropper",
-          "minecraft:hopper",
-          "minecraft:observer",
-          "minecraft:piston",
-          "minecraft:powered_comparator",
-          "minecraft:golden_rail",
-          "minecraft:powered_repeater",
-          "minecraft:redstone_block",
-          "minecraft:redstone_lamp",
-          "minecraft:redstone_torch",
-          "minecraft:redstone_wire",
-          "minecraft:sticky_piston",
-          "minecraft:unlit_redstone_torch",
-          "minecraft:unpowered_comparator",
-          "minecraft:unpowered_repeater",
-          "minecraft:redstone_ore",
-          "minecraft:deepslate_redstone_ore"
-        ],
         "minecraft:weight": {
           "default": 4.5
         },
@@ -1096,9 +1073,6 @@
             ]
           }
         ],
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:lightning_rod"
-        ],
         "minecraft:weight": {
           "default": 18.0
         },
@@ -1631,9 +1605,6 @@
               }
             ]
           }
-        ],
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:lightning_rod"
         ],
         "minecraft:weight": {
           "default": 4.5

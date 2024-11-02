@@ -10,7 +10,12 @@
   "spawnConditionsMap": {
     "0": {
       "minLevel": 7,
-      "maxLevel": 32
+      "maxLevel": 32,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:kelp_plant"
+        ]
+      ]
     }
   },
   "name": "Skrelp",

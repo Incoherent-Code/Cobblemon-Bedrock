@@ -14,7 +14,17 @@
     },
     "1": {
       "minLevel": 34,
-      "maxLevel": 48
+      "maxLevel": 48,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:sandstone",
+          "minecraft:sandstone",
+          "minecraft:orange_terracotta",
+          "minecraft:sandstone",
+          "minecraft:sandstone_slab",
+          "minecraft:sandstone_stairs"
+        ]
+      ]
     }
   },
   "name": "Cofagrigus",

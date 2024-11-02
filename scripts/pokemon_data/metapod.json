@@ -14,7 +14,22 @@
     },
     "1": {
       "minLevel": 7,
-      "maxLevel": 21
+      "maxLevel": 21,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:jungle_leaves",
+          "minecraft:oak_leaves",
+          "minecraft:spruce_leaves",
+          "minecraft:dark_oak_leaves",
+          "minecraft:acacia_leaves",
+          "minecraft:birch_leaves",
+          "minecraft:azalea_leaves",
+          "minecraft:azalea_leaves_flowered",
+          "minecraft:mangrove_leaves",
+          "minecraft:cherry_leaves",
+          "cobblemon:apricorn_leaves"
+        ]
+      ]
     },
     "2": {
       "minLevel": 7,

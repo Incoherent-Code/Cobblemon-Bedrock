@@ -14,7 +14,17 @@
     },
     "1": {
       "minLevel": 36,
-      "maxLevel": 50
+      "maxLevel": 50,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:sandstone",
+          "minecraft:sandstone",
+          "minecraft:orange_terracotta",
+          "minecraft:sandstone",
+          "minecraft:sandstone_slab",
+          "minecraft:sandstone_stairs"
+        ]
+      ]
     },
     "2": {
       "minLevel": 36,

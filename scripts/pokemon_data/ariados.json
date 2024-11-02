@@ -28,7 +28,18 @@
     },
     "4": {
       "minLevel": 22,
-      "maxLevel": 40
+      "maxLevel": 40,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:birch_planks",
+          "minecraft:stone_stairs",
+          "minecraft:cobblestone_wall",
+          "minecraft:dark_oak_planks"
+        ],
+        [
+          "minecraft:web"
+        ]
+      ]
     }
   },
   "name": "Ariados",

@@ -19,12 +19,22 @@
     },
     "1": {
       "minLevel": 16,
-      "maxLevel": 41
+      "maxLevel": 41,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:lightning_rod"
+        ]
+      ]
     },
     "1m": {
       "isThundering": true,
       "minLevel": 16,
-      "maxLevel": 41
+      "maxLevel": 41,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:lightning_rod"
+        ]
+      ]
     }
   },
   "name": "Minun",

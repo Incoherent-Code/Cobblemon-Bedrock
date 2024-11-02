@@ -18,7 +18,19 @@
     },
     "2": {
       "minLevel": 30,
-      "maxLevel": 42
+      "maxLevel": 42,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:sandstone",
+          "minecraft:stonebrick",
+          "minecraft:stonebrick",
+          "minecraft:sandstone",
+          "minecraft:mossy_cobblestone",
+          "minecraft:stonebrick",
+          "minecraft:polished_granite",
+          "minecraft:stonebrick"
+        ]
+      ]
     }
   },
   "name": "Dragonair",

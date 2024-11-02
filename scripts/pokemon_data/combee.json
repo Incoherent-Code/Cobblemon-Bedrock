@@ -21,7 +21,13 @@
       "isRaining": false,
       "timeRange": "day",
       "minLevel": 1,
-      "maxLevel": 24
+      "maxLevel": 24,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:bee_nest",
+          "minecraft:beehive"
+        ]
+      ]
     },
     "1": {
       "minLevel": 1,

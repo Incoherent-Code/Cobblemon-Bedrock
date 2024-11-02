@@ -10,7 +10,19 @@
   "spawnConditionsMap": {
     "0": {
       "minLevel": 35,
-      "maxLevel": 53
+      "maxLevel": 53,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:amethyst_block",
+          "minecraft:budding_amethyst",
+          "minecraft:amethyst_block",
+          "minecraft:budding_amethyst",
+          "minecraft:diamond_ore",
+          "minecraft:deepslate_diamond_ore",
+          "minecraft:emerald_ore",
+          "minecraft:deepslate_emerald_ore"
+        ]
+      ]
     },
     "1": {
       "minLevel": 35,

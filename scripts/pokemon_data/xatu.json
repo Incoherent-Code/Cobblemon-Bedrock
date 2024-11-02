@@ -19,7 +19,47 @@
     "1": {
       "timeRange": "day",
       "minLevel": 25,
-      "maxLevel": 47
+      "maxLevel": 47,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:black_glazed_terracotta",
+          "minecraft:blue_glazed_terracotta",
+          "minecraft:brick_block",
+          "minecraft:brown_glazed_terracotta",
+          "minecraft:cyan_glazed_terracotta",
+          "minecraft:gray_glazed_terracotta",
+          "minecraft:green_glazed_terracotta",
+          "minecraft:light_blue_glazed_terracotta",
+          "minecraft:silver_glazed_terracotta",
+          "minecraft:lime_glazed_terracotta",
+          "minecraft:magenta_glazed_terracotta",
+          "minecraft:mud_bricks",
+          "minecraft:orange_glazed_terracotta",
+          "minecraft:pink_glazed_terracotta",
+          "minecraft:purple_glazed_terracotta",
+          "minecraft:red_glazed_terracotta",
+          "minecraft:suspicious_gravel",
+          "minecraft:white_glazed_terracotta",
+          "minecraft:yellow_glazed_terracotta",
+          "minecraft:hardened_clay",
+          "minecraft:white_terracotta",
+          "minecraft:orange_terracotta",
+          "minecraft:magenta_terracotta",
+          "minecraft:light_blue_terracotta",
+          "minecraft:yellow_terracotta",
+          "minecraft:lime_terracotta",
+          "minecraft:pink_terracotta",
+          "minecraft:gray_terracotta",
+          "minecraft:light_gray_terracotta",
+          "minecraft:cyan_terracotta",
+          "minecraft:purple_terracotta",
+          "minecraft:blue_terracotta",
+          "minecraft:brown_terracotta",
+          "minecraft:green_terracotta",
+          "minecraft:red_terracotta",
+          "minecraft:black_terracotta"
+        ]
+      ]
     }
   },
   "name": "Xatu",

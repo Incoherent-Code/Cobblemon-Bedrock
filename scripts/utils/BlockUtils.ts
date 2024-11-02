@@ -1,4 +1,4 @@
-import { Block } from "@minecraft/server";
+import { Block, DimensionLocation } from "@minecraft/server";
 
 export const replacableBlocks = ["minecraft:air", "minecraft:water", "minecraft:lava", "minecraft:short_grass"];
 
@@ -43,5 +43,29 @@ export function reloadBlock(block: Block, states: Record<string, string | number
   block.setType("air");
   block.setType(blockId);
   loadStates(block, blockState);
+}
+
+/**Returns an array of blocks within the box provided centered to center
+ * @param sizeZ Will assume sizeX if not specified
+ * @returns All blocks (filters out undefineds, like if the blocks are in an unloaded chunk)
+  */
+export function getAllBlocksFromCenter(center: DimensionLocation, sizeX: number, sizeY: number, sizeZ = sizeX): Block[] {
+  let minx = Math.floor(center.x - sizeX / 2);
+  let miny = Math.floor(center.y - sizeY / 2);
+  let minz = Math.floor(center.z - sizeZ / 2);
+
+  let maxx = Math.ceil(center.x + sizeX / 2);
+  let maxy = Math.ceil(center.y + sizeY / 2);
+  let maxz = Math.ceil(center.z + sizeZ / 2);
+
+  let output: (Block | undefined)[] = [];
+  for (let x = minx; x <= maxx; x++) {
+    for (let y = miny; y <= maxy; y++) {
+      for (let z = minz; z <= maxz; z++) {
+        output.push(center.dimension.getBlock({ x: x, y: y, z: z }));
+      }
+    }
+  }
+  return output.filter(x => x != undefined);
 }
 

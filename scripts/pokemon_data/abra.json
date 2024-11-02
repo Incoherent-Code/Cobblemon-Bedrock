@@ -20,7 +20,15 @@
     },
     "2": {
       "minLevel": 6,
-      "maxLevel": 31
+      "maxLevel": 31,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:birch_planks",
+          "minecraft:stone_stairs",
+          "minecraft:cobblestone_wall",
+          "minecraft:dark_oak_planks"
+        ]
+      ]
     }
   },
   "name": "Abra",

@@ -18,7 +18,36 @@
       "isRaining": false,
       "timeRange": "day",
       "minLevel": 25,
-      "maxLevel": 46
+      "maxLevel": 46,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:yellow_flower",
+          "minecraft:poppy",
+          "minecraft:blue_orchid",
+          "minecraft:allium",
+          "minecraft:azure_bluet",
+          "minecraft:red_tulip",
+          "minecraft:orange_tulip",
+          "minecraft:white_tulip",
+          "minecraft:pink_tulip",
+          "minecraft:oxeye_daisy",
+          "minecraft:cornflower",
+          "minecraft:lily_of_the_valley",
+          "minecraft:wither_rose",
+          "minecraft:torchflower",
+          "cobblemon:pep_up_flower",
+          "minecraft:sunflower",
+          "minecraft:lilac",
+          "minecraft:peony",
+          "minecraft:rose_bush",
+          "minecraft:pitcher_plant",
+          "minecraft:azalea_leaves_flowered",
+          "minecraft:flowering_azalea",
+          "minecraft:mangrove_propagule",
+          "minecraft:cherry_leaves",
+          "minecraft:pink_petals"
+        ]
+      ]
     },
     "2": {
       "minLevel": 25,

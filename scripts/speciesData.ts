@@ -1,8 +1,10 @@
 //Handles Importing Data from JSON Files
 
-import { Entity, WeatherType, world } from "@minecraft/server"
+import { Block, Entity, WeatherType, world } from "@minecraft/server"
 import { toID } from "./showdown/sim/dex-data"
 import { ElementalType } from "./Pokemon";
+import { getConfig } from "./Config";
+import { BlockUtils, toDimensionLocation } from "./utils";
 
 
 //Interfaces for typesafety for decoding the json files
@@ -196,7 +198,9 @@ interface SpawnConditionData {
   timeRange?: string,
   minLevel: number,
   maxLevel: number,
-  multiplier?: number
+  /** Different sets of needed nearby blocks. One of each of these needs to be present nearby */
+  neededNearbyBlocks?: string[][],
+  preventedNearbyBlocks: string[][]
 }
 
 export function getSpeciesData(species: string): SpeciesData | undefined {
@@ -262,6 +266,19 @@ export function validateSpawnCondition(entity: Entity, spawnCondition: SpawnCond
       default:
         console.warn(`Timerange ${spawnCondition.timeRange} is unknown.`);
     }
+  }
+
+  if (spawnCondition.neededNearbyBlocks || spawnCondition.preventedNearbyBlocks) {
+    let config = getConfig();
+    let nearbyBlocks = BlockUtils.getAllBlocksFromCenter(
+      toDimensionLocation(entity.location, entity.dimension),
+      config.maxNearbyBlocksHorizontalRange,
+      config.maxNearbyBlocksVerticleRange
+    ).map(x => x.typeId);
+    if (spawnCondition.neededNearbyBlocks && !spawnCondition.neededNearbyBlocks.every(cond => nearbyBlocks.some(x => cond.includes(x))))
+      return false;
+    if (spawnCondition.preventedNearbyBlocks && !spawnCondition.preventedNearbyBlocks.every(cond => !nearbyBlocks.some(x => cond.includes(x))))
+      return false;
   }
 
   return true;

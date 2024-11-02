@@ -21,7 +21,12 @@
     },
     "2": {
       "minLevel": 20,
-      "maxLevel": 43
+      "maxLevel": 43,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:water"
+        ]
+      ]
     },
     "3": {
       "minLevel": 20,

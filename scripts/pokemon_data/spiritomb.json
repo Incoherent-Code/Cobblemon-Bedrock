@@ -10,15 +10,91 @@
   "spawnConditionsMap": {
     "0": {
       "minLevel": 24,
-      "maxLevel": 49
+      "maxLevel": 49,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:chiseled_deepslate",
+          "minecraft:cobbled_deepslate_wall",
+          "minecraft:cracked_deepslate_bricks",
+          "minecraft:cracked_deepslate_tiles",
+          "minecraft:deepslate_brick_slab",
+          "minecraft:deepslate_brick_stairs",
+          "minecraft:deepslate_brick_wall",
+          "minecraft:deepslate_bricks",
+          "minecraft:deepslate_tile_slab",
+          "minecraft:deepslate_tile_stairs",
+          "minecraft:deepslate_tile_wall",
+          "minecraft:deepslate_tiles",
+          "minecraft:polished_basalt",
+          "minecraft:polished_deepslate",
+          "minecraft:polished_deepslate_slab",
+          "minecraft:polished_deepslate_wall"
+        ]
+      ]
     },
     "1": {
       "minLevel": 24,
-      "maxLevel": 49
+      "maxLevel": 49,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:black_glazed_terracotta",
+          "minecraft:blue_glazed_terracotta",
+          "minecraft:brick_block",
+          "minecraft:brown_glazed_terracotta",
+          "minecraft:cyan_glazed_terracotta",
+          "minecraft:gray_glazed_terracotta",
+          "minecraft:green_glazed_terracotta",
+          "minecraft:light_blue_glazed_terracotta",
+          "minecraft:silver_glazed_terracotta",
+          "minecraft:lime_glazed_terracotta",
+          "minecraft:magenta_glazed_terracotta",
+          "minecraft:mud_bricks",
+          "minecraft:orange_glazed_terracotta",
+          "minecraft:pink_glazed_terracotta",
+          "minecraft:purple_glazed_terracotta",
+          "minecraft:red_glazed_terracotta",
+          "minecraft:suspicious_gravel",
+          "minecraft:white_glazed_terracotta",
+          "minecraft:yellow_glazed_terracotta",
+          "minecraft:hardened_clay",
+          "minecraft:white_terracotta",
+          "minecraft:orange_terracotta",
+          "minecraft:magenta_terracotta",
+          "minecraft:light_blue_terracotta",
+          "minecraft:yellow_terracotta",
+          "minecraft:lime_terracotta",
+          "minecraft:pink_terracotta",
+          "minecraft:gray_terracotta",
+          "minecraft:light_gray_terracotta",
+          "minecraft:cyan_terracotta",
+          "minecraft:purple_terracotta",
+          "minecraft:blue_terracotta",
+          "minecraft:brown_terracotta",
+          "minecraft:green_terracotta",
+          "minecraft:red_terracotta",
+          "minecraft:black_terracotta"
+        ]
+      ]
     },
     "2": {
       "minLevel": 24,
-      "maxLevel": 49
+      "maxLevel": 49,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:sandstone",
+          "minecraft:sandstone",
+          "minecraft:orange_terracotta",
+          "minecraft:sandstone",
+          "minecraft:sandstone_slab",
+          "minecraft:sandstone_stairs"
+        ],
+        [
+          "minecraft:stonebrick",
+          "minecraft:cobblestone",
+          "minecraft:stone_stairs",
+          "minecraft:mossy_cobblestone"
+        ]
+      ]
     },
     "3": {
       "minLevel": 24,

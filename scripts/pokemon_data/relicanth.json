@@ -17,7 +17,19 @@
     },
     "1": {
       "minLevel": 24,
-      "maxLevel": 49
+      "maxLevel": 49,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:sandstone",
+          "minecraft:stonebrick",
+          "minecraft:stonebrick",
+          "minecraft:sandstone",
+          "minecraft:mossy_cobblestone",
+          "minecraft:stonebrick",
+          "minecraft:polished_granite",
+          "minecraft:stonebrick"
+        ]
+      ]
     },
     "2": {
       "minLevel": 24,

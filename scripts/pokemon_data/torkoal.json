@@ -10,11 +10,21 @@
   "spawnConditionsMap": {
     "0": {
       "minLevel": 22,
-      "maxLevel": 47
+      "maxLevel": 47,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:coal_ore"
+        ]
+      ]
     },
     "1": {
       "minLevel": 22,
-      "maxLevel": 47
+      "maxLevel": 47,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:coal_ore"
+        ]
+      ]
     },
     "2": {
       "minLevel": 22,

@@ -10,15 +10,38 @@
   "spawnConditionsMap": {
     "0": {
       "minLevel": 2,
-      "maxLevel": 27
+      "maxLevel": 27,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:cake"
+        ]
+      ]
     },
     "1": {
       "minLevel": 2,
-      "maxLevel": 27
+      "maxLevel": 27,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:sugar_cane"
+        ]
+      ]
     },
     "2": {
       "minLevel": 2,
-      "maxLevel": 27
+      "maxLevel": 27,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:birch_planks",
+          "minecraft:stone_stairs",
+          "minecraft:cobblestone_wall",
+          "minecraft:dark_oak_planks"
+        ],
+        [
+          "minecraft:light_gray_carpet",
+          "minecraft:magenta_carpet",
+          "minecraft:white_carpet"
+        ]
+      ]
     }
   },
   "name": "Milcery",

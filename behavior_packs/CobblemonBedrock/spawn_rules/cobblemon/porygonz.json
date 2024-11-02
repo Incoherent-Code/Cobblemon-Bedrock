@@ -531,9 +531,6 @@
             ]
           }
         ],
-        "minecraft:spawns_on_block_filter": [
-          "cobblemon:pc"
-        ],
         "minecraft:weight": {
           "default": 0.05
         },

@@ -10,7 +10,12 @@
   "spawnConditionsMap": {
     "0": {
       "minLevel": 15,
-      "maxLevel": 40
+      "maxLevel": 40,
+      "neededNearbyBlocks": [
+        [
+          "cobblemon:pc"
+        ]
+      ]
     }
   },
   "name": "Porygon",

@@ -21,7 +21,16 @@
     },
     "1": {
       "minLevel": 31,
-      "maxLevel": 47
+      "maxLevel": 47,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:end_stone_bricks",
+          "minecraft:purpur_block",
+          "minecraft:purpur_pillar",
+          "minecraft:purpur_slab",
+          "minecraft:purpur_stairs"
+        ]
+      ]
     }
   },
   "name": "Forretress",

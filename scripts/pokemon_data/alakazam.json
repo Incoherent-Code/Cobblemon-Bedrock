@@ -23,7 +23,15 @@
     },
     "2": {
       "minLevel": 35,
-      "maxLevel": 50
+      "maxLevel": 50,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:birch_planks",
+          "minecraft:stone_stairs",
+          "minecraft:cobblestone_wall",
+          "minecraft:dark_oak_planks"
+        ]
+      ]
     }
   },
   "name": "Alakazam",

@@ -11,11 +11,21 @@
     "0": {
       "isRaining": true,
       "minLevel": 34,
-      "maxLevel": 51
+      "maxLevel": 51,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:waterlily"
+        ]
+      ]
     },
     "1": {
       "minLevel": 34,
-      "maxLevel": 51
+      "maxLevel": 51,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:waterlily"
+        ]
+      ]
     },
     "2": {
       "minLevel": 34,

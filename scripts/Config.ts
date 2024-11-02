@@ -11,6 +11,8 @@ class CobblemonConfig {
   luckyEggMultiplier = 1.5;
   experienceMultiplier = 2;
   mainCharacter = "";
+  maxNearbyBlocksHorizontalRange = 4;
+  maxNearbyBlocksVerticleRange = 2;
 }
 
 /** Do not Use this until after worldInitialize */

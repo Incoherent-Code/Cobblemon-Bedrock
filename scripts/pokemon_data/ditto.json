@@ -18,7 +18,15 @@
     },
     "2": {
       "minLevel": 4,
-      "maxLevel": 29
+      "maxLevel": 29,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:birch_planks",
+          "minecraft:stone_stairs",
+          "minecraft:cobblestone_wall",
+          "minecraft:dark_oak_planks"
+        ]
+      ]
     }
   },
   "name": "Ditto",

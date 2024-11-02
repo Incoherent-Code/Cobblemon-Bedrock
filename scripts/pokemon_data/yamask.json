@@ -14,7 +14,17 @@
     },
     "1": {
       "minLevel": 5,
-      "maxLevel": 30
+      "maxLevel": 30,
+      "neededNearbyBlocks": [
+        [
+          "minecraft:sandstone",
+          "minecraft:sandstone",
+          "minecraft:orange_terracotta",
+          "minecraft:sandstone",
+          "minecraft:sandstone_slab",
+          "minecraft:sandstone_stairs"
+        ]
+      ]
     }
   },
   "name": "Yamask",
