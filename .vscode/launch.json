@@ -23,7 +23,7 @@
       "sourceMapRoot": "${workspaceFolder}/scripts",
       "generatedSourceRoot": "${workspaceFolder}/scripts",
       "port": 19144,
-      "targetModuleUuid": "1b7a2e08-8dc6-44ce-9f3d-bb6b448d48b6"
+      "targetModuleUuid": "308fb52a-5908-43bb-b8ad-933dadfe9798"
     },
     {
       "type": "minecraft-js",
@@ -35,7 +35,7 @@
       "sourceMapRoot": "${workspaceFolder}/scripts",
       "generatedSourceRoot": "${workspaceFolder}/scripts",
       "port": 19144,
-      "targetModuleUuid": "1b7a2e08-8dc6-44ce-9f3d-bb6b448d48b6"
+      "targetModuleUuid": "308fb52a-5908-43bb-b8ad-933dadfe9798"
     }
   ]
 }
