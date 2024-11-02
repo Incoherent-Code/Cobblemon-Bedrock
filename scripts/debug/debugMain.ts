@@ -1,10 +1,7 @@
-//Fuck you mojang we cant have anything cool
-//import { disableWatchdog } from "@minecraft/debug-utilities";
-import { Player, ScriptEventCommandMessageAfterEvent, system } from "@minecraft/server";
+import { Player, ScriptEventCommandMessageAfterEvent, system, world } from "@minecraft/server";
 import { battleMap } from "../battle";
 
 export function registerDebugSettings() {
-  //disableWatchdog(true);
   system.afterEvents.scriptEventReceive.subscribe(debugEventHandler)
 }
 
@@ -18,22 +15,23 @@ export default function debugEventHandler(event: ScriptEventCommandMessageAfterE
   }
 }
 
+//We don't necessairly know the source of the command, so we log to console
+//Use console.warn() so that it shows up in creator logs
 const debugIDDictionary: { [key: string]: Function } = {
   "cobblemon:get_own_dynamic_property": function (event: ScriptEventCommandMessageAfterEvent) {
-    if (!(event.sourceEntity && event.sourceEntity instanceof Player)) return;
-    let player = event.sourceEntity as Player;
-    player.sendMessage(`Property ${event.message}: ${player.getDynamicProperty(event.message)}`);
+    if (!event.sourceEntity)
+      return;
+    console.warn(`Property ${event.message}: ${event.sourceEntity.getDynamicProperty(event.message)}`);
   },
   "cobblemon:set_own_dynamic_property": function (event: ScriptEventCommandMessageAfterEvent) {
-    if (!(event.sourceEntity && event.sourceEntity instanceof Player)) return;
-    let player = event.sourceEntity as Player;
+    if (!event.sourceEntity) return;
     let messageArray = event.message.split(" ");
     if (!(messageArray.length == 2)) {
-      player.sendMessage("Syntax: <property> <value>");
+      console.error("Syntax: <property> <value>");
       return
     }
-    player.setDynamicProperty(messageArray[0], messageArray[1] === "undefined" ? undefined : messageArray[1]);
-    player.sendMessage(`Set Dynamic Property ${messageArray[0]} to ${messageArray[1]}`);
+    event.sourceEntity.setDynamicProperty(messageArray[0], messageArray[1] === "undefined" ? undefined : messageArray[1]);
+    console.warn(`Set Dynamic Property ${messageArray[0]} to ${messageArray[1]}`);
   },
   "cobblemon:clear_own_dynamic_properties": function (event: ScriptEventCommandMessageAfterEvent) {
     if (!event.sourceEntity) return;
@@ -43,21 +41,22 @@ const debugIDDictionary: { [key: string]: Function } = {
     }
   },
   "cobblemon:get_own_property": function (event: ScriptEventCommandMessageAfterEvent) {
-    if (!(event.sourceEntity && event.sourceEntity instanceof Player)) return;
-    let player = event.sourceEntity as Player;
-    player.sendMessage(`Property ${event.message}: ${player.getProperty(event.message)}`);
+    if (!event.sourceEntity)
+      return;
+    console.warn(`Property ${event.message}: ${event.sourceEntity.getProperty(event.message)}`);
   },
   "cobblemon:set_own_property": function (event: ScriptEventCommandMessageAfterEvent) {
-    if (!(event.sourceEntity && event.sourceEntity instanceof Player)) return;
-    let player = event.sourceEntity as Player;
+    if (!event.sourceEntity)
+      return;
     let messageArray: any[] = event.message.split(" ");
     if (!(messageArray.length == 2)) {
-      player.sendMessage("Syntax: <property> <value>");
+      console.error("Syntax: <property> <value>");
       return
     }
-    if (Number(messageArray[1])) messageArray[1] = Number(messageArray[1])
-    player.setProperty(messageArray[0], messageArray[1]);
-    player.sendMessage(`Set Property ${messageArray[0]} to ${messageArray[1]}`);
+    if (Number(messageArray[1]))
+      messageArray[1] = Number(messageArray[1])
+    event.sourceEntity.setProperty(messageArray[0], messageArray[1]);
+    console.warn(`Set Property ${messageArray[0]} to ${messageArray[1]}`);
   },
   "cobblemon:send_input_to_battle": function (event: ScriptEventCommandMessageAfterEvent) {
     if (!(event.sourceEntity && event.sourceEntity instanceof Player)) return;
@@ -89,5 +88,10 @@ const debugIDDictionary: { [key: string]: Function } = {
     if (!(event.sourceEntity && event.sourceEntity instanceof Player)) return;
     let player = event.sourceEntity as Player;
     player.sendMessage(player.id);
+  },
+  "cobblemon:goto_dimension": function (event: ScriptEventCommandMessageAfterEvent) {
+    if (!(event.sourceEntity && event.sourceEntity instanceof Player)) return;
+    let player = event.sourceEntity as Player;
+    player.teleport(player.location, { dimension: world.getDimension(event.message!) })
   }
 };
