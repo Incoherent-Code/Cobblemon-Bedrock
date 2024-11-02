@@ -41,7 +41,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 0
+              "cobblemon:spawn_condition_used": "spawn_0"
             }
           },
           {
@@ -208,12 +208,12 @@
           "client_sync": true
         },
         "cobblemon:spawn_condition_used": {
-          "type": "int",
-          "range": [
-            -1,
-            0
+          "type": "enum",
+          "values": [
+            "none",
+            "spawn_0"
           ],
-          "default": -1,
+          "default": "none",
           "client_sync": false
         },
         "cobblemon:wild": {

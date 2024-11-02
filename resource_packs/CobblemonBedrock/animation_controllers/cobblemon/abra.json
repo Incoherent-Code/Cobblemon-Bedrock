@@ -4,5 +4,82 @@
  */
 {
   "format_version": "1.10.0",
-  "animation_controllers": {}
+  "animation_controllers": {
+    "controller.animation.cobblemon.abra": {
+      "initial_state": "standing",
+      "states": {
+        "sleep": {
+          "animations": [
+            "abra.sleep"
+          ],
+          "transitions": [
+            {
+              "standing": "v.state_of_abra = 0; return (!q.is_moving) && (!q.property('cobblemon:in_battle'));"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "standing": {
+          "animations": [
+            "abramodel.singlebonelook",
+            "abra.ground_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_abra = 1; return q.is_sleeping;"
+            },
+            {
+              "walking": "q.is_moving"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "walking": {
+          "animations": [
+            "abramodel.singlebonelook",
+            "abra.ground_walk"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_abra = 2; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "battleidle": "(!q.is_moving) && (q.property('cobblemon:in_battle'))"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "battleidle": {
+          "animations": [
+            "abramodel.singlebonelook",
+            "abra.battle_idle"
+          ],
+          "transitions": [
+            {
+              "sleep": "v.state_of_abra = 3; return q.is_sleeping;"
+            },
+            {
+              "standing": "(!q.is_moving) && (!q.property('cobblemon:in_battle'))"
+            },
+            {
+              "walking": "q.is_moving"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    }
+  }
 }

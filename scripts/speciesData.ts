@@ -45,7 +45,7 @@ export interface SpeciesData {
   /** Only use minLevel and maxLevel if not obtainable by spawn condition */
   maxLevel: number;
   variationMap: { [key: number]: string[] }
-  spawnConditionsMap: { [key: number]: SpawnConditionData }
+  spawnConditionsMap: { [key: string]: SpawnConditionData }
 }
 
 export interface FormData {
@@ -192,9 +192,11 @@ interface IdleData {
 
 interface SpawnConditionData {
   isRaining?: boolean,
+  isThundering?: boolean,
   timeRange?: string,
   minLevel: number,
-  maxLevel: number
+  maxLevel: number,
+  multiplier?: number
 }
 
 export function getSpeciesData(species: string): SpeciesData | undefined {
@@ -231,6 +233,16 @@ export function validateSpawnCondition(entity: Entity, spawnCondition: SpawnCond
       return false;
     }
     if (spawnCondition.isRaining === false && currentWeather != WeatherType.Clear) {
+      return false;
+    }
+  }
+
+  if (spawnCondition.isThundering != null) {
+    let currentWeather = entity.dimension.getWeather();
+    if (spawnCondition.isThundering === true && currentWeather != WeatherType.Thunder) {
+      return false;
+    }
+    if (spawnCondition.isThundering === false && currentWeather === WeatherType.Thunder) {
       return false;
     }
   }

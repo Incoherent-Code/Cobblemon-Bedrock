@@ -11,6 +11,11 @@
     "0": {
       "minLevel": 11,
       "maxLevel": 36
+    },
+    "0m": {
+      "isThundering": true,
+      "minLevel": 11,
+      "maxLevel": 36
     }
   },
   "name": "Elekid",

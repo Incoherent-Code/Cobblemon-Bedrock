@@ -10,7 +10,7 @@
 ### Player
 - "team" - a json of an array of 6 pokemon, either as the PokemonData class, or null. Use DecodePokemonArray() to decode.
 - "initialized" - bool of whether or not the player is initialized. Will likely be undefined if uninitialized. Sorta deprecated because testing whether team is defined is a better method
-- "box" + i - (Zero based indexing.) Any box stored as a json array of pokemon, either as PokemonData or null. Use DecodePokemonArray() to decode.
+- "box" + i - (Zero based indexing.) Json of BoxData interface in PokemonStorage.ts. Just use getBoxData().
 - "in_battle" - UUID of battle they are currently in if they are in any.
 
 ### Pokemon

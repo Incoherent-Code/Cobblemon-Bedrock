@@ -75,7 +75,7 @@
                   {
                     "test": "has_biome_tag",
                     "operator": "==",
-                    "value": "savana"
+                    "value": "savanna"
                   },
                   {
                     "test": "has_biome_tag",
@@ -315,9 +315,18 @@
                 "value": "meadow"
               },
               {
-                "test": "has_biome_tag",
-                "operator": "==",
-                "value": "plains"
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "plains"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "mutated"
+                  }
+                ]
               },
               {
                 "test": "has_biome_tag",
@@ -522,12 +531,11 @@
             ]
           }
         ],
+        "minecraft:spawns_on_block_filter": [
+          "cobblemon:pc"
+        ],
         "minecraft:weight": {
-          "default": 1
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 2
+          "default": 0.05
         },
         "minecraft:permute_type": [
           {

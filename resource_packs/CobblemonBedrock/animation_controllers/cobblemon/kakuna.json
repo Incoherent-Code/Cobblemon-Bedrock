@@ -21,7 +21,8 @@
         },
         "standing": {
           "animations": [
-            "kakunamodel.singlebonelook"
+            "kakunamodel.singlebonelook",
+            "kakuna.ground_idle"
           ],
           "transitions": [
             {

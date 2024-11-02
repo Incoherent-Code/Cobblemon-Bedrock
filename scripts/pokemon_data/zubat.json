@@ -21,12 +21,28 @@
       "minLevel": 1,
       "maxLevel": 25
     },
+    "1m": {
+      "timeRange": "day",
+      "minLevel": 1,
+      "maxLevel": 25
+    },
     "2": {
+      "minLevel": 1,
+      "maxLevel": 25
+    },
+    "2m": {
+      "timeRange": "day",
       "minLevel": 1,
       "maxLevel": 25
     },
     "3": {
       "isRaining": false,
+      "minLevel": 1,
+      "maxLevel": 25
+    },
+    "3m": {
+      "isRaining": false,
+      "timeRange": "night",
       "minLevel": 1,
       "maxLevel": 25
     }

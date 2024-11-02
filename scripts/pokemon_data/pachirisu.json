@@ -11,6 +11,11 @@
     "0": {
       "minLevel": 16,
       "maxLevel": 41
+    },
+    "0m": {
+      "isThundering": true,
+      "minLevel": 16,
+      "maxLevel": 41
     }
   },
   "name": "Pachirisu",

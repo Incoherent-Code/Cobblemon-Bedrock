@@ -25,6 +25,7 @@
         "weedle.sleep": "animation.weedle.sleep",
         "weedlemodel.singlebonelook": "animation.weedlemodel.singlebonelook",
         "weedle.ground_idle2": "animation.weedle.ground_idle2",
+        "weedle.ground_walk": "animation.weedle.ground_walk",
         "weedle.blink": "animation.weedle.blink",
         "controller.animation.weedle.blink": "controller.animation.weedle.blink",
         "controller.animation.cobblemon.weedle": "controller.animation.cobblemon.weedle"

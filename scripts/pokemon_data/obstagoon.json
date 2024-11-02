@@ -11,6 +11,11 @@
     "0": {
       "minLevel": 35,
       "maxLevel": 52
+    },
+    "0m": {
+      "timeRange": "night",
+      "minLevel": 35,
+      "maxLevel": 52
     }
   },
   "name": "Obstagoon",

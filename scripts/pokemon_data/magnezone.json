@@ -15,6 +15,11 @@
     "1": {
       "minLevel": 42,
       "maxLevel": 54
+    },
+    "1m": {
+      "isThundering": true,
+      "minLevel": 42,
+      "maxLevel": 54
     }
   },
   "name": "Magnezone",

@@ -17,6 +17,12 @@
   "spawnConditionsMap": {
     "0": {
       "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 16,
+      "maxLevel": 41
+    },
+    "0m": {
+      "isRaining": false,
       "minLevel": 16,
       "maxLevel": 41
     },
@@ -25,6 +31,11 @@
       "maxLevel": 41
     },
     "2": {
+      "timeRange": "day",
+      "minLevel": 16,
+      "maxLevel": 41
+    },
+    "2m": {
       "minLevel": 16,
       "maxLevel": 41
     }

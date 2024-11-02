@@ -155,11 +155,7 @@
           }
         ],
         "minecraft:weight": {
-          "default": 100
-        },
-        "minecraft:herd": {
-          "min_size": 2,
-          "max_size": 4
+          "default": 10.0
         },
         "minecraft:permute_type": [
           {
@@ -315,11 +311,7 @@
           }
         ],
         "minecraft:weight": {
-          "default": 100
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 2
+          "default": 5.0
         },
         "minecraft:permute_type": [
           {
@@ -475,11 +467,7 @@
           }
         ],
         "minecraft:weight": {
-          "default": 50
-        },
-        "minecraft:herd": {
-          "min_size": 2,
-          "max_size": 4
+          "default": 5.0
         },
         "minecraft:permute_type": [
           {
@@ -635,11 +623,7 @@
           }
         ],
         "minecraft:weight": {
-          "default": 100
-        },
-        "minecraft:herd": {
-          "min_size": 2,
-          "max_size": 4
+          "default": 10.0
         },
         "minecraft:permute_type": [
           {
@@ -795,11 +779,7 @@
           }
         ],
         "minecraft:weight": {
-          "default": 100
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 2
+          "default": 5.0
         },
         "minecraft:permute_type": [
           {
@@ -955,11 +935,7 @@
           }
         ],
         "minecraft:weight": {
-          "default": 50
-        },
-        "minecraft:herd": {
-          "min_size": 2,
-          "max_size": 4
+          "default": 5.0
         },
         "minecraft:permute_type": [
           {

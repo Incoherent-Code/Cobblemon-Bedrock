@@ -85,7 +85,7 @@
       "geometry": "array.cobblemon_geometry[query.variant]",
       "materials": [
         {
-          "*": "material.emissive"
+          "*": "material.animated_emissive"
         }
       ],
       "textures": [

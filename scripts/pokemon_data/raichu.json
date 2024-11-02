@@ -22,7 +22,17 @@
       "minLevel": 27,
       "maxLevel": 49
     },
+    "0m": {
+      "isThundering": true,
+      "minLevel": 27,
+      "maxLevel": 49
+    },
     "1": {
+      "minLevel": 27,
+      "maxLevel": 49
+    },
+    "1m": {
+      "isThundering": true,
       "minLevel": 27,
       "maxLevel": 49
     }

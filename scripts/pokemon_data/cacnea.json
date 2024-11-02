@@ -11,6 +11,11 @@
     "0": {
       "minLevel": 9,
       "maxLevel": 34
+    },
+    "0m": {
+      "timeRange": "night",
+      "minLevel": 9,
+      "maxLevel": 34
     }
   },
   "name": "Cacnea",

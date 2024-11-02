@@ -56,7 +56,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 0
+              "cobblemon:spawn_condition_used": "spawn_0"
             }
           },
           {
@@ -81,7 +81,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 1
+              "cobblemon:spawn_condition_used": "spawn_1"
             }
           },
           {
@@ -106,7 +106,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 2
+              "cobblemon:spawn_condition_used": "spawn_2"
             }
           },
           {
@@ -131,7 +131,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 3
+              "cobblemon:spawn_condition_used": "spawn_3"
             }
           },
           {
@@ -152,7 +152,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 4
+              "cobblemon:spawn_condition_used": "spawn_4"
             }
           },
           {
@@ -173,7 +173,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 5
+              "cobblemon:spawn_condition_used": "spawn_5"
             }
           },
           {
@@ -194,7 +194,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 6
+              "cobblemon:spawn_condition_used": "spawn_6"
             }
           },
           {
@@ -469,12 +469,18 @@
           "client_sync": true
         },
         "cobblemon:spawn_condition_used": {
-          "type": "int",
-          "range": [
-            -1,
-            6
+          "type": "enum",
+          "values": [
+            "none",
+            "spawn_0",
+            "spawn_1",
+            "spawn_2",
+            "spawn_3",
+            "spawn_4",
+            "spawn_5",
+            "spawn_6"
           ],
-          "default": -1,
+          "default": "none",
           "client_sync": false
         },
         "cobblemon:wild": {

@@ -156,7 +156,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 0
+              "cobblemon:spawn_condition_used": "spawn_0"
             }
           },
           {
@@ -173,7 +173,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 1
+              "cobblemon:spawn_condition_used": "spawn_1"
             }
           },
           {
@@ -190,7 +190,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 2
+              "cobblemon:spawn_condition_used": "spawn_2"
             }
           },
           {
@@ -207,7 +207,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 3
+              "cobblemon:spawn_condition_used": "spawn_3"
             }
           },
           {
@@ -224,7 +224,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 4
+              "cobblemon:spawn_condition_used": "spawn_4"
             }
           },
           {
@@ -241,7 +241,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 5
+              "cobblemon:spawn_condition_used": "spawn_5"
             }
           },
           {
@@ -258,7 +258,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 6
+              "cobblemon:spawn_condition_used": "spawn_6"
             }
           },
           {
@@ -275,7 +275,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 7
+              "cobblemon:spawn_condition_used": "spawn_7"
             }
           },
           {
@@ -292,7 +292,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 8
+              "cobblemon:spawn_condition_used": "spawn_8"
             }
           },
           {
@@ -309,7 +309,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 9
+              "cobblemon:spawn_condition_used": "spawn_9"
             }
           },
           {
@@ -326,7 +326,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 10
+              "cobblemon:spawn_condition_used": "spawn_10"
             }
           },
           {
@@ -343,7 +343,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 11
+              "cobblemon:spawn_condition_used": "spawn_11"
             }
           },
           {
@@ -360,7 +360,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 12
+              "cobblemon:spawn_condition_used": "spawn_12"
             }
           },
           {
@@ -377,7 +377,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 13
+              "cobblemon:spawn_condition_used": "spawn_13"
             }
           },
           {
@@ -394,7 +394,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 14
+              "cobblemon:spawn_condition_used": "spawn_14"
             }
           },
           {
@@ -411,7 +411,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 15
+              "cobblemon:spawn_condition_used": "spawn_15"
             }
           },
           {
@@ -428,7 +428,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 16
+              "cobblemon:spawn_condition_used": "spawn_16"
             }
           },
           {
@@ -445,7 +445,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 17
+              "cobblemon:spawn_condition_used": "spawn_17"
             }
           },
           {
@@ -462,7 +462,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 18
+              "cobblemon:spawn_condition_used": "spawn_18"
             }
           },
           {
@@ -479,7 +479,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 19
+              "cobblemon:spawn_condition_used": "spawn_19"
             }
           },
           {
@@ -1470,12 +1470,26 @@
           "client_sync": true
         },
         "cobblemon:spawn_condition_used": {
-          "type": "int",
-          "range": [
-            -1,
-            19
+          "type": "enum",
+          "values": [
+            "none",
+            "spawn_0",
+            "spawn_1",
+            "spawn_2",
+            "spawn_3",
+            "spawn_4",
+            "spawn_5",
+            "spawn_6",
+            "spawn_7",
+            "spawn_8",
+            "spawn_9",
+            "spawn_10",
+            "spawn_11",
+            "spawn_12",
+            "spawn_13",
+            "spawn_14"
           ],
-          "default": -1,
+          "default": "none",
           "client_sync": false
         },
         "cobblemon:wild": {

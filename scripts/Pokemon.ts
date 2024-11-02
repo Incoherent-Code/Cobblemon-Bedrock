@@ -54,12 +54,12 @@ export function setupCobblemon(entity: Entity) {
   if (!pokemonData) throw new Error(`Could not set up cobblemon ${species}: No Data Found`);
 
   let spawnConditionIndex = entity.getProperty("cobblemon:spawn_condition_used");
-  if (typeof spawnConditionIndex != "number") {
+  if (typeof spawnConditionIndex != "string") {
     throw new Error("Couldn't retrieve spawn condition???");
   }
 
   let level: number
-  if (spawnConditionIndex === -1) {
+  if (spawnConditionIndex === "none") {
     console.warn("The Pokemon's was spawned without a spawn condition..");
     level = getRandomIntBetween(pokemonData.minLevel, pokemonData.maxLevel);
   }
@@ -71,7 +71,7 @@ export function setupCobblemon(entity: Entity) {
       console.log(`PokemonSpawned:${JSON.stringify(spawningPokemon)}`);
     }
 
-    let spawnCondition = pokemonData.spawnConditionsMap[spawnConditionIndex];
+    let spawnCondition = pokemonData.spawnConditionsMap[spawnConditionIndex.substring(6)];
     if (spawnCondition === undefined) {
       console.warn("The pokemon's spawn conditon was not found on the condition map.");
       level = getRandomIntBetween(pokemonData.minLevel, pokemonData.maxLevel);
@@ -231,7 +231,7 @@ export class PokemonData implements PokemonSet {
 
     entity.setDynamicProperty("data", JSON.stringify(this));
     entity.triggerEvent(`cobblemon:set_variant_${this.variant.toString()}`);
-    entity.nameTag = `${this.name || this.species} Lv.${this.level}`;
+    entity.nameTag = `${this.name || this.species} Lv. ${this.level}`;
     if (this.uuid && !entity.hasTag(this.uuid))
       entity.addTag(this.uuid);
     entity.setDynamicProperty("uuid", this.uuid);

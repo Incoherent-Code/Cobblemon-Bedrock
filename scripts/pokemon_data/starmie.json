@@ -16,6 +16,11 @@
     "1": {
       "minLevel": 29,
       "maxLevel": 52
+    },
+    "1m": {
+      "timeRange": "night",
+      "minLevel": 29,
+      "maxLevel": 52
     }
   },
   "name": "Starmie",

@@ -9,6 +9,11 @@
   },
   "spawnConditionsMap": {
     "0": {
+      "timeRange": "day",
+      "minLevel": 10,
+      "maxLevel": 35
+    },
+    "0m": {
       "minLevel": 10,
       "maxLevel": 35
     }

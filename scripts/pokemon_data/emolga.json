@@ -11,6 +11,11 @@
     "0": {
       "minLevel": 18,
       "maxLevel": 43
+    },
+    "0m": {
+      "isThundering": true,
+      "minLevel": 18,
+      "maxLevel": 43
     }
   },
   "name": "Emolga",

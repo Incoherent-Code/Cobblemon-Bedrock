@@ -11,6 +11,11 @@
     "0": {
       "minLevel": 1,
       "maxLevel": 21
+    },
+    "0m": {
+      "isThundering": true,
+      "minLevel": 1,
+      "maxLevel": 21
     }
   },
   "name": "Pichu",

@@ -15,6 +15,11 @@
     "1": {
       "minLevel": 8,
       "maxLevel": 33
+    },
+    "1m": {
+      "isThundering": true,
+      "minLevel": 8,
+      "maxLevel": 33
     }
   },
   "name": "Magnemite",

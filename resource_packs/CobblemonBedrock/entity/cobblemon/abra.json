@@ -21,10 +21,27 @@
         "base": "geometry.abra.geo",
         "shiny": "geometry.abra.geo"
       },
+      "animations": {
+        "abra.sleep": "animation.abra.sleep",
+        "abramodel.singlebonelook": "animation.abramodel.singlebonelook",
+        "abra.ground_idle": "animation.abra.ground_idle",
+        "abra.ground_walk": "animation.abra.ground_walk",
+        "abra.battle_idle": "animation.abra.battle_idle",
+        "controller.animation.cobblemon.abra": "controller.animation.cobblemon.abra"
+      },
       "render_controllers": [
         "controller.render.cobblemon.abra"
       ],
-      "scripts": {}
+      "scripts": {
+        "animate": [
+          {
+            "controller.animation.cobblemon.abra": "q.variant == 0 || q.variant == 1"
+          }
+        ],
+        "initialize": [
+          "v.state_of_abra = -1.0;"
+        ]
+      }
     }
   },
   "format_version": "1.20.40"

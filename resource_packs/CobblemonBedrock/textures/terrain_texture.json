@@ -472,11 +472,11 @@
     "revival_herb_stage_4": {
       "textures": "textures/block/revival_herb_stage_4"
     },
-    "revival_herb_stage_5": {
-      "textures": "textures/block/revival_herb_stage_5"
-    },
     "revival_herb_stage_6": {
       "textures": "textures/block/revival_herb_stage_6"
+    },
+    "revival_herb_stage_5": {
+      "textures": "textures/block/revival_herb_stage_5"
     },
     "revival_herb_stage_7": {
       "textures": "textures/block/revival_herb_stage_7"
@@ -619,11 +619,11 @@
     "wiki_tree": {
       "textures": "textures/block/wiki_tree"
     },
-    "yache_tree": {
-      "textures": "textures/block/yache_tree"
-    },
     "yellow_apricorn": {
       "textures": "textures/block/yellow_apricorn"
+    },
+    "yache_tree": {
+      "textures": "textures/block/yache_tree"
     },
     "yellow_apricorn_sapling": {
       "textures": "textures/block/yellow_apricorn_sapling"

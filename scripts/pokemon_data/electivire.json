@@ -11,6 +11,11 @@
     "0": {
       "minLevel": 45,
       "maxLevel": 54
+    },
+    "0m": {
+      "isThundering": true,
+      "minLevel": 45,
+      "maxLevel": 54
     }
   },
   "name": "Electivire",

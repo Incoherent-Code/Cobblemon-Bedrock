@@ -13,6 +13,12 @@
       "minLevel": 36,
       "maxLevel": 47
     },
+    "0m": {
+      "isThundering": true,
+      "timeRange": "night",
+      "minLevel": 36,
+      "maxLevel": 47
+    },
     "1": {
       "minLevel": 36,
       "maxLevel": 47

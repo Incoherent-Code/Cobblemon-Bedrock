@@ -61,7 +61,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 0
+              "cobblemon:spawn_condition_used": "spawn_0"
             }
           },
           {
@@ -90,7 +90,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 1
+              "cobblemon:spawn_condition_used": "spawn_1"
             }
           },
           {
@@ -119,7 +119,7 @@
         "sequence": [
           {
             "set_property": {
-              "cobblemon:spawn_condition_used": 2
+              "cobblemon:spawn_condition_used": "spawn_2"
             }
           },
           {
@@ -430,12 +430,14 @@
           "client_sync": true
         },
         "cobblemon:spawn_condition_used": {
-          "type": "int",
-          "range": [
-            -1,
-            2
+          "type": "enum",
+          "values": [
+            "none",
+            "spawn_0",
+            "spawn_1",
+            "spawn_2"
           ],
-          "default": -1,
+          "default": "none",
           "client_sync": false
         },
         "cobblemon:wild": {

@@ -68,7 +68,8 @@
         },
         "walk": {
           "animations": [
-            "weedlemodel.singlebonelook"
+            "weedlemodel.singlebonelook",
+            "weedle.ground_walk"
           ],
           "transitions": [
             {

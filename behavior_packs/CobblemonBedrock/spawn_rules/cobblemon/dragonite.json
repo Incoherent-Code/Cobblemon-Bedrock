@@ -75,7 +75,7 @@
                   {
                     "test": "has_biome_tag",
                     "operator": "==",
-                    "value": "savana"
+                    "value": "savanna"
                   },
                   {
                     "test": "has_biome_tag",
@@ -315,9 +315,18 @@
                 "value": "meadow"
               },
               {
-                "test": "has_biome_tag",
-                "operator": "==",
-                "value": "plains"
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "plains"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "mutated"
+                  }
+                ]
               },
               {
                 "test": "has_biome_tag",
@@ -522,12 +531,14 @@
             ]
           }
         ],
+        "minecraft:spawns_on_block_filter": [
+          "minecraft:water"
+        ],
+        "minecraft:spawns_on_block_prevented_filter": [
+          "minecraft:farmland"
+        ],
         "minecraft:weight": {
-          "default": 1
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 1
+          "default": 0.010000001
         },
         "minecraft:permute_type": [
           {
@@ -536,22 +547,6 @@
           }
         ],
         "minecraft:spawns_underground": {}
-      },
-      {
-        "minecraft:weight": {
-          "default": 0
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 1
-        },
-        "minecraft:permute_type": [
-          {
-            "weight": 100,
-            "entity_type": "cobblemon:dragonite<cobblemon:spawn_condition_2>"
-          }
-        ],
-        "minecraft:spawns_on_surface": {}
       }
     ]
   },

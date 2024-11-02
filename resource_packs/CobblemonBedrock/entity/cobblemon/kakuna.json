@@ -24,6 +24,7 @@
       "animations": {
         "kakuna.sleep": "animation.kakuna.sleep",
         "kakunamodel.singlebonelook": "animation.kakunamodel.singlebonelook",
+        "kakuna.ground_idle": "animation.kakuna.ground_idle",
         "controller.animation.cobblemon.kakuna": "controller.animation.cobblemon.kakuna"
       },
       "render_controllers": [

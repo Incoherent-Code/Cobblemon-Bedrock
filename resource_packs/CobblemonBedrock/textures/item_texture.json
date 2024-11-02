@@ -8,41 +8,41 @@
     "black_apricorn_seed": {
       "textures": "textures/item/black_apricorn_seed"
     },
-    "blue_apricorn": {
-      "textures": "textures/item/blue_apricorn"
-    },
-    "pink_apricorn": {
-      "textures": "textures/item/pink_apricorn"
+    "yellow_apricorn": {
+      "textures": "textures/item/yellow_apricorn"
     },
     "green_apricorn": {
       "textures": "textures/item/green_apricorn"
     },
-    "yellow_apricorn": {
-      "textures": "textures/item/yellow_apricorn"
-    },
-    "green_apricorn_seed": {
-      "textures": "textures/item/green_apricorn_seed"
-    },
-    "pink_apricorn_seed": {
-      "textures": "textures/item/pink_apricorn_seed"
-    },
-    "blue_apricorn_seed": {
-      "textures": "textures/item/blue_apricorn_seed"
-    },
-    "red_apricorn": {
-      "textures": "textures/item/red_apricorn"
-    },
     "white_apricorn": {
       "textures": "textures/item/white_apricorn"
     },
-    "yellow_apricorn_seed": {
-      "textures": "textures/item/yellow_apricorn_seed"
+    "red_apricorn": {
+      "textures": "textures/item/red_apricorn"
     },
     "white_apricorn_seed": {
       "textures": "textures/item/white_apricorn_seed"
     },
     "red_apricorn_seed": {
       "textures": "textures/item/red_apricorn_seed"
+    },
+    "green_apricorn_seed": {
+      "textures": "textures/item/green_apricorn_seed"
+    },
+    "blue_apricorn": {
+      "textures": "textures/item/blue_apricorn"
+    },
+    "yellow_apricorn_seed": {
+      "textures": "textures/item/yellow_apricorn_seed"
+    },
+    "pink_apricorn": {
+      "textures": "textures/item/pink_apricorn"
+    },
+    "blue_apricorn_seed": {
+      "textures": "textures/item/blue_apricorn_seed"
+    },
+    "pink_apricorn_seed": {
+      "textures": "textures/item/pink_apricorn_seed"
     },
     "apricorn_boat": {
       "textures": "textures/item/apricorn_boat"

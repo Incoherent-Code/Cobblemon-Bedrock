@@ -8,24 +8,7 @@
       "identifier": "cobblemon:spiritomb",
       "population_control": "animal"
     },
-    "conditions": [
-      {
-        "minecraft:weight": {
-          "default": 0
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 1
-        },
-        "minecraft:permute_type": [
-          {
-            "weight": 100,
-            "entity_type": "cobblemon:spiritomb<cobblemon:spawn_condition_3>"
-          }
-        ],
-        "minecraft:spawns_on_surface": {}
-      }
-    ]
+    "conditions": []
   },
   "format_version": "1.18.0"
 }

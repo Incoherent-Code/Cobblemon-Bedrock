@@ -19,11 +19,21 @@
       "minLevel": 25,
       "maxLevel": 51
     },
+    "0m": {
+      "timeRange": "twilight",
+      "minLevel": 25,
+      "maxLevel": 51
+    },
     "1": {
       "minLevel": 25,
       "maxLevel": 51
     },
     "2": {
+      "minLevel": 25,
+      "maxLevel": 51
+    },
+    "2m": {
+      "timeRange": "twilight",
       "minLevel": 25,
       "maxLevel": 51
     },

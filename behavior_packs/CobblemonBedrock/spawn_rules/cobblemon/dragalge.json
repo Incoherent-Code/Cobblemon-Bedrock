@@ -181,12 +181,11 @@
             ]
           }
         ],
+        "minecraft:spawns_on_block_filter": [
+          "minecraft:kelp_plant"
+        ],
         "minecraft:weight": {
-          "default": 10
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 2
+          "default": 0.5
         },
         "minecraft:permute_type": [
           {

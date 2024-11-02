@@ -20,8 +20,20 @@
       "minLevel": 28,
       "maxLevel": 44
     },
+    "0m": {
+      "isRaining": false,
+      "timeRange": "night",
+      "minLevel": 28,
+      "maxLevel": 44
+    },
     "1": {
       "isRaining": false,
+      "minLevel": 28,
+      "maxLevel": 44
+    },
+    "1m": {
+      "isRaining": false,
+      "timeRange": "night",
       "minLevel": 28,
       "maxLevel": 44
     },
@@ -29,7 +41,17 @@
       "minLevel": 28,
       "maxLevel": 44
     },
+    "2m": {
+      "timeRange": "night",
+      "minLevel": 28,
+      "maxLevel": 44
+    },
     "3": {
+      "minLevel": 28,
+      "maxLevel": 44
+    },
+    "3m": {
+      "timeRange": "night",
       "minLevel": 28,
       "maxLevel": 44
     },
@@ -38,7 +60,18 @@
       "minLevel": 28,
       "maxLevel": 44
     },
+    "4m": {
+      "isRaining": false,
+      "timeRange": "night",
+      "minLevel": 28,
+      "maxLevel": 44
+    },
     "5": {
+      "minLevel": 28,
+      "maxLevel": 44
+    },
+    "5m": {
+      "timeRange": "night",
       "minLevel": 28,
       "maxLevel": 44
     },

@@ -11,6 +11,11 @@
     "0": {
       "minLevel": 30,
       "maxLevel": 50
+    },
+    "0m": {
+      "isThundering": true,
+      "minLevel": 30,
+      "maxLevel": 50
     }
   },
   "name": "Electabuzz",

@@ -155,33 +155,12 @@
           }
         ],
         "minecraft:weight": {
-          "default": 2
-        },
-        "minecraft:herd": {
-          "min_size": 2,
-          "max_size": 4
+          "default": 0.2
         },
         "minecraft:permute_type": [
           {
             "weight": 100,
             "entity_type": "cobblemon:masquerain<cobblemon:spawn_condition_0>"
-          }
-        ],
-        "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_underwater": {}
-      },
-      {
-        "minecraft:weight": {
-          "default": 0
-        },
-        "minecraft:herd": {
-          "min_size": 2,
-          "max_size": 4
-        },
-        "minecraft:permute_type": [
-          {
-            "weight": 100,
-            "entity_type": "cobblemon:masquerain<cobblemon:spawn_condition_1>"
           }
         ],
         "minecraft:spawns_on_surface": {},

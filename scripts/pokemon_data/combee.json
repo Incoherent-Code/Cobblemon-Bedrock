@@ -17,6 +17,12 @@
       "minLevel": 1,
       "maxLevel": 24
     },
+    "0m": {
+      "isRaining": false,
+      "timeRange": "day",
+      "minLevel": 1,
+      "maxLevel": 24
+    },
     "1": {
       "minLevel": 1,
       "maxLevel": 24

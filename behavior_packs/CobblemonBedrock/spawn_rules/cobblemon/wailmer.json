@@ -88,11 +88,7 @@
           }
         ],
         "minecraft:weight": {
-          "default": 18
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 2
+          "default": 0.9
         },
         "minecraft:permute_type": [
           {

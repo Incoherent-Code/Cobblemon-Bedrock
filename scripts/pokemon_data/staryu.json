@@ -16,6 +16,11 @@
     "1": {
       "minLevel": 9,
       "maxLevel": 34
+    },
+    "1m": {
+      "timeRange": "night",
+      "minLevel": 9,
+      "maxLevel": 34
     }
   },
   "name": "Staryu",

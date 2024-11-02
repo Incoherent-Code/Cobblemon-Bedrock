@@ -75,7 +75,7 @@
                   {
                     "test": "has_biome_tag",
                     "operator": "==",
-                    "value": "savana"
+                    "value": "savanna"
                   },
                   {
                     "test": "has_biome_tag",
@@ -315,9 +315,18 @@
                 "value": "meadow"
               },
               {
-                "test": "has_biome_tag",
-                "operator": "==",
-                "value": "plains"
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "plains"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "mutated"
+                  }
+                ]
               },
               {
                 "test": "has_biome_tag",
@@ -522,12 +531,11 @@
             ]
           }
         ],
+        "minecraft:spawns_on_block_filter": [
+          "minecraft:cake"
+        ],
         "minecraft:weight": {
-          "default": 10
-        },
-        "minecraft:herd": {
-          "min_size": 2,
-          "max_size": 4
+          "default": 1.0
         },
         "minecraft:permute_type": [
           {
@@ -603,7 +611,7 @@
                   {
                     "test": "has_biome_tag",
                     "operator": "==",
-                    "value": "savana"
+                    "value": "savanna"
                   },
                   {
                     "test": "has_biome_tag",
@@ -843,9 +851,18 @@
                 "value": "meadow"
               },
               {
-                "test": "has_biome_tag",
-                "operator": "==",
-                "value": "plains"
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "plains"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "mutated"
+                  }
+                ]
               },
               {
                 "test": "has_biome_tag",
@@ -1050,12 +1067,11 @@
             ]
           }
         ],
+        "minecraft:spawns_on_block_filter": [
+          "minecraft:reeds"
+        ],
         "minecraft:weight": {
-          "default": 2
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 2
+          "default": 0.1
         },
         "minecraft:permute_type": [
           {

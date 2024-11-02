@@ -19,7 +19,17 @@
       "minLevel": 1,
       "maxLevel": 24
     },
+    "0m": {
+      "timeRange": "night",
+      "minLevel": 1,
+      "maxLevel": 24
+    },
     "1": {
+      "minLevel": 1,
+      "maxLevel": 24
+    },
+    "1m": {
+      "timeRange": "night",
       "minLevel": 1,
       "maxLevel": 24
     }

@@ -88,11 +88,7 @@
           }
         ],
         "minecraft:weight": {
-          "default": 20
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 2
+          "default": 1.0
         },
         "minecraft:permute_type": [
           {
@@ -168,7 +164,7 @@
                   {
                     "test": "has_biome_tag",
                     "operator": "==",
-                    "value": "savana"
+                    "value": "savanna"
                   },
                   {
                     "test": "has_biome_tag",
@@ -408,9 +404,18 @@
                 "value": "meadow"
               },
               {
-                "test": "has_biome_tag",
-                "operator": "==",
-                "value": "plains"
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "plains"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "mutated"
+                  }
+                ]
               },
               {
                 "test": "has_biome_tag",
@@ -785,11 +790,7 @@
           }
         ],
         "minecraft:weight": {
-          "default": 100
-        },
-        "minecraft:herd": {
-          "min_size": 1,
-          "max_size": 1
+          "default": 1.0
         },
         "minecraft:permute_type": [
           {
