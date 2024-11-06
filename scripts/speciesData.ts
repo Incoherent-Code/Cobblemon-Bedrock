@@ -192,7 +192,7 @@ interface IdleData {
   pointAtSpawn: boolean;
 }
 
-interface SpawnConditionData {
+export interface SpawnConditionData {
   isRaining?: boolean,
   isThundering?: boolean,
   timeRange?: string,
@@ -227,59 +227,4 @@ export function getFullName(species: string): string {
   species = toID(species);
   const { name: name } = require(`./pokemon_data/${species}.json`);
   return name;
-}
-
-/** Returns true only if all of the spawn conditions are met. */
-export function validateSpawnCondition(entity: Entity, spawnCondition: SpawnConditionData): boolean {
-  if (spawnCondition.isRaining != null) {
-    let currentWeather = entity.dimension.getWeather();
-    if (spawnCondition.isRaining === true && currentWeather === WeatherType.Clear) {
-      return false;
-    }
-    if (spawnCondition.isRaining === false && currentWeather != WeatherType.Clear) {
-      return false;
-    }
-  }
-
-  if (spawnCondition.isThundering != null) {
-    let currentWeather = entity.dimension.getWeather();
-    if (spawnCondition.isThundering === true && currentWeather != WeatherType.Thunder) {
-      return false;
-    }
-    if (spawnCondition.isThundering === false && currentWeather === WeatherType.Thunder) {
-      return false;
-    }
-  }
-
-  if (spawnCondition.timeRange != null) {
-    let time = world.getTimeOfDay();
-    let isNight = (24000 > time && time > 12000)
-    switch (spawnCondition.timeRange) {
-      case "day":
-        if (isNight)
-          return false;
-        break;
-      case "night":
-        if (!isNight)
-          return false;
-        break;
-      default:
-        console.warn(`Timerange ${spawnCondition.timeRange} is unknown.`);
-    }
-  }
-
-  if (spawnCondition.neededNearbyBlocks || spawnCondition.preventedNearbyBlocks) {
-    let config = getConfig();
-    let nearbyBlocks = BlockUtils.getAllBlocksFromCenter(
-      toDimensionLocation(entity.location, entity.dimension),
-      config.maxNearbyBlocksHorizontalRange,
-      config.maxNearbyBlocksVerticleRange
-    ).map(x => x.typeId);
-    if (spawnCondition.neededNearbyBlocks && !spawnCondition.neededNearbyBlocks.every(cond => nearbyBlocks.some(x => cond.includes(x))))
-      return false;
-    if (spawnCondition.preventedNearbyBlocks && !spawnCondition.preventedNearbyBlocks.every(cond => !nearbyBlocks.some(x => cond.includes(x))))
-      return false;
-  }
-
-  return true;
 }

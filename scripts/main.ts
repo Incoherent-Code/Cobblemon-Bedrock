@@ -1,7 +1,6 @@
 /** This file should be used only for event bindings and such. */
 
 import { Entity, GameMode, ItemStack, Player, system, world } from "@minecraft/server"
-import scriptEventHandler from "./events";
 import "./showdown/sim/global-types"
 import { sendOutGUI, showStarterGUI } from "./GUI";
 import { registerCustomComponents } from "./custom_components";
@@ -28,7 +27,6 @@ world.afterEvents.playerEmote.subscribe(async (arg) => {
 });
 
 world.beforeEvents.worldInitialize.subscribe(registerCustomComponents);
-system.afterEvents.scriptEventReceive.subscribe(scriptEventHandler);
 
 //World cleanup stuff
 world.afterEvents.worldInitialize.subscribe(WorldCleanup);

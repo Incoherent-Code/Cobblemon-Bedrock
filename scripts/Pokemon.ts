@@ -1,6 +1,7 @@
 import { Dimension, DimensionLocation, Entity, ItemStack, Player, RawMessage, Vector3, world } from "@minecraft/server";
 import { Dex, toID } from "./showdown/sim/index";
-import { getSpeciesData, getAvaliableMoves, validateSpawnCondition, SpeciesData } from "./speciesData";
+import { getSpeciesData, getAvaliableMoves, SpeciesData } from "./speciesData";
+import { validateSpawnCondition } from "./spawning/Spawning";
 import { AdditionalMoveInfo, PokemonSet } from "./showdown/sim/teams";
 import { getSafeTeam, getTeam, storePokemonInFirstSpace } from "./pokemonStorage";
 import { UUID, getAllDimensions, removeNamespace, toIdentifier } from "./utils";
