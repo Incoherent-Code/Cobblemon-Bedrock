@@ -42,6 +42,9 @@ export enum StatusEffect {
   Badly_Poison = "tox"
 }
 
+/** Valid properties to save the state of */
+const validSaveEntityProperties = ["cobblemon:spawn_condition_used", "cobblemon:has_been_sheared"];
+
 export const PersistentStatuses = ["brn", "frz", "par", "tox", "psn", "slp"];
 
 const spawningPokemon: string[] = [];
@@ -157,6 +160,8 @@ export class PokemonData implements PokemonSet {
   evolutionProgress: EvolutionProgress<unknown>[] = [];
   /** Id's of evolutions that are ready. */
   readyEvolutions: string[] = [];
+  /** Saved entity properties to be reloaded */
+  entityStates: Record<string, string | boolean | number> = {};
 
   //TODO: Impliment Happiness
   shiny?: boolean;
@@ -237,10 +242,11 @@ export class PokemonData implements PokemonSet {
       entity.addTag(this.uuid);
     entity.setDynamicProperty("uuid", this.uuid);
     if (this.minecraftItem)
-      entity.getComponent("inventory")?.container?.getSlot(0).setItem(new ItemStack(this.minecraftItem))
+      entity.getComponent("inventory")?.container?.getSlot(0).setItem(new ItemStack(this.minecraftItem));
+    Object.entries(this.entityStates).forEach(x => entity.setProperty(x[0], x[1]));
     entity.setProperty("cobblemon:initialized", true);
     if (entity.hasTag("needsServerSetup"))
-      entity.removeTag("needsServerSetup"); -743029341899
+      entity.removeTag("needsServerSetup");
   }
 
   updatePokemonInTeam(owner?: Player) {
@@ -434,6 +440,9 @@ export class PokemonData implements PokemonSet {
       this.item = toID(removeNamespace(heldItem.typeId));
       this.minecraftItem = heldItem.typeId;
     }
+    this.entityStates = Object.fromEntries(
+      validSaveEntityProperties.map(x => [x, entity.getProperty(x)]).filter(x => x[1] != null)
+    );
   }
 
   /** Spawns pokemon.

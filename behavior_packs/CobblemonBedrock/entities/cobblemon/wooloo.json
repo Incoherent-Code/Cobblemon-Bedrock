@@ -214,11 +214,19 @@
       "cobblemon:eat_grass": {
         "set_property": {
           "cobblemon:has_been_sheared": false
+        },
+        "queue_command": {
+          "command": "scriptevent cobblemon:update_self",
+          "target": "self"
         }
       },
       "cobblemon:shear": {
         "set_property": {
           "cobblemon:has_been_sheared": true
+        },
+        "queue_command": {
+          "command": "scriptevent cobblemon:update_self",
+          "target": "self"
         }
       }
     },

@@ -7,7 +7,6 @@ import { registerDebugSettings } from "../debug/debugMain"
 import { getSpeciesData } from "../speciesData";
 import { storePokemonInFirstSpace } from "../pokemonStorage";
 import handleChallenge from "../ChallengePlayer";
-import { handlePokeballCapture } from "../catching";
 import exchangeHeldItem from "./ExchangeHeldItem";
 import handleInteractEvolution from "./InteractEvolution";
 import handleGainLevelEvent from "./RareCandy";
@@ -56,30 +55,18 @@ const scriptIDDictionary: { [key: string]: Function } = {
       }
     }
   },
-  //Deprecated for an ProjectileHitEntity Event
-  "cobblemon:pokeball_catching": function (event: ScriptEventCommandMessageAfterEvent) {
-    return;
-    let dimension = event.sourceEntity!.dimension
-    let player = dimension.getPlayers({ location: event.sourceEntity!.location, closest: 1, name: String(event.sourceEntity?.getDynamicProperty("player")!) })[0]!
-    let entityCaught = dimension.getEntities({ location: event.sourceEntity!.location, closest: 1, families: ["pokemon"], maxDistance: 2 })[0]!;
-    if (!entityCaught || entityCaught.getProperty("cobblemon:busy")) {
-      if (player.getGameMode() != GameMode.creative)
-        dimension.spawnItem(new ItemStack(event.sourceEntity!.typeId, 1), event.sourceEntity!.location);
-      event.sourceEntity?.triggerEvent("cobblemon:instant_kill");
-      return;
-    }
-    if (player && entityCaught && typeof entityCaught.getDynamicProperty("data") === "string") {
-      entityCaught.setProperty("cobblemon:busy", true);
-      handlePokeballCapture(player, event.sourceEntity!, entityCaught);
-    }
-    else {
-      event.sourceEntity?.triggerEvent("cobblemon:instant_kill");
-    }
-  },
   "cobblemon:setup": function (event: ScriptEventCommandMessageAfterEvent) {
     if (event.sourceEntity!.getProperty("cobblemon:initialized") === true)
       return;
     setupCobblemon(event.sourceEntity!)
+  },
+  "cobblemon:update_self": function (event: ScriptEventCommandMessageAfterEvent) {
+    //Ensures that the json data and state data are up to date
+    if (!event.sourceEntity || !event.sourceEntity.getComponent("type_family")?.hasTypeFamily("pokemon"))
+      return;
+    let pokemonData = PokemonData.getFromEntity(event.sourceEntity);
+    pokemonData.tryUpdatePokemonOut();
+    pokemonData.tryUpdatePokemonInTeam();
   },
   "cobblemon:pokeball_thrown": function (event: ScriptEventCommandMessageAfterEvent) {
     let player = event.sourceEntity!.dimension.getPlayers({ location: event.sourceEntity!.location, closest: 1 })[0]!
@@ -124,6 +111,3 @@ const scriptIDDictionary: { [key: string]: Function } = {
   "cobblemon:interact_evolution": handleInteractEvolution,
   "cobblemon:gain_level": handleGainLevelEvent
 }
-
-
-system.afterEvents.scriptEventReceive.subscribe(scriptEventHandler);

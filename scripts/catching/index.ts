@@ -168,3 +168,90 @@ export async function handlePokeballCapture(thrower: Player, pokeball: Entity, t
 function waitTicks(numberOfTicks: number): Promise<void> {
   return new Promise(resolve => system.runTimeout(resolve, numberOfTicks));
 }
+
+function dropPokeball(pokeball: Entity, player?: Player) {
+  if (!(player?.getGameMode() === GameMode.creative))
+    pokeball.dimension.spawnItem(new ItemStack(pokeball.typeId, 1), pokeball.location);
+  pokeball.triggerEvent("cobblemon:instant_kill");
+}
+/** Binds the required capture events */
+export function bindCatchEvents() {
+  //Make the ball drop if it hits a block
+  world.afterEvents.projectileHitBlock.subscribe(arg => {
+    //Only run this code if it was initiated by a pokeball.
+    if (!arg.projectile.getComponent("minecraft:type_family")?.hasTypeFamily("pokeball"))
+      return;
+    //Do not despawn activated pokeball
+    if (arg.projectile.getDynamicProperty("activated") || arg.projectile.getProperty("cobblemon:disabled"))
+      return;
+    dropPokeball(arg.projectile, (arg.source instanceof Player) ? arg.source : undefined);
+  })
+
+  world.afterEvents.projectileHitEntity.subscribe(arg => {
+    //Only run this code if it was initiated by a pokeball.
+    if (!arg.projectile.getComponent("minecraft:type_family")?.hasTypeFamily("pokeball"))
+      return;
+
+    //Resolving Player, pokemon, and projectile
+    let playerID = arg.projectile.getDynamicProperty("player_id");
+    if (!(typeof playerID === "string"))
+      return;
+
+    let playerEntity = world.getEntity(playerID);
+    if (!(playerEntity && playerEntity instanceof Player))
+      return;
+    let player = playerEntity as Player;
+
+    let entityHit = arg.getEntityHit().entity;
+    if (!(entityHit && entityHit.getComponent("minecraft:type_family")?.hasTypeFamily("pokemon")))
+      return;
+
+    let battle = tryGetBattleFromEntity(player);
+    let entityBattle = tryGetBattleFromEntity(entityHit);
+
+    if (battle && !entityBattle) {
+      player.sendMessage(message.error({ translate: "cobblemon.capture.you_in_battle" }));
+      return;
+    }
+
+    if ((!battle && entityBattle) || battle?.battleId !== entityBattle?.battleId) {
+      player.sendMessage(message.error(message.With("cobblemon.capture.in_battle", [PokemonData.tryGetFromEntity(entityHit) || { translate: "cobblemon.ui.pokemon" }])));
+      return;
+    }
+
+    //If pokemon is not wild
+    if (entityHit.getDynamicProperty("onwer_name") || !entityHit.getProperty("cobblemon:wild")) {
+      player.sendMessage(message.error(message.With("cobblemon.capture.not_wild", [PokemonData.tryGetFromEntity(entityHit) || { translate: "cobblemon.ui.pokemon" }])));
+      dropPokeball(arg.projectile, player);
+      return;
+    }
+
+    //Prevent double hits (happens all the time)
+    if (arg.projectile.getDynamicProperty("activated")) {
+      return;
+    }
+
+    if (entityHit.getProperty("cobblemon:busy") === true) {
+      player.sendMessage(message.error(message.With("cobblemon.capture.busy", [PokemonData.tryGetFromEntity(entityHit) || { translate: "cobblemon.ui.pokemon" }])));
+      dropPokeball(arg.projectile, player);
+      return;
+    }
+
+    if (battle) {
+      //If the battle is not a singles battle
+      if (battle && battle.format.battleType != BattleTypes.SINGLES) {
+        player.sendMessage(message.color("Red", { translate: "cobblemon.capture.not_single" }));
+        dropPokeball(arg.projectile, player);
+        return;
+      }
+
+      if (!battle.getActorFromID(player.id)!.canFitForcedAction()) {
+        player.sendMessage(message.color("Red", { translate: "cobblemon.capture.not_your_turn" }));
+        dropPokeball(arg.projectile, player);
+        return;
+      }
+    }
+
+    handlePokeballCapture(player, arg.projectile, entityHit);
+  })
+}

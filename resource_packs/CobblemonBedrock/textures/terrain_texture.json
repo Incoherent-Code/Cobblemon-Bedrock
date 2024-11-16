@@ -34,14 +34,14 @@
     "apricorn_log": {
       "textures": "textures/block/apricorn_log"
     },
+    "apricorn_log_top": {
+      "textures": "textures/block/apricorn_log_top"
+    },
     "apricorn_planks": {
       "textures": "textures/block/apricorn_planks"
     },
     "apricorn_stage_0": {
       "textures": "textures/block/apricorn_stage_0"
-    },
-    "apricorn_log_top": {
-      "textures": "textures/block/apricorn_log_top"
     },
     "apricorn_stage_1": {
       "textures": "textures/block/apricorn_stage_1"
@@ -100,11 +100,11 @@
     "cheri_leaves": {
       "textures": "textures/block/cheri_leaves"
     },
-    "chesto_leaves": {
-      "textures": "textures/block/chesto_leaves"
-    },
     "cheri_stem": {
       "textures": "textures/block/cheri_stem"
+    },
+    "chesto_leaves": {
+      "textures": "textures/block/chesto_leaves"
     },
     "chesto_stem": {
       "textures": "textures/block/chesto_stem"
@@ -214,11 +214,11 @@
     "green_mint": {
       "textures": "textures/block/green_mint"
     },
-    "grepa_tree": {
-      "textures": "textures/block/grepa_tree"
-    },
     "grepa_leaves": {
       "textures": "textures/block/grepa_leaves"
+    },
+    "grepa_tree": {
+      "textures": "textures/block/grepa_tree"
     },
     "growth_mulch": {
       "textures": "textures/block/growth_mulch"
@@ -388,14 +388,14 @@
     "payapa_tree": {
       "textures": "textures/block/payapa_tree"
     },
+    "pc": {
+      "textures": "textures/block/pc"
+    },
     "pc_particle": {
       "textures": "textures/block/pc_particle"
     },
     "peat_mulch": {
       "textures": "textures/block/peat_mulch"
-    },
-    "pc": {
-      "textures": "textures/block/pc"
     },
     "pecha_tree": {
       "textures": "textures/block/pecha_tree"
@@ -481,14 +481,14 @@
     "revival_herb_stage_7": {
       "textures": "textures/block/revival_herb_stage_7"
     },
-    "rindo_leaves": {
-      "textures": "textures/block/rindo_leaves"
-    },
     "revival_herb_stage_8": {
       "textures": "textures/block/revival_herb_stage_8"
     },
     "rich_mulch": {
       "textures": "textures/block/rich_mulch"
+    },
+    "rindo_leaves": {
+      "textures": "textures/block/rindo_leaves"
     },
     "rindo_tree": {
       "textures": "textures/block/rindo_tree"
@@ -511,11 +511,11 @@
     "shuca_leaves": {
       "textures": "textures/block/shuca_leaves"
     },
-    "sitrus_leaves": {
-      "textures": "textures/block/sitrus_leaves"
-    },
     "shuca_stem": {
       "textures": "textures/block/shuca_stem"
+    },
+    "sitrus_leaves": {
+      "textures": "textures/block/sitrus_leaves"
     },
     "sitrus_stem": {
       "textures": "textures/block/sitrus_stem"
@@ -583,11 +583,11 @@
     "vivichoke_seed_stage_6": {
       "textures": "textures/block/vivichoke_seed_stage_6"
     },
-    "wacan_tree": {
-      "textures": "textures/block/wacan_tree"
-    },
     "vivichoke_seed_stage_7": {
       "textures": "textures/block/vivichoke_seed_stage_7"
+    },
+    "wacan_tree": {
+      "textures": "textures/block/wacan_tree"
     },
     "water_stone_ore": {
       "textures": "textures/block/water_stone_ore"
