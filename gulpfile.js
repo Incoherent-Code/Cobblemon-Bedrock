@@ -8,7 +8,7 @@ const spawn = require("child_process").spawn;
 
 const esbuild = require("gulp-esbuild");
 const ignorePlugin = require("esbuild-plugin-ignore");
-const nodePolyfill = require("esbuild-plugin-polyfill-node");
+const nodePolyfill = require("esbuild-plugin-polyfill-node-globalfix");
 const gZip = require("gulp-zip");
 const merge = require("merge-stream");
 

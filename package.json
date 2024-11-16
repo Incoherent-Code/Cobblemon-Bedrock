@@ -31,6 +31,6 @@
     "@minecraft/server-ui": "^1.1.0",
     "decode-uri-component": "^0.2.2",
     "esbuild": "^0.23.1",
-    "esbuild-plugin-polyfill-node": "^0.3.0"
+    "esbuild-plugin-polyfill-node-globalfix": "^0.3.0"
   }
 }
