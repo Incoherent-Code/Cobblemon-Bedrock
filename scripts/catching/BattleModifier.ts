@@ -1,6 +1,6 @@
 import { Player } from "@minecraft/server";
 import { Behavior, CatchRateModifier, BehaviorMutators } from "./CatchRateModifier";
-import { tryGetBattleFromEntity } from "../battle/Battle";
+import { tryGetBattleFromEntity } from "../battle";
 import { PokemonData } from "../Pokemon";
 
 export class BattleModifier extends CatchRateModifier {
@@ -11,11 +11,11 @@ export class BattleModifier extends CatchRateModifier {
     if (!thrower.isValid())
       return 1;
 
-    let currentParticipant = tryGetBattleFromEntity(thrower)?.participants?.find(x => (x.Player?.id === thrower.id));
+    let currentParticipant = tryGetBattleFromEntity(thrower)?.getActorFromID(thrower.id);
     if (currentParticipant === undefined)
       return 1;
 
-    return this.calculator(thrower, currentParticipant.Active.map(x => currentParticipant.Team[x]), pokemon);
+    return this.calculator(thrower, currentParticipant.activePokemon.filter(x => x != null).map(x => x.data), pokemon);
   }
   behavior(thrower: Player, pokmeon: PokemonData): Behavior {
     return BehaviorMutators.MULTIPLY;

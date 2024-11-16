@@ -8,7 +8,6 @@ import { PokemonData } from "./Pokemon";
 import { storePokemonInFirstSpace } from "./pokemonStorage";
 import { handlePokeballCapture } from "./catching";
 import WorldCleanup from "./Cleanup";
-import { tryGetBattleFromEntity } from "./battle/Battle";
 import { message } from "./language";
 
 

@@ -3,7 +3,7 @@ import { BattleModifier } from "./BattleModifier";
 import { WorldStateModifier } from "./WorldStateModifier";
 import { DynamicMultiplierModifier } from "./DynamicMultiplierModifier";
 import { BiomeType, BiomeTypes, world } from "@minecraft/server";
-import { tryGetBattleFromEntity } from "../battle/Battle";
+import { tryGetBattleFromEntity } from "../battle";
 import { Pokemon } from "../showdown/sim";
 import { ElementalType, StatusEffect } from "../Pokemon";
 import { MultiplierModifier } from "./MultiplierModifier";
